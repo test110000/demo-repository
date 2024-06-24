@@ -11,9 +11,9 @@ import HotFourD from '../views/HotFourD.vue'
 
 const routes = [
 	{
-		path: '/',
-		name: 'Dashboard',
-		component: Dashboard
+		// path: '/',
+		// name: 'Dashboard',
+		// component: Dashboard
 	},
 	{
 		path: '/spin-my-luck',

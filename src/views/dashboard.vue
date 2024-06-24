@@ -8,7 +8,7 @@
 						<div style="background-color: black;" class="col-12 col-sm-12 col-md-6 col-lg-6 magnum_logo_bg">
 							<div class="row">
 								<div>
-									<img src="C:\Users\User\test\public\image\magnumwin.svg">
+									<img src="\public\image\magnumwin.svg">
 								</div>
 								<div>
 									<p style="color: white;">Magnum 4D</p>

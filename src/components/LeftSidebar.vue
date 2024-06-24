@@ -13,8 +13,8 @@ defineProps({
 				<!--leftside-->
 				<div class="sidebar">
 					<div class="logo_col">
-						<img class="d_num_logo" src="C:\Users\User\test\public\image\4Dlogo.png">
-						<img src="C:\Users\User\test\public\image\4dnumText.svg">
+						<img class="d_num_logo" src="\public\image\4Dlogo.png">
+						<img src="\public\image\4dnumText.svg">
 					</div>
 
 					<p class="results_install_app_text">Results</p>
@@ -23,7 +23,7 @@ defineProps({
 						<!--dashboard-->
 						<div class="text_col">
 							<router-link to="/">
-								<img class="pic" src="C:\Users\User\test\public\image\dashboard.png">
+								<img class="pic" src="\public\image\dashboard.png">
 								<p class="text_menu">Dashboard</p>
 							</router-link>
 						</div>
@@ -66,7 +66,7 @@ defineProps({
 					<div class="menu">
 						<div class="text_col">
 							<router-link to="/spin-my-luck">
-								<img class="pic" src="C:\Users\User\test\public\image\spin.png">
+								<img class="pic" src="\public\image\spin.png">
 								<p class="text_menu">Spin My Luck</p>
 							</router-link>
 						</div>
@@ -86,7 +86,7 @@ defineProps({
 					<div class="menu">
 						<div class="text_col">
 							<router-link to="/lucky-book">
-								<img class="pic" src="C:\Users\User\test\public\image\book.png">
+								<img class="pic" src="\public\image\book.png">
 								<p class="text_menu">Lucky Book</p>
 							</router-link>
 						</div>
@@ -96,9 +96,9 @@ defineProps({
 					<p class="results_install_app_text">Install App</p>
 
 					<div class="install_app">
-						<a href=#><img width="80px" src="C:\Users\User\test\public\image\appStoreUSBlack.svg"></a>
+						<a href=#><img width="80px" src="\public\image\appStoreUSBlack.svg"></a>
 
-						<a href="#"><img width="70px" height="30px" src="C:\Users\User\test\public\image\APK.png"></a>
+						<a href="#"><img width="70px" height="30px" src="\public\image\APK.png"></a>
 					</div>
 					<p class="version_text">Version 3.0.1.15</p>
 				</div>

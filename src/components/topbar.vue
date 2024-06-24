@@ -3,57 +3,47 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<div class="top">
-					<a href="#"><img src="C:\Users\User\test\public\image\dashboardcolor.svg"></a>
+					<a href="#"><img src="\public\image\dashboardcolor.svg"></a>
 
 					<div class="logo_col">
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\magnum.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\magnum.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img src="C:\Users\User\test\public\image\damacai2.svg"></a>
+							<a href="#"><img src="\public\image\damacai2.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\toto.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\toto.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\sg.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\sg.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\sandakan.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\sandakan.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\diriwan.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\diriwan.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\ssc.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\ssc.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\lhh.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\lhh.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\pdn.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\pdn.svg"></a>
 						</div>
 						<div class="logo">
-							<a href="#"><img width="40px" height="40px"
-									src="C:\Users\User\test\public\image\gd.svg"></a>
+							<a href="#"><img width="40px" height="40px" src="\public\image\gd.svg"></a>
 						</div>
 					</div>
 
 					<div class="logo">
-						<a href="#"><img width="40px" height="40px"
-								src="C:\Users\User\test\public\image\refresh.svg"></a>
+						<a href="#"><img width="40px" height="40px" src="\public\image\refresh.svg"></a>
 					</div>
 
 					<div class="light_mode">
-						<img src="C:\Users\User\test\public\image\sun.png">
+						<img src="\public\image\sun.png">
 						<div class="light_mode_text">
 							<div class="light_mode_text">Light</div>
 							<p class="light_mode_text">Mode</p>
