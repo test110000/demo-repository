@@ -1,0 +1,68 @@
+<template>
+	<div style="background-color: grey;">
+		<div class="app-container">
+			<div class="screen1024">
+				<LeftSidebar />
+			</div>
+			<div class="main-content">
+				<TopBar />
+				<router-view></router-view>
+			</div>
+			<div class="screen1024">
+				<RightColumn />
+			</div>
+		</div>
+	</div>
+
+</template>
+
+<script>
+import LeftSidebar from './components/LeftSidebar.vue'
+import TopBar from './components/topbar.vue'
+import RightColumn from './components/right.vue'
+
+export default {
+	name: 'App',
+	components: {
+		LeftSidebar,
+		TopBar,
+
+	}
+}
+</script>
+
+<style>
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.app-container {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+}
+
+
+.main-content {
+	flex: 1;
+	/* Space for sidebar */
+	margin-top: 70px;
+	/* Space for top bar */
+	overflow-y: auto;
+	text-align: center;
+}
+
+.content-view {
+	padding: 20px;
+}
+
+@media screen and (max-width:1025px) {
+	.screen1024 {
+		display: none;
+	}
+
+	.screen1024topbar {}
+}
+</style>
