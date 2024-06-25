@@ -8,102 +8,52 @@ defineProps({
 </script>
 <template>
 	<div class="left-sidebar">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<!--leftside-->
-				<div class="sidebar">
+		<div class="container-fluid">
+			<!--leftside-->
+			<div class="sidebar" style="background-color: #CF2E2E;">
+				<div style="background: white; height: 100%; border-top-right-radius: 50px;">
 					<div class="logo_col">
-						<img class="d_num_logo" src="C:\Users\User\test\public\image\4Dlogo.png">
-						<img src="C:\Users\User\test\public\image\4dnumText.svg">
+						<img class="d_num_logo" src="/public/image/4D-lottery-with_word.png">
 					</div>
-
-					<p class="results_install_app_text">Results</p>
-					<br>
-					<div class="menu">
-						<!--dashboard-->
-						<div class="text_col">
-							<router-link to="/">
-								<img class="pic" src="C:\Users\User\test\public\image\dashboard.png">
-								<p class="text_menu">Dashboard</p>
-							</router-link>
+					<div class="sidebar-main">
+						<p class="results_install_app_text">Results</p>
+						<br>
+						<div class="menu">
+							<!--dashboard-->
+							<div class="text_col">
+								<router-link to="/">
+									<img class="pic" src="\public\image\dashboard.png">
+									<p class="text_menu">Dashboard</p>
+								</router-link>
+							</div>
+						</div>
+						<br>
+						<br><br>
+						<p class="toolbox_text">Toolbox</p>
+						<br>
+						<!--Spin My Luck-->
+						<div class="menu">
+							<div class="text_col">
+								<router-link to="/spin-my-luck">
+									<img class="pic" src="\public\image\spin.png">
+									<p class="text_menu">Spin My Luck</p>
+								</router-link>
+							</div>
+						</div>
+						<br>
+						<!--Lucky Book-->
+						<div class="menu">
+							<div class="text_col">
+								<router-link to="/lucky-book">
+									<img class="pic" src="\public\image\book.png">
+									<p class="text_menu">Lucky Book</p>
+								</router-link>
+							</div>
 						</div>
 					</div>
-					<br>
-					<!--jackpot-->
-					<!--<div class="menu">
-        <div>
-          <img class="pic" src="C:\Users\User\test\public\image\jackpotInactive.svg">
-        </div>
-        <div>
-          <a class="text_menu" href="#">Jackpot</a>
-        </div>
-      </div>-->
-
-					<br><br>
-					<p class="toolbox_text">Toolbox</p>
-					<br>
-					<!--special draw date-->
-					<!--<div class="menu">
-						<div>
-							<img class="pic" src="C:\Users\User\test\public\image\special_draw_date.png">
-						</div>
-						<div>
-							<a class="text_menu" href="#">Special Draw Date</a>
-						</div>
-					</div>
-					<br>-->
-					<!--4D Number Analysis-->
-					<!--<div class="menu">
-        <div>
-          <img class="pic" src="C:\Users\User\test\public\image\4dnum.png">
-        </div>
-        <div>
-          <a class="text_menu" href="#">4D Number Analysis</a>
-        </div>
-      </div>
-      <br>-->
-					<!--Spin My Luck-->
-					<div class="menu">
-						<div class="text_col">
-							<router-link to="/spin-my-luck">
-								<img class="pic" src="C:\Users\User\test\public\image\spin.png">
-								<p class="text_menu">Spin My Luck</p>
-							</router-link>
-						</div>
-					</div>
-					<br>
-					<!--Hot 4D Number-->
-					<!--<div class="menu">
-						<div>
-							<img class="pic" src="C:\Users\User\test\public\image\hot.png">
-						</div>
-						<div>
-							<a class="text_menu" href="#">Hot 4D Number</a>
-						</div>
-					</div>
-					<br>-->
-					<!--Lucky Book-->
-					<div class="menu">
-						<div class="text_col">
-							<router-link to="/lucky-book">
-								<img class="pic" src="C:\Users\User\test\public\image\book.png">
-								<p class="text_menu">Lucky Book</p>
-							</router-link>
-						</div>
-					</div>
-
-
-					<p class="results_install_app_text">Install App</p>
-
-					<div class="install_app">
-						<a href=#><img width="80px" src="C:\Users\User\test\public\image\appStoreUSBlack.svg"></a>
-
-						<a href="#"><img width="70px" height="30px" src="C:\Users\User\test\public\image\APK.png"></a>
-					</div>
-					<p class="version_text">Version 3.0.1.15</p>
 				</div>
 			</div>
-		</nav>
+		</div>
 	</div>
 </template>
 
@@ -117,29 +67,35 @@ export default {
 /*4D Logo*/
 .logo_col {
 	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
-	flex-direction: row;
-	gap: 0.5rem;
+	justify-content: center;
 }
 
 .d_num_logo {
-	width: 40px;
+	padding-top: 20px;
+	width: 120px;
 	height: auto;
-	border-radius: 50%;
 }
 
 /*sidebar*/
 .sidebar {
-	width: 260px;
+	width: 206px;
 	background-color: #ffffff;
 	color: #fff;
-	padding: 23px;
+	/* padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 5px; */
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
 	overflow-y: auto;
+	border-bottom-right-radius: 50px;
+}
+
+.sidebar-main {
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 5px
 }
 
 .pic {
@@ -166,7 +122,6 @@ export default {
 	border-radius: 4px;
 	cursor: unset;
 }
-
 
 .sidebar ul li {
 	padding: 8px;
@@ -206,25 +161,6 @@ export default {
 	padding-top: 40px;
 	padding-bottom: 20px;
 	color: rgb(0, 0, 0);
-}
-
-.install_app {
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
-	flex-direction: row;
-	gap: 0.5rem;
-}
-
-.version_text {
-	text-align: center;
-	position: absolute;
-	bottom: 15px;
-	color: gray;
-	opacity: 0.5;
-	font-weight: 500;
-	margin-top: var(--chakra-space-3);
-	margin-bottom: var(--chakra-space-3);
 }
 
 .text_col {

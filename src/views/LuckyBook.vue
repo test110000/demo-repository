@@ -1,6 +1,6 @@
 <template>
 	<div class="lucky-book">
-		<p>this is Lucky Book Page</p>
+		<p></p>
 	</div>
 </template>
 <script>
