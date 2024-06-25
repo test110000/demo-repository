@@ -38,7 +38,7 @@ export default {
 }
 
 .right_col {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 53%;
 	transform: translateY(-50%);

@@ -29,7 +29,7 @@ import TopBarTM from './components/topbar-tablet-mobile.vue'
 export default {
 	name: 'App',
 	components: {
-
+		LeftSidebar,
 		TopBar,
 		RightColumn,
 		TopBarTM

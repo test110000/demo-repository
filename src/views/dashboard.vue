@@ -9,7 +9,7 @@
 						<div class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="magnum_logo_bg">
-									<img src="C:\Users\User\test\public\image\magnumwin.svg">
+									<img src="/public/image/magnumwin.svg">
 									<p style="color: white;">Magnum 4D</p>
 								</div>
 								<div>
@@ -389,7 +389,7 @@
 						<div class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="damacai_logo_bg">
-									<img src="C:\Users\User\test\public\image\damacai.svg">
+									<img src="/public/image/damacai2.svg">
 									<p style="color: white;">Da Ma Cai 1+3D</p>
 								</div>
 								<div>
@@ -713,7 +713,7 @@
 						<div class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="toto_logo_bg">
-									<img src="C:\Users\User\test\public\image\toto_logo.svg">
+									<img src="/public/image/toto.svg">
 									<p style="color: white;">SportsToto 4D</p>
 								</div>
 								<div>
@@ -1060,7 +1060,7 @@
 						<div class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="sg_logo_bg">
-									<img src="C:\Users\User\test\public\image\sg4d.svg">
+									<img src="/public/image/sg.svg">
 									<p style="color: white;">Magnum 4D</p>
 								</div>
 								<div>
@@ -1384,15 +1384,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
 </template>
 <script>
 export default {
@@ -1407,11 +1398,14 @@ export default {
 	}
 
 	.all_col {
-		margin-inline: 20px;
+		margin-inline: 206px;
+		margin-top: 80px;
+		overflow-y: scroll;
+		height: calc(-5rem + 100dvh);
 	}
 }
 
-@media and (max-width:) {}
+/* @media and (max-width:) {} */
 
 .all_column {
 	justify-content: center;
