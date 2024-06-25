@@ -24,7 +24,7 @@ import RightColumn from './components/right.vue'
 export default {
 	name: 'App',
 	components: {
-		LeftSidebar,
+
 		TopBar,
 
 	}
