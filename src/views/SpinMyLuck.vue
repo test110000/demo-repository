@@ -1,6 +1,6 @@
 <template>
 	<div class="spin-my-luck">
-		<p>this is Spin My Luck Page</p>
+		<p></p>
 	</div>
 </template>
 <script>

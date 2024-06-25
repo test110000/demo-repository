@@ -1,10 +1,13 @@
 <template>
-	<div style="background-color: grey;">
+	<!-- <div style="background-color: grey;"> -->
+	<div style="background-color: #f8f9fa;">
 		<div class="app-container">
 			<div class="screen1024">
-				<LeftSidebar />
+				<div class="Leftside-bar">
+					<LeftSidebar />
+				</div>
 			</div>
-			<div class="main-content">
+			<div>
 				<TopBar />
 				<router-view></router-view>
 			</div>
@@ -20,12 +23,16 @@
 import LeftSidebar from './components/LeftSidebar.vue'
 import TopBar from './components/topbar.vue'
 import RightColumn from './components/right.vue'
+import TopBarTM from './components/topbar-tablet-mobile.vue'
+
 
 export default {
 	name: 'App',
 	components: {
 		LeftSidebar,
 		TopBar,
+		RightColumn,
+		TopBarTM
 
 	}
 }
@@ -58,11 +65,15 @@ body {
 	padding: 20px;
 }
 
-@media screen and (max-width:1025px) {
+.Leftside-bar {
+	width: 206px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+@media screen and (max-width:1280px) {
 	.screen1024 {
 		display: none;
 	}
-
-	.screen1024topbar {}
 }
 </style>
