@@ -94,7 +94,6 @@
 							&#x21BA;
 						</a>
 					</div>
-
 				</div>
 				<div class="language-button">
 					<button>
@@ -164,13 +163,12 @@ export default {
 	height: 65px;
 	position: fixed;
 	top: 0;
+	right: 0;
 	width: 100%;
 	align-content: center;
 }
 
 .top {
-	left: 206px;
-	width: calc(100% - 206px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -328,15 +326,10 @@ export default {
 
 .refresh-icon {
 	font-size: 24px;
-	/* Size of the icon */
 	color: #CF2E2E;
-	/* Arrow color */
 	background-color: #ffffff;
-	/* White background */
 	border: 2px solid #CF2E2E;
-	/* Border to define the circle */
 	border-radius: 50%;
-	/* Round shape */
 	padding: 10px;
 	width: 50px;
 	height: 50px;
@@ -344,7 +337,6 @@ export default {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	/* Optional shadow for better visibility */
 }
 
 .refresh-arrow {

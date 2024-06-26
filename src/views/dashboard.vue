@@ -1415,13 +1415,15 @@ export default {
 
 /*Magnum logo bg*/
 .magnum_logo_bg {
-	align-content: center;
-	height: 180px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 75px;
-	border-bottom-left-radius: 75px;
+	height: 226px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
 	background-color: black;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 70px;
 }
 
 /*Da Ma Cai logo bg*/
