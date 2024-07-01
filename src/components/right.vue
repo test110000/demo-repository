@@ -42,7 +42,7 @@ export default {
 	right: 0;
 	top: 53%;
 	transform: translateY(-50%);
-	width: 50%;
+	width: 206px;
 	/* Adjust width as needed */
 	text-align: right;
 	max-width: 230px;

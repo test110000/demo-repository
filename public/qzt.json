@@ -1,0 +1,9002 @@
+[
+	{
+		"number": "000",
+		"content": {
+			"en": "PRAWN/CRAB",
+			"zh": "虾蟹/螃蟹/虾",
+			"ms": "UDANG KETAM"
+		},
+		"image": "qzt_000.png"
+	},
+	{
+		"number": "001",
+		"content": {
+			"en": "SKY",
+			"zh": "天上",
+			"ms": "LANGIT"
+		},
+		"image": "qzt_001.png"
+	},
+	{
+		"number": "002",
+		"content": {
+			"en": "LAND",
+			"zh": "地上",
+			"ms": "BUMI"
+		},
+		"image": "qzt_002.png"
+	},
+	{
+		"number": "003",
+		"content": {
+			"en": "JEALOUS",
+			"zh": "吃醋/妒忌",
+			"ms": "CEMBURU"
+		},
+		"image": "qzt_003.png"
+	},
+	{
+		"number": "004",
+		"content": {
+			"en": "SUGAR",
+			"zh": "糖",
+			"ms": "GULA"
+		},
+		"image": "qzt_004.png"
+	},
+	{
+		"number": "005",
+		"content": {
+			"en": "CHINESE MEDICINE",
+			"zh": "中药",
+			"ms": "UBAT CINA"
+		},
+		"image": "qzt_005.png"
+	},
+	{
+		"number": "006",
+		"content": {
+			"en": "PRESENT/GIFF",
+			"zh": "送物/礼物/礼品",
+			"ms": "HADIAH"
+		},
+		"image": "qzt_006.png"
+	},
+	{
+		"number": "007",
+		"content": {
+			"en": "TUA PEK KONG TEMPLE",
+			"zh": "大伯公",
+			"ms": "TOKONG BESAR"
+		},
+		"image": "qzt_007.png"
+	},
+	{
+		"number": "008",
+		"content": {
+			"en": "MALAY TOMBSTONE",
+			"zh": "巫人墓碑/马来人墓碑",
+			"ms": "BATU NISAN"
+		},
+		"image": "qzt_008.png"
+	},
+	{
+		"number": "009",
+		"content": {
+			"en": "STEAL BICYCLE",
+			"zh": "偷脚踏车",
+			"ms": "CURI BASIKAL"
+		},
+		"image": "qzt_009.png"
+	},
+	{
+		"number": "010",
+		"content": {
+			"en": "MEDICINE TEA/HERBA TEA",
+			"zh": "凉茶摊",
+			"ms": "GERAI TEA UBAT"
+		},
+		"image": "qzt_010.png"
+	},
+	{
+		"number": "011",
+		"content": {
+			"en": "FUNGUS/MUSHROOM",
+			"zh": "木耳/香菇/菌类",
+			"ms": "CENDAWAN"
+		},
+		"image": "qzt_011.png"
+	},
+	{
+		"number": "012",
+		"content": {
+			"en": "ABALONE MUSHROOM/CANNED ABALONE MUSHROOM",
+			"zh": "鲍鱼菇/罐头鲍鱼菇",
+			"ms": "CENDAWAN TIN"
+		},
+		"image": "qzt_012.png"
+	},
+	{
+		"number": "013",
+		"content": {
+			"en": "BICYCLE REPAIR",
+			"zh": "修理脚车",
+			"ms": "BAIKI BASIKAL"
+		},
+		"image": "qzt_013.png"
+	},
+	{
+		"number": "014",
+		"content": {
+			"en": "ELECTRIC REPAIR",
+			"zh": "修理电线",
+			"ms": "BAIKI WAYAR"
+		},
+		"image": "qzt_014.png"
+	},
+	{
+		"number": "015",
+		"content": {
+			"en": "GREEN BEAN NOODLE",
+			"zh": "金针冬粉",
+			"ms": "TANHOON PUCHONG"
+		},
+		"image": "qzt_015.png"
+	},
+	{
+		"number": "016",
+		"content": {
+			"en": "CAR QUEUE",
+			"zh": "汽车连接/车龙",
+			"ms": "MENUNDA"
+		},
+		"image": "qzt_016.png"
+	},
+	{
+		"number": "017",
+		"content": {
+			"en": "AIRPORT",
+			"zh": "飞机场",
+			"ms": "LAPANGAN TERBANG"
+		},
+		"image": "qzt_017.png"
+	},
+	{
+		"number": "018",
+		"content": {
+			"en": "AIR CRASH",
+			"zh": "飞机失事",
+			"ms": "NAHAS KAPAL TERBANG"
+		},
+		"image": "qzt_018.png"
+	},
+	{
+		"number": "019",
+		"content": {
+			"en": "FASHION CLOTHES",
+			"zh": "时装女服/时尚女服",
+			"ms": "BUTIK"
+		},
+		"image": "qzt_019.png"
+	},
+	{
+		"number": "020",
+		"content": {
+			"en": "MILITARY VEHICLES",
+			"zh": "军车载兵/军车",
+			"ms": "KENDERAAN TENTERA"
+		},
+		"image": "qzt_020.png"
+	},
+	{
+		"number": "021",
+		"content": {
+			"en": "CARRY RUBBER GLUE",
+			"zh": "载橡胶胶水",
+			"ms": "BAWA GETAH"
+		},
+		"image": "qzt_021.png"
+	},
+	{
+		"number": "022",
+		"content": {
+			"en": "CHOCOLATE",
+			"zh": "朱古力/巧克力",
+			"ms": "COKLAT"
+		},
+		"image": "qzt_022.png"
+	},
+	{
+		"number": "023",
+		"content": {
+			"en": "CHOCOLATE BISCUITS",
+			"zh": "朱古力饼/巧克力饼",
+			"ms": "BROOKLAX"
+		},
+		"image": "qzt_023.png"
+	},
+	{
+		"number": "024",
+		"content": {
+			"en": "LAWYER",
+			"zh": "律师",
+			"ms": "PEGUAM"
+		},
+		"image": "qzt_024.png"
+	},
+	{
+		"number": "025",
+		"content": {
+			"en": "HUSBAND AND WIFE",
+			"zh": "夫妻相逢/夫妇",
+			"ms": "SUAMI ISTERI"
+		},
+		"image": "qzt_025.png"
+	},
+	{
+		"number": "026",
+		"content": {
+			"en": "KEBAYA/NYONYA CLOTHES",
+			"zh": "娘惹衫/卡峇雅",
+			"ms": "BAJU KEBAYA"
+		},
+		"image": "qzt_026.png"
+	},
+	{
+		"number": "027",
+		"content": {
+			"en": "PHOTOGRAPHY SHOP",
+			"zh": "照相馆/照相店",
+			"ms": "KEDAI FOTO"
+		},
+		"image": "qzt_027.png"
+	},
+	{
+		"number": "028",
+		"content": {
+			"en": "FILM PRINTING,PHOTO PRINTING",
+			"zh": "洗菲林/照片冲印",
+			"ms": "CUCI GAMBAR"
+		},
+		"image": "qzt_028.png"
+	},
+	{
+		"number": "029",
+		"content": {
+			"en": "MAKING CLOTHES/TAILOR MADE",
+			"zh": "做衣服/量身定做",
+			"ms": "BIKIN BAJU"
+		},
+		"image": "qzt_029.png"
+	},
+	{
+		"number": "030",
+		"content": {
+			"en": "GROCERY STORE",
+			"zh": "杂货店",
+			"ms": "KEDAI"
+		},
+		"image": "qzt_030.png"
+	},
+	{
+		"number": "031",
+		"content": {
+			"en": "BUY RICE",
+			"zh": "买米",
+			"ms": "BELI BERAS"
+		},
+		"image": "qzt_031.png"
+	},
+	{
+		"number": "032",
+		"content": {
+			"en": "DELIVERY",
+			"zh": "送货/快递",
+			"ms": "HANTAR BARANG RUNCIT"
+		},
+		"image": "qzt_032.png"
+	},
+	{
+		"number": "033",
+		"content": {
+			"en": "COIN",
+			"zh": "铜元/钱币/硬币",
+			"ms": "SYILING KUNO"
+		},
+		"image": "qzt_033.png"
+	},
+	{
+		"number": "034",
+		"content": {
+			"en": "PHARMACY",
+			"zh": "西药房",
+			"ms": "FARMASI"
+		},
+		"image": "qzt_034.png"
+	},
+	{
+		"number": "035",
+		"content": {
+			"en": "PAPER/EMERY PAPER",
+			"zh": "粗纸/纸张/砂纸",
+			"ms": "KERTAS KASAR"
+		},
+		"image": "qzt_035.png"
+	},
+	{
+		"number": "036",
+		"content": {
+			"en": "BLADE",
+			"zh": "刀片",
+			"ms": "PISAU CUKUR"
+		},
+		"image": "qzt_036.png"
+	},
+	{
+		"number": "037",
+		"content": {
+			"en": "RUBBER BAND",
+			"zh": "橡皮筋",
+			"ms": "TALI GETAH"
+		},
+		"image": "qzt_037.png"
+	},
+	{
+		"number": "038",
+		"content": {
+			"en": "WEEDING",
+			"zh": "锄草",
+			"ms": "KEMASKAN TANAH"
+		},
+		"image": "qzt_038.png"
+	},
+	{
+		"number": "039",
+		"content": {
+			"en": "WHITE ANT/TERMITE",
+			"zh": "白蚁",
+			"ms": "ANAI2"
+		},
+		"image": "qzt_039.png"
+	},
+	{
+		"number": "040",
+		"content": {
+			"en": "DRINK BEER",
+			"zh": "喝啤酒",
+			"ms": "MINUM BIR"
+		},
+		"image": "qzt_040.png"
+	},
+	{
+		"number": "041",
+		"content": {
+			"en": "SELL LOTTERY/LOTTERY GIRL",
+			"zh": "彩票女郎/卖彩票",
+			"ms": "JUAL TIKET LOTERI"
+		},
+		"image": "qzt_041.png"
+	},
+	{
+		"number": "042",
+		"content": {
+			"en": "COUGH",
+			"zh": "咳嗽",
+			"ms": "BATUK"
+		},
+		"image": "qzt_042.png"
+	},
+	{
+		"number": "043",
+		"content": {
+			"en": "LANGSAT",
+			"zh": "兰撒果/芦菇",
+			"ms": "BUAH LANGSAT"
+		},
+		"image": "qzt_043.png"
+	},
+	{
+		"number": "044",
+		"content": {
+			"en": "POST OFFICE",
+			"zh": "信局/邮局",
+			"ms": "PEJABAT POS"
+		},
+		"image": "qzt_044.png"
+	},
+	{
+		"number": "045",
+		"content": {
+			"en": "COFFEE SHOP",
+			"zh": "咖啡店",
+			"ms": "KEDAI KOPI"
+		},
+		"image": "qzt_045.png"
+	},
+	{
+		"number": "046",
+		"content": {
+			"en": "COFFEE STALL",
+			"zh": "咖啡摊/咖啡档口",
+			"ms": "GERAI KOPI"
+		},
+		"image": "qzt_046.png"
+	},
+	{
+		"number": "047",
+		"content": {
+			"en": "CHICKEN SHED/COOP",
+			"zh": "鸡寮/鸡棚",
+			"ms": "REBAN AYAM"
+		},
+		"image": "qzt_047.png"
+	},
+	{
+		"number": "048",
+		"content": {
+			"en": "SELL PORK",
+			"zh": "卖猪肉",
+			"ms": "JUAL KHINZIR"
+		},
+		"image": "qzt_048.png"
+	},
+	{
+		"number": "049",
+		"content": {
+			"en": "NA TUK KONG/DATO/DATUK",
+			"zh": "拿督公",
+			"ms": "TOKONG TEPI JALAN"
+		},
+		"image": "qzt_049.png"
+	},
+	{
+		"number": "050",
+		"content": {
+			"en": "COFFEE POWDER",
+			"zh": "咖啡粉",
+			"ms": "SERBUK KOPI"
+		},
+		"image": "qzt_050.png"
+	},
+	{
+		"number": "051",
+		"content": {
+			"en": "SELL COFFEE POWDER",
+			"zh": "卖咖啡粉",
+			"ms": "JUAL SERBUK KOPI"
+		},
+		"image": "qzt_051.png"
+	},
+	{
+		"number": "052",
+		"content": {
+			"en": "DETTOL",
+			"zh": "滴露",
+			"ms": "DETTOL"
+		},
+		"image": "qzt_052.png"
+	},
+	{
+		"number": "053",
+		"content": {
+			"en": "IDENTITY CARD LOST",
+			"zh": "登记失掉/身份证丢失",
+			"ms": "HILANG K/P"
+		},
+		"image": "qzt_053.png"
+	},
+	{
+		"number": "054",
+		"content": {
+			"en": "CHINESE CLUB",
+			"zh": "华人会馆",
+			"ms": "PERSATUAN CINA"
+		},
+		"image": "qzt_054.png"
+	},
+	{
+		"number": "055",
+		"content": {
+			"en": "WATER HOUSE",
+			"zh": "水上房屋",
+			"ms": "RUMAH ATAS LAUT"
+		},
+		"image": "qzt_055.png"
+	},
+	{
+		"number": "056",
+		"content": {
+			"en": "DIVINATION",
+			"zh": "卜卦",
+			"ms": "MENUJUM"
+		},
+		"image": "qzt_056.png"
+	},
+	{
+		"number": "057",
+		"content": {
+			"en": "SELL JAWA MEE/SELL MEE REBUS",
+			"zh": "卖吉灵面/卖爪哇面",
+			"ms": "MEE MAMAK"
+		},
+		"image": "qzt_057.png"
+	},
+	{
+		"number": "058",
+		"content": {
+			"en": "WATCH HORSE RACING",
+			"zh": "看跑马/看赛马",
+			"ms": "LUMBA KUDA"
+		},
+		"image": "qzt_058.png"
+	},
+	{
+		"number": "059",
+		"content": {
+			"en": "SONGKOK",
+			"zh": "宋谷帽",
+			"ms": "SONGKOK"
+		},
+		"image": "qzt_059.png"
+	},
+	{
+		"number": "060",
+		"content": {
+			"en": "HORSE GRAZING",
+			"zh": "马吃草",
+			"ms": "KUDA MAKAN RUMPUT"
+		},
+		"image": "qzt_060.png"
+	},
+	{
+		"number": "061",
+		"content": {
+			"en": "FERRY",
+			"zh": "渡轮",
+			"ms": "FERI"
+		},
+		"image": "qzt_061.png"
+	},
+	{
+		"number": "062",
+		"content": {
+			"en": "PAINT SAMPAN",
+			"zh": "油漆舢舨",
+			"ms": "CAT PERAHU"
+		},
+		"image": "qzt_062.png"
+	},
+	{
+		"number": "063",
+		"content": {
+			"en": "SIRIH",
+			"zh": "佬叶料/栳叶料",
+			"ms": "TEMPAT SIRIH"
+		},
+		"image": "qzt_063.png"
+	},
+	{
+		"number": "064",
+		"content": {
+			"en": "SICK CHILD",
+			"zh": "小孩生病",
+			"ms": "ANAK SAKIT"
+		},
+		"image": "qzt_064.png"
+	},
+	{
+		"number": "065",
+		"content": {
+			"en": "SHOVEL",
+			"zh": "铁铲",
+			"ms": "SODOK"
+		},
+		"image": "qzt_065.png"
+	},
+	{
+		"number": "066",
+		"content": {
+			"en": "VINTAGE/MAKE WINE",
+			"zh": "酿私酒/酿酒/酿三蒸酒",
+			"ms": "BUAT SAMSU"
+		},
+		"image": "qzt_066.png"
+	},
+	{
+		"number": "067",
+		"content": {
+			"en": "GIVING VALENTINES GIFT",
+			"zh": "送情人礼物",
+			"ms": "HADIAH KEPADA KEKASIH"
+		},
+		"image": "qzt_067.png"
+	},
+	{
+		"number": "068",
+		"content": {
+			"en": "DIVORCE",
+			"zh": "离婚",
+			"ms": "CERAI"
+		},
+		"image": "qzt_068.png"
+	},
+	{
+		"number": "069",
+		"content": {
+			"en": "COCONUT GRATER",
+			"zh": "敲椰子/手工刨椰丝",
+			"ms": "KETUK KELAPA"
+		},
+		"image": "qzt_069.png"
+	},
+	{
+		"number": "070",
+		"content": {
+			"en": "PLANT COCONUT TREE",
+			"zh": "种椰子/种椰树",
+			"ms": "TANAM KELAPA"
+		},
+		"image": "qzt_070.png"
+	},
+	{
+		"number": "071",
+		"content": {
+			"en": "TOY GUN",
+			"zh": "玩具手枪",
+			"ms": "PISTOL MAINAN"
+		},
+		"image": "qzt_071.png"
+	},
+	{
+		"number": "072",
+		"content": {
+			"en": "MINCE COCONUT",
+			"zh": "搅椰子",
+			"ms": "KISAR KELAPA"
+		},
+		"image": "qzt_072.png"
+	},
+	{
+		"number": "073",
+		"content": {
+			"en": "MOVIE STAR/ACTOR",
+			"zh": "电影明星",
+			"ms": "CELEBRITI PEREMPUAN"
+		},
+		"image": "qzt_073.png"
+	},
+	{
+		"number": "074",
+		"content": {
+			"en": "CATCH CRABS",
+			"zh": "捉蟹/捕螃蟹",
+			"ms": "TANGKAP KETAM"
+		},
+		"image": "qzt_074.png"
+	},
+	{
+		"number": "075",
+		"content": {
+			"en": "LANDSCAPE PHOTO",
+			"zh": "风景相片/风景照/风景图",
+			"ms": "GAMBAR PANDANGAN"
+		},
+		"image": "qzt_075.png"
+	},
+	{
+		"number": "076",
+		"content": {
+			"en": "ENGAGEMENT",
+			"zh": "订婚",
+			"ms": "BERTUNANG"
+		},
+		"image": "qzt_076.png"
+	},
+	{
+		"number": "077",
+		"content": {
+			"en": "SINGER PHOTO/SINGER PICTURE",
+			"zh": "歌女相片/歌星照片",
+			"ms": "GAMBAR PENYANYI"
+		},
+		"image": "qzt_077.png"
+	},
+	{
+		"number": "078",
+		"content": {
+			"en": "SELL PLASTER",
+			"zh": "卖膏药",
+			"ms": "JUAL UBAT"
+		},
+		"image": "qzt_078.png"
+	},
+	{
+		"number": "079",
+		"content": {
+			"en": "MAGIC",
+			"zh": "魔术表演",
+			"ms": "SILAP MATA"
+		},
+		"image": "qzt_079.png"
+	},
+	{
+		"number": "080",
+		"content": {
+			"en": "DRINK COCONUT WINE",
+			"zh": "喝椰酒",
+			"ms": "MINUM TUAK"
+		},
+		"image": "qzt_080.png"
+	},
+	{
+		"number": "081",
+		"content": {
+			"en": "SELL MILO",
+			"zh": "卖美禄",
+			"ms": "JUAL MILO"
+		},
+		"image": "qzt_081.png"
+	},
+	{
+		"number": "082",
+		"content": {
+			"en": "SELL OVALTINE",
+			"zh": "卖阿华田",
+			"ms": "JUAL OVALTINE"
+		},
+		"image": "qzt_082.png"
+	},
+	{
+		"number": "083",
+		"content": {
+			"en": "SELL COCOA/SELL CHOCOLATE POWDER",
+			"zh": "卖可可/卖可可粉/卖巧克力粉",
+			"ms": "JUAL KOKO"
+		},
+		"image": "qzt_083.png"
+	},
+	{
+		"number": "084",
+		"content": {
+			"en": "SHOP OF CHINESE DAY CHOOSE",
+			"zh": "择日馆",
+			"ms": "KEDAI NUJUM"
+		},
+		"image": "qzt_084.png"
+	},
+	{
+		"number": "085",
+		"content": {
+			"en": "CHOPPING WOOD",
+			"zh": "斩柴/劈柴",
+			"ms": "POTONG KAYU"
+		},
+		"image": "qzt_085.png"
+	},
+	{
+		"number": "086",
+		"content": {
+			"en": "KIDS ARGUING",
+			"zh": "小孩相骂/小孩吵架",
+			"ms": "BUDAK BERGADUH"
+		},
+		"image": "qzt_086.png"
+	},
+	{
+		"number": "087",
+		"content": {
+			"en": "KIDS FIGHTING",
+			"zh": "小孩相打/小孩打架",
+			"ms": "BUDAK BERTEMPUR"
+		},
+		"image": "qzt_087.png"
+	},
+	{
+		"number": "088",
+		"content": {
+			"en": "SELL OIL RICE",
+			"zh": "卖鸡油饭",
+			"ms": "JUAL MINYAK KELAPA"
+		},
+		"image": "qzt_088.png"
+	},
+	{
+		"number": "089",
+		"content": {
+			"en": "COLLECT OLD BOTTLE",
+			"zh": "收旧瓶/回收空酒瓶",
+			"ms": "BELI BOTOL"
+		},
+		"image": "qzt_089.png"
+	},
+	{
+		"number": "090",
+		"content": {
+			"en": "FOOT POLE",
+			"zh": "高脚屋柱/高脚屋水泥柱",
+			"ms": "LAPIK TIANG"
+		},
+		"image": "qzt_090.png"
+	},
+	{
+		"number": "091",
+		"content": {
+			"en": "SELL SALT FISH",
+			"zh": "卖咸鱼",
+			"ms": "IKAN MASIN"
+		},
+		"image": "qzt_091.png"
+	},
+	{
+		"number": "092",
+		"content": {
+			"en": "SAVE MONEY",
+			"zh": "邮局储金/储蓄存款",
+			"ms": "BSN"
+		},
+		"image": "qzt_092.png"
+	},
+	{
+		"number": "093",
+		"content": {
+			"en": "POST OFFICE",
+			"zh": "邮政局",
+			"ms": "PEJABAT POS"
+		},
+		"image": "qzt_093.png"
+	},
+	{
+		"number": "094",
+		"content": {
+			"en": "BUY STAMP",
+			"zh": "买邮票",
+			"ms": "BELI SETEM"
+		},
+		"image": "qzt_094.png"
+	},
+	{
+		"number": "095",
+		"content": {
+			"en": "STAMP",
+			"zh": "邮票",
+			"ms": "SETEM"
+		},
+		"image": "qzt_095.png"
+	},
+	{
+		"number": "096",
+		"content": {
+			"en": "BOVRIL",
+			"zh": "牛肉汁",
+			"ms": "BOVRIL"
+		},
+		"image": "qzt_096.png"
+	},
+	{
+		"number": "097",
+		"content": {
+			"en": "BIRDS NEST",
+			"zh": "燕窝",
+			"ms": "SARANG KASUT"
+		},
+		"image": "qzt_097.png"
+	},
+	{
+		"number": "098",
+		"content": {
+			"en": "GINSENG",
+			"zh": "高丽参/人参",
+			"ms": "JINGSING"
+		},
+		"image": "qzt_098.png"
+	},
+	{
+		"number": "099",
+		"content": {
+			"en": "GRIPE WATER",
+			"zh": "蛇药水/肥仔水/驱风剂",
+			"ms": "GRIPE WATER"
+		},
+		"image": "qzt_099.png"
+	},
+	{
+		"number": "100",
+		"content": {
+			"en": "MSG POWDER",
+			"zh": "味素粉/味精",
+			"ms": "SERBUK PERISA"
+		},
+		"image": "qzt_100.png"
+	},
+	{
+		"number": "101",
+		"content": {
+			"en": "TIGER",
+			"zh": "老虎",
+			"ms": "HARIMAU"
+		},
+		"image": "qzt_101.png"
+	},
+	{
+		"number": "102",
+		"content": {
+			"en": "TRAFFIC POLICE",
+			"zh": "交通警察",
+			"ms": "POLIS TRAFIK"
+		},
+		"image": "qzt_102.png"
+	},
+	{
+		"number": "103",
+		"content": {
+			"en": "GO FOR A SPIN",
+			"zh": "兜风",
+			"ms": "BAWA MAKAN ANGIN"
+		},
+		"image": "qzt_103.png"
+	},
+	{
+		"number": "104",
+		"content": {
+			"en": "CHECK DRIVING LICENSE",
+			"zh": "查驾驶执照",
+			"ms": "PERIKSA LESEN"
+		},
+		"image": "qzt_104.png"
+	},
+	{
+		"number": "105",
+		"content": {
+			"en": "SHOE REPAIR",
+			"zh": "补鞋",
+			"ms": "BAIKI KAUT"
+		},
+		"image": "qzt_105.png"
+	},
+	{
+		"number": "106",
+		"content": {
+			"en": "CARRY LEFT RICE",
+			"zh": "载冷饭/载隔夜饭/载剩饭",
+			"ms": "BAWA NASI BASI"
+		},
+		"image": "qzt_106.png"
+	},
+	{
+		"number": "107",
+		"content": {
+			"en": "BUY MARINATED FISH",
+			"zh": "买臭鱼/买腌制鱼",
+			"ms": "BELI IKAN BUSUK"
+		},
+		"image": "qzt_107.png"
+	},
+	{
+		"number": "108",
+		"content": {
+			"en": "CATCH PIGLETS",
+			"zh": "捉猪仔",
+			"ms": "TANGKAP ANAK KHINZIR"
+		},
+		"image": "qzt_108.png"
+	},
+	{
+		"number": "109",
+		"content": {
+			"en": "PLAY WITH FIREWORKS",
+			"zh": "玩烟花",
+			"ms": "MAIN BUNGA API"
+		},
+		"image": "qzt_109.png"
+	},
+	{
+		"number": "110",
+		"content": {
+			"en": "GARBAGE TRUCK",
+			"zh": "垃圾车",
+			"ms": "LOR SAMPAH"
+		},
+		"image": "qzt_110.png"
+	},
+	{
+		"number": "111",
+		"content": {
+			"en": "DEER ANTLER",
+			"zh": "鹿茸",
+			"ms": "TANDUK RUSA"
+		},
+		"image": "qzt_111.png"
+	},
+	{
+		"number": "112",
+		"content": {
+			"en": "CHICKEN AND CHICKS",
+			"zh": "母鸡及鸡仔",
+			"ms": "IBU DAN ANAK AYAM"
+		},
+		"image": "qzt_112.png"
+	},
+	{
+		"number": "113",
+		"content": {
+			"en": "WOOD SHOP",
+			"zh": "木板店",
+			"ms": "KEDAI PAPAN"
+		},
+		"image": "qzt_113.png"
+	},
+	{
+		"number": "114",
+		"content": {
+			"en": "BATTERY AND BULB",
+			"zh": "电池灯泡",
+			"ms": "BATERI"
+		},
+		"image": "qzt_114.png"
+	},
+	{
+		"number": "115",
+		"content": {
+			"en": "HOSPITAL",
+			"zh": "医院",
+			"ms": "HOSPITAL"
+		},
+		"image": "qzt_115.png"
+	},
+	{
+		"number": "116",
+		"content": {
+			"en": "VISITING",
+			"zh": "探病人",
+			"ms": "LAWAT ORANG SAKIT"
+		},
+		"image": "qzt_116.png"
+	},
+	{
+		"number": "117",
+		"content": {
+			"en": "LEAD AWAY",
+			"zh": "牵走/牵",
+			"ms": "BAWA JALAN"
+		},
+		"image": "qzt_117.png"
+	},
+	{
+		"number": "118",
+		"content": {
+			"en": "FEED MILK/BABY FEEDING",
+			"zh": "喂牛奶/给孩子喂奶",
+			"ms": "MENYUAP SUSU"
+		},
+		"image": "qzt_118.png"
+	},
+	{
+		"number": "119",
+		"content": {
+			"en": "TEETH FILLING",
+			"zh": "补牙",
+			"ms": "BAIKI GIGI"
+		},
+		"image": "qzt_119.png"
+	},
+	{
+		"number": "120",
+		"content": {
+			"en": "DEAD MAN/FUNERAL",
+			"zh": "死人/葬礼/丧礼",
+			"ms": "ORANG MATI"
+		},
+		"image": "qzt_120.png"
+	},
+	{
+		"number": "121",
+		"content": {
+			"en": "GO FUNERAL",
+			"zh": "送死人/出席葬礼",
+			"ms": "UPACARA PENGEMBUMIAN"
+		},
+		"image": "qzt_121.png"
+	},
+	{
+		"number": "122",
+		"content": {
+			"en": "SHIPS CARGO UNLOAD",
+			"zh": "轮船卸货/船下货",
+			"ms": "KAPAL PUNGAH BARANG"
+		},
+		"image": "qzt_122.png"
+	},
+	{
+		"number": "123",
+		"content": {
+			"en": "MATERNITY HOME",
+			"zh": "留产院",
+			"ms": "PERGI HOSPITAL BERANAK"
+		},
+		"image": "qzt_123.png"
+	},
+	{
+		"number": "124",
+		"content": {
+			"en": "PADANG KOTALLAMA",
+			"zh": "关子角",
+			"ms": "PADANG KOTA"
+		},
+		"image": "qzt_124.png"
+	},
+	{
+		"number": "125",
+		"content": {
+			"en": "DOGFIGHT",
+			"zh": "狗打架",
+			"ms": "ANJING BERLAWAN"
+		},
+		"image": "qzt_125.png"
+	},
+	{
+		"number": "126",
+		"content": {
+			"en": "TAIPING LAKE GARDENS",
+			"zh": "太平湖",
+			"ms": "KOLAM TAIPING"
+		},
+		"image": "qzt_126.png"
+	},
+	{
+		"number": "127",
+		"content": {
+			"en": "MIDWIFE",
+			"zh": "接生婆/助產婆",
+			"ms": "BIDAN"
+		},
+		"image": "qzt_127.png"
+	},
+	{
+		"number": "128",
+		"content": {
+			"en": "FISH DIVING",
+			"zh": "鱼跳/鱼跃",
+			"ms": "IKAN LOMPAT"
+		},
+		"image": "qzt_128.png"
+	},
+	{
+		"number": "129",
+		"content": {
+			"en": "BIG SAMPAN/SHIP",
+			"zh": "大舢舨/大船/游艇",
+			"ms": "KAPAL BESAR"
+		},
+		"image": "qzt_129.png"
+	},
+	{
+		"number": "130",
+		"content": {
+			"en": "CATCH OYSTERS",
+			"zh": "捉蚝/捉蚵仔/收集蚝",
+			"ms": "KUTIP TIRAM"
+		},
+		"image": "qzt_130.png"
+	},
+	{
+		"number": "131",
+		"content": {
+			"en": "CATCH CLAMS",
+			"zh": "捉蚬/收集蚬子",
+			"ms": "KUTIP SIPUT HALIA"
+		},
+		"image": "qzt_131.png"
+	},
+	{
+		"number": "132",
+		"content": {
+			"en": "CATCH CLAMS",
+			"zh": "捉蛤/捉蛤蜊/收集蛤",
+			"ms": "KUTIP KERANG"
+		},
+		"image": "qzt_132.png"
+	},
+	{
+		"number": "133",
+		"content": {
+			"en": "VENEER/SCRAP WOOD",
+			"zh": "柴皮/木皮/废柴",
+			"ms": "KULIT KAYU"
+		},
+		"image": "qzt_133.png"
+	},
+	{
+		"number": "134",
+		"content": {
+			"en": "MEASURE CLOTH",
+			"zh": "量布/量布匹",
+			"ms": "SUKAT KAIN"
+		},
+		"image": "qzt_134.png"
+	},
+	{
+		"number": "135",
+		"content": {
+			"en": "KEK LOK SI TEMPLE",
+			"zh": "极乐寺",
+			"ms": "PAGODA KEK LOKSI"
+		},
+		"image": "qzt_135.png"
+	},
+	{
+		"number": "136",
+		"content": {
+			"en": "PAWN GOODS",
+			"zh": "典当物品/抵押",
+			"ms": "GADAI BARANG"
+		},
+		"image": "qzt_136.png"
+	},
+	{
+		"number": "137",
+		"content": {
+			"en": "PEEPING,OGLE",
+			"zh": "砍菜头/偷瞄/好色",
+			"ms": "PENIUPUAN SEKS"
+		},
+		"image": "qzt_137.png"
+	},
+	{
+		"number": "138",
+		"content": {
+			"en": "THAI TEMPLE",
+			"zh": "暹罗庙/泰庙",
+			"ms": "KUIL SIAM"
+		},
+		"image": "qzt_138.png"
+	},
+	{
+		"number": "139",
+		"content": {
+			"en": "CHEQUE",
+			"zh": "支票",
+			"ms": "CEK"
+		},
+		"image": "qzt_139.png"
+	},
+	{
+		"number": "140",
+		"content": {
+			"en": "WAITRESS",
+			"zh": "女招待",
+			"ms": "PELAYAN PEREMPUAN"
+		},
+		"image": "qzt_140.png"
+	},
+	{
+		"number": "141",
+		"content": {
+			"en": "FOOD CHECKS",
+			"zh": "粮食检查",
+			"ms": "PERIKSA MAKANAN"
+		},
+		"image": "qzt_141.png"
+	},
+	{
+		"number": "142",
+		"content": {
+			"en": "PATROL",
+			"zh": "巡逻",
+			"ms": "PETROL"
+		},
+		"image": "qzt_142.png"
+	},
+	{
+		"number": "143",
+		"content": {
+			"en": "BOMBING",
+			"zh": "轰炸",
+			"ms": "MENGEBOM"
+		},
+		"image": "qzt_143.png"
+	},
+	{
+		"number": "144",
+		"content": {
+			"en": "LEARNING TO RIDE BICYCLE",
+			"zh": "学骑脚车",
+			"ms": "BELAJAR BASIKAL"
+		},
+		"image": "qzt_144.png"
+	},
+	{
+		"number": "145",
+		"content": {
+			"en": "KID RIDES BICYCLE",
+			"zh": "小孩骑脚车",
+			"ms": "BUDAK NAIK BASIKAL"
+		},
+		"image": "qzt_145.png"
+	},
+	{
+		"number": "146",
+		"content": {
+			"en": "BANK",
+			"zh": "银行",
+			"ms": "BANK"
+		},
+		"image": "qzt_146.png"
+	},
+	{
+		"number": "147",
+		"content": {
+			"en": "BOOK STALL/NEWSSTAND",
+			"zh": "书摊/报摊",
+			"ms": "GERAI BUKU"
+		},
+		"image": "qzt_147.png"
+	},
+	{
+		"number": "148",
+		"content": {
+			"en": "SELL BOOK",
+			"zh": "卖书",
+			"ms": "JUAL BUKU"
+		},
+		"image": "qzt_148.png"
+	},
+	{
+		"number": "149",
+		"content": {
+			"en": "WASH CAR",
+			"zh": "洗车",
+			"ms": "CUCI KERETA"
+		},
+		"image": "qzt_149.png"
+	},
+	{
+		"number": "150",
+		"content": {
+			"en": "WASH BICYCLE",
+			"zh": "洗脚车",
+			"ms": "CUCI BASIKAL"
+		},
+		"image": "qzt_150.png"
+	},
+	{
+		"number": "151",
+		"content": {
+			"en": "PHOTOSTAT/PRINT/COPY",
+			"zh": "印刷/复印",
+			"ms": "MENCETAK"
+		},
+		"image": "qzt_151.png"
+	},
+	{
+		"number": "152",
+		"content": {
+			"en": "GO TO SCHOOL",
+			"zh": "去学校/上学",
+			"ms": "SEKOLAH"
+		},
+		"image": "qzt_152.png"
+	},
+	{
+		"number": "153",
+		"content": {
+			"en": "BELAT",
+			"zh": "插奎郎/传统捕鱼器",
+			"ms": "KEELONG"
+		},
+		"image": "qzt_153.png"
+	},
+	{
+		"number": "154",
+		"content": {
+			"en": "ABSTRACT RAMBUTAN",
+			"zh": "摘红毛丹/采红毛丹/採红毛丹",
+			"ms": "PETIK RAMBUTAN"
+		},
+		"image": "qzt_154.png"
+	},
+	{
+		"number": "155",
+		"content": {
+			"en": "MATCHMAKER",
+			"zh": "媒人/媒婆/红娘",
+			"ms": "ORANG TENGAH"
+		},
+		"image": "qzt_155.png"
+	},
+	{
+		"number": "156",
+		"content": {
+			"en": "DRYING THINGS",
+			"zh": "晒物品/晒东西",
+			"ms": "JEMUR BARANG"
+		},
+		"image": "qzt_156.png"
+	},
+	{
+		"number": "157",
+		"content": {
+			"en": "MOON",
+			"zh": "月亮",
+			"ms": "BULAN TERANG"
+		},
+		"image": "qzt_157.png"
+	},
+	{
+		"number": "158",
+		"content": {
+			"en": "KITCHEN",
+			"zh": "灶/厨房",
+			"ms": "DAPUR"
+		},
+		"image": "qzt_158.png"
+	},
+	{
+		"number": "159",
+		"content": {
+			"en": "MILL SAMBAL",
+			"zh": "研磨咖喱粉/研磨参峇",
+			"ms": "BUAT KARI"
+		},
+		"image": "qzt_159.png"
+	},
+	{
+		"number": "160",
+		"content": {
+			"en": "GIVE ANG POW/GIVE RED PACKET",
+			"zh": "给红包",
+			"ms": "BERI ANGPAU"
+		},
+		"image": "qzt_160.png"
+	},
+	{
+		"number": "161",
+		"content": {
+			"en": "BUTTER BREAD",
+			"zh": "面包牛油",
+			"ms": "MAJERIN ROTI"
+		},
+		"image": "qzt_161.png"
+	},
+	{
+		"number": "162",
+		"content": {
+			"en": "BEATS THE GONG",
+			"zh": "打锣/敲锣",
+			"ms": "KATOK CHE2"
+		},
+		"image": "qzt_162.png"
+	},
+	{
+		"number": "163",
+		"content": {
+			"en": "CHANGE ROOF TILE",
+			"zh": "换屋顶/换瓦片",
+			"ms": "TUKAR ATAP"
+		},
+		"image": "qzt_163.png"
+	},
+	{
+		"number": "164",
+		"content": {
+			"en": "RING THE BELL",
+			"zh": "敲钟/钟响/摇铃",
+			"ms": "PUKU LOCENG"
+		},
+		"image": "qzt_164.png"
+	},
+	{
+		"number": "165",
+		"content": {
+			"en": "BEAT A DRUM",
+			"zh": "打鼓",
+			"ms": "PUKUL GENDANG"
+		},
+		"image": "qzt_165.png"
+	},
+	{
+		"number": "166",
+		"content": {
+			"en": "DIG POTATO",
+			"zh": "挖番薯",
+			"ms": "KOREK UBI"
+		},
+		"image": "qzt_166.png"
+	},
+	{
+		"number": "167",
+		"content": {
+			"en": "COLLECT PROTECTION FEES",
+			"zh": "收保护费",
+			"ms": "PENJAHAR KUTIP WANG"
+		},
+		"image": "qzt_167.png"
+	},
+	{
+		"number": "168",
+		"content": {
+			"en": "SOAP",
+			"zh": "肥皂",
+			"ms": "SABUN"
+		},
+		"image": "qzt_168.png"
+	},
+	{
+		"number": "169",
+		"content": {
+			"en": "REPAIR CLOCK/REPAIR WATCH",
+			"zh": "修理时钟/修理手表",
+			"ms": "BAIKI JAM"
+		},
+		"image": "qzt_169.png"
+	},
+	{
+		"number": "170",
+		"content": {
+			"en": "REPAIR FOUNTAIN PEN",
+			"zh": "修理钢笔",
+			"ms": "BAIKI PEN"
+		},
+		"image": "qzt_170.png"
+	},
+	{
+		"number": "171",
+		"content": {
+			"en": "REPAIR SEWING MACHINE",
+			"zh": "修理针车",
+			"ms": "BAIKI MESIN JAHIT"
+		},
+		"image": "qzt_171.png"
+	},
+	{
+		"number": "172",
+		"content": {
+			"en": "BRACELET",
+			"zh": "手环/手镯",
+			"ms": "GELANG TANGAN"
+		},
+		"image": "qzt_172.png"
+	},
+	{
+		"number": "173",
+		"content": {
+			"en": "WELD STANNUM/STICK TIN",
+			"zh": "黏锡/锡焊接",
+			"ms": "PATRI TIMAH"
+		},
+		"image": "qzt_173.png"
+	},
+	{
+		"number": "174",
+		"content": {
+			"en": "JEWELLERY SHOP",
+			"zh": "金店/珠寶金行",
+			"ms": "KEDAI EMAS"
+		},
+		"image": "qzt_174.png"
+	},
+	{
+		"number": "175",
+		"content": {
+			"en": "LANDSCAPE PICTURE",
+			"zh": "山水画",
+			"ms": "GAMBAR HIASAN"
+		},
+		"image": "qzt_175.png"
+	},
+	{
+		"number": "176",
+		"content": {
+			"en": "CUTTING CLOTH",
+			"zh": "剪布",
+			"ms": "BELI KAIN"
+		},
+		"image": "qzt_176.png"
+	},
+	{
+		"number": "177",
+		"content": {
+			"en": "DOG MATING",
+			"zh": "狗亲密/狗交配",
+			"ms": "ANJING BERKASIH"
+		},
+		"image": "qzt_177.png"
+	},
+	{
+		"number": "178",
+		"content": {
+			"en": "ARREST GAMBLERS",
+			"zh": "捉赌/扫赌/抓赌",
+			"ms": "TANGKAP JUDI"
+		},
+		"image": "qzt_178.png"
+	},
+	{
+		"number": "179",
+		"content": {
+			"en": "MOSQUITO NET",
+			"zh": "蚊帐",
+			"ms": "KELAMBU"
+		},
+		"image": "qzt_179.png"
+	},
+	{
+		"number": "180",
+		"content": {
+			"en": "KEROSENE",
+			"zh": "火水/火油/煤油/土油",
+			"ms": "GAS"
+		},
+		"image": "qzt_180.png"
+	},
+	{
+		"number": "181",
+		"content": {
+			"en": "TIN BLOCK",
+			"zh": "锡块",
+			"ms": "JONGKONG TIMAH"
+		},
+		"image": "qzt_181.png"
+	},
+	{
+		"number": "182",
+		"content": {
+			"en": "PENICILLIN",
+			"zh": "盤尼西林/青霉素/抗生素",
+			"ms": "UBAT"
+		},
+		"image": "qzt_182.png"
+	},
+	{
+		"number": "183",
+		"content": {
+			"en": "TANJUNG BUNGAH",
+			"zh": "丹绒武雅",
+			"ms": "TANJUNG BUNGA"
+		},
+		"image": "qzt_183.png"
+	},
+	{
+		"number": "184",
+		"content": {
+			"en": "ARECA NUT PALM/PINANG TREE",
+			"zh": "槟榔树",
+			"ms": "POKOK PINANG"
+		},
+		"image": "qzt_184.png"
+	},
+	{
+		"number": "185",
+		"content": {
+			"en": "DATING/DATE",
+			"zh": "拍拖/约会",
+			"ms": "BERCINTA"
+		},
+		"image": "qzt_185.png"
+	},
+	{
+		"number": "186",
+		"content": {
+			"en": "HEART-TO-HEART TALK",
+			"zh": "谈心/谈心事/交心",
+			"ms": "BERCUMBU2"
+		},
+		"image": "qzt_186.png"
+	},
+	{
+		"number": "187",
+		"content": {
+			"en": "PLAYGROUND/FUN FAIR",
+			"zh": "游乐场/同乐会",
+			"ms": "FUN FAIR"
+		},
+		"image": "qzt_187.png"
+	},
+	{
+		"number": "188",
+		"content": {
+			"en": "PLAY PEG-TOP/PLAY SPINNING TOP",
+			"zh": "玩陀螺",
+			"ms": "MAIN BELANGKAS"
+		},
+		"image": "qzt_188.png"
+	},
+	{
+		"number": "189",
+		"content": {
+			"en": "RICKSHAW",
+			"zh": "人力车/黃包車",
+			"ms": "KERETA TARIK"
+		},
+		"image": "qzt_189.png"
+	},
+	{
+		"number": "190",
+		"content": {
+			"en": "SIC BO,BET BIG AND SMALL",
+			"zh": "赌大小/骰宝",
+			"ms": "MAIN JUDI"
+		},
+		"image": "qzt_190.png"
+	},
+	{
+		"number": "191",
+		"content": {
+			"en": "WINE SHOP/WINE STORE",
+			"zh": "酒店/卖酒的店/酒专卖店",
+			"ms": "KEDAI ARAK"
+		},
+		"image": "qzt_191.png"
+	},
+	{
+		"number": "192",
+		"content": {
+			"en": "KEY",
+			"zh": "钥匙/锁匙",
+			"ms": "KUNCI"
+		},
+		"image": "qzt_192.png"
+	},
+	{
+		"number": "193",
+		"content": {
+			"en": "STOVE",
+			"zh": "风炉",
+			"ms": "DAPUR ARANG"
+		},
+		"image": "qzt_193.png"
+	},
+	{
+		"number": "194",
+		"content": {
+			"en": "CHARCOAL IRON",
+			"zh": "铜烫斗/木炭烫斗",
+			"ms": "STRIKA"
+		},
+		"image": "qzt_194.png"
+	},
+	{
+		"number": "195",
+		"content": {
+			"en": "ELECTRIC KETTLE",
+			"zh": "电热水煲/电热水壶",
+			"ms": "CEREK ELEKTRIK"
+		},
+		"image": "qzt_195.png"
+	},
+	{
+		"number": "196",
+		"content": {
+			"en": "CHESS PIECE/PLAY CHESS",
+			"zh": "棋子/下棋",
+			"ms": "MAIN DUM"
+		},
+		"image": "qzt_196.png"
+	},
+	{
+		"number": "197",
+		"content": {
+			"en": "DRINK COCONUT WATER",
+			"zh": "喝椰水",
+			"ms": "MINUM AIR KELAPA"
+		},
+		"image": "qzt_197.png"
+	},
+	{
+		"number": "198",
+		"content": {
+			"en": "STAMP INK",
+			"zh": "印色/印章颜料",
+			"ms": "DAWAT COP"
+		},
+		"image": "qzt_198.png"
+	},
+	{
+		"number": "199",
+		"content": {
+			"en": "CHOP/SEAL/STAMP/RUBBER STAMP",
+			"zh": "印章/橡皮图章",
+			"ms": "COP"
+		},
+		"image": "qzt_199.png"
+	},
+	{
+		"number": "200",
+		"content": {
+			"en": "FREEZING ROOM",
+			"zh": "冷藏房/冷冻房/保鲜库",
+			"ms": "KEDAI PENDINGINAN"
+		},
+		"image": "qzt_200.png"
+	},
+	{
+		"number": "201",
+		"content": {
+			"en": "SELLING FISH",
+			"zh": "卖鱼/鱼档",
+			"ms": "PENJUAL IKAN"
+		},
+		"image": "qzt_201.png"
+	},
+	{
+		"number": "202",
+		"content": {
+			"en": "MATCH MOVIE/WATCH TV",
+			"zh": "看大戏/看电视节目/看电影",
+			"ms": "TENGOK WAYANG"
+		},
+		"image": "qzt_202.png"
+	},
+	{
+		"number": "203",
+		"content": {
+			"en": "MILO",
+			"zh": "美禄",
+			"ms": "MILO"
+		},
+		"image": "qzt_203.png"
+	},
+	{
+		"number": "204",
+		"content": {
+			"en": "SEND MAIL/SEND LETTER",
+			"zh": "送信/邮差送信",
+			"ms": "PERHANTAR SURAT"
+		},
+		"image": "qzt_204.png"
+	},
+	{
+		"number": "205",
+		"content": {
+			"en": "MUSSEL",
+			"zh": "蚌",
+			"ms": "KERANG"
+		},
+		"image": "qzt_205.png"
+	},
+	{
+		"number": "206",
+		"content": {
+			"en": "SWEEP GRAVE",
+			"zh": "扫墓/清明",
+			"ms": "BERSIHKAN KUBUR"
+		},
+		"image": "qzt_206.png"
+	},
+	{
+		"number": "207",
+		"content": {
+			"en": "MINING SHIP",
+			"zh": "採锡铁船/采矿船",
+			"ms": "KAPAL BESI"
+		},
+		"image": "qzt_207.png"
+	},
+	{
+		"number": "208",
+		"content": {
+			"en": "FILTER TIN",
+			"zh": "淘洗锡米/洗琉琅",
+			"ms": "MENULANG"
+		},
+		"image": "qzt_208.png"
+	},
+	{
+		"number": "209",
+		"content": {
+			"en": "FEMALE OF TIN FILTER",
+			"zh": "琉琅妇/琉琅女",
+			"ms": "PENGEMBARA WANITA"
+		},
+		"image": "qzt_209.png"
+	},
+	{
+		"number": "210",
+		"content": {
+			"en": "HARBOUR/PORT",
+			"zh": "港湾/码头/港口",
+			"ms": "LIKU SUNGAI"
+		},
+		"image": "qzt_210.png"
+	},
+	{
+		"number": "211",
+		"content": {
+			"en": "BISCUIT/COOKIES",
+			"zh": "饼干",
+			"ms": "BISKUT"
+		},
+		"image": "qzt_211.png"
+	},
+	{
+		"number": "212",
+		"content": {
+			"en": "PERMANENT/PERM HAIR",
+			"zh": "电头发/烫发",
+			"ms": "RAMBUT KRINTING"
+		},
+		"image": "qzt_212.png"
+	},
+	{
+		"number": "213",
+		"content": {
+			"en": "BIRDS NET",
+			"zh": "鸟巢/鸟窝",
+			"ms": "SARANG BURUNG"
+		},
+		"image": "qzt_213.png"
+	},
+	{
+		"number": "214",
+		"content": {
+			"en": "NEW VILLAGE",
+			"zh": "新村",
+			"ms": "KAMPUNG BARU"
+		},
+		"image": "qzt_214.png"
+	},
+	{
+		"number": "215",
+		"content": {
+			"en": "COMB HAIR",
+			"zh": "梳头发",
+			"ms": "SIKAT RAMBUT"
+		},
+		"image": "qzt_215.png"
+	},
+	{
+		"number": "216",
+		"content": {
+			"en": "CUTTING RICE",
+			"zh": "割稻",
+			"ms": "POTONG PADI"
+		},
+		"image": "qzt_216.png"
+	},
+	{
+		"number": "217",
+		"content": {
+			"en": "LOADING GOODS/CARRY ITEMS",
+			"zh": "载物品/载东西/载货物",
+			"ms": "HANTAR BARANG"
+		},
+		"image": "qzt_217.png"
+	},
+	{
+		"number": "218",
+		"content": {
+			"en": "PINEAPPLE",
+			"zh": "黄梨/菠萝/凤梨",
+			"ms": "NENAS"
+		},
+		"image": "qzt_218.png"
+	},
+	{
+		"number": "219",
+		"content": {
+			"en": "MARRY/GET MARRIED",
+			"zh": "结婚/娶妻/嫁人",
+			"ms": "KAHWIN"
+		},
+		"image": "qzt_219.png"
+	},
+	{
+		"number": "220",
+		"content": {
+			"en": "SPORTS GAME",
+			"zh": "运动会",
+			"ms": "SUKAN"
+		},
+		"image": "qzt_220.png"
+	},
+	{
+		"number": "221",
+		"content": {
+			"en": "SCARF/KERCHIEF/SHAWL",
+			"zh": "头巾/披肩/围巾",
+			"ms": "KAIN TUDUNG"
+		},
+		"image": "qzt_221.png"
+	},
+	{
+		"number": "222",
+		"content": {
+			"en": "MISUA/NOODLES",
+			"zh": "面线",
+			"ms": "MEE"
+		},
+		"image": "qzt_222.png"
+	},
+	{
+		"number": "223",
+		"content": {
+			"en": "BRUSH",
+			"zh": "棕刷/刷子",
+			"ms": "BERUS"
+		},
+		"image": "qzt_223.png"
+	},
+	{
+		"number": "224",
+		"content": {
+			"en": "TOOTHPASTE",
+			"zh": "牙膏",
+			"ms": "UBAT GIGI"
+		},
+		"image": "qzt_224.png"
+	},
+	{
+		"number": "225",
+		"content": {
+			"en": "TOOTH SOAP",
+			"zh": "牙皂",
+			"ms": "UBAT GIGI"
+		},
+		"image": "qzt_225.png"
+	},
+	{
+		"number": "226",
+		"content": {
+			"en": "CHEONGSAM",
+			"zh": "旗袍",
+			"ms": "CHEONGSAM"
+		},
+		"image": "qzt_226.png"
+	},
+	{
+		"number": "227",
+		"content": {
+			"en": "IRONING",
+			"zh": "烫衣服",
+			"ms": "STRIKA"
+		},
+		"image": "qzt_227.png"
+	},
+	{
+		"number": "228",
+		"content": {
+			"en": "SEWING CLOTHES",
+			"zh": "缝衣服/缝织",
+			"ms": "MENJAHI"
+		},
+		"image": "qzt_228.png"
+	},
+	{
+		"number": "229",
+		"content": {
+			"en": "PILLOW",
+			"zh": "枕头",
+			"ms": "BANTAL"
+		},
+		"image": "qzt_229.png"
+	},
+	{
+		"number": "230",
+		"content": {
+			"en": "CLOSET",
+			"zh": "衣橱/衣柜衣服",
+			"ms": "ALMARI"
+		},
+		"image": "qzt_230.png"
+	},
+	{
+		"number": "231",
+		"content": {
+			"en": "RAINCOAT",
+			"zh": "雨衣",
+			"ms": "BAJU HUJAN"
+		},
+		"image": "qzt_231.png"
+	},
+	{
+		"number": "232",
+		"content": {
+			"en": "PHONE CALL",
+			"zh": "打电话/讲电话",
+			"ms": "MENELEFON"
+		},
+		"image": "qzt_232.png"
+	},
+	{
+		"number": "233",
+		"content": {
+			"en": "MORTAR",
+			"zh": "臼",
+			"ms": "LESUNG"
+		},
+		"image": "qzt_233.png"
+	},
+	{
+		"number": "234",
+		"content": {
+			"en": "CAP/HAT",
+			"zh": "毡帽/帽子",
+			"ms": "TOPI"
+		},
+		"image": "qzt_234.png"
+	},
+	{
+		"number": "235",
+		"content": {
+			"en": "CARRY PEOPLE",
+			"zh": "载人",
+			"ms": "BAWA ORANG"
+		},
+		"image": "qzt_235.png"
+	},
+	{
+		"number": "236",
+		"content": {
+			"en": "TAPPING RUBBER TREES",
+			"zh": "割树胶",
+			"ms": "MENOREH"
+		},
+		"image": "qzt_236.png"
+	},
+	{
+		"number": "237",
+		"content": {
+			"en": "CUTTING DOWN TREES",
+			"zh": "砍树/伐木",
+			"ms": "MENOREH GETAH"
+		},
+		"image": "qzt_237.png"
+	},
+	{
+		"number": "238",
+		"content": {
+			"en": "COMB",
+			"zh": "木梳/梳子",
+			"ms": "SIKAT"
+		},
+		"image": "qzt_238.png"
+	},
+	{
+		"number": "239",
+		"content": {
+			"en": "BATTLESHIP",
+			"zh": "战舰/航空母艦",
+			"ms": "KAPAL PERANG"
+		},
+		"image": "qzt_239.png"
+	},
+	{
+		"number": "240",
+		"content": {
+			"en": "OVALTINE",
+			"zh": "阿华田",
+			"ms": "OVALTINE"
+		},
+		"image": "qzt_240.png"
+	},
+	{
+		"number": "241",
+		"content": {
+			"en": "SULTAN",
+			"zh": "苏丹/最高元首",
+			"ms": "SULTAN"
+		},
+		"image": "qzt_241.png"
+	},
+	{
+		"number": "242",
+		"content": {
+			"en": "WASHING FLOOR",
+			"zh": "清洗地上/清洗地板",
+			"ms": "CUCI LANTAI"
+		},
+		"image": "qzt_242.png"
+	},
+	{
+		"number": "243",
+		"content": {
+			"en": "OFFER BIRTHDAY FELICITATIONS",
+			"zh": "拜寿",
+			"ms": "HARI JADI"
+		},
+		"image": "qzt_243.png"
+	},
+	{
+		"number": "244",
+		"content": {
+			"en": "ACCOUNT BOOK",
+			"zh": "账簿",
+			"ms": "BUKU AKAUN"
+		},
+		"image": "qzt_244.png"
+	},
+	{
+		"number": "245",
+		"content": {
+			"en": "SOY SAUCE",
+			"zh": "豆油/酱油/豉油",
+			"ms": "TOWYU"
+		},
+		"image": "qzt_245.png"
+	},
+	{
+		"number": "246",
+		"content": {
+			"en": "FUNERAL",
+			"zh": "出殡/出山",
+			"ms": "PENGEMBUMIAN"
+		},
+		"image": "qzt_246.png"
+	},
+	{
+		"number": "247",
+		"content": {
+			"en": "CIRCUS",
+			"zh": "马戏团",
+			"ms": "SERKUS"
+		},
+		"image": "qzt_247.png"
+	},
+	{
+		"number": "248",
+		"content": {
+			"en": "STEELYARD",
+			"zh": "秤磅/手杆秤/秤砣",
+			"ms": "DACING"
+		},
+		"image": "qzt_248.png"
+	},
+	{
+		"number": "249",
+		"content": {
+			"en": "CHILD BORN",
+			"zh": "生产/产子/生孩子/坐产",
+			"ms": "BERSALIN"
+		},
+		"image": "qzt_249.png"
+	},
+	{
+		"number": "250",
+		"content": {
+			"en": "LEARN TO DRIVE",
+			"zh": "学驾车/学开车/学驾驶",
+			"ms": "BELAJAR KERETA"
+		},
+		"image": "qzt_250.png"
+	},
+	{
+		"number": "251",
+		"content": {
+			"en": "GAMBLE",
+			"zh": "赌博",
+			"ms": "MAIN JUDI"
+		},
+		"image": "qzt_251.png"
+	},
+	{
+		"number": "252",
+		"content": {
+			"en": "LEATHER SHOE",
+			"zh": "皮鞋",
+			"ms": "KASUT KULIT"
+		},
+		"image": "qzt_252.png"
+	},
+	{
+		"number": "253",
+		"content": {
+			"en": "SELLING THINGS",
+			"zh": "卖东西",
+			"ms": "JUAL BARANGAN"
+		},
+		"image": "qzt_253.png"
+	},
+	{
+		"number": "254",
+		"content": {
+			"en": "CUT BANANA LEAF",
+			"zh": "割蕉叶",
+			"ms": "POTONG DUAN PISANG"
+		},
+		"image": "qzt_254.png"
+	},
+	{
+		"number": "255",
+		"content": {
+			"en": "MINING FRUIT",
+			"zh": "采果子/摘果子/采水果",
+			"ms": "PETIK BUAH"
+		},
+		"image": "qzt_255.png"
+	},
+	{
+		"number": "256",
+		"content": {
+			"en": "BELT",
+			"zh": "皮带/腰带/裤带",
+			"ms": "TALI BENGKUNG"
+		},
+		"image": "qzt_256.png"
+	},
+	{
+		"number": "257",
+		"content": {
+			"en": "TABLE",
+			"zh": "桌子",
+			"ms": "MEJA"
+		},
+		"image": "qzt_257.png"
+	},
+	{
+		"number": "258",
+		"content": {
+			"en": "DRESSING",
+			"zh": "梳妆/梳洗打扮",
+			"ms": "MEJA SOLEK"
+		},
+		"image": "qzt_258.png"
+	},
+	{
+		"number": "259",
+		"content": {
+			"en": "BRICK",
+			"zh": "砖头/砖块",
+			"ms": "BATU BINAAN"
+		},
+		"image": "qzt_259.png"
+	},
+	{
+		"number": "260",
+		"content": {
+			"en": "THIEF/BANDIT/ROBBER",
+			"zh": "小偷/贼/匪徒/强盗",
+			"ms": "PENCURI"
+		},
+		"image": "qzt_260.png"
+	},
+	{
+		"number": "261",
+		"content": {
+			"en": "SMOKING",
+			"zh": "吸烟/抽烟",
+			"ms": "MEROKOK"
+		},
+		"image": "qzt_261.png"
+	},
+	{
+		"number": "262",
+		"content": {
+			"en": "UMBRELLA",
+			"zh": "雨伞",
+			"ms": "PAYUNG"
+		},
+		"image": "qzt_262.png"
+	},
+	{
+		"number": "263",
+		"content": {
+			"en": "RIFLE",
+			"zh": "步枪/来福枪",
+			"ms": "SENAPANG"
+		},
+		"image": "qzt_263.png"
+	},
+	{
+		"number": "264",
+		"content": {
+			"en": "ROWING BOAT/BOATING",
+			"zh": "划船/划艇/划舢板",
+			"ms": "DAYUNG SAMPAN"
+		},
+		"image": "qzt_264.png"
+	},
+	{
+		"number": "265",
+		"content": {
+			"en": "HANDBAG",
+			"zh": "手袋/肩袋式手提包",
+			"ms": "BAG TANGAN"
+		},
+		"image": "qzt_265.png"
+	},
+	{
+		"number": "266",
+		"content": {
+			"en": "DOOR",
+			"zh": "门户",
+			"ms": "PINTU"
+		},
+		"image": "qzt_266.png"
+	},
+	{
+		"number": "267",
+		"content": {
+			"en": "APPLE",
+			"zh": "苹果",
+			"ms": "BUAH EPAL"
+		},
+		"image": "qzt_267.png"
+	},
+	{
+		"number": "268",
+		"content": {
+			"en": "TOILET/WASH ROOM",
+			"zh": "厕所",
+			"ms": "TANDAS"
+		},
+		"image": "qzt_268.png"
+	},
+	{
+		"number": "269",
+		"content": {
+			"en": "SAILBOAT",
+			"zh": "帆船",
+			"ms": "KAPAL LAYAR"
+		},
+		"image": "qzt_269.png"
+	},
+	{
+		"number": "270",
+		"content": {
+			"en": "FISHING BY BOAT",
+			"zh": "电船捕鱼/捕鱼船捕鱼",
+			"ms": "PUKAT IKAN"
+		},
+		"image": "qzt_270.png"
+	},
+	{
+		"number": "271",
+		"content": {
+			"en": "FISHING NET",
+			"zh": "鱼网/渔网",
+			"ms": "JALA"
+		},
+		"image": "qzt_271.png"
+	},
+	{
+		"number": "272",
+		"content": {
+			"en": "LIQUOR/WHISKEY/CHAMPAGNE/RED WINE",
+			"zh": "酒/威士忌/香槟/红酒",
+			"ms": "ARAK"
+		},
+		"image": "qzt_272.png"
+	},
+	{
+		"number": "273",
+		"content": {
+			"en": "ANT",
+			"zh": "蚂蚁",
+			"ms": "SEMUT"
+		},
+		"image": "qzt_273.png"
+	},
+	{
+		"number": "274",
+		"content": {
+			"en": "CEREMONY FOR A ONE MONTH BIRTHDAY",
+			"zh": "做满月/婴儿满月",
+			"ms": "ANAK GENAP BULAN"
+		},
+		"image": "qzt_274.png"
+	},
+	{
+		"number": "275",
+		"content": {
+			"en": "FALL",
+			"zh": "跌倒",
+			"ms": "JATUH"
+		},
+		"image": "qzt_275.png"
+	},
+	{
+		"number": "276",
+		"content": {
+			"en": "VEGETABLE",
+			"zh": "青菜/蔬菜",
+			"ms": "SAYUR"
+		},
+		"image": "qzt_276.png"
+	},
+	{
+		"number": "277",
+		"content": {
+			"en": "BABY SUCKING/BABY SUCKING BREAST MILK",
+			"zh": "小孩吸奶/婴儿吸母乳",
+			"ms": "MINUM SUSU"
+		},
+		"image": "qzt_277.png"
+	},
+	{
+		"number": "278",
+		"content": {
+			"en": "CLOTH SHOES",
+			"zh": "布鞋/便鞋",
+			"ms": "KASUT KAIN"
+		},
+		"image": "qzt_278.png"
+	},
+	{
+		"number": "279",
+		"content": {
+			"en": "PLAY/HAVE FUN",
+			"zh": "玩耍/游玩",
+			"ms": "BERMAIN"
+		},
+		"image": "qzt_279.png"
+	},
+	{
+		"number": "280",
+		"content": {
+			"en": "FLOWERS",
+			"zh": "鲜花",
+			"ms": "BUNGA"
+		},
+		"image": "qzt_280.png"
+	},
+	{
+		"number": "281",
+		"content": {
+			"en": "CAR ACCIDENT/CAR CRASH",
+			"zh": "撞车/车辆相撞/车祸",
+			"ms": "KEMALANGAN"
+		},
+		"image": "qzt_281.png"
+	},
+	{
+		"number": "282",
+		"content": {
+			"en": "POT/PAN/BOILER",
+			"zh": "锅/镬",
+			"ms": "KUALI"
+		},
+		"image": "qzt_282.png"
+	},
+	{
+		"number": "283",
+		"content": {
+			"en": "GARDEN/PARK",
+			"zh": "花园/公园",
+			"ms": "KEBUN BUNGA"
+		},
+		"image": "qzt_283.png"
+	},
+	{
+		"number": "284",
+		"content": {
+			"en": "SOCK/HOSE",
+			"zh": "袜子/长袜/短袜",
+			"ms": "STOKING"
+		},
+		"image": "qzt_284.png"
+	},
+	{
+		"number": "285",
+		"content": {
+			"en": "INK STONE",
+			"zh": "砚",
+			"ms": "DAWAT CINA"
+		},
+		"image": "qzt_285.png"
+	},
+	{
+		"number": "286",
+		"content": {
+			"en": "FIGHT/SCUFFLE/BRAWL",
+			"zh": "打架/斗殴",
+			"ms": "LAWAN"
+		},
+		"image": "qzt_286.png"
+	},
+	{
+		"number": "287",
+		"content": {
+			"en": "WHEAT FLOUR",
+			"zh": "面粉/小麦粉",
+			"ms": "TEPUNG GANDUM"
+		},
+		"image": "qzt_287.png"
+	},
+	{
+		"number": "288",
+		"content": {
+			"en": "COCOA/KOKO/CHOCOLATE POWDER",
+			"zh": "可可/可可粉/巧克力粉",
+			"ms": "KOKO"
+		},
+		"image": "qzt_288.png"
+	},
+	{
+		"number": "289",
+		"content": {
+			"en": "RULER",
+			"zh": "尺",
+			"ms": "PEMBARIS KAYU"
+		},
+		"image": "qzt_289.png"
+	},
+	{
+		"number": "290",
+		"content": {
+			"en": "TAKE WATER",
+			"zh": "取水",
+			"ms": "AMBIL AIR"
+		},
+		"image": "qzt_290.png"
+	},
+	{
+		"number": "291",
+		"content": {
+			"en": "CLOCK",
+			"zh": "时钟",
+			"ms": "JAM"
+		},
+		"image": "qzt_291.png"
+	},
+	{
+		"number": "292",
+		"content": {
+			"en": "PERFUMED SOAP/TOILET SOAP",
+			"zh": "香皂",
+			"ms": "SABUN"
+		},
+		"image": "qzt_292.png"
+	},
+	{
+		"number": "293",
+		"content": {
+			"en": "COTTAGE/HUT",
+			"zh": "茅屋/草屋/茅舍/棚屋",
+			"ms": "PONDOK"
+		},
+		"image": "qzt_293.png"
+	},
+	{
+		"number": "294",
+		"content": {
+			"en": "REPAIRING CLOTHES",
+			"zh": "修补衣裤",
+			"ms": "JAHIT BAJU"
+		},
+		"image": "qzt_294.png"
+	},
+	{
+		"number": "295",
+		"content": {
+			"en": "CLAMS",
+			"zh": "蚬子/蜊仔",
+			"ms": "KERANG"
+		},
+		"image": "qzt_295.png"
+	},
+	{
+		"number": "296",
+		"content": {
+			"en": "BREAK DISHES",
+			"zh": "打破碗碟",
+			"ms": "MANGKOK PECAH"
+		},
+		"image": "qzt_296.png"
+	},
+	{
+		"number": "297",
+		"content": {
+			"en": "PICK COCONUT",
+			"zh": "拾椰子/捡椰/收集椰",
+			"ms": "KUTIP KELAPA"
+		},
+		"image": "qzt_297.png"
+	},
+	{
+		"number": "298",
+		"content": {
+			"en": "SOFT DRINK/SODA WATER",
+			"zh": "汽水",
+			"ms": "MINUMAN BERGAS"
+		},
+		"image": "qzt_298.png"
+	},
+	{
+		"number": "299",
+		"content": {
+			"en": "KNIFE",
+			"zh": "刀/刀子/小刀",
+			"ms": "PISAU"
+		},
+		"image": "qzt_299.png"
+	},
+	{
+		"number": "300",
+		"content": {
+			"en": "COCONUT TREE",
+			"zh": "椰树",
+			"ms": "POKOK KELAPA"
+		},
+		"image": "qzt_300.png"
+	},
+	{
+		"number": "301",
+		"content": {
+			"en": "CHAMPION",
+			"zh": "状元/冠军",
+			"ms": "CHONG GUAN"
+		},
+		"image": "qzt_301.png"
+	},
+	{
+		"number": "302",
+		"content": {
+			"en": "WIRE",
+			"zh": "吕线/电线",
+			"ms": "DAWAI"
+		},
+		"image": "qzt_302.png"
+	},
+	{
+		"number": "303",
+		"content": {
+			"en": "COLLECT COCONUT LEAF",
+			"zh": "拾椰叶/捡椰叶",
+			"ms": "KUTIP DAUN"
+		},
+		"image": "qzt_303.png"
+	},
+	{
+		"number": "304",
+		"content": {
+			"en": "RADIO",
+			"zh": "收音机",
+			"ms": "RADIO"
+		},
+		"image": "qzt_304.png"
+	},
+	{
+		"number": "305",
+		"content": {
+			"en": "DRY THE CLOTHES",
+			"zh": "晾晒衣服",
+			"ms": "JEMUR"
+		},
+		"image": "qzt_305.png"
+	},
+	{
+		"number": "306",
+		"content": {
+			"en": "ACTOR/ACTRESS",
+			"zh": "影星/艺员/演员/艺人",
+			"ms": "SENIWATI"
+		},
+		"image": "qzt_306.png"
+	},
+	{
+		"number": "307",
+		"content": {
+			"en": "GOLD MEDAL/GOLD TABLET",
+			"zh": "金牌",
+			"ms": "PINGAT EMAS"
+		},
+		"image": "qzt_307.png"
+	},
+	{
+		"number": "308",
+		"content": {
+			"en": "PULLING BOAT",
+			"zh": "拉船",
+			"ms": "TARIK SAMPAN"
+		},
+		"image": "qzt_308.png"
+	},
+	{
+		"number": "309",
+		"content": {
+			"en": "PAPER FAN",
+			"zh": "纸扇/扇子",
+			"ms": "KIPAS"
+		},
+		"image": "qzt_309.png"
+	},
+	{
+		"number": "310",
+		"content": {
+			"en": "CLIMB TREE",
+			"zh": "爬树",
+			"ms": "PANJAT POKOK"
+		},
+		"image": "qzt_310.png"
+	},
+	{
+		"number": "311",
+		"content": {
+			"en": "RACE",
+			"zh": "赛跑/竞赛/比赛",
+			"ms": "BERLUMBA"
+		},
+		"image": "qzt_311.png"
+	},
+	{
+		"number": "312",
+		"content": {
+			"en": "FIRE DISASTER/HOUSE BURNING",
+			"zh": "火烧屋/火灾",
+			"ms": "RUMAH TERBAKAR"
+		},
+		"image": "qzt_312.png"
+	},
+	{
+		"number": "313",
+		"content": {
+			"en": "MAIZE/CORN",
+			"zh": "玉蜀黍/玉米",
+			"ms": "JAGUNG"
+		},
+		"image": "qzt_313.png"
+	},
+	{
+		"number": "314",
+		"content": {
+			"en": "MAKE COCONUT OIL/MAKE COCONUT MILK",
+			"zh": "煎椰油/煮椰漿",
+			"ms": "BUAT MINYAK KELAPA"
+		},
+		"image": "qzt_314.png"
+	},
+	{
+		"number": "315",
+		"content": {
+			"en": "LIZARD/GECKO",
+			"zh": "壁虎",
+			"ms": "CICAK"
+		},
+		"image": "qzt_315.png"
+	},
+	{
+		"number": "316",
+		"content": {
+			"en": "RED CANDLE",
+			"zh": "红烛/红蜡烛",
+			"ms": "LILIN MERAH"
+		},
+		"image": "qzt_316.png"
+	},
+	{
+		"number": "317",
+		"content": {
+			"en": "TORCH LIGHT/FLASHLIGHT",
+			"zh": "手电筒",
+			"ms": "LAMPU SULUH"
+		},
+		"image": "qzt_317.png"
+	},
+	{
+		"number": "318",
+		"content": {
+			"en": "STAIRS/LADDER/STEP",
+			"zh": "楼梯/梯子/台阶",
+			"ms": "TANGGA"
+		},
+		"image": "qzt_318.png"
+	},
+	{
+		"number": "319",
+		"content": {
+			"en": "LOTTERY TICKET/4D TICKET",
+			"zh": "彩票/大彩",
+			"ms": "LOTERI"
+		},
+		"image": "qzt_319.png"
+	},
+	{
+		"number": "320",
+		"content": {
+			"en": "PALM WINE SHOP/TUAK SHOP",
+			"zh": "椰酒店",
+			"ms": "KEDAI TUAK"
+		},
+		"image": "qzt_320.png"
+	},
+	{
+		"number": "321",
+		"content": {
+			"en": "PRAY TO GOD",
+			"zh": "拜神/拜神祈福",
+			"ms": "SEMBAHYANG"
+		},
+		"image": "qzt_321.png"
+	},
+	{
+		"number": "322",
+		"content": {
+			"en": "FACE WASHING",
+			"zh": "洗面/洗脸",
+			"ms": "BASUH MUKA"
+		},
+		"image": "qzt_322.png"
+	},
+	{
+		"number": "323",
+		"content": {
+			"en": "KILLING CHICKEN/KILLING DUCK",
+			"zh": "杀鸡鸭/宰鸡鸭/杀鸡/宰鸡/杀鸭/宰鸭",
+			"ms": "SEMBELIH AYAM ITIK"
+		},
+		"image": "qzt_323.png"
+	},
+	{
+		"number": "324",
+		"content": {
+			"en": "CARRYING A CHILD/CARRYING BABY",
+			"zh": "抱小孩/抱婴儿",
+			"ms": "DUKUNG BAYI"
+		},
+		"image": "qzt_324.png"
+	},
+	{
+		"number": "325",
+		"content": {
+			"en": "FRYING FOOD",
+			"zh": "炒食物/煎食物",
+			"ms": "GORENG LAUK"
+		},
+		"image": "qzt_325.png"
+	},
+	{
+		"number": "326",
+		"content": {
+			"en": "MOSQUE",
+			"zh": "回教堂/清真寺",
+			"ms": "MASJID"
+		},
+		"image": "qzt_326.png"
+	},
+	{
+		"number": "327",
+		"content": {
+			"en": "DRESS/GOWN",
+			"zh": "裙/连身裙/长裙/长袍",
+			"ms": "SKIRT"
+		},
+		"image": "qzt_327.png"
+	},
+	{
+		"number": "328",
+		"content": {
+			"en": "THREAD",
+			"zh": "线/丝",
+			"ms": "BENANG"
+		},
+		"image": "qzt_328.png"
+	},
+	{
+		"number": "329",
+		"content": {
+			"en": "SILVER COIN",
+			"zh": "大银/银币",
+			"ms": "WANG PERAK"
+		},
+		"image": "qzt_329.png"
+	},
+	{
+		"number": "330",
+		"content": {
+			"en": "HANDBAG",
+			"zh": "手提包",
+			"ms": "BAG TANGAN"
+		},
+		"image": "qzt_330.png"
+	},
+	{
+		"number": "331",
+		"content": {
+			"en": "COCONUT MEAT",
+			"zh": "椰肉/椰子",
+			"ms": "ISI KELAPA"
+		},
+		"image": "qzt_331.png"
+	},
+	{
+		"number": "332",
+		"content": {
+			"en": "HONEYCOMB/COMB/HIVE",
+			"zh": "蜜蜂巢/蜜蜂蜂窝",
+			"ms": "SARANG LEBAH"
+		},
+		"image": "qzt_332.png"
+	},
+	{
+		"number": "333",
+		"content": {
+			"en": "ROPE SKIPPING/ROPE JUMPING",
+			"zh": "跳绳",
+			"ms": "LOMPAT TALI"
+		},
+		"image": "qzt_333.png"
+	},
+	{
+		"number": "334",
+		"content": {
+			"en": "COPRA",
+			"zh": "椰干",
+			"ms": "KELAPA KERING"
+		},
+		"image": "qzt_334.png"
+	},
+	{
+		"number": "335",
+		"content": {
+			"en": "COOKING",
+			"zh": "煮食物",
+			"ms": "MASAK MAKANAN"
+		},
+		"image": "qzt_335.png"
+	},
+	{
+		"number": "336",
+		"content": {
+			"en": "LORRY/TRUCK",
+			"zh": "罗里/货车/卡车",
+			"ms": "LORI"
+		},
+		"image": "qzt_336.png"
+	},
+	{
+		"number": "337",
+		"content": {
+			"en": "MIRROR",
+			"zh": "镜子",
+			"ms": "CERMIN"
+		},
+		"image": "qzt_337.png"
+	},
+	{
+		"number": "338",
+		"content": {
+			"en": "PROCESS RUBBER",
+			"zh": "压橡胶/橡胶加工",
+			"ms": "MESIN GETAH"
+		},
+		"image": "qzt_338.png"
+	},
+	{
+		"number": "339",
+		"content": {
+			"en": "SOYBEAN",
+			"zh": "黄豆/大豆/青豆",
+			"ms": "KACANG KUNING"
+		},
+		"image": "qzt_339.png"
+	},
+	{
+		"number": "340",
+		"content": {
+			"en": "SONG SHEET/SHEET MUSIC",
+			"zh": "歌谱/曲谱/乐谱",
+			"ms": "BUKU NYANYI"
+		},
+		"image": "qzt_340.png"
+	},
+	{
+		"number": "341",
+		"content": {
+			"en": "SINGER",
+			"zh": "歌星/歌手/歌女",
+			"ms": "PENYANYI"
+		},
+		"image": "qzt_341.png"
+	},
+	{
+		"number": "342",
+		"content": {
+			"en": "FIRE TRUCK",
+			"zh": "消防车",
+			"ms": "KERETA BOMBA"
+		},
+		"image": "qzt_342.png"
+	},
+	{
+		"number": "343",
+		"content": {
+			"en": "AMBULANCE",
+			"zh": "救伤车/救护车",
+			"ms": "AMBULAN"
+		},
+		"image": "qzt_343.png"
+	},
+	{
+		"number": "344",
+		"content": {
+			"en": "SWIM",
+			"zh": "游泳",
+			"ms": "BERENANG"
+		},
+		"image": "qzt_344.png"
+	},
+	{
+		"number": "345",
+		"content": {
+			"en": "POLICE",
+			"zh": "警察",
+			"ms": "POLIS"
+		},
+		"image": "qzt_345.png"
+	},
+	{
+		"number": "346",
+		"content": {
+			"en": "MAHJONG",
+			"zh": "麻将",
+			"ms": "MAHJIONG"
+		},
+		"image": "qzt_346.png"
+	},
+	{
+		"number": "347",
+		"content": {
+			"en": "SEWING MACHINE",
+			"zh": "针车",
+			"ms": "MESIN JAHIT"
+		},
+		"image": "qzt_347.png"
+	},
+	{
+		"number": "348",
+		"content": {
+			"en": "BODY LOTION",
+			"zh": "香水/身体乳液/润肤露",
+			"ms": "MINYAK WANGI"
+		},
+		"image": "qzt_348.png"
+	},
+	{
+		"number": "349",
+		"content": {
+			"en": "DROWNED",
+			"zh": "溺死/淹死",
+			"ms": "MATI LEMAS"
+		},
+		"image": "qzt_349.png"
+	},
+	{
+		"number": "350",
+		"content": {
+			"en": "BETEL LEAF",
+			"zh": "佬叶/栳叶/槟榔叶",
+			"ms": "DAUN SIRIH"
+		},
+		"image": "qzt_350.png"
+	},
+	{
+		"number": "351",
+		"content": {
+			"en": "HANGING",
+			"zh": "缢死/吊死/绞刑",
+			"ms": "GANTUNG DIRI"
+		},
+		"image": "qzt_351.png"
+	},
+	{
+		"number": "352",
+		"content": {
+			"en": "CIGARETTE",
+			"zh": "香烟",
+			"ms": "ROKOK"
+		},
+		"image": "qzt_352.png"
+	},
+	{
+		"number": "353",
+		"content": {
+			"en": "COMMIT SUICIDE BY TAKING POISON",
+			"zh": "服毒自杀",
+			"ms": "RACUN DIRI"
+		},
+		"image": "qzt_353.png"
+	},
+	{
+		"number": "354",
+		"content": {
+			"en": "BOOKSHOP/BOOKSTORE/BOOK SHOP/BOOK STORE",
+			"zh": "书店",
+			"ms": "KEDAI BUKU"
+		},
+		"image": "qzt_354.png"
+	},
+	{
+		"number": "355",
+		"content": {
+			"en": "CUT TOBACCO",
+			"zh": "割烟草",
+			"ms": "POTONG TEMBAKAU"
+		},
+		"image": "qzt_355.png"
+	},
+	{
+		"number": "356",
+		"content": {
+			"en": "PRESSURE KEROSENE LANTERN/GAS LAMP",
+			"zh": "大光灯/汽灯/煤油汽灯",
+			"ms": "LAMPU"
+		},
+		"image": "qzt_356.png"
+	},
+	{
+		"number": "357",
+		"content": {
+			"en": "POLICE CAR",
+			"zh": "警察车",
+			"ms": "KERETA POLIS"
+		},
+		"image": "qzt_357.png"
+	},
+	{
+		"number": "358",
+		"content": {
+			"en": "COURT/TRIBUNAL",
+			"zh": "法庭",
+			"ms": "MAKAMAH"
+		},
+		"image": "qzt_358.png"
+	},
+	{
+		"number": "359",
+		"content": {
+			"en": "PRISON/JAIL",
+			"zh": "监狱/监牢",
+			"ms": "PENJARA"
+		},
+		"image": "qzt_359.png"
+	},
+	{
+		"number": "360",
+		"content": {
+			"en": "SACK/GUNNY BAG",
+			"zh": "麻袋/麻布袋/麻包",
+			"ms": "GUNI"
+		},
+		"image": "qzt_360.png"
+	},
+	{
+		"number": "361",
+		"content": {
+			"en": "STRONGBOX/SAFETY DEPOSIT BOX",
+			"zh": "铁柜/保险柜/保险箱",
+			"ms": "ALMARI BESI"
+		},
+		"image": "qzt_361.png"
+	},
+	{
+		"number": "362",
+		"content": {
+			"en": "GUANYIN/GODDESS OF MERCY",
+			"zh": "观音菩萨",
+			"ms": "GUANYIN"
+		},
+		"image": "qzt_362.png"
+	},
+	{
+		"number": "363",
+		"content": {
+			"en": "CIGARETTE CASE",
+			"zh": "香烟盒",
+			"ms": "KOTAK ROKOK"
+		},
+		"image": "qzt_363.png"
+	},
+	{
+		"number": "364",
+		"content": {
+			"en": "JOGET DANCE/RONGGE",
+			"zh": "浪迎舞/弄迎舞/马来传统舞",
+			"ms": "JOGET"
+		},
+		"image": "qzt_364.png"
+	},
+	{
+		"number": "365",
+		"content": {
+			"en": "PSYCHIC/SHAMAN",
+			"zh": "跳乩/通灵/神明上身/乩童",
+			"ms": "MENURUN"
+		},
+		"image": "qzt_365.png"
+	},
+	{
+		"number": "366",
+		"content": {
+			"en": "FISH BATTLE/FISH FIGHTING",
+			"zh": "斗鱼/鱼打斗",
+			"ms": "IKAN BELAGA"
+		},
+		"image": "qzt_366.png"
+	},
+	{
+		"number": "367",
+		"content": {
+			"en": "SHIRT",
+			"zh": "衬衣/衬衫",
+			"ms": "KEMEJA"
+		},
+		"image": "qzt_367.png"
+	},
+	{
+		"number": "368",
+		"content": {
+			"en": "SWEET POTATO",
+			"zh": "番薯/地瓜",
+			"ms": "UBI"
+		},
+		"image": "qzt_368.png"
+	},
+	{
+		"number": "369",
+		"content": {
+			"en": "MOTORCYCLE",
+			"zh": "电单车/摩托/机车",
+			"ms": "MOTOSIKAL"
+		},
+		"image": "qzt_369.png"
+	},
+	{
+		"number": "370",
+		"content": {
+			"en": "BUILD HOUSES",
+			"zh": "建造房屋/盖房子/起屋",
+			"ms": "BIKIN RUMAH"
+		},
+		"image": "qzt_370.png"
+	},
+	{
+		"number": "371",
+		"content": {
+			"en": "PILGRIMAGE TO MECCA",
+			"zh": "通往麦加/麦加朝圣",
+			"ms": "KE MEKAH"
+		},
+		"image": "qzt_371.png"
+	},
+	{
+		"number": "372",
+		"content": {
+			"en": "PAINT",
+			"zh": "油漆",
+			"ms": "SAPU CAT"
+		},
+		"image": "qzt_372.png"
+	},
+	{
+		"number": "373",
+		"content": {
+			"en": "FEATHER BRUSH",
+			"zh": "毛扫",
+			"ms": "BERUS BULU"
+		},
+		"image": "qzt_373.png"
+	},
+	{
+		"number": "374",
+		"content": {
+			"en": "MONEY BAG/WALLET",
+			"zh": "皮包/钱包",
+			"ms": "BAG DUIT"
+		},
+		"image": "qzt_374.png"
+	},
+	{
+		"number": "375",
+		"content": {
+			"en": "BRUSH CEMENT",
+			"zh": "刷灰水/刷水泥/刷石灰",
+			"ms": "MENGECAT"
+		},
+		"image": "qzt_375.png"
+	},
+	{
+		"number": "376",
+		"content": {
+			"en": "CARRY GRANDCHILDREN/CARRY GRANDSON",
+			"zh": "抱孙子",
+			"ms": "DUKUNG CUCU"
+		},
+		"image": "qzt_376.png"
+	},
+	{
+		"number": "377",
+		"content": {
+			"en": "LEADING COW",
+			"zh": "牵牛",
+			"ms": "JAGA LEMBU"
+		},
+		"image": "qzt_377.png"
+	},
+	{
+		"number": "378",
+		"content": {
+			"en": "BULLFIGHTING/COW FIGHTING",
+			"zh": "斗牛",
+			"ms": "LEMBU BERLAGA"
+		},
+		"image": "qzt_378.png"
+	},
+	{
+		"number": "379",
+		"content": {
+			"en": "OLD PEOPLE/OLD PEOPLE WALKING",
+			"zh": "老人/老人走路",
+			"ms": "ORANG TUA"
+		},
+		"image": "qzt_379.png"
+	},
+	{
+		"number": "380",
+		"content": {
+			"en": "DUCK SWIMMING",
+			"zh": "鸭游泳",
+			"ms": "ITIK"
+		},
+		"image": "qzt_380.png"
+	},
+	{
+		"number": "381",
+		"content": {
+			"en": "FLOWER SNAKE",
+			"zh": "花蛇",
+			"ms": "ULAR DAUN"
+		},
+		"image": "qzt_381.png"
+	},
+	{
+		"number": "382",
+		"content": {
+			"en": "KILLING THE TIGER",
+			"zh": "打死老虎",
+			"ms": "TEMBAK RIMAU"
+		},
+		"image": "qzt_382.png"
+	},
+	{
+		"number": "383",
+		"content": {
+			"en": "CARGO LOAD BY ELEMENT",
+			"zh": "象载物/大象搬运货物",
+			"ms": "GAJAH MUAT BARANG"
+		},
+		"image": "qzt_383.png"
+	},
+	{
+		"number": "384",
+		"content": {
+			"en": "QUARREL/ARGUE/DEBATE",
+			"zh": "骂架/相骂/吵架/争论",
+			"ms": "BERTENGKAR"
+		},
+		"image": "qzt_384.png"
+	},
+	{
+		"number": "385",
+		"content": {
+			"en": "VISIT SICK MAN",
+			"zh": "探病",
+			"ms": "MELAWAT ORANG SAKIT"
+		},
+		"image": "qzt_385.png"
+	},
+	{
+		"number": "386",
+		"content": {
+			"en": "MAILBOX/LETTER BOX",
+			"zh": "信筒/信箱",
+			"ms": "PETI SURAT"
+		},
+		"image": "qzt_386.png"
+	},
+	{
+		"number": "387",
+		"content": {
+			"en": "OUT FISHING",
+			"zh": "撒网捕鱼",
+			"ms": "TANGKAP IKAN"
+		},
+		"image": "qzt_387.png"
+	},
+	{
+		"number": "388",
+		"content": {
+			"en": "BOXING MATCH",
+			"zh": "打拳/拳击比赛",
+			"ms": "LAWAN TUMBUK"
+		},
+		"image": "qzt_388.png"
+	},
+	{
+		"number": "389",
+		"content": {
+			"en": "EAT/EATING RICE",
+			"zh": "吃饭",
+			"ms": "MAKAN NASI"
+		},
+		"image": "qzt_389.png"
+	},
+	{
+		"number": "390",
+		"content": {
+			"en": "WALK/WALKING/FOOT",
+			"zh": "走路/步行",
+			"ms": "BERJALAN"
+		},
+		"image": "qzt_390.png"
+	},
+	{
+		"number": "391",
+		"content": {
+			"en": "DUCK HATCHING",
+			"zh": "母鸭孵蛋",
+			"ms": "ITIK MENGERAM"
+		},
+		"image": "qzt_391.png"
+	},
+	{
+		"number": "392",
+		"content": {
+			"en": "CLOTH/FABRIC",
+			"zh": "布匹/布疋/布",
+			"ms": "KAIN TUDUNG"
+		},
+		"image": "qzt_392.png"
+	},
+	{
+		"number": "393",
+		"content": {
+			"en": "COLLECT EGGS",
+			"zh": "拾蛋/收蛋",
+			"ms": "KUTIP TELUR"
+		},
+		"image": "qzt_393.png"
+	},
+	{
+		"number": "394",
+		"content": {
+			"en": "PRIEST/FATHER",
+			"zh": "神父/牧师",
+			"ms": "PADRI"
+		},
+		"image": "qzt_394.png"
+	},
+	{
+		"number": "395",
+		"content": {
+			"en": "SHRIMP",
+			"zh": "虾米",
+			"ms": "UDANG KERING"
+		},
+		"image": "qzt_395.png"
+	},
+	{
+		"number": "396",
+		"content": {
+			"en": "PIG BREEDING/PANNAGE",
+			"zh": "养猪",
+			"ms": "BELA KHINZIR"
+		},
+		"image": "qzt_396.png"
+	},
+	{
+		"number": "397",
+		"content": {
+			"en": "CHAINSAW",
+			"zh": "电锯",
+			"ms": "GERGAJI"
+		},
+		"image": "qzt_397.png"
+	},
+	{
+		"number": "398",
+		"content": {
+			"en": "JACKFRUIT/CEMPEDAK",
+			"zh": "尖必打/菠萝蜜/尖不辣",
+			"ms": "CEMPEDAK"
+		},
+		"image": "qzt_398.png"
+	},
+	{
+		"number": "399",
+		"content": {
+			"en": "DANCE GIRL/DANCER/TAXI DANCER",
+			"zh": "舞女/伴舞女郎/舞蹈员",
+			"ms": "GRO"
+		},
+		"image": "qzt_399.png"
+	},
+	{
+		"number": "400",
+		"content": {
+			"en": "JIANG ZIYA/JIANG SHANG",
+			"zh": "姜子牙/姜太公",
+			"ms": "JIANG ZIYA"
+		},
+		"image": "qzt_400.png"
+	},
+	{
+		"number": "401",
+		"content": {
+			"en": "CRY/CRYING",
+			"zh": "哭/啼哭/哭闹",
+			"ms": "MENANGIS"
+		},
+		"image": "qzt_401.png"
+	},
+	{
+		"number": "402",
+		"content": {
+			"en": "MIHUN/RICE NOODLES",
+			"zh": "米粉",
+			"ms": "BIHUN"
+		},
+		"image": "qzt_402.png"
+	},
+	{
+		"number": "403",
+		"content": {
+			"en": "LETTER/MAIL",
+			"zh": "信件",
+			"ms": "SURAT"
+		},
+		"image": "qzt_403.png"
+	},
+	{
+		"number": "404",
+		"content": {
+			"en": "BENCH",
+			"zh": "凳子",
+			"ms": "BANGKU"
+		},
+		"image": "qzt_404.png"
+	},
+	{
+		"number": "405",
+		"content": {
+			"en": "FEEDS CHICKENS/FEEDS DUCKS",
+			"zh": "饲养鸡鸭",
+			"ms": "BELA AYAM"
+		},
+		"image": "qzt_405.png"
+	},
+	{
+		"number": "406",
+		"content": {
+			"en": "CENSER/INCENSE BURNER",
+			"zh": "香炉",
+			"ms": "BEKAS GAHARU"
+		},
+		"image": "qzt_406.png"
+	},
+	{
+		"number": "407",
+		"content": {
+			"en": "CORPES/DEAD BODY",
+			"zh": "尸体/死尸",
+			"ms": "MAYAT"
+		},
+		"image": "qzt_407.png"
+	},
+	{
+		"number": "408",
+		"content": {
+			"en": "KILLED BY CAR ACCIDENT",
+			"zh": "被车撞死",
+			"ms": "KEMALANGAN MAUT"
+		},
+		"image": "qzt_408.png"
+	},
+	{
+		"number": "409",
+		"content": {
+			"en": "ARECA/ARECA NUT",
+			"zh": "槟榔",
+			"ms": "PINANG"
+		},
+		"image": "qzt_409.png"
+	},
+	{
+		"number": "410",
+		"content": {
+			"en": "BAT",
+			"zh": "蝙蝠",
+			"ms": "KELAWAR"
+		},
+		"image": "qzt_410.png"
+	},
+	{
+		"number": "411",
+		"content": {
+			"en": "SUICIDE BY JUMP DOWN FROM UPSTAIR",
+			"zh": "跳楼/跳楼自杀",
+			"ms": "BUNUH DIRI"
+		},
+		"image": "qzt_411.png"
+	},
+	{
+		"number": "412",
+		"content": {
+			"en": "BOIL WATER",
+			"zh": "煲水/烧开水/煮水",
+			"ms": "AIR PANAS"
+		},
+		"image": "qzt_412.png"
+	},
+	{
+		"number": "413",
+		"content": {
+			"en": "FETCHING WATER",
+			"zh": "挑水/担水",
+			"ms": "KANDAR AIR"
+		},
+		"image": "qzt_413.png"
+	},
+	{
+		"number": "414",
+		"content": {
+			"en": "CARRY THINGS",
+			"zh": "扛东西/搬物品",
+			"ms": "KANDAR BARANG"
+		},
+		"image": "qzt_414.png"
+	},
+	{
+		"number": "415",
+		"content": {
+			"en": "FIRE EXTINGUISHER",
+			"zh": "灭火器/灭火筒",
+			"ms": "PEMADAM API"
+		},
+		"image": "qzt_415.png"
+	},
+	{
+		"number": "416",
+		"content": {
+			"en": "BANANA/BANANA TREE",
+			"zh": "芭蕉/芭蕉树/香蕉/香蕉树",
+			"ms": "POKOK PISANG"
+		},
+		"image": "qzt_416.png"
+	},
+	{
+		"number": "417",
+		"content": {
+			"en": "FIRE",
+			"zh": "火",
+			"ms": "API"
+		},
+		"image": "qzt_417.png"
+	},
+	{
+		"number": "418",
+		"content": {
+			"en": "INCENSE",
+			"zh": "香",
+			"ms": "GAHARU"
+		},
+		"image": "qzt_418.png"
+	},
+	{
+		"number": "419",
+		"content": {
+			"en": "PIPE TOBACCO",
+			"zh": "烟丝/斗烟丝",
+			"ms": "PIPA TEMBAKAU"
+		},
+		"image": "qzt_419.png"
+	},
+	{
+		"number": "420",
+		"content": {
+			"en": "MARKET/PASAR",
+			"zh": "公市/市集/巴剎/市場",
+			"ms": "PASAR"
+		},
+		"image": "qzt_420.png"
+	},
+	{
+		"number": "421",
+		"content": {
+			"en": "MAINZ POWDER/STARCH",
+			"zh": "茨粉/淀粉/太白粉/生粉/木薯粉",
+			"ms": "KANJI"
+		},
+		"image": "qzt_421.png"
+	},
+	{
+		"number": "422",
+		"content": {
+			"en": "JUJUBE",
+			"zh": "枣",
+			"ms": "PLUM"
+		},
+		"image": "qzt_422.png"
+	},
+	{
+		"number": "423",
+		"content": {
+			"en": "POWDER",
+			"zh": "香粉/爽身粉",
+			"ms": "SERBUK WANGI"
+		},
+		"image": "qzt_423.png"
+	},
+	{
+		"number": "424",
+		"content": {
+			"en": "RICE SIEVE",
+			"zh": "米筛",
+			"ms": "PENGAYAK"
+		},
+		"image": "qzt_424.png"
+	},
+	{
+		"number": "425",
+		"content": {
+			"en": "STEAL/THEFT",
+			"zh": "盗物/偷窃/盗窃",
+			"ms": "PENCURI"
+		},
+		"image": "qzt_425.png"
+	},
+	{
+		"number": "426",
+		"content": {
+			"en": "NEEDLE",
+			"zh": "针",
+			"ms": "JARUM"
+		},
+		"image": "qzt_426.png"
+	},
+	{
+		"number": "427",
+		"content": {
+			"en": "BEETLE",
+			"zh": "甲虫/独角仙",
+			"ms": "KUMBANG"
+		},
+		"image": "qzt_427.png"
+	},
+	{
+		"number": "428",
+		"content": {
+			"en": "ROBBERY/ROB",
+			"zh": "抢劫/打劫/打枪",
+			"ms": "PENYAMUN"
+		},
+		"image": "qzt_428.png"
+	},
+	{
+		"number": "429",
+		"content": {
+			"en": "CATCH THIEF/HUNT/CAPTURE",
+			"zh": "追盗/追捕/捉贼/缉捕",
+			"ms": "KEJAR PENJAHAT"
+		},
+		"image": "qzt_429.png"
+	},
+	{
+		"number": "430",
+		"content": {
+			"en": "MURDER/ASSASSINATE/KILL PEOPLE",
+			"zh": "刺伤/刺杀/杀人",
+			"ms": "CEDERA DITIKAM"
+		},
+		"image": "qzt_430.png"
+	},
+	{
+		"number": "431",
+		"content": {
+			"en": "VINEGAR",
+			"zh": "米醋",
+			"ms": "CUKA"
+		},
+		"image": "qzt_431.png"
+	},
+	{
+		"number": "432",
+		"content": {
+			"en": "BLOW WHISTLE",
+			"zh": "吹警笛,吹哨子",
+			"ms": "WISEL POLIS"
+		},
+		"image": "qzt_432.png"
+	},
+	{
+		"number": "433",
+		"content": {
+			"en": "DRIED BEAN CURD/DRIED TOFU",
+			"zh": "豆干/豆腐干",
+			"ms": "TAUHU KERING"
+		},
+		"image": "qzt_433.png"
+	},
+	{
+		"number": "434",
+		"content": {
+			"en": "RAINING/RAIN",
+			"zh": "下雨",
+			"ms": "HUJAN"
+		},
+		"image": "qzt_434.png"
+	},
+	{
+		"number": "435",
+		"content": {
+			"en": "EMERGENCY CALL/CALL FOR HELP/CALL THE POLICE",
+			"zh": "打急电/打紧急电话/报警/打电话求救",
+			"ms": "PANGGILAN CEMAS"
+		},
+		"image": "qzt_435.png"
+	},
+	{
+		"number": "436",
+		"content": {
+			"en": "SHIP SUNK/SHIPWRECK",
+			"zh": "沉船/海难",
+			"ms": "KARAM"
+		},
+		"image": "qzt_436.png"
+	},
+	{
+		"number": "437",
+		"content": {
+			"en": "CAR ROLL OVER",
+			"zh": "翻车",
+			"ms": "KERETA TERBALIK"
+		},
+		"image": "qzt_437.png"
+	},
+	{
+		"number": "438",
+		"content": {
+			"en": "BASIN",
+			"zh": "盆",
+			"ms": "MANGKOK"
+		},
+		"image": "qzt_438.png"
+	},
+	{
+		"number": "439",
+		"content": {
+			"en": "GRAPEFRUIT/POMELO",
+			"zh": "柚子",
+			"ms": "LIMAU BALI"
+		},
+		"image": "qzt_439.png"
+	},
+	{
+		"number": "440",
+		"content": {
+			"en": "BOAT ON FIRE/SHIP ON FIRE",
+			"zh": "船失火",
+			"ms": "KAPAL TERBAKAR"
+		},
+		"image": "qzt_440.png"
+	},
+	{
+		"number": "441",
+		"content": {
+			"en": "SPITTOON",
+			"zh": "痰盂",
+			"ms": "PIALA"
+		},
+		"image": "qzt_441.png"
+	},
+	{
+		"number": "442",
+		"content": {
+			"en": "RECITE OR CHANT SCRIPTURES",
+			"zh": "念经/诵经/念诵经文",
+			"ms": "BERDOA"
+		},
+		"image": "qzt_442.png"
+	},
+	{
+		"number": "443",
+		"content": {
+			"en": "BOWL",
+			"zh": "碗",
+			"ms": "MANGKOK"
+		},
+		"image": "qzt_443.png"
+	},
+	{
+		"number": "444",
+		"content": {
+			"en": "SUNFLOWER SEEDS/MELON SEEDS/CHINESE SNACK",
+			"zh": "瓜子",
+			"ms": "KUACHI"
+		},
+		"image": "qzt_444.png"
+	},
+	{
+		"number": "445",
+		"content": {
+			"en": "GARLIC",
+			"zh": "蒜/蒜头/大蒜",
+			"ms": "BAWANG PUTIH"
+		},
+		"image": "qzt_445.png"
+	},
+	{
+		"number": "446",
+		"content": {
+			"en": "LEATHER SUITCASE",
+			"zh": "皮箱/行李箱/旅行箱",
+			"ms": "BAG KULIT"
+		},
+		"image": "qzt_446.png"
+	},
+	{
+		"number": "447",
+		"content": {
+			"en": "BABY/CHILD",
+			"zh": "婴孩/宝宝/婴儿",
+			"ms": "BAYI"
+		},
+		"image": "qzt_447.png"
+	},
+	{
+		"number": "448",
+		"content": {
+			"en": "BED",
+			"zh": "床",
+			"ms": "KATIL"
+		},
+		"image": "qzt_448.png"
+	},
+	{
+		"number": "449",
+		"content": {
+			"en": "BUFFALO",
+			"zh": "水牛",
+			"ms": "KERBAU"
+		},
+		"image": "qzt_449.png"
+	},
+	{
+		"number": "450",
+		"content": {
+			"en": "ROPE/STRING",
+			"zh": "棕索/绳子/绳索",
+			"ms": "TALI BENGKUNG"
+		},
+		"image": "qzt_450.png"
+	},
+	{
+		"number": "451",
+		"content": {
+			"en": "MERIT RITUALS FOR THE DEAD",
+			"zh": "做功德/超度亡魂",
+			"ms": "UPACARA SEMBAHYANG"
+		},
+		"image": "qzt_451.png"
+	},
+	{
+		"number": "452",
+		"content": {
+			"en": "TAOIST PRIEST",
+			"zh": "道士",
+			"ms": "SAMI"
+		},
+		"image": "qzt_452.png"
+	},
+	{
+		"number": "453",
+		"content": {
+			"en": "BOTTLE/SAMSU BOTTLE",
+			"zh": "酒瓶/三蒸酒酒瓶",
+			"ms": "BOTOL ARAK"
+		},
+		"image": "qzt_453.png"
+	},
+	{
+		"number": "454",
+		"content": {
+			"en": "FOLD PAPAR MONEY",
+			"zh": "折银纸/折金纸/折冥钞/折纸钱",
+			"ms": "LIPAT KERTAS SEMBAHYANG"
+		},
+		"image": "qzt_454.png"
+	},
+	{
+		"number": "455",
+		"content": {
+			"en": "THANK TO GOD",
+			"zh": "谢神/酬神",
+			"ms": "SEMBAHYANG"
+		},
+		"image": "qzt_455.png"
+	},
+	{
+		"number": "456",
+		"content": {
+			"en": "GRAPE",
+			"zh": "葡萄",
+			"ms": "BUAH ANGGOR"
+		},
+		"image": "qzt_456.png"
+	},
+	{
+		"number": "457",
+		"content": {
+			"en": "IC/IDENTITY CARD/PASSPORT",
+			"zh": "登记/身份证/护照",
+			"ms": "KAD PENGENALAN"
+		},
+		"image": "qzt_457.png"
+	},
+	{
+		"number": "458",
+		"content": {
+			"en": "GHOST CRYING/GHOST",
+			"zh": "鬼哭/鬼",
+			"ms": "HANTU"
+		},
+		"image": "qzt_458.png"
+	},
+	{
+		"number": "459",
+		"content": {
+			"en": "PACIFIER",
+			"zh": "奶嘴",
+			"ms": "PUTIN"
+		},
+		"image": "qzt_459.png"
+	},
+	{
+		"number": "460",
+		"content": {
+			"en": "VOTIVE/REDEEM VOW TO GOD",
+			"zh": "谢愿/还愿",
+			"ms": "UPACARA BERSYUKUR"
+		},
+		"image": "qzt_460.png"
+	},
+	{
+		"number": "461",
+		"content": {
+			"en": "PISTOL SHOOTING/PISTOL/HANDGUN",
+			"zh": "枪/鸣枪/开枪",
+			"ms": "PISTOL"
+		},
+		"image": "qzt_461.png"
+	},
+	{
+		"number": "462",
+		"content": {
+			"en": "CANNON",
+			"zh": "大炮/火砲",
+			"ms": "MERIAM"
+		},
+		"image": "qzt_462.png"
+	},
+	{
+		"number": "463",
+		"content": {
+			"en": "GRENADE",
+			"zh": "手榴弹",
+			"ms": "BOM TANGAN"
+		},
+		"image": "qzt_463.png"
+	},
+	{
+		"number": "464",
+		"content": {
+			"en": "BED SHEET/BLANKET",
+			"zh": "被单",
+			"ms": "SELIMUT"
+		},
+		"image": "qzt_464.png"
+	},
+	{
+		"number": "465",
+		"content": {
+			"en": "FLY/HOUSEFLY",
+			"zh": "苍蝇",
+			"ms": "LALAT"
+		},
+		"image": "qzt_465.png"
+	},
+	{
+		"number": "466",
+		"content": {
+			"en": "BOMB",
+			"zh": "炸弹",
+			"ms": "BOM TANGAN"
+		},
+		"image": "qzt_466.png"
+	},
+	{
+		"number": "467",
+		"content": {
+			"en": "HAIR SPRAY/FIXATURE/POMADE/HAIR WAX",
+			"zh": "发膏/发胶/发蜡",
+			"ms": "MINYAK RAMBUT"
+		},
+		"image": "qzt_467.png"
+	},
+	{
+		"number": "468",
+		"content": {
+			"en": "MACHINE GUN",
+			"zh": "机关枪/自動步槍",
+			"ms": "MESIN GUN"
+		},
+		"image": "qzt_468.png"
+	},
+	{
+		"number": "469",
+		"content": {
+			"en": "ROADBLOCK/SEARCH",
+			"zh": "搜查/路检/路障",
+			"ms": "SEKAT JALAN"
+		},
+		"image": "qzt_469.png"
+	},
+	{
+		"number": "470",
+		"content": {
+			"en": "FORTUNE STICK",
+			"zh": "筷筒/筷子占卜",
+			"ms": "ALAT NAJUM"
+		},
+		"image": "qzt_470.png"
+	},
+	{
+		"number": "471",
+		"content": {
+			"en": "CHECK IC/CHECK IDENTITY CARD",
+			"zh": "查登记/查身份证",
+			"ms": "PERIKSA K/P"
+		},
+		"image": "qzt_471.png"
+	},
+	{
+		"number": "472",
+		"content": {
+			"en": "PAPER MONEY",
+			"zh": "金纸/纸钱/银纸/冥紙",
+			"ms": "KERTAS SEMBAHYANG"
+		},
+		"image": "qzt_472.png"
+	},
+	{
+		"number": "473",
+		"content": {
+			"en": "POO/DEFECATE/SHIT",
+			"zh": "大便/拉屎/大解",
+			"ms": "BUANG AIR BESAR"
+		},
+		"image": "qzt_473.png"
+	},
+	{
+		"number": "474",
+		"content": {
+			"en": "BIRDCAGE",
+			"zh": "鸟笼",
+			"ms": "SANGKAR"
+		},
+		"image": "qzt_474.png"
+	},
+	{
+		"number": "475",
+		"content": {
+			"en": "PHONOGRAPH/GRAMOPHONE",
+			"zh": "留声机/电唱机",
+			"ms": "PIRING HITAM"
+		},
+		"image": "qzt_475.png"
+	},
+	{
+		"number": "476",
+		"content": {
+			"en": "MATTRESS",
+			"zh": "床褥",
+			"ms": "TILAM"
+		},
+		"image": "qzt_476.png"
+	},
+	{
+		"number": "477",
+		"content": {
+			"en": "PUPPET SHOW/PUPPET",
+			"zh": "木偶/傀儡/木偶戲/人偶劇",
+			"ms": "WAYANG PATUNG"
+		},
+		"image": "qzt_477.png"
+	},
+	{
+		"number": "478",
+		"content": {
+			"en": "MANDARIN/MANDARINE",
+			"zh": "柑/年柑/柑橘/柑桔",
+			"ms": "LIMAU BALI"
+		},
+		"image": "qzt_478.png"
+	},
+	{
+		"number": "479",
+		"content": {
+			"en": "RICE LAMP",
+			"zh": "饭盏",
+			"ms": " SIA"
+		},
+		"image": "qzt_479.png"
+	},
+	{
+		"number": "480",
+		"content": {
+			"en": "STAR PHOTO/CELEBRITY PICTURE",
+			"zh": "明星相片/明星照片/偶像图片/演员照/艺人照",
+			"ms": "GAMBAR CELEBRITI"
+		},
+		"image": "qzt_480.png"
+	},
+	{
+		"number": "481",
+		"content": {
+			"en": "PULL THE PIG/LEAD THE PIG",
+			"zh": "牵猪",
+			"ms": "JAGA KHINZIR"
+		},
+		"image": "qzt_481.png"
+	},
+	{
+		"number": "482",
+		"content": {
+			"en": "POST LETTER/MAIL LETTER",
+			"zh": "寄信",
+			"ms": "KIRIM SURAT"
+		},
+		"image": "qzt_482.png"
+	},
+	{
+		"number": "483",
+		"content": {
+			"en": "WASHING CLOTHES",
+			"zh": "洗衣服/洗衣裤",
+			"ms": "CUCI BAJU"
+		},
+		"image": "qzt_483.png"
+	},
+	{
+		"number": "484",
+		"content": {
+			"en": "SCALLION",
+			"zh": "葱/香葱/青葱",
+			"ms": "BAWANG"
+		},
+		"image": "qzt_484.png"
+	},
+	{
+		"number": "485",
+		"content": {
+			"en": "MOSQUITO",
+			"zh": "蚊子",
+			"ms": "NYAMUK"
+		},
+		"image": "qzt_485.png"
+	},
+	{
+		"number": "486",
+		"content": {
+			"en": "DISHES/PLATE",
+			"zh": "盘碗/碗碟",
+			"ms": "MANGKUK PIRING"
+		},
+		"image": "qzt_486.png"
+	},
+	{
+		"number": "487",
+		"content": {
+			"en": "RECORD/SP/DISC/DISK",
+			"zh": "唱片/黑胶唱片",
+			"ms": "PIRING HITAM"
+		},
+		"image": "qzt_487.png"
+	},
+	{
+		"number": "488",
+		"content": {
+			"en": "FARMING/PLOW",
+			"zh": "耕田/牛耕田/耕种/耕作/耕耘/犁田",
+			"ms": "MENAJAK"
+		},
+		"image": "qzt_488.png"
+	},
+	{
+		"number": "489",
+		"content": {
+			"en": "ACTING/DRAMA/SHOW/PLAY THE ROLE",
+			"zh": "演戏/戏剧/节目",
+			"ms": "WAYANG"
+		},
+		"image": "qzt_489.png"
+	},
+	{
+		"number": "490",
+		"content": {
+			"en": "PHYSIOGNOMIST/FORTUNE TELLER",
+			"zh": "相士/相师/算命先生/相面先生",
+			"ms": "AHLI NUJUM"
+		},
+		"image": "qzt_490.png"
+	},
+	{
+		"number": "491",
+		"content": {
+			"en": "TRANSPLANTING RICE SEEDLINGS",
+			"zh": "插秧/种稻/插秧苗",
+			"ms": "MENANAM PADI"
+		},
+		"image": "qzt_491.png"
+	},
+	{
+		"number": "492",
+		"content": {
+			"en": "BURN THE GRASS",
+			"zh": "烧草/火烧枯草/烧草堆",
+			"ms": "BAKAR RUMPUT"
+		},
+		"image": "qzt_492.png"
+	},
+	{
+		"number": "493",
+		"content": {
+			"en": "CIGAR",
+			"zh": "雪茄/雪茄烟",
+			"ms": "CURUT"
+		},
+		"image": "qzt_493.png"
+	},
+	{
+		"number": "494",
+		"content": {
+			"en": "SLEEP/REST",
+			"zh": "睡觉/睡眠",
+			"ms": "TIDUR"
+		},
+		"image": "qzt_494.png"
+	},
+	{
+		"number": "495",
+		"content": {
+			"en": "SIEVE RICE",
+			"zh": "筛谷/筛米/虑米",
+			"ms": "TAMPI PADI"
+		},
+		"image": "qzt_495.png"
+	},
+	{
+		"number": "496",
+		"content": {
+			"en": "COLLECT RICE/KEEP RICE",
+			"zh": "收谷/收稻米/收栗",
+			"ms": "MENGUTIP PADI"
+		},
+		"image": "qzt_496.png"
+	},
+	{
+		"number": "497",
+		"content": {
+			"en": "BALLOON",
+			"zh": "气球",
+			"ms": "BELON"
+		},
+		"image": "qzt_497.png"
+	},
+	{
+		"number": "498",
+		"content": {
+			"en": "PAPAYA",
+			"zh": "木瓜",
+			"ms": "BUAH BETIK"
+		},
+		"image": "qzt_498.png"
+	},
+	{
+		"number": "499",
+		"content": {
+			"en": "WATERING",
+			"zh": "浇尿/浇水/浇灌/施肥",
+			"ms": "SIRAM SAYUR"
+		},
+		"image": "qzt_499.png"
+	},
+	{
+		"number": "500",
+		"content": {
+			"en": "PENCIL",
+			"zh": "铅笔",
+			"ms": "PENSIL"
+		},
+		"image": "qzt_500.png"
+	},
+	{
+		"number": "501",
+		"content": {
+			"en": "RUNNING RACE",
+			"zh": "赛跑比赛",
+			"ms": "BERLUMBA"
+		},
+		"image": "qzt_501.png"
+	},
+	{
+		"number": "502",
+		"content": {
+			"en": "ANCHOR",
+			"zh": "船锚",
+			"ms": "SAUH"
+		},
+		"image": "qzt_502.png"
+	},
+	{
+		"number": "503",
+		"content": {
+			"en": "DOLL",
+			"zh": "洋娃娃/玩具娃娃/玩偶",
+			"ms": "PATUNG MAINAN"
+		},
+		"image": "qzt_503.png"
+	},
+	{
+		"number": "504",
+		"content": {
+			"en": "EAT DIM SUM",
+			"zh": "吃点心",
+			"ms": "MAKAN TIMSUM"
+		},
+		"image": "qzt_504.png"
+	},
+	{
+		"number": "505",
+		"content": {
+			"en": "COCKFIGHTING",
+			"zh": "斗鸡",
+			"ms": "AYAM BERLAGA"
+		},
+		"image": "qzt_505.png"
+	},
+	{
+		"number": "506",
+		"content": {
+			"en": "OXCART/BULLOCK CART",
+			"zh": "牛车",
+			"ms": "KERETA LEMBU"
+		},
+		"image": "qzt_506.png"
+	},
+	{
+		"number": "507",
+		"content": {
+			"en": "BOOK/COMIC/MAGAZINE",
+			"zh": "图书/画集/漫画书/杂志",
+			"ms": "BUKU BERGAMBAR"
+		},
+		"image": "qzt_507.png"
+	},
+	{
+		"number": "508",
+		"content": {
+			"en": "WRITING BRUSH",
+			"zh": "毛笔",
+			"ms": "BRUS CHINA"
+		},
+		"image": "qzt_508.png"
+	},
+	{
+		"number": "509",
+		"content": {
+			"en": "WILD BOAR",
+			"zh": "山猪",
+			"ms": "BABI HUTAN"
+		},
+		"image": "qzt_509.png"
+	},
+	{
+		"number": "510",
+		"content": {
+			"en": "GATE/DOORWAY",
+			"zh": "铁门/大门",
+			"ms": "PINTU BERJERJAK"
+		},
+		"image": "qzt_510.png"
+	},
+	{
+		"number": "511",
+		"content": {
+			"en": "TOY",
+			"zh": "玩具",
+			"ms": "ALAT MAINAN"
+		},
+		"image": "qzt_511.png"
+	},
+	{
+		"number": "512",
+		"content": {
+			"en": "HIGH-HEELED SHOES",
+			"zh": "高跟鞋",
+			"ms": "KASUT TUMIT"
+		},
+		"image": "qzt_512.png"
+	},
+	{
+		"number": "513",
+		"content": {
+			"en": "GALOSH",
+			"zh": "胶鞋",
+			"ms": "KASUT GETAH"
+		},
+		"image": "qzt_513.png"
+	},
+	{
+		"number": "514",
+		"content": {
+			"en": "DRAGON AND PHOENIX CANDLE",
+			"zh": "龙凤烛",
+			"ms": "LILIN KAHWIN"
+		},
+		"image": "qzt_514.png"
+	},
+	{
+		"number": "515",
+		"content": {
+			"en": "GO TO CHURCH/WORSHIP/RELIGIOUS SERVICE",
+			"zh": "做礼拜",
+			"ms": "SEMBAHYANG GEREJA"
+		},
+		"image": "qzt_515.png"
+	},
+	{
+		"number": "516",
+		"content": {
+			"en": "BIRDS",
+			"zh": "飞鸟/小鸟/鸟",
+			"ms": "BURUNG"
+		},
+		"image": "qzt_516.png"
+	},
+	{
+		"number": "517",
+		"content": {
+			"en": "ABACUS",
+			"zh": "算盘",
+			"ms": "BUAH KIRA-KIRA"
+		},
+		"image": "qzt_517.png"
+	},
+	{
+		"number": "518",
+		"content": {
+			"en": "GLASSES/SPECTACLES",
+			"zh": "眼镜",
+			"ms": "CERMIN MATA"
+		},
+		"image": "qzt_518.png"
+	},
+	{
+		"number": "519",
+		"content": {
+			"en": "HUNCHBACK/HUMPBACK",
+			"zh": "驼子/驼背",
+			"ms": "SI BONGKOK"
+		},
+		"image": "qzt_519.png"
+	},
+	{
+		"number": "520",
+		"content": {
+			"en": "LIGHTER",
+			"zh": "打火机",
+			"ms": "PEMITIK API"
+		},
+		"image": "qzt_520.png"
+	},
+	{
+		"number": "521",
+		"content": {
+			"en": "BAMBOO",
+			"zh": "竹/竹子",
+			"ms": "BULUH"
+		},
+		"image": "qzt_521.png"
+	},
+	{
+		"number": "522",
+		"content": {
+			"en": "TYPEWRITER",
+			"zh": "打字机",
+			"ms": "MESIN TAIP"
+		},
+		"image": "qzt_522.png"
+	},
+	{
+		"number": "523",
+		"content": {
+			"en": "RIVER SNAILS/BELITUNG/BALITONG",
+			"zh": "螺蛳/螺贝/方田螺",
+			"ms": "SIPUT"
+		},
+		"image": "qzt_523.png"
+	},
+	{
+		"number": "524",
+		"content": {
+			"en": "PEAR",
+			"zh": "梨子",
+			"ms": "BUAH PEAR"
+		},
+		"image": "qzt_524.png"
+	},
+	{
+		"number": "525",
+		"content": {
+			"en": "SARONG/SARUNG/BATIK CLOTH",
+			"zh": "沙笼",
+			"ms": "KAIN SARUNG"
+		},
+		"image": "qzt_525.png"
+	},
+	{
+		"number": "526",
+		"content": {
+			"en": "HEDGEHOG",
+			"zh": "河猪/箭猪/刺猬",
+			"ms": "LANDAK"
+		},
+		"image": "qzt_526.png"
+	},
+	{
+		"number": "527",
+		"content": {
+			"en": "CORRECT FIREWOOD",
+			"zh": "砍柴/砍树枝",
+			"ms": "POTONG KAYU"
+		},
+		"image": "qzt_527.png"
+	},
+	{
+		"number": "528",
+		"content": {
+			"en": "BUY BOAR MEAT",
+			"zh": "买山猪肉",
+			"ms": "JUAH DAGING BABI HUTAN"
+		},
+		"image": "qzt_528.png"
+	},
+	{
+		"number": "529",
+		"content": {
+			"en": "MONKEY",
+			"zh": "猴子",
+			"ms": "MONYET"
+		},
+		"image": "qzt_529.png"
+	},
+	{
+		"number": "530",
+		"content": {
+			"en": "FAUCET/WATER TAP",
+			"zh": "水喉/水龙头",
+			"ms": "PAIP AIR"
+		},
+		"image": "qzt_530.png"
+	},
+	{
+		"number": "531",
+		"content": {
+			"en": "DUMB",
+			"zh": "哑巴",
+			"ms": "BISU"
+		},
+		"image": "qzt_531.png"
+	},
+	{
+		"number": "532",
+		"content": {
+			"en": "MAKEUP",
+			"zh": "化妆/上妆",
+			"ms": "BERSOLEK"
+		},
+		"image": "qzt_532.png"
+	},
+	{
+		"number": "533",
+		"content": {
+			"en": "STONE MILL",
+			"zh": "石磨",
+			"ms": "PENGISAR"
+		},
+		"image": "qzt_533.png"
+	},
+	{
+		"number": "534",
+		"content": {
+			"en": "CABINET/CLOSET/WARDROBE",
+			"zh": "橱柜",
+			"ms": "ALMARI"
+		},
+		"image": "qzt_534.png"
+	},
+	{
+		"number": "535",
+		"content": {
+			"en": "SLIPPER",
+			"zh": "拖鞋",
+			"ms": "SLIPER"
+		},
+		"image": "qzt_535.png"
+	},
+	{
+		"number": "536",
+		"content": {
+			"en": "BLACK GLASSES/SUNGLASSES",
+			"zh": "黑眼镜/太阳眼镜/墨镜",
+			"ms": "CERMIN MATA HITAM"
+		},
+		"image": "qzt_536.png"
+	},
+	{
+		"number": "537",
+		"content": {
+			"en": "BICYCLE CAR ACCIDENT",
+			"zh": "脚车汽车相撞",
+			"ms": "BASIKAL LANGGAR KERETA"
+		},
+		"image": "qzt_537.png"
+	},
+	{
+		"number": "538",
+		"content": {
+			"en": "SCHOOL/COLLEGE/UNIVERSITY",
+			"zh": "学校/学院/大学",
+			"ms": "SEKOLAH"
+		},
+		"image": "qzt_538.png"
+	},
+	{
+		"number": "539",
+		"content": {
+			"en": "CATCH PIG",
+			"zh": "捉猪",
+			"ms": "TANGKAP KHINZIR"
+		},
+		"image": "qzt_539.png"
+	},
+	{
+		"number": "540",
+		"content": {
+			"en": "HIKE/HIKING",
+			"zh": "远足/行山/健行",
+			"ms": "BERSIAR-SIAR"
+		},
+		"image": "qzt_540.png"
+	},
+	{
+		"number": "541",
+		"content": {
+			"en": "PHOTOGRAPH/PHOTO SHOOTING",
+			"zh": "拍照/拍相片/拍摄",
+			"ms": "TANGKAP GAMBAR"
+		},
+		"image": "qzt_541.png"
+	},
+	{
+		"number": "542",
+		"content": {
+			"en": "GIEK/CLOG SHOES",
+			"zh": "木屐",
+			"ms": "TURMPAH"
+		},
+		"image": "qzt_542.png"
+	},
+	{
+		"number": "543",
+		"content": {
+			"en": "TAKE PHOTOS OF SCENERY/SHOOTING LANDSCAPE PICTURE",
+			"zh": "拍风景照",
+			"ms": "TANGKAP GAMBAR"
+		},
+		"image": "qzt_543.png"
+	},
+	{
+		"number": "544",
+		"content": {
+			"en": "MILITARY CAMP/BARRACK",
+			"zh": "兵营/军营",
+			"ms": "PANGKALAN TENTERA"
+		},
+		"image": "qzt_544.png"
+	},
+	{
+		"number": "545",
+		"content": {
+			"en": "BOAT/SAMPAN",
+			"zh": "舢舨/舟/小船/小艇",
+			"ms": "PRAHU"
+		},
+		"image": "qzt_545.png"
+	},
+	{
+		"number": "546",
+		"content": {
+			"en": "FOUNTAIN PEN",
+			"zh": "钢笔",
+			"ms": "PEN"
+		},
+		"image": "qzt_546.png"
+	},
+	{
+		"number": "547",
+		"content": {
+			"en": "WRITING LETTER",
+			"zh": "写信",
+			"ms": "TULIS SURAT"
+		},
+		"image": "qzt_547.png"
+	},
+	{
+		"number": "548",
+		"content": {
+			"en": "MATCHES",
+			"zh": "火柴",
+			"ms": "MANCIS"
+		},
+		"image": "qzt_548.png"
+	},
+	{
+		"number": "549",
+		"content": {
+			"en": "PLAY BASKETBALL",
+			"zh": "打篮球/拍球",
+			"ms": "BOLA KERANJANG"
+		},
+		"image": "qzt_549.png"
+	},
+	{
+		"number": "550",
+		"content": {
+			"en": "PLAY FOOTBALL/PLAY SOCCER",
+			"zh": "足球/踢足球",
+			"ms": "BOLA SEPAK"
+		},
+		"image": "qzt_550.png"
+	},
+	{
+		"number": "551",
+		"content": {
+			"en": "MAKING CAKES/MAKE KUIH/MAKE A CAKE",
+			"zh": "做糕/做粿/做蛋糕/制作糕点",
+			"ms": "BUAT KUAH"
+		},
+		"image": "qzt_551.png"
+	},
+	{
+		"number": "552",
+		"content": {
+			"en": "HARMONICA",
+			"zh": "口琴",
+			"ms": "SORONAI"
+		},
+		"image": "qzt_552.png"
+	},
+	{
+		"number": "553",
+		"content": {
+			"en": "REFRIGERATOR/FRIDGE/FREEZER/ICEBOX",
+			"zh": "雪柜/冰箱/冰橱/电冰箱",
+			"ms": "PETI SEJUK"
+		},
+		"image": "qzt_553.png"
+	},
+	{
+		"number": "554",
+		"content": {
+			"en": "CLOTH CHAIR/CLOTH BENCH",
+			"zh": "布椅/布凳",
+			"ms": "KAUS"
+		},
+		"image": "qzt_554.png"
+	},
+	{
+		"number": "555",
+		"content": {
+			"en": "OATS/QUAKER OATS",
+			"zh": "麦片/燕麦/奎克麦片",
+			"ms": "QUAKER OATS"
+		},
+		"image": "qzt_555.png"
+	},
+	{
+		"number": "556",
+		"content": {
+			"en": "EAT DURIAN",
+			"zh": "吃榴莲",
+			"ms": "MAKAN DURIAN"
+		},
+		"image": "qzt_556.png"
+	},
+	{
+		"number": "557",
+		"content": {
+			"en": "DITCH",
+			"zh": "水沟/沟渠",
+			"ms": "LONGKANG"
+		},
+		"image": "qzt_557.png"
+	},
+	{
+		"number": "558",
+		"content": {
+			"en": "PHONE/TELEPHONE/HANDPHONE",
+			"zh": "电话/手机",
+			"ms": "TELEFON"
+		},
+		"image": "qzt_558.png"
+	},
+	{
+		"number": "559",
+		"content": {
+			"en": "DREAM/DREAMING",
+			"zh": "梦/托梦/做梦",
+			"ms": "MIMPI"
+		},
+		"image": "qzt_559.png"
+	},
+	{
+		"number": "560",
+		"content": {
+			"en": "LOVE/BE IN LOVE/LOVERS",
+			"zh": "恋爱/谈恋爱/情侣",
+			"ms": "BERCINTA"
+		},
+		"image": "qzt_560.png"
+	},
+	{
+		"number": "561",
+		"content": {
+			"en": "MALAY FUNERAL/MUSLIM FUNERALS",
+			"zh": "马来人出殡/马来人葬礼/回教葬礼",
+			"ms": "JENAZAH"
+		},
+		"image": "qzt_561.png"
+	},
+	{
+		"number": "562",
+		"content": {
+			"en": "FLY A KITE",
+			"zh": "玩风筝/放风筝",
+			"ms": "MAIN LAYANG-LAYANG"
+		},
+		"image": "qzt_562.png"
+	},
+	{
+		"number": "563",
+		"content": {
+			"en": "TOOTHACHE",
+			"zh": "牙痛/牙齿疼痛",
+			"ms": "SAKIT GIGI"
+		},
+		"image": "qzt_563.png"
+	},
+	{
+		"number": "564",
+		"content": {
+			"en": "STRAW BAGS",
+			"zh": "草袋",
+			"ms": "BAG JERANI"
+		},
+		"image": "qzt_564.png"
+	},
+	{
+		"number": "565",
+		"content": {
+			"en": "OPIUM SMOKING/DRUG",
+			"zh": "吸鸦片/吸毒",
+			"ms": "HISAP CANDU"
+		},
+		"image": "qzt_565.png"
+	},
+	{
+		"number": "566",
+		"content": {
+			"en": "ATAP/ROOF",
+			"zh": "亚答/亚答叶屋顶/亚塔屋顶",
+			"ms": "ATAP"
+		},
+		"image": "qzt_566.png"
+	},
+	{
+		"number": "567",
+		"content": {
+			"en": "BELL",
+			"zh": "铃/钟",
+			"ms": "LOCENG"
+		},
+		"image": "qzt_567.png"
+	},
+	{
+		"number": "568",
+		"content": {
+			"en": "LEAVES CIGARETTE/ROKOK DAUN",
+			"zh": "老烟稿",
+			"ms": "DAUN ROKOK"
+		},
+		"image": "qzt_568.png"
+	},
+	{
+		"number": "569",
+		"content": {
+			"en": "COFFIN",
+			"zh": "棺材",
+			"ms": "KERANDA"
+		},
+		"image": "qzt_569.png"
+	},
+	{
+		"number": "570",
+		"content": {
+			"en": "DURIAN",
+			"zh": "榴莲/榴梿",
+			"ms": "DURIAN"
+		},
+		"image": "qzt_570.png"
+	},
+	{
+		"number": "571",
+		"content": {
+			"en": "STELE/SIGN STONE",
+			"zh": "石碑/石刻",
+			"ms": "BATU TANDA"
+		},
+		"image": "qzt_571.png"
+	},
+	{
+		"number": "572",
+		"content": {
+			"en": "MONUMENT",
+			"zh": "纪念碑",
+			"ms": "TUKU INGATAN"
+		},
+		"image": "qzt_572.png"
+	},
+	{
+		"number": "573",
+		"content": {
+			"en": "CHAIR",
+			"zh": "椅子",
+			"ms": "BANGKU"
+		},
+		"image": "qzt_573.png"
+	},
+	{
+		"number": "574",
+		"content": {
+			"en": "FLAG/BANNER",
+			"zh": "旗/旗子/旗帜/国旗",
+			"ms": "BENDERA"
+		},
+		"image": "qzt_574.png"
+	},
+	{
+		"number": "575",
+		"content": {
+			"en": "CUT THE RIBBON",
+			"zh": "剪彩",
+			"ms": "PEMBUKAAN RASMI"
+		},
+		"image": "qzt_575.png"
+	},
+	{
+		"number": "576",
+		"content": {
+			"en": "HORSE RACING/HORSERACE",
+			"zh": "跑马/赛马",
+			"ms": "LUMBA KUDA"
+		},
+		"image": "qzt_576.png"
+	},
+	{
+		"number": "577",
+		"content": {
+			"en": "MOURNING/MOURNING FOR RELATIVE",
+			"zh": "挂孝/戴孝/带孝",
+			"ms": "TUAHA"
+		},
+		"image": "qzt_577.png"
+	},
+	{
+		"number": "578",
+		"content": {
+			"en": "CUP/TUMBLER",
+			"zh": "杯子",
+			"ms": "MUG"
+		},
+		"image": "qzt_578.png"
+	},
+	{
+		"number": "579",
+		"content": {
+			"en": "HAIR MOUSSE",
+			"zh": "头发雪花膏/摩丝",
+			"ms": "HAZELIN SNOW"
+		},
+		"image": "qzt_579.png"
+	},
+	{
+		"number": "580",
+		"content": {
+			"en": "BISCUIT",
+			"zh": "饼/包装饼",
+			"ms": "BISKUT"
+		},
+		"image": "qzt_580.png"
+	},
+	{
+		"number": "581",
+		"content": {
+			"en": "MOUSE TRAP",
+			"zh": "老鼠笼/老鼠陷阱",
+			"ms": "PERANGKAP"
+		},
+		"image": "qzt_581.png"
+	},
+	{
+		"number": "582",
+		"content": {
+			"en": "SPOON",
+			"zh": "汤匙/匙羹",
+			"ms": "SUDU"
+		},
+		"image": "qzt_582.png"
+	},
+	{
+		"number": "583",
+		"content": {
+			"en": "TRAVEL BY TRAIN",
+			"zh": "乘坐火车/搭火车",
+			"ms": "NAIK KERETA API"
+		},
+		"image": "qzt_583.png"
+	},
+	{
+		"number": "584",
+		"content": {
+			"en": "TRAVEL BY BUS",
+			"zh": "坐巴士/搭巴士",
+			"ms": "NAIK BAS"
+		},
+		"image": "qzt_584.png"
+	},
+	{
+		"number": "585",
+		"content": {
+			"en": "TRAVEL BY SEA/BY SHIP/BY BOAT",
+			"zh": "坐船",
+			"ms": "NAIK KAPAL"
+		},
+		"image": "qzt_585.png"
+	},
+	{
+		"number": "586",
+		"content": {
+			"en": "CAR/VEHICLE",
+			"zh": "车/汽车/轿车/车辆",
+			"ms": "KERETA"
+		},
+		"image": "qzt_586.png"
+	},
+	{
+		"number": "587",
+		"content": {
+			"en": "TRAVEL BY PLANE",
+			"zh": "乘坐飞机/搭飞机",
+			"ms": "NAIK KAPAL TERBANG"
+		},
+		"image": "qzt_587.png"
+	},
+	{
+		"number": "588",
+		"content": {
+			"en": "ICE CREAM",
+			"zh": "冰淇淋/雪糕",
+			"ms": "AISKRIM"
+		},
+		"image": "qzt_588.png"
+	},
+	{
+		"number": "589",
+		"content": {
+			"en": "PAINT",
+			"zh": "漆",
+			"ms": "CAT"
+		},
+		"image": "qzt_589.png"
+	},
+	{
+		"number": "590",
+		"content": {
+			"en": "GO TO PASAR/GO TO MARKET",
+			"zh": "去巴刹/去菜市场",
+			"ms": "PERGI PASAR"
+		},
+		"image": "qzt_590.png"
+	},
+	{
+		"number": "591",
+		"content": {
+			"en": "DRAWER",
+			"zh": "桌屉/抽屉",
+			"ms": "LACI"
+		},
+		"image": "qzt_591.png"
+	},
+	{
+		"number": "592",
+		"content": {
+			"en": "COBRA",
+			"zh": "眼镜蛇",
+			"ms": "ULAR TEDUNG"
+		},
+		"image": "qzt_592.png"
+	},
+	{
+		"number": "593",
+		"content": {
+			"en": "MONKEY SHOW",
+			"zh": "猴戏",
+			"ms": "PERTUJUKAN MONYET"
+		},
+		"image": "qzt_593.png"
+	},
+	{
+		"number": "594",
+		"content": {
+			"en": "TURKEY FIGHTING",
+			"zh": "斗火鸡",
+			"ms": "AYAM PIRU BERLAGA"
+		},
+		"image": "qzt_594.png"
+	},
+	{
+		"number": "595",
+		"content": {
+			"en": "GOOSE",
+			"zh": "鹅",
+			"ms": "ANGSA"
+		},
+		"image": "qzt_595.png"
+	},
+	{
+		"number": "596",
+		"content": {
+			"en": "HEN/FEMALE CHICKEN",
+			"zh": "母鸡",
+			"ms": "AYAM BETINA"
+		},
+		"image": "qzt_596.png"
+	},
+	{
+		"number": "597",
+		"content": {
+			"en": "DEAF PERSON/DEAF",
+			"zh": "聋子/耳聋",
+			"ms": "SI PEKAK"
+		},
+		"image": "qzt_597.png"
+	},
+	{
+		"number": "598",
+		"content": {
+			"en": "COCK/ROOSTER/MALE CHICKEN",
+			"zh": "雄鸡/公鸡",
+			"ms": "AYAM JANTAN"
+		},
+		"image": "qzt_598.png"
+	},
+	{
+		"number": "599",
+		"content": {
+			"en": "CAT",
+			"zh": "猫",
+			"ms": "KUCING"
+		},
+		"image": "qzt_599.png"
+	},
+	{
+		"number": "600",
+		"content": {
+			"en": "ARMY DOG/POLICE DOG",
+			"zh": "军犬/警犬",
+			"ms": "ANJING ASKAR"
+		},
+		"image": "qzt_600.png"
+	},
+	{
+		"number": "601",
+		"content": {
+			"en": "DOGS,HOUSE DOG",
+			"zh": "狗/家犬/看家狗",
+			"ms": "ANJING"
+		},
+		"image": "qzt_601.png"
+	},
+	{
+		"number": "602",
+		"content": {
+			"en": "COW/BULL/OX",
+			"zh": "牛",
+			"ms": "LEMBU"
+		},
+		"image": "qzt_602.png"
+	},
+	{
+		"number": "603",
+		"content": {
+			"en": "SELLING MEE/SELLING FRIED NOODLE",
+			"zh": "卖面/卖炒面",
+			"ms": "JUAL MEE"
+		},
+		"image": "qzt_603.png"
+	},
+	{
+		"number": "604",
+		"content": {
+			"en": "KITCHEN KNIFE",
+			"zh": "菜刀",
+			"ms": "PISAU"
+		},
+		"image": "qzt_604.png"
+	},
+	{
+		"number": "605",
+		"content": {
+			"en": "SELLING FRIED BANANA",
+			"zh": "卖炸香蕉糕",
+			"ms": "JUAL GORENG PISANG"
+		},
+		"image": "qzt_605.png"
+	},
+	{
+		"number": "606",
+		"content": {
+			"en": "PYTHON",
+			"zh": "蟒蛇",
+			"ms": "ULAR SAWA"
+		},
+		"image": "qzt_606.png"
+	},
+	{
+		"number": "607",
+		"content": {
+			"en": "FECES CAR",
+			"zh": "倒尿车/倒屎车",
+			"ms": "KERETA NAJIS"
+		},
+		"image": "qzt_607.png"
+	},
+	{
+		"number": "608",
+		"content": {
+			"en": "SESAME OIL",
+			"zh": "天山麻油/麻油/香油/芝麻油",
+			"ms": "MINYAK BIJIAN"
+		},
+		"image": "qzt_608.png"
+	},
+	{
+		"number": "609",
+		"content": {
+			"en": "RESTAURANT",
+			"zh": "饭店/餐厅",
+			"ms": "KEDAI MAKAN"
+		},
+		"image": "qzt_609.png"
+	},
+	{
+		"number": "610",
+		"content": {
+			"en": "RESTAURANT",
+			"zh": "茶楼/酒楼/酒家",
+			"ms": "RESTORAN"
+		},
+		"image": "qzt_610.png"
+	},
+	{
+		"number": "611",
+		"content": {
+			"en": "MOON CAKE",
+			"zh": "中秋月饼",
+			"ms": "KUIH BULAN"
+		},
+		"image": "qzt_611.png"
+	},
+	{
+		"number": "612",
+		"content": {
+			"en": "SELLING DRINKS",
+			"zh": "卖冰水/卖饮料",
+			"ms": "JUAL MINUMAN AIS"
+		},
+		"image": "qzt_612.png"
+	},
+	{
+		"number": "613",
+		"content": {
+			"en": "KITE/WAU",
+			"zh": "风筝",
+			"ms": "LAYANG-LAYANG"
+		},
+		"image": "qzt_613.png"
+	},
+	{
+		"number": "614",
+		"content": {
+			"en": "POTATO",
+			"zh": "干冬薯/馬鈴薯/土豆/洋芋",
+			"ms": "UBI GENTANG"
+		},
+		"image": "qzt_614.png"
+	},
+	{
+		"number": "615",
+		"content": {
+			"en": "EAR PICKING",
+			"zh": "挖耳/掏耳朵",
+			"ms": "KOREK TELINGA"
+		},
+		"image": "qzt_615.png"
+	},
+	{
+		"number": "616",
+		"content": {
+			"en": "DRIED CHILI",
+			"zh": "干辣椒",
+			"ms": "LADA KERING"
+		},
+		"image": "qzt_616.png"
+	},
+	{
+		"number": "617",
+		"content": {
+			"en": "BREAD",
+			"zh": "面包",
+			"ms": "ROTI"
+		},
+		"image": "qzt_617.png"
+	},
+	{
+		"number": "618",
+		"content": {
+			"en": "PARANG KNIFE",
+			"zh": "巴冷刀/砍刀",
+			"ms": "GOLOK"
+		},
+		"image": "qzt_618.png"
+	},
+	{
+		"number": "619",
+		"content": {
+			"en": "ONION",
+			"zh": "大葱/洋葱",
+			"ms": "BAWANG BESAR"
+		},
+		"image": "qzt_619.png"
+	},
+	{
+		"number": "620",
+		"content": {
+			"en": "BELACAN",
+			"zh": "巴拉煎/峇拉煎",
+			"ms": "BELACAN"
+		},
+		"image": "qzt_620.png"
+	},
+	{
+		"number": "621",
+		"content": {
+			"en": "AXE",
+			"zh": "斧头",
+			"ms": "KAPAK"
+		},
+		"image": "qzt_621.png"
+	},
+	{
+		"number": "622",
+		"content": {
+			"en": "SAW TIMBER/CUT WOOD",
+			"zh": "锯木/据木",
+			"ms": "GERGAJI KAYU"
+		},
+		"image": "qzt_622.png"
+	},
+	{
+		"number": "623",
+		"content": {
+			"en": "DIAMOND",
+			"zh": "钻石",
+			"ms": "INTAN"
+		},
+		"image": "qzt_623.png"
+	},
+	{
+		"number": "624",
+		"content": {
+			"en": "WOOD CHARCOAL",
+			"zh": "炭/黑炭/火炭/木炭",
+			"ms": "ARANG"
+		},
+		"image": "qzt_624.png"
+	},
+	{
+		"number": "625",
+		"content": {
+			"en": "FOUR-COLOR CARDS",
+			"zh": "四色牌",
+			"ms": "DAUN CHEKI"
+		},
+		"image": "qzt_625.png"
+	},
+	{
+		"number": "626",
+		"content": {
+			"en": "PLAYING CARDS/POKER",
+			"zh": "扑克牌/啤牌",
+			"ms": "TERUP"
+		},
+		"image": "qzt_626.png"
+	},
+	{
+		"number": "627",
+		"content": {
+			"en": "NEWSPAPER/PUBLICATION",
+			"zh": "报纸/刊物/新闻报章",
+			"ms": "SURAT KHABAR"
+		},
+		"image": "qzt_627.png"
+	},
+	{
+		"number": "628",
+		"content": {
+			"en": "GLASS",
+			"zh": "玻璃",
+			"ms": "KACA"
+		},
+		"image": "qzt_628.png"
+	},
+	{
+		"number": "629",
+		"content": {
+			"en": "TRUCKS CONVEY GOODS/TRANSPORT GOODS BY LORRY",
+			"zh": "罗里载货物/货车载运货物/卡车载货",
+			"ms": "LORI BARANG"
+		},
+		"image": "qzt_629.png"
+	},
+	{
+		"number": "630",
+		"content": {
+			"en": "CARRY SAND",
+			"zh": "担土/担沙土",
+			"ms": "KANDAR PASIR"
+		},
+		"image": "qzt_630.png"
+	},
+	{
+		"number": "631",
+		"content": {
+			"en": "HOUSE DECORATION/HOUSE REPAIR",
+			"zh": "修屋/装修房子/翻新房子",
+			"ms": "BAIKI RUMAH"
+		},
+		"image": "qzt_631.png"
+	},
+	{
+		"number": "632",
+		"content": {
+			"en": "MANGOSTEEN",
+			"zh": "山竹",
+			"ms": "BUAH MANGGIS"
+		},
+		"image": "qzt_632.png"
+	},
+	{
+		"number": "633",
+		"content": {
+			"en": "SINGING",
+			"zh": "唱歌",
+			"ms": "MENYANYI"
+		},
+		"image": "qzt_633.png"
+	},
+	{
+		"number": "634",
+		"content": {
+			"en": "HAND/PALM",
+			"zh": "手/手掌",
+			"ms": "TAPAK TANGAN"
+		},
+		"image": "qzt_634.png"
+	},
+	{
+		"number": "635",
+		"content": {
+			"en": "STONE/ROCK",
+			"zh": "石头/岩石",
+			"ms": "BATU"
+		},
+		"image": "qzt_635.png"
+	},
+	{
+		"number": "636",
+		"content": {
+			"en": "EARRING/EARDROP/DANGLER",
+			"zh": "耳环/耳坠/耳饰",
+			"ms": "SUBANG"
+		},
+		"image": "qzt_636.png"
+	},
+	{
+		"number": "637",
+		"content": {
+			"en": "COFFEE",
+			"zh": "咖啡",
+			"ms": "KOPI HITAM"
+		},
+		"image": "qzt_637.png"
+	},
+	{
+		"number": "638",
+		"content": {
+			"en": "ELECTRIC LAMP",
+			"zh": "电灯",
+			"ms": "LAMPU"
+		},
+		"image": "qzt_638.png"
+	},
+	{
+		"number": "639",
+		"content": {
+			"en": "SQUIRREL",
+			"zh": "松鼠",
+			"ms": "TUPAI"
+		},
+		"image": "qzt_639.png"
+	},
+	{
+		"number": "640",
+		"content": {
+			"en": "SELLING ROJAK",
+			"zh": "卖罗惹",
+			"ms": "JUAL ROJAK"
+		},
+		"image": "qzt_640.png"
+	},
+	{
+		"number": "641",
+		"content": {
+			"en": "SELLING SQUID",
+			"zh": "卖鱿鱼",
+			"ms": "JUAL SOTONG"
+		},
+		"image": "qzt_641.png"
+	},
+	{
+		"number": "642",
+		"content": {
+			"en": "RESCUE/FIRST AID/HELP",
+			"zh": "救伤/急救/救人/抢救",
+			"ms": "PEGAWAI KECEMASAN"
+		},
+		"image": "qzt_642.png"
+	},
+	{
+		"number": "643",
+		"content": {
+			"en": "RIDING HORSE",
+			"zh": "骑马",
+			"ms": "NAIK KUDA"
+		},
+		"image": "qzt_643.png"
+	},
+	{
+		"number": "644",
+		"content": {
+			"en": "RIDING ELEPHANT",
+			"zh": "骑象",
+			"ms": "NAIK GAJAH"
+		},
+		"image": "qzt_644.png"
+	},
+	{
+		"number": "645",
+		"content": {
+			"en": "RICE DUMPLINGS/ZONGZI/BAKCANG",
+			"zh": "粽子/肉粽",
+			"ms": "KETUPAT"
+		},
+		"image": "qzt_645.png"
+	},
+	{
+		"number": "646",
+		"content": {
+			"en": "EMPRESS/QUEEN",
+			"zh": "女皇/皇后/女王/王后",
+			"ms": "PERMAISURI"
+		},
+		"image": "qzt_646.png"
+	},
+	{
+		"number": "647",
+		"content": {
+			"en": "LOVE LETTER",
+			"zh": "情书/情信",
+			"ms": "SURAT CINTA"
+		},
+		"image": "qzt_647.png"
+	},
+	{
+		"number": "648",
+		"content": {
+			"en": "PERFUME",
+			"zh": "香水",
+			"ms": "MINYAK WANGI"
+		},
+		"image": "qzt_648.png"
+	},
+	{
+		"number": "649",
+		"content": {
+			"en": "ROUGE/BLUSH",
+			"zh": "胭脂/腮紅",
+			"ms": "LIPSTICK"
+		},
+		"image": "qzt_649.png"
+	},
+	{
+		"number": "650",
+		"content": {
+			"en": "BEER",
+			"zh": "啤酒/麥酒",
+			"ms": "BEER"
+		},
+		"image": "qzt_650.png"
+	},
+	{
+		"number": "651",
+		"content": {
+			"en": "BAR/PUB/TAVERN",
+			"zh": "酒吧/酒廊",
+			"ms": "BAR"
+		},
+		"image": "qzt_651.png"
+	},
+	{
+		"number": "652",
+		"content": {
+			"en": "NECKLACE",
+			"zh": "项链/项鍊",
+			"ms": "RANTAI"
+		},
+		"image": "qzt_652.png"
+	},
+	{
+		"number": "653",
+		"content": {
+			"en": "WATCH SPORTS GAME",
+			"zh": "看运动/观看运动比赛",
+			"ms": "MENONTON SUKAN"
+		},
+		"image": "qzt_653.png"
+	},
+	{
+		"number": "654",
+		"content": {
+			"en": "AWARD/PRESENT PRIZES/AWARD MEDAL",
+			"zh": "赏奖杯/颁奖",
+			"ms": "TERIMA PIALA"
+		},
+		"image": "qzt_654.png"
+	},
+	{
+		"number": "655",
+		"content": {
+			"en": "FISH FEEDING/RAISE FISH",
+			"zh": "饲养金鱼/喂鱼/养鱼",
+			"ms": "BELA IKAN MAS"
+		},
+		"image": "qzt_655.png"
+	},
+	{
+		"number": "656",
+		"content": {
+			"en": "HOME GUARD/SELF-DEFENSE GROUP",
+			"zh": "自卫团/自卫队",
+			"ms": "RELA"
+		},
+		"image": "qzt_656.png"
+	},
+	{
+		"number": "657",
+		"content": {
+			"en": "MILK",
+			"zh": "牛乳/牛奶",
+			"ms": "SUSU"
+		},
+		"image": "qzt_657.png"
+	},
+	{
+		"number": "658",
+		"content": {
+			"en": "MOSQUITO FOGGING MACHINE",
+			"zh": "蚊油机/蚊雾机",
+			"ms": "PUMP MINYAK"
+		},
+		"image": "qzt_658.png"
+	},
+	{
+		"number": "659",
+		"content": {
+			"en": "FOGGING MOSQUITO",
+			"zh": "喷蚊油/喷蚊雾",
+			"ms": "SEMBUR UBAT MINYAK"
+		},
+		"image": "qzt_659.png"
+	},
+	{
+		"number": "660",
+		"content": {
+			"en": "PUSH STROLLER",
+			"zh": "推婴儿车",
+			"ms": "TROLI"
+		},
+		"image": "qzt_660.png"
+	},
+	{
+		"number": "661",
+		"content": {
+			"en": "TURKEY",
+			"zh": "火鸡",
+			"ms": "AYAM BELANDA"
+		},
+		"image": "qzt_661.png"
+	},
+	{
+		"number": "662",
+		"content": {
+			"en": "CRADLING BABY",
+			"zh": "摇小孩/摇孩子入睡",
+			"ms": "JAGA ANAK"
+		},
+		"image": "qzt_662.png"
+	},
+	{
+		"number": "663",
+		"content": {
+			"en": "CARRY CHILD ON BACK",
+			"zh": "背小孩/背孩子/背婴儿",
+			"ms": "DUKUNG ANAK"
+		},
+		"image": "qzt_663.png"
+	},
+	{
+		"number": "664",
+		"content": {
+			"en": "SELLING NYONYA CAKES/SELLING KUIH",
+			"zh": "卖娘惹糕/卖糕点",
+			"ms": "JUAL KUIH"
+		},
+		"image": "qzt_664.png"
+	},
+	{
+		"number": "665",
+		"content": {
+			"en": "SELLING LAKSA",
+			"zh": "卖叻沙",
+			"ms": "JUAH LAKSA"
+		},
+		"image": "qzt_665.png"
+	},
+	{
+		"number": "666",
+		"content": {
+			"en": "OKRA",
+			"zh": "羊角豆/秋葵",
+			"ms": "BENDI"
+		},
+		"image": "qzt_666.png"
+	},
+	{
+		"number": "667",
+		"content": {
+			"en": "FIREFIGHTING/EXTINGUISHING",
+			"zh": "救火/灭火",
+			"ms": "PADAM API"
+		},
+		"image": "qzt_667.png"
+	},
+	{
+		"number": "668",
+		"content": {
+			"en": "PASAR",
+			"zh": "巴刹",
+			"ms": "PASAR"
+		},
+		"image": "qzt_668.png"
+	},
+	{
+		"number": "669",
+		"content": {
+			"en": "CANDY",
+			"zh": "糖果",
+			"ms": "GULA-GULA"
+		},
+		"image": "qzt_669.png"
+	},
+	{
+		"number": "670",
+		"content": {
+			"en": "WREATH",
+			"zh": "花圈/花环",
+			"ms": "KALUNGAN BUNGA"
+		},
+		"image": "qzt_670.png"
+	},
+	{
+		"number": "671",
+		"content": {
+			"en": "BADMINTON",
+			"zh": "羽毛球",
+			"ms": "BULU TANGKIS"
+		},
+		"image": "qzt_671.png"
+	},
+	{
+		"number": "672",
+		"content": {
+			"en": "CARRY DURIANS",
+			"zh": "挑榴莲/担榴莲",
+			"ms": "PILIH DURIAN"
+		},
+		"image": "qzt_672.png"
+	},
+	{
+		"number": "673",
+		"content": {
+			"en": "OPEN DURIAN",
+			"zh": "开榴莲",
+			"ms": "BUKA DURIAN"
+		},
+		"image": "qzt_673.png"
+	},
+	{
+		"number": "674",
+		"content": {
+			"en": "THE BUTTERFLY LOVERS",
+			"zh": "山伯英台/梁山伯与祝英台",
+			"ms": "CINTA ABADI"
+		},
+		"image": "qzt_674.png"
+	},
+	{
+		"number": "675",
+		"content": {
+			"en": "FLIRTING SCHOLAR",
+			"zh": "点秋香/唐伯虎点秋香",
+			"ms": "PILIH ISTERI"
+		},
+		"image": "qzt_675.png"
+	},
+	{
+		"number": "676",
+		"content": {
+			"en": "BUTTON AND THREAD",
+			"zh": "钮线/扣",
+			"ms": "BUTANG BENANG"
+		},
+		"image": "qzt_676.png"
+	},
+	{
+		"number": "677",
+		"content": {
+			"en": "SOLICITING PROSTITUTES/GO WHORING",
+			"zh": "嫖妓/嫖娼/招妓/召妓",
+			"ms": "PANGGIL PELACUR"
+		},
+		"image": "qzt_677.png"
+	},
+	{
+		"number": "678",
+		"content": {
+			"en": "EAT CURRY RICE",
+			"zh": "吃咖喱饭",
+			"ms": "MAKAN NASI"
+		},
+		"image": "qzt_678.png"
+	},
+	{
+		"number": "679",
+		"content": {
+			"en": "SELLING ROTI CANAI",
+			"zh": "卖面粉糕/卖印度煎饼",
+			"ms": "JUAL KUIH SUP"
+		},
+		"image": "qzt_679.png"
+	},
+	{
+		"number": "680",
+		"content": {
+			"en": "BADMINTON RACKET",
+			"zh": "羽球拍",
+			"ms": "RAKET"
+		},
+		"image": "qzt_680.png"
+	},
+	{
+		"number": "681",
+		"content": {
+			"en": "STRAW MAT/GRASSMAT",
+			"zh": "草席",
+			"ms": "TIKAR"
+		},
+		"image": "qzt_681.png"
+	},
+	{
+		"number": "682",
+		"content": {
+			"en": "PUBLIC FAUCET/PUBLIC WATER TAP",
+			"zh": "公共水喉管/公共水龙头",
+			"ms": "PAIP AWAM"
+		},
+		"image": "qzt_682.png"
+	},
+	{
+		"number": "683",
+		"content": {
+			"en": "STIR ROPE/MAKE ROPE",
+			"zh": "较索/搅绳子/制作绳子",
+			"ms": "BUAT TALI"
+		},
+		"image": "qzt_683.png"
+	},
+	{
+		"number": "684",
+		"content": {
+			"en": "LOAD PEOPLE BY SAMPAN/LOAD PEOPLE BY BOAT",
+			"zh": "舢板载人/坐舢板/小船载人",
+			"ms": "NAIK SAMPAN"
+		},
+		"image": "qzt_684.png"
+	},
+	{
+		"number": "685",
+		"content": {
+			"en": "EAT ICE CREAM",
+			"zh": "吃冰淇淋/吃雪糕",
+			"ms": "MAKAN AISKRIM"
+		},
+		"image": "qzt_685.png"
+	},
+	{
+		"number": "686",
+		"content": {
+			"en": "MEDAL AWARD",
+			"zh": "赏勋章/颁发勋章/给勋章",
+			"ms": "DARJAT"
+		},
+		"image": "qzt_686.png"
+	},
+	{
+		"number": "687",
+		"content": {
+			"en": "WASHING DISHES",
+			"zh": "洗碗盘/洗碗碟",
+			"ms": "CUCI PINGGAN"
+		},
+		"image": "qzt_687.png"
+	},
+	{
+		"number": "688",
+		"content": {
+			"en": "TIGER BALM",
+			"zh": "万金油/萬用药膏/虎标万金油",
+			"ms": "MINYAK RIMAU"
+		},
+		"image": "qzt_688.png"
+	},
+	{
+		"number": "689",
+		"content": {
+			"en": "TIGER POWDER/HEADACHE POWDER",
+			"zh": "头痛粉/虎标永安堂头痛粉",
+			"ms": "UBAT SAKIT KEPALA"
+		},
+		"image": "qzt_689.png"
+	},
+	{
+		"number": "690",
+		"content": {
+			"en": "PILLS",
+			"zh": "药丸/药片",
+			"ms": "UBAT PILS"
+		},
+		"image": "qzt_690.png"
+	},
+	{
+		"number": "691",
+		"content": {
+			"en": "BOIL MEDICINE",
+			"zh": "煲药/煎中药/熬中药",
+			"ms": "MASAK UBAT"
+		},
+		"image": "qzt_691.png"
+	},
+	{
+		"number": "692",
+		"content": {
+			"en": "BATH",
+			"zh": "冲凉/洗澡/沐浴",
+			"ms": "MANDI"
+		},
+		"image": "qzt_692.png"
+	},
+	{
+		"number": "693",
+		"content": {
+			"en": "SARDINE CAN",
+			"zh": "沙丁鱼/沙丁鱼罐头",
+			"ms": "SARDIN"
+		},
+		"image": "qzt_693.png"
+	},
+	{
+		"number": "694",
+		"content": {
+			"en": "TOFU/BEAN CURD",
+			"zh": "豆腐",
+			"ms": "TAUHU"
+		},
+		"image": "qzt_694.png"
+	},
+	{
+		"number": "695",
+		"content": {
+			"en": "PEE/PISS",
+			"zh": "小便/小解/尿尿/撒尿",
+			"ms": "KENCING"
+		},
+		"image": "qzt_695.png"
+	},
+	{
+		"number": "696",
+		"content": {
+			"en": "REST/BREAK",
+			"zh": "休息",
+			"ms": "BEREHAT"
+		},
+		"image": "qzt_696.png"
+	},
+	{
+		"number": "697",
+		"content": {
+			"en": "SPINNING TOP/TOP",
+			"zh": "陀螺/旋轉陀螺",
+			"ms": "GASING"
+		},
+		"image": "qzt_697.png"
+	},
+	{
+		"number": "698",
+		"content": {
+			"en": "STROLLER",
+			"zh": "婴孩车/婴儿车",
+			"ms": "KERETA MAINAN"
+		},
+		"image": "qzt_698.png"
+	},
+	{
+		"number": "699",
+		"content": {
+			"en": "DRINK LIQUOR/DRINK WINE",
+			"zh": "喝酒",
+			"ms": "MINUM ARAK"
+		},
+		"image": "qzt_699.png"
+	},
+	{
+		"number": "700",
+		"content": {
+			"en": "MALAY MOVING HOUSE",
+			"zh": "马来人搬屋/巫裔搬屋子",
+			"ms": "PINDAH RUMAH"
+		},
+		"image": "qzt_700.png"
+	},
+	{
+		"number": "701",
+		"content": {
+			"en": "DRUNK/DRUNKEN",
+			"zh": "醉/醉酒/喝醉酒/醉汉/酗酒",
+			"ms": "KAKI BOTOL"
+		},
+		"image": "qzt_701.png"
+	},
+	{
+		"number": "702",
+		"content": {
+			"en": "DRINK COFFEE",
+			"zh": "喝咖啡",
+			"ms": "MINUM KOPI"
+		},
+		"image": "qzt_702.png"
+	},
+	{
+		"number": "703",
+		"content": {
+			"en": "PREGNANCY TEST/PRENATAL CARE",
+			"zh": "验孕/孕期检查/产前检查",
+			"ms": "RERIKSA HAMIL"
+		},
+		"image": "qzt_703.png"
+	},
+	{
+		"number": "704",
+		"content": {
+			"en": "READING/STUDY/READ/LEARN",
+			"zh": "读书/阅读/看书",
+			"ms": "BACA BUKU"
+		},
+		"image": "qzt_704.png"
+	},
+	{
+		"number": "705",
+		"content": {
+			"en": "SELLING SATAY",
+			"zh": "卖沙爹",
+			"ms": "JUAL SATAY"
+		},
+		"image": "qzt_705.png"
+	},
+	{
+		"number": "706",
+		"content": {
+			"en": "TEA LEAF/TEA",
+			"zh": "茶叶/茶/西郎茶",
+			"ms": "TEH"
+		},
+		"image": "qzt_706.png"
+	},
+	{
+		"number": "707",
+		"content": {
+			"en": "REST IN TRAFFIC CIRCLE",
+			"zh": "交通圈休息/在路旁休息",
+			"ms": "BEREHAT"
+		},
+		"image": "qzt_707.png"
+	},
+	{
+		"number": "708",
+		"content": {
+			"en": "TRAVEL BY TRAM/TRAVEL BY TROLLEY/TRAVEL BY STREETCAR",
+			"zh": "乘搭电车",
+			"ms": "NAIK BAS"
+		},
+		"image": "qzt_708.png"
+	},
+	{
+		"number": "709",
+		"content": {
+			"en": "UPSET/DEPRESS",
+			"zh": "愁闷/懊恼/忧愁/烦乱",
+			"ms": "SUSAH HATI"
+		},
+		"image": "qzt_709.png"
+	},
+	{
+		"number": "710",
+		"content": {
+			"en": "WRITE/WRITING",
+			"zh": "写字/书写",
+			"ms": "MENULIS"
+		},
+		"image": "qzt_710.png"
+	},
+	{
+		"number": "711",
+		"content": {
+			"en": "BULLET",
+			"zh": "子弹/枪弹",
+			"ms": "PELURU"
+		},
+		"image": "qzt_711.png"
+	},
+	{
+		"number": "712",
+		"content": {
+			"en": "TRAFFIC LIGHTS",
+			"zh": "交通灯/红绿灯",
+			"ms": "LAMPU ISYARAT"
+		},
+		"image": "qzt_712.png"
+	},
+	{
+		"number": "713",
+		"content": {
+			"en": "WASHING HAIR",
+			"zh": "洗头发",
+			"ms": "CUCI RAMBUT"
+		},
+		"image": "qzt_713.png"
+	},
+	{
+		"number": "714",
+		"content": {
+			"en": "RICE",
+			"zh": "米",
+			"ms": "BERAS"
+		},
+		"image": "qzt_714.png"
+	},
+	{
+		"number": "715",
+		"content": {
+			"en": "STREAM CLOTHES",
+			"zh": "蒸衣",
+			"ms": "REBUS KAIN"
+		},
+		"image": "qzt_715.png"
+	},
+	{
+		"number": "716",
+		"content": {
+			"en": "MOTORCYCLES CRASHED/MOTORCYCLES ACCIDENT",
+			"zh": "电单车相撞/摩托相撞",
+			"ms": "KEMALANGAN"
+		},
+		"image": "qzt_716.png"
+	},
+	{
+		"number": "717",
+		"content": {
+			"en": "PHOTO/PHOTOGRAPH",
+			"zh": "相片/照片",
+			"ms": "GAMBAR"
+		},
+		"image": "qzt_717.png"
+	},
+	{
+		"number": "718",
+		"content": {
+			"en": "CANE/SUGARCANE",
+			"zh": "甘蔗",
+			"ms": "TEBU"
+		},
+		"image": "qzt_718.png"
+	},
+	{
+		"number": "719",
+		"content": {
+			"en": "SELLING CHESTNUTS",
+			"zh": "卖粟子",
+			"ms": "BUAH BERANGAN"
+		},
+		"image": "qzt_719.png"
+	},
+	{
+		"number": "720",
+		"content": {
+			"en": "HAVING SEX",
+			"zh": "男女亲密/上床/发生性关系",
+			"ms": "BERASRAMA"
+		},
+		"image": "qzt_720.png"
+	},
+	{
+		"number": "721",
+		"content": {
+			"en": "MOTORCYCLE CAR CRASH ACCIDENT",
+			"zh": "电单车汽车相撞/摩托汽车相撞",
+			"ms": "KEMALAGAN"
+		},
+		"image": "qzt_721.png"
+	},
+	{
+		"number": "722",
+		"content": {
+			"en": "PRISONER/CONVICT/CRIMINAL",
+			"zh": "犯人/囚犯",
+			"ms": "BANDUAN"
+		},
+		"image": "qzt_722.png"
+	},
+	{
+		"number": "723",
+		"content": {
+			"en": "VISIT PRISONERS",
+			"zh": "探望犯人/探望囚犯",
+			"ms": "MELAWAT BANDUAN"
+		},
+		"image": "qzt_723.png"
+	},
+	{
+		"number": "724",
+		"content": {
+			"en": "HAIRDRESSING",
+			"zh": "弄头发/理发/饰发/整理头发",
+			"ms": "DANDAN RAMBUT"
+		},
+		"image": "qzt_724.png"
+	},
+	{
+		"number": "725",
+		"content": {
+			"en": "OIL/COOKING OIL",
+			"zh": "油/食油",
+			"ms": "MINYAK"
+		},
+		"image": "qzt_725.png"
+	},
+	{
+		"number": "726",
+		"content": {
+			"en": "COIN/SYILING",
+			"zh": "铜币/硬币/钱币",
+			"ms": "SYILING"
+		},
+		"image": "qzt_726.png"
+	},
+	{
+		"number": "727",
+		"content": {
+			"en": "OIL LAMP",
+			"zh": "油灯",
+			"ms": "LAMPU MINYAK"
+		},
+		"image": "qzt_727.png"
+	},
+	{
+		"number": "728",
+		"content": {
+			"en": "COSMETIC",
+			"zh": "化妆品",
+			"ms": "ALAT SOLEK"
+		},
+		"image": "qzt_728.png"
+	},
+	{
+		"number": "729",
+		"content": {
+			"en": "TIRE PUNCTURE/FLAT TIRE",
+			"zh": "爆胎/轮胎破裂",
+			"ms": "PUNCIT"
+		},
+		"image": "qzt_729.png"
+	},
+	{
+		"number": "730",
+		"content": {
+			"en": "DIRECTING TRAFFIC",
+			"zh": "指挥交通",
+			"ms": "POLIS TRAFIK"
+		},
+		"image": "qzt_730.png"
+	},
+	{
+		"number": "731",
+		"content": {
+			"en": "TAILOR",
+			"zh": "裁缝",
+			"ms": "MENJAHIT"
+		},
+		"image": "qzt_731.png"
+	},
+	{
+		"number": "732",
+		"content": {
+			"en": "CUT COCONUT TREES",
+			"zh": "砍椰树",
+			"ms": "TEBANG POKOK KELAPA"
+		},
+		"image": "qzt_732.png"
+	},
+	{
+		"number": "733",
+		"content": {
+			"en": "SMOKE A PIPE",
+			"zh": "吸烟斗/抽烟斗",
+			"ms": "HISAP PIPE"
+		},
+		"image": "qzt_733.png"
+	},
+	{
+		"number": "734",
+		"content": {
+			"en": "SELLING ROASTED PORK",
+			"zh": "卖烧肉",
+			"ms": "JUAL KHINZIR PANGGANG"
+		},
+		"image": "qzt_734.png"
+	},
+	{
+		"number": "735",
+		"content": {
+			"en": "THERMOS/INSULATED CUP",
+			"zh": "保温瓶/熱水瓶/保温杯",
+			"ms": "PELAS"
+		},
+		"image": "qzt_735.png"
+	},
+	{
+		"number": "736",
+		"content": {
+			"en": "GOSLING EAT GRASS",
+			"zh": "小鹅吃草",
+			"ms": "ANAK ANGSA"
+		},
+		"image": "qzt_736.png"
+	},
+	{
+		"number": "737",
+		"content": {
+			"en": "SELLING VEGETABLES",
+			"zh": "卖蔬菜",
+			"ms": "JUAL SAYUR"
+		},
+		"image": "qzt_737.png"
+	},
+	{
+		"number": "738",
+		"content": {
+			"en": "CATCH OPIUM/ARREST DRUG DRIMINALS/DRUG ELIMINATION",
+			"zh": "捉鸦片/扫毒/捉毒贩/捉瘾君子",
+			"ms": "TANGKAP CANDU"
+		},
+		"image": "qzt_738.png"
+	},
+	{
+		"number": "739",
+		"content": {
+			"en": "SIGN/SHOP SIGN/SIGNBOARD",
+			"zh": "招牌/店标",
+			"ms": "NAMA KEDAI"
+		},
+		"image": "qzt_739.png"
+	},
+	{
+		"number": "740",
+		"content": {
+			"en": "FISHMONGER/FISH SELLER",
+			"zh": "鱼贩",
+			"ms": "PENJAJA IKAN"
+		},
+		"image": "qzt_740.png"
+	},
+	{
+		"number": "741",
+		"content": {
+			"en": "TROLLEY",
+			"zh": "手推车",
+			"ms": "TROLI"
+		},
+		"image": "qzt_741.png"
+	},
+	{
+		"number": "742",
+		"content": {
+			"en": "CARPET",
+			"zh": "地毯",
+			"ms": "PERMADANI"
+		},
+		"image": "qzt_742.png"
+	},
+	{
+		"number": "743",
+		"content": {
+			"en": "SELLING FRUITS",
+			"zh": "卖水果",
+			"ms": "JUAL BUAH-BUAH"
+		},
+		"image": "qzt_743.png"
+	},
+	{
+		"number": "744",
+		"content": {
+			"en": "SELLING ICE",
+			"zh": "卖冰/卖冰块",
+			"ms": "JUAL ICE"
+		},
+		"image": "qzt_744.png"
+	},
+	{
+		"number": "745",
+		"content": {
+			"en": "DENTAL EXTRACTION/TO EXTRACT TEETH",
+			"zh": "拔牙",
+			"ms": "CABUT GIGI"
+		},
+		"image": "qzt_745.png"
+	},
+	{
+		"number": "746",
+		"content": {
+			"en": "SELL RICE",
+			"zh": "卖饭/扁担饭/经济饭",
+			"ms": "NASI CAMPUR"
+		},
+		"image": "qzt_746.png"
+	},
+	{
+		"number": "747",
+		"content": {
+			"en": "LIPSTICK/PUT LIPSTICK/WEAR LIPSTICK",
+			"zh": "搽口红/涂口红",
+			"ms": "SAPU KINCU"
+		},
+		"image": "qzt_747.png"
+	},
+	{
+		"number": "748",
+		"content": {
+			"en": "SKIRT/DRESS",
+			"zh": "裙子/短裙",
+			"ms": "SKIRT"
+		},
+		"image": "qzt_748.png"
+	},
+	{
+		"number": "749",
+		"content": {
+			"en": "SELLING HOKKIEN MEE",
+			"zh": "卖福建面",
+			"ms": "JUAL MEE HOKKIEN"
+		},
+		"image": "qzt_749.png"
+	},
+	{
+		"number": "750",
+		"content": {
+			"en": "CHAR KOEY TEOW/CHAR KUAY TEOW/CHAR KWAY TEOW",
+			"zh": "炒果条/炒粿条",
+			"ms": "JUAL KUEH TIAU"
+		},
+		"image": "qzt_750.png"
+	},
+	{
+		"number": "751",
+		"content": {
+			"en": "RAILWAY",
+			"zh": "铁路/火车路",
+			"ms": "LANDASAN"
+		},
+		"image": "qzt_751.png"
+	},
+	{
+		"number": "752",
+		"content": {
+			"en": "TRADITIONAL FISHING",
+			"zh": "捉鱼/传统捕鱼",
+			"ms": "TANGKAP IKAN"
+		},
+		"image": "qzt_752.png"
+	},
+	{
+		"number": "753",
+		"content": {
+			"en": "SALT",
+			"zh": "盐",
+			"ms": "GARAM"
+		},
+		"image": "qzt_753.png"
+	},
+	{
+		"number": "754",
+		"content": {
+			"en": "HOE",
+			"zh": "锄头",
+			"ms": "CANGKUL"
+		},
+		"image": "qzt_754.png"
+	},
+	{
+		"number": "755",
+		"content": {
+			"en": "MILK THE COWS",
+			"zh": "挤牛奶",
+			"ms": "PERAH SUSU"
+		},
+		"image": "qzt_755.png"
+	},
+	{
+		"number": "756",
+		"content": {
+			"en": "GAS LAMP WICK",
+			"zh": "大光灯网心/汽灯灯芯",
+			"ms": "SUMBU GASLIN"
+		},
+		"image": "qzt_756.png"
+	},
+	{
+		"number": "757",
+		"content": {
+			"en": "EYES",
+			"zh": "眼睛/眼",
+			"ms": "MATA"
+		},
+		"image": "qzt_757.png"
+	},
+	{
+		"number": "758",
+		"content": {
+			"en": "STEALING",
+			"zh": "偷东西",
+			"ms": "CURI BARANG"
+		},
+		"image": "qzt_758.png"
+	},
+	{
+		"number": "759",
+		"content": {
+			"en": "PLASTIC FACTORY/RUBBER FACTORY",
+			"zh": "烟薰房/芳房/橡胶加工厂",
+			"ms": "RUMAH ASAP GETAH"
+		},
+		"image": "qzt_759.png"
+	},
+	{
+		"number": "760",
+		"content": {
+			"en": "FLOWERPOT",
+			"zh": "花盆/花钵",
+			"ms": "PASU BUNGA"
+		},
+		"image": "qzt_760.png"
+	},
+	{
+		"number": "761",
+		"content": {
+			"en": "COW AND GOAT CROSS THE ROAD",
+			"zh": "牛羊过路",
+			"ms": "LEMBU HALANG JALAN"
+		},
+		"image": "qzt_761.png"
+	},
+	{
+		"number": "762",
+		"content": {
+			"en": "CHICKEN AND DUCKS CROSS THE ROAD",
+			"zh": "鸡鸭过路",
+			"ms": "SEKAT JALAN"
+		},
+		"image": "qzt_762.png"
+	},
+	{
+		"number": "763",
+		"content": {
+			"en": "EAGLE/HAWK",
+			"zh": "老鹰/鸢",
+			"ms": "GARUDA"
+		},
+		"image": "qzt_763.png"
+	},
+	{
+		"number": "764",
+		"content": {
+			"en": "TURTLE",
+			"zh": "鳖/甲鱼/龟鳖",
+			"ms": "TUNTUNG"
+		},
+		"image": "qzt_764.png"
+	},
+	{
+		"number": "765",
+		"content": {
+			"en": "SHEEP GRAZING",
+			"zh": "羊吃草",
+			"ms": "KAMBING MAKAN RUMPUT"
+		},
+		"image": "qzt_765.png"
+	},
+	{
+		"number": "766",
+		"content": {
+			"en": "COW GRAZING",
+			"zh": "牛吃草",
+			"ms": "LEMBU MAKAN RUMPUT"
+		},
+		"image": "qzt_766.png"
+	},
+	{
+		"number": "767",
+		"content": {
+			"en": "MUSLIM GREETING/MALAYS GREETING/ISLAMIC GREETING/SALAAM",
+			"zh": "马来人行礼/回教徒行握手礼",
+			"ms": "BERSALAM"
+		},
+		"image": "qzt_767.png"
+	},
+	{
+		"number": "768",
+		"content": {
+			"en": "MUSLIMS PRAY/SEMBAHYANG",
+			"zh": "马来人祈祷/回教徒祷告/穆斯林祷告",
+			"ms": "SEMBAHYANG"
+		},
+		"image": "qzt_768.png"
+	},
+	{
+		"number": "769",
+		"content": {
+			"en": "PLIERS",
+			"zh": "钳子",
+			"ms": "PENYEPIT"
+		},
+		"image": "qzt_769.png"
+	},
+	{
+		"number": "770",
+		"content": {
+			"en": "CAMERA FILM/NEGATIVE",
+			"zh": "菲林/相机胶片/底片",
+			"ms": "FILEM"
+		},
+		"image": "qzt_770.png"
+	},
+	{
+		"number": "771",
+		"content": {
+			"en": "FISHING",
+			"zh": "钓鱼",
+			"ms": "PANCING IKAN"
+		},
+		"image": "qzt_771.png"
+	},
+	{
+		"number": "772",
+		"content": {
+			"en": "SHOT BIRDS",
+			"zh": "打鸟/弹弓打鸟",
+			"ms": "BURU BURUNG"
+		},
+		"image": "qzt_772.png"
+	},
+	{
+		"number": "773",
+		"content": {
+			"en": "CHICKEN HOOD",
+			"zh": "鸡罩/鸡鸭笼",
+			"ms": "SERKAP"
+		},
+		"image": "qzt_773.png"
+	},
+	{
+		"number": "774",
+		"content": {
+			"en": "PEDICAB",
+			"zh": "三轮车",
+			"ms": "BECA"
+		},
+		"image": "qzt_774.png"
+	},
+	{
+		"number": "775",
+		"content": {
+			"en": "MAST/SAIL SHIP MASTS",
+			"zh": "桅/桅杆/船桅",
+			"ms": "TIANG KAPAL"
+		},
+		"image": "qzt_775.png"
+	},
+	{
+		"number": "776",
+		"content": {
+			"en": "MEET",
+			"zh": "见面/会见/会面/会晤",
+			"ms": "BERJUMPA"
+		},
+		"image": "qzt_776.png"
+	},
+	{
+		"number": "777",
+		"content": {
+			"en": "MARINATE FISH",
+			"zh": "腌制鱼",
+			"ms": "BUAT IKAN KERING"
+		},
+		"image": "qzt_777.png"
+	},
+	{
+		"number": "778",
+		"content": {
+			"en": "PAPER BAG/SHOPPING BAG",
+			"zh": "纸袋/购物袋",
+			"ms": "BAG KERTAS"
+		},
+		"image": "qzt_778.png"
+	},
+	{
+		"number": "779",
+		"content": {
+			"en": "BASKET",
+			"zh": "菜篮/篮子",
+			"ms": "TAGA"
+		},
+		"image": "qzt_779.png"
+	},
+	{
+		"number": "780",
+		"content": {
+			"en": "FISH BALL",
+			"zh": "鱼丸",
+			"ms": "BEBOLA IKAN"
+		},
+		"image": "qzt_780.png"
+	},
+	{
+		"number": "781",
+		"content": {
+			"en": "EMBROIDERY/KNITTING",
+			"zh": "刺绣/针织",
+			"ms": "SULAM"
+		},
+		"image": "qzt_781.png"
+	},
+	{
+		"number": "782",
+		"content": {
+			"en": "BADGE",
+			"zh": "徽章",
+			"ms": "LENCANA"
+		},
+		"image": "qzt_782.png"
+	},
+	{
+		"number": "783",
+		"content": {
+			"en": "SHOULDERING FISHES",
+			"zh": "担鱼",
+			"ms": "KANDAR IKAN"
+		},
+		"image": "qzt_783.png"
+	},
+	{
+		"number": "784",
+		"content": {
+			"en": "FREEZING FISH",
+			"zh": "冰鱼/冷冻鱼",
+			"ms": "IKAN ICE"
+		},
+		"image": "qzt_784.png"
+	},
+	{
+		"number": "785",
+		"content": {
+			"en": "DRYING FISH",
+			"zh": "晒鱼干",
+			"ms": "JEMUR IKAN"
+		},
+		"image": "qzt_785.png"
+	},
+	{
+		"number": "786",
+		"content": {
+			"en": "CARRYING PIG",
+			"zh": "载猪",
+			"ms": "BAWA KHINZIR"
+		},
+		"image": "qzt_786.png"
+	},
+	{
+		"number": "787",
+		"content": {
+			"en": "PIGS SICK",
+			"zh": "猪生病",
+			"ms": "KHINZIR SAKIT"
+		},
+		"image": "qzt_787.png"
+	},
+	{
+		"number": "788",
+		"content": {
+			"en": "PARROT",
+			"zh": "鹦鹉",
+			"ms": "BURUNG NURI"
+		},
+		"image": "qzt_788.png"
+	},
+	{
+		"number": "789",
+		"content": {
+			"en": "KISS",
+			"zh": "接吻/亲嘴",
+			"ms": "BERCIUM"
+		},
+		"image": "qzt_789.png"
+	},
+	{
+		"number": "790",
+		"content": {
+			"en": "CARRYING FISH",
+			"zh": "扛鱼",
+			"ms": "USUNG IKAN"
+		},
+		"image": "qzt_790.png"
+	},
+	{
+		"number": "791",
+		"content": {
+			"en": "CUTTING FISH",
+			"zh": "切鱼",
+			"ms": "POTONG IKAN"
+		},
+		"image": "qzt_791.png"
+	},
+	{
+		"number": "792",
+		"content": {
+			"en": "CHINESE CIGARETTE",
+			"zh": "红香烟/云烟",
+			"ms": "TEMBAKAU CINA"
+		},
+		"image": "qzt_792.png"
+	},
+	{
+		"number": "793",
+		"content": {
+			"en": "BADGE",
+			"zh": "银盾",
+			"ms": "PERAK"
+		},
+		"image": "qzt_793.png"
+	},
+	{
+		"number": "794",
+		"content": {
+			"en": "CHINESE FORTUNE STICK",
+			"zh": "签筒/签",
+			"ms": "BILAH NUJUM"
+		},
+		"image": "qzt_794.png"
+	},
+	{
+		"number": "795",
+		"content": {
+			"en": "PAPER/LETTER PAPER",
+			"zh": "信纸",
+			"ms": "KERTAS SURAT"
+		},
+		"image": "qzt_795.png"
+	},
+	{
+		"number": "796",
+		"content": {
+			"en": "SELLING RAMBUTAN",
+			"zh": "卖红毛丹",
+			"ms": "JUAL RAMBUTAN"
+		},
+		"image": "qzt_796.png"
+	},
+	{
+		"number": "797",
+		"content": {
+			"en": "CLEARANCE/GRAND SALE",
+			"zh": "大减价/大平价",
+			"ms": "JUALAN MURAH"
+		},
+		"image": "qzt_797.png"
+	},
+	{
+		"number": "798",
+		"content": {
+			"en": "PEEL COCONUT SHELL",
+			"zh": "剥椰子壳",
+			"ms": "KOPEK KELAPA"
+		},
+		"image": "qzt_798.png"
+	},
+	{
+		"number": "799",
+		"content": {
+			"en": "COCONUT DROP",
+			"zh": "跌椰/椰子掉落",
+			"ms": "KELAPA JATUH"
+		},
+		"image": "qzt_799.png"
+	},
+	{
+		"number": "800",
+		"content": {
+			"en": "SEND A TELEGRAM",
+			"zh": "打电报/发送电报",
+			"ms": "TELEGRAM"
+		},
+		"image": "qzt_800.png"
+	},
+	{
+		"number": "801",
+		"content": {
+			"en": "LISTEN TO RADIO",
+			"zh": "听收音机",
+			"ms": "DENGAR RADIO"
+		},
+		"image": "qzt_801.png"
+	},
+	{
+		"number": "802",
+		"content": {
+			"en": "FILL OIL LAMP",
+			"zh": "添油灯",
+			"ms": "LAMPU SEMBAHYANG"
+		},
+		"image": "qzt_802.png"
+	},
+	{
+		"number": "803",
+		"content": {
+			"en": "ATAP TREE",
+			"zh": "亚答树",
+			"ms": "POKOK NIPAH"
+		},
+		"image": "qzt_803.png"
+	},
+	{
+		"number": "804",
+		"content": {
+			"en": "BALL",
+			"zh": "球/篮球/足球/排球",
+			"ms": "BOLA SEPAK"
+		},
+		"image": "qzt_804.png"
+	},
+	{
+		"number": "805",
+		"content": {
+			"en": "LOAD TREES BY LORRY/LOAD WOODS",
+			"zh": "载树桐/运送树桐",
+			"ms": "LORI BALAK"
+		},
+		"image": "qzt_805.png"
+	},
+	{
+		"number": "806",
+		"content": {
+			"en": "TAOIST PRIEST",
+			"zh": "道士",
+			"ms": "SAMI"
+		},
+		"image": "qzt_806.png"
+	},
+	{
+		"number": "807",
+		"content": {
+			"en": "ROCK BLASTING",
+			"zh": "炸石/把岩石炸碎/岩石爆破",
+			"ms": "PECAH BATU"
+		},
+		"image": "qzt_807.png"
+	},
+	{
+		"number": "808",
+		"content": {
+			"en": "BREAK STONES",
+			"zh": "敲碎石头",
+			"ms": "TEBUK BATU"
+		},
+		"image": "qzt_808.png"
+	},
+	{
+		"number": "809",
+		"content": {
+			"en": "UNDERPANTS/UNDERWEAR/BRIEFS/BOXER SHORTS",
+			"zh": "内裤/三角裤/平角裤",
+			"ms": "SELUAR DALAM"
+		},
+		"image": "qzt_809.png"
+	},
+	{
+		"number": "810",
+		"content": {
+			"en": "SELLING CORN/SELLING JAGUNG",
+			"zh": "卖玉蜀黍/卖玉米",
+			"ms": "JUAL JAGUNG"
+		},
+		"image": "qzt_810.png"
+	},
+	{
+		"number": "811",
+		"content": {
+			"en": "PATIENT/SICK PERSON",
+			"zh": "病人/患者/病者/病患",
+			"ms": "ORANG SAKIT"
+		},
+		"image": "qzt_811.png"
+	},
+	{
+		"number": "812",
+		"content": {
+			"en": "PLOW/PLOUGH",
+			"zh": "犁",
+			"ms": "TAJAK"
+		},
+		"image": "qzt_812.png"
+	},
+	{
+		"number": "813",
+		"content": {
+			"en": "NAIL SCISSORS",
+			"zh": "指甲剪",
+			"ms": "PEMOTONG KUKU"
+		},
+		"image": "qzt_813.png"
+	},
+	{
+		"number": "814",
+		"content": {
+			"en": "TOOTHBRUSH",
+			"zh": "牙刷",
+			"ms": "BERUS GIGI"
+		},
+		"image": "qzt_814.png"
+	},
+	{
+		"number": "815",
+		"content": {
+			"en": "GIVE PRESENT/SEND GIFTS",
+			"zh": "送礼/送礼物",
+			"ms": "HADIAH"
+		},
+		"image": "qzt_815.png"
+	},
+	{
+		"number": "816",
+		"content": {
+			"en": "TOWEL",
+			"zh": "面巾/毛巾",
+			"ms": "TUALA"
+		},
+		"image": "qzt_816.png"
+	},
+	{
+		"number": "817",
+		"content": {
+			"en": "SIDE TABLE/TEA TABLE/STOOL",
+			"zh": "几/茶几/桌几",
+			"ms": "BANGKU"
+		},
+		"image": "qzt_817.png"
+	},
+	{
+		"number": "818",
+		"content": {
+			"en": "SELLING BREAD",
+			"zh": "卖面包",
+			"ms": "JUAL ROTI"
+		},
+		"image": "qzt_818.png"
+	},
+	{
+		"number": "819",
+		"content": {
+			"en": "MONK",
+			"zh": "和尚/僧侣",
+			"ms": "SAMI"
+		},
+		"image": "qzt_819.png"
+	},
+	{
+		"number": "820",
+		"content": {
+			"en": "BULB",
+			"zh": "电灯泡",
+			"ms": "LAMPU ELECTRIK"
+		},
+		"image": "qzt_820.png"
+	},
+	{
+		"number": "821",
+		"content": {
+			"en": "CALENDAR",
+			"zh": "日历/万年历/月历",
+			"ms": "KALENDAR"
+		},
+		"image": "qzt_821.png"
+	},
+	{
+		"number": "822",
+		"content": {
+			"en": "IRON BRIDGE/BRIDGE",
+			"zh": "铁桥/桥",
+			"ms": "JAMBATAN BESI"
+		},
+		"image": "qzt_822.png"
+	},
+	{
+		"number": "823",
+		"content": {
+			"en": "DUSTPAN",
+			"zh": "簸箕/畚箕/垃圾铲",
+			"ms": "TAPIS"
+		},
+		"image": "qzt_823.png"
+	},
+	{
+		"number": "824",
+		"content": {
+			"en": "TOMB/GRAVESTONE/TOMBSTONE",
+			"zh": "墓碑/坟墓/墓石",
+			"ms": "BATU NISAN"
+		},
+		"image": "qzt_824.png"
+	},
+	{
+		"number": "825",
+		"content": {
+			"en": "BRIDE",
+			"zh": "新娘",
+			"ms": "PENKAWIN PERLEMPUAN"
+		},
+		"image": "qzt_825.png"
+	},
+	{
+		"number": "826",
+		"content": {
+			"en": "VEGETABLES",
+			"zh": "青菜/蔬菜",
+			"ms": "SAYUR"
+		},
+		"image": "qzt_826.png"
+	},
+	{
+		"number": "827",
+		"content": {
+			"en": "REFUEL/CAR REFUEL/FILL PETROL",
+			"zh": "添汽油/加油",
+			"ms": "TAMBAH MINYAK"
+		},
+		"image": "qzt_827.png"
+	},
+	{
+		"number": "828",
+		"content": {
+			"en": "REPAIRING CAR/CAR MAINTENANCE",
+			"zh": "修理汽车/汽车维修",
+			"ms": "BAIKI KERETA"
+		},
+		"image": "qzt_828.png"
+	},
+	{
+		"number": "829",
+		"content": {
+			"en": "WATERMELON",
+			"zh": "西瓜",
+			"ms": "TEMBIKAI"
+		},
+		"image": "qzt_829.png"
+	},
+	{
+		"number": "830",
+		"content": {
+			"en": "HAIRCUT/CUT HAIR",
+			"zh": "理发/剪头发",
+			"ms": "GUNTING RAMBUT"
+		},
+		"image": "qzt_830.png"
+	},
+	{
+		"number": "831",
+		"content": {
+			"en": "AIRPLANE/AEROPLANE",
+			"zh": "飞机",
+			"ms": "KAPAL TERBANG"
+		},
+		"image": "qzt_831.png"
+	},
+	{
+		"number": "832",
+		"content": {
+			"en": "INVITATION CARD",
+			"zh": "请帖/请柬",
+			"ms": "KAD JEMPUTAN"
+		},
+		"image": "qzt_832.png"
+	},
+	{
+		"number": "833",
+		"content": {
+			"en": "PROSTITUTE/WHORE",
+			"zh": "妓女/娼妓/卖淫女/青楼女子/婊子",
+			"ms": "PELACUR"
+		},
+		"image": "qzt_833.png"
+	},
+	{
+		"number": "834",
+		"content": {
+			"en": "BICYCLE/BIKE",
+			"zh": "脚车",
+			"ms": "BASIKAL LANGGAR KERETA"
+		},
+		"image": "qzt_834.png"
+	},
+	{
+		"number": "835",
+		"content": {
+			"en": "FIRE TONGS",
+			"zh": "火钳",
+			"ms": "PENYEPIT API"
+		},
+		"image": "qzt_835.png"
+	},
+	{
+		"number": "836",
+		"content": {
+			"en": "MARRIED CAR",
+			"zh": "结婚车/新郎车/新娘车",
+			"ms": "KERETA KAHWIN"
+		},
+		"image": "qzt_836.png"
+	},
+	{
+		"number": "837",
+		"content": {
+			"en": "BRA/UNDERWEAR/BRASSIERE",
+			"zh": "乳罩/胸罩/奶罩/内衣/女性内衣",
+			"ms": "CORI"
+		},
+		"image": "qzt_837.png"
+	},
+	{
+		"number": "838",
+		"content": {
+			"en": "POLE DANCE/HOT DANCE",
+			"zh": "艳舞",
+			"ms": "TARIAN BOGEL"
+		},
+		"image": "qzt_838.png"
+	},
+	{
+		"number": "839",
+		"content": {
+			"en": "EAT BANANA",
+			"zh": "吃香蕉",
+			"ms": "MAKAN PISANG"
+		},
+		"image": "qzt_839.png"
+	},
+	{
+		"number": "840",
+		"content": {
+			"en": "TIN KAU TILES/TIEN GOW",
+			"zh": "天九牌",
+			"ms": "LADU"
+		},
+		"image": "qzt_840.png"
+	},
+	{
+		"number": "841",
+		"content": {
+			"en": "SCORPION AND CENTIPEDE",
+			"zh": "蝎子蜈蚣",
+			"ms": "JENGKING"
+		},
+		"image": "qzt_841.png"
+	},
+	{
+		"number": "842",
+		"content": {
+			"en": "ALARM CLOCK",
+			"zh": "闹钟",
+			"ms": "JAM LOCENG"
+		},
+		"image": "qzt_842.png"
+	},
+	{
+		"number": "843",
+		"content": {
+			"en": "PLAYING POKER",
+			"zh": "玩扑克牌",
+			"ms": "DAUN TERUP"
+		},
+		"image": "qzt_843.png"
+	},
+	{
+		"number": "844",
+		"content": {
+			"en": "CONDENSED MILK",
+			"zh": "罐装炼奶/红字牛奶/炼乳",
+			"ms": "SUSU TIN"
+		},
+		"image": "qzt_844.png"
+	},
+	{
+		"number": "845",
+		"content": {
+			"en": "BATHE BABY/BATHE CHILD/INFANT BATHING",
+			"zh": "小孩冲凉/给孩子洗澡/给婴儿洗澡",
+			"ms": "MANDIKAN ANAK"
+		},
+		"image": "qzt_845.png"
+	},
+	{
+		"number": "846",
+		"content": {
+			"en": "FAN",
+			"zh": "风扇",
+			"ms": "KIPAS ANGIN"
+		},
+		"image": "qzt_846.png"
+	},
+	{
+		"number": "847",
+		"content": {
+			"en": "TARO",
+			"zh": "芋头",
+			"ms": "UBI KELADI"
+		},
+		"image": "qzt_847.png"
+	},
+	{
+		"number": "848",
+		"content": {
+			"en": "DUCK MATING",
+			"zh": "鸭交配",
+			"ms": "ITIK MENGAWAN"
+		},
+		"image": "qzt_848.png"
+	},
+	{
+		"number": "849",
+		"content": {
+			"en": "CHICKEN MATING",
+			"zh": "鸡交配",
+			"ms": "AYAM MENGAWAN"
+		},
+		"image": "qzt_849.png"
+	},
+	{
+		"number": "850",
+		"content": {
+			"en": "ROAD LAMP/STREET LIGHT/LAMP POST",
+			"zh": "路灯/街灯",
+			"ms": "LAMPU JALAN"
+		},
+		"image": "qzt_850.png"
+	},
+	{
+		"number": "851",
+		"content": {
+			"en": "MOUNTAIN/HILL",
+			"zh": "深山/山",
+			"ms": "JULANG"
+		},
+		"image": "qzt_851.png"
+	},
+	{
+		"number": "852",
+		"content": {
+			"en": "NUN",
+			"zh": "尼姑/道姑/比丘尼",
+			"ms": "BIARAWATI"
+		},
+		"image": "qzt_852.png"
+	},
+	{
+		"number": "853",
+		"content": {
+			"en": "DRINK ORANGE SOFT DRINK/DRINK ORANGE JUICE",
+			"zh": "喝柑水/喝橙汽水",
+			"ms": "MINUM OREN"
+		},
+		"image": "qzt_853.png"
+	},
+	{
+		"number": "854",
+		"content": {
+			"en": "NAILS",
+			"zh": "铁钉",
+			"ms": "PAKU"
+		},
+		"image": "qzt_854.png"
+	},
+	{
+		"number": "855",
+		"content": {
+			"en": "PENANG HILL",
+			"zh": "升旗山",
+			"ms": "BIKIT PULAU PINANG"
+		},
+		"image": "qzt_855.png"
+	},
+	{
+		"number": "856",
+		"content": {
+			"en": "HANGER/CLOTHES STAND",
+			"zh": "衣架",
+			"ms": "RAK BAJU"
+		},
+		"image": "qzt_856.png"
+	},
+	{
+		"number": "857",
+		"content": {
+			"en": "BROADCASTING MACHINE/AMPLIFIER/SPEAKER",
+			"zh": "播音机/扩音器/扬声器",
+			"ms": "PEMBESAR SUARA"
+		},
+		"image": "qzt_857.png"
+	},
+	{
+		"number": "858",
+		"content": {
+			"en": "STEAMSHIP/CRUISES/CARGO SHIP",
+			"zh": "轮船/货船/邮轮",
+			"ms": "KAPAL"
+		},
+		"image": "qzt_858.png"
+	},
+	{
+		"number": "859",
+		"content": {
+			"en": "WALL CLOCK",
+			"zh": "挂钟",
+			"ms": "JAM DINDING"
+		},
+		"image": "qzt_859.png"
+	},
+	{
+		"number": "860",
+		"content": {
+			"en": "STEAL CHICKEN AND DUCK",
+			"zh": "偷鸡鸭",
+			"ms": "CURI AYAM ITIK"
+		},
+		"image": "qzt_860.png"
+	},
+	{
+		"number": "861",
+		"content": {
+			"en": "ASPIRIN/PARACETAMOL/PANADOL",
+			"zh": "阿士保罗/阿斯匹林/特效止痛药",
+			"ms": "ISPRO"
+		},
+		"image": "qzt_861.png"
+	},
+	{
+		"number": "862",
+		"content": {
+			"en": "HAIR OIL/POMADE/BRYLCREEM",
+			"zh": "发油/头油",
+			"ms": "MINYAK RAMBUT"
+		},
+		"image": "qzt_862.png"
+	},
+	{
+		"number": "863",
+		"content": {
+			"en": "MOSQUITO COIL",
+			"zh": "驱蚊香",
+			"ms": "UBAT NYAMUK"
+		},
+		"image": "qzt_863.png"
+	},
+	{
+		"number": "864",
+		"content": {
+			"en": "BEAN SPROUTS",
+			"zh": "豆芽",
+			"ms": "TAUGE"
+		},
+		"image": "qzt_864.png"
+	},
+	{
+		"number": "865",
+		"content": {
+			"en": "MAKE PAPER BAG",
+			"zh": "黏纸袋/糊纸袋/制作纸袋",
+			"ms": "BUAT KERTAS"
+		},
+		"image": "qzt_865.png"
+	},
+	{
+		"number": "866",
+		"content": {
+			"en": "CIGARETTE CASE",
+			"zh": "香烟盒",
+			"ms": "KOTAK ROKOK"
+		},
+		"image": "qzt_866.png"
+	},
+	{
+		"number": "867",
+		"content": {
+			"en": "FISHHOOK",
+			"zh": "鱼钩",
+			"ms": "PANCING IKAN"
+		},
+		"image": "qzt_867.png"
+	},
+	{
+		"number": "868",
+		"content": {
+			"en": "IRON",
+			"zh": "电烫斗",
+			"ms": "STRIKA"
+		},
+		"image": "qzt_868.png"
+	},
+	{
+		"number": "869",
+		"content": {
+			"en": "SHORT PANTS",
+			"zh": "短裤",
+			"ms": "SELUAR PENDEK"
+		},
+		"image": "qzt_869.png"
+	},
+	{
+		"number": "870",
+		"content": {
+			"en": "PLAY HARMONICA",
+			"zh": "吹口琴",
+			"ms": "TIUP SRONAI"
+		},
+		"image": "qzt_870.png"
+	},
+	{
+		"number": "871",
+		"content": {
+			"en": "SHAVING BEARD",
+			"zh": "刮脸/刮胡须/剃胡须",
+			"ms": "MENCUKUR"
+		},
+		"image": "qzt_871.png"
+	},
+	{
+		"number": "872",
+		"content": {
+			"en": "PEANUT/NUT",
+			"zh": "花生",
+			"ms": "KACANG TANAH"
+		},
+		"image": "qzt_872.png"
+	},
+	{
+		"number": "873",
+		"content": {
+			"en": "EGGPLANT",
+			"zh": "茄子/茄/矮瓜",
+			"ms": "TERUNG"
+		},
+		"image": "qzt_873.png"
+	},
+	{
+		"number": "874",
+		"content": {
+			"en": "OYSTER",
+			"zh": "蚝/蚵仔",
+			"ms": "TIRAM"
+		},
+		"image": "qzt_874.png"
+	},
+	{
+		"number": "875",
+		"content": {
+			"en": "LIZARD",
+			"zh": "四脚蛇/蜥蜴",
+			"ms": "BIAWAK"
+		},
+		"image": "qzt_875.png"
+	},
+	{
+		"number": "876",
+		"content": {
+			"en": "CAT CATCH MOUSE",
+			"zh": "猫咬老鼠/猫捉老鼠",
+			"ms": "TANGKAP TIKUS"
+		},
+		"image": "qzt_876.png"
+	},
+	{
+		"number": "877",
+		"content": {
+			"en": "DOG YELPING/DOGS BARK",
+			"zh": "狗吠",
+			"ms": "MENYALAK"
+		},
+		"image": "qzt_877.png"
+	},
+	{
+		"number": "878",
+		"content": {
+			"en": "RAZOR",
+			"zh": "剃刀",
+			"ms": "PISAU CUKUR"
+		},
+		"image": "qzt_878.png"
+	},
+	{
+		"number": "879",
+		"content": {
+			"en": "DOGS BITE/DOG BITES MAN",
+			"zh": "狗咬人/狗咬伤人",
+			"ms": "ANJING GIGIT ORANG"
+		},
+		"image": "qzt_879.png"
+	},
+	{
+		"number": "880",
+		"content": {
+			"en": "ROOSTER CROWING/MALE CHICKEN CROWING",
+			"zh": "公鸡啼鸣",
+			"ms": "BERKOKOK"
+		},
+		"image": "qzt_880.png"
+	},
+	{
+		"number": "881",
+		"content": {
+			"en": "COD LIVER OIL",
+			"zh": "鱼油/鱼肝油",
+			"ms": "MINYAK IKAN"
+		},
+		"image": "qzt_881.png"
+	},
+	{
+		"number": "882",
+		"content": {
+			"en": "WRISTWATCH/WATCH",
+			"zh": "手表/腕表",
+			"ms": "JAM TANGAN"
+		},
+		"image": "qzt_882.png"
+	},
+	{
+		"number": "883",
+		"content": {
+			"en": "BATH TOWEL",
+			"zh": "浴巾",
+			"ms": "TUALA"
+		},
+		"image": "qzt_883.png"
+	},
+	{
+		"number": "884",
+		"content": {
+			"en": "LOCK",
+			"zh": "铜锁/锁头",
+			"ms": "KUNCI"
+		},
+		"image": "qzt_884.png"
+	},
+	{
+		"number": "885",
+		"content": {
+			"en": "WEIGHT SCALE",
+			"zh": "磅/弹簧磅/指针磅/体重秤/量重器",
+			"ms": "DACING"
+		},
+		"image": "qzt_885.png"
+	},
+	{
+		"number": "886",
+		"content": {
+			"en": "SOLDIER/ARMY",
+			"zh": "士兵/军人/战士/卒",
+			"ms": "TENTERA"
+		},
+		"image": "qzt_886.png"
+	},
+	{
+		"number": "887",
+		"content": {
+			"en": "POLICE STATION",
+			"zh": "警察署/警察局",
+			"ms": "BALAI"
+		},
+		"image": "qzt_887.png"
+	},
+	{
+		"number": "888",
+		"content": {
+			"en": "TALCUM POWDER",
+			"zh": "爽身粉",
+			"ms": "BEDAK"
+		},
+		"image": "qzt_888.png"
+	},
+	{
+		"number": "889",
+		"content": {
+			"en": "FLAT TIRE REPAIRS/FIX TIRE",
+			"zh": "补轮胎",
+			"ms": "MASUK ANGIN TAYAR"
+		},
+		"image": "qzt_889.png"
+	},
+	{
+		"number": "890",
+		"content": {
+			"en": "CHINESE SAUSAGE/SAUSAGE",
+			"zh": "腊肠/香肠",
+			"ms": "DAGING ANGIN"
+		},
+		"image": "qzt_890.png"
+	},
+	{
+		"number": "891",
+		"content": {
+			"en": "PLAY BADMINTON",
+			"zh": "打羽毛球",
+			"ms": "MAIN BADMINTON"
+		},
+		"image": "qzt_891.png"
+	},
+	{
+		"number": "892",
+		"content": {
+			"en": "BOW TIE",
+			"zh": "蝴蝶领结",
+			"ms": "BOW"
+		},
+		"image": "qzt_892.png"
+	},
+	{
+		"number": "893",
+		"content": {
+			"en": "NECKTIE",
+			"zh": "领带",
+			"ms": "TALI LEHER"
+		},
+		"image": "qzt_893.png"
+	},
+	{
+		"number": "894",
+		"content": {
+			"en": "TRAVEL BAG/DUFFEL BAG",
+			"zh": "旅行袋/行李袋",
+			"ms": "BAG"
+		},
+		"image": "qzt_894.png"
+	},
+	{
+		"number": "895",
+		"content": {
+			"en": "HAND MIRROR",
+			"zh": "手镜",
+			"ms": "CERMIN MUKA"
+		},
+		"image": "qzt_895.png"
+	},
+	{
+		"number": "896",
+		"content": {
+			"en": "GOLD BELT/CHAMPIONSHIP BELT",
+			"zh": "金裤带/金腰带/冠军腰带",
+			"ms": "TAIL PINGGAN EMAS"
+		},
+		"image": "qzt_896.png"
+	},
+	{
+		"number": "897",
+		"content": {
+			"en": "DICE",
+			"zh": "骰子/色子",
+			"ms": "DADU"
+		},
+		"image": "qzt_897.png"
+	},
+	{
+		"number": "898",
+		"content": {
+			"en": "SEABIRDS/WATERFOWL",
+			"zh": "水鸟/海鸟",
+			"ms": "BURUNG LAUT"
+		},
+		"image": "qzt_898.png"
+	},
+	{
+		"number": "899",
+		"content": {
+			"en": "SPINNING/SPIN",
+			"zh": "纺织/纺纱/织布",
+			"ms": "TENUN KAIN"
+		},
+		"image": "qzt_899.png"
+	},
+	{
+		"number": "900",
+		"content": {
+			"en": "BLIND/BLINDMAN",
+			"zh": "瞎子/盲人",
+			"ms": "ORANG BUTA"
+		},
+		"image": "qzt_900.png"
+	},
+	{
+		"number": "901",
+		"content": {
+			"en": "PING PONG/PING PONG BALL/TABLE TENNIS",
+			"zh": "乒乓/乒乓球",
+			"ms": "BOLA PINGPONG"
+		},
+		"image": "qzt_901.png"
+	},
+	{
+		"number": "902",
+		"content": {
+			"en": "KUAY TEOW/KWAY TEOW",
+			"zh": "粿条",
+			"ms": "KUEY TEOW"
+		},
+		"image": "qzt_902.png"
+	},
+	{
+		"number": "903",
+		"content": {
+			"en": "RING/GOLD RING/DIAMOND RING",
+			"zh": "金戒指/戒指/钻石戒指",
+			"ms": "CICIN EMAS"
+		},
+		"image": "qzt_903.png"
+	},
+	{
+		"number": "904",
+		"content": {
+			"en": "RATS EATING/MOUSE EATING",
+			"zh": "老鼠偷吃",
+			"ms": "TIKUS CURI MAKAN"
+		},
+		"image": "qzt_904.png"
+	},
+	{
+		"number": "905",
+		"content": {
+			"en": "CAT EATING",
+			"zh": "猫吃食物/猫吃东西/猫吃饲料",
+			"ms": "KUCING MAKAN"
+		},
+		"image": "qzt_905.png"
+	},
+	{
+		"number": "906",
+		"content": {
+			"en": "RAFT",
+			"zh": "筏/筏子/竹筏/木筏",
+			"ms": "RAKIT"
+		},
+		"image": "qzt_906.png"
+	},
+	{
+		"number": "907",
+		"content": {
+			"en": "NURSE",
+			"zh": "护士/看护",
+			"ms": "JURURAWAT"
+		},
+		"image": "qzt_907.png"
+	},
+	{
+		"number": "908",
+		"content": {
+			"en": "PAGODA",
+			"zh": "塔/宝塔/佛骨堂",
+			"ms": "PAKODA"
+		},
+		"image": "qzt_908.png"
+	},
+	{
+		"number": "909",
+		"content": {
+			"en": "BURIAL MOUND/GRAVE MOUND/BURIAL HILL",
+			"zh": "塚/公冢",
+			"ms": "KUBUR"
+		},
+		"image": "qzt_909.png"
+	},
+	{
+		"number": "910",
+		"content": {
+			"en": "NOODLE",
+			"zh": "面/面条",
+			"ms": "MEE"
+		},
+		"image": "qzt_910.png"
+	},
+	{
+		"number": "911",
+		"content": {
+			"en": "CRESTED MYNA/STARLING BIRD",
+			"zh": "加令鸟/八哥鸟/鹦鹆",
+			"ms": "MALA KERBAU"
+		},
+		"image": "qzt_911.png"
+	},
+	{
+		"number": "912",
+		"content": {
+			"en": "CRADLE",
+			"zh": "摇篮",
+			"ms": "UNDOI"
+		},
+		"image": "qzt_912.png"
+	},
+	{
+		"number": "913",
+		"content": {
+			"en": "BEGGAR",
+			"zh": "乞丐/叫化子",
+			"ms": "PEMINTA SEDEKAH"
+		},
+		"image": "qzt_913.png"
+	},
+	{
+		"number": "914",
+		"content": {
+			"en": "CAKE/BAHULU",
+			"zh": "蛋糕/鸡蛋糕/糕点",
+			"ms": "KEK"
+		},
+		"image": "qzt_914.png"
+	},
+	{
+		"number": "915",
+		"content": {
+			"en": "REPAIRING MOTORCYCLE",
+			"zh": "修理电单车",
+			"ms": "BAIKI MOTOR"
+		},
+		"image": "qzt_915.png"
+	},
+	{
+		"number": "916",
+		"content": {
+			"en": "GINGER",
+			"zh": "姜",
+			"ms": "HALIA"
+		},
+		"image": "qzt_916.png"
+	},
+	{
+		"number": "917",
+		"content": {
+			"en": "TRUCK REPAIR/LORRY REPAIR",
+			"zh": "修理卡车/罗里维修",
+			"ms": "BAIKI LORI"
+		},
+		"image": "qzt_917.png"
+	},
+	{
+		"number": "918",
+		"content": {
+			"en": "CLOTH BED",
+			"zh": "布床",
+			"ms": "KAUS"
+		},
+		"image": "qzt_918.png"
+	},
+	{
+		"number": "919",
+		"content": {
+			"en": "CHICKEN ESSENCE",
+			"zh": "鸡精",
+			"ms": "PATI AYAM"
+		},
+		"image": "qzt_919.png"
+	},
+	{
+		"number": "920",
+		"content": {
+			"en": "HORLICKS",
+			"zh": "好立克",
+			"ms": "HORLICK"
+		},
+		"image": "qzt_920.png"
+	},
+	{
+		"number": "921",
+		"content": {
+			"en": "MILK POWDER",
+			"zh": "奶粉",
+			"ms": "TEPUNG SUSU"
+		},
+		"image": "qzt_921.png"
+	},
+	{
+		"number": "922",
+		"content": {
+			"en": "PIGLETS SUCKING MILK",
+			"zh": "小猪吸奶/小猪吸母乳",
+			"ms": "ANAK KHINZIR MINUM SUSU"
+		},
+		"image": "qzt_922.png"
+	},
+	{
+		"number": "923",
+		"content": {
+			"en": "PRESERVED VEGETABLE/DRIED CABBAGE",
+			"zh": "冬菜/腌菜",
+			"ms": "SAYUR MASIN"
+		},
+		"image": "qzt_923.png"
+	},
+	{
+		"number": "924",
+		"content": {
+			"en": "CARROT",
+			"zh": "菜头/萝卜",
+			"ms": "LOBAK"
+		},
+		"image": "qzt_924.png"
+	},
+	{
+		"number": "925",
+		"content": {
+			"en": "CALF SUCKING MILK/COW SUCKING MILK",
+			"zh": "小牛吸奶/小牛吸母乳",
+			"ms": "ANAK LEMBU MINUM SUSU"
+		},
+		"image": "qzt_925.png"
+	},
+	{
+		"number": "926",
+		"content": {
+			"en": "GOAT SUCKING MILK",
+			"zh": "小羊吸奶/小羊吸母乳",
+			"ms": "ANAK KAMBING MINUM SUSU"
+		},
+		"image": "qzt_926.png"
+	},
+	{
+		"number": "927",
+		"content": {
+			"en": "CRY IN FRONT GRAVE",
+			"zh": "哭墓",
+			"ms": "MENANGIS DI KUBUR"
+		},
+		"image": "qzt_927.png"
+	},
+	{
+		"number": "928",
+		"content": {
+			"en": "BUS",
+			"zh": "巴士",
+			"ms": "BAS"
+		},
+		"image": "qzt_928.png"
+	},
+	{
+		"number": "929",
+		"content": {
+			"en": "GIVE MEDICINE TO CHILD/GIVE BABY MEDICINE",
+			"zh": "小孩喝药/喂孩子喝药/给婴儿服药",
+			"ms": "ANAK MAKAN UBAT"
+		},
+		"image": "qzt_929.png"
+	},
+	{
+		"number": "930",
+		"content": {
+			"en": "FREEZE FRUIT/KEEP FRUITS IN FRIDGE",
+			"zh": "雪藏水果/水果存放冰箱/冷藏水果",
+			"ms": "SIMPAN BUAH-BUAH"
+		},
+		"image": "qzt_930.png"
+	},
+	{
+		"number": "931",
+		"content": {
+			"en": "SHAVE KIDS HAIR",
+			"zh": "小孩剃头发",
+			"ms": "CUKUR KEPALA"
+		},
+		"image": "qzt_931.png"
+	},
+	{
+		"number": "932",
+		"content": {
+			"en": "NOTE/BANKNOTE/PAPER MONEY",
+			"zh": "钞票/纸钞/纸币",
+			"ms": "WANG KERTAS"
+		},
+		"image": "qzt_932.png"
+	},
+	{
+		"number": "933",
+		"content": {
+			"en": "ALUMINUM PAIL/STEEL PAIL/BUCKET",
+			"zh": "桶/铝桶/铁桶",
+			"ms": "TONG ALU"
+		},
+		"image": "qzt_933.png"
+	},
+	{
+		"number": "934",
+		"content": {
+			"en": "SAIL",
+			"zh": "帆/风帆/船帆/帆布",
+			"ms": "KAPAL LAYAR"
+		},
+		"image": "qzt_934.png"
+	},
+	{
+		"number": "935",
+		"content": {
+			"en": "INK",
+			"zh": "墨水",
+			"ms": "DAWAT"
+		},
+		"image": "qzt_935.png"
+	},
+	{
+		"number": "936",
+		"content": {
+			"en": "TIRE/TYRE",
+			"zh": "轮胎",
+			"ms": "TAYAR"
+		},
+		"image": "qzt_936.png"
+	},
+	{
+		"number": "937",
+		"content": {
+			"en": "RAMBUTAN",
+			"zh": "红毛丹",
+			"ms": "RAMBUTAN"
+		},
+		"image": "qzt_937.png"
+	},
+	{
+		"number": "938",
+		"content": {
+			"en": "FARMER/PEASANT",
+			"zh": "农夫/农人/农民",
+			"ms": "PETANI"
+		},
+		"image": "qzt_938.png"
+	},
+	{
+		"number": "939",
+		"content": {
+			"en": "SELLING CHICKS AND DUCKLINGS",
+			"zh": "卖鸡鸭仔/卖小鸡/卖小鸭",
+			"ms": "JUAL ANAK AYAM ITIK"
+		},
+		"image": "qzt_939.png"
+	},
+	{
+		"number": "940",
+		"content": {
+			"en": "TOMBSTONE ENGRAVING",
+			"zh": "打石/刻石碑/墓碑雕刻",
+			"ms": "LOMBONG BATU"
+		},
+		"image": "qzt_940.png"
+	},
+	{
+		"number": "941",
+		"content": {
+			"en": "BIKE LIGHT/BICYCLE LIGHT",
+			"zh": "脚车灯",
+			"ms": "LAMPU DYNAMO"
+		},
+		"image": "qzt_941.png"
+	},
+	{
+		"number": "942",
+		"content": {
+			"en": "OFF BICYCLE LIGHT",
+			"zh": "脚车熄灯",
+			"ms": "LAMPU PADAM"
+		},
+		"image": "qzt_942.png"
+	},
+	{
+		"number": "943",
+		"content": {
+			"en": "CARRYING CHILDREN ON BICYCLE",
+			"zh": "骑脚车载小孩",
+			"ms": "TUMPANG BUDAK"
+		},
+		"image": "qzt_943.png"
+	},
+	{
+		"number": "944",
+		"content": {
+			"en": "BROOM",
+			"zh": "竹扫/扫把/扫帚",
+			"ms": "PENYAPU BULUH"
+		},
+		"image": "qzt_944.png"
+	},
+	{
+		"number": "945",
+		"content": {
+			"en": "CARRY PEOPLE WITH BICYCLE",
+			"zh": "骑脚车载人",
+			"ms": "BAWA ORANG"
+		},
+		"image": "qzt_945.png"
+	},
+	{
+		"number": "946",
+		"content": {
+			"en": "REPLACE TIRE",
+			"zh": "更换轮胎",
+			"ms": "TUKAR TAYAR"
+		},
+		"image": "qzt_946.png"
+	},
+	{
+		"number": "947",
+		"content": {
+			"en": "INFLATE TIRE",
+			"zh": "轮胎打风/轮胎充气",
+			"ms": "MASUK ANGIN TAYAR"
+		},
+		"image": "qzt_947.png"
+	},
+	{
+		"number": "948",
+		"content": {
+			"en": "BOOK",
+			"zh": "书本/册/簿",
+			"ms": "BUKU"
+		},
+		"image": "qzt_948.png"
+	},
+	{
+		"number": "949",
+		"content": {
+			"en": "BEARD KNIFE",
+			"zh": "胡须刀/剃须刀",
+			"ms": "PISAU CUKUR"
+		},
+		"image": "qzt_949.png"
+	},
+	{
+		"number": "950",
+		"content": {
+			"en": "MAGAZINE",
+			"zh": "书报/画报/杂志",
+			"ms": "MAJALAH"
+		},
+		"image": "qzt_950.png"
+	},
+	{
+		"number": "951",
+		"content": {
+			"en": "PAY TAXES/PAY INCOME TAX",
+			"zh": "纳税/缴所得税",
+			"ms": "BAYAR CUKAI"
+		},
+		"image": "qzt_951.png"
+	},
+	{
+		"number": "952",
+		"content": {
+			"en": "PAI GOW",
+			"zh": "牌九",
+			"ms": "PAIJIU"
+		},
+		"image": "qzt_952.png"
+	},
+	{
+		"number": "953",
+		"content": {
+			"en": "CRAFTSMAN/SMITH",
+			"zh": "工匠",
+			"ms": "TUKANG KAYU"
+		},
+		"image": "qzt_953.png"
+	},
+	{
+		"number": "954",
+		"content": {
+			"en": "POUR OIL",
+			"zh": "倒油",
+			"ms": "TUANG MINYAK"
+		},
+		"image": "qzt_954.png"
+	},
+	{
+		"number": "955",
+		"content": {
+			"en": "FUEL TANK TRUCK",
+			"zh": "载油卡车/运油卡车/油箱车",
+			"ms": "KERETA MINYAK"
+		},
+		"image": "qzt_955.png"
+	},
+	{
+		"number": "956",
+		"content": {
+			"en": "RUDDER",
+			"zh": "舵/掌舵",
+			"ms": "KEMUDI"
+		},
+		"image": "qzt_956.png"
+	},
+	{
+		"number": "957",
+		"content": {
+			"en": "TRAIN",
+			"zh": "火车/列车",
+			"ms": "KERETA API"
+		},
+		"image": "qzt_957.png"
+	},
+	{
+		"number": "958",
+		"content": {
+			"en": "WEIGHING WITH STEELYARD",
+			"zh": "秤物品/秤东西/秤重",
+			"ms": "TIMBANG BARANG"
+		},
+		"image": "qzt_958.png"
+	},
+	{
+		"number": "959",
+		"content": {
+			"en": "WEIGHING WITH SCALE",
+			"zh": "磅物品/量重/秤重量",
+			"ms": "TIMBANG BARANG"
+		},
+		"image": "qzt_959.png"
+	},
+	{
+		"number": "960",
+		"content": {
+			"en": "TIE RUBBER",
+			"zh": "绑橡胶",
+			"ms": "IKAT GETAH"
+		},
+		"image": "qzt_960.png"
+	},
+	{
+		"number": "961",
+		"content": {
+			"en": "RUBBER DISASSEMBLE",
+			"zh": "拆橡胶",
+			"ms": "KOTAK GETAH"
+		},
+		"image": "qzt_961.png"
+	},
+	{
+		"number": "962",
+		"content": {
+			"en": "CUT RUBBER",
+			"zh": "剪橡胶",
+			"ms": "GUNTING GETAH"
+		},
+		"image": "qzt_962.png"
+	},
+	{
+		"number": "963",
+		"content": {
+			"en": "WASH RUBBER",
+			"zh": "洗橡胶",
+			"ms": "CUCI GETAH"
+		},
+		"image": "qzt_963.png"
+	},
+	{
+		"number": "964",
+		"content": {
+			"en": "SMOKE RUBBER",
+			"zh": "烟熏橡胶",
+			"ms": "GETAH ASAP"
+		},
+		"image": "qzt_964.png"
+	},
+	{
+		"number": "965",
+		"content": {
+			"en": "ACID",
+			"zh": "胶醋/硫酸",
+			"ms": "CUKA"
+		},
+		"image": "qzt_965.png"
+	},
+	{
+		"number": "966",
+		"content": {
+			"en": "MINING GUAVA",
+			"zh": "采番石榴/摘番石榴/採番石榴",
+			"ms": "PETIK JAMBU"
+		},
+		"image": "qzt_966.png"
+	},
+	{
+		"number": "967",
+		"content": {
+			"en": "KIDNEY BEAN/SNAP BEAN",
+			"zh": "菜豆/四季豆/二季豆",
+			"ms": "KACANG PANJANG"
+		},
+		"image": "qzt_967.png"
+	},
+	{
+		"number": "968",
+		"content": {
+			"en": "DRYING STARCH",
+			"zh": "晒茨粉/晒淀粉",
+			"ms": "JEMUR TEPUNG"
+		},
+		"image": "qzt_968.png"
+	},
+	{
+		"number": "969",
+		"content": {
+			"en": "PEDLAR/PEDDLER/KELONTONG",
+			"zh": "卖洋货/卖外国进口货物/行商/流动商人",
+			"ms": "JUAL BARANGAN BARAT"
+		},
+		"image": "qzt_969.png"
+	},
+	{
+		"number": "970",
+		"content": {
+			"en": "CASSAVA",
+			"zh": "木薯",
+			"ms": "UBI KAYU"
+		},
+		"image": "qzt_970.png"
+	},
+	{
+		"number": "971",
+		"content": {
+			"en": "SEE A PATIENT/MEDICAL TREATMENT/THERAPY",
+			"zh": "诊病/应诊/看病/医治/治疗",
+			"ms": "UBATI ORANG SAKIT"
+		},
+		"image": "qzt_971.png"
+	},
+	{
+		"number": "972",
+		"content": {
+			"en": "FIGHT/SCUFFLE/BRAWL",
+			"zh": "打架/斗殴",
+			"ms": "BERTUMBUK"
+		},
+		"image": "qzt_972.png"
+	},
+	{
+		"number": "973",
+		"content": {
+			"en": "BALLPOINT PEN",
+			"zh": "原子笔/圆珠笔",
+			"ms": "BALL PEN"
+		},
+		"image": "qzt_973.png"
+	},
+	{
+		"number": "974",
+		"content": {
+			"en": "CAMERA/VIDEO RECORDER/CAMCORDER",
+			"zh": "摄影机/照相机",
+			"ms": "KAMERA"
+		},
+		"image": "qzt_974.png"
+	},
+	{
+		"number": "975",
+		"content": {
+			"en": "TORTOISE",
+			"zh": "龟/乌龟",
+			"ms": "PENYU"
+		},
+		"image": "qzt_975.png"
+	},
+	{
+		"number": "976",
+		"content": {
+			"en": "CHINESE MEDICINAL HERBS SHOP",
+			"zh": "药店/中药店/药行",
+			"ms": "KEDAI UBAT"
+		},
+		"image": "qzt_976.png"
+	},
+	{
+		"number": "977",
+		"content": {
+			"en": "HAND TOWEL",
+			"zh": "手巾",
+			"ms": "SAPU TANGAN"
+		},
+		"image": "qzt_977.png"
+	},
+	{
+		"number": "978",
+		"content": {
+			"en": "ROAD CONSTRUCTION/MENDING THE ROAD/REPAIR THE ROAD",
+			"zh": "修路/道路建设/修补道路/铺路",
+			"ms": "BAIKI JALAN"
+		},
+		"image": "qzt_978.png"
+	},
+	{
+		"number": "979",
+		"content": {
+			"en": "REPAIR THE BRIDGE/BUILDING THE BRIDGE/BRIDGE CONSTRUCTION",
+			"zh": "修桥/大桥建设",
+			"ms": "BAIKI JAMBATAN"
+		},
+		"image": "qzt_979.png"
+	},
+	{
+		"number": "980",
+		"content": {
+			"en": "CROSSROADS",
+			"zh": "十字路口/交叉路",
+			"ms": "SIMPANG EMPAT"
+		},
+		"image": "qzt_980.png"
+	},
+	{
+		"number": "981",
+		"content": {
+			"en": "TAXI/CAB",
+			"zh": "德士/出租车/计程车",
+			"ms": "NAIK TAXI"
+		},
+		"image": "qzt_981.png"
+	},
+	{
+		"number": "982",
+		"content": {
+			"en": "REPARING TIRES/FIXING TIRE/MAKING TIRE",
+			"zh": "修轮胎/更换轮胎",
+			"ms": "BUAT TAYAR"
+		},
+		"image": "qzt_982.png"
+	},
+	{
+		"number": "983",
+		"content": {
+			"en": "TAKE MEDICINE",
+			"zh": "服药/吃药/喝药",
+			"ms": "MINUM UBAT"
+		},
+		"image": "qzt_983.png"
+	},
+	{
+		"number": "984",
+		"content": {
+			"en": "ENGINE/MOTOR",
+			"zh": "引擎/马达/发动机",
+			"ms": "MOTOR"
+		},
+		"image": "qzt_984.png"
+	},
+	{
+		"number": "985",
+		"content": {
+			"en": "VINE/RATTAN",
+			"zh": "藤/藤蔓",
+			"ms": "ROTAN"
+		},
+		"image": "qzt_985.png"
+	},
+	{
+		"number": "986",
+		"content": {
+			"en": "REPAIR FISHING NET",
+			"zh": "修补渔网",
+			"ms": "TAMPUNG PUKAT"
+		},
+		"image": "qzt_986.png"
+	},
+	{
+		"number": "987",
+		"content": {
+			"en": "PEPPER",
+			"zh": "胡椒/胡椒粉/胡椒粒",
+			"ms": "LADA"
+		},
+		"image": "qzt_987.png"
+	},
+	{
+		"number": "988",
+		"content": {
+			"en": "DRYING FISHING NET",
+			"zh": "晒渔网",
+			"ms": "KEMUR PUKAT"
+		},
+		"image": "qzt_988.png"
+	},
+	{
+		"number": "989",
+		"content": {
+			"en": "DRYING CANVAS/DRYING SAIL",
+			"zh": "晒帆布",
+			"ms": "KEMUR LAYAR"
+		},
+		"image": "qzt_989.png"
+	},
+	{
+		"number": "990",
+		"content": {
+			"en": "SELLING FEATHER BRUSH",
+			"zh": "卖鸡毛扫",
+			"ms": "PENJUAL PENYAPU-YAPU"
+		},
+		"image": "qzt_990.png"
+	},
+	{
+		"number": "991",
+		"content": {
+			"en": "SAMPAN ONSTRUCTION/BUILD SAMPANS",
+			"zh": "建造舢板/建造船只",
+			"ms": "BUAT SAMPAN"
+		},
+		"image": "qzt_991.png"
+	},
+	{
+		"number": "992",
+		"content": {
+			"en": "PAWN SHOP",
+			"zh": "当铺",
+			"ms": "PAJAK GADAI"
+		},
+		"image": "qzt_992.png"
+	},
+	{
+		"number": "993",
+		"content": {
+			"en": "SELLING CLOTH",
+			"zh": "卖布/卖布匹",
+			"ms": "JUAL KAIN"
+		},
+		"image": "qzt_993.png"
+	},
+	{
+		"number": "994",
+		"content": {
+			"en": "BURN INCENSE",
+			"zh": "拜香/上香/烧香",
+			"ms": "NYALAKAN GAHARU"
+		},
+		"image": "qzt_994.png"
+	},
+	{
+		"number": "995",
+		"content": {
+			"en": "BURN PAPER MONENY IN TEMPLE/PRAY IN TEMPLE",
+			"zh": "上庙烧金纸/去庙拜拜",
+			"ms": "SEMBAHYANG DI TOKONG"
+		},
+		"image": "qzt_995.png"
+	},
+	{
+		"number": "996",
+		"content": {
+			"en": "FISHERMAN",
+			"zh": "渔翁/渔夫/捕鱼人",
+			"ms": "NELAYAN"
+		},
+		"image": "qzt_996.png"
+	},
+	{
+		"number": "997",
+		"content": {
+			"en": "CUT VEGETABLE/CHOP VEGETABLE",
+			"zh": "切菜",
+			"ms": "POTONG SAYUR"
+		},
+		"image": "qzt_997.png"
+	},
+	{
+		"number": "998",
+		"content": {
+			"en": "LIGHT THE GAS LAMP",
+			"zh": "点大光灯/点燃汽灯",
+			"ms": "PASANG LAMPU"
+		},
+		"image": "qzt_998.png"
+	},
+	{
+		"number": "999",
+		"content": {
+			"en": "FOOD CUPBOARD/DISH CABINET",
+			"zh": "菜橱/碗柜",
+			"ms": "AUMARI MAKANAN"
+		},
+		"image": "qzt_999.png"
+	}
+]

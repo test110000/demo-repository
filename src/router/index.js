@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../views/dashboard.vue'
+// import Dashboard from '../views/dashboard.vue'
+import Dashboard from '../views/dashboard_2.vue'
 import SpinMyLuck from '../views/SpinMyLuck.vue'
 import LuckyBook from '../views/LuckyBook.vue'
 /*import Jackpot from '../views/Jackpot.vue'
@@ -15,6 +16,11 @@ const routes = [
 		name: 'Dashboard',
 		component: Dashboard
 	},
+	// {
+	// 	path: '/',
+	// 	name: 'Dashboard',
+	// 	component: Dashboard
+	// },
 	{
 		path: '/spin-my-luck',
 		name: 'SpinMyLuck',
