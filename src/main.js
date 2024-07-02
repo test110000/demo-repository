@@ -11,6 +11,7 @@ import 'swiper/swiper-bundle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
+
 const app = createApp(App);
 
 // Register moment as a global property

@@ -50,6 +50,7 @@
 						</div>
 					</div>
 				</nav>
+
 				<div class="Logo_4D" style="display: none;">
 					<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
 						src="/public/image/4D-lottery-single.png">
