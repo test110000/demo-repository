@@ -1,5 +1,5 @@
 <template>
-	<div class="top-bar" style="background-color: #CF2E2E;">
+	<div class="top-bar" style="background-color: #CF2E2E; width: calc(100% - 206px);">
 		<div class="full-width plr-20">
 			<div class="top">
 				<a class="display-img" href="#">
@@ -95,7 +95,6 @@
 							&#x21BA;
 						</a>
 					</div>
-
 				</div>
 				<div class="language-button">
 					<button>
@@ -165,13 +164,12 @@ export default {
 	height: 65px;
 	position: fixed;
 	top: 0;
+	right: 0;
 	width: 100%;
 	align-content: center;
 }
 
 .top {
-	left: 206px;
-	width: calc(100% - 206px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -329,15 +327,10 @@ export default {
 
 .refresh-icon {
 	font-size: 24px;
-	/* Size of the icon */
 	color: #CF2E2E;
-	/* Arrow color */
 	background-color: #ffffff;
-	/* White background */
 	border: 2px solid #CF2E2E;
-	/* Border to define the circle */
 	border-radius: 50%;
-	/* Round shape */
 	padding: 10px;
 	width: 50px;
 	height: 50px;
@@ -345,7 +338,6 @@ export default {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	/* Optional shadow for better visibility */
 }
 
 .refresh-arrow {
@@ -362,5 +354,9 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=UTF8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 </style>

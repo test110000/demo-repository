@@ -1,0 +1,9002 @@
+[
+	{
+		"number": "000",
+		"content": {
+			"en": "PAPER BOX",
+			"zh": "纸盒,纸皮箱",
+			"ms": "KOTAK KERTAS"
+		},
+		"image": "gzt_000.png"
+	},
+	{
+		"number": "001",
+		"content": {
+			"en": "DRAGON",
+			"zh": "飞龙,龙",
+			"ms": "NAGA"
+		},
+		"image": "gzt_001.png"
+	},
+	{
+		"number": "002",
+		"content": {
+			"en": "JIANG SI",
+			"zh": "江祀",
+			"ms": "JIANG SI"
+		},
+		"image": "gzt_002.png"
+	},
+	{
+		"number": "003",
+		"content": {
+			"en": "TIAN SHEN",
+			"zh": "天申",
+			"ms": "TIAN SHEN"
+		},
+		"image": "gzt_003.png"
+	},
+	{
+		"number": "004",
+		"content": {
+			"en": "PEACOCK",
+			"zh": "孔雀",
+			"ms": "BURUNG MERAK"
+		},
+		"image": "gzt_004.png"
+	},
+	{
+		"number": "005",
+		"content": {
+			"en": "LION",
+			"zh": "雄狮,狮子",
+			"ms": "SINGA"
+		},
+		"image": "gzt_005.png"
+	},
+	{
+		"number": "006",
+		"content": {
+			"en": "ROC",
+			"zh": "大鹏,大鹏金翅鸟",
+			"ms": "ROC"
+		},
+		"image": "gzt_006.png"
+	},
+	{
+		"number": "007",
+		"content": {
+			"en": "TIGER",
+			"zh": "猛虎,老虎",
+			"ms": "HARIMAU"
+		},
+		"image": "gzt_007.png"
+	},
+	{
+		"number": "008",
+		"content": {
+			"en": "CRANE",
+			"zh": "寿鹤",
+			"ms": "CRANE"
+		},
+		"image": "gzt_008.png"
+	},
+	{
+		"number": "009",
+		"content": {
+			"en": "ZHAO ZI LONG",
+			"zh": "赵子龙,赵云",
+			"ms": "ZHAO ZI LONG"
+		},
+		"image": "gzt_009.png"
+	},
+	{
+		"number": "010",
+		"content": {
+			"en": "PICA PICA",
+			"zh": "喜鹊",
+			"ms": "PICA PICA"
+		},
+		"image": "gzt_010.png"
+	},
+	{
+		"number": "011",
+		"content": {
+			"en": "YOW LEE",
+			"zh": "有利",
+			"ms": "YOW LEE"
+		},
+		"image": "gzt_011.png"
+	},
+	{
+		"number": "012",
+		"content": {
+			"en": "KOW KOON",
+			"zh": "九官",
+			"ms": "KOW KOON"
+		},
+		"image": "gzt_012.png"
+	},
+	{
+		"number": "013",
+		"content": {
+			"en": "DEER",
+			"zh": "梅鹿",
+			"ms": "RUSA"
+		},
+		"image": "gzt_013.png"
+	},
+	{
+		"number": "014",
+		"content": {
+			"en": "BLACK-NAPED ORIOLE, CUCKOO",
+			"zh": "黄莺",
+			"ms": "WARBLER KUNING"
+		},
+		"image": "gzt_014.png"
+	},
+	{
+		"number": "015",
+		"content": {
+			"en": "HORSE",
+			"zh": "良马,马",
+			"ms": "KUDA"
+		},
+		"image": "gzt_015.png"
+	},
+	{
+		"number": "016",
+		"content": {
+			"en": "SWALLOW",
+			"zh": "春燕,燕子",
+			"ms": "SWALLOW"
+		},
+		"image": "gzt_016.png"
+	},
+	{
+		"number": "017",
+		"content": {
+			"en": "BULL",
+			"zh": "牛,青牛",
+			"ms": "LEMBU JANTAN"
+		},
+		"image": "gzt_017.png"
+	},
+	{
+		"number": "018",
+		"content": {
+			"en": "DAO CHAN",
+			"zh": "刀禅",
+			"ms": "DAO CHAN"
+		},
+		"image": "gzt_018.png"
+	},
+	{
+		"number": "019",
+		"content": {
+			"en": "JI PIN",
+			"zh": "吉品",
+			"ms": "JI PIN"
+		},
+		"image": "gzt_019.png"
+	},
+	{
+		"number": "020",
+		"content": {
+			"en": "CROW",
+			"zh": "乌鸦",
+			"ms": "GAGAK"
+		},
+		"image": "gzt_020.png"
+	},
+	{
+		"number": "021",
+		"content": {
+			"en": "SAN HUAI",
+			"zh": "三槐",
+			"ms": "SAN HUAI"
+		},
+		"image": "gzt_021.png"
+	},
+	{
+		"number": "022",
+		"content": {
+			"en": "FRANCOLIN",
+			"zh": "鹧鸪",
+			"ms": "FRANCOLIN"
+		},
+		"image": "gzt_022.png"
+	},
+	{
+		"number": "023",
+		"content": {
+			"en": "WILD BOAR, PIG",
+			"zh": "野猪,猪",
+			"ms": "BABI HUTAN, BABI"
+		},
+		"image": "gzt_023.png"
+	},
+	{
+		"number": "024",
+		"content": {
+			"en": "PIGEON, DOVE",
+			"zh": "鸽子,神鸽",
+			"ms": "MERPATI"
+		},
+		"image": "gzt_024.png"
+	},
+	{
+		"number": "025",
+		"content": {
+			"en": "FU SUN",
+			"zh": "福孙",
+			"ms": "FU SUN"
+		},
+		"image": "gzt_025.png"
+	},
+	{
+		"number": "026",
+		"content": {
+			"en": "CHINESE HWAMEI",
+			"zh": "画眉鸟",
+			"ms": "HWAMEI CINA"
+		},
+		"image": "gzt_026.png"
+	},
+	{
+		"number": "027",
+		"content": {
+			"en": "ZHI DE",
+			"zh": "只得",
+			"ms": "ZHI DE"
+		},
+		"image": "gzt_027.png"
+	},
+	{
+		"number": "028",
+		"content": {
+			"en": "LIU BIAO",
+			"zh": "刘表",
+			"ms": "LIU BIAO"
+		},
+		"image": "gzt_028.png"
+	},
+	{
+		"number": "029",
+		"content": {
+			"en": "FOX",
+			"zh": "狐狸",
+			"ms": "MUSANG"
+		},
+		"image": "gzt_029.png"
+	},
+	{
+		"number": "030",
+		"content": {
+			"en": "RI SHAN",
+			"zh": "日山",
+			"ms": "RI SHAN"
+		},
+		"image": "gzt_030.png"
+	},
+	{
+		"number": "031",
+		"content": {
+			"en": "LU BU",
+			"zh": "吕布",
+			"ms": "LU BU"
+		},
+		"image": "gzt_031.png"
+	},
+	{
+		"number": "032",
+		"content": {
+			"en": "ZHAO YUAN",
+			"zh": "赵元",
+			"ms": "ZHAO YUAN"
+		},
+		"image": "gzt_032.png"
+	},
+	{
+		"number": "033",
+		"content": {
+			"en": "YUE BAO",
+			"zh": "月宝",
+			"ms": "YUE BAO"
+		},
+		"image": "gzt_033.png"
+	},
+	{
+		"number": "034",
+		"content": {
+			"en": "TOAD",
+			"zh": "蛤蟆,蟾蜍",
+			"ms": "KATAK"
+		},
+		"image": "gzt_034.png"
+	},
+	{
+		"number": "035",
+		"content": {
+			"en": "BI DE",
+			"zh": "必得",
+			"ms": "BI DE"
+		},
+		"image": "gzt_035.png"
+	},
+	{
+		"number": "036",
+		"content": {
+			"en": "MING ZU",
+			"zh": "明珠",
+			"ms": "MING ZU"
+		},
+		"image": "gzt_036.png"
+	},
+	{
+		"number": "037",
+		"content": {
+			"en": "WHALE",
+			"zh": "鲸鱼",
+			"ms": "IKAN PAUS"
+		},
+		"image": "gzt_037.png"
+	},
+	{
+		"number": "038",
+		"content": {
+			"en": "SPIDER",
+			"zh": "蜘蛛",
+			"ms": "LABAH-LABAH"
+		},
+		"image": "gzt_038.png"
+	},
+	{
+		"number": "039",
+		"content": {
+			"en": "ZHAN KUI",
+			"zh": "占魁",
+			"ms": "ZHAN KUI"
+		},
+		"image": "gzt_039.png"
+	},
+	{
+		"number": "040",
+		"content": {
+			"en": "LIU SHAN",
+			"zh": "刘禅",
+			"ms": "LIU SHAN"
+		},
+		"image": "gzt_040.png"
+	},
+	{
+		"number": "041",
+		"content": {
+			"en": "WAN JIN",
+			"zh": "万全",
+			"ms": "WAN JIN"
+		},
+		"image": "gzt_041.png"
+	},
+	{
+		"number": "042",
+		"content": {
+			"en": "CRICKET",
+			"zh": "蟋蟀",
+			"ms": "KRIKET"
+		},
+		"image": "gzt_042.png"
+	},
+	{
+		"number": "043",
+		"content": {
+			"en": "JING LI",
+			"zh": "井利",
+			"ms": "JING LI"
+		},
+		"image": "gzt_043.png"
+	},
+	{
+		"number": "044",
+		"content": {
+			"en": "SEAL",
+			"zh": "海狗,海豹",
+			"ms": "SEAL"
+		},
+		"image": "gzt_044.png"
+	},
+	{
+		"number": "045",
+		"content": {
+			"en": "LOBSTER",
+			"zh": "龙虾",
+			"ms": "UDANG GALAH"
+		},
+		"image": "gzt_045.png"
+	},
+	{
+		"number": "046",
+		"content": {
+			"en": "YANG XIU",
+			"zh": "杨修",
+			"ms": "YANG XIU"
+		},
+		"image": "gzt_046.png"
+	},
+	{
+		"number": "047",
+		"content": {
+			"en": "YING YU",
+			"zh": "银玉",
+			"ms": "YING YU"
+		},
+		"image": "gzt_047.png"
+	},
+	{
+		"number": "048",
+		"content": {
+			"en": "BEE",
+			"zh": "蜜蜂",
+			"ms": "LEBAH"
+		},
+		"image": "gzt_048.png"
+	},
+	{
+		"number": "049",
+		"content": {
+			"en": "CICADA",
+			"zh": "蝉",
+			"ms": "CICADA"
+		},
+		"image": "gzt_049.png"
+	},
+	{
+		"number": "050",
+		"content": {
+			"en": "VIVIPARIDAE",
+			"zh": "田螺",
+			"ms": "VIVIPARIDAE"
+		},
+		"image": "gzt_050.png"
+	},
+	{
+		"number": "051",
+		"content": {
+			"en": "TAI PING",
+			"zh": "太平",
+			"ms": "TAI PING"
+		},
+		"image": "gzt_051.png"
+	},
+	{
+		"number": "052",
+		"content": {
+			"en": "PHOENIX",
+			"zh": "凤凰",
+			"ms": "PHOENIX"
+		},
+		"image": "gzt_052.png"
+	},
+	{
+		"number": "053",
+		"content": {
+			"en": "QILIN",
+			"zh": "麒麟",
+			"ms": "QILIN"
+		},
+		"image": "gzt_053.png"
+	},
+	{
+		"number": "054",
+		"content": {
+			"en": "FENG CHUN",
+			"zh": "逢春",
+			"ms": "FENG CHUN"
+		},
+		"image": "gzt_054.png"
+	},
+	{
+		"number": "055",
+		"content": {
+			"en": "ZHI GAO",
+			"zh": "志高",
+			"ms": "ZHI GAO"
+		},
+		"image": "gzt_055.png"
+	},
+	{
+		"number": "056",
+		"content": {
+			"en": "RONG SHENG",
+			"zh": "荣生",
+			"ms": "RONG SHENG"
+		},
+		"image": "gzt_056.png"
+	},
+	{
+		"number": "057",
+		"content": {
+			"en": "KUN SHAN",
+			"zh": "坤山",
+			"ms": "KUN SHAN"
+		},
+		"image": "gzt_057.png"
+	},
+	{
+		"number": "058",
+		"content": {
+			"en": "QIN YUAN",
+			"zh": "青云",
+			"ms": "QIN YUAN"
+		},
+		"image": "gzt_058.png"
+	},
+	{
+		"number": "059",
+		"content": {
+			"en": "LEOPARD, CHEETAH",
+			"zh": "斑豹,花豹,豹",
+			"ms": "LEOPARD, CHEETAH"
+		},
+		"image": "gzt_059.png"
+	},
+	{
+		"number": "060",
+		"content": {
+			"en": "MA CHAO",
+			"zh": "马超",
+			"ms": "MA CHAO"
+		},
+		"image": "gzt_060.png"
+	},
+	{
+		"number": "061",
+		"content": {
+			"en": "ELEPHANT",
+			"zh": "黒象,大象",
+			"ms": "GAJAH"
+		},
+		"image": "gzt_061.png"
+	},
+	{
+		"number": "062",
+		"content": {
+			"en": "WILD GOOSE",
+			"zh": "秋雁",
+			"ms": "ANGSA LIAR"
+		},
+		"image": "gzt_062.png"
+	},
+	{
+		"number": "063",
+		"content": {
+			"en": "YUAN JI",
+			"zh": "元吉",
+			"ms": "YUAN JI"
+		},
+		"image": "gzt_063.png"
+	},
+	{
+		"number": "064",
+		"content": {
+			"en": "YAN YAN",
+			"zh": "岩彦",
+			"ms": "YAN YAN"
+		},
+		"image": "gzt_064.png"
+	},
+	{
+		"number": "065",
+		"content": {
+			"en": "GUANG MING",
+			"zh": "光明",
+			"ms": "GUANG MING"
+		},
+		"image": "gzt_065.png"
+	},
+	{
+		"number": "066",
+		"content": {
+			"en": "SHANG ZHAO",
+			"zh": "上招",
+			"ms": "SHANG ZHAO"
+		},
+		"image": "gzt_066.png"
+	},
+	{
+		"number": "067",
+		"content": {
+			"en": "HAN YUN",
+			"zh": "汉云",
+			"ms": "HAN YUN"
+		},
+		"image": "gzt_067.png"
+	},
+	{
+		"number": "068",
+		"content": {
+			"en": "TEAL, MANDARIN DUCK",
+			"zh": "鸳鸯",
+			"ms": "TEAL, ITIK MANDARIN"
+		},
+		"image": "gzt_068.png"
+	},
+	{
+		"number": "069",
+		"content": {
+			"en": "GOAT",
+			"zh": "山羊",
+			"ms": "KAMBING"
+		},
+		"image": "gzt_069.png"
+	},
+	{
+		"number": "070",
+		"content": {
+			"en": "ZHANG SONG",
+			"zh": "张松",
+			"ms": "ZHANG SONG"
+		},
+		"image": "gzt_070.png"
+	},
+	{
+		"number": "071",
+		"content": {
+			"en": "MONKEY",
+			"zh": "猿猴,猴子",
+			"ms": "MONYET"
+		},
+		"image": "gzt_071.png"
+	},
+	{
+		"number": "072",
+		"content": {
+			"en": "CAO CAO",
+			"zh": "曹操",
+			"ms": "CAO CAO"
+		},
+		"image": "gzt_072.png"
+	},
+	{
+		"number": "073",
+		"content": {
+			"en": "ZHENG SHUN",
+			"zh": "正顺",
+			"ms": "ZHENG SHUN"
+		},
+		"image": "gzt_073.png"
+	},
+	{
+		"number": "074",
+		"content": {
+			"en": "HE TONG",
+			"zh": "合同",
+			"ms": "HE TONG"
+		},
+		"image": "gzt_074.png"
+	},
+	{
+		"number": "075",
+		"content": {
+			"en": "WHITE DOG",
+			"zh": "狗,白狗",
+			"ms": "ANJING PUTIH"
+		},
+		"image": "gzt_075.png"
+	},
+	{
+		"number": "076",
+		"content": {
+			"en": "ZHOU CANG",
+			"zh": "周仓",
+			"ms": "ZHOU CANG"
+		},
+		"image": "gzt_076.png"
+	},
+	{
+		"number": "077",
+		"content": {
+			"en": "CAT",
+			"zh": "猫,花猫",
+			"ms": "KUCING"
+		},
+		"image": "gzt_077.png"
+	},
+	{
+		"number": "078",
+		"content": {
+			"en": "BAT",
+			"zh": "蝙蝠",
+			"ms": "KELAWAR"
+		},
+		"image": "gzt_078.png"
+	},
+	{
+		"number": "079",
+		"content": {
+			"en": "AN SHI",
+			"zh": "安士",
+			"ms": "AN SHI"
+		},
+		"image": "gzt_079.png"
+	},
+	{
+		"number": "080",
+		"content": {
+			"en": "COCK , ROOSTER",
+			"zh": "公鸡,鸣鸡,雄鸡",
+			"ms": "AYAM JANTAN"
+		},
+		"image": "gzt_080.png"
+	},
+	{
+		"number": "081",
+		"content": {
+			"en": "WOLF",
+			"zh": "豺狼,狼",
+			"ms": "SERIGALA"
+		},
+		"image": "gzt_081.png"
+	},
+	{
+		"number": "082",
+		"content": {
+			"en": "SPARROW",
+			"zh": "麻雀",
+			"ms": "BURUNG PIPIT"
+		},
+		"image": "gzt_082.png"
+	},
+	{
+		"number": "083",
+		"content": {
+			"en": "RABBIT",
+			"zh": "兔子,玉兔",
+			"ms": "ARNAB"
+		},
+		"image": "gzt_083.png"
+	},
+	{
+		"number": "084",
+		"content": {
+			"en": "HE HAI",
+			"zh": "合海",
+			"ms": "HE HAI"
+		},
+		"image": "gzt_084.png"
+	},
+	{
+		"number": "085",
+		"content": {
+			"en": "RAT,MOUSE",
+			"zh": "老鼠",
+			"ms": "TIKUS"
+		},
+		"image": "gzt_085.png"
+	},
+	{
+		"number": "086",
+		"content": {
+			"en": "CENTIPEDE",
+			"zh": "蜈蚣",
+			"ms": "LIPAN"
+		},
+		"image": "gzt_086.png"
+	},
+	{
+		"number": "087",
+		"content": {
+			"en": "XU SHU",
+			"zh": "徐蔗",
+			"ms": "XU SHU"
+		},
+		"image": "gzt_087.png"
+	},
+	{
+		"number": "088",
+		"content": {
+			"en": "QING YUAN",
+			"zh": "青元",
+			"ms": "QING YUAN"
+		},
+		"image": "gzt_088.png"
+	},
+	{
+		"number": "089",
+		"content": {
+			"en": "CROCODILE",
+			"zh": "鳄鱼",
+			"ms": "BUAYA"
+		},
+		"image": "gzt_089.png"
+	},
+	{
+		"number": "090",
+		"content": {
+			"en": "DRAGON FLY",
+			"zh": "蜻蜓",
+			"ms": "TERBANG NAGA"
+		},
+		"image": "gzt_090.png"
+	},
+	{
+		"number": "091",
+		"content": {
+			"en": "SHARK",
+			"zh": "鲨鱼",
+			"ms": "JERUNG"
+		},
+		"image": "gzt_091.png"
+	},
+	{
+		"number": "092",
+		"content": {
+			"en": "HUO GUAN",
+			"zh": "火官",
+			"ms": "HUO GUAN"
+		},
+		"image": "gzt_092.png"
+	},
+	{
+		"number": "093",
+		"content": {
+			"en": "GOLDFISH",
+			"zh": "金鱼",
+			"ms": "IKAN EMAS"
+		},
+		"image": "gzt_093.png"
+	},
+	{
+		"number": "094",
+		"content": {
+			"en": "DONG ZHUO",
+			"zh": "董卓",
+			"ms": "DONG ZHUO"
+		},
+		"image": "gzt_094.png"
+	},
+	{
+		"number": "095",
+		"content": {
+			"en": "YUAN GUI",
+			"zh": "元贵",
+			"ms": "YUAN GUI"
+		},
+		"image": "gzt_095.png"
+	},
+	{
+		"number": "096",
+		"content": {
+			"en": "CRAB",
+			"zh": "螃蟹",
+			"ms": "KETAM"
+		},
+		"image": "gzt_096.png"
+	},
+	{
+		"number": "097",
+		"content": {
+			"en": "BUTTERFLY",
+			"zh": "蝴蝶",
+			"ms": "RAMA-RAMA"
+		},
+		"image": "gzt_097.png"
+	},
+	{
+		"number": "098",
+		"content": {
+			"en": "MAO LIN",
+			"zh": "茂林",
+			"ms": "MAO LIN"
+		},
+		"image": "gzt_098.png"
+	},
+	{
+		"number": "099",
+		"content": {
+			"en": "TIAN LIANG",
+			"zh": "天良",
+			"ms": "TIAN LIANG"
+		},
+		"image": "gzt_099.png"
+	},
+	{
+		"number": "100",
+		"content": {
+			"en": "BAN GUI",
+			"zh": "扳桂",
+			"ms": "BAN GUI"
+		},
+		"image": "gzt_100.png"
+	},
+	{
+		"number": "101",
+		"content": {
+			"en": "SKY",
+			"zh": "天,天上",
+			"ms": "LANGIT"
+		},
+		"image": "gzt_101.png"
+	},
+	{
+		"number": "102",
+		"content": {
+			"en": "EARTH, GROUND",
+			"zh": "地,地上",
+			"ms": "BUMI, TANAH"
+		},
+		"image": "gzt_102.png"
+	},
+	{
+		"number": "103",
+		"content": {
+			"en": "SUN",
+			"zh": "太阳,日",
+			"ms": "MATAHARI"
+		},
+		"image": "gzt_103.png"
+	},
+	{
+		"number": "104",
+		"content": {
+			"en": "MOON",
+			"zh": "月亮",
+			"ms": "BULAN"
+		},
+		"image": "gzt_104.png"
+	},
+	{
+		"number": "105",
+		"content": {
+			"en": "THUNDER",
+			"zh": "雷,打雷",
+			"ms": "PETIR"
+		},
+		"image": "gzt_105.png"
+	},
+	{
+		"number": "106",
+		"content": {
+			"en": "RAIN",
+			"zh": "雨,下雨",
+			"ms": "HUJAN"
+		},
+		"image": "gzt_106.png"
+	},
+	{
+		"number": "107",
+		"content": {
+			"en": "WIND",
+			"zh": "风",
+			"ms": "ANGIN"
+		},
+		"image": "gzt_107.png"
+	},
+	{
+		"number": "108",
+		"content": {
+			"en": "CLOUD",
+			"zh": "云",
+			"ms": "AWAN"
+		},
+		"image": "gzt_108.png"
+	},
+	{
+		"number": "109",
+		"content": {
+			"en": "ICE",
+			"zh": "冰",
+			"ms": "AIS"
+		},
+		"image": "gzt_109.png"
+	},
+	{
+		"number": "110",
+		"content": {
+			"en": "SNOW",
+			"zh": "雪,下雪",
+			"ms": "SALJI"
+		},
+		"image": "gzt_110.png"
+	},
+	{
+		"number": "111",
+		"content": {
+			"en": "STAR",
+			"zh": "星星",
+			"ms": "BINTANG"
+		},
+		"image": "gzt_111.png"
+	},
+	{
+		"number": "112",
+		"content": {
+			"en": "LIGHTNING",
+			"zh": "闪电",
+			"ms": "KILAT"
+		},
+		"image": "gzt_112.png"
+	},
+	{
+		"number": "113",
+		"content": {
+			"en": "CANAL, RIVER",
+			"zh": "江,河,运河",
+			"ms": "TERUSAN, SUNGAI"
+		},
+		"image": "gzt_113.png"
+	},
+	{
+		"number": "114",
+		"content": {
+			"en": "MOUNTAIN",
+			"zh": "山",
+			"ms": "GUNUNG"
+		},
+		"image": "gzt_114.png"
+	},
+	{
+		"number": "115",
+		"content": {
+			"en": "WATER",
+			"zh": "水",
+			"ms": "AIR"
+		},
+		"image": "gzt_115.png"
+	},
+	{
+		"number": "116",
+		"content": {
+			"en": "ROCK, STONE",
+			"zh": "石,石头,岩石",
+			"ms": "BATU"
+		},
+		"image": "gzt_116.png"
+	},
+	{
+		"number": "117",
+		"content": {
+			"en": "ROAD",
+			"zh": "路,大道,马路",
+			"ms": "JALAN"
+		},
+		"image": "gzt_117.png"
+	},
+	{
+		"number": "118",
+		"content": {
+			"en": "WELL",
+			"zh": "井",
+			"ms": "TELAGA"
+		},
+		"image": "gzt_118.png"
+	},
+	{
+		"number": "119",
+		"content": {
+			"en": "CITY",
+			"zh": "城,城市",
+			"ms": "BANDAR"
+		},
+		"image": "gzt_119.png"
+	},
+	{
+		"number": "120",
+		"content": {
+			"en": "WALL",
+			"zh": "墙,围墙,城墙,墙壁",
+			"ms": "DINDING"
+		},
+		"image": "gzt_120.png"
+	},
+	{
+		"number": "121",
+		"content": {
+			"en": "CAVE",
+			"zh": "洞,山洞",
+			"ms": "GUA"
+		},
+		"image": "gzt_121.png"
+	},
+	{
+		"number": "122",
+		"content": {
+			"en": "PORT, BARBOR",
+			"zh": "港口",
+			"ms": "PELABUHAN"
+		},
+		"image": "gzt_122.png"
+	},
+	{
+		"number": "123",
+		"content": {
+			"en": "FIELD",
+			"zh": "田",
+			"ms": "SAWAH PADI"
+		},
+		"image": "gzt_123.png"
+	},
+	{
+		"number": "124",
+		"content": {
+			"en": "TOMB, GRAVE",
+			"zh": "墓,坟墓",
+			"ms": "TANAH PERKUBURAN"
+		},
+		"image": "gzt_124.png"
+	},
+	{
+		"number": "125",
+		"content": {
+			"en": "GARDEN",
+			"zh": "园,花园,果园",
+			"ms": "TAMAN"
+		},
+		"image": "gzt_125.png"
+	},
+	{
+		"number": "126",
+		"content": {
+			"en": "JUNGLE, FOREST",
+			"zh": "林,森林,树林",
+			"ms": "HUTAN"
+		},
+		"image": "gzt_126.png"
+	},
+	{
+		"number": "127",
+		"content": {
+			"en": "VILLA",
+			"zh": "楼,楼房,别墅,豪宅",
+			"ms": "VILA"
+		},
+		"image": "gzt_127.png"
+	},
+	{
+		"number": "128",
+		"content": {
+			"en": "TOWER",
+			"zh": "台,露台,天台",
+			"ms": "MENARA"
+		},
+		"image": "gzt_128.png"
+	},
+	{
+		"number": "129",
+		"content": {
+			"en": "HOUSE",
+			"zh": "屋,房屋",
+			"ms": "RUMAH"
+		},
+		"image": "gzt_129.png"
+	},
+	{
+		"number": "130",
+		"content": {
+			"en": "TEMPLE",
+			"zh": "寺庙,庙,神庙",
+			"ms": "KUIL"
+		},
+		"image": "gzt_130.png"
+	},
+	{
+		"number": "131",
+		"content": {
+			"en": "VIEW",
+			"zh": "道观,观",
+			"ms": "LIHAT"
+		},
+		"image": "gzt_131.png"
+	},
+	{
+		"number": "132",
+		"content": {
+			"en": "MONASTERY",
+			"zh": "寺院,寺,修道院",
+			"ms": "BIARA"
+		},
+		"image": "gzt_132.png"
+	},
+	{
+		"number": "133",
+		"content": {
+			"en": "BRIDGE",
+			"zh": "桥",
+			"ms": "JAMBATAN"
+		},
+		"image": "gzt_133.png"
+	},
+	{
+		"number": "134",
+		"content": {
+			"en": "SHED, CANOPY",
+			"zh": "亭子,棚",
+			"ms": "PANCA PERSADA"
+		},
+		"image": "gzt_134.png"
+	},
+	{
+		"number": "135",
+		"content": {
+			"en": "PAGODA",
+			"zh": "塔,宝塔",
+			"ms": "PAGODA"
+		},
+		"image": "gzt_135.png"
+	},
+	{
+		"number": "136",
+		"content": {
+			"en": "PAWNSHOP",
+			"zh": "当铺",
+			"ms": "KEDAI PAJAK GADAI"
+		},
+		"image": "gzt_136.png"
+	},
+	{
+		"number": "137",
+		"content": {
+			"en": "PEARL",
+			"zh": "珍珠",
+			"ms": "MUTIARA"
+		},
+		"image": "gzt_137.png"
+	},
+	{
+		"number": "138",
+		"content": {
+			"en": "GOLD",
+			"zh": "金",
+			"ms": "EMAS"
+		},
+		"image": "gzt_138.png"
+	},
+	{
+		"number": "139",
+		"content": {
+			"en": "SILVER",
+			"zh": "银",
+			"ms": "PERAK"
+		},
+		"image": "gzt_139.png"
+	},
+	{
+		"number": "140",
+		"content": {
+			"en": "DUSTER",
+			"zh": "拂尘,云扫",
+			"ms": "PENYAPU DEBU"
+		},
+		"image": "gzt_140.png"
+	},
+	{
+		"number": "141",
+		"content": {
+			"en": "LOTUS STAND",
+			"zh": "莲花台",
+			"ms": "TERATAI"
+		},
+		"image": "gzt_141.png"
+	},
+	{
+		"number": "142",
+		"content": {
+			"en": "CANE STICK",
+			"zh": "藤条,藤棍",
+			"ms": "ROTAN"
+		},
+		"image": "gzt_142.png"
+	},
+	{
+		"number": "143",
+		"content": {
+			"en": "PAPER",
+			"zh": "纸,纸张",
+			"ms": "KERTAS"
+		},
+		"image": "gzt_143.png"
+	},
+	{
+		"number": "144",
+		"content": {
+			"en": "INK",
+			"zh": "濹,黑濹",
+			"ms": "DAKWAT"
+		},
+		"image": "gzt_144.png"
+	},
+	{
+		"number": "145",
+		"content": {
+			"en": "WRITING BRUSH",
+			"zh": "毛笔",
+			"ms": "BERUS MENULIS"
+		},
+		"image": "gzt_145.png"
+	},
+	{
+		"number": "146",
+		"content": {
+			"en": "INK PLATE, INKSTONE",
+			"zh": "砚",
+			"ms": "BATU TINTA"
+		},
+		"image": "gzt_146.png"
+	},
+	{
+		"number": "147",
+		"content": {
+			"en": "BOOK, NOTE",
+			"zh": "书,书本,簿子",
+			"ms": "BUKU"
+		},
+		"image": "gzt_147.png"
+	},
+	{
+		"number": "148",
+		"content": {
+			"en": "DRAWING",
+			"zh": "画,水墨画,山水画",
+			"ms": "LUKISAN"
+		},
+		"image": "gzt_148.png"
+	},
+	{
+		"number": "149",
+		"content": {
+			"en": "GUQIN",
+			"zh": "琴,古琴",
+			"ms": "GUQIN"
+		},
+		"image": "gzt_149.png"
+	},
+	{
+		"number": "150",
+		"content": {
+			"en": "CHESS",
+			"zh": "棋",
+			"ms": "CATUR"
+		},
+		"image": "gzt_150.png"
+	},
+	{
+		"number": "151",
+		"content": {
+			"en": "BALANCE SCALE",
+			"zh": "天秤",
+			"ms": "SKALA IMBANGAN"
+		},
+		"image": "gzt_151.png"
+	},
+	{
+		"number": "152",
+		"content": {
+			"en": "SPEAR",
+			"zh": "枪,长枪",
+			"ms": "LEMBING"
+		},
+		"image": "gzt_152.png"
+	},
+	{
+		"number": "153",
+		"content": {
+			"en": "KNIFE",
+			"zh": "刀,大刀",
+			"ms": "PISAU"
+		},
+		"image": "gzt_153.png"
+	},
+	{
+		"number": "154",
+		"content": {
+			"en": "ABACUS",
+			"zh": "算盘",
+			"ms": "ABAKUS"
+		},
+		"image": "gzt_154.png"
+	},
+	{
+		"number": "155",
+		"content": {
+			"en": "HANDKERCHIEF",
+			"zh": "手帕,手巾",
+			"ms": "SAPU TANGAN"
+		},
+		"image": "gzt_155.png"
+	},
+	{
+		"number": "156",
+		"content": {
+			"en": "BOW",
+			"zh": "弓",
+			"ms": "BUSUR"
+		},
+		"image": "gzt_156.png"
+	},
+	{
+		"number": "157",
+		"content": {
+			"en": "ARROW",
+			"zh": "箭",
+			"ms": "ANAK PANAH"
+		},
+		"image": "gzt_157.png"
+	},
+	{
+		"number": "158",
+		"content": {
+			"en": "CANNON",
+			"zh": "炮,大炮, 火炮",
+			"ms": "MERIAM"
+		},
+		"image": "gzt_158.png"
+	},
+	{
+		"number": "159",
+		"content": {
+			"en": "HAMMER",
+			"zh": "锤,流星锤,铜锤",
+			"ms": "TUKUL"
+		},
+		"image": "gzt_159.png"
+	},
+	{
+		"number": "160",
+		"content": {
+			"en": "SWORD",
+			"zh": "剑",
+			"ms": "PEDANG"
+		},
+		"image": "gzt_160.png"
+	},
+	{
+		"number": "161",
+		"content": {
+			"en": "FLUTE",
+			"zh": "箫,玉箫",
+			"ms": "SERULING"
+		},
+		"image": "gzt_161.png"
+	},
+	{
+		"number": "162",
+		"content": {
+			"en": "GONG",
+			"zh": "锣",
+			"ms": "GONG"
+		},
+		"image": "gzt_162.png"
+	},
+	{
+		"number": "163",
+		"content": {
+			"en": "CYMBAL",
+			"zh": "钹",
+			"ms": "SIMBAL"
+		},
+		"image": "gzt_163.png"
+	},
+	{
+		"number": "164",
+		"content": {
+			"en": "BELL",
+			"zh": "钟",
+			"ms": "LOCENG"
+		},
+		"image": "gzt_164.png"
+	},
+	{
+		"number": "165",
+		"content": {
+			"en": "DRUM",
+			"zh": "鼓",
+			"ms": "GENDANG"
+		},
+		"image": "gzt_165.png"
+	},
+	{
+		"number": "166",
+		"content": {
+			"en": "FLAG",
+			"zh": "旗",
+			"ms": "BENDERA"
+		},
+		"image": "gzt_166.png"
+	},
+	{
+		"number": "167",
+		"content": {
+			"en": "SEAL",
+			"zh": "印章",
+			"ms": "METERAI"
+		},
+		"image": "gzt_167.png"
+	},
+	{
+		"number": "168",
+		"content": {
+			"en": "PIPA",
+			"zh": "琵琶",
+			"ms": "PIPA"
+		},
+		"image": "gzt_168.png"
+	},
+	{
+		"number": "169",
+		"content": {
+			"en": "TRUMPET",
+			"zh": "喇叭",
+			"ms": "SANGKAKALA"
+		},
+		"image": "gzt_169.png"
+	},
+	{
+		"number": "170",
+		"content": {
+			"en": "AXE",
+			"zh": "斧,斧头",
+			"ms": "KAPAK"
+		},
+		"image": "gzt_170.png"
+	},
+	{
+		"number": "171",
+		"content": {
+			"en": "WOODEN FISH",
+			"zh": "木鱼",
+			"ms": "IKAN KAYU"
+		},
+		"image": "gzt_171.png"
+	},
+	{
+		"number": "172",
+		"content": {
+			"en": "BANGLE, BRACELET",
+			"zh": "手镯,手环",
+			"ms": "GELANG"
+		},
+		"image": "gzt_172.png"
+	},
+	{
+		"number": "173",
+		"content": {
+			"en": "RING",
+			"zh": "戒子,戒指",
+			"ms": "CINCIN"
+		},
+		"image": "gzt_173.png"
+	},
+	{
+		"number": "174",
+		"content": {
+			"en": "COMB",
+			"zh": "梳子",
+			"ms": "SIKAT"
+		},
+		"image": "gzt_174.png"
+	},
+	{
+		"number": "175",
+		"content": {
+			"en": "MIRROR",
+			"zh": "镜子",
+			"ms": "CERMIN"
+		},
+		"image": "gzt_175.png"
+	},
+	{
+		"number": "176",
+		"content": {
+			"en": "SCISSOR",
+			"zh": "剪刀",
+			"ms": "GUNTING"
+		},
+		"image": "gzt_176.png"
+	},
+	{
+		"number": "177",
+		"content": {
+			"en": "PILLOW",
+			"zh": "枕头",
+			"ms": "BANTAL"
+		},
+		"image": "gzt_177.png"
+	},
+	{
+		"number": "178",
+		"content": {
+			"en": "MAT",
+			"zh": "席,草席",
+			"ms": "TIKAR"
+		},
+		"image": "gzt_178.png"
+	},
+	{
+		"number": "179",
+		"content": {
+			"en": "MOSQUITO NET",
+			"zh": "蚊帐",
+			"ms": "KELAMBU"
+		},
+		"image": "gzt_179.png"
+	},
+	{
+		"number": "180",
+		"content": {
+			"en": "STEELYARD BALANCE",
+			"zh": "杠秤",
+			"ms": "IMBANGAN STEELYARD"
+		},
+		"image": "gzt_180.png"
+	},
+	{
+		"number": "181",
+		"content": {
+			"en": "SAUCER",
+			"zh": "碟子",
+			"ms": "PIRING"
+		},
+		"image": "gzt_181.png"
+	},
+	{
+		"number": "182",
+		"content": {
+			"en": "KETTLE",
+			"zh": "水壶",
+			"ms": "CEREK"
+		},
+		"image": "gzt_182.png"
+	},
+	{
+		"number": "183",
+		"content": {
+			"en": "VASE, JUG",
+			"zh": "瓶子",
+			"ms": "PASU"
+		},
+		"image": "gzt_183.png"
+	},
+	{
+		"number": "184",
+		"content": {
+			"en": "TUB",
+			"zh": "桶,水桶,木桶",
+			"ms": "BALDI"
+		},
+		"image": "gzt_184.png"
+	},
+	{
+		"number": "185",
+		"content": {
+			"en": "POT",
+			"zh": "缸",
+			"ms": "PERIUK"
+		},
+		"image": "gzt_185.png"
+	},
+	{
+		"number": "186",
+		"content": {
+			"en": "JAR",
+			"zh": "缸",
+			"ms": "BALANG"
+		},
+		"image": "gzt_186.png"
+	},
+	{
+		"number": "187",
+		"content": {
+			"en": "RULER",
+			"zh": "尺",
+			"ms": "PEMBARIS"
+		},
+		"image": "gzt_187.png"
+	},
+	{
+		"number": "188",
+		"content": {
+			"en": "SAW",
+			"zh": "锯子",
+			"ms": "GERGAJI"
+		},
+		"image": "gzt_188.png"
+	},
+	{
+		"number": "189",
+		"content": {
+			"en": "PULLED RICKSHAW",
+			"zh": "人力车,黄包车",
+			"ms": "BECA"
+		},
+		"image": "gzt_189.png"
+	},
+	{
+		"number": "190",
+		"content": {
+			"en": "BOAT",
+			"zh": "船",
+			"ms": "BOT"
+		},
+		"image": "gzt_190.png"
+	},
+	{
+		"number": "191",
+		"content": {
+			"en": "PIGSTY",
+			"zh": "猪栏,猪圈",
+			"ms": "KANDANG KHINZIR"
+		},
+		"image": "gzt_191.png"
+	},
+	{
+		"number": "192",
+		"content": {
+			"en": "KEY",
+			"zh": "锁匙,钥匙",
+			"ms": "KUNCI"
+		},
+		"image": "gzt_192.png"
+	},
+	{
+		"number": "193",
+		"content": {
+			"en": "STOVE",
+			"zh": "风炉",
+			"ms": "DAPUR"
+		},
+		"image": "gzt_193.png"
+	},
+	{
+		"number": "194",
+		"content": {
+			"en": "CLOTHES IRON",
+			"zh": "烫斗",
+			"ms": "SETERIKA PAKAIAN"
+		},
+		"image": "gzt_194.png"
+	},
+	{
+		"number": "195",
+		"content": {
+			"en": "TEAPOT",
+			"zh": "茶壶",
+			"ms": "TEKO"
+		},
+		"image": "gzt_195.png"
+	},
+	{
+		"number": "196",
+		"content": {
+			"en": "BROOM",
+			"zh": "扫帚,扫把",
+			"ms": "PENYAPU"
+		},
+		"image": "gzt_196.png"
+	},
+	{
+		"number": "197",
+		"content": {
+			"en": "NET",
+			"zh": "网,渔网",
+			"ms": "JALA"
+		},
+		"image": "gzt_197.png"
+	},
+	{
+		"number": "198",
+		"content": {
+			"en": "ROPE",
+			"zh": "绳子",
+			"ms": "TALI"
+		},
+		"image": "gzt_198.png"
+	},
+	{
+		"number": "199",
+		"content": {
+			"en": "FISHING HOOK",
+			"zh": "钓竿",
+			"ms": "MATA KAIL"
+		},
+		"image": "gzt_199.png"
+	},
+	{
+		"number": "200",
+		"content": {
+			"en": "PRIEST CAP",
+			"zh": "僧帽",
+			"ms": "TUDUNG IMAM"
+		},
+		"image": "gzt_200.png"
+	},
+	{
+		"number": "201",
+		"content": {
+			"en": "FISH",
+			"zh": "鱼",
+			"ms": "IKAN"
+		},
+		"image": "gzt_201.png"
+	},
+	{
+		"number": "202",
+		"content": {
+			"en": "CONCERT STAGE",
+			"zh": "戏台,舞台",
+			"ms": "PENTAS KONSERT"
+		},
+		"image": "gzt_202.png"
+	},
+	{
+		"number": "203",
+		"content": {
+			"en": "MILO",
+			"zh": "美禄",
+			"ms": "MILO"
+		},
+		"image": "gzt_203.png"
+	},
+	{
+		"number": "204",
+		"content": {
+			"en": "LIU BEI",
+			"zh": "刘备",
+			"ms": "LIU BEI"
+		},
+		"image": "gzt_204.png"
+	},
+	{
+		"number": "205",
+		"content": {
+			"en": "MUSSEL, SHELL",
+			"zh": "蚌",
+			"ms": "KUPANG"
+		},
+		"image": "gzt_205.png"
+	},
+	{
+		"number": "206",
+		"content": {
+			"en": "HIS HEART WAS IN PAIN WHEN HIS MOTHER BIT HER FINGER: ZENG SHEN",
+			"zh": "曾参痛心",
+			"ms": "HATINYA SAKIT APABILA IBUNYA MENGGIGIT JARINYA: ZENG SHEN"
+		},
+		"image": "gzt_206.png"
+	},
+	{
+		"number": "207",
+		"content": {
+			"en": "PICTURE",
+			"zh": "图画,图片",
+			"ms": "GAMBAR"
+		},
+		"image": "gzt_207.png"
+	},
+	{
+		"number": "208",
+		"content": {
+			"en": "XUE GANG",
+			"zh": "薛刚",
+			"ms": "XUE GANG"
+		},
+		"image": "gzt_208.png"
+	},
+	{
+		"number": "209",
+		"content": {
+			"en": "MANTIS",
+			"zh": "螳螂",
+			"ms": "MANTIS"
+		},
+		"image": "gzt_209.png"
+	},
+	{
+		"number": "210",
+		"content": {
+			"en": "GAIBLADDER",
+			"zh": "胆汁",
+			"ms": "HEMPEDU"
+		},
+		"image": "gzt_210.png"
+	},
+	{
+		"number": "211",
+		"content": {
+			"en": "BISCUIT",
+			"zh": "饼干",
+			"ms": "BISKUT"
+		},
+		"image": "gzt_211.png"
+	},
+	{
+		"number": "212",
+		"content": {
+			"en": "SILVERFISH",
+			"zh": "衣鱼",
+			"ms": "IKAN PERAK"
+		},
+		"image": "gzt_212.png"
+	},
+	{
+		"number": "213",
+		"content": {
+			"en": "NEST",
+			"zh": "鸟巢,鸟窝",
+			"ms": "SARANG"
+		},
+		"image": "gzt_213.png"
+	},
+	{
+		"number": "214",
+		"content": {
+			"en": "YANG WEN GUANG",
+			"zh": "杨文广",
+			"ms": "YANG WEN GUANG"
+		},
+		"image": "gzt_214.png"
+	},
+	{
+		"number": "215",
+		"content": {
+			"en": "HAIR",
+			"zh": "头发",
+			"ms": "RAMBUT"
+		},
+		"image": "gzt_215.png"
+	},
+	{
+		"number": "216",
+		"content": {
+			"en": "RICE",
+			"zh": "稻米,稻草",
+			"ms": "BERAS"
+		},
+		"image": "gzt_216.png"
+	},
+	{
+		"number": "217",
+		"content": {
+			"en": "GUAN GONG",
+			"zh": "关公",
+			"ms": "GUAN GONG"
+		},
+		"image": "gzt_217.png"
+	},
+	{
+		"number": "218",
+		"content": {
+			"en": "PINEAPPLE",
+			"zh": "黄梨,菠萝,凤梨",
+			"ms": "NANAS"
+		},
+		"image": "gzt_218.png"
+	},
+	{
+		"number": "219",
+		"content": {
+			"en": "CARRYING LOAD OF RICE ON HIS BACK TO FEED HIS PARENTS: ZILU",
+			"zh": "子路负米",
+			"ms": "MEMBAWA MUATAN BERAS DI PUNGGUNGNYA UNTUK MENYARA IBU BAPANYA: ZILU"
+		},
+		"image": "gzt_219.png"
+	},
+	{
+		"number": "220",
+		"content": {
+			"en": "ZHENGDE EMPEROR",
+			"zh": "朱厚照（正德帝）",
+			"ms": "MAHARAJA ZHENGDE"
+		},
+		"image": "gzt_220.png"
+	},
+	{
+		"number": "221",
+		"content": {
+			"en": "HAT",
+			"zh": "冠,帽",
+			"ms": "TOPI"
+		},
+		"image": "gzt_221.png"
+	},
+	{
+		"number": "222",
+		"content": {
+			"en": "MISUA, NOODLES",
+			"zh": "面线",
+			"ms": "MI"
+		},
+		"image": "gzt_222.png"
+	},
+	{
+		"number": "223",
+		"content": {
+			"en": "BRUSH",
+			"zh": "棕刷,刷子",
+			"ms": "BERUS"
+		},
+		"image": "gzt_223.png"
+	},
+	{
+		"number": "224",
+		"content": {
+			"en": "TOOTHPASTE",
+			"zh": "牙膏",
+			"ms": "UBAT GIGI"
+		},
+		"image": "gzt_224.png"
+	},
+	{
+		"number": "225",
+		"content": {
+			"en": "ROLLING PAPER",
+			"zh": "烟纸,卷烟纸",
+			"ms": "KERTAS GULUNG"
+		},
+		"image": "gzt_225.png"
+	},
+	{
+		"number": "226",
+		"content": {
+			"en": "CHEONGSAM",
+			"zh": "旗袍",
+			"ms": "CHEONGSAM"
+		},
+		"image": "gzt_226.png"
+	},
+	{
+		"number": "227",
+		"content": {
+			"en": "SWEEPING THE FLOOR",
+			"zh": "扫地",
+			"ms": "MENYAPU LANTAI"
+		},
+		"image": "gzt_227.png"
+	},
+	{
+		"number": "228",
+		"content": {
+			"en": "HEART",
+			"zh": "心,心形,心脏",
+			"ms": "HATI"
+		},
+		"image": "gzt_228.png"
+	},
+	{
+		"number": "229",
+		"content": {
+			"en": "SHOVEL",
+			"zh": "铲",
+			"ms": "PENYODOK"
+		},
+		"image": "gzt_229.png"
+	},
+	{
+		"number": "230",
+		"content": {
+			"en": "CLAD IN A THREADBARE JACKET, HE TOLERATED HIS STEPMOTHER: MIN SUN",
+			"zh": "闵损御车, 芦衣顺母",
+			"ms": "BERPAKAIAN JAKET BERULIR, DIA BERTOLAK ANSUR DENGAN IBU TIRINYA: MIN SUN"
+		},
+		"image": "gzt_230.png"
+	},
+	{
+		"number": "231",
+		"content": {
+			"en": "WAGTAIL",
+			"zh": "鹡鸰",
+			"ms": "BURUNG PIPIT"
+		},
+		"image": "gzt_231.png"
+	},
+	{
+		"number": "232",
+		"content": {
+			"en": "SUN QUAN",
+			"zh": "孙权",
+			"ms": "SUN QUAN"
+		},
+		"image": "gzt_232.png"
+	},
+	{
+		"number": "233",
+		"content": {
+			"en": "MORTAR & PESTLE",
+			"zh": "臼",
+			"ms": "ALU DAN LESUNG"
+		},
+		"image": "gzt_233.png"
+	},
+	{
+		"number": "234",
+		"content": {
+			"en": "FELT HAT",
+			"zh": "毡帽,帽子",
+			"ms": "TOPI TERASA"
+		},
+		"image": "gzt_234.png"
+	},
+	{
+		"number": "235",
+		"content": {
+			"en": "EMPEROR RUIZONG OF TANG",
+			"zh": "李旦（唐睿宗）",
+			"ms": "MAHARAJA RUIZONG DARI TANG"
+		},
+		"image": "gzt_235.png"
+	},
+	{
+		"number": "236",
+		"content": {
+			"en": "HELMET",
+			"zh": "盔,头盔",
+			"ms": "TOPI KELEDAR"
+		},
+		"image": "gzt_236.png"
+	},
+	{
+		"number": "237",
+		"content": {
+			"en": "QIANLONG EMPEROR",
+			"zh": "乾隆帝",
+			"ms": "MAHARAJA QIANLONG"
+		},
+		"image": "gzt_237.png"
+	},
+	{
+		"number": "238",
+		"content": {
+			"en": "COMB",
+			"zh": "木梳, 梳子",
+			"ms": "SIKAT"
+		},
+		"image": "gzt_238.png"
+	},
+	{
+		"number": "239",
+		"content": {
+			"en": "BATTLESHIP",
+			"zh": "战舰,航空母艦",
+			"ms": "KAPAL PERANG"
+		},
+		"image": "gzt_239.png"
+	},
+	{
+		"number": "240",
+		"content": {
+			"en": "OVALTINE",
+			"zh": "阿华田",
+			"ms": "OVALTINE"
+		},
+		"image": "gzt_240.png"
+	},
+	{
+		"number": "241",
+		"content": {
+			"en": "STOMACH",
+			"zh": "胃",
+			"ms": "PERUT"
+		},
+		"image": "gzt_241.png"
+	},
+	{
+		"number": "242",
+		"content": {
+			"en": "BRUSH",
+			"zh": "刷子,衣刷",
+			"ms": "BERUS"
+		},
+		"image": "gzt_242.png"
+	},
+	{
+		"number": "243",
+		"content": {
+			"en": "SUIT",
+			"zh": "西装,洋服",
+			"ms": "SUIT"
+		},
+		"image": "gzt_243.png"
+	},
+	{
+		"number": "244",
+		"content": {
+			"en": "ACCOUNT BOOK",
+			"zh": "账簿",
+			"ms": "BUKU AKAUN"
+		},
+		"image": "gzt_244.png"
+	},
+	{
+		"number": "245",
+		"content": {
+			"en": "TOP HAT",
+			"zh": "绅士礼帽",
+			"ms": "TOPI ATAS"
+		},
+		"image": "gzt_245.png"
+	},
+	{
+		"number": "246",
+		"content": {
+			"en": "HE FANNED THE PILLOW AND WARMED THE SHEETS: HUANG XIANG",
+			"zh": "黄香枕扇",
+			"ms": "DIA KIPAS BANTAL DAN PANASKAN CADAR: HUANG XIANG"
+		},
+		"image": "gzt_246.png"
+	},
+	{
+		"number": "247",
+		"content": {
+			"en": "WHEAT",
+			"zh": "麦",
+			"ms": "GANDUM"
+		},
+		"image": "gzt_247.png"
+	},
+	{
+		"number": "248",
+		"content": {
+			"en": "SPLEEN",
+			"zh": "脾脏",
+			"ms": "LIMPA"
+		},
+		"image": "gzt_248.png"
+	},
+	{
+		"number": "249",
+		"content": {
+			"en": "WEN ZHONG",
+			"zh": "闻太师",
+			"ms": "WEN ZHONG"
+		},
+		"image": "gzt_249.png"
+	},
+	{
+		"number": "250",
+		"content": {
+			"en": "BOOT",
+			"zh": "靴子,长靴",
+			"ms": "KASUT BUT"
+		},
+		"image": "gzt_250.png"
+	},
+	{
+		"number": "251",
+		"content": {
+			"en": "HAN XIN",
+			"zh": "韩信",
+			"ms": "HAN XIN"
+		},
+		"image": "gzt_251.png"
+	},
+	{
+		"number": "252",
+		"content": {
+			"en": "LEATHER SHOE",
+			"zh": "皮鞋",
+			"ms": "KASUT KULIT"
+		},
+		"image": "gzt_252.png"
+	},
+	{
+		"number": "253",
+		"content": {
+			"en": "KING WEN OF ZHOU",
+			"zh": "周文王",
+			"ms": "RAJA WEN DARI ZHOU"
+		},
+		"image": "gzt_253.png"
+	},
+	{
+		"number": "254",
+		"content": {
+			"en": "AWL",
+			"zh": "锥",
+			"ms": "AWL"
+		},
+		"image": "gzt_254.png"
+	},
+	{
+		"number": "255",
+		"content": {
+			"en": "BOMB",
+			"zh": "炸弹",
+			"ms": "BOM"
+		},
+		"image": "gzt_255.png"
+	},
+	{
+		"number": "256",
+		"content": {
+			"en": "BELT",
+			"zh": "皮带,腰带,裤带",
+			"ms": "TALI PINGGANG"
+		},
+		"image": "gzt_256.png"
+	},
+	{
+		"number": "257",
+		"content": {
+			"en": "TABLE",
+			"zh": "桌子",
+			"ms": "MEJA"
+		},
+		"image": "gzt_257.png"
+	},
+	{
+		"number": "258",
+		"content": {
+			"en": "XUE RENGUI",
+			"zh": "薛仁贵",
+			"ms": "XUE RENGUI"
+		},
+		"image": "gzt_258.png"
+	},
+	{
+		"number": "259",
+		"content": {
+			"en": "BRICK",
+			"zh": "砖头,砖块",
+			"ms": "BATU BATA"
+		},
+		"image": "gzt_259.png"
+	},
+	{
+		"number": "260",
+		"content": {
+			"en": "POMFRET",
+			"zh": "鲳鱼,白鲳",
+			"ms": "BAWAL"
+		},
+		"image": "gzt_260.png"
+	},
+	{
+		"number": "261",
+		"content": {
+			"en": "MAP",
+			"zh": "地图",
+			"ms": "PETA"
+		},
+		"image": "gzt_261.png"
+	},
+	{
+		"number": "262",
+		"content": {
+			"en": "UMBRELLA",
+			"zh": "雨伞",
+			"ms": "PAYUNG"
+		},
+		"image": "gzt_262.png"
+	},
+	{
+		"number": "263",
+		"content": {
+			"en": "RIFLE",
+			"zh": "步枪,来福枪",
+			"ms": "SENAPANG"
+		},
+		"image": "gzt_263.png"
+	},
+	{
+		"number": "264",
+		"content": {
+			"en": "SCORPION",
+			"zh": "蝎子",
+			"ms": "KALA JENGKING"
+		},
+		"image": "gzt_264.png"
+	},
+	{
+		"number": "265",
+		"content": {
+			"en": "HANDBAG",
+			"zh": "手袋",
+			"ms": "BEG TANGAN"
+		},
+		"image": "gzt_265.png"
+	},
+	{
+		"number": "266",
+		"content": {
+			"en": "DOOR",
+			"zh": "门户",
+			"ms": "PINTU"
+		},
+		"image": "gzt_266.png"
+	},
+	{
+		"number": "267",
+		"content": {
+			"en": "APPLE",
+			"zh": "苹果",
+			"ms": "EPAL"
+		},
+		"image": "gzt_267.png"
+	},
+	{
+		"number": "268",
+		"content": {
+			"en": "TOILET, LATRINE",
+			"zh": "厕所,洗手间",
+			"ms": "TANDAS"
+		},
+		"image": "gzt_268.png"
+	},
+	{
+		"number": "269",
+		"content": {
+			"en": "BACK",
+			"zh": "背",
+			"ms": "BELAKANG"
+		},
+		"image": "gzt_269.png"
+	},
+	{
+		"number": "270",
+		"content": {
+			"en": "SU BAO TONG",
+			"zh": "苏宝同",
+			"ms": "SU BAO TONG"
+		},
+		"image": "gzt_270.png"
+	},
+	{
+		"number": "271",
+		"content": {
+			"en": "EEL",
+			"zh": "鳗鱼",
+			"ms": "BELUT"
+		},
+		"image": "gzt_271.png"
+	},
+	{
+		"number": "272",
+		"content": {
+			"en": "WINE, LIQUOR, ALCOHOLIC DRINK",
+			"zh": "酒",
+			"ms": "MINUMAN ARAK"
+		},
+		"image": "gzt_272.png"
+	},
+	{
+		"number": "273",
+		"content": {
+			"en": "ANT",
+			"zh": "蚂蚁",
+			"ms": "SEMUT"
+		},
+		"image": "gzt_273.png"
+	},
+	{
+		"number": "274",
+		"content": {
+			"en": "LIVER",
+			"zh": "肝",
+			"ms": "HATI"
+		},
+		"image": "gzt_274.png"
+	},
+	{
+		"number": "275",
+		"content": {
+			"en": "TROUSER, PANTS, LONG PANT",
+			"zh": "裤子,长裤",
+			"ms": "SELUAR"
+		},
+		"image": "gzt_275.png"
+	},
+	{
+		"number": "276",
+		"content": {
+			"en": "GARLIC CHIVES",
+			"zh": "韭菜",
+			"ms": "KUCAI CINA"
+		},
+		"image": "gzt_276.png"
+	},
+	{
+		"number": "277",
+		"content": {
+			"en": "JIANG ZIYA, JIANG TAIGONG",
+			"zh": "姜子牙,姜太公",
+			"ms": "JIANG ZIYA, JIANG TAIGONG"
+		},
+		"image": "gzt_277.png"
+	},
+	{
+		"number": "278",
+		"content": {
+			"en": "CANVAS SHOES",
+			"zh": "布鞋",
+			"ms": "KASUT KANVAS"
+		},
+		"image": "gzt_278.png"
+	},
+	{
+		"number": "279",
+		"content": {
+			"en": "WU ZETIAN",
+			"zh": "武则天",
+			"ms": "WU ZETIAN"
+		},
+		"image": "gzt_279.png"
+	},
+	{
+		"number": "280",
+		"content": {
+			"en": "MORNING GLORY",
+			"zh": "牵牛花",
+			"ms": "KEMULIAAN PAGI"
+		},
+		"image": "gzt_280.png"
+	},
+	{
+		"number": "281",
+		"content": {
+			"en": "COTTON HAT",
+			"zh": "乌纱帽",
+			"ms": "TOPI KAPAS"
+		},
+		"image": "gzt_281.png"
+	},
+	{
+		"number": "282",
+		"content": {
+			"en": "FRY PAN",
+			"zh": "锅,镬",
+			"ms": "KUALI GORENG"
+		},
+		"image": "gzt_282.png"
+	},
+	{
+		"number": "283",
+		"content": {
+			"en": "MOTH",
+			"zh": "灯蛾",
+			"ms": "RAMA-RAMA"
+		},
+		"image": "gzt_283.png"
+	},
+	{
+		"number": "284",
+		"content": {
+			"en": "STOCKING",
+			"zh": "袜子",
+			"ms": "STOKING"
+		},
+		"image": "gzt_284.png"
+	},
+	{
+		"number": "285",
+		"content": {
+			"en": "BUTCHER",
+			"zh": "屠夫",
+			"ms": "PENJUAL DAGING"
+		},
+		"image": "gzt_285.png"
+	},
+	{
+		"number": "286",
+		"content": {
+			"en": "FAN LIHUA",
+			"zh": "樊梨花",
+			"ms": "FAN LIHUA"
+		},
+		"image": "gzt_286.png"
+	},
+	{
+		"number": "287",
+		"content": {
+			"en": "WHEAT FLOUR",
+			"zh": "面粉,小麦粉",
+			"ms": "TEPUNG"
+		},
+		"image": "gzt_287.png"
+	},
+	{
+		"number": "288",
+		"content": {
+			"en": "COCOA",
+			"zh": "可可",
+			"ms": "KOKO"
+		},
+		"image": "gzt_288.png"
+	},
+	{
+		"number": "289",
+		"content": {
+			"en": "LUNGS",
+			"zh": "肺",
+			"ms": "PARU-PARU"
+		},
+		"image": "gzt_289.png"
+	},
+	{
+		"number": "290",
+		"content": {
+			"en": "YANG GUIFEI",
+			"zh": "杨贵妃",
+			"ms": "YANG GUIFEI"
+		},
+		"image": "gzt_290.png"
+	},
+	{
+		"number": "291",
+		"content": {
+			"en": "WALL CLOCK",
+			"zh": "挂钟",
+			"ms": "JAM DINDING"
+		},
+		"image": "gzt_291.png"
+	},
+	{
+		"number": "292",
+		"content": {
+			"en": "SOAP",
+			"zh": "香皂",
+			"ms": "SABUN"
+		},
+		"image": "gzt_292.png"
+	},
+	{
+		"number": "293",
+		"content": {
+			"en": "HUT",
+			"zh": "茅屋",
+			"ms": "PONDOK"
+		},
+		"image": "gzt_293.png"
+	},
+	{
+		"number": "294",
+		"content": {
+			"en": "SAFETY PIN",
+			"zh": "别针",
+			"ms": "PIN KESELAMATAN"
+		},
+		"image": "gzt_294.png"
+	},
+	{
+		"number": "295",
+		"content": {
+			"en": "CLAMS, SHELL, CORBICULIDAE",
+			"zh": "蚬子",
+			"ms": "CORBICULIDAE"
+		},
+		"image": "gzt_295.png"
+	},
+	{
+		"number": "296",
+		"content": {
+			"en": "EMPEROR TAIZU OF SONG",
+			"zh": "赵匡胤",
+			"ms": "MAHARAJA TAIZU OF SONG"
+		},
+		"image": "gzt_296.png"
+	},
+	{
+		"number": "297",
+		"content": {
+			"en": "YEON GAESOMUN",
+			"zh": "渊盖苏文",
+			"ms": "YEON GAESOMUN"
+		},
+		"image": "gzt_297.png"
+	},
+	{
+		"number": "298",
+		"content": {
+			"en": "SOFT DRINK",
+			"zh": "汽水",
+			"ms": "MINUMAN BERKARBONAT"
+		},
+		"image": "gzt_298.png"
+	},
+	{
+		"number": "299",
+		"content": {
+			"en": "PEN KNIFE",
+			"zh": "小刀,多功能刀",
+			"ms": "PISAU PEN"
+		},
+		"image": "gzt_299.png"
+	},
+	{
+		"number": "300",
+		"content": {
+			"en": "SU QIN",
+			"zh": "苏秦",
+			"ms": "SU QIN"
+		},
+		"image": "gzt_300.png"
+	},
+	{
+		"number": "301",
+		"content": {
+			"en": "OFFICER",
+			"zh": "状元",
+			"ms": "PEGAWAI"
+		},
+		"image": "gzt_301.png"
+	},
+	{
+		"number": "302",
+		"content": {
+			"en": "WIRE",
+			"zh": "吕线,电线",
+			"ms": "WAYAR"
+		},
+		"image": "gzt_302.png"
+	},
+	{
+		"number": "303",
+		"content": {
+			"en": "TAMARIND",
+			"zh": "亜三糕,罗望子",
+			"ms": "ASAM JAWA"
+		},
+		"image": "gzt_303.png"
+	},
+	{
+		"number": "304",
+		"content": {
+			"en": "PIANO",
+			"zh": "钢琴",
+			"ms": "PIANO"
+		},
+		"image": "gzt_304.png"
+	},
+	{
+		"number": "305",
+		"content": {
+			"en": "SERVANT",
+			"zh": "女佣,佣人",
+			"ms": "PEMBANTU RUMAH"
+		},
+		"image": "gzt_305.png"
+	},
+	{
+		"number": "306",
+		"content": {
+			"en": "FILM STAR",
+			"zh": "影星",
+			"ms": "BINTANG FILEM"
+		},
+		"image": "gzt_306.png"
+	},
+	{
+		"number": "307",
+		"content": {
+			"en": "GOLD MEDAL",
+			"zh": "金牌",
+			"ms": "PINGAT EMAS"
+		},
+		"image": "gzt_307.png"
+	},
+	{
+		"number": "308",
+		"content": {
+			"en": "CELLOPHANE NOODLES",
+			"zh": "冬粉",
+			"ms": "MI KACA"
+		},
+		"image": "gzt_308.png"
+	},
+	{
+		"number": "309",
+		"content": {
+			"en": "PAPER FAN",
+			"zh": "扇子,纸扇",
+			"ms": "KIPAS KERTAS"
+		},
+		"image": "gzt_309.png"
+	},
+	{
+		"number": "310",
+		"content": {
+			"en": "GOLD ROD",
+			"zh": "金棒,金箍棒",
+			"ms": "BATANG EMAS"
+		},
+		"image": "gzt_310.png"
+	},
+	{
+		"number": "311",
+		"content": {
+			"en": "SUMMIT",
+			"zh": "山峰",
+			"ms": "KEMUNCAK"
+		},
+		"image": "gzt_311.png"
+	},
+	{
+		"number": "312",
+		"content": {
+			"en": "DEEPLY CONCERNED, HE TASTED HIS FATHER'S STOOL: QIANLOU",
+			"zh": "黔娄尝粪, 尝粪忧心",
+			"ms": "SANGAT PRIHATIN, DIA MERASA NAJIS AYAHNYA: QIANLOU"
+		},
+		"image": "gzt_312.png"
+	},
+	{
+		"number": "313",
+		"content": {
+			"en": "RIDGE, CLIFF",
+			"zh": "悬崖",
+			"ms": "CENURAM"
+		},
+		"image": "gzt_313.png"
+	},
+	{
+		"number": "314",
+		"content": {
+			"en": "PILLAR",
+			"zh": "柱子",
+			"ms": "TIANG"
+		},
+		"image": "gzt_314.png"
+	},
+	{
+		"number": "315",
+		"content": {
+			"en": "LIZARD, GECKO",
+			"zh": "壁虎",
+			"ms": "CICAK"
+		},
+		"image": "gzt_315.png"
+	},
+	{
+		"number": "316",
+		"content": {
+			"en": "HEARTH",
+			"zh": "灶头",
+			"ms": "PERAPIAN"
+		},
+		"image": "gzt_316.png"
+	},
+	{
+		"number": "317",
+		"content": {
+			"en": "TORCH LIGHT",
+			"zh": "手电筒",
+			"ms": "LAMPU OBOR"
+		},
+		"image": "gzt_317.png"
+	},
+	{
+		"number": "318",
+		"content": {
+			"en": "STEPS",
+			"zh": "阶梯",
+			"ms": "TANGGA"
+		},
+		"image": "gzt_318.png"
+	},
+	{
+		"number": "319",
+		"content": {
+			"en": "WINE SHOP",
+			"zh": "酒肆,酒馆",
+			"ms": "KEDAI ARAK"
+		},
+		"image": "gzt_319.png"
+	},
+	{
+		"number": "320",
+		"content": {
+			"en": "LU JUNYI",
+			"zh": "卢俊义",
+			"ms": "LU JUNYI"
+		},
+		"image": "gzt_320.png"
+	},
+	{
+		"number": "321",
+		"content": {
+			"en": "DAM",
+			"zh": "水坝",
+			"ms": "AMPANGAN AIR"
+		},
+		"image": "gzt_321.png"
+	},
+	{
+		"number": "322",
+		"content": {
+			"en": "OLD MAN OF THE SOUTH POLE",
+			"zh": "寿星公, 南极仙翁",
+			"ms": "ORANG TUA KUTUB SELATAN"
+		},
+		"image": "gzt_322.png"
+	},
+	{
+		"number": "323",
+		"content": {
+			"en": "EMPEROR SHUN",
+			"zh": "姚重华（舜帝）",
+			"ms": "MAHARAJA SHUN"
+		},
+		"image": "gzt_323.png"
+	},
+	{
+		"number": "324",
+		"content": {
+			"en": "BATH ROOM",
+			"zh": "浴室,冲凉房",
+			"ms": "BILIK MANDI"
+		},
+		"image": "gzt_324.png"
+	},
+	{
+		"number": "325",
+		"content": {
+			"en": "WINDOW",
+			"zh": "窗口",
+			"ms": "TINGKAP"
+		},
+		"image": "gzt_325.png"
+	},
+	{
+		"number": "326",
+		"content": {
+			"en": "LOQUAT",
+			"zh": "枇杷,批把,琵琶果",
+			"ms": "LOQUAT"
+		},
+		"image": "gzt_326.png"
+	},
+	{
+		"number": "327",
+		"content": {
+			"en": "SITTING ROOM, LIVING ROOM",
+			"zh": "客厅",
+			"ms": "RUANG TAMU"
+		},
+		"image": "gzt_327.png"
+	},
+	{
+		"number": "328",
+		"content": {
+			"en": "THREAD, STRING",
+			"zh": "线,丝",
+			"ms": "BENANG"
+		},
+		"image": "gzt_328.png"
+	},
+	{
+		"number": "329",
+		"content": {
+			"en": "SILVER COIN, MONEY",
+			"zh": "钱币,大银,银币",
+			"ms": "SYILING PERAK, WANG"
+		},
+		"image": "gzt_329.png"
+	},
+	{
+		"number": "330",
+		"content": {
+			"en": "GLUTINOUS RICE",
+			"zh": "糯米",
+			"ms": "NASI PULUT"
+		},
+		"image": "gzt_330.png"
+	},
+	{
+		"number": "331",
+		"content": {
+			"en": "LAN CAIHE",
+			"zh": "蓝采和",
+			"ms": "LAN CAIHE"
+		},
+		"image": "gzt_331.png"
+	},
+	{
+		"number": "332",
+		"content": {
+			"en": "HONEYCOMB, BEEHIVE",
+			"zh": "蜜蜂巢",
+			"ms": "SARANG LEBAH"
+		},
+		"image": "gzt_332.png"
+	},
+	{
+		"number": "333",
+		"content": {
+			"en": "LI KUI",
+			"zh": "李逵",
+			"ms": "LI KUI"
+		},
+		"image": "gzt_333.png"
+	},
+	{
+		"number": "334",
+		"content": {
+			"en": "GOD OF BOUNDARY",
+			"zh": "城隍爷",
+			"ms": "TUHAN SEMPADAN"
+		},
+		"image": "gzt_334.png"
+	},
+	{
+		"number": "335",
+		"content": {
+			"en": "EMPEROR WEN OF HAN",
+			"zh": "刘恒（汉文帝）",
+			"ms": "MAHARAJA WEN DARI HAN"
+		},
+		"image": "gzt_335.png"
+	},
+	{
+		"number": "336",
+		"content": {
+			"en": "LORRY, TRUCK",
+			"zh": "罗里,货车,卡车",
+			"ms": "LORI"
+		},
+		"image": "gzt_336.png"
+	},
+	{
+		"number": "337",
+		"content": {
+			"en": "LOOKING IN THE MIRROR",
+			"zh": "照镜子",
+			"ms": "MELIHAT DI CERMIN"
+		},
+		"image": "gzt_337.png"
+	},
+	{
+		"number": "338",
+		"content": {
+			"en": "SUN BIN",
+			"zh": "孙宾",
+			"ms": "SUN BIN"
+		},
+		"image": "gzt_338.png"
+	},
+	{
+		"number": "339",
+		"content": {
+			"en": "SOYBEAN",
+			"zh": "黄豆",
+			"ms": "KACANG SOYA"
+		},
+		"image": "gzt_339.png"
+	},
+	{
+		"number": "340",
+		"content": {
+			"en": "NUMBERED MUSICAL NOTATION",
+			"zh": "歌谱",
+			"ms": "NOTASI MUZIK BERNOMBOR"
+		},
+		"image": "gzt_340.png"
+	},
+	{
+		"number": "341",
+		"content": {
+			"en": "SINGER",
+			"zh": "歌星",
+			"ms": "PENYANYI"
+		},
+		"image": "gzt_341.png"
+	},
+	{
+		"number": "342",
+		"content": {
+			"en": "CELESTIAL MASTER",
+			"zh": "天师",
+			"ms": "GURU SURGAWI"
+		},
+		"image": "gzt_342.png"
+	},
+	{
+		"number": "343",
+		"content": {
+			"en": "PEONY",
+			"zh": "牡丹",
+			"ms": "PEONY"
+		},
+		"image": "gzt_343.png"
+	},
+	{
+		"number": "344",
+		"content": {
+			"en": "URN OF CHOW",
+			"zh": "周鼎",
+			"ms": "URN OF CHOW"
+		},
+		"image": "gzt_344.png"
+	},
+	{
+		"number": "345",
+		"content": {
+			"en": "POLICE",
+			"zh": "警察",
+			"ms": "POLIS"
+		},
+		"image": "gzt_345.png"
+	},
+	{
+		"number": "346",
+		"content": {
+			"en": "MAHJONG",
+			"zh": "麻将",
+			"ms": "MAHJONG"
+		},
+		"image": "gzt_346.png"
+	},
+	{
+		"number": "347",
+		"content": {
+			"en": "SEWING MACHINE",
+			"zh": "针车",
+			"ms": "MESIN MENJAHIT"
+		},
+		"image": "gzt_347.png"
+	},
+	{
+		"number": "348",
+		"content": {
+			"en": "PERFUME",
+			"zh": "香水",
+			"ms": "MINYAK WANGI"
+		},
+		"image": "gzt_348.png"
+	},
+	{
+		"number": "349",
+		"content": {
+			"en": "BUDDHA",
+			"zh": "如来",
+			"ms": "BUDDHA"
+		},
+		"image": "gzt_349.png"
+	},
+	{
+		"number": "350",
+		"content": {
+			"en": "SONG JIANG",
+			"zh": "宋江",
+			"ms": "SONG JIANG"
+		},
+		"image": "gzt_350.png"
+	},
+	{
+		"number": "351",
+		"content": {
+			"en": "WU SONG",
+			"zh": "武松",
+			"ms": "WU SONG"
+		},
+		"image": "gzt_351.png"
+	},
+	{
+		"number": "352",
+		"content": {
+			"en": "CIGARETTE",
+			"zh": "香烟,烟枝",
+			"ms": "ROKOK"
+		},
+		"image": "gzt_352.png"
+	},
+	{
+		"number": "353",
+		"content": {
+			"en": "DRAGON KING",
+			"zh": "龙王",
+			"ms": "RAJA NAGA"
+		},
+		"image": "gzt_353.png"
+	},
+	{
+		"number": "354",
+		"content": {
+			"en": "RAINBOW",
+			"zh": "彩虹",
+			"ms": "PELANGI"
+		},
+		"image": "gzt_354.png"
+	},
+	{
+		"number": "355",
+		"content": {
+			"en": "XU MING GAO",
+			"zh": "徐鸣皋",
+			"ms": "XU MING GAO"
+		},
+		"image": "gzt_355.png"
+	},
+	{
+		"number": "356",
+		"content": {
+			"en": "GOD",
+			"zh": "天神",
+			"ms": "TUHAN"
+		},
+		"image": "gzt_356.png"
+	},
+	{
+		"number": "357",
+		"content": {
+			"en": "CHAYOTE",
+			"zh": "佛手瓜,九爪木",
+			"ms": "CHAYOTE"
+		},
+		"image": "gzt_357.png"
+	},
+	{
+		"number": "358",
+		"content": {
+			"en": "SHRINE",
+			"zh": "佛龛,神社",
+			"ms": "MEZBAH"
+		},
+		"image": "gzt_358.png"
+	},
+	{
+		"number": "359",
+		"content": {
+			"en": "DUKE OF ZHOU",
+			"zh": "周公",
+			"ms": "DUKE OF ZHOU"
+		},
+		"image": "gzt_359.png"
+	},
+	{
+		"number": "360",
+		"content": {
+			"en": "GHOST, IMP",
+			"zh": "小鬼,鬼差",
+			"ms": "HANTU, IMP"
+		},
+		"image": "gzt_360.png"
+	},
+	{
+		"number": "361",
+		"content": {
+			"en": "SAFE BOX",
+			"zh": "铁柜",
+			"ms": "PETI KESELAMATAN"
+		},
+		"image": "gzt_361.png"
+	},
+	{
+		"number": "362",
+		"content": {
+			"en": "GUANYIN, GODDESS OF MERCY",
+			"zh": "观音菩萨",
+			"ms": "GUANYIN, DEWI KERAHIMAN"
+		},
+		"image": "gzt_362.png"
+	},
+	{
+		"number": "363",
+		"content": {
+			"en": "CIGARETTE CASE",
+			"zh": "香烟盒",
+			"ms": "SARUNG ROKOK"
+		},
+		"image": "gzt_363.png"
+	},
+	{
+		"number": "364",
+		"content": {
+			"en": "ATTRACTING MOSQUITOES TO DRINK HIS BLOOD: WU MENG",
+			"zh": "吴猛恣蚊，姿蚊饱血",
+			"ms": "MENARIK NYAMUK UNTUK MINUM DARAHNYA: WU MENG"
+		},
+		"image": "gzt_364.png"
+	},
+	{
+		"number": "365",
+		"content": {
+			"en": "DAFFODIL, NARCISSUS",
+			"zh": "水仙花",
+			"ms": "DAFFODIL, NARCISSUS"
+		},
+		"image": "gzt_365.png"
+	},
+	{
+		"number": "366",
+		"content": {
+			"en": "AQUARIUM, FISH TANK",
+			"zh": "鱼池,鱼缸",
+			"ms": "AKUARIUM"
+		},
+		"image": "gzt_366.png"
+	},
+	{
+		"number": "367",
+		"content": {
+			"en": "SHIRT",
+			"zh": "恤衣,衬衫",
+			"ms": "BAJU"
+		},
+		"image": "gzt_367.png"
+	},
+	{
+		"number": "368",
+		"content": {
+			"en": "SWEET POTATO",
+			"zh": "番薯,地瓜",
+			"ms": "KELEDEK"
+		},
+		"image": "gzt_368.png"
+	},
+	{
+		"number": "369",
+		"content": {
+			"en": "MOTORCYCLE, MOTORBIKE",
+			"zh": "电单车,摩托",
+			"ms": "MOTOSIKAL"
+		},
+		"image": "gzt_369.png"
+	},
+	{
+		"number": "370",
+		"content": {
+			"en": "VIOLIN",
+			"zh": "提琴",
+			"ms": "BIOLA"
+		},
+		"image": "gzt_370.png"
+	},
+	{
+		"number": "371",
+		"content": {
+			"en": "GOD OF SOIL AND GROUND",
+			"zh": "土地公",
+			"ms": "TUHAN TANAH"
+		},
+		"image": "gzt_371.png"
+	},
+	{
+		"number": "372",
+		"content": {
+			"en": "OCEAN",
+			"zh": "大海",
+			"ms": "LAUT"
+		},
+		"image": "gzt_372.png"
+	},
+	{
+		"number": "373",
+		"content": {
+			"en": "FEATHER BRUSH",
+			"zh": "毛扫,鸡毛扫",
+			"ms": "BERUS BULU"
+		},
+		"image": "gzt_373.png"
+	},
+	{
+		"number": "374",
+		"content": {
+			"en": "PURSE, WALLET",
+			"zh": "皮包,钱包,钱袋",
+			"ms": "DOMPET"
+		},
+		"image": "gzt_374.png"
+	},
+	{
+		"number": "375",
+		"content": {
+			"en": "BAI YUTANG",
+			"zh": "白玉堂",
+			"ms": "BAI YUTANG"
+		},
+		"image": "gzt_375.png"
+	},
+	{
+		"number": "376",
+		"content": {
+			"en": "CONFUCIUS",
+			"zh": "孔子",
+			"ms": "CONFUCIUS"
+		},
+		"image": "gzt_376.png"
+	},
+	{
+		"number": "377",
+		"content": {
+			"en": "LEADING COW",
+			"zh": "牵牛",
+			"ms": "LEMBU UTAMA"
+		},
+		"image": "gzt_377.png"
+	},
+	{
+		"number": "378",
+		"content": {
+			"en": "TEA",
+			"zh": "茶,茶叶,茶树",
+			"ms": "TEH"
+		},
+		"image": "gzt_378.png"
+	},
+	{
+		"number": "379",
+		"content": {
+			"en": "FAIRY WAND",
+			"zh": "仙杖,魔法杖",
+			"ms": "TONGKAT PERI"
+		},
+		"image": "gzt_379.png"
+	},
+	{
+		"number": "380",
+		"content": {
+			"en": "ABDOMEN, BELLY",
+			"zh": "腹部,肚子",
+			"ms": "PERUT"
+		},
+		"image": "gzt_380.png"
+	},
+	{
+		"number": "381",
+		"content": {
+			"en": "SNAKE",
+			"zh": "花蛇",
+			"ms": "ULAR"
+		},
+		"image": "gzt_381.png"
+	},
+	{
+		"number": "382",
+		"content": {
+			"en": "KUI XING",
+			"zh": "魁星",
+			"ms": "KUI XING"
+		},
+		"image": "gzt_382.png"
+	},
+	{
+		"number": "383",
+		"content": {
+			"en": "BEGONIA",
+			"zh": "海棠",
+			"ms": "BEGONIA"
+		},
+		"image": "gzt_383.png"
+	},
+	{
+		"number": "384",
+		"content": {
+			"en": "EARTHWORM, WORM",
+			"zh": "蚯蚓",
+			"ms": "CACING TANAH, CACING"
+		},
+		"image": "gzt_384.png"
+	},
+	{
+		"number": "385",
+		"content": {
+			"en": "WHISK, TOAIST FAN",
+			"zh": "拂尘",
+			"ms": "PUKUL"
+		},
+		"image": "gzt_385.png"
+	},
+	{
+		"number": "386",
+		"content": {
+			"en": "LETTER BOX, MAILBOX",
+			"zh": "信筒,信箱",
+			"ms": "PETI SURAT"
+		},
+		"image": "gzt_386.png"
+	},
+	{
+		"number": "387",
+		"content": {
+			"en": "NEVER TIRING OF FEEDING MILK TO HER MOTHER-IN-LAW: LADY TANG",
+			"zh": "乳姑不怠",
+			"ms": "TIDAK JEMU MEMBERI SUSU KEPADA IBU MERTUANYA: LADY TANG"
+		},
+		"image": "gzt_387.png"
+	},
+	{
+		"number": "388",
+		"content": {
+			"en": "SHOULDER",
+			"zh": "肩膀",
+			"ms": "BAHU"
+		},
+		"image": "gzt_388.png"
+	},
+	{
+		"number": "389",
+		"content": {
+			"en": "EATING RICE",
+			"zh": "吃饭",
+			"ms": "MAKAN NASI"
+		},
+		"image": "gzt_389.png"
+	},
+	{
+		"number": "390",
+		"content": {
+			"en": "WALKING",
+			"zh": "走路",
+			"ms": "BERJALAN"
+		},
+		"image": "gzt_390.png"
+	},
+	{
+		"number": "391",
+		"content": {
+			"en": "NAIL BED",
+			"zh": "钉床",
+			"ms": "KATIL KUKU"
+		},
+		"image": "gzt_391.png"
+	},
+	{
+		"number": "392",
+		"content": {
+			"en": "CLOTH",
+			"zh": "布匹,布疋",
+			"ms": "KAIN"
+		},
+		"image": "gzt_392.png"
+	},
+	{
+		"number": "393",
+		"content": {
+			"en": "RESIGNING OFFICE TO SEARCH FOR HIS MOTHER: ZHU SHOUCHANG",
+			"zh": "寿昌寻母",
+			"ms": "MELETAKKAN JAWATAN UNTUK MENCARI IBUNYA: ZHU SHOUCHANG"
+		},
+		"image": "gzt_393.png"
+	},
+	{
+		"number": "394",
+		"content": {
+			"en": "PRIEST",
+			"zh": "神父,牧师",
+			"ms": "IMAM"
+		},
+		"image": "gzt_394.png"
+	},
+	{
+		"number": "395",
+		"content": {
+			"en": "DRIED PRAWN",
+			"zh": "虾米",
+			"ms": "UDANG KERING"
+		},
+		"image": "gzt_395.png"
+	},
+	{
+		"number": "396",
+		"content": {
+			"en": "BARLEY",
+			"zh": "薏米,苡米",
+			"ms": "BARLI"
+		},
+		"image": "gzt_396.png"
+	},
+	{
+		"number": "397",
+		"content": {
+			"en": "STARFRUIT, CARAMBOLA",
+			"zh": "杨桃",
+			"ms": "CARAMBOLA"
+		},
+		"image": "gzt_397.png"
+	},
+	{
+		"number": "398",
+		"content": {
+			"en": "JACKFRUIT",
+			"zh": "尖必打,菠萝蜜,尖不辣",
+			"ms": "BUAH NANGKA"
+		},
+		"image": "gzt_398.png"
+	},
+	{
+		"number": "399",
+		"content": {
+			"en": "DANCER, DANCE GIRL",
+			"zh": "舞女,伴舞女郎",
+			"ms": "PENARI"
+		},
+		"image": "gzt_399.png"
+	},
+	{
+		"number": "400",
+		"content": {
+			"en": "TAOIST SYMBOL",
+			"zh": "太极",
+			"ms": "SIMBOL TAO"
+		},
+		"image": "gzt_400.png"
+	},
+	{
+		"number": "401",
+		"content": {
+			"en": "BAI MU DAN",
+			"zh": "白牡丹",
+			"ms": "BAI MU DAN"
+		},
+		"image": "gzt_401.png"
+	},
+	{
+		"number": "402",
+		"content": {
+			"en": "MIHUN, RICE NOODLES, RICE VERMICELLI",
+			"zh": "米粉",
+			"ms": "BIHUN BERAS"
+		},
+		"image": "gzt_402.png"
+	},
+	{
+		"number": "403",
+		"content": {
+			"en": "LETTER, MAIL",
+			"zh": "信件",
+			"ms": "SURAT"
+		},
+		"image": "gzt_403.png"
+	},
+	{
+		"number": "404",
+		"content": {
+			"en": "BENCH",
+			"zh": "凳子",
+			"ms": "BANGKU"
+		},
+		"image": "gzt_404.png"
+	},
+	{
+		"number": "405",
+		"content": {
+			"en": "BAMBOO",
+			"zh": "竹子,竹竿",
+			"ms": "BULUH"
+		},
+		"image": "gzt_405.png"
+	},
+	{
+		"number": "406",
+		"content": {
+			"en": "URN",
+			"zh": "香炉",
+			"ms": "PEMBAKAR KEMENYAN"
+		},
+		"image": "gzt_406.png"
+	},
+	{
+		"number": "407",
+		"content": {
+			"en": "CORPES",
+			"zh": "尸体,死尸",
+			"ms": "MAYAT"
+		},
+		"image": "gzt_407.png"
+	},
+	{
+		"number": "408",
+		"content": {
+			"en": "MA DAI",
+			"zh": "马岱",
+			"ms": "MA DAI"
+		},
+		"image": "gzt_408.png"
+	},
+	{
+		"number": "409",
+		"content": {
+			"en": "PINANG, BETEL NUT",
+			"zh": "槟榔",
+			"ms": "PINANG"
+		},
+		"image": "gzt_409.png"
+	},
+	{
+		"number": "410",
+		"content": {
+			"en": "HAN XIANGZI",
+			"zh": "韩湘子",
+			"ms": "HAN XIANGZI"
+		},
+		"image": "gzt_410.png"
+	},
+	{
+		"number": "411",
+		"content": {
+			"en": "MERCHANT",
+			"zh": "商人",
+			"ms": "PENIAGA"
+		},
+		"image": "gzt_411.png"
+	},
+	{
+		"number": "412",
+		"content": {
+			"en": "VESTMENT",
+			"zh": "法衣",
+			"ms": "PAKAIAN"
+		},
+		"image": "gzt_412.png"
+	},
+	{
+		"number": "413",
+		"content": {
+			"en": "CATTLE FENCE",
+			"zh": "牛栏",
+			"ms": "PAGAR LEMBU"
+		},
+		"image": "gzt_413.png"
+	},
+	{
+		"number": "414",
+		"content": {
+			"en": "OLD MAN",
+			"zh": "老人",
+			"ms": "ORANG TUA"
+		},
+		"image": "gzt_414.png"
+	},
+	{
+		"number": "415",
+		"content": {
+			"en": "CONTAINER",
+			"zh": "斗",
+			"ms": "BEKAS"
+		},
+		"image": "gzt_415.png"
+	},
+	{
+		"number": "416",
+		"content": {
+			"en": "BANANA",
+			"zh": "香蕉,芭蕉",
+			"ms": "PISANG"
+		},
+		"image": "gzt_416.png"
+	},
+	{
+		"number": "417",
+		"content": {
+			"en": "FIRE",
+			"zh": "火",
+			"ms": "API"
+		},
+		"image": "gzt_417.png"
+	},
+	{
+		"number": "418",
+		"content": {
+			"en": "INCENSE",
+			"zh": "香",
+			"ms": "KEMENYAN"
+		},
+		"image": "gzt_418.png"
+	},
+	{
+		"number": "419",
+		"content": {
+			"en": "TOBACCO",
+			"zh": "烟丝",
+			"ms": "TEMBAKAU"
+		},
+		"image": "gzt_419.png"
+	},
+	{
+		"number": "420",
+		"content": {
+			"en": "CRYING BY THE GRAVE WHEN THUNDER ROLLED: WANG POU",
+			"zh": "王哀哭墓，闻雷泣墓",
+			"ms": "MENANGIS DI TEPI KUBUR KETIKA GURUH BERGULUNG: WANG POU"
+		},
+		"image": "gzt_420.png"
+	},
+	{
+		"number": "421",
+		"content": {
+			"en": "TAPIOCA",
+			"zh": "茨粉,淀粉,太白粉,生粉,木薯粉",
+			"ms": "TEPUNG UBI KAYU"
+		},
+		"image": "gzt_421.png"
+	},
+	{
+		"number": "422",
+		"content": {
+			"en": "JUJUBE",
+			"zh": "枣",
+			"ms": "JUJUBE"
+		},
+		"image": "gzt_422.png"
+	},
+	{
+		"number": "423",
+		"content": {
+			"en": "COSMETIC POWDER",
+			"zh": "香粉",
+			"ms": "SERBUK KOSMETIK"
+		},
+		"image": "gzt_423.png"
+	},
+	{
+		"number": "424",
+		"content": {
+			"en": "RICE SIEVE",
+			"zh": "米筛",
+			"ms": "PENAPIS BERAS"
+		},
+		"image": "gzt_424.png"
+	},
+	{
+		"number": "425",
+		"content": {
+			"en": "SIMA JIZHU",
+			"zh": "司马季主",
+			"ms": "SIMA JIZHU"
+		},
+		"image": "gzt_425.png"
+	},
+	{
+		"number": "426",
+		"content": {
+			"en": "NEEDLE",
+			"zh": "针",
+			"ms": "JARUM"
+		},
+		"image": "gzt_426.png"
+	},
+	{
+		"number": "427",
+		"content": {
+			"en": "PERSIMMON",
+			"zh": "柿子",
+			"ms": "PISANG KAKI"
+		},
+		"image": "gzt_427.png"
+	},
+	{
+		"number": "428",
+		"content": {
+			"en": "FROG",
+			"zh": "青蛙",
+			"ms": "KATAK"
+		},
+		"image": "gzt_428.png"
+	},
+	{
+		"number": "429",
+		"content": {
+			"en": "GROUND",
+			"zh": "土",
+			"ms": "TANAH"
+		},
+		"image": "gzt_429.png"
+	},
+	{
+		"number": "430",
+		"content": {
+			"en": "LAUGH",
+			"zh": "笑",
+			"ms": "KETAWA"
+		},
+		"image": "gzt_430.png"
+	},
+	{
+		"number": "431",
+		"content": {
+			"en": "VINEGAR",
+			"zh": "米醋",
+			"ms": "CUKA"
+		},
+		"image": "gzt_431.png"
+	},
+	{
+		"number": "432",
+		"content": {
+			"en": "CHICKEN COOP",
+			"zh": "鸡栖,鸡寮",
+			"ms": "REBAN AYAM"
+		},
+		"image": "gzt_432.png"
+	},
+	{
+		"number": "433",
+		"content": {
+			"en": "DRIED TOFU",
+			"zh": "豆干",
+			"ms": "TAUHU KERING"
+		},
+		"image": "gzt_433.png"
+	},
+	{
+		"number": "434",
+		"content": {
+			"en": "LYING DOWN ON THE ICE TO GET CARP FOR HIS STEPMOTHER: WANG XIANG",
+			"zh": "王祥卧冰，卧冰求鲤",
+			"ms": "BERBARING DI ATAS AIS UNTUK MENDAPATKAN IKAN MAS UNTUK IBU TIRINYA: WANG XIANG"
+		},
+		"image": "gzt_434.png"
+	},
+	{
+		"number": "435",
+		"content": {
+			"en": "MEASURE",
+			"zh": "升,量水器",
+			"ms": "UKUR"
+		},
+		"image": "gzt_435.png"
+	},
+	{
+		"number": "436",
+		"content": {
+			"en": "MANDARIN ORANGE",
+			"zh": "橘子,橙",
+			"ms": "LIMAU MANDARIN"
+		},
+		"image": "gzt_436.png"
+	},
+	{
+		"number": "437",
+		"content": {
+			"en": "LU SU",
+			"zh": "鲁肃",
+			"ms": "LU SU"
+		},
+		"image": "gzt_437.png"
+	},
+	{
+		"number": "438",
+		"content": {
+			"en": "BASIN",
+			"zh": "盆,水盆",
+			"ms": "BESEN"
+		},
+		"image": "gzt_438.png"
+	},
+	{
+		"number": "439",
+		"content": {
+			"en": "GEESE FENCE",
+			"zh": "鹅围",
+			"ms": "PAGAR ANGSA"
+		},
+		"image": "gzt_439.png"
+	},
+	{
+		"number": "440",
+		"content": {
+			"en": "SHI XIU",
+			"zh": "石秀",
+			"ms": "SHI XIU"
+		},
+		"image": "gzt_440.png"
+	},
+	{
+		"number": "441",
+		"content": {
+			"en": "SPITTOON",
+			"zh": "盂,痰盂",
+			"ms": "LUDAH"
+		},
+		"image": "gzt_441.png"
+	},
+	{
+		"number": "442",
+		"content": {
+			"en": "LU ZHISHEN",
+			"zh": "鲁智深",
+			"ms": "LU ZHISHEN"
+		},
+		"image": "gzt_442.png"
+	},
+	{
+		"number": "443",
+		"content": {
+			"en": "BOWL",
+			"zh": "碗",
+			"ms": "MANGKUK"
+		},
+		"image": "gzt_443.png"
+	},
+	{
+		"number": "444",
+		"content": {
+			"en": "MELON SEED",
+			"zh": "瓜子",
+			"ms": "BIJI TEMBIKAI"
+		},
+		"image": "gzt_444.png"
+	},
+	{
+		"number": "445",
+		"content": {
+			"en": "GARLIC",
+			"zh": "蒜, 蒜头,大蒜",
+			"ms": "BAWANG PUTIH"
+		},
+		"image": "gzt_445.png"
+	},
+	{
+		"number": "446",
+		"content": {
+			"en": "SUITCASE",
+			"zh": "皮箱,行李箱",
+			"ms": "BEG PAKAIAN"
+		},
+		"image": "gzt_446.png"
+	},
+	{
+		"number": "447",
+		"content": {
+			"en": "BABY",
+			"zh": "婴孩,宝宝,婴儿",
+			"ms": "BAYI"
+		},
+		"image": "gzt_447.png"
+	},
+	{
+		"number": "448",
+		"content": {
+			"en": "BED",
+			"zh": "床",
+			"ms": "TILAM"
+		},
+		"image": "gzt_448.png"
+	},
+	{
+		"number": "449",
+		"content": {
+			"en": "BUFFALO",
+			"zh": "水牛",
+			"ms": "KERBAU"
+		},
+		"image": "gzt_449.png"
+	},
+	{
+		"number": "450",
+		"content": {
+			"en": "ROPE",
+			"zh": "棕索,绳子,绳索",
+			"ms": "TALI"
+		},
+		"image": "gzt_450.png"
+	},
+	{
+		"number": "451",
+		"content": {
+			"en": "SAGO",
+			"zh": "西米",
+			"ms": "SAGU"
+		},
+		"image": "gzt_451.png"
+	},
+	{
+		"number": "452",
+		"content": {
+			"en": "SPINACH",
+			"zh": "菠菜",
+			"ms": "BAYAM"
+		},
+		"image": "gzt_452.png"
+	},
+	{
+		"number": "453",
+		"content": {
+			"en": "WINE BOTTLE",
+			"zh": "酒瓶",
+			"ms": "BOTOL WAIN"
+		},
+		"image": "gzt_453.png"
+	},
+	{
+		"number": "454",
+		"content": {
+			"en": "PEACH",
+			"zh": "桃子",
+			"ms": "PIC"
+		},
+		"image": "gzt_454.png"
+	},
+	{
+		"number": "455",
+		"content": {
+			"en": "SERVING WOODEN STATUES OF HIS PARENTS: DING LAN",
+			"zh": "丁兰刻木，刻木事亲",
+			"ms": "MELAYAN PATUNG KAYU IBU BAPANYA: DING LAN"
+		},
+		"image": "gzt_455.png"
+	},
+	{
+		"number": "456",
+		"content": {
+			"en": "GRAPE",
+			"zh": "葡萄",
+			"ms": "ANGGUR"
+		},
+		"image": "gzt_456.png"
+	},
+	{
+		"number": "457",
+		"content": {
+			"en": "YAN YUANQING",
+			"zh": "斐元庆",
+			"ms": "YAN YUANQING"
+		},
+		"image": "gzt_457.png"
+	},
+	{
+		"number": "458",
+		"content": {
+			"en": "CHINESE PARASOL TREE",
+			"zh": "梧桐树",
+			"ms": "POKOK PAYUNG CINA"
+		},
+		"image": "gzt_458.png"
+	},
+	{
+		"number": "459",
+		"content": {
+			"en": "PACIFIER",
+			"zh": "奶嘴",
+			"ms": "PUTING"
+		},
+		"image": "gzt_459.png"
+	},
+	{
+		"number": "460",
+		"content": {
+			"en": "RICH PERSON",
+			"zh": "富翁,富豪",
+			"ms": "JUTAWAN"
+		},
+		"image": "gzt_460.png"
+	},
+	{
+		"number": "461",
+		"content": {
+			"en": "ZHONGLI QUAN",
+			"zh": "汉钟离",
+			"ms": "ZHONGLI QUAN"
+		},
+		"image": "gzt_461.png"
+	},
+	{
+		"number": "462",
+		"content": {
+			"en": "RUBBER BAND",
+			"zh": "橡皮筋",
+			"ms": "GETAH"
+		},
+		"image": "gzt_462.png"
+	},
+	{
+		"number": "463",
+		"content": {
+			"en": "XIAO HE",
+			"zh": "萧何",
+			"ms": "XIAO HE"
+		},
+		"image": "gzt_463.png"
+	},
+	{
+		"number": "464",
+		"content": {
+			"en": "BLANKET",
+			"zh": "被单",
+			"ms": "SELIMUT"
+		},
+		"image": "gzt_464.png"
+	},
+	{
+		"number": "465",
+		"content": {
+			"en": "FLY",
+			"zh": "苍蝇",
+			"ms": "LALAT"
+		},
+		"image": "gzt_465.png"
+	},
+	{
+		"number": "466",
+		"content": {
+			"en": "XI SHI",
+			"zh": "西施",
+			"ms": "XI SHI"
+		},
+		"image": "gzt_466.png"
+	},
+	{
+		"number": "467",
+		"content": {
+			"en": "HAIR CREAM",
+			"zh": "发膏,发胶",
+			"ms": "KRIM RAMBUT"
+		},
+		"image": "gzt_467.png"
+	},
+	{
+		"number": "468",
+		"content": {
+			"en": "THE LADY WITH RED SLEEVES",
+			"zh": "红拂女",
+			"ms": "WANITA BERLENGAN MERAH"
+		},
+		"image": "gzt_468.png"
+	},
+	{
+		"number": "469",
+		"content": {
+			"en": "QIN HAN",
+			"zh": "秦汉",
+			"ms": "QIN HAN"
+		},
+		"image": "gzt_469.png"
+	},
+	{
+		"number": "470",
+		"content": {
+			"en": "CHOPSTICK TUBE",
+			"zh": "筷筒,筷子",
+			"ms": "TIUB PENYEPIT"
+		},
+		"image": "gzt_470.png"
+	},
+	{
+		"number": "471",
+		"content": {
+			"en": "JOSS PAPER, PAPER MONEY",
+			"zh": "金纸, 冥紙, 纸钱",
+			"ms": "KERTAS JOSS"
+		},
+		"image": "gzt_471.png"
+	},
+	{
+		"number": "472",
+		"content": {
+			"en": "QIN HUI",
+			"zh": "秦桧",
+			"ms": "QIN HUI"
+		},
+		"image": "gzt_472.png"
+	},
+	{
+		"number": "473",
+		"content": {
+			"en": "HYACINTH BEAN, INDIAN BEAN",
+			"zh": "扁豆",
+			"ms": "KACANG HYACINTH"
+		},
+		"image": "gzt_473.png"
+	},
+	{
+		"number": "474",
+		"content": {
+			"en": "BIRDCAGE",
+			"zh": "鸟笼",
+			"ms": "SANGKAR BURUNG"
+		},
+		"image": "gzt_474.png"
+	},
+	{
+		"number": "475",
+		"content": {
+			"en": "GRAMOPHONE, PHONOGRAPH",
+			"zh": "留声机, 电唱机",
+			"ms": "FONOGRAF"
+		},
+		"image": "gzt_475.png"
+	},
+	{
+		"number": "476",
+		"content": {
+			"en": "MATTRESS",
+			"zh": "床褥",
+			"ms": "TILAM"
+		},
+		"image": "gzt_476.png"
+	},
+	{
+		"number": "477",
+		"content": {
+			"en": "WANG YUN",
+			"zh": "王允",
+			"ms": "WANG YUN"
+		},
+		"image": "gzt_477.png"
+	},
+	{
+		"number": "478",
+		"content": {
+			"en": "MANDARIN, MANDARINE",
+			"zh": "柑, 年柑, 柑桔",
+			"ms": "MANDARIN"
+		},
+		"image": "gzt_478.png"
+	},
+	{
+		"number": "479",
+		"content": {
+			"en": "TIFFIN CARRIER",
+			"zh": "饭盏",
+			"ms": "PEMBAWA TIFFIN"
+		},
+		"image": "gzt_479.png"
+	},
+	{
+		"number": "480",
+		"content": {
+			"en": "LOTUS SEED",
+			"zh": "莲子",
+			"ms": "BIJI TERATAI"
+		},
+		"image": "gzt_480.png"
+	},
+	{
+		"number": "481",
+		"content": {
+			"en": "FIREWORKS",
+			"zh": "烟花",
+			"ms": "BUNGA API"
+		},
+		"image": "gzt_481.png"
+	},
+	{
+		"number": "482",
+		"content": {
+			"en": "LI XUANBA",
+			"zh": "李元霸",
+			"ms": "LI XUANBA"
+		},
+		"image": "gzt_482.png"
+	},
+	{
+		"number": "483",
+		"content": {
+			"en": "LIN CHONG",
+			"zh": "林冲",
+			"ms": "LIN CHONG"
+		},
+		"image": "gzt_483.png"
+	},
+	{
+		"number": "484",
+		"content": {
+			"en": "SCALLION",
+			"zh": "葱,香葱,青葱",
+			"ms": "DAUN BAWANG"
+		},
+		"image": "gzt_484.png"
+	},
+	{
+		"number": "485",
+		"content": {
+			"en": "MOSQUITO",
+			"zh": "蚊子",
+			"ms": "NYAMUK"
+		},
+		"image": "gzt_485.png"
+	},
+	{
+		"number": "486",
+		"content": {
+			"en": "PLATE",
+			"zh": "盘",
+			"ms": "PINGGAN"
+		},
+		"image": "gzt_486.png"
+	},
+	{
+		"number": "487",
+		"content": {
+			"en": "PHONOGRAPH RECORD",
+			"zh": "唱片,唱碟",
+			"ms": "REKOD FONOGRAF"
+		},
+		"image": "gzt_487.png"
+	},
+	{
+		"number": "488",
+		"content": {
+			"en": "COSTUMES AND PRANKS TO AMUSE HIS PARENTS: LAO LAI ZI",
+			"zh": "戏彩娱亲",
+			"ms": "KOSTUM DAN GURAUAN UNTUK MENGHIBURKAN IBU BAPANYA: LAO LAI ZI"
+		},
+		"image": "gzt_488.png"
+	},
+	{
+		"number": "489",
+		"content": {
+			"en": "BRINGING DEERS' MILK TO HIS AILING PARENTS: YOUNG MASTER TAN",
+			"zh": "鹿乳供亲",
+			"ms": "MEMBAWAKAN SUSU RUSA KEPADA IBU BAPANYA YANG SAKIT: TUAN MUDA TAN"
+		},
+		"image": "gzt_489.png"
+	},
+	{
+		"number": "490",
+		"content": {
+			"en": "FORTUNE TELLER",
+			"zh": "相士,相师,算命先生",
+			"ms": "PENILIK NASIB"
+		},
+		"image": "gzt_490.png"
+	},
+	{
+		"number": "491",
+		"content": {
+			"en": "TANG BO HU",
+			"zh": "唐伯虎",
+			"ms": "TANG BO HU"
+		},
+		"image": "gzt_491.png"
+	},
+	{
+		"number": "492",
+		"content": {
+			"en": "YANG GUAN",
+			"zh": "杨管",
+			"ms": "YANG GUAN"
+		},
+		"image": "gzt_492.png"
+	},
+	{
+		"number": "493",
+		"content": {
+			"en": "CIGAR",
+			"zh": "雪茄",
+			"ms": "CERUT"
+		},
+		"image": "gzt_493.png"
+	},
+	{
+		"number": "494",
+		"content": {
+			"en": "SLEEPING",
+			"zh": "睡眠",
+			"ms": "TIDUR"
+		},
+		"image": "gzt_494.png"
+	},
+	{
+		"number": "495",
+		"content": {
+			"en": "WANDERER , GANGSTER , ROGUE",
+			"zh": "流氓,恶棍",
+			"ms": "SAMSENG, PENYANGAK"
+		},
+		"image": "gzt_495.png"
+	},
+	{
+		"number": "496",
+		"content": {
+			"en": "PAPAYA",
+			"zh": "木瓜",
+			"ms": "PAWPAW"
+		},
+		"image": "gzt_496.png"
+	},
+	{
+		"number": "497",
+		"content": {
+			"en": "BALLOON",
+			"zh": "气球",
+			"ms": "BELON"
+		},
+		"image": "gzt_497.png"
+	},
+	{
+		"number": "498",
+		"content": {
+			"en": "WANG YUE YING",
+			"zh": "王月英",
+			"ms": "WANG YUE YING"
+		},
+		"image": "gzt_498.png"
+	},
+	{
+		"number": "499",
+		"content": {
+			"en": "PANG JUAN",
+			"zh": "庞涓",
+			"ms": "PANG JUAN"
+		},
+		"image": "gzt_499.png"
+	},
+	{
+		"number": "500",
+		"content": {
+			"en": "LIANG SHAN BO",
+			"zh": "梁山伯",
+			"ms": "LIANG SHAN BO"
+		},
+		"image": "gzt_500.png"
+	},
+	{
+		"number": "501",
+		"content": {
+			"en": "EMPEROR",
+			"zh": "天子,皇帝",
+			"ms": "MAHARAJA"
+		},
+		"image": "gzt_501.png"
+	},
+	{
+		"number": "502",
+		"content": {
+			"en": "ANCHOR",
+			"zh": "船锚",
+			"ms": "SAUH"
+		},
+		"image": "gzt_502.png"
+	},
+	{
+		"number": "503",
+		"content": {
+			"en": "DOLL",
+			"zh": "洋娃娃",
+			"ms": "ANAK PATUNG"
+		},
+		"image": "gzt_503.png"
+	},
+	{
+		"number": "504",
+		"content": {
+			"en": "FIREFLY",
+			"zh": "萤火虫",
+			"ms": "KELIP-KELIP"
+		},
+		"image": "gzt_504.png"
+	},
+	{
+		"number": "505",
+		"content": {
+			"en": "WU TIAN CI",
+			"zh": "伍天赐",
+			"ms": "WU TIAN CI"
+		},
+		"image": "gzt_505.png"
+	},
+	{
+		"number": "506",
+		"content": {
+			"en": "CONCUBINE",
+			"zh": "嫔妃",
+			"ms": "GUNDIK"
+		},
+		"image": "gzt_506.png"
+	},
+	{
+		"number": "507",
+		"content": {
+			"en": "DRAWING BOOK , MAGAZINE",
+			"zh": "图书,画集,杂志",
+			"ms": "BUKU LUKISAN , MAJALAH"
+		},
+		"image": "gzt_507.png"
+	},
+	{
+		"number": "508",
+		"content": {
+			"en": "GOAT FENCE",
+			"zh": "羊牢,羊栏",
+			"ms": "KANDANG BIRI-BIRI"
+		},
+		"image": "gzt_508.png"
+	},
+	{
+		"number": "509",
+		"content": {
+			"en": "WILD BOAR",
+			"zh": "山猪",
+			"ms": "BABI HUTAN"
+		},
+		"image": "gzt_509.png"
+	},
+	{
+		"number": "510",
+		"content": {
+			"en": "IRON GATE",
+			"zh": "铁门",
+			"ms": "PINTU BESI"
+		},
+		"image": "gzt_510.png"
+	},
+	{
+		"number": "511",
+		"content": {
+			"en": "TOY",
+			"zh": "玩具",
+			"ms": "MAINAN"
+		},
+		"image": "gzt_511.png"
+	},
+	{
+		"number": "512",
+		"content": {
+			"en": "HIGH HEEL SHOES",
+			"zh": "高跟鞋",
+			"ms": "KASUT TUMIT TINGGI"
+		},
+		"image": "gzt_512.png"
+	},
+	{
+		"number": "513",
+		"content": {
+			"en": "CUI WEN DE",
+			"zh": "崔文德",
+			"ms": "CUI WEN DE"
+		},
+		"image": "gzt_513.png"
+	},
+	{
+		"number": "514",
+		"content": {
+			"en": "CANDLE",
+			"zh": "蜡烛",
+			"ms": "LILIN"
+		},
+		"image": "gzt_514.png"
+	},
+	{
+		"number": "515",
+		"content": {
+			"en": "RED BAY , STRAWBERRY",
+			"zh": "杨梅",
+			"ms": "BAYBERRY"
+		},
+		"image": "gzt_515.png"
+	},
+	{
+		"number": "516",
+		"content": {
+			"en": "RHINO",
+			"zh": "犀牛",
+			"ms": "BADAK SUMBU"
+		},
+		"image": "gzt_516.png"
+	},
+	{
+		"number": "517",
+		"content": {
+			"en": "DAN YONG",
+			"zh": "蛋永",
+			"ms": "DAN YONG"
+		},
+		"image": "gzt_517.png"
+	},
+	{
+		"number": "518",
+		"content": {
+			"en": "LIGHTER",
+			"zh": "打火机",
+			"ms": "LEBIH RINGAN"
+		},
+		"image": "gzt_518.png"
+	},
+	{
+		"number": "519",
+		"content": {
+			"en": "HUNCHBACK",
+			"zh": "驼子,驼背",
+			"ms": "BONGKOK"
+		},
+		"image": "gzt_519.png"
+	},
+	{
+		"number": "520",
+		"content": {
+			"en": "ZHANG GUO LAO",
+			"zh": "张果佬",
+			"ms": "ZHANG GUO LAO"
+		},
+		"image": "gzt_520.png"
+	},
+	{
+		"number": "521",
+		"content": {
+			"en": "LIANG DA",
+			"zh": "良达",
+			"ms": "LIANG DA"
+		},
+		"image": "gzt_521.png"
+	},
+	{
+		"number": "522",
+		"content": {
+			"en": "RIVER SNAILS , BELITUNG , BALITONG",
+			"zh": "螺蛳",
+			"ms": "SIPUT SUNGAI , BELITUNG , BALITONG"
+		},
+		"image": "gzt_522.png"
+	},
+	{
+		"number": "523",
+		"content": {
+			"en": "INK BOX",
+			"zh": "墨斗,线墨",
+			"ms": "KOTAK DAKWAT"
+		},
+		"image": "gzt_523.png"
+	},
+	{
+		"number": "524",
+		"content": {
+			"en": "PEAR",
+			"zh": "梨子",
+			"ms": "BUAH PIR"
+		},
+		"image": "gzt_524.png"
+	},
+	{
+		"number": "525",
+		"content": {
+			"en": "SARONG",
+			"zh": "沙笼",
+			"ms": "SARONG"
+		},
+		"image": "gzt_525.png"
+	},
+	{
+		"number": "526",
+		"content": {
+			"en": "HEDGEHOG",
+			"zh": "河猪,箭猪,刺猬",
+			"ms": "BABI SUNGAI"
+		},
+		"image": "gzt_526.png"
+	},
+	{
+		"number": "527",
+		"content": {
+			"en": "FIREWOOD",
+			"zh": "柴枝",
+			"ms": "KAYU API"
+		},
+		"image": "gzt_527.png"
+	},
+	{
+		"number": "528",
+		"content": {
+			"en": "LOTUS ROOT",
+			"zh": "莲藕",
+			"ms": "AKAR TERATAI"
+		},
+		"image": "gzt_528.png"
+	},
+	{
+		"number": "529",
+		"content": {
+			"en": "APE,GORILLA",
+			"zh": "猩猩,猿",
+			"ms": "CIMPANZI"
+		},
+		"image": "gzt_529.png"
+	},
+	{
+		"number": "530",
+		"content": {
+			"en": "SORGHUM",
+			"zh": "高粱",
+			"ms": "SORGHUM"
+		},
+		"image": "gzt_530.png"
+	},
+	{
+		"number": "531",
+		"content": {
+			"en": "DUMB",
+			"zh": "哑巴",
+			"ms": "BODOH"
+		},
+		"image": "gzt_531.png"
+	},
+	{
+		"number": "532",
+		"content": {
+			"en": "WU SAN GUI",
+			"zh": "吴三桂",
+			"ms": "WU SAN GUI"
+		},
+		"image": "gzt_532.png"
+	},
+	{
+		"number": "533",
+		"content": {
+			"en": "GRINDING STONE",
+			"zh": "石磨",
+			"ms": "BATU PENGISAR"
+		},
+		"image": "gzt_533.png"
+	},
+	{
+		"number": "534",
+		"content": {
+			"en": "WARDROBE",
+			"zh": "衣橱",
+			"ms": "ALMARI PAKAIAN"
+		},
+		"image": "gzt_534.png"
+	},
+	{
+		"number": "535",
+		"content": {
+			"en": "SLIPPER",
+			"zh": "拖鞋",
+			"ms": "SELIPAR"
+		},
+		"image": "gzt_535.png"
+	},
+	{
+		"number": "536",
+		"content": {
+			"en": "HALBERD",
+			"zh": "戟",
+			"ms": "HALBERD"
+		},
+		"image": "gzt_536.png"
+	},
+	{
+		"number": "537",
+		"content": {
+			"en": "WEN TIAN XIANG",
+			"zh": "文天祥",
+			"ms": "WEN TIAN XIANG"
+		},
+		"image": "gzt_537.png"
+	},
+	{
+		"number": "538",
+		"content": {
+			"en": "SADDLE",
+			"zh": "马鞍",
+			"ms": "PELANA"
+		},
+		"image": "gzt_538.png"
+	},
+	{
+		"number": "539",
+		"content": {
+			"en": "ROSA MULTIFLORA",
+			"zh": "蔷薇",
+			"ms": "MAWAR"
+		},
+		"image": "gzt_539.png"
+	},
+	{
+		"number": "540",
+		"content": {
+			"en": "BUTTON , BRASS BUTTON",
+			"zh": "纽扣,铜钮",
+			"ms": "BUTANG TEMBAGA"
+		},
+		"image": "gzt_540.png"
+	},
+	{
+		"number": "541",
+		"content": {
+			"en": "LU DONG BIN",
+			"zh": "吕洞宾",
+			"ms": "LU DONG BIN"
+		},
+		"image": "gzt_541.png"
+	},
+	{
+		"number": "542",
+		"content": {
+			"en": "GIEK , CLOG SHOES",
+			"zh": "木屐",
+			"ms": "TEROMPAH"
+		},
+		"image": "gzt_542.png"
+	},
+	{
+		"number": "543",
+		"content": {
+			"en": "LYCHEE",
+			"zh": "荔枝",
+			"ms": "LITCHI"
+		},
+		"image": "gzt_543.png"
+	},
+	{
+		"number": "544",
+		"content": {
+			"en": "CRYSTAL",
+			"zh": "水晶",
+			"ms": "KRISTAL"
+		},
+		"image": "gzt_544.png"
+	},
+	{
+		"number": "545",
+		"content": {
+			"en": "SAMPAN",
+			"zh": "舢舨,舟,小船",
+			"ms": "SAMPAN"
+		},
+		"image": "gzt_545.png"
+	},
+	{
+		"number": "546",
+		"content": {
+			"en": "FOUNTAIN PEN",
+			"zh": "钢笔",
+			"ms": "PEN"
+		},
+		"image": "gzt_546.png"
+	},
+	{
+		"number": "547",
+		"content": {
+			"en": "OTTER",
+			"zh": "水獭",
+			"ms": "MEMERANG"
+		},
+		"image": "gzt_547.png"
+	},
+	{
+		"number": "548",
+		"content": {
+			"en": "MATCHES",
+			"zh": "火柴",
+			"ms": "KOREK API"
+		},
+		"image": "gzt_548.png"
+	},
+	{
+		"number": "549",
+		"content": {
+			"en": "CLOVE",
+			"zh": "丁香,丁子香",
+			"ms": "BUNGA CENGKIH"
+		},
+		"image": "gzt_549.png"
+	},
+	{
+		"number": "550",
+		"content": {
+			"en": "HE XIAN GU",
+			"zh": "何仙姑",
+			"ms": "HE XIAN GU"
+		},
+		"image": "gzt_550.png"
+	},
+	{
+		"number": "551",
+		"content": {
+			"en": "KANG XI",
+			"zh": "康熙",
+			"ms": "KANG XI"
+		},
+		"image": "gzt_551.png"
+	},
+	{
+		"number": "552",
+		"content": {
+			"en": "HARMONICA",
+			"zh": "口琴",
+			"ms": "HARMONIKA"
+		},
+		"image": "gzt_552.png"
+	},
+	{
+		"number": "553",
+		"content": {
+			"en": "PRINCE",
+			"zh": "太子",
+			"ms": "PUTERA RAJA"
+		},
+		"image": "gzt_553.png"
+	},
+	{
+		"number": "554",
+		"content": {
+			"en": "CAMP CHAIR",
+			"zh": "布椅",
+			"ms": "KERUSI KAIN"
+		},
+		"image": "gzt_554.png"
+	},
+	{
+		"number": "555",
+		"content": {
+			"en": "OLIVE",
+			"zh": "橄榄,青果",
+			"ms": "BUAH ZAITUN"
+		},
+		"image": "gzt_555.png"
+	},
+	{
+		"number": "556",
+		"content": {
+			"en": "BAO BI DOU",
+			"zh": "宝必兜",
+			"ms": "BAO BI DOU"
+		},
+		"image": "gzt_556.png"
+	},
+	{
+		"number": "557",
+		"content": {
+			"en": "ANGLE RULER",
+			"zh": "曲尺,工尺",
+			"ms": "PEMBARIS SUDUT"
+		},
+		"image": "gzt_557.png"
+	},
+	{
+		"number": "558",
+		"content": {
+			"en": "TELEPHONE",
+			"zh": "电话",
+			"ms": "TELEFON"
+		},
+		"image": "gzt_558.png"
+	},
+	{
+		"number": "559",
+		"content": {
+			"en": "CUCKOO",
+			"zh": "杜鹃鸟",
+			"ms": "CUCKOO"
+		},
+		"image": "gzt_559.png"
+	},
+	{
+		"number": "560",
+		"content": {
+			"en": "YANG ZONG BAO",
+			"zh": "杨宗保",
+			"ms": "YANG ZONG BAO"
+		},
+		"image": "gzt_560.png"
+	},
+	{
+		"number": "561",
+		"content": {
+			"en": "HIPPO",
+			"zh": "河马",
+			"ms": "KUDA NIL"
+		},
+		"image": "gzt_561.png"
+	},
+	{
+		"number": "562",
+		"content": {
+			"en": "A EUNUCH",
+			"zh": "一保太监",
+			"ms": "SEORANG KASIM"
+		},
+		"image": "gzt_562.png"
+	},
+	{
+		"number": "563",
+		"content": {
+			"en": "WATER CHESTNUT",
+			"zh": "菱角,水栗",
+			"ms": "BUAH BERANGAN"
+		},
+		"image": "gzt_563.png"
+	},
+	{
+		"number": "564",
+		"content": {
+			"en": "XUE DING SHAN",
+			"zh": "薛定山",
+			"ms": "XUE DING SHAN"
+		},
+		"image": "gzt_564.png"
+	},
+	{
+		"number": "565",
+		"content": {
+			"en": "SWORD",
+			"zh": "佩剑",
+			"ms": "PEDANG"
+		},
+		"image": "gzt_565.png"
+	},
+	{
+		"number": "566",
+		"content": {
+			"en": "LI TIE GUAI",
+			"zh": "李铁拐",
+			"ms": "LI TIE GUAI"
+		},
+		"image": "gzt_566.png"
+	},
+	{
+		"number": "567",
+		"content": {
+			"en": "BELL",
+			"zh": "铃",
+			"ms": "LOCENG"
+		},
+		"image": "gzt_567.png"
+	},
+	{
+		"number": "568",
+		"content": {
+			"en": "EMPRESS",
+			"zh": "皇后",
+			"ms": "PERMAISURI"
+		},
+		"image": "gzt_568.png"
+	},
+	{
+		"number": "569",
+		"content": {
+			"en": "COFFIN",
+			"zh": "棺材",
+			"ms": "KERANDA"
+		},
+		"image": "gzt_569.png"
+	},
+	{
+		"number": "570",
+		"content": {
+			"en": "DURIAN",
+			"zh": "榴莲",
+			"ms": "DURIAN"
+		},
+		"image": "gzt_570.png"
+	},
+	{
+		"number": "571",
+		"content": {
+			"en": "TANG SAN ZANG",
+			"zh": "唐三藏,唐憎",
+			"ms": "TANG SAN ZANG"
+		},
+		"image": "gzt_571.png"
+	},
+	{
+		"number": "572",
+		"content": {
+			"en": "CHAIR",
+			"zh": "椅子",
+			"ms": "KERUSI"
+		},
+		"image": "gzt_572.png"
+	},
+	{
+		"number": "573",
+		"content": {
+			"en": "CAMEL",
+			"zh": "骆驼",
+			"ms": "UNTA"
+		},
+		"image": "gzt_573.png"
+	},
+	{
+		"number": "574",
+		"content": {
+			"en": "PALACE MAID",
+			"zh": "宫女",
+			"ms": "PEMBANTU RUMAH"
+		},
+		"image": "gzt_574.png"
+	},
+	{
+		"number": "575",
+		"content": {
+			"en": "CHINESE CABBAGE",
+			"zh": "白菜",
+			"ms": "KUBIS CINA"
+		},
+		"image": "gzt_575.png"
+	},
+	{
+		"number": "576",
+		"content": {
+			"en": "FLUTE",
+			"zh": "笛子",
+			"ms": "SERULING"
+		},
+		"image": "gzt_576.png"
+	},
+	{
+		"number": "577",
+		"content": {
+			"en": "HORSEBEAN , BROADBEAN",
+			"zh": "蚕豆,胡豆,佛豆,川豆,倭豆,罗汉豆",
+			"ms": "KACANG KUDA ,  KACANG LUAS"
+		},
+		"image": "gzt_577.png"
+	},
+	{
+		"number": "578",
+		"content": {
+			"en": "ZHUO WEN JUN",
+			"zh": "卓文君",
+			"ms": "ZHUO WEN JUN"
+		},
+		"image": "gzt_578.png"
+	},
+	{
+		"number": "579",
+		"content": {
+			"en": "HAIR MOUSSE , SHAVING CREAM",
+			"zh": "剃须膏,雪花膏",
+			"ms": "KRIM YANG HILANG"
+		},
+		"image": "gzt_579.png"
+	},
+	{
+		"number": "580",
+		"content": {
+			"en": "MILK BAG",
+			"zh": "牛奶袋",
+			"ms": "BEG SUSU"
+		},
+		"image": "gzt_580.png"
+	},
+	{
+		"number": "581",
+		"content": {
+			"en": "MOUSE TRAP",
+			"zh": "老鼠笼",
+			"ms": "PERANGKAP TIKUS"
+		},
+		"image": "gzt_581.png"
+	},
+	{
+		"number": "582",
+		"content": {
+			"en": "SPOON",
+			"zh": "汤匙",
+			"ms": "SUDU BESAR"
+		},
+		"image": "gzt_582.png"
+	},
+	{
+		"number": "583",
+		"content": {
+			"en": "BAO SI",
+			"zh": "褒姒",
+			"ms": "BAO SI"
+		},
+		"image": "gzt_583.png"
+	},
+	{
+		"number": "584",
+		"content": {
+			"en": "ZHU BA JIE",
+			"zh": "猪八戒",
+			"ms": "ZHU BA JIE"
+		},
+		"image": "gzt_584.png"
+	},
+	{
+		"number": "585",
+		"content": {
+			"en": "CAR",
+			"zh": "汽车",
+			"ms": "KERETA"
+		},
+		"image": "gzt_585.png"
+	},
+	{
+		"number": "586",
+		"content": {
+			"en": "WATER CHESTNUT",
+			"zh": "马蹄,荸荠",
+			"ms": "BUAH BERANGAN"
+		},
+		"image": "gzt_586.png"
+	},
+	{
+		"number": "587",
+		"content": {
+			"en": "ZHANG FEI",
+			"zh": "张飞",
+			"ms": "ZHANG FEI"
+		},
+		"image": "gzt_587.png"
+	},
+	{
+		"number": "588",
+		"content": {
+			"en": "ICE CREAM",
+			"zh": "冰淇淋,雪糕",
+			"ms": "AIS KRIM"
+		},
+		"image": "gzt_588.png"
+	},
+	{
+		"number": "589",
+		"content": {
+			"en": "PAINT",
+			"zh": "漆",
+			"ms": "CAT"
+		},
+		"image": "gzt_589.png"
+	},
+	{
+		"number": "590",
+		"content": {
+			"en": "SIGN BOARD",
+			"zh": "牌匾,招牌,标志牌",
+			"ms": "PAPAN TANDA"
+		},
+		"image": "gzt_590.png"
+	},
+	{
+		"number": "591",
+		"content": {
+			"en": "DRAWER",
+			"zh": "抽屉,桌屉",
+			"ms": "LACI"
+		},
+		"image": "gzt_591.png"
+	},
+	{
+		"number": "592",
+		"content": {
+			"en": "COBRA",
+			"zh": "眼镜蛇",
+			"ms": "ULAR TEDUNG"
+		},
+		"image": "gzt_592.png"
+	},
+	{
+		"number": "593",
+		"content": {
+			"en": "MONKEY GOD",
+			"zh": "孙悟空,齐天大圣",
+			"ms": "SUN WU KONG"
+		},
+		"image": "gzt_593.png"
+	},
+	{
+		"number": "594",
+		"content": {
+			"en": "HAN QI",
+			"zh": "韩祈",
+			"ms": "HAN QI"
+		},
+		"image": "gzt_594.png"
+	},
+	{
+		"number": "595",
+		"content": {
+			"en": "WOODPECKER",
+			"zh": "啄木鸟",
+			"ms": "BURUNG BELATUK"
+		},
+		"image": "gzt_595.png"
+	},
+	{
+		"number": "596",
+		"content": {
+			"en": "JIANG SHI JIN CARP",
+			"zh": "姜诗进鲤",
+			"ms": "JIANG SHI JIN CARP"
+		},
+		"image": "gzt_596.png"
+	},
+	{
+		"number": "597",
+		"content": {
+			"en": "DEAF",
+			"zh": "聋子",
+			"ms": "PEKAK"
+		},
+		"image": "gzt_597.png"
+	},
+	{
+		"number": "598",
+		"content": {
+			"en": "WANG MANG",
+			"zh": "王莽",
+			"ms": "WANG MANG"
+		},
+		"image": "gzt_598.png"
+	},
+	{
+		"number": "599",
+		"content": {
+			"en": "OWL",
+			"zh": "猫头鹰",
+			"ms": "BURUNG HANTU"
+		},
+		"image": "gzt_599.png"
+	},
+	{
+		"number": "600",
+		"content": {
+			"en": "WU HAN",
+			"zh": "吴汉",
+			"ms": "WU HAN"
+		},
+		"image": "gzt_600.png"
+	},
+	{
+		"number": "601",
+		"content": {
+			"en": "TANG HAT",
+			"zh": "唐巾,唐帽",
+			"ms": "TANG HAT"
+		},
+		"image": "gzt_601.png"
+	},
+	{
+		"number": "602",
+		"content": {
+			"en": "YU WEN CHENG DU",
+			"zh": "宇文成都",
+			"ms": "YU WEN CHENG DU"
+		},
+		"image": "gzt_602.png"
+	},
+	{
+		"number": "603",
+		"content": {
+			"en": "ROLLER",
+			"zh": "面杖",
+			"ms": "PENGGELEK"
+		},
+		"image": "gzt_603.png"
+	},
+	{
+		"number": "604",
+		"content": {
+			"en": "KNIFE",
+			"zh": "菜刀",
+			"ms": "PISAU"
+		},
+		"image": "gzt_604.png"
+	},
+	{
+		"number": "605",
+		"content": {
+			"en": "OAR",
+			"zh": "船桨",
+			"ms": "DAYUNG"
+		},
+		"image": "gzt_605.png"
+	},
+	{
+		"number": "606",
+		"content": {
+			"en": "PYTHON",
+			"zh": "蟒蛇",
+			"ms": "ULAR SAWA"
+		},
+		"image": "gzt_606.png"
+	},
+	{
+		"number": "607",
+		"content": {
+			"en": "COUCH",
+			"zh": "床榻",
+			"ms": "COUCH"
+		},
+		"image": "gzt_607.png"
+	},
+	{
+		"number": "608",
+		"content": {
+			"en": "SESAME OIL",
+			"zh": "麻油",
+			"ms": "MINYAK BIJAN"
+		},
+		"image": "gzt_608.png"
+	},
+	{
+		"number": "609",
+		"content": {
+			"en": "FLYING DAGGER",
+			"zh": "飞刀",
+			"ms": "KERIS TERBANG"
+		},
+		"image": "gzt_609.png"
+	},
+	{
+		"number": "610",
+		"content": {
+			"en": "CHINA ROSE",
+			"zh": "月季花",
+			"ms": "BUNGA ROS"
+		},
+		"image": "gzt_610.png"
+	},
+	{
+		"number": "611",
+		"content": {
+			"en": "CRAPE MYRTLE FLOWER",
+			"zh": "紫薇花",
+			"ms": "BUNGA MYRTLE CRAPE"
+		},
+		"image": "gzt_611.png"
+	},
+	{
+		"number": "612",
+		"content": {
+			"en": "POTATO",
+			"zh": "干冬薯,馬鈴薯",
+			"ms": "KENTANG"
+		},
+		"image": "gzt_612.png"
+	},
+	{
+		"number": "613",
+		"content": {
+			"en": "KITE",
+			"zh": "风筝",
+			"ms": "LAYANG-LAYANG"
+		},
+		"image": "gzt_613.png"
+	},
+	{
+		"number": "614",
+		"content": {
+			"en": "EAR PICK",
+			"zh": "挖耳勺",
+			"ms": "PENCUNGKIL TELINGA"
+		},
+		"image": "gzt_614.png"
+	},
+	{
+		"number": "615",
+		"content": {
+			"en": "SWORD",
+			"zh": "腰刀",
+			"ms": "PEDANG"
+		},
+		"image": "gzt_615.png"
+	},
+	{
+		"number": "616",
+		"content": {
+			"en": "DRIED CHILI",
+			"zh": "干辣椒",
+			"ms": "CILI KERING"
+		},
+		"image": "gzt_616.png"
+	},
+	{
+		"number": "617",
+		"content": {
+			"en": "CAKE,MOONCAKE",
+			"zh": "饼,烧饼,月饼",
+			"ms": "KEK, KUIH BULAN"
+		},
+		"image": "gzt_617.png"
+	},
+	{
+		"number": "618",
+		"content": {
+			"en": "FIST",
+			"zh": "拳头",
+			"ms": "PENUMBUK"
+		},
+		"image": "gzt_618.png"
+	},
+	{
+		"number": "619",
+		"content": {
+			"en": "ONION",
+			"zh": "大葱,洋葱",
+			"ms": "BAWANG BESAR"
+		},
+		"image": "gzt_619.png"
+	},
+	{
+		"number": "620",
+		"content": {
+			"en": "BELACAN",
+			"zh": "巴拉煎,峇拉煎",
+			"ms": "BELACAN"
+		},
+		"image": "gzt_620.png"
+	},
+	{
+		"number": "621",
+		"content": {
+			"en": "STRAW COAT",
+			"zh": "貂套,草衣,蓑衣",
+			"ms": "STRAW COAT"
+		},
+		"image": "gzt_621.png"
+	},
+	{
+		"number": "622",
+		"content": {
+			"en": "SQUIRREL",
+			"zh": "松鼠",
+			"ms": "TUPAI"
+		},
+		"image": "gzt_622.png"
+	},
+	{
+		"number": "623",
+		"content": {
+			"en": "DIAMOND",
+			"zh": "钻石",
+			"ms": "BERLIAN"
+		},
+		"image": "gzt_623.png"
+	},
+	{
+		"number": "624",
+		"content": {
+			"en": "CHARCOAL",
+			"zh": "炭",
+			"ms": "ARANG"
+		},
+		"image": "gzt_624.png"
+	},
+	{
+		"number": "625",
+		"content": {
+			"en": "LILY",
+			"zh": "百合花",
+			"ms": "LILY"
+		},
+		"image": "gzt_625.png"
+	},
+	{
+		"number": "626",
+		"content": {
+			"en": "POINT,FINGER",
+			"zh": "指,手指",
+			"ms": "TITIK, JARI"
+		},
+		"image": "gzt_626.png"
+	},
+	{
+		"number": "627",
+		"content": {
+			"en": "NEWSPAPER",
+			"zh": "报纸",
+			"ms": "SURAT KHABAR"
+		},
+		"image": "gzt_627.png"
+	},
+	{
+		"number": "628",
+		"content": {
+			"en": "GLASS",
+			"zh": "玻璃",
+			"ms": "KACA"
+		},
+		"image": "gzt_628.png"
+	},
+	{
+		"number": "629",
+		"content": {
+			"en": "PLUM FLOWER",
+			"zh": "梅花",
+			"ms": "PLUM FLOWER"
+		},
+		"image": "gzt_629.png"
+	},
+	{
+		"number": "630",
+		"content": {
+			"en": "DI QING",
+			"zh": "狄青",
+			"ms": "DI QING"
+		},
+		"image": "gzt_630.png"
+	},
+	{
+		"number": "631",
+		"content": {
+			"en": "BUTTERFLY FLOWER",
+			"zh": "蝴蝶花",
+			"ms": "PANSY"
+		},
+		"image": "gzt_631.png"
+	},
+	{
+		"number": "632",
+		"content": {
+			"en": "MANGOSTEEN",
+			"zh": "山竹",
+			"ms": "MANGGIS"
+		},
+		"image": "gzt_632.png"
+	},
+	{
+		"number": "633",
+		"content": {
+			"en": "CAP",
+			"zh": "中靖巾",
+			"ms": "TOPI"
+		},
+		"image": "gzt_633.png"
+	},
+	{
+		"number": "634",
+		"content": {
+			"en": "HAND",
+			"zh": "手,手掌",
+			"ms": "TANGAN"
+		},
+		"image": "gzt_634.png"
+	},
+	{
+		"number": "635",
+		"content": {
+			"en": "BAMBOO SHOOT",
+			"zh": "冬笋",
+			"ms": "REBUNG"
+		},
+		"image": "gzt_635.png"
+	},
+	{
+		"number": "636",
+		"content": {
+			"en": "EARRING",
+			"zh": "耳环",
+			"ms": "ANTING-ANTING"
+		},
+		"image": "gzt_636.png"
+	},
+	{
+		"number": "637",
+		"content": {
+			"en": "COFFEE",
+			"zh": "咖啡",
+			"ms": "KOPI"
+		},
+		"image": "gzt_637.png"
+	},
+	{
+		"number": "638",
+		"content": {
+			"en": "LAMP",
+			"zh": "电灯",
+			"ms": "LAMPU"
+		},
+		"image": "gzt_638.png"
+	},
+	{
+		"number": "639",
+		"content": {
+			"en": "BREAD",
+			"zh": "面包",
+			"ms": "ROTI"
+		},
+		"image": "gzt_639.png"
+	},
+	{
+		"number": "640",
+		"content": {
+			"en": "KANGAROO",
+			"zh": "袋鼠",
+			"ms": "KANGGARU"
+		},
+		"image": "gzt_640.png"
+	},
+	{
+		"number": "641",
+		"content": {
+			"en": "WU YONG",
+			"zh": "吴用",
+			"ms": "WU YONG"
+		},
+		"image": "gzt_641.png"
+	},
+	{
+		"number": "642",
+		"content": {
+			"en": "EGRET",
+			"zh": "鹭鸶",
+			"ms": "KUNTUL"
+		},
+		"image": "gzt_642.png"
+	},
+	{
+		"number": "643",
+		"content": {
+			"en": "ZHANG LIANG",
+			"zh": "张良",
+			"ms": "ZHANG LIANG"
+		},
+		"image": "gzt_643.png"
+	},
+	{
+		"number": "644",
+		"content": {
+			"en": "IVORY",
+			"zh": "象牙",
+			"ms": "GADING GAJAH"
+		},
+		"image": "gzt_644.png"
+	},
+	{
+		"number": "645",
+		"content": {
+			"en": "SPECTACLE,EYEGLASS",
+			"zh": "眼镜",
+			"ms": "CERMIN MATA"
+		},
+		"image": "gzt_645.png"
+	},
+	{
+		"number": "646",
+		"content": {
+			"en": "EMPEROR QIN SHI HUANG",
+			"zh": "秦始皇",
+			"ms": "EMPEROR QIN SHI HUANG"
+		},
+		"image": "gzt_646.png"
+	},
+	{
+		"number": "647",
+		"content": {
+			"en": "RED BEAN",
+			"zh": "红豆",
+			"ms": "KACANG MERAH"
+		},
+		"image": "gzt_647.png"
+	},
+	{
+		"number": "648",
+		"content": {
+			"en": "LEG,FOOT",
+			"zh": "足,脚",
+			"ms": "KAKI"
+		},
+		"image": "gzt_648.png"
+	},
+	{
+		"number": "649",
+		"content": {
+			"en": "GUO ZI YI",
+			"zh": "郭子仪",
+			"ms": "GUO ZI YI"
+		},
+		"image": "gzt_649.png"
+	},
+	{
+		"number": "650",
+		"content": {
+			"en": "JUDGE",
+			"zh": "法官",
+			"ms": "HAKIM"
+		},
+		"image": "gzt_650.png"
+	},
+	{
+		"number": "651",
+		"content": {
+			"en": "TANK",
+			"zh": "水池",
+			"ms": "TANGKI"
+		},
+		"image": "gzt_651.png"
+	},
+	{
+		"number": "652",
+		"content": {
+			"en": "NECKLACE",
+			"zh": "项链",
+			"ms": "RANTAI LEHER"
+		},
+		"image": "gzt_652.png"
+	},
+	{
+		"number": "653",
+		"content": {
+			"en": "DOMESTIC HELPER",
+			"zh": "行佣供母",
+			"ms": "PEMBANTU DOMESTIK"
+		},
+		"image": "gzt_653.png"
+	},
+	{
+		"number": "654",
+		"content": {
+			"en": "QIN SHU BAO",
+			"zh": "秦叔宝",
+			"ms": "QIN SHU BAO"
+		},
+		"image": "gzt_654.png"
+	},
+	{
+		"number": "655",
+		"content": {
+			"en": "LILY FLOWER",
+			"zh": "山丹花",
+			"ms": "BUNGA LILY"
+		},
+		"image": "gzt_655.png"
+	},
+	{
+		"number": "656",
+		"content": {
+			"en": "BODY",
+			"zh": "身体",
+			"ms": "BADAN"
+		},
+		"image": "gzt_656.png"
+	},
+	{
+		"number": "657",
+		"content": {
+			"en": "MILK",
+			"zh": "牛奶",
+			"ms": "SUSU"
+		},
+		"image": "gzt_657.png"
+	},
+	{
+		"number": "658",
+		"content": {
+			"en": "DRIED LILY",
+			"zh": "金针干,黄花菜",
+			"ms": "BUNGA LILI KERING"
+		},
+		"image": "gzt_658.png"
+	},
+	{
+		"number": "659",
+		"content": {
+			"en": "BED BUG",
+			"zh": "臭虫,床蝨",
+			"ms": "PEPIJAT"
+		},
+		"image": "gzt_659.png"
+	},
+	{
+		"number": "660",
+		"content": {
+			"en": "LIU BO TAI SUI",
+			"zh": "流勃太岁",
+			"ms": "LIU BO TAI SUI"
+		},
+		"image": "gzt_660.png"
+	},
+	{
+		"number": "661",
+		"content": {
+			"en": "TURKEY",
+			"zh": "火鸡",
+			"ms": "AYAM BELANDA"
+		},
+		"image": "gzt_661.png"
+	},
+	{
+		"number": "662",
+		"content": {
+			"en": "BREAST",
+			"zh": "乳房,胸部",
+			"ms": "PAYUDARA"
+		},
+		"image": "gzt_662.png"
+	},
+	{
+		"number": "663",
+		"content": {
+			"en": "CHISEL",
+			"zh": "錾刀,凿子",
+			"ms": "PAHAT"
+		},
+		"image": "gzt_663.png"
+	},
+	{
+		"number": "664",
+		"content": {
+			"en": "LIU BANG",
+			"zh": "刘邦",
+			"ms": "LIU BANG"
+		},
+		"image": "gzt_664.png"
+	},
+	{
+		"number": "665",
+		"content": {
+			"en": "TILE",
+			"zh": "屋瓦",
+			"ms": "ATAP BUMBUNG"
+		},
+		"image": "gzt_665.png"
+	},
+	{
+		"number": "666",
+		"content": {
+			"en": "LONG BEAN",
+			"zh": "长豆",
+			"ms": "KACANG PANJANG"
+		},
+		"image": "gzt_666.png"
+	},
+	{
+		"number": "667",
+		"content": {
+			"en": "CHIMNEY",
+			"zh": "烟囱",
+			"ms": "CEROBONG ASAP"
+		},
+		"image": "gzt_667.png"
+	},
+	{
+		"number": "668",
+		"content": {
+			"en": "IRON",
+			"zh": "铁",
+			"ms": "BESI"
+		},
+		"image": "gzt_668.png"
+	},
+	{
+		"number": "669",
+		"content": {
+			"en": "CANDY",
+			"zh": "糖果",
+			"ms": "GULA-GULA"
+		},
+		"image": "gzt_669.png"
+	},
+	{
+		"number": "670",
+		"content": {
+			"en": "SEA GULL",
+			"zh": "海鸥",
+			"ms": "BURUNG CAMAR LAUT"
+		},
+		"image": "gzt_670.png"
+	},
+	{
+		"number": "671",
+		"content": {
+			"en": "BADMINTON",
+			"zh": "羽毛球",
+			"ms": "BADMINTON"
+		},
+		"image": "gzt_671.png"
+	},
+	{
+		"number": "672",
+		"content": {
+			"en": "COPPER",
+			"zh": "铜",
+			"ms": "TEMBAGA"
+		},
+		"image": "gzt_672.png"
+	},
+	{
+		"number": "673",
+		"content": {
+			"en": "NE ZHA",
+			"zh": "哪吒",
+			"ms": "NE ZHA"
+		},
+		"image": "gzt_673.png"
+	},
+	{
+		"number": "674",
+		"content": {
+			"en": "MEI XI",
+			"zh": "妹喜",
+			"ms": "MEI XI"
+		},
+		"image": "gzt_674.png"
+	},
+	{
+		"number": "675",
+		"content": {
+			"en": "PINE TREE",
+			"zh": "松树",
+			"ms": "POKOK PINE"
+		},
+		"image": "gzt_675.png"
+	},
+	{
+		"number": "676",
+		"content": {
+			"en": "BUTTON",
+			"zh": "纽扣",
+			"ms": "BUTANG"
+		},
+		"image": "gzt_676.png"
+	},
+	{
+		"number": "677",
+		"content": {
+			"en": "SHUN ZHI",
+			"zh": "顺治",
+			"ms": "SHUN ZHI"
+		},
+		"image": "gzt_677.png"
+	},
+	{
+		"number": "678",
+		"content": {
+			"en": "JADE SEAL",
+			"zh": "玉玺",
+			"ms": "METERAI JED"
+		},
+		"image": "gzt_678.png"
+	},
+	{
+		"number": "679",
+		"content": {
+			"en": "PANG TONG",
+			"zh": "庞统",
+			"ms": "PANG TONG"
+		},
+		"image": "gzt_679.png"
+	},
+	{
+		"number": "680",
+		"content": {
+			"en": "BADMINTON RACKET",
+			"zh": "羽球拍",
+			"ms": "RAKET BADMINTON"
+		},
+		"image": "gzt_680.png"
+	},
+	{
+		"number": "681",
+		"content": {
+			"en": "YAN QING",
+			"zh": "燕青",
+			"ms": "YAN QING"
+		},
+		"image": "gzt_681.png"
+	},
+	{
+		"number": "682",
+		"content": {
+			"en": "GREEN BEAN",
+			"zh": "绿豆",
+			"ms": "KACANG HIJAU"
+		},
+		"image": "gzt_682.png"
+	},
+	{
+		"number": "683",
+		"content": {
+			"en": "HORN",
+			"zh": "角",
+			"ms": "TANDUK"
+		},
+		"image": "gzt_683.png"
+	},
+	{
+		"number": "684",
+		"content": {
+			"en": "MAGPIE ROBIN",
+			"zh": "四喜鸟,鹊鸲",
+			"ms": "MURAI ROBIN"
+		},
+		"image": "gzt_684.png"
+	},
+	{
+		"number": "685",
+		"content": {
+			"en": "HIBISCUS",
+			"zh": "芙蓉花,木莲",
+			"ms": "BUNGA RAYA"
+		},
+		"image": "gzt_685.png"
+	},
+	{
+		"number": "686",
+		"content": {
+			"en": "YONG LE JUN",
+			"zh": "永乐君",
+			"ms": "YONG LE JUN"
+		},
+		"image": "gzt_686.png"
+	},
+	{
+		"number": "687",
+		"content": {
+			"en": "BONE",
+			"zh": "骨头",
+			"ms": "TULANG"
+		},
+		"image": "gzt_687.png"
+	},
+	{
+		"number": "688",
+		"content": {
+			"en": "YAN LIANG",
+			"zh": "颜良",
+			"ms": "YAN LIANG"
+		},
+		"image": "gzt_688.png"
+	},
+	{
+		"number": "689",
+		"content": {
+			"en": "KENNEL",
+			"zh": "狗窝,狗屋",
+			"ms": "KENNEL"
+		},
+		"image": "gzt_689.png"
+	},
+	{
+		"number": "690",
+		"content": {
+			"en": "WANG ZENG",
+			"zh": "王曾",
+			"ms": "WANG ZENG"
+		},
+		"image": "gzt_690.png"
+	},
+	{
+		"number": "691",
+		"content": {
+			"en": "VOLE",
+			"zh": "田鼠",
+			"ms": "VOLE"
+		},
+		"image": "gzt_691.png"
+	},
+	{
+		"number": "692",
+		"content": {
+			"en": "WEI YAN",
+			"zh": "魏延",
+			"ms": "WEI YAN"
+		},
+		"image": "gzt_692.png"
+	},
+	{
+		"number": "693",
+		"content": {
+			"en": "SARDINE",
+			"zh": "沙丁鱼",
+			"ms": "SARDIN"
+		},
+		"image": "gzt_693.png"
+	},
+	{
+		"number": "694",
+		"content": {
+			"en": "BEAN CAKE",
+			"zh": "豆腐",
+			"ms": "TAUHU"
+		},
+		"image": "gzt_694.png"
+	},
+	{
+		"number": "695",
+		"content": {
+			"en": "SHAN XIONG",
+			"zh": "单雄",
+			"ms": "SHAN XIONG"
+		},
+		"image": "gzt_695.png"
+	},
+	{
+		"number": "696",
+		"content": {
+			"en": "OVERLORD OF CHU, XIANG YU",
+			"zh": "楚霸王,项羽",
+			"ms": "OVERLORD OF CHU, XIANG YU"
+		},
+		"image": "gzt_696.png"
+	},
+	{
+		"number": "697",
+		"content": {
+			"en": "TOP",
+			"zh": "陀螺",
+			"ms": "GASING BERPUTAR"
+		},
+		"image": "gzt_697.png"
+	},
+	{
+		"number": "698",
+		"content": {
+			"en": "LEI ZHEN ZI",
+			"zh": "雷震子",
+			"ms": "LEI ZHEN ZI"
+		},
+		"image": "gzt_698.png"
+	},
+	{
+		"number": "699",
+		"content": {
+			"en": "WINE GLASS",
+			"zh": "酒杯",
+			"ms": "GELAS WAIN"
+		},
+		"image": "gzt_699.png"
+	},
+	{
+		"number": "700",
+		"content": {
+			"en": "POMEGRANATE",
+			"zh": "石榴",
+			"ms": "BUAH DELIMA"
+		},
+		"image": "gzt_700.png"
+	},
+	{
+		"number": "701",
+		"content": {
+			"en": "TING JIAN SWALLOWED",
+			"zh": "廷坚吞溺",
+			"ms": "TING JIAN MENELAN LIUR"
+		},
+		"image": "gzt_701.png"
+	},
+	{
+		"number": "702",
+		"content": {
+			"en": "EEL",
+			"zh": "鳝鱼,黄鳝",
+			"ms": "BELUT"
+		},
+		"image": "gzt_702.png"
+	},
+	{
+		"number": "703",
+		"content": {
+			"en": "PREGNANT",
+			"zh": "孕妇,大肚婆",
+			"ms": "PEREMPUAN MENGANDUNG"
+		},
+		"image": "gzt_703.png"
+	},
+	{
+		"number": "704",
+		"content": {
+			"en": "READING",
+			"zh": "读书",
+			"ms": "MEMBACA"
+		},
+		"image": "gzt_704.png"
+	},
+	{
+		"number": "705",
+		"content": {
+			"en": "SYMBOL",
+			"zh": "湶牌",
+			"ms": "SYMBOL"
+		},
+		"image": "gzt_705.png"
+	},
+	{
+		"number": "706",
+		"content": {
+			"en": "HEAD",
+			"zh": "头",
+			"ms": "KEPALA"
+		},
+		"image": "gzt_706.png"
+	},
+	{
+		"number": "707",
+		"content": {
+			"en": "LUO CHENG",
+			"zh": "罗成",
+			"ms": "LUO CHENG"
+		},
+		"image": "gzt_707.png"
+	},
+	{
+		"number": "708",
+		"content": {
+			"en": "OSMANTHUS",
+			"zh": "桂花",
+			"ms": "OSMANTHUS FRAGRANS"
+		},
+		"image": "gzt_708.png"
+	},
+	{
+		"number": "709",
+		"content": {
+			"en": "CRY",
+			"zh": "哭,哭泣",
+			"ms": "MENANGIS"
+		},
+		"image": "gzt_709.png"
+	},
+	{
+		"number": "710",
+		"content": {
+			"en": "WRITE",
+			"zh": "写字",
+			"ms": "MENULIS"
+		},
+		"image": "gzt_710.png"
+	},
+	{
+		"number": "711",
+		"content": {
+			"en": "BULLET",
+			"zh": "子弹",
+			"ms": "PELURU"
+		},
+		"image": "gzt_711.png"
+	},
+	{
+		"number": "712",
+		"content": {
+			"en": "SPATULA",
+			"zh": "锅铲",
+			"ms": "SPATULA"
+		},
+		"image": "gzt_712.png"
+	},
+	{
+		"number": "713",
+		"content": {
+			"en": "FACE",
+			"zh": "脸,面",
+			"ms": "MUKA"
+		},
+		"image": "gzt_713.png"
+	},
+	{
+		"number": "714",
+		"content": {
+			"en": "RICE",
+			"zh": "米,饭",
+			"ms": "NASI"
+		},
+		"image": "gzt_714.png"
+	},
+	{
+		"number": "715",
+		"content": {
+			"en": "LADLE",
+			"zh": "饭瓢,杓",
+			"ms": "SENDUK"
+		},
+		"image": "gzt_715.png"
+	},
+	{
+		"number": "716",
+		"content": {
+			"en": "FORK",
+			"zh": "钢叉",
+			"ms": "GARPU"
+		},
+		"image": "gzt_716.png"
+	},
+	{
+		"number": "717",
+		"content": {
+			"en": "PHOTO",
+			"zh": "相片,照片",
+			"ms": "FOTO"
+		},
+		"image": "gzt_717.png"
+	},
+	{
+		"number": "718",
+		"content": {
+			"en": "SUGARCANE",
+			"zh": "甘蔗",
+			"ms": "TEBU"
+		},
+		"image": "gzt_718.png"
+	},
+	{
+		"number": "719",
+		"content": {
+			"en": "CHESTNUT",
+			"zh": "栗子,粟子",
+			"ms": "BERANGAN"
+		},
+		"image": "gzt_719.png"
+	},
+	{
+		"number": "720",
+		"content": {
+			"en": "MALUS HALLIANA",
+			"zh": "垂丝海棠",
+			"ms": "MALUS HALLIANA"
+		},
+		"image": "gzt_720.png"
+	},
+	{
+		"number": "721",
+		"content": {
+			"en": "MEI LIANG YU",
+			"zh": "梅良玉",
+			"ms": "MEI LIANG YU"
+		},
+		"image": "gzt_721.png"
+	},
+	{
+		"number": "722",
+		"content": {
+			"en": "PRISONER, CONVICT,CRIMINAL",
+			"zh": "犯人,囚犯",
+			"ms": "BANDUAN"
+		},
+		"image": "gzt_722.png"
+	},
+	{
+		"number": "723",
+		"content": {
+			"en": "GUO HUA",
+			"zh": "郭华",
+			"ms": "GUO HUA"
+		},
+		"image": "gzt_723.png"
+	},
+	{
+		"number": "724",
+		"content": {
+			"en": "HAIR PIN",
+			"zh": "凤叉",
+			"ms": "PENYEPIT RAMBUT"
+		},
+		"image": "gzt_724.png"
+	},
+	{
+		"number": "725",
+		"content": {
+			"en": "OIL, COOKING OIL",
+			"zh": "油,食油",
+			"ms": "MINYAK"
+		},
+		"image": "gzt_725.png"
+	},
+	{
+		"number": "726",
+		"content": {
+			"en": "COIN,MONEY",
+			"zh": "钱币",
+			"ms": "SYILING"
+		},
+		"image": "gzt_726.png"
+	},
+	{
+		"number": "727",
+		"content": {
+			"en": "MOUTH",
+			"zh": "口,嘴巴",
+			"ms": "MULUT"
+		},
+		"image": "gzt_727.png"
+	},
+	{
+		"number": "728",
+		"content": {
+			"en": "HAIR CLIP",
+			"zh": "发夹",
+			"ms": "KLIP RAMBUT"
+		},
+		"image": "gzt_728.png"
+	},
+	{
+		"number": "729",
+		"content": {
+			"en": "WORM",
+			"zh": "蛀虫",
+			"ms": "SERANGGA"
+		},
+		"image": "gzt_729.png"
+	},
+	{
+		"number": "730",
+		"content": {
+			"en": "SHEN GONG BAO",
+			"zh": "申公豹",
+			"ms": "SHEN GONG BAO"
+		},
+		"image": "gzt_730.png"
+	},
+	{
+		"number": "731",
+		"content": {
+			"en": "TAILOR",
+			"zh": "裁缝",
+			"ms": "TUKANG JAHIT"
+		},
+		"image": "gzt_731.png"
+	},
+	{
+		"number": "732",
+		"content": {
+			"en": "ZHEN FEI",
+			"zh": "珍妃",
+			"ms": "ZHEN FEI"
+		},
+		"image": "gzt_732.png"
+	},
+	{
+		"number": "733",
+		"content": {
+			"en": "PIPE",
+			"zh": "烟管,烟斗",
+			"ms": "PAIP"
+		},
+		"image": "gzt_733.png"
+	},
+	{
+		"number": "734",
+		"content": {
+			"en": "SEDAN CHAIR",
+			"zh": "轿子,轿车,花轿",
+			"ms": "KERUSI SEDAN"
+		},
+		"image": "gzt_734.png"
+	},
+	{
+		"number": "735",
+		"content": {
+			"en": "FLASK,THERMOS",
+			"zh": "热水壶,保温瓶,熱水瓶",
+			"ms": "KELALANG, TERMOS"
+		},
+		"image": "gzt_735.png"
+	},
+	{
+		"number": "736",
+		"content": {
+			"en": "GOOSE",
+			"zh": "鹅",
+			"ms": "ANGSA"
+		},
+		"image": "gzt_736.png"
+	},
+	{
+		"number": "737",
+		"content": {
+			"en": "BAO GONG , BAO QING TIAN",
+			"zh": "包公,包青天",
+			"ms": "BAO GONG , BAO QING TIAN"
+		},
+		"image": "gzt_737.png"
+	},
+	{
+		"number": "738",
+		"content": {
+			"en": "COAT",
+			"zh": "夹袍,长袍,方袍",
+			"ms": "GAUN"
+		},
+		"image": "gzt_738.png"
+	},
+	{
+		"number": "739",
+		"content": {
+			"en": "ALMOND FLOWER",
+			"zh": "杏花",
+			"ms": "BUNGA BADAM"
+		},
+		"image": "gzt_739.png"
+	},
+	{
+		"number": "740",
+		"content": {
+			"en": "WANG ZI",
+			"zh": "王姿",
+			"ms": "WANG ZI"
+		},
+		"image": "gzt_740.png"
+	},
+	{
+		"number": "741",
+		"content": {
+			"en": "HAND CART,TROLLEY",
+			"zh": "手推车",
+			"ms": "KERETA TANGAN, TROLI"
+		},
+		"image": "gzt_741.png"
+	},
+	{
+		"number": "742",
+		"content": {
+			"en": "CARPET",
+			"zh": "地毯",
+			"ms": "PERMAIDANI"
+		},
+		"image": "gzt_742.png"
+	},
+	{
+		"number": "743",
+		"content": {
+			"en": "LIU ZHI DA",
+			"zh": "刘智达",
+			"ms": "LIU ZHI DA"
+		},
+		"image": "gzt_743.png"
+	},
+	{
+		"number": "744",
+		"content": {
+			"en": "TROUGH,MANGER",
+			"zh": "马槽",
+			"ms": "PALUNGAN"
+		},
+		"image": "gzt_744.png"
+	},
+	{
+		"number": "745",
+		"content": {
+			"en": "TEETH",
+			"zh": "牙齿",
+			"ms": "GIGI"
+		},
+		"image": "gzt_745.png"
+	},
+	{
+		"number": "746",
+		"content": {
+			"en": "COVER , CHICKEN HOOD",
+			"zh": "罩, 鸡罩",
+			"ms": "PENUTUP, TUDUNG AYAM"
+		},
+		"image": "gzt_746.png"
+	},
+	{
+		"number": "747",
+		"content": {
+			"en": "ORCHID",
+			"zh": "兰花",
+			"ms": "ORKID"
+		},
+		"image": "gzt_747.png"
+	},
+	{
+		"number": "748",
+		"content": {
+			"en": "SKIRT , DRESS",
+			"zh": "裙,短裙",
+			"ms": "SKIRT, PAKAIAN"
+		},
+		"image": "gzt_748.png"
+	},
+	{
+		"number": "749",
+		"content": {
+			"en": "STRAW HAT",
+			"zh": "草帽",
+			"ms": "TOPI JERAMI"
+		},
+		"image": "gzt_749.png"
+	},
+	{
+		"number": "750",
+		"content": {
+			"en": "GOURD",
+			"zh": "葫芦",
+			"ms": "LABU"
+		},
+		"image": "gzt_750.png"
+	},
+	{
+		"number": "751",
+		"content": {
+			"en": "RAILWAY",
+			"zh": "铁路,火车路",
+			"ms": "JALAN KERETA API"
+		},
+		"image": "gzt_751.png"
+	},
+	{
+		"number": "752",
+		"content": {
+			"en": "BO YI KAO",
+			"zh": "伯邑考",
+			"ms": "BO YI KAO"
+		},
+		"image": "gzt_752.png"
+	},
+	{
+		"number": "753",
+		"content": {
+			"en": "SALT",
+			"zh": "盐",
+			"ms": "GARAM"
+		},
+		"image": "gzt_753.png"
+	},
+	{
+		"number": "754",
+		"content": {
+			"en": "HOE",
+			"zh": "锄头",
+			"ms": "CANGKUL"
+		},
+		"image": "gzt_754.png"
+	},
+	{
+		"number": "755",
+		"content": {
+			"en": "JIANG WEI",
+			"zh": "姜维",
+			"ms": "JIANG WEI"
+		},
+		"image": "gzt_755.png"
+	},
+	{
+		"number": "756",
+		"content": {
+			"en": "WILLOW",
+			"zh": "柳树",
+			"ms": "WILLOW"
+		},
+		"image": "gzt_756.png"
+	},
+	{
+		"number": "757",
+		"content": {
+			"en": "EYES",
+			"zh": "眼睛,眼",
+			"ms": "MATA"
+		},
+		"image": "gzt_757.png"
+	},
+	{
+		"number": "758",
+		"content": {
+			"en": "VASE",
+			"zh": "花瓶",
+			"ms": "PASU"
+		},
+		"image": "gzt_758.png"
+	},
+	{
+		"number": "759",
+		"content": {
+			"en": "XUE KUI",
+			"zh": "薛葵",
+			"ms": "XUE KUI"
+		},
+		"image": "gzt_759.png"
+	},
+	{
+		"number": "760",
+		"content": {
+			"en": "FLOWERPOT",
+			"zh": "花盆",
+			"ms": "PASU BUNGA"
+		},
+		"image": "gzt_760.png"
+	},
+	{
+		"number": "761",
+		"content": {
+			"en": "TORCH",
+			"zh": "火炬",
+			"ms": "OBOR"
+		},
+		"image": "gzt_761.png"
+	},
+	{
+		"number": "762",
+		"content": {
+			"en": "EAGLE",
+			"zh": "老鹰",
+			"ms": "HELANG"
+		},
+		"image": "gzt_762.png"
+	},
+	{
+		"number": "763",
+		"content": {
+			"en": "EAR",
+			"zh": "耳朵",
+			"ms": "TELINGA"
+		},
+		"image": "gzt_763.png"
+	},
+	{
+		"number": "764",
+		"content": {
+			"en": "TORTOISE",
+			"zh": "乌龟",
+			"ms": "PENYU"
+		},
+		"image": "gzt_764.png"
+	},
+	{
+		"number": "765",
+		"content": {
+			"en": "CHRYSANTHEMUM",
+			"zh": "菊花",
+			"ms": "KEKWA"
+		},
+		"image": "gzt_765.png"
+	},
+	{
+		"number": "766",
+		"content": {
+			"en": "HAN WEN GONG",
+			"zh": "韩文公",
+			"ms": "HAN WEN GONG"
+		},
+		"image": "gzt_766.png"
+	},
+	{
+		"number": "767",
+		"content": {
+			"en": "RUN AWAY FROM MOTHER",
+			"zh": "背母逃难",
+			"ms": "LARI DARI IBU"
+		},
+		"image": "gzt_767.png"
+	},
+	{
+		"number": "768",
+		"content": {
+			"en": "CORONET",
+			"zh": "凤冠",
+			"ms": "MAHKOTA PHOENIX"
+		},
+		"image": "gzt_768.png"
+	},
+	{
+		"number": "769",
+		"content": {
+			"en": "TONGS",
+			"zh": "火钳",
+			"ms": "PENYEPIT"
+		},
+		"image": "gzt_769.png"
+	},
+	{
+		"number": "770",
+		"content": {
+			"en": "SWIMWEAR",
+			"zh": "泳衣,泳装",
+			"ms": "BAJU RENANG"
+		},
+		"image": "gzt_770.png"
+	},
+	{
+		"number": "771",
+		"content": {
+			"en": "MAYFLY",
+			"zh": "蜉蝣,一夜老",
+			"ms": "MAYFLY"
+		},
+		"image": "gzt_771.png"
+	},
+	{
+		"number": "772",
+		"content": {
+			"en": "SINGLET",
+			"zh": "背心",
+			"ms": "SINGLET"
+		},
+		"image": "gzt_772.png"
+	},
+	{
+		"number": "773",
+		"content": {
+			"en": "JIANG PING",
+			"zh": "蒋平",
+			"ms": "JIANG PING"
+		},
+		"image": "gzt_773.png"
+	},
+	{
+		"number": "774",
+		"content": {
+			"en": "PEDICAB,TRISHAW",
+			"zh": "三轮车",
+			"ms": "BECA"
+		},
+		"image": "gzt_774.png"
+	},
+	{
+		"number": "775",
+		"content": {
+			"en": "MAST",
+			"zh": "船桅",
+			"ms": "TIANG"
+		},
+		"image": "gzt_775.png"
+	},
+	{
+		"number": "776",
+		"content": {
+			"en": "NOSE",
+			"zh": "鼻子",
+			"ms": "HIDUNG"
+		},
+		"image": "gzt_776.png"
+	},
+	{
+		"number": "777",
+		"content": {
+			"en": "INULA FLOWER",
+			"zh": "金钱花",
+			"ms": "BUNGA WANG"
+		},
+		"image": "gzt_777.png"
+	},
+	{
+		"number": "778",
+		"content": {
+			"en": "BASKET",
+			"zh": "菜篮,篮子",
+			"ms": "BAKUL"
+		},
+		"image": "gzt_778.png"
+	},
+	{
+		"number": "779",
+		"content": {
+			"en": "PAPER BAG",
+			"zh": "纸袋",
+			"ms": "BEG KERTAS"
+		},
+		"image": "gzt_779.png"
+	},
+	{
+		"number": "780",
+		"content": {
+			"en": "FISH BALL",
+			"zh": "鱼丸",
+			"ms": "BEBOLA IKAN"
+		},
+		"image": "gzt_780.png"
+	},
+	{
+		"number": "781",
+		"content": {
+			"en": "EMBROIDERY,KNITTING",
+			"zh": "刺绣",
+			"ms": "SULAMAN"
+		},
+		"image": "gzt_781.png"
+	},
+	{
+		"number": "782",
+		"content": {
+			"en": "BADGE",
+			"zh": "徽章",
+			"ms": "LENCANA"
+		},
+		"image": "gzt_782.png"
+	},
+	{
+		"number": "783",
+		"content": {
+			"en": "CARRYING POLE , SHOULDER POLE",
+			"zh": "扁担",
+			"ms": "TIANG BAHU"
+		},
+		"image": "gzt_783.png"
+	},
+	{
+		"number": "784",
+		"content": {
+			"en": "TONGUE",
+			"zh": "舌头",
+			"ms": "LIDAH"
+		},
+		"image": "gzt_784.png"
+	},
+	{
+		"number": "785",
+		"content": {
+			"en": "YANG JIAN",
+			"zh": "杨戬",
+			"ms": "YANG JIAN"
+		},
+		"image": "gzt_785.png"
+	},
+	{
+		"number": "786",
+		"content": {
+			"en": "CASSOCK",
+			"zh": "袈裟",
+			"ms": "JUBAH"
+		},
+		"image": "gzt_786.png"
+	},
+	{
+		"number": "787",
+		"content": {
+			"en": "BAMBOO",
+			"zh": "竹林",
+			"ms": "HUTAN BULUH"
+		},
+		"image": "gzt_787.png"
+	},
+	{
+		"number": "788",
+		"content": {
+			"en": "SESAME",
+			"zh": "芝麻",
+			"ms": "BIJAN"
+		},
+		"image": "gzt_788.png"
+	},
+	{
+		"number": "789",
+		"content": {
+			"en": "KISS",
+			"zh": "接吻",
+			"ms": "CIUMAN"
+		},
+		"image": "gzt_789.png"
+	},
+	{
+		"number": "790",
+		"content": {
+			"en": "CANARY",
+			"zh": "金丝雀,芙蓉鸟,白玉鸟",
+			"ms": "KENARI"
+		},
+		"image": "gzt_790.png"
+	},
+	{
+		"number": "791",
+		"content": {
+			"en": "TIGER CASE",
+			"zh": "虎闸",
+			"ms": "KES HARIMAU"
+		},
+		"image": "gzt_791.png"
+	},
+	{
+		"number": "792",
+		"content": {
+			"en": "ZHU YING TAI",
+			"zh": "祝英台",
+			"ms": "ZHU YING TAI"
+		},
+		"image": "gzt_792.png"
+	},
+	{
+		"number": "793",
+		"content": {
+			"en": "SHIELD , BADGE",
+			"zh": "银盾",
+			"ms": "PERISAI PERAK"
+		},
+		"image": "gzt_793.png"
+	},
+	{
+		"number": "794",
+		"content": {
+			"en": "CHINESE FORTUNE STICK",
+			"zh": "签筒",
+			"ms": "TONGKAT NASIB CINA"
+		},
+		"image": "gzt_794.png"
+	},
+	{
+		"number": "795",
+		"content": {
+			"en": "JOSS PAPER",
+			"zh": "银纸",
+			"ms": "KERTAS PERAK"
+		},
+		"image": "gzt_795.png"
+	},
+	{
+		"number": "796",
+		"content": {
+			"en": "SONG SHI ZONG",
+			"zh": "宋世宗",
+			"ms": "SONG SHI ZONG"
+		},
+		"image": "gzt_796.png"
+	},
+	{
+		"number": "797",
+		"content": {
+			"en": "MU GUI YING",
+			"zh": "穆桂英",
+			"ms": "MU GUI YING"
+		},
+		"image": "gzt_797.png"
+	},
+	{
+		"number": "798",
+		"content": {
+			"en": "COTTON",
+			"zh": "棉花",
+			"ms": "KAPAS"
+		},
+		"image": "gzt_798.png"
+	},
+	{
+		"number": "799",
+		"content": {
+			"en": "WANG RUI",
+			"zh": "王睿",
+			"ms": "WANG RUI"
+		},
+		"image": "gzt_799.png"
+	},
+	{
+		"number": "800",
+		"content": {
+			"en": "BROADCASTING STATION",
+			"zh": "电台,电塔",
+			"ms": "STESEN PENYIARAN"
+		},
+		"image": "gzt_800.png"
+	},
+	{
+		"number": "801",
+		"content": {
+			"en": "ZHU HONG WU",
+			"zh": "朱洪武",
+			"ms": "ZHU HONG WU"
+		},
+		"image": "gzt_801.png"
+	},
+	{
+		"number": "802",
+		"content": {
+			"en": "LAMP STAND",
+			"zh": "灯台",
+			"ms": "KAKI LAMPU"
+		},
+		"image": "gzt_802.png"
+	},
+	{
+		"number": "803",
+		"content": {
+			"en": "ZHENG YUAN HE",
+			"zh": "郑元和",
+			"ms": "ZHENG YUAN HE"
+		},
+		"image": "gzt_803.png"
+	},
+	{
+		"number": "804",
+		"content": {
+			"en": "BALL , FOOTBALL",
+			"zh": "球,足球",
+			"ms": "BOLA SEPAK"
+		},
+		"image": "gzt_804.png"
+	},
+	{
+		"number": "805",
+		"content": {
+			"en": "WU YUAN",
+			"zh": "伍员",
+			"ms": "WU YUAN"
+		},
+		"image": "gzt_805.png"
+	},
+	{
+		"number": "806",
+		"content": {
+			"en": "TAOIST",
+			"zh": "道士",
+			"ms": "PADERI TAO"
+		},
+		"image": "gzt_806.png"
+	},
+	{
+		"number": "807",
+		"content": {
+			"en": "PADDLE , OAR , RUDDLE",
+			"zh": "橹,船桨",
+			"ms": "DAYUNG"
+		},
+		"image": "gzt_807.png"
+	},
+	{
+		"number": "808",
+		"content": {
+			"en": "ZHOU YU",
+			"zh": "周瑜",
+			"ms": "ZHOU YU"
+		},
+		"image": "gzt_808.png"
+	},
+	{
+		"number": "809",
+		"content": {
+			"en": "GINSENG",
+			"zh": "人参",
+			"ms": "GINSENG"
+		},
+		"image": "gzt_809.png"
+	},
+	{
+		"number": "810",
+		"content": {
+			"en": "DISH COVER",
+			"zh": "碗斗,菜盖",
+			"ms": "PENUTUP SAYUR"
+		},
+		"image": "gzt_810.png"
+	},
+	{
+		"number": "811",
+		"content": {
+			"en": "PATIENT",
+			"zh": "病人,伤者",
+			"ms": "SABAR"
+		},
+		"image": "gzt_811.png"
+	},
+	{
+		"number": "812",
+		"content": {
+			"en": "PLOUGH , PLOW",
+			"zh": "犁",
+			"ms": "MEMBAJAK"
+		},
+		"image": "gzt_812.png"
+	},
+	{
+		"number": "813",
+		"content": {
+			"en": "NAIL CLIPPER",
+			"zh": "指甲剪",
+			"ms": "GUNTING KUKU"
+		},
+		"image": "gzt_813.png"
+	},
+	{
+		"number": "814",
+		"content": {
+			"en": "TOOTHBRUSH",
+			"zh": "牙刷",
+			"ms": "BERUS GIGI"
+		},
+		"image": "gzt_814.png"
+	},
+	{
+		"number": "815",
+		"content": {
+			"en": "SHOVEL , SPADE",
+			"zh": "铁锹",
+			"ms": "PENYODOK"
+		},
+		"image": "gzt_815.png"
+	},
+	{
+		"number": "816",
+		"content": {
+			"en": "FACE TOWEL",
+			"zh": "面巾, 毛巾",
+			"ms": "TUALA MUKA"
+		},
+		"image": "gzt_816.png"
+	},
+	{
+		"number": "817",
+		"content": {
+			"en": "STOOL",
+			"zh": "高脚凳",
+			"ms": "NAJIS TINGGI"
+		},
+		"image": "gzt_817.png"
+	},
+	{
+		"number": "818",
+		"content": {
+			"en": "CLAW , PAW",
+			"zh": "爪,趾",
+			"ms": "JARI KAKI"
+		},
+		"image": "gzt_818.png"
+	},
+	{
+		"number": "819",
+		"content": {
+			"en": "MONK",
+			"zh": "和尚, 僧侣",
+			"ms": "SAMI"
+		},
+		"image": "gzt_819.png"
+	},
+	{
+		"number": "820",
+		"content": {
+			"en": "BULB",
+			"zh": "电灯泡",
+			"ms": "MENTOL"
+		},
+		"image": "gzt_820.png"
+	},
+	{
+		"number": "821",
+		"content": {
+			"en": "CALENDAR",
+			"zh": "日历",
+			"ms": "KALENDAR"
+		},
+		"image": "gzt_821.png"
+	},
+	{
+		"number": "822",
+		"content": {
+			"en": "STEEL BRIDGE",
+			"zh": "铁桥",
+			"ms": "JAMBATAN BESI"
+		},
+		"image": "gzt_822.png"
+	},
+	{
+		"number": "823",
+		"content": {
+			"en": "REFUSE VESSEL",
+			"zh": "垃圾铲,簸箕",
+			"ms": "PENYODOK SAMPAH"
+		},
+		"image": "gzt_823.png"
+	},
+	{
+		"number": "824",
+		"content": {
+			"en": "ROSE",
+			"zh": "玫瑰",
+			"ms": "MAWAR"
+		},
+		"image": "gzt_824.png"
+	},
+	{
+		"number": "825",
+		"content": {
+			"en": "BRIDE",
+			"zh": "新娘",
+			"ms": "PENGANTIN PEREMPUAN"
+		},
+		"image": "gzt_825.png"
+	},
+	{
+		"number": "826",
+		"content": {
+			"en": "VEGETABLE",
+			"zh": "青菜,蔬菜",
+			"ms": "SAYUR"
+		},
+		"image": "gzt_826.png"
+	},
+	{
+		"number": "827",
+		"content": {
+			"en": "NET HOOK",
+			"zh": "帐钩",
+			"ms": "CANGKUK KHEMAH"
+		},
+		"image": "gzt_827.png"
+	},
+	{
+		"number": "828",
+		"content": {
+			"en": "PLANER",
+			"zh": "刨",
+			"ms": "KAPAL TERBANG KERJA KAYU"
+		},
+		"image": "gzt_828.png"
+	},
+	{
+		"number": "829",
+		"content": {
+			"en": "WATERMELON",
+			"zh": "西瓜",
+			"ms": "BUAH TEMBIKAI"
+		},
+		"image": "gzt_829.png"
+	},
+	{
+		"number": "830",
+		"content": {
+			"en": "BREAD",
+			"zh": "发,胡须",
+			"ms": "JANGGUT"
+		},
+		"image": "gzt_830.png"
+	},
+	{
+		"number": "831",
+		"content": {
+			"en": "AEROPLANE",
+			"zh": "飞机",
+			"ms": "KAPAL TERBANG"
+		},
+		"image": "gzt_831.png"
+	},
+	{
+		"number": "832",
+		"content": {
+			"en": "PIGEON , DOVE",
+			"zh": "鸠,鸽子",
+			"ms": "BURUNG MERPATI"
+		},
+		"image": "gzt_832.png"
+	},
+	{
+		"number": "833",
+		"content": {
+			"en": "PROSTITUTE",
+			"zh": "娼妓",
+			"ms": "PELACUR"
+		},
+		"image": "gzt_833.png"
+	},
+	{
+		"number": "834",
+		"content": {
+			"en": "BICYCLE",
+			"zh": "脚车",
+			"ms": "BASIKAL"
+		},
+		"image": "gzt_834.png"
+	},
+	{
+		"number": "835",
+		"content": {
+			"en": "CUTTER , PLIERS",
+			"zh": "钳",
+			"ms": "PEMOTONG, TANG"
+		},
+		"image": "gzt_835.png"
+	},
+	{
+		"number": "836",
+		"content": {
+			"en": "CELERY",
+			"zh": "芹菜",
+			"ms": "SADERI"
+		},
+		"image": "gzt_836.png"
+	},
+	{
+		"number": "837",
+		"content": {
+			"en": "BRA",
+			"zh": "胸罩,奶罩",
+			"ms": "COLI"
+		},
+		"image": "gzt_837.png"
+	},
+	{
+		"number": "838",
+		"content": {
+			"en": "WHIP",
+			"zh": "鞭",
+			"ms": "SEBAT"
+		},
+		"image": "gzt_838.png"
+	},
+	{
+		"number": "839",
+		"content": {
+			"en": "ARM",
+			"zh": "手臂",
+			"ms": "LENGAN"
+		},
+		"image": "gzt_839.png"
+	},
+	{
+		"number": "840",
+		"content": {
+			"en": "BATH",
+			"zh": "冲凉,洗澡",
+			"ms": "MANDI"
+		},
+		"image": "gzt_840.png"
+	},
+	{
+		"number": "841",
+		"content": {
+			"en": "MENG JIANG NU",
+			"zh": "孟姜女",
+			"ms": "MENG JIANG NU"
+		},
+		"image": "gzt_841.png"
+	},
+	{
+		"number": "842",
+		"content": {
+			"en": "ALARM CLOCK",
+			"zh": "闹钟",
+			"ms": "JAM LOCENG"
+		},
+		"image": "gzt_842.png"
+	},
+	{
+		"number": "843",
+		"content": {
+			"en": "POKER CARD",
+			"zh": "扑克牌",
+			"ms": "BERMAIN KAD"
+		},
+		"image": "gzt_843.png"
+	},
+	{
+		"number": "844",
+		"content": {
+			"en": "SAND AND STONE",
+			"zh": "沙石",
+			"ms": "BATU PASIR"
+		},
+		"image": "gzt_844.png"
+	},
+	{
+		"number": "845",
+		"content": {
+			"en": "DONKEY",
+			"zh": "驴子",
+			"ms": "KELDAI"
+		},
+		"image": "gzt_845.png"
+	},
+	{
+		"number": "846",
+		"content": {
+			"en": "FAN",
+			"zh": "风扇",
+			"ms": "KIPAS"
+		},
+		"image": "gzt_846.png"
+	},
+	{
+		"number": "847",
+		"content": {
+			"en": "TARO",
+			"zh": "芋头",
+			"ms": "TARO"
+		},
+		"image": "gzt_847.png"
+	},
+	{
+		"number": "848",
+		"content": {
+			"en": "EMPEROR'S FAN",
+			"zh": "掌扇",
+			"ms": "KIPAS TAPAK TANGAN"
+		},
+		"image": "gzt_848.png"
+	},
+	{
+		"number": "849",
+		"content": {
+			"en": "WANG JIAN",
+			"zh": "王翦",
+			"ms": "WANG JIAN"
+		},
+		"image": "gzt_849.png"
+	},
+	{
+		"number": "850",
+		"content": {
+			"en": "LI MI",
+			"zh": "李密",
+			"ms": "LI MI"
+		},
+		"image": "gzt_850.png"
+	},
+	{
+		"number": "851",
+		"content": {
+			"en": "MOUNTAIN",
+			"zh": "深山",
+			"ms": "GUNUNG YANG DALAM"
+		},
+		"image": "gzt_851.png"
+	},
+	{
+		"number": "852",
+		"content": {
+			"en": "NUN",
+			"zh": "尼姑,道姑",
+			"ms": "NUN"
+		},
+		"image": "gzt_852.png"
+	},
+	{
+		"number": "853",
+		"content": {
+			"en": "ROE DEER , WATER DEER",
+			"zh": "獐",
+			"ms": "RUSA ROE , RUSA AIR"
+		},
+		"image": "gzt_853.png"
+	},
+	{
+		"number": "854",
+		"content": {
+			"en": "NAILS",
+			"zh": "铁钉",
+			"ms": "PAKU BESI"
+		},
+		"image": "gzt_854.png"
+	},
+	{
+		"number": "855",
+		"content": {
+			"en": "JASMINE",
+			"zh": "茉莉花",
+			"ms": "MELATI"
+		},
+		"image": "gzt_855.png"
+	},
+	{
+		"number": "856",
+		"content": {
+			"en": "HANGER",
+			"zh": "衣架",
+			"ms": "PENYANGKUT BAJU"
+		},
+		"image": "gzt_856.png"
+	},
+	{
+		"number": "857",
+		"content": {
+			"en": "FEI YUAN QING",
+			"zh": "斐元庆",
+			"ms": "FEI YUAN QING"
+		},
+		"image": "gzt_857.png"
+	},
+	{
+		"number": "858",
+		"content": {
+			"en": "STEAMSHIP , CRUISES",
+			"zh": "轮船,邮轮",
+			"ms": "KAPAL WAP , PELAYARAN"
+		},
+		"image": "gzt_858.png"
+	},
+	{
+		"number": "859",
+		"content": {
+			"en": "POCKET WATCH",
+			"zh": "怀表,陀表",
+			"ms": "JAM POKET"
+		},
+		"image": "gzt_859.png"
+	},
+	{
+		"number": "860",
+		"content": {
+			"en": "LI JING",
+			"zh": "李靖",
+			"ms": "LI JING"
+		},
+		"image": "gzt_860.png"
+	},
+	{
+		"number": "861",
+		"content": {
+			"en": "LUO TONG",
+			"zh": "罗通",
+			"ms": "LUO TONG"
+		},
+		"image": "gzt_861.png"
+	},
+	{
+		"number": "862",
+		"content": {
+			"en": "SU WU",
+			"zh": "苏武",
+			"ms": "SU WU"
+		},
+		"image": "gzt_862.png"
+	},
+	{
+		"number": "863",
+		"content": {
+			"en": "DA JI",
+			"zh": "妲己",
+			"ms": "DA JI"
+		},
+		"image": "gzt_863.png"
+	},
+	{
+		"number": "864",
+		"content": {
+			"en": "BEAN SPROUTS",
+			"zh": "豆芽,芽菜",
+			"ms": "TAUGEH"
+		},
+		"image": "gzt_864.png"
+	},
+	{
+		"number": "865",
+		"content": {
+			"en": "ZHU GE LIANG , KONG MING",
+			"zh": "诸葛亮,孔明",
+			"ms": "ZHU GE LIANG , KONG MING"
+		},
+		"image": "gzt_865.png"
+	},
+	{
+		"number": "866",
+		"content": {
+			"en": "THIGH",
+			"zh": "大腿",
+			"ms": "PEHA"
+		},
+		"image": "gzt_866.png"
+	},
+	{
+		"number": "867",
+		"content": {
+			"en": "FISHHOOK",
+			"zh": "鱼钩",
+			"ms": "KAIL IKAN"
+		},
+		"image": "gzt_867.png"
+	},
+	{
+		"number": "868",
+		"content": {
+			"en": "MARSHAL",
+			"zh": "元帅",
+			"ms": "MARSHAL"
+		},
+		"image": "gzt_868.png"
+	},
+	{
+		"number": "869",
+		"content": {
+			"en": "SHORT PANTS",
+			"zh": "短裤",
+			"ms": "SELUAR PENDEK"
+		},
+		"image": "gzt_869.png"
+	},
+	{
+		"number": "870",
+		"content": {
+			"en": "BARBER",
+			"zh": "理发师",
+			"ms": "TUKANG GUNTING RAMBUT"
+		},
+		"image": "gzt_870.png"
+	},
+	{
+		"number": "871",
+		"content": {
+			"en": "CHINESE PINK",
+			"zh": "洛阳花",
+			"ms": "MERAH JAMBU CINA"
+		},
+		"image": "gzt_871.png"
+	},
+	{
+		"number": "872",
+		"content": {
+			"en": "RAKE , HARROW",
+			"zh": "耙,耙子",
+			"ms": "MENYAPU"
+		},
+		"image": "gzt_872.png"
+	},
+	{
+		"number": "873",
+		"content": {
+			"en": "BRINJAL",
+			"zh": "茄子",
+			"ms": "TERUNG"
+		},
+		"image": "gzt_873.png"
+	},
+	{
+		"number": "874",
+		"content": {
+			"en": "OYSTER",
+			"zh": "蚝,蚵仔",
+			"ms": "TIRAM"
+		},
+		"image": "gzt_874.png"
+	},
+	{
+		"number": "875",
+		"content": {
+			"en": "PISTOL , GUN",
+			"zh": "短枪,手枪",
+			"ms": "PISTOL"
+		},
+		"image": "gzt_875.png"
+	},
+	{
+		"number": "876",
+		"content": {
+			"en": "LI TAI BAI",
+			"zh": "李太白",
+			"ms": "LI TAI BAI"
+		},
+		"image": "gzt_876.png"
+	},
+	{
+		"number": "877",
+		"content": {
+			"en": "WU JI",
+			"zh": "武吉",
+			"ms": "WU JI"
+		},
+		"image": "gzt_877.png"
+	},
+	{
+		"number": "878",
+		"content": {
+			"en": "SHAVING KNIFE",
+			"zh": "剃刀",
+			"ms": "PISAU CUKUR"
+		},
+		"image": "gzt_878.png"
+	},
+	{
+		"number": "879",
+		"content": {
+			"en": "LI CHEN FEI",
+			"zh": "李宸妃",
+			"ms": "LI CHEN FEI"
+		},
+		"image": "gzt_879.png"
+	},
+	{
+		"number": "880",
+		"content": {
+			"en": "BUTT,BUTTOCK",
+			"zh": "臀部,屁股",
+			"ms": "PUNGGUNG"
+		},
+		"image": "gzt_880.png"
+	},
+	{
+		"number": "881",
+		"content": {
+			"en": "CHEN XING YUAN",
+			"zh": "陈杏元",
+			"ms": "CHEN XING YUAN"
+		},
+		"image": "gzt_881.png"
+	},
+	{
+		"number": "882",
+		"content": {
+			"en": "WRISTWATCH",
+			"zh": "手表",
+			"ms": "JAM TANGAN"
+		},
+		"image": "gzt_882.png"
+	},
+	{
+		"number": "883",
+		"content": {
+			"en": "TOWEL",
+			"zh": "浴巾",
+			"ms": "TUALA"
+		},
+		"image": "gzt_883.png"
+	},
+	{
+		"number": "884",
+		"content": {
+			"en": "LOCK",
+			"zh": "铜锁,锁头",
+			"ms": "KUNCI"
+		},
+		"image": "gzt_884.png"
+	},
+	{
+		"number": "885",
+		"content": {
+			"en": "WEIGHT SCALE",
+			"zh": "磅,弹簧磅,体重秤,量重器",
+			"ms": "PENIMBANG BERAT"
+		},
+		"image": "gzt_885.png"
+	},
+	{
+		"number": "886",
+		"content": {
+			"en": "SOLDIER",
+			"zh": "士兵",
+			"ms": "ASKAR"
+		},
+		"image": "gzt_886.png"
+	},
+	{
+		"number": "887",
+		"content": {
+			"en": "GAO HUAI DE",
+			"zh": "高怀德",
+			"ms": "GAO HUAI DE"
+		},
+		"image": "gzt_887.png"
+	},
+	{
+		"number": "888",
+		"content": {
+			"en": "UNCLE CAO",
+			"zh": "曹国舅",
+			"ms": "PAKCIK CAO"
+		},
+		"image": "gzt_888.png"
+	},
+	{
+		"number": "889",
+		"content": {
+			"en": "SPEAR",
+			"zh": "矛",
+			"ms": "LEMBING"
+		},
+		"image": "gzt_889.png"
+	},
+	{
+		"number": "890",
+		"content": {
+			"en": "PEN RACK",
+			"zh": "笔架",
+			"ms": "RAK PEN"
+		},
+		"image": "gzt_890.png"
+	},
+	{
+		"number": "891",
+		"content": {
+			"en": "LI A XION",
+			"zh": "李阿仙",
+			"ms": "LI A XION"
+		},
+		"image": "gzt_891.png"
+	},
+	{
+		"number": "892",
+		"content": {
+			"en": "PEANUT",
+			"zh": "花生",
+			"ms": "KACANG TANAH"
+		},
+		"image": "gzt_892.png"
+	},
+	{
+		"number": "893",
+		"content": {
+			"en": "NECKTIE",
+			"zh": "领带",
+			"ms": "TALI LEHER"
+		},
+		"image": "gzt_893.png"
+	},
+	{
+		"number": "894",
+		"content": {
+			"en": "WOODEN BRIDGE",
+			"zh": "木桥",
+			"ms": "JAMBATAN KAYU"
+		},
+		"image": "gzt_894.png"
+	},
+	{
+		"number": "895",
+		"content": {
+			"en": "CHENG YAO JIN",
+			"zh": "程咬金",
+			"ms": "CHENG YAO JIN"
+		},
+		"image": "gzt_895.png"
+	},
+	{
+		"number": "896",
+		"content": {
+			"en": "SWIMMING",
+			"zh": "游泳",
+			"ms": "BERENANG"
+		},
+		"image": "gzt_896.png"
+	},
+	{
+		"number": "897",
+		"content": {
+			"en": "DICE",
+			"zh": "骰子",
+			"ms": "DADU"
+		},
+		"image": "gzt_897.png"
+	},
+	{
+		"number": "898",
+		"content": {
+			"en": "SEABIRD",
+			"zh": "水鸟,海鸟",
+			"ms": "BURUNG LAUT"
+		},
+		"image": "gzt_898.png"
+	},
+	{
+		"number": "899",
+		"content": {
+			"en": "WEAVE,KNIT",
+			"zh": "纺织",
+			"ms": "MENGANYAM"
+		},
+		"image": "gzt_899.png"
+	},
+	{
+		"number": "900",
+		"content": {
+			"en": "BLIND",
+			"zh": "瞎子,盲人",
+			"ms": "BUTA"
+		},
+		"image": "gzt_900.png"
+	},
+	{
+		"number": "901",
+		"content": {
+			"en": "PING PONG",
+			"zh": "乒乓",
+			"ms": "PING PONG"
+		},
+		"image": "gzt_901.png"
+	},
+	{
+		"number": "902",
+		"content": {
+			"en": "KUAY TEOW",
+			"zh": "粿條",
+			"ms": "KUAY TEOW"
+		},
+		"image": "gzt_902.png"
+	},
+	{
+		"number": "903",
+		"content": {
+			"en": "CLAM",
+			"zh": "蛤蜊",
+			"ms": "KERANG"
+		},
+		"image": "gzt_903.png"
+	},
+	{
+		"number": "904",
+		"content": {
+			"en": "JIANG ZHONG LI",
+			"zh": "江中立",
+			"ms": "JIANG ZHONG LI"
+		},
+		"image": "gzt_904.png"
+	},
+	{
+		"number": "905",
+		"content": {
+			"en": "RIBBON",
+			"zh": "结彩,彩带",
+			"ms": "RIBEN"
+		},
+		"image": "gzt_905.png"
+	},
+	{
+		"number": "906",
+		"content": {
+			"en": "RAFT",
+			"zh": "木筏",
+			"ms": "RAKIT"
+		},
+		"image": "gzt_906.png"
+	},
+	{
+		"number": "907",
+		"content": {
+			"en": "NURSE",
+			"zh": "护士",
+			"ms": "JURURAWAT"
+		},
+		"image": "gzt_907.png"
+	},
+	{
+		"number": "908",
+		"content": {
+			"en": "YANG LIN",
+			"zh": "杨林",
+			"ms": "YANG LIN"
+		},
+		"image": "gzt_908.png"
+	},
+	{
+		"number": "909",
+		"content": {
+			"en": "MENG ZONG CRYING BAMBOO",
+			"zh": "孟宗哭竹",
+			"ms": "MENG ZONG MENANGIS BULUH"
+		},
+		"image": "gzt_909.png"
+	},
+	{
+		"number": "910",
+		"content": {
+			"en": "GENERAL",
+			"zh": "武将",
+			"ms": "UMUM"
+		},
+		"image": "gzt_910.png"
+	},
+	{
+		"number": "911",
+		"content": {
+			"en": "WEI GONG",
+			"zh": "蔚迟恭",
+			"ms": "WEI GONG"
+		},
+		"image": "gzt_911.png"
+	},
+	{
+		"number": "912",
+		"content": {
+			"en": "CRADLE",
+			"zh": "摇篮",
+			"ms": "BUAIAN"
+		},
+		"image": "gzt_912.png"
+	},
+	{
+		"number": "913",
+		"content": {
+			"en": "BEGGAR",
+			"zh": "乞丐,叫化子",
+			"ms": "PENGEMIS"
+		},
+		"image": "gzt_913.png"
+	},
+	{
+		"number": "914",
+		"content": {
+			"en": "CAKE",
+			"zh": "蛋糕",
+			"ms": "KEK"
+		},
+		"image": "gzt_914.png"
+	},
+	{
+		"number": "915",
+		"content": {
+			"en": "MANDOLIN",
+			"zh": "三弦",
+			"ms": "MANDOLIN"
+		},
+		"image": "gzt_915.png"
+	},
+	{
+		"number": "916",
+		"content": {
+			"en": "CLAM",
+			"zh": "蚶子",
+			"ms": "KERANG"
+		},
+		"image": "gzt_916.png"
+	},
+	{
+		"number": "917",
+		"content": {
+			"en": "DONG CHENG SELLS HIMSELF",
+			"zh": "董承卖身",
+			"ms": "DONG CHENG MENJUAL DIRINYA"
+		},
+		"image": "gzt_917.png"
+	},
+	{
+		"number": "918",
+		"content": {
+			"en": "CAMP BED",
+			"zh": "布床",
+			"ms": "KATIL KEM"
+		},
+		"image": "gzt_918.png"
+	},
+	{
+		"number": "919",
+		"content": {
+			"en": "LI SHIMIN",
+			"zh": "李世民",
+			"ms": "LI SHIMIN"
+		},
+		"image": "gzt_919.png"
+	},
+	{
+		"number": "920",
+		"content": {
+			"en": "NAVEL",
+			"zh": "肚脐",
+			"ms": "PUSAT"
+		},
+		"image": "gzt_920.png"
+	},
+	{
+		"number": "921",
+		"content": {
+			"en": "GUO JUMIER",
+			"zh": "郭巨埋儿",
+			"ms": "GUO JUMIER"
+		},
+		"image": "gzt_921.png"
+	},
+	{
+		"number": "922",
+		"content": {
+			"en": "LINOLEUM",
+			"zh": "油毯,油布",
+			"ms": "LINOLEUM"
+		},
+		"image": "gzt_922.png"
+	},
+	{
+		"number": "923",
+		"content": {
+			"en": "PRESERVED VEGETABLE",
+			"zh": "冬菜,腌菜",
+			"ms": "SAYUR YANG DIAWET"
+		},
+		"image": "gzt_923.png"
+	},
+	{
+		"number": "924",
+		"content": {
+			"en": "CARROT",
+			"zh": "萝卜,菜头",
+			"ms": "LOBAK MERAH"
+		},
+		"image": "gzt_924.png"
+	},
+	{
+		"number": "925",
+		"content": {
+			"en": "SCHOLARS",
+			"zh": "士子",
+			"ms": "ULAMA"
+		},
+		"image": "gzt_925.png"
+	},
+	{
+		"number": "926",
+		"content": {
+			"en": "ZHAO GAO",
+			"zh": "赵高",
+			"ms": "ZHAO GAO"
+		},
+		"image": "gzt_926.png"
+	},
+	{
+		"number": "927",
+		"content": {
+			"en": "FENG JIAO",
+			"zh": "凤娇",
+			"ms": "FENG JIAO"
+		},
+		"image": "gzt_927.png"
+	},
+	{
+		"number": "928",
+		"content": {
+			"en": "BUS",
+			"zh": "巴士",
+			"ms": "BAS"
+		},
+		"image": "gzt_928.png"
+	},
+	{
+		"number": "929",
+		"content": {
+			"en": "XUE JIAO",
+			"zh": "薛蛟",
+			"ms": "XUE JIAO"
+		},
+		"image": "gzt_929.png"
+	},
+	{
+		"number": "930",
+		"content": {
+			"en": "BOWL COVER",
+			"zh": "碗罩",
+			"ms": "PENUTUP MANGKUK"
+		},
+		"image": "gzt_930.png"
+	},
+	{
+		"number": "931",
+		"content": {
+			"en": "LOTUS",
+			"zh": "荷花,莲花",
+			"ms": "TERATAI"
+		},
+		"image": "gzt_931.png"
+	},
+	{
+		"number": "932",
+		"content": {
+			"en": "BANK NOTE,PAPER MONEY",
+			"zh": "钞票,纸币",
+			"ms": "WANG"
+		},
+		"image": "gzt_932.png"
+	},
+	{
+		"number": "933",
+		"content": {
+			"en": "PLUM TREE",
+			"zh": "李树",
+			"ms": "POKOK PLUM"
+		},
+		"image": "gzt_933.png"
+	},
+	{
+		"number": "934",
+		"content": {
+			"en": "SAIL",
+			"zh": "帆,风帆,船帆,帆布",
+			"ms": "BELAYAR"
+		},
+		"image": "gzt_934.png"
+	},
+	{
+		"number": "935",
+		"content": {
+			"en": "INK",
+			"zh": "墨水",
+			"ms": "DAKWAT"
+		},
+		"image": "gzt_935.png"
+	},
+	{
+		"number": "936",
+		"content": {
+			"en": "TYRE",
+			"zh": "轮胎",
+			"ms": "TAYAR"
+		},
+		"image": "gzt_936.png"
+	},
+	{
+		"number": "937",
+		"content": {
+			"en": "RAMBUTAN",
+			"zh": "红毛丹",
+			"ms": "RAMBUTAN"
+		},
+		"image": "gzt_937.png"
+	},
+	{
+		"number": "938",
+		"content": {
+			"en": "FARMER",
+			"zh": "农夫",
+			"ms": "PETANI"
+		},
+		"image": "gzt_938.png"
+	},
+	{
+		"number": "939",
+		"content": {
+			"en": "LU JI HUAI TANGERINE",
+			"zh": "陆积怀橘",
+			"ms": "LU JI HUAI TANGERINE"
+		},
+		"image": "gzt_939.png"
+	},
+	{
+		"number": "940",
+		"content": {
+			"en": "BAILI XI",
+			"zh": "百里奚",
+			"ms": "BAILI XI"
+		},
+		"image": "gzt_940.png"
+	},
+	{
+		"number": "941",
+		"content": {
+			"en": "LU MENG ZI",
+			"zh": "吕蒙子",
+			"ms": "LU MENG ZI"
+		},
+		"image": "gzt_941.png"
+	},
+	{
+		"number": "942",
+		"content": {
+			"en": "BASKET",
+			"zh": "篮子,笆斗",
+			"ms": "BAKUL"
+		},
+		"image": "gzt_942.png"
+	},
+	{
+		"number": "943",
+		"content": {
+			"en": "BASKET",
+			"zh": "提篮",
+			"ms": "BAKUL"
+		},
+		"image": "gzt_943.png"
+	},
+	{
+		"number": "944",
+		"content": {
+			"en": "SWEEP",
+			"zh": "竹扫,扫把,扫帚",
+			"ms": "MENYAPU"
+		},
+		"image": "gzt_944.png"
+	},
+	{
+		"number": "945",
+		"content": {
+			"en": "LOYAL MINISTER",
+			"zh": "忠臣",
+			"ms": "MENTERI SETIA"
+		},
+		"image": "gzt_945.png"
+	},
+	{
+		"number": "946",
+		"content": {
+			"en": "PRAYER FLAG",
+			"zh": "令箭,令旗",
+			"ms": "BENDERA SOLAT"
+		},
+		"image": "gzt_946.png"
+	},
+	{
+		"number": "947",
+		"content": {
+			"en": "ZHU MAI CHEN",
+			"zh": "朱买臣",
+			"ms": "ZHU MAI CHEN"
+		},
+		"image": "gzt_947.png"
+	},
+	{
+		"number": "948",
+		"content": {
+			"en": "SCHOOL BAG",
+			"zh": "书包",
+			"ms": "BEG SEKOLAH"
+		},
+		"image": "gzt_948.png"
+	},
+	{
+		"number": "949",
+		"content": {
+			"en": "RAZOR,SHAVER",
+			"zh": "胡须刀,剃须刀",
+			"ms": "PENCUKUR"
+		},
+		"image": "gzt_949.png"
+	},
+	{
+		"number": "950",
+		"content": {
+			"en": "OFFICIALS",
+			"zh": "臣官",
+			"ms": "PEGAWAI"
+		},
+		"image": "gzt_950.png"
+	},
+	{
+		"number": "951",
+		"content": {
+			"en": "ZHONG KUI",
+			"zh": "钟馗",
+			"ms": "ZHONG KUI"
+		},
+		"image": "gzt_951.png"
+	},
+	{
+		"number": "952",
+		"content": {
+			"en": "PAI GOW",
+			"zh": "牌九",
+			"ms": "PAI GOW"
+		},
+		"image": "gzt_952.png"
+	},
+	{
+		"number": "953",
+		"content": {
+			"en": "CRAFTSMAN,SMITH",
+			"zh": "工匠",
+			"ms": "TUKANG"
+		},
+		"image": "gzt_953.png"
+	},
+	{
+		"number": "954",
+		"content": {
+			"en": "MU LIAN",
+			"zh": "目莲",
+			"ms": "MU LIAN"
+		},
+		"image": "gzt_954.png"
+	},
+	{
+		"number": "955",
+		"content": {
+			"en": "CHEST",
+			"zh": "胸部,胸膛",
+			"ms": "DADA"
+		},
+		"image": "gzt_955.png"
+	},
+	{
+		"number": "956",
+		"content": {
+			"en": "RUDDER",
+			"zh": "舵,掌舵",
+			"ms": "KEMUDI"
+		},
+		"image": "gzt_956.png"
+	},
+	{
+		"number": "957",
+		"content": {
+			"en": "TRAIN",
+			"zh": "火车,列车",
+			"ms": "KERETA API"
+		},
+		"image": "gzt_957.png"
+	},
+	{
+		"number": "958",
+		"content": {
+			"en": "FLAG MAST",
+			"zh": "旗杆",
+			"ms": "TIANG BENDERA"
+		},
+		"image": "gzt_958.png"
+	},
+	{
+		"number": "959",
+		"content": {
+			"en": "EGG",
+			"zh": "蛋,鸡蛋,鸟蛋",
+			"ms": "TELUR"
+		},
+		"image": "gzt_959.png"
+	},
+	{
+		"number": "960",
+		"content": {
+			"en": "YAO NENG",
+			"zh": "姚能",
+			"ms": "YAO NENG"
+		},
+		"image": "gzt_960.png"
+	},
+	{
+		"number": "961",
+		"content": {
+			"en": "ZHAN ZHAO",
+			"zh": "展昭",
+			"ms": "ZHAN ZHAO"
+		},
+		"image": "gzt_961.png"
+	},
+	{
+		"number": "962",
+		"content": {
+			"en": "DRIED CARROT",
+			"zh": "菜脯,萝卜干",
+			"ms": "LOBAK MERAH KERING"
+		},
+		"image": "gzt_962.png"
+	},
+	{
+		"number": "963",
+		"content": {
+			"en": "GUAVA",
+			"zh": "番石榴",
+			"ms": "JAMBU BATU"
+		},
+		"image": "gzt_963.png"
+	},
+	{
+		"number": "964",
+		"content": {
+			"en": "FLATFISH",
+			"zh": "比目鱼,鲽鱼",
+			"ms": "IKAN KEMBUNG"
+		},
+		"image": "gzt_964.png"
+	},
+	{
+		"number": "965",
+		"content": {
+			"en": "COCONUT",
+			"zh": "椰子",
+			"ms": "KELAPA"
+		},
+		"image": "gzt_965.png"
+	},
+	{
+		"number": "966",
+		"content": {
+			"en": "ANLE MOUNTAIN",
+			"zh": "安乐山",
+			"ms": "ANLE GUNUNG"
+		},
+		"image": "gzt_966.png"
+	},
+	{
+		"number": "967",
+		"content": {
+			"en": "LONG BEAN",
+			"zh": "菜豆",
+			"ms": "KACANG PANJANG"
+		},
+		"image": "gzt_967.png"
+	},
+	{
+		"number": "968",
+		"content": {
+			"en": "DOCTOR",
+			"zh": "医生",
+			"ms": "DOKTOR"
+		},
+		"image": "gzt_968.png"
+	},
+	{
+		"number": "969",
+		"content": {
+			"en": "MARTYRDOM",
+			"zh": "烈女",
+			"ms": "MATI SYAHID"
+		},
+		"image": "gzt_969.png"
+	},
+	{
+		"number": "970",
+		"content": {
+			"en": "EATING TABLE",
+			"zh": "食桌",
+			"ms": "MEJA MAKAN"
+		},
+		"image": "gzt_970.png"
+	},
+	{
+		"number": "971",
+		"content": {
+			"en": "FRUIT JAR",
+			"zh": "果盒",
+			"ms": "BALANG BUAH"
+		},
+		"image": "gzt_971.png"
+	},
+	{
+		"number": "972",
+		"content": {
+			"en": "FIGHT,SCUFFLE,BRAWL",
+			"zh": "打架,斗殴",
+			"ms": "BERGADUH"
+		},
+		"image": "gzt_972.png"
+	},
+	{
+		"number": "973",
+		"content": {
+			"en": "PENCIL",
+			"zh": "铅笔",
+			"ms": "PENSEL"
+		},
+		"image": "gzt_973.png"
+	},
+	{
+		"number": "974",
+		"content": {
+			"en": "CAMERA",
+			"zh": "摄影机,相机,照相机",
+			"ms": "KAMERA"
+		},
+		"image": "gzt_974.png"
+	},
+	{
+		"number": "975",
+		"content": {
+			"en": "TURTLE",
+			"zh": "鳖,甲鱼,龟鳖",
+			"ms": "PENYU"
+		},
+		"image": "gzt_975.png"
+	},
+	{
+		"number": "976",
+		"content": {
+			"en": "MENG MU",
+			"zh": "孟母",
+			"ms": "MENG MU"
+		},
+		"image": "gzt_976.png"
+	},
+	{
+		"number": "977",
+		"content": {
+			"en": "STELE,STONE TABLET",
+			"zh": "石碑",
+			"ms": "STELE"
+		},
+		"image": "gzt_977.png"
+	},
+	{
+		"number": "978",
+		"content": {
+			"en": "HE WEN XIU",
+			"zh": "何文秀",
+			"ms": "HE WEN XIU"
+		},
+		"image": "gzt_978.png"
+	},
+	{
+		"number": "979",
+		"content": {
+			"en": "DUTIFUL SON",
+			"zh": "孝子",
+			"ms": "ANAK YANG BERBAKTI"
+		},
+		"image": "gzt_979.png"
+	},
+	{
+		"number": "980",
+		"content": {
+			"en": "LIU CHEN YU XIAN",
+			"zh": "刘晨遇仙",
+			"ms": "LIU CHEN YU XIAN"
+		},
+		"image": "gzt_980.png"
+	},
+	{
+		"number": "981",
+		"content": {
+			"en": "FAN LI",
+			"zh": "范蠡",
+			"ms": "FAN LI"
+		},
+		"image": "gzt_981.png"
+	},
+	{
+		"number": "982",
+		"content": {
+			"en": "LU BU",
+			"zh": "吕布",
+			"ms": "LU BU"
+		},
+		"image": "gzt_982.png"
+	},
+	{
+		"number": "983",
+		"content": {
+			"en": "MEDICINE",
+			"zh": "药物",
+			"ms": "UBAT"
+		},
+		"image": "gzt_983.png"
+	},
+	{
+		"number": "984",
+		"content": {
+			"en": "CUTTLEFISH,SQUID",
+			"zh": "乌贼,鱿鱼",
+			"ms": "SOTONG"
+		},
+		"image": "gzt_984.png"
+	},
+	{
+		"number": "985",
+		"content": {
+			"en": "CANE,VINE",
+			"zh": "藤",
+			"ms": "ROTAN"
+		},
+		"image": "gzt_985.png"
+	},
+	{
+		"number": "986",
+		"content": {
+			"en": "GRASSHOPPER",
+			"zh": "蚱蜢,蝗虫,草蜢",
+			"ms": "BELALANG"
+		},
+		"image": "gzt_986.png"
+	},
+	{
+		"number": "987",
+		"content": {
+			"en": "PEPPER",
+			"zh": "胡椒",
+			"ms": "LADA"
+		},
+		"image": "gzt_987.png"
+	},
+	{
+		"number": "988",
+		"content": {
+			"en": "BULL DEVIL",
+			"zh": "牛魔王",
+			"ms": "SYAITAN LEMBU JANTAN"
+		},
+		"image": "gzt_988.png"
+	},
+	{
+		"number": "989",
+		"content": {
+			"en": "ERHU,CHINESE CELLO",
+			"zh": "胡琴,二胡",
+			"ms": "CELLO CINA"
+		},
+		"image": "gzt_989.png"
+	},
+	{
+		"number": "990",
+		"content": {
+			"en": "QIU XIANG",
+			"zh": "秋香",
+			"ms": "QIU XIANG"
+		},
+		"image": "gzt_990.png"
+	},
+	{
+		"number": "991",
+		"content": {
+			"en": "YUE FEI",
+			"zh": "岳飞",
+			"ms": "YUE FEI"
+		},
+		"image": "gzt_991.png"
+	},
+	{
+		"number": "992",
+		"content": {
+			"en": "GAO JUN BAO",
+			"zh": "高君宝",
+			"ms": "GAO JUN BAO"
+		},
+		"image": "gzt_992.png"
+	},
+	{
+		"number": "993",
+		"content": {
+			"en": "HAWKER",
+			"zh": "小贩",
+			"ms": "PENJAJA"
+		},
+		"image": "gzt_993.png"
+	},
+	{
+		"number": "994",
+		"content": {
+			"en": "ZHANG SHI ZHEN",
+			"zh": "张士祯",
+			"ms": "ZHANG SHI ZHEN"
+		},
+		"image": "gzt_994.png"
+	},
+	{
+		"number": "995",
+		"content": {
+			"en": "BOUQUET",
+			"zh": "绣球,花球",
+			"ms": "SEJAMBAK"
+		},
+		"image": "gzt_995.png"
+	},
+	{
+		"number": "996",
+		"content": {
+			"en": "FISHERMAN",
+			"zh": "渔翁,渔夫",
+			"ms": "NELAYAN"
+		},
+		"image": "gzt_996.png"
+	},
+	{
+		"number": "997",
+		"content": {
+			"en": "WHETSTONE",
+			"zh": "磨刀石",
+			"ms": "BATU ASAHAN"
+		},
+		"image": "gzt_997.png"
+	},
+	{
+		"number": "998",
+		"content": {
+			"en": "LAMP SHADE",
+			"zh": "灯罩",
+			"ms": "TEDUH LAMPU"
+		},
+		"image": "gzt_998.png"
+	},
+	{
+		"number": "999",
+		"content": {
+			"en": "BOWL RACK",
+			"zh": "碗橱",
+			"ms": "RAK MANGKUK"
+		},
+		"image": "gzt_999.png"
+	}
+]

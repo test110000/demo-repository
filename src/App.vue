@@ -2,17 +2,27 @@
 	<!-- <div style="background-color: grey;"> -->
 	<div style="background-color: #f8f9fa;">
 		<div class="app-container">
-			<div class="screen1024">
-				<div class="Leftside-bar">
-					<LeftSidebar />
-				</div>
-			</div>
+
 			<div>
-				<TopBar />
-				<router-view></router-view>
-			</div>
-			<div class="screen1024">
-				<RightColumn />
+				<div class="screen1024">
+					<div class="Leftside-bar">
+						<LeftSidebar />
+					</div>
+				</div>
+				<div class="screen-mobile">
+					<div class="Topbar-laptop">
+						<TopBar />
+					</div>
+					<div class="Topbar-TM" style="display: none;">
+						<TopBarTM />
+					</div>
+
+
+					<router-view></router-view>
+				</div>
+				<div class="screen1024">
+					<RightColumn />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -29,7 +39,7 @@ import TopBarTM from './components/topbar-tablet-mobile.vue'
 export default {
 	name: 'App',
 	components: {
-
+		LeftSidebar,
 		TopBar,
 		RightColumn,
 		TopBarTM
@@ -49,6 +59,7 @@ body {
 
 	height: 100vh;
 	width: 100%;
+	justify-content: center;
 }
 
 
@@ -74,6 +85,16 @@ body {
 @media screen and (max-width:1280px) {
 	.screen1024 {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.Topbar-laptop {
+		display: none;
+	}
+
+	.Topbar-TM {
+		display: flex !important;
 	}
 }
 </style>

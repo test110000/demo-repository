@@ -9,7 +9,11 @@
 						<div id="MG" class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="magnum_logo_bg">
+<<<<<<< HEAD
 									<img src="C:\Users\User\Desktop\demo-repository\public\image\magnumwin.svg">
+=======
+									<img src="/public/image/magnumwin.svg">
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 									<p style="color: white;">Magnum 4D</p>
 								</div>
 								<div>
@@ -390,7 +394,11 @@
 						<div id="DMG" class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="damacai_logo_bg">
+<<<<<<< HEAD
 									<img src="C:\Users\User\Desktop\demo-repository\public\image\damacai.svg">
+=======
+									<img src="/public/image/damacai2.svg">
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 									<p style="color: white;">Da Ma Cai 1+3D</p>
 								</div>
 								<div>
@@ -715,7 +723,11 @@
 						<div id="TT" class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="toto_logo_bg">
+<<<<<<< HEAD
 									<img src="C:\Users\User\Desktop\demo-repository\public\image\toto_logo.svg">
+=======
+									<img src="/public/image/toto.svg">
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 									<p style="color: white;">SportsToto 4D</p>
 								</div>
 								<div>
@@ -1063,8 +1075,13 @@
 						<div id="SG" class="col-12 col-sm-12 col-md-12 col-lg-5">
 							<div class="row">
 								<div class="sg_logo_bg">
+<<<<<<< HEAD
 									<img src="C:\Users\User\Desktop\demo-repository\public\image\sg4d.svg">
 									<p style="color: white;">Singapore 4D</p>
+=======
+									<img src="/public/image/sg.svg">
+									<p style="color: white;">Magnum 4D</p>
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 								</div>
 								<div>
 
@@ -3378,6 +3395,7 @@
 
 		</div>
 	</div>
+<<<<<<< HEAD
 
 
 
@@ -3385,6 +3403,8 @@
 
 
 
+=======
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 </template>
 <script>
 export default {
@@ -3399,16 +3419,72 @@ export default {
 	}
 
 	.all_col {
-		margin-inline: 20px;
+		margin-inline: 206px;
+		margin-top: 80px;
+		overflow-y: scroll;
+		height: calc(-5rem + 100dvh);
 	}
 }
 
+<<<<<<< HEAD
+=======
+/* @media and (max-width:) {} */
+
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 .all_column {
 	justify-content: center;
 	gap: 0.5rem;
 
 }
 
+<<<<<<< HEAD
+=======
+/*Magnum logo bg*/
+.magnum_logo_bg {
+	height: 226px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 70px;
+}
+
+/*Da Ma Cai logo bg*/
+.damacai_logo_bg {
+	align-content: center;
+	height: 180px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 75px;
+	border-bottom-left-radius: 75px;
+	background-color: #1C377B;
+}
+
+/*Toto logo bg */
+.toto_logo_bg {
+	align-content: center;
+	height: 180px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 75px;
+	border-bottom-left-radius: 75px;
+	background-color: #EC2024;
+}
+
+/*Singapore logo bg*/
+.sg_logo_bg {
+	align-content: center;
+	height: 180px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 75px;
+	border-bottom-left-radius: 75px;
+	background-color: #0093D8;
+}
+>>>>>>> 2684f650fa0ce770cf0f819c49d2c61dc375b723
 
 .date {
 	padding-bottom: 5px;
