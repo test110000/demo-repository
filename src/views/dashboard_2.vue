@@ -1,7 +1,4 @@
 <template>
-
-</template>
-<!-- <template>
 	<div class="dashboard">
 		<div class="draw-results">
 			<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" class="draw-section">
@@ -49,7 +46,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+
 
 export default {
 	data() {
@@ -166,4 +163,4 @@ export default {
 	background: #f0f0f0;
 	border-radius: 5px;
 }
-</style> -->
+</style>

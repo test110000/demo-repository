@@ -1,33 +1,50 @@
 <template>
-	<div class="container">
+
+
+	<div style="margin-top: 75px; background-color: #f8f9fa;" class="container">
 		<div class="row">
-			<div style="margin-top: 85px;" class="col-12">
+			<div style=" text-align: -webkit-center;" class="col-12">
 				<div class="title">
 					<p>Tua Pek Kong (Qian) Dictionary</p>
 				</div>
 			</div>
 			<!-- search -->
 			<div class="col-12" style="text-align: -webkit-center;">
-				<div class="search-container">
+				<div class="search_col">
 					<input v-model="searchText" type="text" placeholder="Search..." class="search-input" />
 					<button @click="performSearch" class="search-button">Search</button>
+
+					<div class="dropdown-container">
+						<div class="dropdown" @click="toggleDropdown">
+							<div class="dropdown-selected">{{ selectedRangeText }}</div>
+							<ul v-show="isDropdownOpen" class="dropdown-list">
+								<li @click="selectRange('all')">All</li>
+								<li v-for="range in ranges" :key="range.value" @click="selectRange(range.value)">
+									{{ range.text }}
+								</li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
-				<div class="tuaoekkong_col pekkong">
+
+				<div class="tuapekkong_col pekkong">
 					<div v-for="item in filteredItems" :key="item.number" class="item-container">
 						<div class="number_col">
 							<p>{{ item.number }}</p>
 						</div>
 						<div>
-							<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content.en" />
+							<img :src="`/imgs/gzt_webp/${item.image}`" :alt="item.content.en" />
 						</div>
-						<p>{{ item.content.en }}</p>
+						<p style="font-weight: bolder; font-size: 14px;">{{ item.content.en }}</p>
 					</div>
-					<div v-if="filteredItems.length === 0">No results found.</div>
+					<div v-if="filteredItems.length === 0 && searchText.length > 0">No results found.</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
+
 
 <script>
 export default {
@@ -35,28 +52,58 @@ export default {
 	data() {
 		return {
 			items: [],
-			searchText: ''
+			searchText: '',
+			selectedRange: 'all',
+			isDropdownOpen: false,
+			ranges: this.generateRanges(50, 999),
 		};
 	},
 	computed: {
 		filteredItems() {
-			if (!this.searchText) {
-				return this.items;
+			let items = this.items;
+
+			if (this.selectedRange !== 'all') {
+				const [min, max] = this.selectedRange.split('-').map(Number);
+				items = items.filter((item) => {
+					const number = parseInt(item.number, 10);
+					return number >= min && number <= max;
+				});
 			}
-			const query = this.searchText.toLowerCase();
-			return this.items.filter(item =>
-				item.number.toLowerCase().includes(query) ||
-				item.content.en.toLowerCase().includes(query)
-			);
+
+			if (this.searchText) {
+				const query = this.searchText.toLowerCase();
+				items = items.filter(
+					(item) =>
+						item.number.toLowerCase().includes(query) ||
+						item.content.en.toLowerCase().includes(query)
+				);
+			}
+
+			return items;
+		},
+		selectedRangeText() {
+			if (this.selectedRange === 'all') {
+				return 'All';
+			}
+			const range = this.ranges.find(range => range.value === this.selectedRange);
+			return range ? range.text : 'Select Range';
 		}
 	},
 	mounted() {
 		this.fetchItems();
 	},
 	methods: {
+		generateRanges(step, max) {
+			const ranges = [];
+			for (let i = 0; i <= max; i += step) {
+				const end = i + step - 1;
+				ranges.push({ text: `${i.toString().padStart(3, '0')}-${end.toString().padStart(3, '0')}`, value: `${i}-${end}` });
+			}
+			return ranges;
+		},
 		async fetchItems() {
 			try {
-				const response = await fetch('/src/assets/data/qzt.json');
+				const response = await fetch('/src/assets/data/gzt.json');
 				if (!response.ok) {
 					throw new Error('Network response was not ok');
 				}
@@ -69,16 +116,39 @@ export default {
 		performSearch() {
 			// Perform search logic if needed, currently just sets searchText
 		},
+		selectRange(range) {
+			this.selectedRange = range;
+			this.isDropdownOpen = false;
+		},
+		toggleDropdown() {
+			this.isDropdownOpen = !this.isDropdownOpen;
+		},
 		clearSearch() {
 			this.searchText = '';
 		},
-	}
+	},
 };
 </script>
 
 <style scoped>
+.topbar_logo {
+	-webkit-box-align: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #cf2e2e;
+	color: white;
+	padding: 10px 20px;
+}
+
 .title {
-	background-color: #CF2e2e;
+	background-color: #cf2e2e;
 	color: white;
 	height: 150px;
 	text-align: center;
@@ -89,12 +159,25 @@ export default {
 	border-bottom-left-radius: 30px;
 	font-size: 30px;
 	font-weight: bolder;
+	width: 100%;
+}
+
+@media screen and (min-width: 1023px) {
+	.title {
+		width: 65%;
+	}
 }
 
 .item-container {
-	display: inline-block;
-	text-align: center;
+	padding-top: 10px;
+	background-color: white;
+	/* padding-bottom: 10px; */
+	height: 200px;
 	text-align: -webkit-center;
+	width: 90%;
+	align-content: center;
+	place-self: center;
+	border-radius: 50px;
 }
 
 .number_col {
@@ -129,31 +212,51 @@ p {
 	padding-top: 10px;
 }
 
-.tuaoekkong_col {
+.tuapekkong_col {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	text-align-last: center;
-	width: 100%;
+	width: 50%;
 	text-align: -webkit-center;
+	place-content: center;
+	gap: 0.5rem;
+
 }
 
 @media (min-width: 600px) {
-	.tuaoekkong_col {
+	.tuapekkong_col {
 		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5rem;
+	}
+
+	.search_container {
+		width: 50%;
 	}
 }
 
-@media (min-width: 1024px) {
-	.tuaoekkong_col {
+@media (min-width: 1023px) {
+	.tuapekkong_col {
 		grid-template-columns: repeat(3, 1fr);
+		gap: 0.8rem;
 	}
 }
 
-.search-container {
-	display: flex;
-	align-items: center;
+@media screen and (min-width: 768px) {
+	.search_col {
+		width: 50%;
+		justify-content: center;
+		display: flex;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+.search_col {
 	justify-content: center;
-	margin: 20px 0;
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	gap: 0.5rem;
 }
 
 .search-input {
@@ -167,7 +270,7 @@ p {
 .search-button {
 	padding: 10px 20px;
 	border: none;
-	background-color: #CF2e2e;
+	background-color: #cf2e2e;
 	color: white;
 	border-radius: 5px;
 	cursor: pointer;
@@ -175,6 +278,54 @@ p {
 }
 
 .search-button:hover {
-	background-color: #a82727;
+	background-color: #cf2e2e;
+}
+
+/* Custom Dropdown Styles */
+.dropdown-container {
+	position: relative;
+	width: 200px;
+}
+
+.dropdown {
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	background-color: #cf2e2e;
+	border-radius: 10px;
+}
+
+.dropdown-selected {
+	background-color: #cf2e2e;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	font-weight: bolder;
+}
+
+.dropdown-list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	border: solid #cf2e2e;
+	border-radius: 15px;
+	max-height: 140px;
+	/* Show 7 options */
+	overflow-y: auto;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.dropdown-list li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.dropdown-list li:hover {
+	background: #bbb;
 }
 </style>
