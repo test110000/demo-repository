@@ -1,45 +1,68 @@
 <template>
-
-</template>
-<!-- <template>
 	<div class="dashboard">
 		<div class="draw-results">
-			<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" class="draw-section">
-				<div class="draw-header">
-					<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
-					<h1>{{ drawObj[Object.keys(drawObj)[0]].name }}</h1>
-				</div>
-				<div class="draw-info">
-					<span>Date: {{ getCurrentDate() }}</span>
-					<span>Draw No.: {{ drawObj[Object.keys(drawObj)[0]].DrawNo }}</span>
+			<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" class="draw-section  white-bg">
+				<div class="top-card-container" :style="{ backgroundColor: getBgColor(Object.keys(drawObj)[0]) }">
+					<div class="draw-header">
+						<div class="logo-white-container">
+							<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
+						</div>
+
+						<h1 class="logo-name title-font-size"
+							:style="{ color: getSectionTitleTextColor(Object.keys(drawObj)[0]) }">{{
+								drawObj[Object.keys(drawObj)[0]].name }}</h1>
+					</div>
+					<div class="draw-info">
+						<div class="date-info">
+							<span>Date: </span>
+							<span>{{ getCurrentDate() }}</span>
+						</div>
+						<hr aria-orientation="vertical" class="divider">
+						<div class="number-info">
+							<span>Draw No.: </span>
+							<span>{{ drawObj[Object.keys(drawObj)[0]].DrawNo }}</span>
+						</div>
+					</div>
 				</div>
 				<div class="prizes">
-					<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']" :key="index">
-						<h2>{{ prize }}</h2>
-						<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)] }}</div>
-					</div>
-					<div class="special">
-						<h2>Special</h2>
-						<div class="special-numbers">
-							<div v-for="(number, index) in getSpecialNumbers(drawObj[Object.keys(drawObj)[0]])"
-								:key="index" class="number">{{ number }}</div>
+					<div style="margin-inline: 1.25rem;">
+						<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']"
+							:key="index">
+							<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
+								:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
+							<div class="prize-number-container">
+								<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)]
+									}}
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="consolation">
-						<h2>Consolation</h2>
-						<div class="consolation-numbers">
-							<div v-for="(number, index) in getConsolationNumbers(drawObj[Object.keys(drawObj)[0]])"
-								:key="index" class="number">{{ number }}</div>
+						<div class="special">
+							<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+								:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Special</h2>
+							<div class="special-numbers">
+								<div v-for="(number, index) in getSpecialNumbers(drawObj[Object.keys(drawObj)[0]])"
+									:key="index" class="number">{{ number }}</div>
+							</div>
 						</div>
-					</div>
-					<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
-						<div class="jackpot-prize">
-							<h2>4D Jackpot 1 Prize</h2>
-							<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
+						<div class="consolation">
+							<h2 class="consolation-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+								:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Consolation</h2>
+							<div class="consolation-numbers">
+								<div v-for="(number, index) in getConsolationNumbers(drawObj[Object.keys(drawObj)[0]])"
+									:key="index" class="number">{{ number }}</div>
+							</div>
 						</div>
-						<div class="jackpot-prize">
-							<h2>4D Jackpot 2 Prize</h2>
-							<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP2 }}</div>
+						<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
+							<div class="jackpot-prize">
+								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 1 Prize</h2>
+								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
+							</div>
+							<div class="jackpot-prize">
+								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
+								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP2 }}</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -54,7 +77,93 @@ import axios from 'axios';
 export default {
 	data() {
 		return {
-			data: []
+			data: [],
+			imageOptions: [
+				{ src: 'public/image/DT1.png', alt: 'Image 1' },
+				{ src: 'public/image/DT2.png', alt: 'Image 2' }
+			],
+			styles: {
+				M: {
+					bgColor: 'black',
+					logoPath: 'public/image/magnum.svg',
+					prizeSectionColor: '#F5C500',
+					prizeSectionTextColor: 'black',
+					smallSectionColor: 'black', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				DMC: {
+					bgColor: '#1C377B',
+					logoPath: 'public/image/damacai2.svg',
+					prizeSectionColor: '#EC2024',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#1C377B', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				ST: {
+					bgColor: '#EC2024',
+					logoPath: 'public/image/toto.svg',
+					prizeSectionColor: 'black',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#EC2024', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				Spore: {
+					bgColor: '#0093D8',
+					logoPath: 'public/image/sg.svg',
+					prizeSectionColor: '#1C377B',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#0093D8', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				Sandakan: {
+					bgColor: '#F5C500',
+					logoPath: 'public/image/sandakan.svg',
+					prizeSectionColor: '#007A37',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#F5C500', // Combine colors here
+					sectionTitleTextColor: '#007A37'
+				},
+				Sabah: {
+					bgColor: '#EC2024',
+					logoPath: 'public/image/sabahtoto.svg',
+					prizeSectionColor: '#1D68A2',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#EC2024', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				SCS: {
+					bgColor: '#10A226',
+					logoPath: 'public/image/cashsweeptoto.svg',
+					prizeSectionColor: '#EC2024',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#10A226', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				H: {
+					bgColor: '#1A81BB',
+					logoPath: 'public/image/hariharitoto.svg',
+					prizeSectionColor: '#1C377B',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#1A81BB', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				PL: {
+					bgColor: '#1A81BB',
+					logoPath: 'public/image/pdntoto.svg',
+					prizeSectionColor: '#EC2024',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#1A81BB', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				GD: {
+					bgColor: '#EC2024',
+					logoPath: 'public/image/gdtoto.svg',
+					prizeSectionColor: '#F5C500',
+					prizeSectionTextColor: 'black',
+					smallSectionColor: '#EC2024', // Combine colors here
+					sectionTitleTextColor: 'white'
+				}
+			}
 		};
 	},
 	mounted() {
@@ -82,24 +191,40 @@ export default {
 			return `${year}-${month}-${day}`;
 		},
 		getLogo(type) {
-			// Return the appropriate logo URL based on the type
-			switch (type) {
-				case 'M': return 'public/image/magnum.svg';
-				case 'DMC': return 'public/image/damacai2.svg';
-				case 'ST': return 'public/image/toto.svg';
-				case 'Spore': return 'public/image/sg.svg';
-				case 'Sandakan': return 'public/image/sandakan.svg';
-				case 'Sabah': return 'public/image/sabahtoto.svg';
-				case 'SCS': return 'public/image/cashsweeptoto.svg';
-				case 'H': return 'public/image/hariharitoto.svg';
-				case 'PL': return 'public/image/pdntoto.svg';
-				case 'GD': return 'public/image/gdtoto.svg';
-				default: return 'path/to/default-logo.png';
-			}
+			return this.styles[type].logoPath;
+		},
+		getBgColor(type) {
+			return this.styles[type].bgColor;
+		},
+		getPrizeStyle(type) {
+			return {
+				backgroundColor: this.styles[type].prizeSectionColor,
+				color: this.styles[type].prizeSectionTextColor
+			};
+		},
+		getSectionTitleTextColor(type) {
+			return this.styles[type].sectionTitleTextColor;
+		},
+		getSmallSectionStyle(type) {
+			return {
+				backgroundColor: this.styles[type].smallSectionColor,
+				color: this.styles[type].sectionTitleTextColor
+			};
 		},
 		getSpecialNumbers(draw) {
-			// Extract special numbers from the draw object
-			return [draw.S1, draw.S2, draw.S3, draw.S4, draw.S5, draw.S6, draw.S7, draw.S8, draw.S9, draw.S10, draw.S11, draw.S12, draw.S13].filter(num => num !== '----');
+			// If DT1 and DT2 exist for "Lucky Hari Hari", use them; otherwise, fall back to default behavior
+			if (draw.H && draw.H.DT1 && draw.H.DT2) {
+				return [
+					draw.S1, draw.H.DT1.S2, draw.H.DT1.S3, draw.H.DT1.S4, draw.H.DT1.S5, draw.H.DT1.S6, draw.H.DT1.S7,
+					draw.H.DT1.S8, draw.H.DT1.S9, draw.H.DT1.S10, draw.H.DT1.S11, draw.H.DT1.S12, draw.H.DT1.S13,
+				];
+			} else {
+				// Fall back to the normal behavior if DT1 and DT2 don't exist
+				return [
+					draw.S1, draw.S2, draw.S3, draw.S4, draw.S5, draw.S6, draw.S7, draw.S8, draw.S9, draw.S10,
+					draw.S11, draw.S12, draw.S13
+				];
+			}
 		},
 		getConsolationNumbers(draw) {
 			// Extract consolation numbers from the draw object
@@ -111,28 +236,144 @@ export default {
 
 <style scoped>
 .dashboard {
-	margin-inline: 206px;
 	margin-top: 80px;
-	overflow-y: scroll;
 	height: calc(-5rem + 100dvh);
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.dashboard::-webkit-scrollbar {
+	display: none;
+	/* For Chrome, Safari, and Opera */
+}
+
+@media screen and (min-width: 1280px) {
+
+	.dashboard {
+		margin-inline: 206px;
+	}
+
 }
 
 .draw-results {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
 	font-family: Arial, sans-serif;
 	text-align: center;
 }
 
+.top-card-container {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 0 50px 50px;
+}
+
+@media (min-width: 778px) {
+
+	.top-card-container {
+		height: 170px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		padding-top: 16px;
+	}
+
+}
+
 .draw-section {
 	margin-bottom: 40px;
+	width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+
+	.draw-section {
+		width: 400px !important;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.draw-section {
+		width: 370px;
+		border-radius: 20px;
+	}
+
+}
+
+.draw-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo-white-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75px;
+	width: 75px;
+	background-color: white;
+	border-radius: 50%;
 }
 
 .draw-logo {
-	width: 100px;
-	height: auto;
+	height: 65px;
+	width: 65px;
+	border-radius: 100%;
 }
 
-.draw-info,
-.prizes,
+@media (min-width: 320px) {
+
+	.draw-logo {
+		height: 70px;
+		width: 70px;
+	}
+
+	.logo-white-container {
+		height: 80px;
+		width: 80px;
+
+	}
+
+}
+
+.draw-info {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	z-index: 997;
+	margin-top: 2px;
+	margin-inline: 20px;
+	border-radius: 17px;
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 6px;
+}
+
+.date-info {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+}
+
+.number-info {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+}
+
+.divider {
+	opacity: 0.6;
+	border-width: 0px 0px 0px 1px;
+	border-image: initial;
+	border-style: solid;
+	border-color: rgb(138, 138, 138);
+	height: 30px;
+	margin: auto 20px;
+}
+
 .special,
 .consolation,
 .jackpot {
@@ -145,11 +386,29 @@ export default {
 	margin: 10px;
 }
 
-.prize-number,
-.amount,
-.number {
+.prize-number {
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: 700;
+	width: 90px;
+	margin: 5px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+}
+
+.amount {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 5px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+	width: 150px;
+}
+
+.number {
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .special-numbers,
@@ -162,8 +421,29 @@ export default {
 .number {
 	width: 60px;
 	margin: 5px;
-	padding: 10px;
-	background: #f0f0f0;
+	background: white;
 	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
 }
-</style> -->
+
+.title-font-size {
+	font-size: 18px;
+}
+
+.prizes {
+	padding-top: 20px;
+}
+
+.white-bg {
+	background-color: white;
+}
+
+.small-title-top-bottom-padding {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.b-r-10px {
+	border-radius: 10px;
+}
+</style>

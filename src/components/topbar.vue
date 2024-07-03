@@ -1,5 +1,5 @@
 <template>
-	<div class="top-bar" style="background-color: #CF2E2E; width: calc(100% - 206px);">
+	<div class="top-bar" style="background-color: #CF2E2E;">
 		<div class="full-width plr-20">
 			<div class="top">
 				<a class="display-img" href="#">
@@ -167,6 +167,12 @@ export default {
 	right: 0;
 	width: 100%;
 	align-content: center;
+}
+
+@media screen and (min-width: 1281px) {
+	.top-bar {
+		width: calc(100% - 206px);
+	}
 }
 
 .top {

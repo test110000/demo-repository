@@ -13,8 +13,7 @@ defineProps({
 			<div class="sidebar" style="background-color: #CF2E2E;">
 				<div style="background: white; height: 100%; border-top-right-radius: 50px;">
 					<div class="logo_col">
-						<img class="d_num_logo"
-							src="C:\Users\User\Desktop\demo-repository\public\image\4D-lottery-wording.png">
+						<img class="d_num_logo" src="/public/image/4D-lottery-wording.png">
 					</div>
 					<div class="sidebar-main">
 						<p class="results_install_app_text">Results</p>

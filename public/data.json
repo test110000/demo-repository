@@ -220,9 +220,9 @@
 	},
 	{
 		"H": {
+			"name": "Lucky Hari Hari",
+			"DrawNo": "2723",
 			"DT1": {
-				"name": "Lucky Hari Hari",
-				"DrawNo": "2723",
 				"P1": 2498,
 				"P2": 4983,
 				"P3": 5454,
@@ -252,8 +252,6 @@
 				"JP": "RM9,538,072.00"
 			},
 			"DT2": {
-				"name": "Lucky Hari Hari",
-				"DrawNo": "2722",
 				"P1": 3487,
 				"P2": 3922,
 				"P3": 1029,
@@ -284,9 +282,9 @@
 			}
 		},
 		"PL": {
+			"name": "Perdana Lottery",
+			"DrawNo": "----",
 			"DT1": {
-				"name": "Perdana Lottery",
-				"DrawNo": "----",
 				"P1": 9387,
 				"P2": 9832,
 				"P3": 2398,
@@ -315,8 +313,6 @@
 				"C10": 7896
 			},
 			"DT2": {
-				"name": "Perdana Lottery",
-				"DrawNo": "----",
 				"P1": 2398,
 				"P2": 2093,
 				"P3": 2328,

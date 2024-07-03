@@ -6,6 +6,7 @@ import LuckyBook from '../views/LuckyBook.vue'
 import TuaPekKong from '../views/TuaPekKong.vue'
 import GuanYin from '../views/GuanYin.vue'
 import TuaPekKongQian from '../views/gzt.vue'
+// import Dashboard_2 from '../views/dashboard_2.vue'
 
 
 /*import Jackpot from '../views/Jackpot.vue'
@@ -21,20 +22,20 @@ const routes = [
 		//name: 'Dashboard',
 		//component: Dashboard
 	},
-	// {
-	// 	path: '/',	
-	// 	name: 'Dashboard',
-	// 	component: Dashboard
-	// },
+	{
+		path: '/',
+		name: 'Dashboard',
+		component: Dashboard
+	},
 	{
 		path: '/spin-my-luck',
 		name: 'SpinMyLuck',
 		component: SpinMyLuck
 	},
 	{
-		path: '/',
-		name: 'LuckyBook',
-		component: LuckyBook
+		// path: '/',
+		// name: 'LuckyBook',
+		// component: LuckyBook
 	},
 	{
 		path: '/tuapekkong',
