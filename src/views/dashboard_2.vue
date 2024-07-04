@@ -26,17 +26,20 @@
 				</div>
 				<div class="prizes">
 					<div style="margin-inline: 1.25rem;">
-						<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']"
-							:key="index">
-							<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
-								:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
-							<div class="prize-number-container">
-								<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)]
-									}}
+						<div class="prize-section">
+							<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']"
+								:key="index">
+								<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
+									:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
+								<div class="prize-number-container">
+									<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)]
+										}}
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="special">
+						
+						<div class="special special-section-min-height">
 							<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
 								:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Special</h2>
 							<div class="special-numbers">
@@ -243,6 +246,12 @@ export default {
 	-ms-overflow-style: none;
 }
 
+@media screen and (max-width: 769px) {
+	.dashboard{
+		margin-inline: 20px;
+	}
+}
+
 .dashboard::-webkit-scrollbar {
 	display: none;
 	/* For Chrome, Safari, and Opera */
@@ -269,22 +278,36 @@ export default {
 	display: flex;
 	flex-direction: column;
 	border-radius: 0 0 50px 50px;
+	padding-top: 16px;
 }
 
-@media (min-width: 778px) {
+@media (min-width: 768px) {
 
 	.top-card-container {
 		height: 170px;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		padding-top: 16px;
+
 	}
 
+}
+
+.prize-section {
+	display: flex;
+	justify-content: center;
 }
 
 .draw-section {
 	margin-bottom: 40px;
 	width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+	.draw-section {
+		border-radius: 20px;
+	}
+	
 }
 
 @media screen and (min-width: 960px) {
@@ -295,7 +318,7 @@ export default {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
 	.draw-section {
 		width: 370px;
@@ -406,11 +429,6 @@ export default {
 	width: 150px;
 }
 
-.number {
-	font-size: 18px;
-	font-weight: 700;
-}
-
 .special-numbers,
 .consolation-numbers {
 	display: flex;
@@ -419,11 +437,26 @@ export default {
 }
 
 .number {
+	font-size: 18px;
+	font-weight: 700;
 	width: 60px;
 	margin: 5px;
 	background: white;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+}
+
+@media screen and (max-width: 580px) {
+	.number {
+		width: 15% !important;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.number {
+		width: 18%;
+	}
 }
 
 .title-font-size {
@@ -445,5 +478,9 @@ export default {
 
 .b-r-10px {
 	border-radius: 10px;
+}
+
+.special-section-min-height {
+	min-height: 160px;
 }
 </style>

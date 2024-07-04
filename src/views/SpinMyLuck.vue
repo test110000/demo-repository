@@ -1,69 +1,68 @@
 <template>
+
+	<!--here is top bar-->
 	<div class="container">
 		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
 			<div class="lucky_col">
 				<div class="luckyspin_bg">
 					<p>Lucky Spin</p>
 				</div>
-				<br>
 
-				<!-- 4D number -->
-				<div class="num4d_col">
-					<div class="num4d_col_sm">
-						<div class="num4d">
-							<p>4D NUMBER</p>
-						</div>
-						<div class="spinner-column_bg">
-							<div class=""></div>
-							<div v-for="(column, columnIndex) in columns" :key="columnIndex" class="spinner-column">
-								<div v-for="number in column" :key="number" class="spinner-number"
-									:style="{ transform: 'translateY(' + spins[columnIndex] + 'px)' }">
-									{{ number }}
+				<div class="all_spincol">
+					<!-- 4D number -->
+					<div class="num4d_col">
+						<div class="num4d_col_sm">
+							<div class="num4d">
+								<p>4D NUMBER</p>
+							</div>
+							<div class="spinner-column_bg">
+								<div v-for="(column, columnIndex) in columns" :key="columnIndex" class="spinner-column">
+									<div v-for="number in column" :key="number" class="spinner-number"
+										:style="{ transform: 'translateY(' + spins[columnIndex] + 'px)' }">
+										{{ number }}
+									</div>
 								</div>
 							</div>
-							<div class=""></div>
+							<button class="btn_4d" @click="toggleSpinStop">{{ buttonLabel }}</button>
 						</div>
-						<button class="btn_4d" @click="toggleSpinStop">{{ buttonLabel }}</button>
 					</div>
-				</div>
 
-				<!-- 6D number (first) -->
-				<div class="num4d_col">
-					<div class="num4d_col_sm">
-						<div class="num4d">
-							<p>6D NUMBER</p>
-						</div>
-						<div class="spinner-column_bg">
-							<div class=""></div>
-							<div v-for="(column, columnIndex) in columns2" :key="columnIndex" class="spinner-column">
-								<div v-for="number in column" :key="number" class="spinner-number"
-									:style="{ transform: 'translateY(' + spins2[columnIndex] + 'px)' }">
-									{{ number }}
+					<!-- 6D number (first) -->
+					<div class="num4d_col">
+						<div class="num4d_col_sm">
+							<div class="num4d">
+								<p>6D NUMBER</p>
+							</div>
+							<div class="spinner-column_bg">
+								<div v-for="(column, columnIndex) in columns2" :key="columnIndex"
+									class="spinner-column">
+									<div v-for="number in column" :key="number" class="spinner-number"
+										:style="{ transform: 'translateY(' + spins2[columnIndex] + 'px)' }">
+										{{ number }}
+									</div>
 								</div>
 							</div>
-							<div class=""></div>
+							<button class="btn_4d" @click="toggleSpinStop2">{{ buttonLabel2 }}</button>
 						</div>
-						<button class="btn_4d" @click="toggleSpinStop2">{{ buttonLabel2 }}</button>
 					</div>
-				</div>
 
-				<!-- jackpot number -->
-				<div class="num4d_col">
-					<div class="num4d_col_sm">
-						<div class="num4d">
-							<p>JACKPOT NUMBER</p>
-						</div>
-						<div class="spinner-column_bg">
-							<div class=""></div>
-							<div v-for="(column, columnIndex) in columns3" :key="columnIndex" class="spinner-column">
-								<div v-for="number in column" :key="number" class="spinner-number"
-									:style="{ transform: 'translateY(' + spins3[columnIndex] + 'px)' }">
-									{{ number }}
+					<!-- jackpot number -->
+					<div class="num4d_col">
+						<div class="num4d_col_sm">
+							<div class="num4d">
+								<p>JACKPOT NUMBER</p>
+							</div>
+							<div class="spinner-column_bg">
+								<div v-for="(column, columnIndex) in columns3" :key="columnIndex"
+									class="spinner-column">
+									<div v-for="number in column" :key="number" class="spinner-number"
+										:style="{ transform: 'translateY(' + spins3[columnIndex] + 'px)' }">
+										{{ number }}
+									</div>
 								</div>
 							</div>
-							<div class=""></div>
+							<button class="btn_4d" @click="toggleSpinStop3">{{ buttonLabel3 }}</button>
 						</div>
-						<button class="btn_4d" @click="toggleSpinStop3">{{ buttonLabel3 }}</button>
 					</div>
 				</div>
 
@@ -71,6 +70,7 @@
 		</div>
 	</div>
 </template>
+
 
 <script>
 export default {
@@ -367,10 +367,18 @@ export default {
 }
 
 .lucky_col {
+	width: 100%;
 	text-align: center;
 	background: rgb(255, 255, 255);
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
+}
+
+@media (min-width: 1024px) {
+	.lucky_col {
+		width: 70%;
+		/* Adjusted for desktop screens */
+	}
 }
 
 .num4d_col {
@@ -386,8 +394,7 @@ export default {
 	flex-direction: column;
 	align-items: center;
 	background-color: #ffffff;
-	position: relative;
-	top: -51px;
+
 	border-radius: 50px;
 	width: 90%;
 }
@@ -435,7 +442,6 @@ export default {
 	height: 100px;
 	display: flex;
 	justify-content: center;
-
 	font-size: 48px;
 	transition: transform 0.1s linear;
 	font-weight: bold;
@@ -454,7 +460,7 @@ export default {
 	top: -71px;
 	font-weight: bold;
 	height: 130px;
-	width: 12%;
+	width: 16%;
 	font-size: 27px;
 	display: flex;
 	justify-content: center;
@@ -504,9 +510,7 @@ p {
 
 	.spinner-column {
 		width: 80px;
-		/* Reduce width for tablet view */
 		height: 80px;
-		/* Reduce height for tablet view */
 	}
 }
 
@@ -527,9 +531,7 @@ p {
 
 	.spinner-column {
 		width: 60px;
-		/* Further reduce width for smaller tablets */
 		height: 60px;
-		/* Further reduce height for smaller tablets */
 	}
 }
 
@@ -537,7 +539,6 @@ p {
 	.btn_4d {
 		width: 96px;
 		font-size: 16px;
-
 	}
 
 	.num4d {
@@ -550,9 +551,7 @@ p {
 
 	.spinner-column {
 		width: 50px;
-		/* Reduce width for mobile view */
 		height: 50px;
-		/* Reduce height for mobile view */
 	}
 }
 </style>
