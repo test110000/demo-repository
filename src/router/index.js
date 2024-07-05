@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-// Lazy load the components
+
 const Dashboard = () => import('../views/dashboard.vue');
 const SpinMyLuck = () => import('../views/SpinMyLuck.vue');
 const LuckyBook = () => import('../views/LuckyBook.vue');

@@ -4,17 +4,7 @@
 			:class="['image-container', { active: activeIndex === index }]" @click="handleClick(index)">
 			<img :src="image" class="round-image" />
 		</div>
-		<!-- <div style="position: relative;">
-			<div style="position: absolute; right :15px; top: 40px;">
-				<div class="refresh-icon" style="position: relative; ">
-					<div style="position: absolute; right: 12px; top: 4px;">
-						<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
-							&#x21BA;
-						</a>
-					</div>
-				</div>
-			</div>
-		</div> -->
+
 	</div>
 </template>
 

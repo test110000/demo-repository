@@ -5,8 +5,7 @@
 			<div class="sidebar" style="background-color: #CF2E2E;">
 				<div style="background: white; height: 100%; border-top-right-radius: 50px;">
 					<div class="logo_col">
-						<img class="d_num_logo"
-							src="C:\Users\User\Desktop\demo-repository\public\image\4D-lottery-wording.png">
+						<img class="d_num_logo" src="/public/image/4D-lottery-wording.png">
 					</div>
 					<div class="sidebar-main">
 						<p class="results_install_app_text">Results</p>
@@ -141,6 +140,7 @@ export default {
 	-webkit-box-align: center;
 	align-items: center;
 	color: rgb(0, 0, 0);
+	padding-bottom: 0 !important;
 }
 
 .results_install_app_text {
@@ -152,7 +152,7 @@ export default {
 	-webkit-box-align: center;
 	align-items: center;
 	padding-top: 40px;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 	color: rgb(0, 0, 0);
 }
 

@@ -1,8 +1,10 @@
 <template>
 	<div class="container">
-		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
+		<div style="text-align: -webkit-center;" class="col-12 spincol">
 			<div class="lucky_col">
-				<nav class="navbar" style="display: none;">
+
+
+				<nav class="navbar mobile_navbar" style="display: none;">
 					<div style="position: absolute;
     						top: 25px;" class="container-fluid">
 						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -10,6 +12,7 @@
 							aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
+
 						<div class="offcanvas offcanvas-start border-top-bottom-right-80px width-sidebar" tabindex="-1"
 							id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 							<div class="offcanvas-header">
@@ -54,6 +57,7 @@
 						</div>
 					</div>
 				</nav>
+
 
 
 				<div class="luckyspin_bg">
@@ -413,6 +417,18 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (min-width: 770px) {
+	.spincol {
+		margin-top: 73px !important;
+	}
+}
+
+.spincol {
+	margin-top: 0px;
+}
+
+
+
 .luckyspin_bg {
 	background-color: #CF2E2E;
 	color: white;
@@ -442,7 +458,7 @@ export default {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 	.top {
 		width: 100%;
 	}
@@ -485,6 +501,52 @@ export default {
 
 	border-radius: 50px;
 	width: 90%;
+}
+
+.navbar-toggler {
+	color: #CF2E2E;
+	border: none;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=UTF8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+	color: #CF2E2E;
+	border: none;
+}
+
+.navbar-nav .nav-link img {
+	vertical-align: middle;
+}
+
+.nav-link {
+	display: flex;
+}
+
+.nav-link h5 {
+	margin: 0;
+	font-size: 1.25rem;
+	padding-bottom: 20px;
+	padding-top: 6px;
+	color: rgb(243, 6, 6) !important;
+	font-weight: 700;
+}
+
+
+
+.navbar-brand img {
+	vertical-align: middle;
+}
+
+.navbar-brand {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-brand span {
+	margin-left: 10px;
 }
 
 .num4d {
@@ -642,4 +704,6 @@ p {
 		height: 50px;
 	}
 }
+
+nav {}
 </style>

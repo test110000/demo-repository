@@ -10,11 +10,8 @@
 				<div class="Topbar-laptop">
 					<TopBar />
 				</div>
-				<div class="Topbar-TM" style="display: none;">
-					<TopBarTM />
-				</div>
-				<div class="main-content">
 
+				<div class="main-content">
 					<router-view></router-view>
 
 				</div>
@@ -23,6 +20,9 @@
 				<RightColumn />
 			</div>
 		</div>
+		<div class="screen1024">
+			<RightColumn />
+		</div>
 	</div>
 </template>
 <script>
@@ -30,6 +30,7 @@ import LeftSidebar from './components/LeftSidebar.vue'
 import TopBar from './components/topbar.vue'
 import RightColumn from './components/right.vue'
 import TopBarTM from './components/topbar-tablet-mobile.vue'
+
 export default {
 	name: 'App',
 	components: {
@@ -47,21 +48,8 @@ body {
 	margin: 0;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-	transition: opacity 0.5s;
-}
-
-.fade-enter,
-.fade-leave-to
-
-/* .fade-leave-active in <2.1.8 */
-	{
-	opacity: 0;
-}
-
 .app-background {
-	background-color: #F8F9FA;
+	background-color: #f8f9fa;
 	height: 100%;
 }
 
@@ -105,12 +93,9 @@ body {
 }
 
 @media screen and (max-width: 769px) {
+
 	.Topbar-laptop {
 		display: none;
-	}
-
-	.Topbar-TM {
-		display: flex !important;
 	}
 }
 </style>

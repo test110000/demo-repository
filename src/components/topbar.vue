@@ -6,8 +6,8 @@
 					<a class="display-img" href="#">
 						&#x2630;
 					</a>
-					<nav class="navbar" style="display: none;">
-						<div class="container-fluid">
+					<nav class="navbar desktop_navbar" style="display: none;">
+						<div class="container-fluid ">
 							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
 								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
 								aria-label="Toggle navigation">
@@ -19,13 +19,14 @@
 									<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
 										aria-label="Close"></button>
 								</div>
+
 								<div class="offcanvas-body">
 									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 										<li class="nav-item">
 											<h5 class="nav-link">Results</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#" @click="Dashboard">
+											<a class="nav-link" href="/">
 												<img src="/public/image/dashboard.png"
 													style="width: 25px; margin-right: 13px;">
 												Dashboard
@@ -35,14 +36,14 @@
 											<h5 class="nav-link">ToolBox</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#" @click="goToSpinMyLuck">
+											<a class="nav-link" href="/spin-my-luck">
 												<img src="/public/image/spin.png"
 													style="width: 25px; margin-right: 13px;">
 												Spin My Luck
 											</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#" @click="goToLuckyBook">
+											<a class="nav-link" href="/lucky-book">
 												<img src="/public/image/book.png"
 													style="width: 25px; margin-right: 13px;">
 												Lucky Book
@@ -53,6 +54,8 @@
 							</div>
 						</div>
 					</nav>
+
+
 					<div class="Logo_4D" style="display: none;">
 						<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
 							src="/public/image/4D-lottery-single.png">
@@ -315,7 +318,7 @@ export default {
 	font-size: 1.25rem;
 	padding-bottom: 20px;
 	padding-top: 6px;
-	color: rgb(0, 0, 0) !important;
+	color: rgb(243, 6, 6) !important;
 	font-weight: 700;
 }
 
@@ -349,7 +352,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
 }
 
 .refresh-arrow {
@@ -370,5 +373,10 @@ export default {
 
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=UTF8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+	color: #CF2E2E;
+	border: none;
 }
 </style>

@@ -1,0 +1,102 @@
+{
+	"M": {
+		"logo-img-path": "public/image/magnum.svg",
+		"bg-color": "black",
+		"prize-section-color": "#F5C500",
+		"prize-section-text-color": "black",
+		"special-section-color": "black",
+		"consolation-section-color": "black",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "black"
+	},
+	"DMC": {
+		"logo-img-path": "public/image/damacai2.svg",
+		"bg-color": "#1C377B",
+		"prize-section-color": "#EC2024",
+		"prize-section-text-color": "white",
+		"special-section-color": "#1C377B",
+		"consolation-section-color": "#1C377B",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#1C377B"
+	},
+	"ST": {
+		"logo-img-path": "public/image/toto.svg",
+		"bg-color": "#EC2024",
+		"prize-section-color": "black",
+		"prize-section-text-color": "white",
+		"special-section-color": "#EC2024",
+		"consolation-section-color": "#EC2024",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#EC2024"
+	},
+	"Spore": {
+		"logo-img-path": "public/image/sg.svg",
+		"bg-color": "#0093D8",
+		"prize-section-color": "#1C377B",
+		"prize-section-text-color": "white",
+		"special-section-color": "#0093D8",
+		"consolation-section-color": "#0093D8",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#0093D8"
+	},
+	"Sandakan": {
+		"logo-img-path": "public/image/sandakan.svg",
+		"bg-color": "#F5C500",
+		"prize-section-color": "#007A37",
+		"prize-section-text-color": "white",
+		"special-section-color": "#F5C500",
+		"consolation-section-color": "#F5C500",
+		"section-title-text-color": "#007A37",
+		"jackpot-section-color": "#F5C500"
+	},
+	"Sabah": {
+		"logo-img-path": "public/image/sabahtoto.svg",
+		"bg-color": "#EC2024",
+		"prize-section-color": "#1D68A2",
+		"prize-section-text-color": "white",
+		"special-section-color": "#EC2024",
+		"consolation-section-color": "#EC2024",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#EC2024"
+	},
+	"SCS": {
+		"logo-img-path": "public/image/cashsweeptoto.svg",
+		"bg-color": "#10A226",
+		"prize-section-color": "#EC2024",
+		"prize-section-text-color": "white",
+		"special-section-color": "#10A226",
+		"consolation-section-color": "#10A226",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#10A226"
+	},
+	"H": {
+		"logo-img-path": "public/image/hariharitoto.svg",
+		"bg-color": "#1A81BB",
+		"prize-section-color": "#1C377B",
+		"prize-section-text-color": "white",
+		"special-section-color": "#1A81BB",
+		"consolation-section-color": "#1A81BB",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#1A81BB"
+	},
+	"PL": {
+		"logo-img-path": "public/image/pdntoto.svg",
+		"bg-color": "#1A81BB",
+		"prize-section-color": "#EC2024",
+		"prize-section-text-color": "white",
+		"special-section-color": "#1A81BB",
+		"consolation-section-color": "#1A81BB",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#1A81BB"
+	},
+	"GD": {
+		"logo-img-path": "public/image/gdtoto.svg",
+		"bg-color": "#EC2024",
+		"prize-section-color": "#F5C500",
+		"prize-section-text-color": "black",
+		"special-section-color": "#EC2024",
+		"consolation-section-color": "#EC2024",
+		"section-title-text-color": "white",
+		"jackpot-section-color": "#EC2024"
+	}
+}
