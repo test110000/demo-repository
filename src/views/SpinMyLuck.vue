@@ -1,10 +1,63 @@
 <template>
-
-	<!--here is top bar-->
 	<div class="container">
 		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
 			<div class="lucky_col">
+				<nav class="navbar" style="display: none;">
+					<div style="position: absolute;
+    						top: 25px;" class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="offcanvas offcanvas-start border-top-bottom-right-80px width-sidebar" tabindex="-1"
+							id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+							<div class="offcanvas-header">
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+									aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<div class="sidebar-main">
+									<p class="results_install_app_text">Results</p>
+									<br>
+									<div class="menu">
+										<!--dashboard-->
+										<div class="text_col">
+											<img @click="goToDashboard" class="pic" src="\public\image\dashboard.png">
+											<p @click="goToDashboard" class="text_menu">Dashboard</p>
+
+										</div>
+									</div>
+									<br>
+									<br><br>
+									<p class="toolbox_text">Toolbox</p>
+									<br>
+									<!--Spin My Luck-->
+									<div class="menu">
+										<div class="text_col">
+
+											<img @click="goToSpinMyLuck" class="pic" src="\public\image\spin.png">
+											<p @click="goToSpinMyLuck" class="text_menu">Spin My Luck</p>
+
+										</div>
+									</div>
+									<br>
+									<!--Lucky Book-->
+									<div class="menu">
+										<div class="text_col">
+											<img @click="goToLuckyBook" class="pic" src="\public\image\book.png">
+											<p @click="goToLuckyBook" class="text_menu">Lucky Book</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+
 				<div class="luckyspin_bg">
+
 					<p>Lucky Spin</p>
 				</div>
 
@@ -346,6 +399,15 @@ export default {
 			this.spinTimeouts3.forEach(timeout => clearTimeout(timeout));
 			this.spinIntervals3.forEach(interval => clearInterval(interval));
 		},
+		goToDashboard() {
+			this.$router.push('/');
+		},
+		goToSpinMyLuck() {
+			this.$router.push('/spin-my-luck');
+		},
+		goToLuckyBook() {
+			this.$router.push('/lucky-book');
+		},
 	}
 }
 </script>
@@ -377,7 +439,33 @@ export default {
 @media (min-width: 1024px) {
 	.lucky_col {
 		width: 70%;
-		/* Adjusted for desktop screens */
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.top {
+		width: 100%;
+	}
+
+	.navbar {
+		display: block !important;
+	}
+
+	.Logo_4D {
+		display: flex !important;
+	}
+
+	.display-img {
+		display: none !important;
+	}
+
+	.logo_col {
+		width: auto !important;
+	}
+
+	.logo img {
+		width: 35px;
+		height: 35px;
 	}
 }
 

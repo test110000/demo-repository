@@ -1,16 +1,12 @@
 <template>
-
-
-	<div style="margin-top: 75px; background-color: #f8f9fa;" class="container">
-		<div class="row">
-			<div style=" text-align: -webkit-center;" class="col-12">
-				<div class="title">
+	<div style="text-align: -webkit-center;" class="container">
+		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
+			<div class="title">
+				<div class="dictionary">
 					<p>Tua Pek Kong (Wan) Dictionary</p>
 				</div>
-			</div>
-			<!-- search -->
-			<div class="col-12" style="text-align: -webkit-center;">
 				<div class="search_col">
+					<!-- Search Input and Dropdown -->
 					<input v-model="searchText" type="text" placeholder="Search..." class="search-input" />
 					<button @click="performSearch" class="search-button">Search</button>
 
@@ -25,26 +21,39 @@
 							</ul>
 						</div>
 					</div>
-
 				</div>
+			</div>
+		</div>
 
-				<div class="tuapekkong_col pekkong">
-					<div v-for="item in filteredItems" :key="item.number" class="item-container">
-						<div class="number_col">
-							<p>{{ item.number }}</p>
-						</div>
-						<div>
-							<img :src="`/imgs/wzt_webp/${item.image}`" :alt="item.content.en" />
-						</div>
-						<p style="font-weight: bolder; font-size: 14px;">{{ item.content.en }}</p>
-					</div>
-					<div v-if="filteredItems.length === 0 && searchText.length > 0">No results found.</div>
+		<div class="tuapekkong_col pekkong">
+			<div v-for="(item, index) in paginatedItems" :key="index" class="item-container">
+				<div class="number_col">
+					<p>{{ item.number }}</p>
 				</div>
+				<div>
+					<template v-if="item.loading">
+						<!-- SVG Placeholder -->
+						<svg class="placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+							<rect width="100" height="100" fill="#ddd" />
+						</svg>
+					</template>
+					<template v-else>
+						<img :src="`/imgs/wzt_webp/${item.image}`" :alt="item.content.en" />
+					</template>
+				</div>
+				<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
+			</div>
+			<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
+			<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.</div>
+
+			<!-- Bootstrap Spinner -->
+			<div v-if="isLoadingMore" class="text-center">
+				<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+				Loading...
 			</div>
 		</div>
 	</div>
 </template>
-
 
 <script>
 export default {
@@ -56,6 +65,11 @@ export default {
 			selectedRange: 'all',
 			isDropdownOpen: false,
 			ranges: this.generateRanges(500, 9999),
+			isLoadingItems: false,
+			isLoadingMore: false, // Track loading more items
+			loadedItemsCount: 10,
+			initialLoadCount: 27,
+			batchLoadCount: 5, // Adjust as needed
 		};
 	},
 	computed: {
@@ -87,6 +101,9 @@ export default {
 			}
 			const range = this.ranges.find(range => range.value === this.selectedRange);
 			return range ? range.text : 'Select Range';
+		},
+		paginatedItems() {
+			return this.filteredItems.slice(0, this.loadedItemsCount);
 		}
 	},
 	mounted() {
@@ -97,24 +114,39 @@ export default {
 			const ranges = [];
 			for (let i = 0; i <= max; i += step) {
 				const end = i + step - 1;
-				ranges.push({ text: `${i.toString().padStart(4, '0')}-${end.toString().padStart(4, '0')}`, value: `${i}-${end}` });
+				ranges.push({ text: `${i.toString().padStart(4, '0')}-${end.toString().padStart(3, '0')}`, value: `${i}-${end}` });
 			}
 			return ranges;
 		},
 		async fetchItems() {
 			try {
+				this.isLoadingItems = true;
 				const response = await fetch('/src/assets/data/wzt.json');
 				if (!response.ok) {
 					throw new Error('Network response was not ok');
 				}
 				const data = await response.json();
 				this.items = data;
+				await this.delayedLoading();
 			} catch (error) {
 				console.error('Error fetching items:', error);
+			} finally {
+				this.isLoadingItems = false;
+			}
+		},
+		async delayedLoading() {
+			const totalItems = this.filteredItems.length;
+			const startIndex = this.initialLoadCount;
+
+			for (let i = startIndex; i < totalItems; i += this.batchLoadCount) {
+				this.isLoadingMore = true; // Show spinner while loading more
+				await new Promise(resolve => setTimeout(resolve, 500)); // Simulate delay
+				this.loadedItemsCount += this.batchLoadCount;
+				this.isLoadingMore = false; // Hide spinner after loading
 			}
 		},
 		performSearch() {
-			// Perform search logic if needed, currently just sets searchText
+			// Implement search logic as needed
 		},
 		selectRange(range) {
 			this.selectedRange = range;
@@ -131,6 +163,13 @@ export default {
 </script>
 
 <style scoped>
+/* Add loading animation styles */
+.loading {
+	opacity: 0;
+	/* Hide initially */
+	transition: opacity 0.3s ease-out;
+}
+
 .topbar_logo {
 	-webkit-box-align: center;
 	align-items: center;
@@ -148,23 +187,17 @@ export default {
 }
 
 .title {
-	background-color: #cf2e2e;
-	color: white;
-	height: 150px;
-	text-align: center;
-	align-content: center;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	font-size: 30px;
-	font-weight: bolder;
 	width: 100%;
+	text-align: center;
+	background: rgb(255, 255, 255);
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	text-align: -webkit-center;
 }
 
-@media screen and (min-width: 1023px) {
+@media (min-width: 1024px) {
 	.title {
-		width: 65%;
+		width: 70%;
 	}
 }
 
@@ -192,7 +225,7 @@ export default {
 }
 
 img {
-	width: 80px;
+	width: 100px;
 	display: block;
 	margin: 0px;
 	padding-top: 10px;
@@ -216,11 +249,25 @@ p {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	text-align-last: center;
-	width: 50%;
+	width: 70%;
 	text-align: -webkit-center;
 	place-content: center;
 	gap: 0.5rem;
+}
 
+.dictionary {
+	background-color: #CF2E2E;
+	color: white;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	font-weight: bold;
+	font-size: 42px;
 }
 
 @media (min-width: 600px) {
@@ -327,5 +374,10 @@ p {
 
 .dropdown-list li:hover {
 	background: #bbb;
+}
+
+.placeholder {
+	width: 100px;
+	height: 100px;
 }
 </style>

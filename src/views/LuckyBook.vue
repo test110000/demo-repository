@@ -1,181 +1,181 @@
 <template>
-	<div style="background-color: #f8f9fa;" class="lucky-book">
-		<div class="container">
-			<div style="text-align: -webkit-center;" class="col-12">
-				<div style="width: 81%; display: flex;
-	flex-direction: row;
-	justify-content: space-around;" class="row">
-					<div style="background-color: white; margin-top: 80px; padding: 0px 0px 0px 0px; width: 80%;">
-						<div class="search" v-if="!showAnyComponent">
-							<div class="title">
-								<p>Lucky Book</p>
-							</div>
+	<div class="container">
+		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
+			<div class="luckbook_col">
+				<div class="title">
+					<p>Lucky Book</p>
+				</div>
 
-							<div class="">
-								<div class="search_col">
-									<input v-model="searchQuery" class="search_input" placeholder="e.g. 1001 or sky" />
-									<button @click="performSearch" class="search_btn">Search</button>
-								</div>
-							</div>
+				<div class="column">
+					<div class="search_col">
+						<input v-model="searchQuery" class="search_input" placeholder="e.g. 1001 or sky" />
+						<button @click="performSearch" class="search_btn">Search</button>
+					</div>
 
 
+					<div style="text-align: -webkit-center;" v-if="showSearchResults">
+						<!-- Display search results -->
+						<div class="search-message">
+							<p>Found {{ filteredData.length }} result{{ filteredData.length !== 1 ? 's' : '' }} for
+								"{{
+									searchQuery }}"</p>
+							<button @click="clearSearch" class="search_btn">Close</button>
 						</div>
-						<div style="text-align: -webkit-center;" v-if="showSearchResults">
-							<!-- Display search results -->
-							<div class="search-message">
-								<p>Found {{ filteredData.length }} result{{ filteredData.length !== 1 ? 's' : '' }} for
-									"{{
-										searchQuery }}"</p>
-								<button @click="clearSearch" class="search_btn">Close</button>
-							</div>
-							<div class="luckybook_col">
-								<div class="col-4 col">
-									<div class="search_title">
-										<h3>WZT</h3>
-									</div>
-									<div>
-										<ul style="padding-left: 0rem;">
-											<li v-for="item in filteredDataWZT" :key="item.number"
-												class="search-result">
-												<div class="number_col">
-													<p>{{ item.number }}</p>
-												</div>
-												<div class="images">
-													<img :src="`/imgs/wzt_webp/${item.image} `"
-														:alt="item.content.en" />
-												</div>
-												<div class="content">
-													<p>{{ item.content.en }}</p>
-												</div>
-
-											</li>
-										</ul>
-									</div>
-
+						<div class="luckybook_col">
+							<div class="col-4 col">
+								<div class="search_title">
+									<h3>WZT</h3>
 								</div>
-								<div class="col-12 col">
-									<div class="search_title">
-										<h3>GZT</h3>
-									</div>
-
+								<div>
 									<ul style="padding-left: 0rem;">
-										<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
+										<li v-for="item in filteredDataWZT" :key="item.number" class="search-result">
 											<div class="number_col">
 												<p>{{ item.number }}</p>
 											</div>
 											<div class="images">
-												<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
+												<img :src="`/imgs/wzt_webp/${item.image} `" :alt="item.content.en" />
 											</div>
 											<div class="content">
 												<p>{{ item.content.en }}</p>
 											</div>
+
 										</li>
 									</ul>
 								</div>
-								<div class="col-12 col">
-									<div class="search_title">
-										<h3>QZT</h3>
+
+							</div>
+							<div class="col-4 col">
+								<div class="search_title">
+									<h3>GZT</h3>
+								</div>
+
+								<ul style="padding-left: 0rem;">
+									<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
+										<div class="number_col">
+											<p>{{ item.number }}</p>
+										</div>
+										<div class="images">
+											<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
+										</div>
+										<div class="content">
+											<p>{{ item.content.en }}</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 col">
+								<div class="search_title">
+									<h3>QZT</h3>
+								</div>
+								<ul style="padding-left: 0rem;">
+									<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
+										<div class="number_col">
+											<p>{{ item.number }}</p>
+										</div>
+										<div class="images">
+											<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
+										</div>
+										<div class="content">
+											<p>{{ item.content.en }}</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div style="text-align: -webkit-center;" v-else>
+						<!-- Display static content -->
+						<div class="col-12 book_col">
+							<div style="text-align: -webkit-center;" class="row">
+
+								<!-- Tua Pek Kong (Wan) -->
+								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+									<div class="lucky">
+										<div @click="goToTuaPekKong" class="lucky_col">
+											<div class="wanzititle_col">
+												<img class="wanzititle" src="/public/image/TuaPekKongWanZi.webp" />
+												<img width="65%" src="/public/image/TuaPekKongWan.svg" />
+											</div>
+											<div class="text">
+												<a href="#" class="text" @click="goToTuaPekKong">Tua Pek Kong (Wan)
+													Dictionary</a>
+
+											</div>
+											<div class="text2">
+												<a href="#" class="text2">(WZT)</a>
+											</div>
+
+
+
+
+										</div>
+										<br />
+										<div class="btn_col">
+											<button class="btn_bg" @click="goToTuaPekKong">Enter</button>
+										</div>
+										<br />
 									</div>
-									<ul style="padding-left: 0rem;">
-										<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
-											<div class="number_col">
-												<p>{{ item.number }}</p>
+								</div>
+
+								<!-- Guan Yin Ma -->
+								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+									<div class="lucky">
+										<div @click="goToGuanYinMa" class="lucky_col">
+											<div class="wanzititle_col">
+												<img class="wanzititle" src="/public/image/GuanYinQianZi.webp" />
+												<img width="65%" src="/public/image/GuanYinQian.svg" />
 											</div>
-											<div class="images">
-												<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
+											<div class="text">
+												<a href="#" class="text" @click="goToGuanYinMa">Guan Yin Ma</a>
+												<p class="text2" @click="goToGuanYinMa">Dictionary</p>
 											</div>
-											<div class="content">
-												<p>{{ item.content.en }}</p>
+											<div class="text2">
+												<a href="#" class="text2">(GZT)</a>
 											</div>
-										</li>
-									</ul>
+										</div>
+										<br />
+										<div class="btn_col">
+											<button class="btn_bg" @click="goToGuanYinMa">Enter</button>
+										</div>
+										<br />
+									</div>
+								</div>
+
+								<!-- Tua Pek Kong (Qian) -->
+								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+									<div class="lucky">
+										<div @click="goToTuaPekKongQian" class="lucky_col">
+											<div class="wanzititle_col">
+												<img class="wanzititle" src="/public/image/TuaPekKongQianZi.webp" />
+												<img width="65%" src="/public/image/TuaPekKongQian.svg" />
+											</div>
+											<div class="text">
+												<a href="#" class="text" @click="goToTuaPekKongQian">Tua Pek Kong
+													(Qian)
+													Dictionary</a>
+											</div>
+											<div class="text2">
+												<a href="#" class="text2">(WZT)</a>
+											</div>
+										</div>
+										<br />
+										<div class="btn_col">
+											<button class="btn_bg" @click="goToTuaPekKongQian">Enter</button>
+										</div>
+										<br />
+									</div>
 								</div>
 							</div>
 						</div>
-						<div style="text-align: -webkit-center;" v-else>
-							<!-- Display static content -->
-							<div class="col-12 book_col" v-if="!showAnyComponent">
-								<div style="text-align: -webkit-center;" class="row">
-									<!-- Tua Pek Kong (Wan) -->
-									<div class="col-sm-6 col-md-4 col-lg-4">
-										<div class="lucky">
-											<div @click="goToTuaPekKong" class="lucky_col">
-												<div class="wanzititle_col">
-													<img class="wanzititle" src="/public/image/TuaPekKongWanZi.webp" />
-													<img width="65%" src="/public/image/TuaPekKongWan.svg" />
-												</div>
-												<div class="text">
-													<a href="#" class="text" @click="goToTuaPekKong">Tua Pek Kong (Wan)
-														Dictionary</a>
-												</div>
-												<div class="text2">
-													<a href="#" class="text2">(WZT)</a>
-												</div>
-											</div>
-											<br />
-											<div class="btn_col">
-												<button class="btn_bg" @click="goToTuaPekKong">Enter</button>
-											</div>
-											<br />
-										</div>
-									</div>
 
-									<!-- Guan Yin Ma -->
-									<div class="col-sm-6 col-md-4 col-lg-4">
-										<div class="lucky">
-											<div @click="goToGuanYinMa" class="lucky_col">
-												<div class="wanzititle_col">
-													<img class="wanzititle" src="/public/image/GuanYinQianZi.webp" />
-													<img width="65%" src="/public/image/GuanYinQian.svg" />
-												</div>
-												<div class="text">
-													<a href="#" class="text" @click="goToGuanYinMa">Guan Yin Ma</a>
-													<p class="text2" @click="goToGuanYinMa">Dictionary</p>
-												</div>
-												<div class="text2">
-													<a href="#" class="text2">(GZT)</a>
-												</div>
-											</div>
-											<br />
-											<div class="btn_col">
-												<button class="btn_bg" @click="goToGuanYinMa">Enter</button>
-											</div>
-											<br />
-										</div>
-									</div>
-
-									<!-- Tua Pek Kong (Qian) -->
-									<div class="col-sm-6 col-md-4 col-lg-4">
-										<div class="lucky">
-											<div @click="goToTuaPekKongQian" class="lucky_col">
-												<div class="wanzititle_col">
-													<img class="wanzititle" src="/public/image/TuaPekKongQianZi.webp" />
-													<img width="65%" src="/public/image/TuaPekKongQian.svg" />
-												</div>
-												<div class="text">
-													<a href="#" class="text" @click="goToTuaPekKongQian">Tua Pek Kong
-														(Qian)
-														Dictionary</a>
-												</div>
-												<div class="text2">
-													<a href="#" class="text2">(WZT)</a>
-												</div>
-											</div>
-											<br />
-											<div class="btn_col">
-												<button class="btn_bg" @click="goToTuaPekKongQian">Enter</button>
-											</div>
-											<br />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 </template>
 
 <script>
@@ -244,25 +244,45 @@ export default {
 </script>
 
 <style scoped>
-.title {
+.luckybook_col {
 	width: 100%;
-	align-content: center;
-	background-color: #cf2e2e;
-	color: white;
-	text-align: center;
-	height: 140px;
-	font-size: 35px;
-	font-weight: bold;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
+	text-align: -webkit-center;
+	background: rgb(255, 255, 255);
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
 }
 
-.search {
+@media (min-width: 1024px) {
+	.luckybook_col {
+		width: 70%;
+		display: flex;
+	}
+}
 
-	margin-bottom: 20px;
-	text-align: -webkit-center;
+.title {
+	background-color: #CF2E2E;
+	color: white;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	font-weight: bold;
+	font-size: 42px;
+}
+
+@media (min-width:1400px) {
+
+	.title {
+		width: 70%;
+	}
+}
+
+.column {
+	width: 80%;
 }
 
 .search-message {
@@ -311,6 +331,7 @@ export default {
 	border-radius: 5px;
 }
 
+
 .search-result img {
 	max-width: 100px;
 }
@@ -325,8 +346,9 @@ export default {
 	background-color: #cf2e2e;
 	text-align: center;
 	padding-top: 10px;
-	width: 75%;
+	width: 84%;
 	border-radius: 10px;
+
 }
 
 .wanzititle_col {
@@ -363,6 +385,7 @@ export default {
 	display: flex;
 	padding-top: 10px;
 	width: 88%;
+	padding-bottom: 10px;
 
 }
 
@@ -393,13 +416,6 @@ p {
 	margin: 0px;
 }
 
-.luckybook_col {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-}
-
 .col {
 	flex: 1;
 	margin: 10px;
@@ -412,8 +428,9 @@ p {
 	background-color: #cf2e2e;
 	color: white;
 	text-align: center;
-	width: 60%;
+	width: 75%;
 	border-radius: 20px;
+
 }
 
 @media screen and (min-width:768px) {

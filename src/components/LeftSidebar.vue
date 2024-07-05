@@ -1,11 +1,3 @@
-<script setup>
-defineProps({
-	msg: {
-		type: String,
-		required: true
-	}
-})
-</script>
 <template>
 	<div class="left-sidebar">
 		<div class="container-fluid">
