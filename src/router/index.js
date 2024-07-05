@@ -1,27 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import Dashboard from '../views/dashboard.vue'
-import Dashboard from '../views/dashboard_2.vue'
-import SpinMyLuck from '../views/SpinMyLuck.vue'
-import LuckyBook from '../views/LuckyBook.vue'
-import TuaPekKong from '../views/TuaPekKong.vue'
-import GuanYin from '../views/GuanYin.vue'
-import TuaPekKongQian from '../views/gzt.vue'
-// import Dashboard_2 from '../views/dashboard_2.vue'
-
-
-/*import Jackpot from '../views/Jackpot.vue'
-import SpecialDrawDate from '../views/SpecialDrawDate.vue'
-import FourDAnalysis from '../views/FourDAnalysis.vue'
-
-import HotFourD from '../views/HotFourD.vue'
-*/
-
+// Lazy load the components
+const Dashboard = () => import('../views/dashboard_2.vue')
+const SpinMyLuck = () => import('../views/SpinMyLuck.vue')
+const LuckyBook = () => import('../views/LuckyBook.vue')
+const TuaPekKong = () => import('../views/TuaPekKong.vue')
+const GuanYin = () => import('../views/GuanYin.vue')
+const TuaPekKongQian = () => import('../views/gzt.vue')
 const routes = [
-	{
-		//path: '/',
-		//name: 'Dashboard',
-		//component: Dashboard
-	},
+	// Uncomment and update if Dashboard is needed
 	{
 		path: '/',
 		name: 'Dashboard',
@@ -33,9 +19,9 @@ const routes = [
 		component: SpinMyLuck
 	},
 	{
-		// path: '/',
-		// name: 'LuckyBook',
-		// component: LuckyBook
+		path: '/lucky-book',
+		name: 'LuckyBook',
+		component: LuckyBook
 	},
 	{
 		path: '/tuapekkong',
@@ -52,13 +38,9 @@ const routes = [
 		name: 'TuaPekKongQian',
 		component: TuaPekKongQian
 	}
-
 ]
-
-
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes,
 });
-
 export default router

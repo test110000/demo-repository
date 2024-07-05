@@ -25,7 +25,7 @@
 											<h5 class="nav-link">Results</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">
+											<a class="nav-link" href="/">
 												<img src="/public/image/dashboard.png"
 													style="width: 25px; margin-right: 13px;">
 												Dashboard
@@ -35,14 +35,14 @@
 											<h5 class="nav-link">ToolBox</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">
+											<a class="nav-link" href="/spin-my-luck">
 												<img src="/public/image/spin.png"
 													style="width: 25px; margin-right: 13px;">
 												Spin My Luck
 											</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">
+											<a class="nav-link" href="/lucky-book">
 												<img src="/public/image/book.png"
 													style="width: 25px; margin-right: 13px;">
 												Lucky Book

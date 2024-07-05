@@ -148,6 +148,7 @@ export default {
 	-webkit-box-align: center;
 	align-items: center;
 	color: rgb(0, 0, 0);
+	padding-bottom: 0 !important;
 }
 
 .results_install_app_text {
@@ -159,7 +160,7 @@ export default {
 	-webkit-box-align: center;
 	align-items: center;
 	padding-top: 40px;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 	color: rgb(0, 0, 0);
 }
 
