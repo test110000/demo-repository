@@ -287,6 +287,7 @@ export default {
 	top: 0;
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
+	top: 57px;
 }
 
 .image-container {

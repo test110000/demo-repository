@@ -267,7 +267,7 @@ p {
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
-	font-size: 42px;
+	font-size: 40px;
 }
 
 @media (min-width: 600px) {

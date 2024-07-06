@@ -3,63 +3,6 @@
 		<div style="text-align: -webkit-center;" class="col-12 spincol">
 			<div class="lucky_col">
 
-
-				<nav class="navbar mobile_navbar" style="display: none;">
-					<div style="position: absolute;
-    						top: 25px;" class="container-fluid">
-						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-							data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-
-						<div class="offcanvas offcanvas-start border-top-bottom-right-80px width-sidebar" tabindex="-1"
-							id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-							<div class="offcanvas-header">
-								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-									aria-label="Close"></button>
-							</div>
-							<div class="offcanvas-body">
-								<div class="sidebar-main">
-									<p class="results_install_app_text">Results</p>
-									<br>
-									<div class="menu">
-										<!--dashboard-->
-										<div class="text_col">
-											<img @click="goToDashboard" class="pic" src="\public\image\dashboard.png">
-											<p @click="goToDashboard" class="text_menu">Dashboard</p>
-
-										</div>
-									</div>
-									<br>
-									<br><br>
-									<p class="toolbox_text">Toolbox</p>
-									<br>
-									<!--Spin My Luck-->
-									<div class="menu">
-										<div class="text_col">
-
-											<img @click="goToSpinMyLuck" class="pic" src="\public\image\spin.png">
-											<p @click="goToSpinMyLuck" class="text_menu">Spin My Luck</p>
-
-										</div>
-									</div>
-									<br>
-									<!--Lucky Book-->
-									<div class="menu">
-										<div class="text_col">
-											<img @click="goToLuckyBook" class="pic" src="\public\image\book.png">
-											<p @click="goToLuckyBook" class="text_menu">Lucky Book</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</nav>
-
-
-
 				<div class="luckyspin_bg">
 
 					<p>Lucky Spin</p>
@@ -417,14 +360,8 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 770px) {
-	.spincol {
-		margin-top: 73px !important;
-	}
-}
-
 .spincol {
-	margin-top: 0px;
+	margin-top: 73px;
 }
 
 

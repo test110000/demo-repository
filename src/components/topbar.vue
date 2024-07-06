@@ -6,6 +6,8 @@
 					<a class="display-img" href="#">
 						&#x2630;
 					</a>
+
+					<!--left-->
 					<nav class="navbar desktop_navbar" style="display: none;">
 						<div class="container-fluid ">
 							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -55,8 +57,8 @@
 						</div>
 					</nav>
 
-
-					<div class="Logo_4D" style="display: none;">
+					<!--top-->
+					<div class="Logo_4D">
 						<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
 							src="/public/image/4D-lottery-single.png">
 						<img class="d_num_title" width="100" src="/public/image/4D-lottery-wording.png">
@@ -160,6 +162,14 @@ export default {
 };
 </script>
 <style scoped>
+@media screen and (min-width:770px) {
+	.hide {
+		display: none;
+	}
+}
+
+
+
 .Logo_4D {
 	-webkit-box-align: center;
 	align-items: center;
@@ -225,6 +235,29 @@ export default {
 	.d_num_title {
 		display: none;
 	}
+
+	.refresh-icon {
+		display: none !important;
+	}
+
+
+}
+
+@media screen and (max-width:700px) {
+	.logo_col {
+		display: none !important;
+	}
+
+	.d_num_title {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width:426px) {
+	.top {
+		width: 75%;
+	}
+
 }
 
 .display-img {
@@ -261,6 +294,12 @@ export default {
 
 	.logo_col {
 		gap: 0.25rem;
+	}
+}
+
+@media screen and (max-width:545px) {
+	.custom-date-input {
+		display: none !important;
 	}
 }
 
