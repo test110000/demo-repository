@@ -1,15 +1,17 @@
 <template>
 	<!--topbar-->
 	<div style="display: none;" class="navbar">
-		<div v-for="(image, index) in images" :key="index"
-			:class="['image-container', { active: activeIndex === index }]" @click="handleClick(index)">
+		<div v-for="(image, index) in images" :key="index" :id="`image-container-${index}`"
+			:class="['image-container', `image-container-${index}`, { active: activeIndex === index }]"
+			@click="handleImageClick(index)">
 			<img :src="image" class="round-image" />
 		</div>
 	</div>
 
 	<div class="dashboard">
 		<div class="draw-results">
-			<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" class="draw-section  white-bg">
+			<div v-for="(drawObj, index) in data" :key="Object.keys(drawObj)[0]" :id="`Toto-type-${index}`"
+				class="draw-section white-bg">
 				<div class="top-card-container" :style="{ backgroundColor: getBgColor(Object.keys(drawObj)[0]) }">
 					<div class="draw-header">
 						<div class="mobile-sidebar-button-container" style="color: white;">
@@ -58,6 +60,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="logo-title-container">
 							<div class="logo-white-container">
 								<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
@@ -238,11 +241,11 @@ export default {
 				'/public/image/toto.svg',
 				'/public/image/sg.svg',
 				'/public/image/sandakan.svg',
-				'/public/image/magnum.svg',
-				'/public/image/damacai2.svg',
-				'/public/image/toto.svg',
-				'/public/image/sg.svg',
-				'/public/image/sandakan.svg',
+				'/public/image/sabahtoto.svg',
+				'/public/image/cashsweeptoto.svg',
+				'/public/image/hariharitoto.svg',
+				'/public/image/pdntoto.svg',
+				'/public/image/gdtoto.svg',
 			],
 		};
 	},
@@ -250,6 +253,16 @@ export default {
 		this.fetchData();
 	},
 	methods: {
+		handleImageClick(index) {
+			this.activeIndex = index;
+			this.scrollToDrawSection(index);
+		},
+		scrollToDrawSection(index) {
+			const element = document.getElementById(`Toto-type-${index}`);
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
+		},
 		fetchData() {
 			axios.get('/data.json')
 				.then(response => {
