@@ -64,35 +64,10 @@
 						<img class="d_num_title" width="100" src="/public/image/4D-lottery-wording.png">
 					</div>
 					<div class="logo_col">
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/magnum.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/damacai2.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/toto.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/sg.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/sandakan.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/diriwan.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/ssc.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/lhh.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/pdn.svg"></a>
-						</div>
-						<div class="logo">
-							<a href="#"><img width="40px" height="40px" src="/public/image/gd.svg"></a>
+						<div class="logo" v-for="(logo, index) in logos" :key="index">
+							<a :href="'#'" @click.prevent="handleLogoClick(index)">
+								<img :id="`4D-${index}`" width="40px" height="40px" :src="logo.src">
+							</a>
 						</div>
 					</div>
 					<input type="date" v-model="formattedDate" @input="selectNewDate" class="custom-date-input">
@@ -115,13 +90,26 @@
 		</div>
 	</div>
 </template>
+
 <script>
 export default {
 	name: 'TopBar',
 	data() {
 		return {
 			currentDate: new Date(),
-			showDatePicker: false, // Flag to show/hide date picker
+			showDatePicker: false,
+			logos: [
+				{ src: '/public/image/magnum.svg' },
+				{ src: '/public/image/damacai2.svg' },
+				{ src: '/public/image/toto.svg' },
+				{ src: '/public/image/sg.svg' },
+				{ src: '/public/image/sandakan.svg' },
+				{ src: '/public/image/diriwan.svg' },
+				{ src: '/public/image/ssc.svg' },
+				{ src: '/public/image/lhh.svg' },
+				{ src: '/public/image/pdn.svg' },
+				{ src: '/public/image/gd.svg' }
+			]
 		};
 	},
 	methods: {
@@ -130,37 +118,31 @@ export default {
 		},
 		selectDate(date) {
 			this.currentDate = date;
-			this.showDatePicker = false; // Hide the date picker after selection
+			this.showDatePicker = false;
 		},
 		selectNewDate(event) {
 			const selectedDate = new Date(event.target.value);
 			this.currentDate = selectedDate;
 		},
 		refreshPage() {
-			window.location.reload(); // Reloads the current page
+			window.location.reload();
 		},
-		goToDashboard() {
-			this.$router.push('/');
-		},
-		goToSpinMyLuck() {
-			this.$router.push('/spin-my-luck');
-		},
-		goToLuckyBook() {
-			this.$router.push('/lucky-book');
-		},
+		handleLogoClick(index) {
+			this.$emit('logo-clicked', `${index}`);
+		}
 	},
 	computed: {
 		formattedDate() {
-			// Return formatted date for displaying in the input
-			const isoDate = this.currentDate.toISOString().split('T')[0]; // Get yyyy-mm-dd format
+			const isoDate = this.currentDate.toISOString().split('T')[0];
 			return isoDate;
 		},
 		currentLanguage() {
-			return this.$store ? this.$store.state.currentLanguage : 'en'; // Default to 'en' if store is not available
-		},
-	},
+			return this.$store ? this.$store.state.currentLanguage : 'en';
+		}
+	}
 };
 </script>
+
 <style scoped>
 @media screen and (min-width:770px) {
 	.hide {

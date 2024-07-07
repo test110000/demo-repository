@@ -8,6 +8,10 @@
 		</div>
 	</div>
 
+	<div>
+		<TopBar @logo-clicked="handleLogoClick" :class="'hide-on-small-screen', { active: activeIndex === index }" />
+	</div>
+
 	<div class="dashboard">
 		<div class="draw-results">
 			<div v-for="(drawObj, index) in data" :key="Object.keys(drawObj)[0]" :id="`Toto-type-${index}`"
@@ -143,8 +147,12 @@
 <script>
 
 import axios from 'axios';
+import TopBar from '/src/components/topbar.vue';
 
 export default {
+	components: {
+		TopBar
+	},
 	data() {
 		return {
 			data: [],
@@ -253,16 +261,6 @@ export default {
 		this.fetchData();
 	},
 	methods: {
-		handleImageClick(index) {
-			this.activeIndex = index;
-			this.scrollToDrawSection(index);
-		},
-		scrollToDrawSection(index) {
-			const element = document.getElementById(`Toto-type-${index}`);
-			if (element) {
-				element.scrollIntoView({ behavior: 'smooth' });
-			}
-		},
 		fetchData() {
 			axios.get('/data.json')
 				.then(response => {
@@ -323,11 +321,22 @@ export default {
 			// Extract consolation numbers from the draw object
 			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
 		},
-		handleClick(index) {
-			this.activeIndex = index;
-		},
 		refreshPage() {
 			window.location.reload(); // Reloads the current page
+		},
+		handleImageClick(index) {
+			this.activeIndex = index;
+			this.scrollToDrawSection(index);
+		},
+		handleLogoClick(id) {
+			this.activeIndex = id; // Set activeIndex to the clicked logo index
+			this.scrollToDrawSection(id); // Scroll to corresponding section
+		},
+		scrollToDrawSection(index) {
+			const element = document.getElementById(`Toto-type-${index}`);
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
 		},
 	}
 };
@@ -700,5 +709,11 @@ export default {
 
 .special-section-min-height {
 	min-height: 160px;
+}
+
+@media (max-width: 768px) {
+	.hide-on-small-screen {
+		display: none;
+	}
 }
 </style>
