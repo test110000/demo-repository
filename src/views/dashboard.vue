@@ -1,26 +1,80 @@
 <template>
 	<!--topbar-->
-	<div style="display: none;" class=" navbar">
+	<div style="display: none;" class="navbar">
 		<div v-for="(image, index) in images" :key="index"
 			:class="['image-container', { active: activeIndex === index }]" @click="handleClick(index)">
 			<img :src="image" class="round-image" />
 		</div>
 	</div>
 
-
-
 	<div class="dashboard">
 		<div class="draw-results">
 			<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" class="draw-section  white-bg">
-
 				<div class="top-card-container" :style="{ backgroundColor: getBgColor(Object.keys(drawObj)[0]) }">
 					<div class="draw-header">
-						<div class="logo-white-container">
-							<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
+						<div class="mobile-sidebar-button-container" style="color: white;">
+							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+								aria-label="Toggle navigation">
+								<i class="bi bi-list"></i>
+							</button>
+							<div class="offcanvas offcanvas-start border-top-bottom-right-80px width-sidebar"
+								tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								<div class="offcanvas-header">
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+										aria-label="Close"></button>
+								</div>
+
+								<div class="offcanvas-body">
+									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+										<li class="nav-item">
+											<h5 class="nav-link">Results</h5>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/">
+												<img src="/public/image/dashboard.png"
+													style="width: 25px; margin-right: 13px;" />
+												Dashboard
+											</a>
+										</li>
+										<li style="margin-top: 20px;" class="nav-item">
+											<h5 class="nav-link">ToolBox</h5>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/spin-my-luck">
+												<img src="/public/image/spin.png"
+													style="width: 25px; margin-right: 13px;" />
+												Spin My Luck
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/lucky-book">
+												<img src="/public/image/book.png"
+													style="width: 25px; margin-right: 13px;" />
+												Lucky Book
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<h1 class="logo-name title-font-size"
-							:style="{ color: getSectionTitleTextColor(Object.keys(drawObj)[0]) }">{{
-								drawObj[Object.keys(drawObj)[0]].name }}</h1>
+						<div class="logo-title-container">
+							<div class="logo-white-container">
+								<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
+							</div>
+							<h1 class="logo-name title-font-size"
+								:style="{ color: getSectionTitleTextColor(Object.keys(drawObj)[0]) }">{{
+									drawObj[Object.keys(drawObj)[0]].name }}</h1>
+						</div>
+						<div class="mobile-refresh-page-button-container" style="color: white;">
+							<div class="refresh-icon" style="position: relative; ">
+								<div style="position: absolute; right: 6.5px; top: 2px;">
+									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
+										&#x21BA;
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="draw-info">
 						<div class="date-info">
@@ -67,13 +121,13 @@
 						</div>
 						<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
 							<div class="jackpot-prize">
-								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-1-br-10px"
 									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 1 Prize</h2>
-								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
+								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-2-br-10px "
+									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
 							</div>
 							<div class="jackpot-prize">
-								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
+								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
 								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP2 }}</div>
 							</div>
 						</div>
@@ -284,10 +338,46 @@ export default {
 	border-bottom-right-radius: 20px;
 	position: fixed;
 	width: 100%;
-	top: 0;
+	top: 0 !important;
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
 	top: 57px;
+}
+
+.mobile-sidebar-button-container {
+	margin-left: 15px;
+	font-size: 20px;
+	background-color: white;
+	color: black !important;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+	opacity: 0.8;
+
+}
+
+.mobile-refresh-page-button-container {
+	padding-right: 20px;
+}
+
+.refresh-icon {
+	font-size: 16px !important;
+	background-color: white !important;
+	opacity: 0.8 !important;
+	border-radius: 50%;
+	/* padding: 10px; */
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.refresh-arrow {
+	display: contents;
+	color: #CF2E2E;
+	align-self: center;
 }
 
 .image-container {
@@ -415,6 +505,14 @@ export default {
 
 .draw-header {
 	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.logo-title-container {
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 }
@@ -486,8 +584,22 @@ export default {
 	margin: 20px 0;
 }
 
-.prize,
+.jackpot {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.jackpot-section-title {
+	width: 50%;
+}
+
 .jackpot-prize {
+	display: flex;
+	justify-content: space-around;
+}
+
+.prize {
 	display: inline-block;
 	margin: 10px;
 }
@@ -560,6 +672,17 @@ export default {
 
 .b-r-10px {
 	border-radius: 10px;
+}
+
+.jp-1-br-10px {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-right: 1px solid;
+}
+
+.jp-2-br-10px {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .special-section-min-height {

@@ -171,6 +171,7 @@ export default {
 
 
 .Logo_4D {
+	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
 	flex-direction: row;

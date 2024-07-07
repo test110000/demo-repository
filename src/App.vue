@@ -91,4 +91,11 @@ body {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.Topbar-laptop {
+		display: none;
+	}
+
+}
 </style>
