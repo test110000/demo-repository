@@ -75,7 +75,7 @@
 						</div>
 						<div class="mobile-refresh-page-button-container" style="color: white;">
 							<div class="refresh-icon" style="position: relative; ">
-								<div style="position: absolute; right: 6.5px; top: 2px;">
+								<div style="position: absolute; right: 8.5px; top: 3px;">
 									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
 										&#x21BA;
 									</a>
@@ -422,20 +422,6 @@ export default {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-
-.refresh-icon {
-	font-size: 24px;
-	background-color: gray;
-	border: 2px solid #212529;
-	border-radius: 50%;
-	padding: 10px;
-	width: 50px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .refresh-arrow {

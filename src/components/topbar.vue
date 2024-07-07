@@ -1,6 +1,6 @@
 <template>
 	<div class="container-fluid">
-		<div class="top-bar" style="background-color: #CF2E2E;  z-index: 9999;">
+		<div class="top-bar" style="background-color: #CF2E2E;">
 			<div class="full-width plr-20">
 				<div class="top">
 					<a class="display-img" href="#">
@@ -173,6 +173,7 @@ export default {
 	right: 0;
 	width: 100%;
 	align-content: center;
+	z-index: 9999;
 }
 
 @media screen and (min-width: 1281px) {
