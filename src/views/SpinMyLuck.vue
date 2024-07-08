@@ -651,6 +651,4 @@ p {
 		height: 50px;
 	}
 }
-
-nav {}
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<div class="container-fluid">
+	<div>
 		<div class="top-bar" style="background-color: #CF2E2E;">
 			<div class="full-width plr-20">
 				<div class="top">
@@ -182,6 +182,12 @@ export default {
 	}
 }
 
+@media screen and (max-width: 769px) {
+	.top-bar {
+		position: unset;
+	}
+}
+
 .top {
 	display: flex;
 	justify-content: space-between;
@@ -237,12 +243,12 @@ export default {
 	}
 }
 
-@media screen and (max-width:426px) {
+/* @media screen and (max-width:426px) {
 	.top {
 		width: 75%;
 	}
 
-}
+} */
 
 .display-img {
 	color: white;

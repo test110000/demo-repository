@@ -13,7 +13,6 @@
 
 				<div class="main-content">
 					<router-view></router-view>
-
 				</div>
 			</div>
 			<div class="screen1024">
@@ -29,7 +28,6 @@
 import LeftSidebar from './components/LeftSidebar.vue'
 import TopBar from './components/topbar.vue'
 import RightColumn from './components/right.vue'
-import TopBarTM from './components/topbar-tablet-mobile.vue'
 
 export default {
 	name: 'App',
@@ -37,7 +35,6 @@ export default {
 		LeftSidebar,
 		TopBar,
 		RightColumn,
-		TopBarTM
 	}
 }
 </script>

@@ -1,4 +1,9 @@
 <template>
+
+	<div>
+		<TopBar @logo-clicked="handleLogoClick" :class="'hide-on-small-screen', { active: activeIndex === index }" />
+	</div>
+
 	<!--topbar-->
 	<div style="display: none;" class="navbar">
 		<div v-for="(image, index) in images" :key="index" :id="`image-container-${index}`"
@@ -6,10 +11,6 @@
 			@click="handleImageClick(index)">
 			<img :src="image" class="round-image" />
 		</div>
-	</div>
-
-	<div>
-		<TopBar @logo-clicked="handleLogoClick" :class="'hide-on-small-screen', { active: activeIndex === index }" />
 	</div>
 
 	<div class="dashboard">
@@ -343,7 +344,6 @@ export default {
 </script>
 <style scoped>
 @media screen and (max-width: 769px) {
-
 	.navbar {
 		display: flex !important;
 	}
@@ -355,15 +355,11 @@ export default {
 	align-items: center;
 	height: 61px;
 	background-color: white;
-	z-index: 9999;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	position: fixed;
+	border-radius: 20px;
 	width: 100%;
-	top: 0 !important;
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
-	top: 57px;
+	top: 0px;
 }
 
 .mobile-sidebar-button-container {
@@ -391,7 +387,6 @@ export default {
 	background-color: white !important;
 	opacity: 0.8 !important;
 	border-radius: 50%;
-	/* padding: 10px; */
 	width: 30px !important;
 	height: 30px !important;
 }
@@ -429,8 +424,6 @@ export default {
 	color: #000;
 }
 
-
-
 .dashboard {
 	margin-top: 80px;
 	height: calc(-5rem + 100dvh);
@@ -441,13 +434,13 @@ export default {
 
 @media screen and (max-width: 769px) {
 	.dashboard {
-		margin-inline: 20px;
+		margin-top: 20px;
+		height: 87dvh;
 	}
 }
 
 .dashboard::-webkit-scrollbar {
 	display: none;
-	/* For Chrome, Safari, and Opera */
 }
 
 @media screen and (min-width: 1280px) {
@@ -695,11 +688,5 @@ export default {
 
 .special-section-min-height {
 	min-height: 160px;
-}
-
-@media (max-width: 768px) {
-	.hide-on-small-screen {
-		display: none;
-	}
 }
 </style>
