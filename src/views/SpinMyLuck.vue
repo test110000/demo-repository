@@ -1,4 +1,9 @@
 <template>
+
+	<div>
+		<TopBar />
+	</div>
+
 	<div class="container">
 		<div style="text-align: -webkit-center;" class="col-12 spincol">
 			<div class="lucky_col">
@@ -71,9 +76,14 @@
 	</div>
 </template>
 
-
 <script>
+
+import TopBar from '/src/components/topbar.vue';
+
 export default {
+	components: {
+		TopBar
+	},
 	name: 'SpinMyLuck',
 	data() {
 		return {

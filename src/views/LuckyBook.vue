@@ -1,4 +1,8 @@
 <template>
+	<div>
+		<TopBar />
+	</div>
+
 	<div class="container">
 		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
 			<div class="luckbook_col">
@@ -179,7 +183,13 @@
 </template>
 
 <script>
+
+import TopBar from '/src/components/topbar.vue';
+
 export default {
+	components: {
+		TopBar
+	},
 	name: 'LuckyBook',
 	data() {
 		return {

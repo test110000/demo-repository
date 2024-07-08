@@ -7,9 +7,9 @@
 						<LeftSidebar />
 					</div>
 				</div>
-				<div class="Topbar-laptop">
+				<!-- <div class="Topbar-laptop">
 					<TopBar />
-				</div>
+				</div> -->
 
 				<div class="main-content">
 					<router-view></router-view>
