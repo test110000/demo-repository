@@ -77,7 +77,6 @@
 							</a>
 						</div>
 					</div>
-					<input type="date" v-model="formattedDate" @input="selectNewDate" class="custom-date-input">
 					<div class="refresh-icon" style="position: relative; ">
 						<div style="position: absolute; right: 12px; top: 4px;">
 							<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
@@ -109,17 +108,15 @@ export default {
 			showDatePicker: false,
 			logos: [
 				{ key: 'M', src: '/public/image/magnum.svg' },
-				{ key: 'DMC', src: '/public/image/damacai2.svg' },
-				{ key: 'ST', src: '/public/image/toto.svg' },
-				{ key: 'Spore', src: '/public/image/sg.svg' },
-				{ key: 'Sandakan', src: '/public/image/sandakan.svg' },
-				{ key: 'Sabah', src: '/public/image/diriwan.svg' },
-				{ key: 'SCS', src: '/public/image/ssc.svg' },
-				{ key: 'H1', src: '/public/image/lhh.svg' },
-				{ key: 'H2', src: '/public/image/lhh.svg' },
-				{ key: 'PL1', src: '/public/image/pdn.svg' },
-				{ key: 'PL2', src: '/public/image/pdn.svg' },
-				{ key: 'GD', src: '/public/image/gd.svg' }
+				{ key: 'D', src: '/public/image/damacai2.svg' },
+				{ key: 'T', src: '/public/image/toto.svg' },
+				{ key: 'S', src: '/public/image/sg.svg' },
+				{ key: 'ST', src: '/public/image/sandakan.svg' },
+				{ key: 'SB', src: '/public/image/diriwan.svg' },
+				{ key: 'SW', src: '/public/image/ssc.svg' },
+				{ key: 'H', src: '/public/image/lhh.svg' },
+				{ key: 'P', src: '/public/image/pdn.svg' },
+				{ key: 'G', src: '/public/image/gd.svg' }
 			]
 		};
 	},

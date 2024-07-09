@@ -13,12 +13,12 @@
 				<img :src="image.src" class="round-image" />
 			</div>
 		</div>
+
 		<div class="dashboard" ref="partToScroll">
 			<div class="draw-results">
-				<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" :id="`Toto-type-${getKey(drawObj)}`"
+				<div v-for="(drawObj, index) in data" :key="index" :id="`Toto-type-${index}`"
 					class="draw-section white-bg">
-					<!-- <p>{{ getKey(drawObj) }}</p> -->
-					<div class="top-card-container" :style="{ backgroundColor: getBgColor(Object.keys(drawObj)[0]) }">
+					<div class="top-card-container" :style="{ backgroundColor: getBgColor(index) }">
 						<div class="mobile-refresh-page-button-container"
 							style="color: white; position: absolute; right: 0;">
 							<div class="refresh-icon" style="position: relative; ">
@@ -29,46 +29,46 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="draw-header">
 							<div class="logo-title-container">
 								<div class="logo-white-container">
-									<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
+									<img :src="getLogo(index)" alt="Logo" class="draw-logo">
 								</div>
 								<h1 class="logo-name title-font-size mt-10"
-									:style="{ color: getSectionTitleTextColor(Object.keys(drawObj)[0]) }">{{
-										drawObj[Object.keys(drawObj)[0]].name }}</h1>
+									:style="{ color: getSectionTitleTextColor(index) }">{{
+										getName(index) }}</h1>
 							</div>
 						</div>
 
 						<div class="draw-info">
-							<div class="date-info">
+							<div class="date-info" :class="{ 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
 								<span>Date: </span>
-								<span>{{ getCurrentDate() }}</span>
+								<span>{{ drawObj.DD }}</span>
 							</div>
 							<hr aria-orientation="vertical" class="divider"
-								:class="{ 'time-info-display-none': shouldHideTimeInfo(getKey(drawObj)) }">
+								:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }">
 							<div class="time-info"
-								:class="{ 'time-info-display-none': shouldHideTimeInfo(getKey(drawObj)) }">
+								:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }, { 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
 								<span>Time: </span>
 								<span>{{ currentTimeText }}</span>
 							</div>
 							<hr aria-orientation="vertical" class="divider">
-							<div class="number-info">
+							<div class="number-info" :class="{ 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
 								<span>Draw No.: </span>
-								<span>{{ drawObj[Object.keys(drawObj)[0]].DrawNo }}</span>
+								<span>{{ drawObj.DN ? drawObj.DN : "----" }}</span>
 							</div>
 						</div>
 					</div>
 					<div class="prizes">
 						<div style="margin-inline: 1.25rem;">
 							<div class="prize-section">
-								<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']"
-									:key="index">
+								<div class="prize" v-for="(prize, I) in ['1ST Prize', '2ND Prize', '3RD Prize']">
 									<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
-										:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
+										:style="getPrizeStyle(index)">{{ prize }}</h2>
 									<div class="prize-number-container">
 										<div class="prize-number">{{
-											getDisplayResult(drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)])
+											getDisplayResult(drawObj['P' + (I + 1)])
 										}}
 										</div>
 									</div>
@@ -77,31 +77,33 @@
 
 							<div class="special special-section-min-height">
 								<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Special</h2>
+									:style="getSmallSectionStyle(index)">Special</h2>
 								<div class="special-numbers">
-									<div v-for="(number, index) in getSpecialNumbers(drawObj[Object.keys(drawObj)[0]])"
-										:key="index" class="number">{{ getDisplayResult(number) }}</div>
+									<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">{{
+										getDisplayResult(number) }}</div>
 								</div>
 							</div>
+
 							<div class="consolation">
 								<h2 class="consolation-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Consolation</h2>
+									:style="getSmallSectionStyle(index)">Consolation</h2>
 								<div class="consolation-numbers">
-									<div v-for="(number, index) in getConsolationNumbers(drawObj[Object.keys(drawObj)[0]])"
-										:key="index" class="number">{{ getDisplayResult(number) }}</div>
+									<div v-for="(number, I) in getConsolationNumbers(drawObj)" :key="I" class="number">
+										{{ getDisplayResult(number) }}</div>
 								</div>
 							</div>
-							<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
+
+							<div v-if="drawObj.JP1" class="jackpot">
 								<div class="jackpot-prize">
 									<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-1-br-10px"
-										:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 1 Prize</h2>
+										:style="getSmallSectionStyle(index)">4D Jackpot 1 Prize</h2>
 									<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-2-br-10px "
-										:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
+										:style="getSmallSectionStyle(index)">4D Jackpot 2 Prize</h2>
 								</div>
 								<div class="jackpot-prize">
-									<div class="amount">{{ getDisplayResult(drawObj[Object.keys(drawObj)[0]].JP1) }}
+									<div class="amount">{{ getDisplayResult(drawObj.JP1) }}
 									</div>
-									<div class="amount">{{ getDisplayResult(drawObj[Object.keys(drawObj)[0]].JP2) }}
+									<div class="amount">{{ getDisplayResult(drawObj.JP2) }}
 									</div>
 								</div>
 							</div>
@@ -111,13 +113,11 @@
 			</div>
 		</div>
 	</div>
-
 </template>
 <script>
 
 import axios from 'axios';
 import TopBar from '/src/components/topbar.vue';
-import apiService from '/src/4Dapi.js';
 
 export default {
 	components: {
@@ -131,6 +131,7 @@ export default {
 			data: [],
 			styles: {
 				M: {
+					name: "Magnum 4D",
 					bgColor: 'black',
 					logoPath: 'public/image/magnum.svg',
 					prizeSectionColor: '#F5C500',
@@ -138,7 +139,8 @@ export default {
 					smallSectionColor: 'black', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				DMC: {
+				D: {
+					name: "DamaCai 1+3D",
 					bgColor: '#1C377B',
 					logoPath: 'public/image/damacai2.svg',
 					prizeSectionColor: '#EC2024',
@@ -146,7 +148,8 @@ export default {
 					smallSectionColor: '#1C377B', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				ST: {
+				T: {
+					name: "SportsToto 4D",
 					bgColor: '#EC2024',
 					logoPath: 'public/image/toto.svg',
 					prizeSectionColor: 'black',
@@ -154,7 +157,8 @@ export default {
 					smallSectionColor: '#EC2024', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				Spore: {
+				S: {
+					name: "Singapore 4D",
 					bgColor: '#0093D8',
 					logoPath: 'public/image/sg.svg',
 					prizeSectionColor: '#1C377B',
@@ -162,7 +166,8 @@ export default {
 					smallSectionColor: '#0093D8', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				Sandakan: {
+				ST: {
+					name: "Magnum 4D",
 					bgColor: '#F5C500',
 					logoPath: 'public/image/sandakan.svg',
 					prizeSectionColor: '#007A37',
@@ -170,7 +175,8 @@ export default {
 					smallSectionColor: '#F5C500', // Combine colors here
 					sectionTitleTextColor: '#007A37'
 				},
-				Sabah: {
+				SB: {
+					name: "Sabah 88 4D",
 					bgColor: '#EC2024',
 					logoPath: 'public/image/sabahtoto.svg',
 					prizeSectionColor: '#1D68A2',
@@ -178,7 +184,8 @@ export default {
 					smallSectionColor: '#EC2024', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				SCS: {
+				SW: {
+					name: "Special CashSweap",
 					bgColor: '#10A226',
 					logoPath: 'public/image/cashsweeptoto.svg',
 					prizeSectionColor: '#EC2024',
@@ -186,7 +193,8 @@ export default {
 					smallSectionColor: '#10A226', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				H1: {
+				H: {
+					name: "Lucky Hari Hari",
 					bgColor: '#1A81BB',
 					logoPath: 'public/image/hariharitoto.svg',
 					prizeSectionColor: '#1C377B',
@@ -194,15 +202,8 @@ export default {
 					smallSectionColor: '#1A81BB', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				H2: {
-					bgColor: '#1A81BB',
-					logoPath: 'public/image/hariharitoto.svg',
-					prizeSectionColor: '#1C377B',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#1A81BB', // Combine colors here
-					sectionTitleTextColor: 'white'
-				},
-				PL1: {
+				P: {
+					name: "Perdana Lottery",
 					bgColor: '#1A81BB',
 					logoPath: 'public/image/pdntoto.svg',
 					prizeSectionColor: '#EC2024',
@@ -210,15 +211,8 @@ export default {
 					smallSectionColor: '#1A81BB', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				PL2: {
-					bgColor: '#1A81BB',
-					logoPath: 'public/image/pdntoto.svg',
-					prizeSectionColor: '#EC2024',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#1A81BB', // Combine colors here
-					sectionTitleTextColor: 'white'
-				},
-				GD: {
+				G: {
+					name: "Grand Dragon 4D",
 					bgColor: '#EC2024',
 					logoPath: 'public/image/gdtoto.svg',
 					prizeSectionColor: '#F5C500',
@@ -230,25 +224,23 @@ export default {
 			activeIndex: null,
 			images: [
 				{ key: 'M', src: '/public/image/magnum.svg' },
-				{ key: 'DMC', src: '/public/image/damacai2.svg' },
-				{ key: 'ST', src: '/public/image/toto.svg' },
-				{ key: 'Spore', src: '/public/image/sg.svg' },
-				{ key: 'Sandakan', src: '/public/image/sandakan.svg' },
-				{ key: 'Sabah', src: '/public/image/diriwan.svg' },
-				{ key: 'SCS', src: '/public/image/ssc.svg' },
-				{ key: 'H1', src: '/public/image/lhh.svg' },
-				{ key: 'H2', src: '/public/image/lhh.svg' },
-				{ key: 'PL1', src: '/public/image/pdn.svg' },
-				{ key: 'PL2', src: '/public/image/pdn.svg' },
-				{ key: 'GD', src: '/public/image/gd.svg' }
+				{ key: 'D', src: '/public/image/damacai2.svg' },
+				{ key: 'T', src: '/public/image/toto.svg' },
+				{ key: 'S', src: '/public/image/sg.svg' },
+				{ key: 'ST', src: '/public/image/sandakan.svg' },
+				{ key: 'SB', src: '/public/image/diriwan.svg' },
+				{ key: 'SW', src: '/public/image/ssc.svg' },
+				{ key: 'H', src: '/public/image/lhh.svg' },
+				{ key: 'P', src: '/public/image/pdn.svg' },
+				{ key: 'G', src: '/public/image/gd.svg' }
 			],
 		};
 	},
 	mounted() {
-		this.fetchData();
+		// this.fetchData();
+		this.fetchData2();
 		this.$refs.scrollContainer.addEventListener('scroll', this.handleScroll);
 		this.$refs.partToScroll.addEventListener('scroll', this.handleDashboardScroll);
-		this.intervalId = setInterval(this.checkTime, 1000); // Check time every second
 		this.updateTimeText();
 	},
 	beforeDestroy() {
@@ -257,12 +249,46 @@ export default {
 		clearInterval(this.intervalId);
 	},
 	methods: {
+		fetchData() {
+			axios.get('/public/data-2.json')
+				// axios.get('https://result2.song6.club/result')
+				.then(response => {
+					this.data = response.data;
+					// console.log(this.data)
+				})
+				.catch(error => {
+					console.error('Error fetching data:', error);
+				});
+		},
+		fetchData2() {
+			axios.get('https://result2.song6.club/result')
+				.then(response => {
+					// Extract only desired keys from response.data
+					const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
+					const extractedData = {};
+
+					keysToExtract.forEach(key => {
+						if (response.data.hasOwnProperty(key)) {
+							extractedData[key] = response.data[key];
+						}
+					});
+
+					this.data = extractedData;
+
+					// Example of using the extracted data
+					// console.log('Extracted Data:', this.data);
+				})
+				.catch(error => {
+					console.error('There was an error fetching the data:', error);
+				});
+		},
 		shouldHideTimeInfo(key) {
-			const validKeys = ["H1", "H2", "PL1", "PL2"];
-			const allKeys = ["M", "DMC", "ST", "Spore", "Sandakan", "Sabah", "SCS", "H1", "H2", "PL1", "PL2", "GD"]
+			const validKeys = ["H", "P"];
+			const allKeys = ["M", "D", "T", "S", "ST", "SB", "SW", "G", "H", "P"];
 			const now = new Date();
 			const cutoffTime = new Date();
-			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
+			cutoffTime.setHours(15, 30, 0, 0);
+			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return allKeys.includes(key);
 			} else {
@@ -274,49 +300,11 @@ export default {
 			const key = Object.keys(drawObj)[0];
 			return key;
 		},
-		checkTime() {
-			const now = new Date();
-			const options = { hour12: false }; // 24-hour format
-			const currentTime = now.toLocaleTimeString('en-GB', options);
-
-			const firstTargetTime = "15:30:00";
-			const secondTargetTime = "19:30:00";
-
-			if (currentTime < firstTargetTime) {
-				this.performAction2();
-			} else if (currentTime >= firstTargetTime && currentTime < secondTargetTime) {
-				this.performAction();
-			} else {
-				this.performAction2();
-			}
-		},
-		performAction() {
-			const element1 = document.getElementById('Toto-type-H2');
-			const element2 = document.getElementById('Toto-type-PL2');
-
-			if (element1) {
-				element1.classList.add('draw-data-display-none');
-			}
-
-			if (element2) {
-				element2.classList.add('draw-data-display-none');
-			}
-		},
-		performAction2() {
-			const element1 = document.getElementById('Toto-type-H1');
-			const element2 = document.getElementById('Toto-type-PL1');
-
-			if (element1) {
-				element1.classList.add('draw-data-display-none');
-			}
-
-			if (element2) {
-				element2.classList.add('draw-data-display-none');
-			}
-		},
 		updateTimeText() {
 			const current = new Date();
 			const currentTime = current.toTimeString().split(' ')[0];
+
+			// const currentTime = "16:30:00";
 
 			const firstTargetTime = "15:30:00";
 			const secondTargetTime = "19:30:00";
@@ -355,16 +343,6 @@ export default {
 			this.$refs.scrollContainer.classList.remove('no-scroll');
 			this.$refs.partToScroll.classList.remove('scrollable');
 		},
-		fetchData() {
-			axios.get('/data-2.json')
-				.then(response => {
-					this.data = response.data;
-					// console.log(this.data)
-				})
-				.catch(error => {
-					console.error('Error fetching data:', error);
-				});
-		},
 		formatDate(dateStr) {
 			// Format date if necessary
 			return dateStr;
@@ -375,6 +353,9 @@ export default {
 			const month = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
 			const year = today.getFullYear();
 			return `${year}-${month}-${day}`;
+		},
+		getName(type) {
+			return this.styles[type].name;
 		},
 		getLogo(type) {
 			return this.styles[type].logoPath;
@@ -400,7 +381,7 @@ export default {
 		getDisplayResult(number) {
 			const now = new Date();
 			const cutoffTime = new Date();
-			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
+			cutoffTime.setHours(0, 30, 0, 0); // 3:30 PM
 			if (now < cutoffTime) {
 				return '----';
 			} else {
@@ -710,13 +691,13 @@ export default {
 .date-info {
 	display: flex;
 	flex-direction: column;
-	width: 100px;
+	width: 140px;
 }
 
 .number-info {
 	display: flex;
 	flex-direction: column;
-	width: 100px;
+	width: 140px;
 }
 
 .time-info {
@@ -845,15 +826,15 @@ export default {
 	min-height: 160px;
 }
 
-.draw-data-display-none {
-	display: none;
-}
-
 .time-info-display-none {
 	display: none;
 }
 
 .mt-10 {
 	margin-top: 10px;
+}
+
+.time-info-fs-14px {
+	font-size: 14px;
 }
 </style>
