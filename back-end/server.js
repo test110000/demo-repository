@@ -4,7 +4,7 @@ const path = require('path');
 
 // Define a route to serve data.json
 app.get('/data', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'data.json'));
+	res.sendFile(path.join(__dirname, 'public', 'data-2.json'));
 });
 
 // Serve static files from the 'public' directory (if needed)

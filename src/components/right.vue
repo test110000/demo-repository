@@ -10,16 +10,11 @@
 					<h6>Special Draw Date</h6>
 					<p style="padding-bottom: 10px;">Upcoming Special Draw Date</p>
 				</div>
-				<div class="sprcial_draw_date">
-					<p>• 2024-06-25(Tue)</p>
+				<div class="special-draw-date" v-for="(dateObj, index) in specialDates" :key="index">
+					<p :class="{ 'expired': dateObj.expired }">
+						• {{ formatDate(dateObj.date) }} {{ getDayOfWeek(dateObj.date) }}
+					</p>
 					<hr>
-					<p>• 2024-08-13(Tue)</p>
-					<hr>
-					<p>• 2024-10-29(Tue)</p>
-					<hr>
-					<p>• 2024-12-31(Tue)</p>
-					<hr>
-					<br>
 				</div>
 			</div>
 		</div>
@@ -29,12 +24,63 @@
 <script>
 export default {
 	name: 'RightColumn',
+	data() {
+		return {
+			specialDates: [
+				{ date: '2024-08-13', expired: false },
+				{ date: '2024-10-29', expired: false },
+				{ date: '2024-12-31', expired: false }
+			]
+		};
+	},
+	mounted() {
+		this.checkDates();
+		// Check dates periodically if you want real-time updates
+		setInterval(this.checkDates, 60000); // Check every minute
+	},
+	methods: {
+		formatDate(dateString) {
+			const date = new Date(dateString);
+			return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+		},
+		getDayOfWeek(dateString) {
+			const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+			const date = new Date(dateString);
+			const dayOfWeek = days[date.getDay()];
+			return `(${dayOfWeek})`;
+		},
+		checkDates() {
+			const currentDate = new Date();
+			this.specialDates.forEach(dateObj => {
+				const specialDate = new Date(dateObj.date);
+				if (specialDate <= currentDate) {
+					dateObj.expired = true;
+				}
+			});
+			// Filter out expired dates
+			this.specialDates = this.specialDates.filter(dateObj => !dateObj.expired);
+		}
+	}
 }
 </script>
 
 <style scoped>
 .right {
 	float: right;
+}
+
+.special-draw-date {
+	text-align: center;
+}
+
+.special-draw-date p {
+	margin: 0;
+	font-size: 14px;
+	color: rgb(118, 118, 118);
+}
+
+.special-draw-date hr {
+	margin: 10px 20px;
 }
 
 .right_col {
@@ -58,11 +104,11 @@ export default {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-
+	color: rgb(118, 118, 118);
 }
 
 .right_col2 p {
-	padding: 9px;
+	font-size: 15px;
 	margin: 0;
 }
 
@@ -71,25 +117,15 @@ export default {
 	height: 102px;
 	position: absolute;
 	top: -70px;
-	right: 70px;
+	right: 50px;
 	z-index: 1;
-}
-
-.sprcial_draw_date {
-	text-align: center;
-	margin-right: 20px;
-}
-
-.sprcial_draw_date p {
-	padding: 9px;
-	margin: 0;
-}
-
-.sprcial_draw_date hr {
-	margin: 0;
 }
 
 h6 {
 	padding-top: 10px;
+}
+
+.expired {
+	color: red;
 }
 </style>

@@ -1,80 +1,29 @@
 <template>
-
-	<div>
-		<TopBar @logo-clicked="handleLogoClick" :class="'hide-on-small-screen', { active: activeIndex === index }" />
-	</div>
-
-	<!--topbar-->
-	<div style="display: none;" class="navbar">
-		<div v-for="(image, index) in images" :key="index" :id="`image-container-${index}`"
-			:class="['image-container', `image-container-${index}`, { active: activeIndex === index }]"
-			@click="handleImageClick(index)">
-			<img :src="image" class="round-image" />
+	<div ref="scrollContainer" class="scroll-container">
+		<div>
+			<TopBar @logo-clicked="handleLogoClick"
+				:class="'hide-on-small-screen', { active: activeIndex === index }" />
 		</div>
-	</div>
 
-	<div class="dashboard">
-		<div class="draw-results">
-			<div v-for="(drawObj, index) in data" :key="Object.keys(drawObj)[0]" :id="`Toto-type-${index}`"
-				class="draw-section white-bg">
-				<div class="top-card-container" :style="{ backgroundColor: getBgColor(Object.keys(drawObj)[0]) }">
-					<div class="draw-header">
-						<div class="mobile-sidebar-button-container" style="color: white;">
-							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-								aria-label="Toggle navigation">
-								<i class="bi bi-list"></i>
-							</button>
-							<div class="offcanvas offcanvas-start border-top-bottom-right-80px width-sidebar"
-								tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-								<div class="offcanvas-header">
-									<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-										aria-label="Close"></button>
-								</div>
+		<!--topbar-->
+		<div style="display: none;" class="navbar">
+			<div v-for="(image, index) in filteredImages" :key="image.key" :id="`image-container-${image.key}`"
+				:class="['image-container', `image-container-${image.key}`, { active: activeIndex === index }]"
+				@click="handleImageClick(image.key)">
+				<img :src="image.src" class="round-image" />
+			</div>
+		</div>
 
-								<div class="offcanvas-body">
-									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-										<li class="nav-item">
-											<h5 class="nav-link">Results</h5>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="/">
-												<img src="/public/image/dashboard.png"
-													style="width: 25px; margin-right: 13px;" />
-												Dashboard
-											</a>
-										</li>
-										<li style="margin-top: 20px;" class="nav-item">
-											<h5 class="nav-link">ToolBox</h5>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="/spin-my-luck">
-												<img src="/public/image/spin.png"
-													style="width: 25px; margin-right: 13px;" />
-												Spin My Luck
-											</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="/lucky-book">
-												<img src="/public/image/book.png"
-													style="width: 25px; margin-right: 13px;" />
-												Lucky Book
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
 
-						<div class="logo-title-container">
-							<div class="logo-white-container">
-								<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
-							</div>
-							<h1 class="logo-name title-font-size"
-								:style="{ color: getSectionTitleTextColor(Object.keys(drawObj)[0]) }">{{
-									drawObj[Object.keys(drawObj)[0]].name }}</h1>
-						</div>
-						<div class="mobile-refresh-page-button-container" style="color: white;">
+
+		<div class="dashboard" ref="partToScroll">
+			<div class="draw-results">
+				<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" :id="`Toto-type-${getKey(drawObj)}`"
+					class="draw-section white-bg">
+					<!-- <p>{{ getKey(drawObj) }}</p> -->
+					<div class="top-card-container" :style="{ backgroundColor: getBgColor(Object.keys(drawObj)[0]) }">
+						<div class="mobile-refresh-page-button-container"
+							style="color: white; position: absolute; right: 0;">
 							<div class="refresh-icon" style="position: relative; ">
 								<div style="position: absolute; right: 8.5px; top: 3px;">
 									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
@@ -83,60 +32,78 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="draw-info">
-						<div class="date-info">
-							<span>Date: </span>
-							<span>{{ getCurrentDate() }}</span>
-						</div>
-						<hr aria-orientation="vertical" class="divider">
-						<div class="number-info">
-							<span>Draw No.: </span>
-							<span>{{ drawObj[Object.keys(drawObj)[0]].DrawNo }}</span>
-						</div>
-					</div>
-				</div>
-				<div class="prizes">
-					<div style="margin-inline: 1.25rem;">
-						<div class="prize-section">
-							<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']"
-								:key="index">
-								<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
-									:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
-								<div class="prize-number-container">
-									<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)]
-										}}
-									</div>
+						<div class="draw-header">
+							<div class="logo-title-container">
+								<div class="logo-white-container">
+									<img :src="getLogo(Object.keys(drawObj)[0])" alt="Logo" class="draw-logo">
 								</div>
+								<h1 class="logo-name title-font-size mt-10"
+									:style="{ color: getSectionTitleTextColor(Object.keys(drawObj)[0]) }">{{
+										drawObj[Object.keys(drawObj)[0]].name }}</h1>
 							</div>
 						</div>
 
-						<div class="special special-section-min-height">
-							<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-								:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Special</h2>
-							<div class="special-numbers">
-								<div v-for="(number, index) in getSpecialNumbers(drawObj[Object.keys(drawObj)[0]])"
-									:key="index" class="number">{{ number }}</div>
+						<div class="draw-info">
+							<div class="date-info">
+								<span>Date: </span>
+								<span>{{ getCurrentDate() }}</span>
+							</div>
+							<hr aria-orientation="vertical" class="divider"
+								:class="{ 'time-info-display-none': shouldHideTimeInfo(getKey(drawObj)) }">
+							<div class="time-info"
+								:class="{ 'time-info-display-none': shouldHideTimeInfo(getKey(drawObj)) }">
+								<span>Time: </span>
+								<span>{{ currentTimeText }}</span>
+							</div>
+							<hr aria-orientation="vertical" class="divider">
+							<div class="number-info">
+								<span>Draw No.: </span>
+								<span>{{ drawObj[Object.keys(drawObj)[0]].DrawNo }}</span>
 							</div>
 						</div>
-						<div class="consolation">
-							<h2 class="consolation-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-								:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Consolation</h2>
-							<div class="consolation-numbers">
-								<div v-for="(number, index) in getConsolationNumbers(drawObj[Object.keys(drawObj)[0]])"
-									:key="index" class="number">{{ number }}</div>
+					</div>
+					<div class="prizes">
+						<div style="margin-inline: 1.25rem;">
+							<div class="prize-section">
+								<div class="prize" v-for="(prize, index) in ['1ST Prize', '2ND Prize', '3RD Prize']"
+									:key="index">
+									<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
+										:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
+									<div class="prize-number-container">
+										<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)]
+											}}
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
-							<div class="jackpot-prize">
-								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-1-br-10px"
-									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 1 Prize</h2>
-								<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-2-br-10px "
-									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
+
+							<div class="special special-section-min-height">
+								<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Special</h2>
+								<div class="special-numbers">
+									<div v-for="(number, index) in getSpecialNumbers(drawObj[Object.keys(drawObj)[0]])"
+										:key="index" class="number">{{ number }}</div>
+								</div>
 							</div>
-							<div class="jackpot-prize">
-								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
-								<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP2 }}</div>
+							<div class="consolation">
+								<h2 class="consolation-section-title title-font-size small-title-top-bottom-padding b-r-10px"
+									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Consolation</h2>
+								<div class="consolation-numbers">
+									<div v-for="(number, index) in getConsolationNumbers(drawObj[Object.keys(drawObj)[0]])"
+										:key="index" class="number">{{ number }}</div>
+								</div>
+							</div>
+							<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
+								<div class="jackpot-prize">
+									<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-1-br-10px"
+										:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 1 Prize</h2>
+									<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-2-br-10px "
+										:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
+								</div>
+								<div class="jackpot-prize">
+									<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
+									<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP2 }}</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -144,6 +111,7 @@
 			</div>
 		</div>
 	</div>
+
 </template>
 <script>
 
@@ -156,11 +124,10 @@ export default {
 	},
 	data() {
 		return {
+			currentTimeText: "",
+			intervalId: null,
+			scrolledPast: false,
 			data: [],
-			imageOptions: [
-				{ src: 'public/image/DT1.png', alt: 'Image 1' },
-				{ src: 'public/image/DT2.png', alt: 'Image 2' }
-			],
 			styles: {
 				M: {
 					bgColor: 'black',
@@ -218,7 +185,7 @@ export default {
 					smallSectionColor: '#10A226', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				H: {
+				H1: {
 					bgColor: '#1A81BB',
 					logoPath: 'public/image/hariharitoto.svg',
 					prizeSectionColor: '#1C377B',
@@ -226,7 +193,23 @@ export default {
 					smallSectionColor: '#1A81BB', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
-				PL: {
+				H2: {
+					bgColor: '#1A81BB',
+					logoPath: 'public/image/hariharitoto.svg',
+					prizeSectionColor: '#1C377B',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#1A81BB', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				PL1: {
+					bgColor: '#1A81BB',
+					logoPath: 'public/image/pdntoto.svg',
+					prizeSectionColor: '#EC2024',
+					prizeSectionTextColor: 'white',
+					smallSectionColor: '#1A81BB', // Combine colors here
+					sectionTitleTextColor: 'white'
+				},
+				PL2: {
 					bgColor: '#1A81BB',
 					logoPath: 'public/image/pdntoto.svg',
 					prizeSectionColor: '#EC2024',
@@ -245,27 +228,129 @@ export default {
 			},
 			activeIndex: null,
 			images: [
-				'/public/image/magnum.svg',
-				'/public/image/damacai2.svg',
-				'/public/image/toto.svg',
-				'/public/image/sg.svg',
-				'/public/image/sandakan.svg',
-				'/public/image/sabahtoto.svg',
-				'/public/image/cashsweeptoto.svg',
-				'/public/image/hariharitoto.svg',
-				'/public/image/pdntoto.svg',
-				'/public/image/gdtoto.svg',
+				{ key: 'M', src: '/public/image/magnum.svg' },
+				{ key: 'DMC', src: '/public/image/damacai2.svg' },
+				{ key: 'ST', src: '/public/image/toto.svg' },
+				{ key: 'Spore', src: '/public/image/sg.svg' },
+				{ key: 'Sandakan', src: '/public/image/sandakan.svg' },
+				{ key: 'Sabah', src: '/public/image/diriwan.svg' },
+				{ key: 'SCS', src: '/public/image/ssc.svg' },
+				{ key: 'H1', src: '/public/image/lhh.svg' },
+				{ key: 'H2', src: '/public/image/lhh.svg' },
+				{ key: 'PL1', src: '/public/image/pdn.svg' },
+				{ key: 'PL2', src: '/public/image/pdn.svg' },
+				{ key: 'GD', src: '/public/image/gd.svg' }
 			],
 		};
 	},
 	mounted() {
 		this.fetchData();
+		this.$refs.scrollContainer.addEventListener('scroll', this.handleScroll);
+		this.$refs.partToScroll.addEventListener('scroll', this.handleDashboardScroll);
+		this.intervalId = setInterval(this.checkTime, 1000); // Check time every second
+		this.updateTimeText();
+	},
+	beforeDestroy() {
+		this.$refs.scrollContainer.removeEventListener('scroll', this.handleScroll);
+		this.$refs.partToScroll.removeEventListener('scroll', this.handleDashboardScroll);
+		clearInterval(this.intervalId);
 	},
 	methods: {
+		shouldHideTimeInfo(key) {
+			const validKeys = ["H1", "H2", "PL1", "PL2"];
+			return !validKeys.includes(key);
+		},
+		getKey(drawObj) {
+			const key = Object.keys(drawObj)[0];
+			console.log(key);
+			return key;
+		},
+		checkTime() {
+			const now = new Date();
+			const options = { hour12: false }; // 24-hour format
+			const currentTime = now.toLocaleTimeString('en-GB', options);
+
+			const firstTargetTime = "15:30:00";
+			const secondTargetTime = "19:30:00";
+
+			if (currentTime < firstTargetTime) {
+				this.performAction2();
+			} else if (currentTime >= firstTargetTime && currentTime < secondTargetTime) {
+				this.performAction();
+			} else {
+				this.performAction2();
+			}
+		},
+		performAction() {
+			const element1 = document.getElementById('Toto-type-H2');
+			const element2 = document.getElementById('Toto-type-PL2');
+
+			if (element1) {
+				element1.classList.add('draw-data-display-none');
+			}
+
+			if (element2) {
+				element2.classList.add('draw-data-display-none');
+			}
+		},
+		performAction2() {
+			const element1 = document.getElementById('Toto-type-H1');
+			const element2 = document.getElementById('Toto-type-PL1');
+
+			if (element1) {
+				element1.classList.add('draw-data-display-none');
+			}
+
+			if (element2) {
+				element2.classList.add('draw-data-display-none');
+			}
+		},
+		updateTimeText() {
+			const current = new Date();
+			const currentTime = current.toTimeString().split(' ')[0];
+
+			const firstTargetTime = "15:30:00";
+			const secondTargetTime = "19:30:00";
+
+			if (currentTime < firstTargetTime) {
+				this.currentTimeText = "7:30pm";
+			} else if (currentTime >= firstTargetTime && currentTime < secondTargetTime) {
+				this.currentTimeText = "3:30pm";
+			} else {
+				this.currentTimeText = "7:30pm";
+			}
+		},
+		handleScroll() {
+			const scrollPosition = this.$refs.scrollContainer.scrollTop;
+			if (scrollPosition >= 65 && !this.scrolledPast) {
+				this.scrolledPast = true;
+				this.disableScrolling();
+			} else if (scrollPosition < 65 && this.scrolledPast) {
+				this.scrolledPast = false;
+				this.enableScrolling();
+			}
+		},
+		handleDashboardScroll() {
+			const dashboardScrollPosition = this.$refs.partToScroll.scrollTop;
+			if (dashboardScrollPosition === 0) {
+				this.enableScrolling();  // Enable scrolling actions when at the top
+			} else {
+				this.disableScrolling(); // Disable scrolling actions when not at the top
+			}
+		},
+		disableScrolling() {
+			this.$refs.scrollContainer.classList.add('no-scroll');
+			this.$refs.partToScroll.classList.add('scrollable');
+		},
+		enableScrolling() {
+			this.$refs.scrollContainer.classList.remove('no-scroll');
+			this.$refs.partToScroll.classList.remove('scrollable');
+		},
 		fetchData() {
-			axios.get('/data.json')
+			axios.get('/data-2.json')
 				.then(response => {
 					this.data = response.data;
+					// console.log(this.data)
 				})
 				.catch(error => {
 					console.error('Error fetching data:', error);
@@ -304,19 +389,10 @@ export default {
 			};
 		},
 		getSpecialNumbers(draw) {
-			// If DT1 and DT2 exist for "Lucky Hari Hari", use them; otherwise, fall back to default behavior
-			if (draw.H && draw.H.DT1 && draw.H.DT2) {
-				return [
-					draw.S1, draw.H.DT1.S2, draw.H.DT1.S3, draw.H.DT1.S4, draw.H.DT1.S5, draw.H.DT1.S6, draw.H.DT1.S7,
-					draw.H.DT1.S8, draw.H.DT1.S9, draw.H.DT1.S10, draw.H.DT1.S11, draw.H.DT1.S12, draw.H.DT1.S13,
-				];
-			} else {
-				// Fall back to the normal behavior if DT1 and DT2 don't exist
-				return [
-					draw.S1, draw.S2, draw.S3, draw.S4, draw.S5, draw.S6, draw.S7, draw.S8, draw.S9, draw.S10,
-					draw.S11, draw.S12, draw.S13
-				];
-			}
+			return [
+				draw.S1, draw.S2, draw.S3, draw.S4, draw.S5, draw.S6, draw.S7, draw.S8, draw.S9, draw.S10,
+				draw.S11, draw.S12, draw.S13
+			];
 		},
 		getConsolationNumbers(draw) {
 			// Extract consolation numbers from the draw object
@@ -339,10 +415,46 @@ export default {
 				element.scrollIntoView({ behavior: 'smooth' });
 			}
 		},
+	},
+	computed: {
+		filteredImages() {
+			const now = new Date();
+			const currentTime = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+
+			const targetTime1 = 15 * 3600 + 30 * 60; // 15:30:00 in seconds
+			const targetTime2 = 19 * 3600 + 30 * 60; // 19:30:00 in seconds
+
+			if (currentTime < targetTime1) {
+				return this.images.filter(image => image.key !== 'H1' && image.key !== 'PL1');
+			} else if (currentTime < targetTime2) {
+				return this.images.filter(image => image.key !== 'H2' && image.key !== 'PL2');
+			} else {
+				return this.images.filter(image => image.key !== 'H1' && image.key !== 'PL1');
+			}
+		}
 	}
 };
 </script>
 <style scoped>
+@media screen and (max-width: 769px) {
+	.scroll-container {
+		height: 100vh;
+		overflow: auto;
+	}
+
+	.no-scroll {
+		overflow: hidden !important;
+	}
+
+	.scrollable {
+		overflow-y: auto !important;
+		/* Allow vertical scrolling */
+		max-height: calc(100vh - 65px);
+		/* Adjust as necessary */
+	}
+}
+
+
 @media screen and (max-width: 769px) {
 	.navbar {
 		display: flex !important;
@@ -381,6 +493,13 @@ export default {
 .mobile-refresh-page-button-container {
 	padding-right: 20px;
 }
+
+@media screen and (min-width: 769px) {
+	.mobile-refresh-page-button-container {
+		display: none;
+	}
+}
+
 
 .refresh-icon {
 	font-size: 16px !important;
@@ -427,9 +546,17 @@ export default {
 .dashboard {
 	margin-top: 80px;
 	height: calc(-5rem + 100dvh);
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
+	/* overflow: auto; */
+	overflow: hidden;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
+}
+
+@media screen and (min-width: 769px) {
+	.dashboard {
+		overflow: auto;
+	}
 }
 
 @media screen and (max-width: 769px) {
@@ -463,6 +590,7 @@ export default {
 	flex-direction: column;
 	border-radius: 0 0 50px 50px;
 	padding-top: 16px;
+	position: relative;
 }
 
 @media (min-width: 768px) {
@@ -476,7 +604,7 @@ export default {
 
 .prize-section {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .draw-section {
@@ -508,7 +636,7 @@ export default {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .logo-title-container {
@@ -569,6 +697,11 @@ export default {
 	width: 100px;
 }
 
+.time-info {
+	display: flex;
+	flex-direction: column;
+}
+
 .divider {
 	opacity: 0.6;
 	border-width: 0px 0px 0px 1px;
@@ -576,7 +709,7 @@ export default {
 	border-style: solid;
 	border-color: rgb(138, 138, 138);
 	height: 30px;
-	margin: auto 20px;
+	margin: auto 15px;
 }
 
 .special,
@@ -688,5 +821,17 @@ export default {
 
 .special-section-min-height {
 	min-height: 160px;
+}
+
+.draw-data-display-none {
+	display: none;
+}
+
+.time-info-display-none {
+	display: none;
+}
+
+.mt-10 {
+	margin-top: 10px;
 }
 </style>

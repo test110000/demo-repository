@@ -64,9 +64,9 @@
 						<img class="d_num_title" width="100" src="/public/image/4D-lottery-wording.png">
 					</div>
 					<div class="logo_col">
-						<div class="logo" v-for="(logo, index) in logos" :key="index">
-							<a :href="'#'" @click.prevent="handleLogoClick(index)">
-								<img :id="`4D-${index}`" width="40px" height="40px" :src="logo.src">
+						<div class="logo" v-for="logo in filteredLogos" :key="logo.key">
+							<a :href="'#'" @click.prevent="handleLogoClick(logo.key)">
+								<img :id="`4D-${logo.key}`" width="40px" height="40px" :src="logo.src">
 							</a>
 						</div>
 					</div>
@@ -96,23 +96,50 @@ export default {
 	name: 'TopBar',
 	data() {
 		return {
+			intervalId: null,
 			currentDate: new Date(),
 			showDatePicker: false,
 			logos: [
-				{ src: '/public/image/magnum.svg' },
-				{ src: '/public/image/damacai2.svg' },
-				{ src: '/public/image/toto.svg' },
-				{ src: '/public/image/sg.svg' },
-				{ src: '/public/image/sandakan.svg' },
-				{ src: '/public/image/diriwan.svg' },
-				{ src: '/public/image/ssc.svg' },
-				{ src: '/public/image/lhh.svg' },
-				{ src: '/public/image/pdn.svg' },
-				{ src: '/public/image/gd.svg' }
+				{ key: 'M', src: '/public/image/magnum.svg' },
+				{ key: 'DMC', src: '/public/image/damacai2.svg' },
+				{ key: 'ST', src: '/public/image/toto.svg' },
+				{ key: 'Spore', src: '/public/image/sg.svg' },
+				{ key: 'Sandakan', src: '/public/image/sandakan.svg' },
+				{ key: 'Sabah', src: '/public/image/diriwan.svg' },
+				{ key: 'SCS', src: '/public/image/ssc.svg' },
+				{ key: 'H1', src: '/public/image/lhh.svg' },
+				{ key: 'H2', src: '/public/image/lhh.svg' },
+				{ key: 'PL1', src: '/public/image/pdn.svg' },
+				{ key: 'PL2', src: '/public/image/pdn.svg' },
+				{ key: 'GD', src: '/public/image/gd.svg' }
 			]
 		};
 	},
+	mounted() {
+		this.intervalId = setInterval(this.checkTime, 1000);
+	},
+	beforeDestroy() {
+		clearInterval(this.intervalId);
+	},
 	methods: {
+		checkTime() {
+			const now = new Date();
+			const options = { hour12: false }; // 24-hour format
+			const currentTime = now.toLocaleTimeString('en-GB', options);
+
+			const targetTime = "19:30:00";
+			if (currentTime < targetTime) {
+				this.performAction();
+			} else {
+				this.performAction2();
+			}
+		},
+		performAction() {
+
+		},
+		performAction2() {
+
+		},
 		openDatePicker() {
 			this.showDatePicker = true;
 		},
@@ -138,6 +165,21 @@ export default {
 		},
 		currentLanguage() {
 			return this.$store ? this.$store.state.currentLanguage : 'en';
+		},
+		filteredLogos() {
+			const now = new Date();
+			const currentTime = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+
+			const targetTime1 = 15 * 3600 + 30 * 60; // 15:30:00 in seconds
+			const targetTime2 = 19 * 3600 + 30 * 60; // 19:30:00 in seconds
+
+			if (currentTime < targetTime1) {
+				return this.logos.filter(logo => logo.key !== 'H1' && logo.key !== 'PL1');
+			} else if (currentTime < targetTime2) {
+				return this.logos.filter(logo => logo.key !== 'H2' && logo.key !== 'PL2');
+			} else {
+				return this.logos.filter(logo => logo.key !== 'H1' && logo.key !== 'PL1');
+			}
 		}
 	}
 };
