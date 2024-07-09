@@ -9,7 +9,7 @@
 
 					<!--left-->
 					<nav class="navbar desktop_navbar" style="display: none;">
-						<div class="container-fluid ">
+						<div class="container-fluid">
 							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
 								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
 								aria-label="Toggle navigation">
@@ -25,27 +25,35 @@
 								<div class="offcanvas-body">
 									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 										<li class="nav-item">
-											<h5 class="nav-link">Results</h5>
+											<h5 class="nav-link" :class="{ 'active': activeTitle === 'Results' }"
+												@click="setActiveTitle('Results')">Results</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="/">
+											<a class="nav-link" href="/"
+												:class="{ 'active': activeTitle === 'Dashboard' }"
+												@click="setActiveTitle('Dashboard')">
 												<img src="/public/image/dashboard.png"
 													style="width: 25px; margin-right: 13px;">
 												Dashboard
 											</a>
 										</li>
 										<li style="margin-top: 20px;" class="nav-item">
-											<h5 class="nav-link">ToolBox</h5>
+											<h5 class="nav-link" :class="{ 'active': activeTitle === 'ToolBox' }"
+												@click="setActiveTitle('ToolBox')">ToolBox</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="/spin-my-luck">
+											<a class="nav-link" href="/spin-my-luck"
+												:class="{ 'active': activeTitle === 'Spin My Luck' }"
+												@click="setActiveTitle('Spin My Luck')">
 												<img src="/public/image/spin.png"
 													style="width: 25px; margin-right: 13px;">
 												Spin My Luck
 											</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="/lucky-book">
+											<a class="nav-link" href="/lucky-book"
+												:class="{ 'active': activeTitle === 'Lucky Book' }"
+												@click="setActiveTitle('Lucky Book')">
 												<img src="/public/image/book.png"
 													style="width: 25px; margin-right: 13px;">
 												Lucky Book
@@ -56,7 +64,6 @@
 							</div>
 						</div>
 					</nav>
-
 					<!--top-->
 					<div class="Logo_4D">
 						<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
@@ -97,6 +104,7 @@ export default {
 	data() {
 		return {
 			intervalId: null,
+			activeTitle: 'Dashboard',
 			currentDate: new Date(),
 			showDatePicker: false,
 			logos: [
@@ -122,6 +130,9 @@ export default {
 		clearInterval(this.intervalId);
 	},
 	methods: {
+		setActiveTitle(title) {
+			this.activeTitle = title;
+		},
 		checkTime() {
 			const now = new Date();
 			const options = { hour12: false }; // 24-hour format
@@ -449,5 +460,10 @@ export default {
 .navbar-toggler {
 	color: #CF2E2E;
 	border: none;
+}
+
+.active {
+	color: rgb(38, 76, 170);
+	/* Define your active text color */
 }
 </style>

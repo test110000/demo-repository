@@ -9,40 +9,37 @@
 					</div>
 					<div class="sidebar-main">
 						<p class="results_install_app_text">Results</p>
-						<br>
 						<div class="menu">
 							<!--dashboard-->
 							<div class="text_col">
 								<router-link to="/" exact active-class="active-link"
-									@click.native="updateImage('dashboard', '/public/image/DashboardActive.svg')">
+									@click.native="updateImage('dashboard')">
 									<img class="pic" :src="imageSrc.dashboard">
-									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(38, 76, 170)' : '' }"
+									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(207, 46, 46)' : '' }"
 										class="text_menu">Dashboard</p>
 								</router-link>
 							</div>
 						</div>
-						<br><br>
-						<p class="toolbox_text">Toolbox</p>
 						<br>
+						<p class="toolbox_text">Toolbox</p>
 						<!--Spin My Luck-->
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/spin-my-luck" exact active-class="active-link"
-									@click.native="updateImage('spin', '/public/image/SpinLuckActive.png')">
+									@click.native="updateImage('spin')">
 									<img class="pic" :src="imageSrc.spin">
-									<p :style="{ color: activeTab === 'spin' ? 'rgb(38, 76, 170)' : '' }"
+									<p :style="{ color: activeTab === 'spin' ? 'rgb(207, 46, 46)' : '' }"
 										class="text_menu">Spin My Luck</p>
 								</router-link>
 							</div>
 						</div>
-						<br>
 						<!--Lucky Book-->
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/lucky-book" exact active-class="active-link"
-									@click.native="updateImage('book', '/public/image/LuckyBookActive.png')">
+									@click.native="updateImage('book')">
 									<img class="pic" :src="imageSrc.book">
-									<p :style="{ color: activeTab === 'book' ? 'rgb(38, 76, 170)' : '' }"
+									<p :style="{ color: activeTab === 'book' ? 'rgb(207, 46, 46)' : '' }"
 										class="text_menu">Lucky Book</p>
 								</router-link>
 							</div>
@@ -60,29 +57,39 @@ export default {
 	data() {
 		return {
 			imageSrc: {
-				dashboard: '/public/image/DashboardActive.svg',
+				dashboard: '/public/image/dashboard.png',
 				spin: '/public/image/spin.png',
 				book: '/public/image/book.png'
 			},
-			activeTab: 'dashboard' // Default active tab is 'dashboard'
+			activeTab: '' // Initially empty
 		};
+	},
+	created() {
+		// Check localStorage for the last active tab and set it
+		const savedTab = localStorage.getItem('activeTab');
+		if (savedTab) {
+			this.updateImage(savedTab);
+		} else {
+			this.updateImage('dashboard'); // Default to 'dashboard' if nothing is found
+		}
 	},
 	methods: {
 		updateImage(type) {
 			if (type === 'dashboard') {
-				this.imageSrc.dashboard = '/public/image/DashboardActive.svg';
+				this.imageSrc.dashboard = '/public/image/dashboard.png';
 				this.imageSrc.spin = '/public/image/spin.png';
 				this.imageSrc.book = '/public/image/book.png';
 			} else if (type === 'spin') {
 				this.imageSrc.dashboard = '/public/image/dashboard.png';
-				this.imageSrc.spin = '/public/image/SpinLuckActive.png';
+				this.imageSrc.spin = '/public/image/spin.png';
 				this.imageSrc.book = '/public/image/book.png';
 			} else if (type === 'book') {
 				this.imageSrc.dashboard = '/public/image/dashboard.png';
 				this.imageSrc.spin = '/public/image/spin.png';
-				this.imageSrc.book = '/public/image/LuckyBookActive.png';
+				this.imageSrc.book = '/public/image/book.png';
 			}
 			this.activeTab = type; // Update active tab
+			localStorage.setItem('activeTab', type); // Save the active tab to localStorage
 		}
 	}
 }
@@ -106,9 +113,6 @@ export default {
 	width: 206px;
 	background-color: #ffffff;
 	color: #fff;
-	/* padding-top: 20px;
-	padding-left: 25px;
-	padding-right: 5px; */
 	height: 100vh;
 	position: fixed;
 	top: 0;
@@ -125,6 +129,7 @@ export default {
 
 .pic {
 	width: 20px;
+	height: 19px;
 }
 
 .text_menu {
@@ -134,11 +139,11 @@ export default {
 	color: gray;
 	margin-left: 10px;
 	font-weight: 500;
+	margin-bottom: 0 !important;
 }
 
 .menu {
 	width: 100%;
-	height: 17px;
 	font-weight: 500;
 	font-size: 28px;
 	line-height: 19px;
@@ -147,6 +152,12 @@ export default {
 	color: rgb(38, 76, 170);
 	border-radius: 4px;
 	cursor: unset;
+	align-content: center;
+	height: 40px;
+}
+
+.menu:hover {
+	background-color: rgb(243, 243, 243);
 }
 
 .sidebar ul li {
@@ -186,7 +197,7 @@ export default {
 	-webkit-box-align: center;
 	align-items: center;
 	padding-top: 40px;
-	/* padding-bottom: 20px; */
+	padding-bottom: 20px;
 	color: rgb(0, 0, 0);
 }
 
@@ -195,7 +206,6 @@ export default {
 }
 
 .active-link .text_menu {
-	color: rgb(38, 76, 170);
-	/* Change text color when active */
+	color: rgb(207, 46, 46);
 }
 </style>

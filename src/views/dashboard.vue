@@ -13,9 +13,6 @@
 				<img :src="image.src" class="round-image" />
 			</div>
 		</div>
-
-
-
 		<div class="dashboard" ref="partToScroll">
 			<div class="draw-results">
 				<div v-for="drawObj in data" :key="Object.keys(drawObj)[0]" :id="`Toto-type-${getKey(drawObj)}`"
@@ -70,8 +67,9 @@
 									<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
 										:style="getPrizeStyle(Object.keys(drawObj)[0])">{{ prize }}</h2>
 									<div class="prize-number-container">
-										<div class="prize-number">{{ drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)]
-											}}
+										<div class="prize-number">{{
+											getDisplayResult(drawObj[Object.keys(drawObj)[0]]['P' + (index + 1)])
+										}}
 										</div>
 									</div>
 								</div>
@@ -82,7 +80,7 @@
 									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Special</h2>
 								<div class="special-numbers">
 									<div v-for="(number, index) in getSpecialNumbers(drawObj[Object.keys(drawObj)[0]])"
-										:key="index" class="number">{{ number }}</div>
+										:key="index" class="number">{{ getDisplayResult(number) }}</div>
 								</div>
 							</div>
 							<div class="consolation">
@@ -90,7 +88,7 @@
 									:style="getSmallSectionStyle(Object.keys(drawObj)[0])">Consolation</h2>
 								<div class="consolation-numbers">
 									<div v-for="(number, index) in getConsolationNumbers(drawObj[Object.keys(drawObj)[0]])"
-										:key="index" class="number">{{ number }}</div>
+										:key="index" class="number">{{ getDisplayResult(number) }}</div>
 								</div>
 							</div>
 							<div v-if="drawObj[Object.keys(drawObj)[0]].JP1" class="jackpot">
@@ -101,8 +99,10 @@
 										:style="getSmallSectionStyle(Object.keys(drawObj)[0])">4D Jackpot 2 Prize</h2>
 								</div>
 								<div class="jackpot-prize">
-									<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP1 }}</div>
-									<div class="amount">{{ drawObj[Object.keys(drawObj)[0]].JP2 }}</div>
+									<div class="amount">{{ getDisplayResult(drawObj[Object.keys(drawObj)[0]].JP1) }}
+									</div>
+									<div class="amount">{{ getDisplayResult(drawObj[Object.keys(drawObj)[0]].JP2) }}
+									</div>
 								</div>
 							</div>
 						</div>
@@ -117,6 +117,7 @@
 
 import axios from 'axios';
 import TopBar from '/src/components/topbar.vue';
+import apiService from '/src/4Dapi.js';
 
 export default {
 	components: {
@@ -258,11 +259,19 @@ export default {
 	methods: {
 		shouldHideTimeInfo(key) {
 			const validKeys = ["H1", "H2", "PL1", "PL2"];
-			return !validKeys.includes(key);
+			const allKeys = ["M", "DMC", "ST", "Spore", "Sandakan", "Sabah", "SCS", "H1", "H2", "PL1", "PL2", "GD"]
+			const now = new Date();
+			const cutoffTime = new Date();
+			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
+			if (now < cutoffTime) {
+				return allKeys.includes(key);
+			} else {
+				return !validKeys.includes(key);
+			}
+
 		},
 		getKey(drawObj) {
 			const key = Object.keys(drawObj)[0];
-			console.log(key);
 			return key;
 		},
 		checkTime() {
@@ -387,6 +396,19 @@ export default {
 				backgroundColor: this.styles[type].smallSectionColor,
 				color: this.styles[type].sectionTitleTextColor
 			};
+		},
+		getDisplayResult(number) {
+			const now = new Date();
+			const cutoffTime = new Date();
+			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
+			if (now < cutoffTime) {
+				return '----';
+			} else {
+				return number;
+			}
+		},
+		getKey(drawObj) {
+			return Object.keys(drawObj)[0];
 		},
 		getSpecialNumbers(draw) {
 			return [
