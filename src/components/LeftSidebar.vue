@@ -13,22 +13,25 @@
 						<div class="menu">
 							<!--dashboard-->
 							<div class="text_col">
-								<router-link to="/">
-									<img class="pic" src="\public\image\dashboard.png">
-									<p class="text_menu">Dashboard</p>
+								<router-link to="/" exact active-class="active-link"
+									@click.native="updateImage('dashboard', '/public/image/DashboardActive.svg')">
+									<img class="pic" :src="imageSrc.dashboard">
+									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(38, 76, 170)' : '' }"
+										class="text_menu">Dashboard</p>
 								</router-link>
 							</div>
 						</div>
-						<br>
 						<br><br>
 						<p class="toolbox_text">Toolbox</p>
 						<br>
 						<!--Spin My Luck-->
 						<div class="menu">
 							<div class="text_col">
-								<router-link to="/spin-my-luck">
-									<img class="pic" src="\public\image\spin.png">
-									<p class="text_menu">Spin My Luck</p>
+								<router-link to="/spin-my-luck" exact active-class="active-link"
+									@click.native="updateImage('spin', '/public/image/SpinLuckActive.png')">
+									<img class="pic" :src="imageSrc.spin">
+									<p :style="{ color: activeTab === 'spin' ? 'rgb(38, 76, 170)' : '' }"
+										class="text_menu">Spin My Luck</p>
 								</router-link>
 							</div>
 						</div>
@@ -36,9 +39,11 @@
 						<!--Lucky Book-->
 						<div class="menu">
 							<div class="text_col">
-								<router-link to="/lucky-book">
-									<img class="pic" src="\public\image\book.png">
-									<p class="text_menu">Lucky Book</p>
+								<router-link to="/lucky-book" exact active-class="active-link"
+									@click.native="updateImage('book', '/public/image/LuckyBookActive.png')">
+									<img class="pic" :src="imageSrc.book">
+									<p :style="{ color: activeTab === 'book' ? 'rgb(38, 76, 170)' : '' }"
+										class="text_menu">Lucky Book</p>
 								</router-link>
 							</div>
 						</div>
@@ -51,7 +56,35 @@
 
 <script>
 export default {
-	name: 'LeftBar'
+	name: 'LeftBar',
+	data() {
+		return {
+			imageSrc: {
+				dashboard: '/public/image/DashboardActive.svg',
+				spin: '/public/image/spin.png',
+				book: '/public/image/book.png'
+			},
+			activeTab: 'dashboard' // Default active tab is 'dashboard'
+		};
+	},
+	methods: {
+		updateImage(type) {
+			if (type === 'dashboard') {
+				this.imageSrc.dashboard = '/public/image/DashboardActive.svg';
+				this.imageSrc.spin = '/public/image/spin.png';
+				this.imageSrc.book = '/public/image/book.png';
+			} else if (type === 'spin') {
+				this.imageSrc.dashboard = '/public/image/dashboard.png';
+				this.imageSrc.spin = '/public/image/SpinLuckActive.png';
+				this.imageSrc.book = '/public/image/book.png';
+			} else if (type === 'book') {
+				this.imageSrc.dashboard = '/public/image/dashboard.png';
+				this.imageSrc.spin = '/public/image/spin.png';
+				this.imageSrc.book = '/public/image/LuckyBookActive.png';
+			}
+			this.activeTab = type; // Update active tab
+		}
+	}
 }
 </script>
 
@@ -100,6 +133,7 @@ export default {
 	font-size: 17px;
 	color: gray;
 	margin-left: 10px;
+	font-weight: 500;
 }
 
 .menu {
@@ -158,5 +192,10 @@ export default {
 
 .text_col {
 	display: ruby;
+}
+
+.active-link .text_menu {
+	color: rgb(38, 76, 170);
+	/* Change text color when active */
 }
 </style>
