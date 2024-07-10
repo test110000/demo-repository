@@ -288,7 +288,7 @@ export default {
 			const now = new Date();
 			const cutoffTime = new Date();
 			cutoffTime.setHours(15, 30, 0, 0);
-			now.setHours(16, 30, 0, 0);
+			// now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return allKeys.includes(key);
 			} else {
@@ -381,7 +381,7 @@ export default {
 		getDisplayResult(number) {
 			const now = new Date();
 			const cutoffTime = new Date();
-			cutoffTime.setHours(0, 30, 0, 0); // 3:30 PM
+			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
 			if (now < cutoffTime) {
 				return '----';
 			} else {
