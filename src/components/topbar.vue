@@ -32,7 +32,7 @@
 											<a class="nav-link" href="/"
 												:class="{ 'active': activeTitle === 'Dashboard' }"
 												@click="setActiveTitle('Dashboard')">
-												<img src="/public/image/dashboard.png"
+												<img src="/image/dashboard.png"
 													style="width: 25px; margin-right: 13px;">
 												Dashboard
 											</a>
@@ -45,8 +45,7 @@
 											<a class="nav-link" href="/spin-my-luck"
 												:class="{ 'active': activeTitle === 'Spin My Luck' }"
 												@click="setActiveTitle('Spin My Luck')">
-												<img src="/public/image/spin.png"
-													style="width: 25px; margin-right: 13px;">
+												<img src="/image/spin.png" style="width: 25px; margin-right: 13px;">
 												Spin My Luck
 											</a>
 										</li>
@@ -54,8 +53,7 @@
 											<a class="nav-link" href="/lucky-book"
 												:class="{ 'active': activeTitle === 'Lucky Book' }"
 												@click="setActiveTitle('Lucky Book')">
-												<img src="/public/image/book.png"
-													style="width: 25px; margin-right: 13px;">
+												<img src="/image/book.png" style="width: 25px; margin-right: 13px;">
 												Lucky Book
 											</a>
 										</li>
@@ -67,8 +65,8 @@
 					<!--top-->
 					<div class="Logo_4D">
 						<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
-							src="/public/image/4D-lottery-single.png">
-						<img class="d_num_title" width="100" src="/public/image/4D-lottery-wording.png">
+							src="/image/4D-lottery-single.png">
+						<img class="d_num_title" width="100" src="/image/4D-lottery-wording.png">
 					</div>
 					<div class="logo_col">
 						<div class="logo" v-for="logo in filteredLogos" :key="logo.key">
@@ -107,16 +105,16 @@ export default {
 			currentDate: new Date(),
 			showDatePicker: false,
 			logos: [
-				{ key: 'M', src: '/public/image/magnum.svg' },
-				{ key: 'D', src: '/public/image/damacai2.svg' },
-				{ key: 'T', src: '/public/image/toto.svg' },
-				{ key: 'S', src: '/public/image/sg.svg' },
-				{ key: 'ST', src: '/public/image/sandakan.svg' },
-				{ key: 'SB', src: '/public/image/diriwan.svg' },
-				{ key: 'SW', src: '/public/image/ssc.svg' },
-				{ key: 'H', src: '/public/image/lhh.svg' },
-				{ key: 'P', src: '/public/image/pdn.svg' },
-				{ key: 'G', src: '/public/image/gd.svg' }
+				{ key: 'M', src: '/image/magnum.svg' },
+				{ key: 'D', src: '/image/damacai2.svg' },
+				{ key: 'T', src: '/image/toto.svg' },
+				{ key: 'S', src: '/image/sg.svg' },
+				{ key: 'ST', src: '/image/sandakan.svg' },
+				{ key: 'SB', src: '/image/diriwan.svg' },
+				{ key: 'SW', src: '/image/ssc.svg' },
+				{ key: 'H', src: '/image/lhh.svg' },
+				{ key: 'P', src: '/image/pdn.svg' },
+				{ key: 'G', src: '/image/gd.svg' }
 			]
 		};
 	},

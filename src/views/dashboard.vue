@@ -133,7 +133,7 @@ export default {
 				M: {
 					name: "Magnum 4D",
 					bgColor: 'black',
-					logoPath: 'public/image/magnum.svg',
+					logoPath: '/image/magnum.svg',
 					prizeSectionColor: '#F5C500',
 					prizeSectionTextColor: 'black',
 					smallSectionColor: 'black', // Combine colors here
@@ -142,7 +142,7 @@ export default {
 				D: {
 					name: "DamaCai 1+3D",
 					bgColor: '#1C377B',
-					logoPath: 'public/image/damacai2.svg',
+					logoPath: '/image/damacai2.svg',
 					prizeSectionColor: '#EC2024',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#1C377B', // Combine colors here
@@ -151,7 +151,7 @@ export default {
 				T: {
 					name: "SportsToto 4D",
 					bgColor: '#EC2024',
-					logoPath: 'public/image/toto.svg',
+					logoPath: '/image/toto.svg',
 					prizeSectionColor: 'black',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#EC2024', // Combine colors here
@@ -160,7 +160,7 @@ export default {
 				S: {
 					name: "Singapore 4D",
 					bgColor: '#0093D8',
-					logoPath: 'public/image/sg.svg',
+					logoPath: '/image/sg.svg',
 					prizeSectionColor: '#1C377B',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#0093D8', // Combine colors here
@@ -169,7 +169,7 @@ export default {
 				ST: {
 					name: "Magnum 4D",
 					bgColor: '#F5C500',
-					logoPath: 'public/image/sandakan.svg',
+					logoPath: '/image/sandakan.svg',
 					prizeSectionColor: '#007A37',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#F5C500', // Combine colors here
@@ -178,7 +178,7 @@ export default {
 				SB: {
 					name: "Sabah 88 4D",
 					bgColor: '#EC2024',
-					logoPath: 'public/image/sabahtoto.svg',
+					logoPath: '/image/sabahtoto.svg',
 					prizeSectionColor: '#1D68A2',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#EC2024', // Combine colors here
@@ -187,7 +187,7 @@ export default {
 				SW: {
 					name: "Special CashSweap",
 					bgColor: '#10A226',
-					logoPath: 'public/image/cashsweeptoto.svg',
+					logoPath: '/image/cashsweeptoto.svg',
 					prizeSectionColor: '#EC2024',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#10A226', // Combine colors here
@@ -196,7 +196,7 @@ export default {
 				H: {
 					name: "Lucky Hari Hari",
 					bgColor: '#1A81BB',
-					logoPath: 'public/image/hariharitoto.svg',
+					logoPath: '/image/hariharitoto.svg',
 					prizeSectionColor: '#1C377B',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#1A81BB', // Combine colors here
@@ -205,7 +205,7 @@ export default {
 				P: {
 					name: "Perdana Lottery",
 					bgColor: '#1A81BB',
-					logoPath: 'public/image/pdntoto.svg',
+					logoPath: '/image/pdntoto.svg',
 					prizeSectionColor: '#EC2024',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#1A81BB', // Combine colors here
@@ -214,7 +214,7 @@ export default {
 				G: {
 					name: "Grand Dragon 4D",
 					bgColor: '#EC2024',
-					logoPath: 'public/image/gdtoto.svg',
+					logoPath: '/image/gdtoto.svg',
 					prizeSectionColor: '#F5C500',
 					prizeSectionTextColor: 'black',
 					smallSectionColor: '#EC2024', // Combine colors here
@@ -223,16 +223,16 @@ export default {
 			},
 			activeIndex: null,
 			images: [
-				{ key: 'M', src: '/public/image/magnum.svg' },
-				{ key: 'D', src: '/public/image/damacai2.svg' },
-				{ key: 'T', src: '/public/image/toto.svg' },
-				{ key: 'S', src: '/public/image/sg.svg' },
-				{ key: 'ST', src: '/public/image/sandakan.svg' },
-				{ key: 'SB', src: '/public/image/diriwan.svg' },
-				{ key: 'SW', src: '/public/image/ssc.svg' },
-				{ key: 'H', src: '/public/image/lhh.svg' },
-				{ key: 'P', src: '/public/image/pdn.svg' },
-				{ key: 'G', src: '/public/image/gd.svg' }
+				{ key: 'M', src: '/image/magnum.svg' },
+				{ key: 'D', src: '/image/damacai2.svg' },
+				{ key: 'T', src: '/image/toto.svg' },
+				{ key: 'S', src: '/image/sg.svg' },
+				{ key: 'ST', src: '/image/sandakan.svg' },
+				{ key: 'SB', src: '/image/diriwan.svg' },
+				{ key: 'SW', src: '/image/ssc.svg' },
+				{ key: 'H', src: '/image/lhh.svg' },
+				{ key: 'P', src: '/image/pdn.svg' },
+				{ key: 'G', src: '/image/gd.svg' }
 			],
 		};
 	},

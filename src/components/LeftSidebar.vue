@@ -5,7 +5,7 @@
 			<div class="sidebar" style="background-color: #CF2E2E;">
 				<div style="background: white; height: 100%; border-top-right-radius: 50px;">
 					<div class="logo_col">
-						<img class="d_num_logo" src="/public/image/4D-lottery-wording.png">
+						<img class="d_num_logo" src="/image/4D-lottery-wording.png">
 					</div>
 					<div class="sidebar-main">
 						<p class="results_install_app_text">Results</p>
@@ -57,9 +57,9 @@ export default {
 	data() {
 		return {
 			imageSrc: {
-				dashboard: '/public/image/dashboard.png',
-				spin: '/public/image/spin.png',
-				book: '/public/image/book.png'
+				dashboard: '/image/dashboard.png',
+				spin: '/image/spin.png',
+				book: '/image/book.png'
 			},
 			activeTab: '' // Initially empty
 		};
@@ -76,17 +76,17 @@ export default {
 	methods: {
 		updateImage(type) {
 			if (type === 'dashboard') {
-				this.imageSrc.dashboard = '/public/image/dashboard.png';
-				this.imageSrc.spin = '/public/image/spin.png';
-				this.imageSrc.book = '/public/image/book.png';
+				this.imageSrc.dashboard = '/image/dashboard.png';
+				this.imageSrc.spin = '/image/spin.png';
+				this.imageSrc.book = '/image/book.png';
 			} else if (type === 'spin') {
-				this.imageSrc.dashboard = '/public/image/dashboard.png';
-				this.imageSrc.spin = '/public/image/spin.png';
-				this.imageSrc.book = '/public/image/book.png';
+				this.imageSrc.dashboard = '/image/dashboard.png';
+				this.imageSrc.spin = '/image/spin.png';
+				this.imageSrc.book = '/image/book.png';
 			} else if (type === 'book') {
-				this.imageSrc.dashboard = '/public/image/dashboard.png';
-				this.imageSrc.spin = '/public/image/spin.png';
-				this.imageSrc.book = '/public/image/book.png';
+				this.imageSrc.dashboard = '/image/dashboard.png';
+				this.imageSrc.spin = '/image/spin.png';
+				this.imageSrc.book = '/image/book.png';
 			}
 			this.activeTab = type; // Update active tab
 			localStorage.setItem('activeTab', type); // Save the active tab to localStorage
