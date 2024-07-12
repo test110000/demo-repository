@@ -1,8 +1,7 @@
 <template>
 	<div ref="scrollContainer" class="scroll-container">
 		<div>
-			<TopBar @logo-clicked="handleLogoClick"
-				:class="'hide-on-small-screen', { active: activeIndex === index }" />
+			<TopBar @logo-clicked="handleLogoClick" />
 		</div>
 
 		<!--topbar-->
@@ -24,7 +23,7 @@
 							<div class="refresh-icon" style="position: relative; ">
 								<div style="position: absolute; right: 8.5px; top: 3px;">
 									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
-										&#x21BA;
+										&#8635;
 									</a>
 								</div>
 							</div>
@@ -382,6 +381,7 @@ export default {
 			const now = new Date();
 			const cutoffTime = new Date();
 			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
+			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return '----';
 			} else {

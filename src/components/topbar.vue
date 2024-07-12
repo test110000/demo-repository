@@ -3,9 +3,9 @@
 		<div class="top-bar" style="background-color: #CF2E2E;">
 			<div class="full-width plr-20">
 				<div class="top">
-					<a class="display-img" href="#">
-						&#x2630;
-					</a>
+					<div class="display-img" id="display-img">
+						<img :src="getImageForRoute" />
+					</div>
 
 					<!--left-->
 					<nav class="navbar desktop_navbar" style="display: none;">
@@ -78,7 +78,7 @@
 					<div class="refresh-icon" style="position: relative; ">
 						<div style="position: absolute; right: 12px; top: 4px;">
 							<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
-								&#x21BA;
+								&#8635;
 							</a>
 						</div>
 					</div>
@@ -115,7 +115,13 @@ export default {
 				{ key: 'H', src: '/image/lhh.svg' },
 				{ key: 'P', src: '/image/pdn.svg' },
 				{ key: 'G', src: '/image/gd.svg' }
-			]
+			],
+			images: {
+				'/': '/image/dashboard-topbar.svg',
+				'/spin-my-luck': '/image/spin-topbar.svg',
+				'/lucky-book': '/image/book-topbar.svg',
+				// Add more routes and corresponding images
+			},
 		};
 	},
 	mounted() {
@@ -186,7 +192,13 @@ export default {
 			} else {
 				return this.logos.filter(logo => logo.key !== 'H1' && logo.key !== 'PL1');
 			}
-		}
+		},
+		currentRoute() {
+			return this.$route.path;
+		},
+		getImageForRoute() {
+			return this.images[this.currentRoute] || '/public/image/dashboard-topbar.svg'; // Default image path
+		},
 	}
 };
 </script>
@@ -197,8 +209,6 @@ export default {
 		display: none;
 	}
 }
-
-
 
 .Logo_4D {
 	display: flex;
@@ -242,6 +252,13 @@ export default {
 	align-items: center;
 }
 
+.display-img {
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 @media screen and (max-width: 1280px) {
 	.top {
 		width: 100%;
@@ -277,11 +294,9 @@ export default {
 	.refresh-icon {
 		display: none !important;
 	}
-
-
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:769px) {
 	.logo_col {
 		display: none !important;
 	}
@@ -289,19 +304,6 @@ export default {
 	.d_num_title {
 		display: block !important;
 	}
-}
-
-/* @media screen and (max-width:426px) {
-	.top {
-		width: 75%;
-	}
-
-} */
-
-.display-img {
-	color: white;
-	display: contents;
-	font-size: 30px;
 }
 
 .logo_col {

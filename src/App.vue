@@ -15,9 +15,6 @@
 					<router-view></router-view>
 				</div>
 			</div>
-			<div class="screen1024">
-				<RightColumn />
-			</div>
 		</div>
 		<div class="screen1024">
 			<RightColumn />
