@@ -48,7 +48,7 @@
 							<hr aria-orientation="vertical" class="divider"
 								:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }">
 							<div class="time-info"
-								:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }, { 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
+								:class="{ 'time-info-display-none': shouldHideTimeInfo(index), 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
 								<span>Time: </span>
 								<span>{{ currentTimeText }}</span>
 							</div>
@@ -62,7 +62,8 @@
 					<div class="prizes">
 						<div style="margin-inline: 1.25rem;">
 							<div class="prize-section">
-								<div class="prize" v-for="(prize, I) in ['1ST Prize', '2ND Prize', '3RD Prize']">
+								<div class="prize" v-for="(prize, I) in ['1ST Prize', '2ND Prize', '3RD Prize']"
+									:key="prize">
 									<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
 										:style="getPrizeStyle(index)">{{ prize }}</h2>
 									<div class="prize-number-container">
@@ -381,6 +382,7 @@ export default {
 			const now = new Date();
 			const cutoffTime = new Date();
 			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
+			now.setHours(16, 30, 0, 0);
 			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return '----';

@@ -1,6 +1,9 @@
 <template>
+	<div>
+		<TopBar />
+	</div>
 	<div style="text-align: -webkit-center;" class="container">
-		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
+		<div class="col-12 title_col">
 			<div class="title">
 				<div class="dictionary">
 					<p>Tua Pek Kong (Wan) Dictionary</p>
@@ -21,24 +24,22 @@
 							</ul>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 
 		<div class="tuapekkong_col pekkong">
-			<div v-for="(item, index) in paginatedItems" :key="index" class="item-container">
+			<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
 				<div class="number_col">
 					<p>{{ item.number }}</p>
 				</div>
 				<div>
 					<template v-if="item.loading">
-						<!-- SVG Placeholder -->
-						<svg class="placeholder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-							<rect width="100" height="100" fill="#ddd" />
-						</svg>
+						<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 					</template>
 					<template v-else>
-						<img :src="`/imgs/wzt_webp/${item.image}`" :alt="item.content.en" />
+						<img :src="`public/imgs/wzt_webp/${item.image}`" :alt="item.content.en" />
 					</template>
 				</div>
 				<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
@@ -56,8 +57,12 @@
 </template>
 
 <script>
+import TopBar from '/src/components/topbar.vue';
 export default {
-	name: 'TuaPekKong',
+	name: 'GuanYin',
+	components: {
+		TopBar
+	},
 	data() {
 		return {
 			items: [],
@@ -114,7 +119,7 @@ export default {
 			const ranges = [];
 			for (let i = 0; i <= max; i += step) {
 				const end = i + step - 1;
-				ranges.push({ text: `${i.toString().padStart(4, '0')}-${end.toString().padStart(3, '0')}`, value: `${i}-${end}` });
+				ranges.push({ text: `${i.toString().padStart(3, '0')}-${end.toString().padStart(3, '0')}`, value: `${i}-${end}` });
 			}
 			return ranges;
 		},
@@ -168,6 +173,17 @@ export default {
 	opacity: 0;
 	/* Hide initially */
 	transition: opacity 0.3s ease-out;
+}
+
+.title_col {
+	text-align: -webkit-center;
+	margin-top: 73px;
+}
+
+@media screen and (max-width:768px) {
+	.title_col {
+		margin-top: 10px;
+	}
 }
 
 .topbar_logo {
