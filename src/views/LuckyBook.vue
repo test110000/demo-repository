@@ -4,7 +4,7 @@
 	</div>
 
 	<div class="container">
-		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
+		<div class="col-12 title_col">
 			<div class="luckbook_col">
 				<div class="title">
 					<p>Lucky Book</p>
@@ -37,7 +37,8 @@
 												<p>{{ item.number }}</p>
 											</div>
 											<div class="images">
-												<img :src="`/imgs/wzt_webp/${item.image} `" :alt="item.content.en" />
+												<img :src="`public/imgs/wzt_webp/${item.image} `"
+													:alt="item.content.en" />
 											</div>
 											<div class="content">
 												<p>{{ item.content.en }}</p>
@@ -59,7 +60,7 @@
 											<p>{{ item.number }}</p>
 										</div>
 										<div class="images">
-											<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
+											<img :src="`public/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
 										</div>
 										<div class="content">
 											<p>{{ item.content.en }}</p>
@@ -77,7 +78,7 @@
 											<p>{{ item.number }}</p>
 										</div>
 										<div class="images">
-											<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
+											<img :src="`public/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
 										</div>
 										<div class="content">
 											<p>{{ item.content.en }}</p>
@@ -90,7 +91,6 @@
 
 
 					<div style="text-align: -webkit-center;" v-else>
-						<!-- Display static content -->
 						<div class="col-12 book_col">
 							<div style="text-align: -webkit-center;" class="row">
 
@@ -254,6 +254,17 @@ export default {
 </script>
 
 <style scoped>
+.title_col {
+	text-align: -webkit-center;
+	margin-top: 73px;
+}
+
+@media screen and (max-width:768px) {
+	.title_col {
+		margin-top: 10px;
+	}
+}
+
 .luckybook_col {
 	width: 100%;
 	text-align: -webkit-center;

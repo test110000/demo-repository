@@ -374,6 +374,12 @@ export default {
 	margin-top: 73px;
 }
 
+@media screen and (max-width:768px) {
+	.spincol {
+		margin-top: 10px;
+	}
+}
+
 
 
 .luckyspin_bg {

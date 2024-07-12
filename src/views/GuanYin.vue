@@ -1,6 +1,9 @@
 <template>
+	<div>
+		<TopBar />
+	</div>
 	<div style="text-align: -webkit-center;" class="container">
-		<div style="text-align: -webkit-center; margin-top: 73px;" class="col-12">
+		<div class="col-12 title_col">
 			<div class="title">
 				<div class="dictionary">
 					<p>Guan Yin Ma Dictionary</p>
@@ -35,7 +38,7 @@
 						<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 					</template>
 					<template v-else>
-						<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content.en" />
+						<img :src="`public/imgs/qzt_webp/${item.image}`" :alt="item.content.en" />
 					</template>
 				</div>
 				<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
@@ -53,8 +56,12 @@
 </template>
 
 <script>
+import TopBar from '/src/components/topbar.vue';
 export default {
 	name: 'GuanYin',
+	components: {
+		TopBar
+	},
 	data() {
 		return {
 			items: [],
@@ -165,6 +172,17 @@ export default {
 	opacity: 0;
 	/* Hide initially */
 	transition: opacity 0.3s ease-out;
+}
+
+.title_col {
+	text-align: -webkit-center;
+	margin-top: 73px;
+}
+
+@media screen and (max-width:768px) {
+	.title_col {
+		margin-top: 10px;
+	}
 }
 
 .topbar_logo {
