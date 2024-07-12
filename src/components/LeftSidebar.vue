@@ -12,8 +12,7 @@
 						<div class="menu">
 							<!--dashboard-->
 							<div class="text_col">
-								<router-link to="/" exact active-class="active-link"
-									@click.native="updateImage('dashboard')">
+								<router-link to="/" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.dashboard">
 									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(207, 46, 46)' : '' }"
 										class="text_menu">Dashboard</p>
@@ -25,8 +24,7 @@
 						<!--Spin My Luck-->
 						<div class="menu">
 							<div class="text_col">
-								<router-link to="/spin-my-luck" exact active-class="active-link"
-									@click.native="updateImage('spin')">
+								<router-link to="/spin-my-luck" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.spin">
 									<p :style="{ color: activeTab === 'spin' ? 'rgb(207, 46, 46)' : '' }"
 										class="text_menu">Spin My Luck</p>
@@ -36,8 +34,7 @@
 						<!--Lucky Book-->
 						<div class="menu">
 							<div class="text_col">
-								<router-link to="/lucky-book" exact active-class="active-link"
-									@click.native="updateImage('book')">
+								<router-link to="/lucky-book" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.book">
 									<p :style="{ color: activeTab === 'book' ? 'rgb(207, 46, 46)' : '' }"
 										class="text_menu">Lucky Book</p>
@@ -64,33 +61,8 @@ export default {
 			activeTab: '' // Initially empty
 		};
 	},
-	created() {
-		// Check localStorage for the last active tab and set it
-		const savedTab = localStorage.getItem('activeTab');
-		if (savedTab) {
-			this.updateImage(savedTab);
-		} else {
-			this.updateImage('dashboard'); // Default to 'dashboard' if nothing is found
-		}
-	},
 	methods: {
-		updateImage(type) {
-			if (type === 'dashboard') {
-				this.imageSrc.dashboard = '/image/dashboard.png';
-				this.imageSrc.spin = '/image/spin.png';
-				this.imageSrc.book = '/image/book.png';
-			} else if (type === 'spin') {
-				this.imageSrc.dashboard = '/image/dashboard.png';
-				this.imageSrc.spin = '/image/spin.png';
-				this.imageSrc.book = '/image/book.png';
-			} else if (type === 'book') {
-				this.imageSrc.dashboard = '/image/dashboard.png';
-				this.imageSrc.spin = '/image/spin.png';
-				this.imageSrc.book = '/image/book.png';
-			}
-			this.activeTab = type; // Update active tab
-			localStorage.setItem('activeTab', type); // Save the active tab to localStorage
-		}
+
 	}
 }
 </script>
