@@ -1,6 +1,6 @@
 <template>
 	<div ref="scrollContainer" class="scroll-container">
-		<div>
+		<div ref="topBar">
 			<TopBar @logo-clicked="handleLogoClick" />
 		</div>
 
@@ -79,8 +79,9 @@
 								<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
 									:style="getSmallSectionStyle(index)">Special</h2>
 								<div class="special-numbers">
-									<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">{{
-										getDisplayResult(number) }}</div>
+									<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">
+										{{
+											getDisplayResult(number) }}</div>
 								</div>
 							</div>
 
@@ -318,11 +319,13 @@ export default {
 			}
 		},
 		handleScroll() {
+			const topBarHeight = this.$refs.topBar.offsetHeight; // Get the height of the TopBar
 			const scrollPosition = this.$refs.scrollContainer.scrollTop;
-			if (scrollPosition >= 65 && !this.scrolledPast) {
+
+			if (scrollPosition >= topBarHeight && !this.scrolledPast) {
 				this.scrolledPast = true;
 				this.disableScrolling();
-			} else if (scrollPosition < 65 && this.scrolledPast) {
+			} else if (scrollPosition < topBarHeight && this.scrolledPast) {
 				this.scrolledPast = false;
 				this.enableScrolling();
 			}
@@ -454,7 +457,7 @@ export default {
 	.scrollable {
 		overflow-y: auto !important;
 		/* Allow vertical scrolling */
-		max-height: calc(100vh - 65px);
+		/* max-height: calc(100vh - 65px); */
 		/* Adjust as necessary */
 	}
 }
