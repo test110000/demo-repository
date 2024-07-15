@@ -14,6 +14,7 @@
 			</div>
 		</div>
 
+
 		<div class="dashboard" ref="partToScroll">
 			<div class="draw-results">
 				<div v-for="(drawObj, index) in data" :key="index" :id="`Toto-type-${index}`"
@@ -527,8 +528,8 @@ export default {
 }
 
 .image-container {
-	width: 40px;
-	height: 40px;
+	width: 10%;
+	height: auto;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: border 0.3s ease;
@@ -545,7 +546,7 @@ export default {
 .round-image {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+
 }
 
 .refresh-arrow {
@@ -620,6 +621,7 @@ export default {
 .draw-section {
 	margin-bottom: 40px;
 	width: 100%;
+	height: 100%;
 }
 
 @media screen and (min-width: 320px) {

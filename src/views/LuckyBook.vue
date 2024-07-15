@@ -98,8 +98,8 @@
 									<div class="lucky">
 										<div @click="goToTuaPekKong" class="lucky_col">
 											<div class="wanzititle_col">
-												<img class="wanzititle" src="/public/image/TuaPekKongWanZi.webp" />
-												<img width="65%" src="/public/image/TuaPekKongWan.svg" />
+												<img class="wanzititle" src="/image/TuaPekKongWanZi.webp" />
+												<img width="65%" src="/image/TuaPekKongWan.svg" />
 											</div>
 											<div class="text">
 												<a href="#" class="text" @click="goToTuaPekKong">Tua Pek Kong (Wan)
@@ -127,8 +127,8 @@
 									<div class="lucky">
 										<div @click="goToGuanYinMa" class="lucky_col">
 											<div class="wanzititle_col">
-												<img class="wanzititle" src="/public/image/GuanYinQianZi.webp" />
-												<img width="65%" src="/public/image/GuanYinQian.svg" />
+												<img class="wanzititle" src="/image/GuanYinQianZi.webp" />
+												<img width="65%" src="/image/GuanYinQian.svg" />
 											</div>
 											<div class="text">
 												<a href="#" class="text" @click="goToGuanYinMa">Guan Yin Ma</a>
@@ -151,8 +151,8 @@
 									<div class="lucky">
 										<div @click="goToTuaPekKongQian" class="lucky_col">
 											<div class="wanzititle_col">
-												<img class="wanzititle" src="/public/image/TuaPekKongQianZi.webp" />
-												<img width="65%" src="/public/image/TuaPekKongQian.svg" />
+												<img class="wanzititle" src="/image/TuaPekKongQianZi.webp" />
+												<img width="65%" src="/image/TuaPekKongQian.svg" />
 											</div>
 											<div class="text">
 												<a href="#" class="text" @click="goToTuaPekKongQian">Tua Pek Kong
@@ -235,7 +235,7 @@ export default {
 			this.searchQuery = '';
 		},
 		goToTuaPekKong() {
-			this.$router.push('/tuapekkong');
+			this.$router.push('/tuapekkongwan');
 		},
 		goToGuanYinMa() {
 			this.$router.push('/guanyin');

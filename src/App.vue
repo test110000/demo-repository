@@ -1,25 +1,24 @@
 <template>
-	<div class="app-background">
-		<div class="app-container">
-			<div class="screen-mobile">
-				<div class="screen1024">
-					<div class="Leftside-bar">
-						<LeftSidebar />
-					</div>
+	<div style="padding: 0px 0px 0px 0px;" class="container-fluid">
+		<div class="screen-mobile">
+			<div class="screen1024">
+				<div class="Leftside-bar">
+					<LeftSidebar />
 				</div>
-				<!-- <div class="Topbar-laptop">
+			</div>
+			<!-- <div class="Topbar-laptop">
 					<TopBar />
 				</div> -->
 
-				<div class="main-content">
-					<router-view></router-view>
-				</div>
+			<div class="main-content">
+				<router-view></router-view>
 			</div>
 		</div>
-		<div class="screen1024">
-			<RightColumn />
-		</div>
 	</div>
+	<div class="screen1024">
+		<RightColumn />
+	</div>
+
 </template>
 <script>
 import LeftSidebar from './components/LeftSidebar.vue'
@@ -40,11 +39,6 @@ html,
 body {
 	height: 100%;
 	margin: 0;
-}
-
-.app-background {
-	background-color: #f8f9fa;
-	height: 100%;
 }
 
 .app-container {

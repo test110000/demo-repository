@@ -46,11 +46,6 @@
 				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
 				</div>
 
-				<!-- Bootstrap Spinner -->
-				<div v-if="isLoadingMore" class="text-center">
-					<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-					Loading...
-				</div>
 			</div>
 		</div>
 	</div>

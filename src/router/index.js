@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 const Dashboard = () => import('../views/dashboard.vue');
 const SpinMyLuck = () => import('../views/SpinMyLuck.vue');
 const LuckyBook = () => import('../views/LuckyBook.vue');
-const TuaPekKong = () => import('../views/TuaPekKong.vue');
+const TuaPekKongWan = () => import('../views/TuaPekKong.vue');
 const GuanYin = () => import('../views/GuanYin.vue');
 const TuaPekKongQian = () => import('../views/qzt.vue');
 
@@ -29,7 +29,7 @@ const routes = [
 	{
 		path: '/tuapekkongwan',
 		name: 'TuaPekKongWan',
-		component: TuaPekKong,
+		component: TuaPekKongWan,
 		meta: { keepAlive: true }
 	},
 	{
