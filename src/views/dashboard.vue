@@ -4,6 +4,7 @@
 			<TopBar @logo-clicked="handleLogoClick" />
 		</div>
 
+
 		<!--topbar-->
 		<div style="display: none;" class="navbar">
 			<div v-for="(image, index) in filteredImages" :key="image.key" :id="`image-container-${image.key}`"
@@ -113,6 +114,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 </template>
 <script>

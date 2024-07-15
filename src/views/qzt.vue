@@ -1,55 +1,56 @@
 <template>
 	<div>
 		<TopBar />
-	</div>
-	<div style="text-align: -webkit-center;" class="container">
-		<div class="col-12 title_col">
-			<div class="title">
-				<div class="dictionary">
-					<p>Tua Pek Kong (Qian) Dictionary</p>
-				</div>
-				<div class="search_col">
-					<!-- Search Input and Dropdown -->
-					<input v-model="searchText" type="text" placeholder="Search..." class="search-input" />
-					<button @click="performSearch" class="search-button">Search</button>
+		<div style="text-align: -webkit-center;" class="container">
+			<div class="col-12 title_col">
+				<div class="title">
+					<div class="dictionary">
+						<p>Tua Pek Kong (Qian) Dictionary</p>
+					</div>
+					<div class="search_col">
+						<!-- Search Input and Dropdown -->
+						<input v-model="searchText" type="text" placeholder="Search..." class="search-input" />
+						<button @click="performSearch" class="search-button">Search</button>
 
-					<div class="dropdown-container">
-						<div class="dropdown" @click="toggleDropdown">
-							<div class="dropdown-selected">{{ selectedRangeText }}</div>
-							<ul v-show="isDropdownOpen" class="dropdown-list">
-								<li @click="selectRange('all')">All</li>
-								<li v-for="range in ranges" :key="range.value" @click="selectRange(range.value)">
-									{{ range.text }}
-								</li>
-							</ul>
+						<div class="dropdown-container">
+							<div class="dropdown" @click="toggleDropdown">
+								<div class="dropdown-selected">{{ selectedRangeText }}</div>
+								<ul v-show="isDropdownOpen" class="dropdown-list">
+									<li @click="selectRange('all')">All</li>
+									<li v-for="range in ranges" :key="range.value" @click="selectRange(range.value)">
+										{{ range.text }}
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="tuapekkong_col pekkong">
-			<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
-				<div class="number_col">
-					<p>{{ item.number }}</p>
+			<div class="tuapekkong_col pekkong">
+				<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
+					<div class="number_col">
+						<p>{{ item.number }}</p>
+					</div>
+					<div>
+						<template v-if="item.loading">
+							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+						</template>
+						<template v-else>
+							<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content.en" />
+						</template>
+					</div>
+					<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
 				</div>
-				<div>
-					<template v-if="item.loading">
-						<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-					</template>
-					<template v-else>
-						<img :src="`public/imgs/gzt_webp/${item.image}`" :alt="item.content.en" />
-					</template>
+				<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
+				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
 				</div>
-				<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
-			</div>
-			<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
-			<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.</div>
 
-			<!-- Bootstrap Spinner -->
-			<div v-if="isLoadingMore" class="text-center">
-				<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-				Loading...
+				<!-- Bootstrap Spinner -->
+				<div v-if="isLoadingMore" class="text-center">
+					<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+					Loading...
+				</div>
 			</div>
 		</div>
 	</div>
@@ -57,10 +58,11 @@
 
 <script>
 import TopBar from '/src/components/topbar.vue';
+
 export default {
-	name: 'GuanYin',
+	name: 'TuaPekKongQian',
 	components: {
-		TopBar
+		TopBar,
 	},
 	data() {
 		return {
@@ -103,12 +105,12 @@ export default {
 			if (this.selectedRange === 'all') {
 				return 'All';
 			}
-			const range = this.ranges.find(range => range.value === this.selectedRange);
+			const range = this.ranges.find((range) => range.value === this.selectedRange);
 			return range ? range.text : 'Select Range';
 		},
 		paginatedItems() {
 			return this.filteredItems.slice(0, this.loadedItemsCount);
-		}
+		},
 	},
 	mounted() {
 		this.fetchItems();
@@ -125,11 +127,12 @@ export default {
 		async fetchItems() {
 			try {
 				this.isLoadingItems = true;
-				const response = await fetch('/src/assets/data/gzt.json');
+				const response = await fetch('/src/assets/data/qzt.json'); // Adjust the path as needed
 				if (!response.ok) {
 					throw new Error('Network response was not ok');
 				}
 				const data = await response.json();
+				console.log('Fetched Data:', data); // Log fetched data for debugging
 				this.items = data;
 				await this.delayedLoading();
 			} catch (error) {
@@ -144,7 +147,7 @@ export default {
 
 			for (let i = startIndex; i < totalItems; i += this.batchLoadCount) {
 				this.isLoadingMore = true; // Show spinner while loading more
-				await new Promise(resolve => setTimeout(resolve, 500)); // Simulate delay
+				await new Promise((resolve) => setTimeout(resolve, 500)); // Simulate delay
 				this.loadedItemsCount += this.batchLoadCount;
 				this.isLoadingMore = false; // Hide spinner after loading
 			}

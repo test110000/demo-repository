@@ -37,8 +37,7 @@
 												<p>{{ item.number }}</p>
 											</div>
 											<div class="images">
-												<img :src="`public/imgs/wzt_webp/${item.image} `"
-													:alt="item.content.en" />
+												<img :src="`/imgs/wzt_webp/${item.image} `" :alt="item.content.en" />
 											</div>
 											<div class="content">
 												<p>{{ item.content.en }}</p>
@@ -60,7 +59,7 @@
 											<p>{{ item.number }}</p>
 										</div>
 										<div class="images">
-											<img :src="`public/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
+											<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
 										</div>
 										<div class="content">
 											<p>{{ item.content.en }}</p>
@@ -78,7 +77,7 @@
 											<p>{{ item.number }}</p>
 										</div>
 										<div class="images">
-											<img :src="`public/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
+											<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
 										</div>
 										<div class="content">
 											<p>{{ item.content.en }}</p>
@@ -92,7 +91,7 @@
 
 					<div style="text-align: -webkit-center;" v-else>
 						<div class="col-12 book_col">
-							<div style="text-align: -webkit-center;" class="row">
+							<div style="text-align: -webkit-center; place-content: center;" class="row">
 
 								<!-- Tua Pek Kong (Wan) -->
 								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
@@ -161,7 +160,7 @@
 													Dictionary</a>
 											</div>
 											<div class="text2">
-												<a href="#" class="text2">(WZT)</a>
+												<a href="#" class="text2">(QZT)</a>
 											</div>
 										</div>
 										<br />
@@ -235,9 +234,6 @@ export default {
 			this.showSearchResults = false;
 			this.searchQuery = '';
 		},
-		getImagePath(webp, folder) {
-			return `/imgs/${folder}/${webp}`;
-		},
 		goToTuaPekKong() {
 			this.$router.push('/tuapekkong');
 		},
@@ -248,7 +244,6 @@ export default {
 			this.$router.push('/tuapekkongqian');
 		},
 	}
-
 };
 
 </script>

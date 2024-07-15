@@ -5,7 +5,7 @@ const SpinMyLuck = () => import('../views/SpinMyLuck.vue');
 const LuckyBook = () => import('../views/LuckyBook.vue');
 const TuaPekKong = () => import('../views/TuaPekKong.vue');
 const GuanYin = () => import('../views/GuanYin.vue');
-const TuaPekKongQian = () => import('../views/gzt.vue');
+const TuaPekKongQian = () => import('../views/qzt.vue');
 
 const routes = [
 	{
@@ -27,8 +27,8 @@ const routes = [
 		meta: { keepAlive: true }
 	},
 	{
-		path: '/tuapekkong',
-		name: 'TuaPekKong',
+		path: '/tuapekkongwan',
+		name: 'TuaPekKongWan',
 		component: TuaPekKong,
 		meta: { keepAlive: true }
 	},
