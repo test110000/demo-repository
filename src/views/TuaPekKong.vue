@@ -40,7 +40,10 @@
 							<img :src="`/imgs/wzt_webp/${item.image}`" :alt="item.content.en" />
 						</template>
 					</div>
-					<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
+					<div class="">
+						<p >{{ item.content.en }}</p>
+					</div>
+					
 				</div>
 				<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
 				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
@@ -239,6 +242,10 @@ export default {
 	border-color: rgb(198, 198, 198);
 }
 
+@media screen and (max-width:425px) {
+	.number_col {}
+}
+
 img {
 	width: 100px;
 	display: block;
@@ -262,12 +269,15 @@ p {
 
 .tuapekkong_col {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	text-align-last: center;
-	width: 70%;
 	text-align: -webkit-center;
 	place-content: center;
 	gap: 0.5rem;
+}
+
+.content_size{
+	
 }
 
 .dictionary {
@@ -287,8 +297,12 @@ p {
 
 @media (min-width: 600px) {
 	.tuapekkong_col {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 0.5rem;
+	}
+
+	.number_col {
+		width: 60%;
 	}
 
 	.search_container {

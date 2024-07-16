@@ -426,6 +426,7 @@ export default {
 	color: white;
 	font-weight: bold;
 	font-size: 15px;
+	padding-bottom: 10px;
 }
 
 p {

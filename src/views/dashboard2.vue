@@ -8,13 +8,18 @@
 
 
 		<!--Topbar 2-->
-		<div style="display: none;" class="navbar">
+
+		<div style="display: none; position: sticky; z-index: 9999;" class="navbar">
 			<div v-for="(image, index) in filteredImages" :key="image.key" :id="`image-container-${image.key}`"
 				:class="['image-container', `image-container-${image.key}`, { active: activeIndex === index }]"
 				@click="handleImageClick(image.key)">
 				<img :src="image.src" class="round-image" />
 			</div>
 		</div>
+
+
+
+
 
 
 		<div class="dashboard" ref="partToScroll">
@@ -245,13 +250,9 @@ export default {
 	mounted() {
 		// this.fetchData();
 		this.fetchData2();
-		this.$refs.scrollContainer.addEventListener('scroll', this.handleScroll);
-		this.$refs.partToScroll.addEventListener('scroll', this.handleDashboardScroll);
 		this.updateTimeText();
 	},
 	beforeDestroy() {
-		this.$refs.scrollContainer.removeEventListener('scroll', this.handleScroll);
-		this.$refs.partToScroll.removeEventListener('scroll', this.handleDashboardScroll);
 		clearInterval(this.intervalId);
 	},
 	methods: {
@@ -322,34 +323,6 @@ export default {
 			} else {
 				this.currentTimeText = "7:30pm";
 			}
-		},
-		handleScroll() {
-			const topBarHeight = this.$refs.topBar.offsetHeight; // Get the height of the TopBar
-			const scrollPosition = this.$refs.scrollContainer.scrollTop;
-
-			if (scrollPosition >= topBarHeight && !this.scrolledPast) {
-				this.scrolledPast = false;
-				this.disableScrolling();
-			} else if (scrollPosition < topBarHeight && this.scrolledPast) {
-				this.scrolledPast = true;
-				this.enableScrolling();
-			}
-		},
-		handleDashboardScroll() {
-			const dashboardScrollPosition = this.$refs.partToScroll.scrollTop;
-			if (dashboardScrollPosition === 0) {
-				this.enableScrolling();  // Enable scrolling actions when at the top
-			} else {
-				this.disableScrolling(); // Disable scrolling actions when not at the top
-			}
-		},
-		disableScrolling() {
-			this.$refs.scrollContainer.classList.add('no-scroll');
-			this.$refs.partToScroll.classList.add('scrollable');
-		},
-		enableScrolling() {
-			this.$refs.scrollContainer.classList.remove('no-scroll');
-			this.$refs.partToScroll.classList.remove('scrollable');
 		},
 		formatDate(dateStr) {
 			// Format date if necessary
@@ -475,17 +448,24 @@ export default {
 	}
 }
 
+.topbar2 {
+	background-color: white;
+	position: sticky;
+	z-index: 9999;
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 61px;
 	background-color: white;
-	border-radius: 20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 	width: 100%;
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
-	top: 0px;
+	top: -1px;
 }
 
 .mobile-sidebar-button-container {
@@ -560,9 +540,6 @@ export default {
 .dashboard {
 	margin-top: 80px;
 	height: calc(-5rem + 100dvh);
-	/* overflow-y: scroll; */
-	/* overflow: auto; */
-	overflow: hidden;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 }
@@ -604,7 +581,7 @@ export default {
 	display: flex;
 	flex-direction: column;
 	border-radius: 0 0 50px 50px;
-	padding-top: 16px;
+	padding-top: 70px;
 	position: relative;
 }
 
@@ -619,7 +596,7 @@ export default {
 
 .prize-section {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .draw-section {

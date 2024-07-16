@@ -225,7 +225,7 @@ export default {
 }
 
 .top-bar {
-	height: 65px;
+	height: 70px;
 	position: fixed;
 	top: 0;
 	right: 0;
