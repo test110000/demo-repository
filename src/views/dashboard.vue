@@ -459,9 +459,6 @@ export default {
 
 	.scrollable {
 		overflow-y: auto !important;
-		/* Allow vertical scrolling */
-		/* max-height: calc(100vh - 65px); */
-		/* Adjust as necessary */
 	}
 }
 
@@ -557,8 +554,6 @@ export default {
 .dashboard {
 	margin-top: 80px;
 	height: calc(-5rem + 100dvh);
-	/* overflow-y: scroll; */
-	/* overflow: auto; */
 	overflow: hidden;
 	scrollbar-width: none;
 	-ms-overflow-style: none;

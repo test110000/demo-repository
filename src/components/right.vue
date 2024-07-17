@@ -4,7 +4,7 @@
 
 
 			<div class="right_col">
-				<img class="ball_img" src="\public\image\realistic8ball.png">
+				<img class="ball_img" src="\image\realistic8ball.png">
 
 				<div class="right_col2">
 					<h6>Special Draw Date</h6>
