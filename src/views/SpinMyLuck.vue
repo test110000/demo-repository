@@ -7,9 +7,20 @@
 	<div class="container">
 		<div style="text-align: -webkit-center;" class="col-12 spincol">
 			<div class="lucky_col">
-
 				<div class="luckyspin_bg">
 
+					<!--hide in desktop-->
+					<div class="mobile-menu-page-button-container" style="color: white; position: absolute; left: 0;">
+						<div class="menu-icon">
+							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+						</div>
+					</div>
+
+					<!--this is title-->
 					<p>Lucky Spin</p>
 				</div>
 
@@ -28,48 +39,54 @@
 									</div>
 								</div>
 							</div>
-							<button class="btn_4d" @click="toggleSpinStop">{{ buttonLabel }}</button>
 						</div>
 					</div>
+					<button class="btn_4d" @click="toggleSpinStop">{{ buttonLabel }}</button>
 
 					<!-- 6D number (first) -->
-					<div class="num4d_col">
-						<div class="num4d_col_sm">
-							<div class="num4d">
-								<p>6D NUMBER</p>
-							</div>
-							<div class="spinner-column_bg">
-								<div v-for="(column, columnIndex) in columns2" :key="columnIndex"
-									class="spinner-column">
-									<div v-for="number in column" :key="number" class="spinner-number"
-										:style="{ transform: 'translateY(' + spins2[columnIndex] + 'px)' }">
-										{{ number }}
+					<div class="num4d_col2">
+						<div class="num4d_col">
+							<div class="num4d_col_sm">
+								<div class="num4d">
+									<p>6D NUMBER</p>
+								</div>
+								<div class="spinner-column_bg">
+									<div v-for="(column, columnIndex) in columns2" :key="columnIndex"
+										class="spinner-column">
+										<div v-for="number in column" :key="number" class="spinner-number"
+											:style="{ transform: 'translateY(' + spins2[columnIndex] + 'px)' }">
+											{{ number }}
+										</div>
 									</div>
 								</div>
 							</div>
-							<button class="btn_4d" @click="toggleSpinStop2">{{ buttonLabel2 }}</button>
 						</div>
+						<button class="btn_4d" @click="toggleSpinStop2">{{ buttonLabel2 }}</button>
 					</div>
 
+
 					<!-- jackpot number -->
-					<div class="num4d_col">
-						<div class="num4d_col_sm">
-							<div class="num4d">
-								<p>JACKPOT NUMBER</p>
-							</div>
-							<div class="spinner-column_bg">
-								<div v-for="(column, columnIndex) in columns3" :key="columnIndex"
-									class="spinner-column">
-									<div v-for="number in column" :key="number" class="spinner-number"
-										:style="{ transform: 'translateY(' + spins3[columnIndex] + 'px)' }">
-										{{ number }}
+					<div class="num4d_col2">
+						<div class="num4d_col">
+							<div class="num4d_col_sm">
+								<div class="num4d">
+									<p>JACKPOT NUMBER</p>
+								</div>
+								<div class="spinner-column_bg">
+									<div v-for="(column, columnIndex) in columns3" :key="columnIndex"
+										class="spinner-column">
+										<div v-for="number in column" :key="number" class="spinner-number"
+											:style="{ transform: 'translateY(' + spins3[columnIndex] + 'px)' }">
+											{{ number }}
+										</div>
 									</div>
 								</div>
 							</div>
-							<button class="btn_4d" @click="toggleSpinStop3">{{ buttonLabel3 }}</button>
 						</div>
 					</div>
+					<button class="btn_4d" @click="toggleSpinStop3">{{ buttonLabel3 }}</button>
 				</div>
+
 
 			</div>
 		</div>
@@ -380,12 +397,31 @@ export default {
 	}
 }
 
+.mobile-menu-page-button-container {
+	padding-left: 20px;
+}
+
+@media screen and (min-width: 769px) {
+	.mobile-menu-page-button-container {
+		display: none;
+	}
+}
+
+.menu-icon {
+	font-size: 20px !important;
+	background-color: white !important;
+	opacity: 0.8 !important;
+	border-radius: 50%;
+	width: 30px !important;
+	height: 30px !important;
+}
+
 
 
 .luckyspin_bg {
 	background-color: #CF2E2E;
 	color: white;
-	height: 150px;
+	height: 145px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -400,6 +436,7 @@ export default {
 .lucky_col {
 	width: 100%;
 	text-align: center;
+	text-align: -webkit-center;
 	background: rgb(255, 255, 255);
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
@@ -443,17 +480,22 @@ export default {
 	justify-content: center;
 	background-color: #ffffff;
 	width: 100%;
-	margin-bottom: 20px;
+
+}
+
+.num4d_col2 {
+	margin-top: -80px;
 }
 
 .num4d_col_sm {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	background-color: #ffffff;
-
 	border-radius: 50px;
 	width: 90%;
+
 }
 
 .navbar-toggler {
@@ -462,7 +504,8 @@ export default {
 }
 
 .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=UTF8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	float: inline-start;
+	background-image: url("/public/image/menu-sm.svg");
 }
 
 .navbar-toggler {
@@ -530,6 +573,12 @@ export default {
 	overflow: hidden;
 }
 
+@media screen and (max-width:768px) {
+	.spinner-column_bg {
+		height: 175px;
+	}
+}
+
 .spinner-column {
 	position: relative;
 	width: 10%;
@@ -563,7 +612,7 @@ export default {
 	top: -71px;
 	font-weight: bold;
 	height: 130px;
-	width: 16%;
+	width: 15%;
 	font-size: 27px;
 	display: flex;
 	justify-content: center;

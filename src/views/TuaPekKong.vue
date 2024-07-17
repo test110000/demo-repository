@@ -7,6 +7,9 @@
 					<div class="dictionary">
 						<p>Tua Pek Kong (Wan) Dictionary</p>
 					</div>
+
+
+					<!--search-->
 					<div class="search_col">
 						<!-- Search Input and Dropdown -->
 						<input v-model="searchText" type="text" placeholder="Search..." class="search-input" />
@@ -40,7 +43,10 @@
 							<img :src="`/imgs/wzt_webp/${item.image}`" :alt="item.content.en" />
 						</template>
 					</div>
-					<p style="font-weight: bold; font-size: 14px;">{{ item.content.en }}</p>
+					<div class="">
+						<p style="width: 110px">{{ item.content.en }}</p>
+					</div>
+
 				</div>
 				<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
 				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
@@ -49,6 +55,7 @@
 				<!-- Bootstrap Spinner -->
 
 			</div>
+
 		</div>
 	</div>
 </template>
@@ -217,15 +224,16 @@ export default {
 }
 
 .item-container {
-	padding-top: 10px;
+	padding-top: 30px;
 	background-color: white;
 	/* padding-bottom: 10px; */
-	height: 200px;
+	height: 250px;
 	text-align: -webkit-center;
-	width: 90%;
-	align-content: center;
+	width: 100%;
 	place-self: center;
-	border-radius: 50px;
+	border-radius: 5px;
+	align-content: start;
+	box-shadow: 0px 2px 2px 2px #989696;
 }
 
 .number_col {
@@ -237,6 +245,21 @@ export default {
 	font-weight: bold;
 	border-width: 1px;
 	border-color: rgb(198, 198, 198);
+}
+
+@media screen and (max-width:426px) {
+	.number_col {
+		width: 60%;
+	}
+
+	.container {
+		padding: 0px;
+	}
+
+	.search_col {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
 }
 
 img {
@@ -262,13 +285,14 @@ p {
 
 .tuapekkong_col {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	text-align-last: center;
-	width: 70%;
 	text-align: -webkit-center;
 	place-content: center;
-	gap: 0.5rem;
+	gap: 1.0rem;
+	border-radius: 5px;
 }
+
 
 .dictionary {
 	background-color: #CF2E2E;
@@ -287,8 +311,12 @@ p {
 
 @media (min-width: 600px) {
 	.tuapekkong_col {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 0.5rem;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.0rem;
+	}
+
+	.number_col {
+		width: 60%;
 	}
 
 	.search_container {
@@ -300,6 +328,7 @@ p {
 	.tuapekkong_col {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 0.8rem;
+		width: 60% !important;
 	}
 }
 
@@ -310,6 +339,12 @@ p {
 		display: flex;
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.tuapekkong_col {
+		width: 90% !important;
 	}
 }
 
@@ -360,7 +395,7 @@ p {
 .dropdown-selected {
 	background-color: #cf2e2e;
 	padding: 10px;
-	border-radius: 10px;
+	border-radius: 5px;
 	color: white;
 	font-weight: bolder;
 }
@@ -372,7 +407,7 @@ p {
 	width: 100%;
 	background-color: white;
 	border: solid #cf2e2e;
-	border-radius: 15px;
+	border-radius: 5px;
 	max-height: 140px;
 	/* Show 7 options */
 	overflow-y: auto;
