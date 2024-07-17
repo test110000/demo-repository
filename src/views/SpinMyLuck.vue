@@ -8,9 +8,21 @@
 		<div style="text-align: -webkit-center;" class="col-12 spincol">
 			<div class="lucky_col">
 				<div class="luckyspin_bg">
+
+					<!--hide in desktop-->
+					<div class="mobile-menu-page-button-container" style="color: white; position: absolute; left: 0;">
+						<div class="menu-icon">
+							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+						</div>
+					</div>
+
+					<!--this is title-->
 					<p>Lucky Spin</p>
 				</div>
-
 
 				<div class="all_spincol">
 					<!-- 4D number -->
@@ -385,6 +397,25 @@ export default {
 	}
 }
 
+.mobile-menu-page-button-container {
+	padding-left: 20px;
+}
+
+@media screen and (min-width: 769px) {
+	.mobile-menu-page-button-container {
+		display: none;
+	}
+}
+
+.menu-icon {
+	font-size: 20px !important;
+	background-color: white !important;
+	opacity: 0.8 !important;
+	border-radius: 50%;
+	width: 30px !important;
+	height: 30px !important;
+}
+
 
 
 .luckyspin_bg {
@@ -473,7 +504,8 @@ export default {
 }
 
 .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=UTF8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	float: inline-start;
+	background-image: url("/public/image/menu-sm.svg");
 }
 
 .navbar-toggler {
@@ -580,7 +612,7 @@ export default {
 	top: -71px;
 	font-weight: bold;
 	height: 130px;
-	width: 16%;
+	width: 15%;
 	font-size: 27px;
 	display: flex;
 	justify-content: center;

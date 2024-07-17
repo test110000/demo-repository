@@ -25,13 +25,23 @@
 									searchQuery }}"</p>
 							<button @click="clearSearch" class="search_btn">Close</button>
 						</div>
-						<div class="luckybook_col">
-							<div class="col-4 col">
-								<div class="search_title">
-									<h3>WZT</h3>
-								</div>
+
+						<ul style="justify-content: center;" class="nav nav-pills" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-bs-toggle="pill" href="#WZT">WZT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="pill" href="#GZT">GZT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="pill" href="#QZT">QZT</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="WZT" class="container tab-pane active">
 								<div>
-									<ul style="padding-left: 0rem;">
+									<ul class="search-ul">
 										<li v-for="item in filteredDataWZT" :key="item.number" class="search-result">
 											<div class="number_col">
 												<p>{{ item.number }}</p>
@@ -39,20 +49,15 @@
 											<div class="images">
 												<img :src="`/imgs/wzt_webp/${item.image} `" :alt="item.content.en" />
 											</div>
-											<div class="content">
+											<div class="item-content">
 												<p>{{ item.content.en }}</p>
 											</div>
-
 										</li>
 									</ul>
 								</div>
-
 							</div>
-							<div class="col-4 col">
-								<div class="search_title">
-									<h3>GZT</h3>
-								</div>
 
+							<div id="GZT" class="container tab-pane active">
 								<ul style="padding-left: 0rem;">
 									<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
 										<div class="number_col">
@@ -67,10 +72,10 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-4 col">
-								<div class="search_title">
-									<h3>QZT</h3>
-								</div>
+
+
+
+							<div id="QZT" class="container tab-pane active">
 								<ul style="padding-left: 0rem;">
 									<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
 										<div class="number_col">
@@ -85,6 +90,8 @@
 									</li>
 								</ul>
 							</div>
+
+
 						</div>
 					</div>
 
@@ -254,6 +261,13 @@ export default {
 	margin-top: 73px;
 }
 
+@media screen and (max-width:426px) {
+	.number_col {
+		width: 60%;
+	}
+
+}
+
 @media screen and (max-width:768px) {
 	.title_col {
 		margin-top: 10px;
@@ -266,6 +280,7 @@ export default {
 	background: rgb(255, 255, 255);
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
+	display: flex;
 }
 
 @media (min-width: 1024px) {
@@ -313,10 +328,20 @@ export default {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-weight: bold;
 	gap: 0.5rem;
-	padding-bottom: 10px;
+	padding-top: 30px;
+	background-color: white;
+	/* padding-bottom: 10px; */
+	height: 300px;
+	text-align: -webkit-center;
+	width: 100%;
+	place-self: center;
+	border-radius: 5px;
+	align-content: start;
+	box-shadow: 0px 2px 2px 2px #989696;
 }
+
+
 
 .number_col {
 	color: rgb(0, 0, 0);
@@ -327,6 +352,25 @@ export default {
 	font-weight: bold;
 	border-width: 1px;
 	border-color: rgb(198, 198, 198);
+}
+
+@media screen and (max-width:426px) {
+	.number_col {
+		width: 100%;
+	}
+}
+
+.item-container {
+	padding-top: 30px;
+	background-color: white;
+	/* padding-bottom: 10px; */
+	height: 250px;
+	text-align: -webkit-center;
+	width: 100%;
+	place-self: center;
+	border-radius: 5px;
+	align-content: start;
+	box-shadow: 0px 2px 2px 2px #989696;
 }
 
 .search_btn {
@@ -405,9 +449,14 @@ export default {
 
 }
 
-.content {
-	font-weight: bolder;
-	font-size: 14px;
+.item-content {
+	width: 100px;
+}
+
+.search-ul {
+	padding-left: 0rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .text {
@@ -454,5 +503,20 @@ p {
 	.search_col {
 		width: 50%;
 	}
+}
+
+@media screen and (max-width:426px) {
+	.container {
+		padding: 0px;
+	}
+
+	.column {
+		width: 100%;
+	}
+
+	.search_title {
+		width: 100%;
+	}
+
 }
 </style>
