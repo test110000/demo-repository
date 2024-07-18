@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="dashboard" ref="partToScroll">
-			<div style="padding-bottom: 30px" class="draw-results">
+			<div style="padding-bottom: 100px" class="draw-results">
 				<div v-for="(drawObj, index) in data" :key="index" :id="`Toto-type-${index}`"
 					class="draw-section white-bg">
 					<div class="top-card-container" :style="{ backgroundColor: getBgColor(index) }">
@@ -150,7 +150,7 @@ export default {
 				M: {
 					name: "Magnum 4D",
 					bgColor: 'black',
-					logoPath: '/image/magnum.svg',
+					logoPath: '/image/Magnum@3x.png',
 					prizeSectionColor: '#F5C500',
 					prizeSectionTextColor: 'black',
 					smallSectionColor: 'black', // Combine colors here
@@ -159,7 +159,7 @@ export default {
 				D: {
 					name: "DamaCai 1+3D",
 					bgColor: '#1C377B',
-					logoPath: '/image/damacai2.svg',
+					logoPath: '/image/damacai@3x.png',
 					prizeSectionColor: '#EC2024',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#1C377B', // Combine colors here
@@ -168,7 +168,7 @@ export default {
 				T: {
 					name: "SportsToto 4D",
 					bgColor: '#EC2024',
-					logoPath: '/image/toto.svg',
+					logoPath: '/image/toto@3x.png',
 					prizeSectionColor: 'black',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#EC2024', // Combine colors here
@@ -177,16 +177,16 @@ export default {
 				S: {
 					name: "Singapore 4D",
 					bgColor: '#0093D8',
-					logoPath: '/image/sg.svg',
+					logoPath: '/image/sgtoto@3x.png',
 					prizeSectionColor: '#1C377B',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#0093D8', // Combine colors here
 					sectionTitleTextColor: 'white'
 				},
 				ST: {
-					name: "Magnum 4D",
+					name: "Sandakan 4D",
 					bgColor: '#F5C500',
-					logoPath: '/image/sandakan.svg',
+					logoPath: '/image/stc4d@3x.png',
 					prizeSectionColor: '#007A37',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#F5C500', // Combine colors here
@@ -195,7 +195,7 @@ export default {
 				SB: {
 					name: "Sabah 88 4D",
 					bgColor: '#EC2024',
-					logoPath: '/image/sabahtoto.svg',
+					logoPath: '/image/sabah88@3x.png',
 					prizeSectionColor: '#1D68A2',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#EC2024', // Combine colors here
@@ -204,7 +204,7 @@ export default {
 				SW: {
 					name: "Special CashSweap",
 					bgColor: '#10A226',
-					logoPath: '/image/cashsweeptoto.svg',
+					logoPath: '/image/special cashsweep@3x.png',
 					prizeSectionColor: '#EC2024',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#10A226', // Combine colors here
@@ -213,7 +213,7 @@ export default {
 				H: {
 					name: "Lucky Hari Hari",
 					bgColor: '#1A81BB',
-					logoPath: '/image/hariharitoto.svg',
+					logoPath: '/image/LHH@3x.png',
 					prizeSectionColor: '#1C377B',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#1A81BB', // Combine colors here
@@ -222,7 +222,7 @@ export default {
 				P: {
 					name: "Perdana Lottery",
 					bgColor: '#1A81BB',
-					logoPath: '/image/pdntoto.svg',
+					logoPath: '/image/Perdana Lottery @3x.png',
 					prizeSectionColor: '#EC2024',
 					prizeSectionTextColor: 'white',
 					smallSectionColor: '#1A81BB', // Combine colors here
@@ -231,7 +231,7 @@ export default {
 				G: {
 					name: "Grand Dragon 4D",
 					bgColor: '#EC2024',
-					logoPath: '/image/gdtoto.svg',
+					logoPath: '/image/grand dragon 4d@3x.png',
 					prizeSectionColor: '#F5C500',
 					prizeSectionTextColor: 'black',
 					smallSectionColor: '#EC2024', // Combine colors here
@@ -241,15 +241,15 @@ export default {
 			activeIndex: null,
 			images: [
 				{ key: 'M', src: '/image/Magnum@3x.png' },
-				{ key: 'D', src: '/image/damacai2.svg' },
-				{ key: 'T', src: '/image/toto.svg' },
-				{ key: 'S', src: '/image/sg.svg' },
-				{ key: 'ST', src: '/image/sandakan.svg' },
-				{ key: 'SB', src: '/image/diriwan.svg' },
-				{ key: 'SW', src: '/image/ssc.svg' },
-				{ key: 'G', src: '/image/gd.svg' },
+				{ key: 'D', src: '/image/damacai@3x.png' },
+				{ key: 'T', src: '/image/toto@3x.png' },
+				{ key: 'S', src: '/image/sgtoto@3x.png' },
+				{ key: 'ST', src: '/image/stc4d@3x.png' },
+				{ key: 'SB', src: '/image/sabah88@3x.png' },
+				{ key: 'SW', src: '/image/special cashsweep@3x.png' },
+				{ key: 'G', src: '/image/grand dragon 4d@3x.png' },
 				{ key: 'H', src: '/image/LHH@3x.png' },
-				{ key: 'P', src: '/image/pdn.svg' }
+				{ key: 'P', src: '/image/Perdana Lottery @3x.png' }
 
 			],
 		};
@@ -415,8 +415,18 @@ export default {
 			this.scrollToDrawSection(index);
 		},
 		handleLogoClick(id) {
-			this.activeIndex = id; // Set activeIndex to the clicked logo index
-			this.scrollToDrawSection(id); // Scroll to corresponding section
+			// Check if the current page is not '/'
+			if (window.location.pathname !== '/') {
+				console.log('Hi')
+				// Redirect to the home page
+				window.location.href = '/';
+			} else {
+				console.log('Is here')
+				// Set activeIndex to the clicked logo index
+				this.activeIndex = id;
+				// Scroll to the corresponding section
+				this.scrollToDrawSection(id);
+			}
 		},
 		scrollToDrawSection(index) {
 			const element = document.getElementById(`Toto-type-${index}`);
@@ -449,6 +459,7 @@ export default {
 	.scroll-container {
 		height: 100vh;
 		overflow: auto;
+		position: relative;
 	}
 
 	.no-scroll {
@@ -458,9 +469,6 @@ export default {
 	.scrollable {
 		overflow-y: auto !important;
 		scroll-behavior: smooth;
-		/* Allow vertical scrolling */
-		/* max-height: calc(100vh - 65px); */
-		/* Adjust as necessary */
 	}
 }
 
@@ -476,7 +484,6 @@ export default {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 61px;
 	background-color: white;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -484,6 +491,7 @@ export default {
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
 	top: -1px;
+	height: 61px;
 }
 
 .mobile-sidebar-button-container {

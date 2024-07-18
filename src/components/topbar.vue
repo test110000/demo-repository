@@ -67,13 +67,14 @@
 					</nav>
 					<!--top-->
 
+					<a href="/">
+						<div class="Logo_4D">
+							<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
+								src="/image/4D-lottery-single.png">
+							<img class="d_num_title" width="100" src="/image/4D-lottery-wording.png">
+						</div>
+					</a>
 
-
-					<div class="Logo_4D">
-						<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
-							src="/image/4D-lottery-single.png">
-						<img class="d_num_title" width="100" src="/image/4D-lottery-wording.png">
-					</div>
 					<div class="logo_col">
 						<div class="logo" v-for="logo in filteredLogos" :key="logo.key">
 							<a :href="'#'" @click.prevent="handleLogoClick(logo.key)">
@@ -173,7 +174,14 @@ export default {
 			window.location.reload();
 		},
 		handleLogoClick(index) {
-			this.$emit('logo-clicked', `${index}`);
+			if (window.location.pathname !== '/') {
+				console.log('Hi')
+				// Redirect to the home page
+				window.location.href = '/';
+			} else {
+				this.$emit('logo-clicked', `${index}`);
+			}
+
 		}
 	},
 	computed: {
