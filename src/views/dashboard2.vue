@@ -6,9 +6,7 @@
 			<TopBar @logo-clicked="handleLogoClick" />
 		</div>
 
-
 		<!--Topbar 2-->
-
 		<div style="display: none; position: sticky; z-index: 999;" class="navbar">
 			<div style="width: 30px; height: auto;" v-for="(image, index) in filteredImages" :key="image.key"
 				:id="`image-container-${image.key}`"
@@ -17,11 +15,6 @@
 				<img :src="image.src" class="round-image" />
 			</div>
 		</div>
-
-
-
-
-
 
 		<div class="dashboard" ref="partToScroll">
 			<div style="padding-bottom: 30px" class="draw-results">
@@ -42,8 +35,8 @@
 
 						<div class="mobile-refresh-page-button-container"
 							style="color: white; position: absolute; right: 0;">
-							<div class="refresh-icon" style="position: relative; ">
-								<div style="position: absolute; right:8px; top: 2px;">
+							<div class="refresh-icon">
+								<div style="position: absolute; top: -3px; right: 5px; transform: rotateZ(75deg);">
 									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
 										&#8635;
 									</a>
@@ -151,8 +144,8 @@ export default {
 		return {
 			currentTimeText: "",
 			intervalId: null,
-			scrolledPast: false,
 			data: [],
+			scrollY: 0,
 			styles: {
 				M: {
 					name: "Magnum 4D",
@@ -247,7 +240,7 @@ export default {
 			},
 			activeIndex: null,
 			images: [
-				{ key: 'M', src: '/image/magnum.svg' },
+				{ key: 'M', src: '/image/Magnum@3x.png' },
 				{ key: 'D', src: '/image/damacai2.svg' },
 				{ key: 'T', src: '/image/toto.svg' },
 				{ key: 'S', src: '/image/sg.svg' },
@@ -255,7 +248,7 @@ export default {
 				{ key: 'SB', src: '/image/diriwan.svg' },
 				{ key: 'SW', src: '/image/ssc.svg' },
 				{ key: 'G', src: '/image/gd.svg' },
-				{ key: 'H', src: '/image/lucky_logo.png' },
+				{ key: 'H', src: '/image/LHH@3x.png' },
 				{ key: 'P', src: '/image/pdn.svg' }
 
 			],
@@ -389,17 +382,33 @@ export default {
 			return Object.keys(drawObj)[0];
 		},
 		getSpecialNumbers(draw) {
-			return [
-				draw.S1, draw.S2, draw.S3, draw.S4, draw.S5, draw.S6, draw.S7, draw.S8, draw.S9, draw.S10,
-				draw.S11, draw.S12, draw.S13
+			const specialNumbers = [
+				draw.S1, draw.S2, draw.S3, draw.S4, draw.S5, draw.S6,
+				draw.S7, draw.S8, draw.S9, draw.S10, draw.S11, draw.S12, draw.S13
 			];
+
+			// Process each number or string in the array
+			const filteredNumbers = specialNumbers.map(num => {
+				if (num === null || num === undefined || num === '') {
+					return "----"; // Display "----" for blank or undefined values
+				} else if (!isNaN(num)) {
+					let numAsString = num.toString();
+					// Remove any underscores (or underlines) from the string
+					// numAsString = numAsString.replace(/_/g, '').replace(/[\u0332\u2017]/g, ''); // Remove both underscores and underline characters
+					return numAsString;
+				} else {
+					return "----"; // Display "----" for non-number values or NaN
+				}
+			});
+
+			return filteredNumbers;
 		},
 		getConsolationNumbers(draw) {
 			// Extract consolation numbers from the draw object
 			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
 		},
 		refreshPage() {
-			window.location.reload(); // Reloads the current page
+			window.location.reload();
 		},
 		handleImageClick(index) {
 			this.activeIndex = index;
@@ -531,23 +540,19 @@ export default {
 }
 
 .refresh-icon {
-	font-size: 16px !important;
-	background-color: white !important;
-	opacity: 0.8 !important;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	font-size: 24px;
+	background-color: white;
+	opacity: 0.8;
 	border-radius: 50%;
-	width: 30px !important;
-	height: 30px !important;
-}
-
-.refresh-arrow {
-	display: contents;
-	color: #CF2E2E;
-	align-self: center;
+	width: 30px;
+	height: 30px;
+	position: relative;
 }
 
 .image-container {
-	width: 10%;
-	height: auto;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: border 0.3s ease;
@@ -559,12 +564,15 @@ export default {
 
 .image-container.active {
 	border: 2px solid rgb(207, 46, 46);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	/* border: 2px solid #b48811; */
+	/* border: 2px solid transparent;
+	background-image: linear-gradient(to left, #ebd197, #b48811, #a2790d, #bb9b49, #ffffff); */
 }
 
 .round-image {
 	width: 100%;
-	height: 100%;
-
+	height: 27px;
 }
 
 .refresh-arrow {
