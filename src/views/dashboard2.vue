@@ -8,7 +8,7 @@
 
 		<!--Topbar 2-->
 		<div style="display: none; position: sticky; z-index: 999;" class="navbar">
-			<div style="width: 30px; height: auto;" v-for="(image, index) in filteredImages" :key="image.key"
+			<div style="width: 30px; height: auto;" v-for="(image) in filteredImages" :key="image.key"
 				:id="`image-container-${image.key}`"
 				:class="['image-container', `image-container-${image.key}`, { active: activeIndex === image.key }]"
 				@click="handleImageClick(image.key)">
