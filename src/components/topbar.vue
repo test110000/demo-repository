@@ -119,9 +119,9 @@ export default {
 				{ key: 'ST', src: '/image/sandakan.svg' },
 				{ key: 'SB', src: '/image/diriwan.svg' },
 				{ key: 'SW', src: '/image/ssc.svg' },
+				{ key: 'G', src: '/image/gd.svg' },
 				{ key: 'H', src: '/image/lhh.svg' },
-				{ key: 'P', src: '/image/pdn.svg' },
-				{ key: 'G', src: '/image/gd.svg' }
+				{ key: 'P', src: '/image/pdn.svg' }
 			],
 			images: {
 				'/': '/image/dashboard-topbar.svg',

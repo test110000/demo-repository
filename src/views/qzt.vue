@@ -51,9 +51,6 @@
 				<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
 				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
 				</div>
-
-				<!-- Bootstrap Spinner -->
-
 			</div>
 
 		</div>
@@ -227,7 +224,7 @@ export default {
 	padding-top: 30px;
 	background-color: white;
 	/* padding-bottom: 10px; */
-	height: 250px;
+	height: 290px;
 	text-align: -webkit-center;
 	width: 100%;
 	place-self: center;

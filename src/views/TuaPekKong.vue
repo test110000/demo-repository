@@ -226,8 +226,7 @@ export default {
 .item-container {
 	padding-top: 30px;
 	background-color: white;
-	/* padding-bottom: 10px; */
-	height: 250px;
+	height: 290px;
 	text-align: -webkit-center;
 	width: 100%;
 	place-self: center;

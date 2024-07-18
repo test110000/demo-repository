@@ -11,36 +11,65 @@
 				</div>
 
 				<div class="column">
+					<!--search bar-->
 					<div class="search_col">
-						<input v-model="searchQuery" class="search_input" placeholder="e.g. 1001 or sky" />
+						<div class="input-container">
+							<div class="input-wrapper">
+								<input v-model="searchQuery" class="form-control form-control-dark search_input"
+									placeholder="e.g. 1001 or sky">
+
+								<!--close_btn-->
+								<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg"
+									width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill close_btn"
+									viewBox="0 0 16 16">
+									<path
+										d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+								</svg>
+							</div>
+						</div>
+						<!--search_btn-->
 						<button @click="performSearch" class="search_btn">Search</button>
 					</div>
 
 
-					<div style="text-align: -webkit-center;" v-if="showSearchResults">
+					<div class="big_col" v-if="showSearchResults">
 						<!-- Display search results -->
-						<div class="search-message">
-							<p>Found {{ filteredData.length }} result{{ filteredData.length !== 1 ? 's' : '' }} for
-								"{{
-									searchQuery }}"</p>
-							<button @click="clearSearch" class="search_btn">Close</button>
-						</div>
+						<ul style="justify-content: center;" class="nav nav-tabs justify-content-center "
+							role="tablist">
+							<li style="width: 31.5%;" class="nav-item">
+								<a class="nav-link active" data-bs-toggle="tab" href="#TuaPekKongWan">WZT</a>
+							</li>
 
-						<ul style="justify-content: center;" class="nav nav-pills" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" data-bs-toggle="pill" href="#WZT">WZT</a>
+							<li style="width: 31.5%;" class="nav-item">
+								<a class="nav-link" data-bs-toggle="tab" href="#GuanYin">GZT</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="pill" href="#GZT">GZT</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="pill" href="#QZT">QZT</a>
+
+							<li style="width: 31.5%;" class="nav-item">
+								<a class="nav-link" data-bs-toggle="tab" href="#TuaPekKongQian">QZT</a>
 							</li>
 						</ul>
+						<br>
 
 						<div class="tab-content">
-							<div id="WZT" class="container tab-pane active">
+							<!--go to top button-->
+							<div class="go_up_btn">
+								<a @click.prevent="scrollToTop"
+									:class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+										class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+										<path
+											d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+									</svg>
+								</a>
+							</div>
+							<!--TuaPekKong (Wan)-->
+							<div id="TuaPekKongWan" class="container tab-pane active">
 								<div>
+									<div class="search-message">
+										<p>Found {{ filteredDataWZT.length }} result{{ filteredDataWZT.length !== 1 ?
+											's' : '' }} for WZT "{{ searchQuery }}"</p>
+									</div>
+
 									<ul class="search-ul">
 										<li v-for="item in filteredDataWZT" :key="item.number" class="search-result">
 											<div class="number_col">
@@ -57,8 +86,13 @@
 								</div>
 							</div>
 
-							<div id="GZT" class="container tab-pane active">
-								<ul style="padding-left: 0rem;">
+							<!--GuanYinMa-->
+							<div id="GuanYin" class="container tab-pane fade">
+								<div class="search-message">
+									<p>Found {{ filteredDataGZT.length }} result{{ filteredDataGZT.length !== 1 ?
+										's' : '' }} for GZT"{{ searchQuery }}"</p>
+								</div>
+								<ul class="search-ul">
 									<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
 										<div class="number_col">
 											<p>{{ item.number }}</p>
@@ -74,9 +108,13 @@
 							</div>
 
 
-
-							<div id="QZT" class="container tab-pane active">
-								<ul style="padding-left: 0rem;">
+							<!--TuaPekKong (Qian)-->
+							<div id="TuaPekKongQian" class="container tab-pane fade">
+								<div class="search-message">
+									<p>Found {{ filteredDataQZT.length }} result{{ filteredDataQZT.length !== 1 ?
+										's' : '' }} for QZT"{{ searchQuery }}"</p>
+								</div>
+								<ul class="search-ul">
 									<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
 										<div class="number_col">
 											<p>{{ item.number }}</p>
@@ -90,12 +128,10 @@
 									</li>
 								</ul>
 							</div>
-
-
 						</div>
 					</div>
 
-
+					<!--entry TuaPekKongWan & GuanYinMa & TuaPkeKong Qian-->
 					<div style="text-align: -webkit-center;" v-else>
 						<div class="col-12 book_col">
 							<div style="text-align: -webkit-center; place-content: center;" class="row">
@@ -106,9 +142,9 @@
 										<div @click="goToTuaPekKong" class="lucky_col">
 											<div class="wanzititle_col">
 												<img class="wanzititle" src="/image/TuaPekKongWanZi.webp" />
-												<img width="65%" src="/image/TuaPekKongWan.svg" />
+												<img width="65%" src="/image/TuaPekKongWan.svg" @load="onWanLoaded" />
 											</div>
-											<div class="text">
+											<div class=" text">
 												<a href="#" class="text" @click="goToTuaPekKong">Tua Pek Kong (Wan)
 													Dictionary</a>
 
@@ -116,10 +152,6 @@
 											<div class="text2">
 												<a href="#" class="text2">(WZT)</a>
 											</div>
-
-
-
-
 										</div>
 										<br />
 										<div class="btn_col">
@@ -201,45 +233,57 @@ export default {
 		return {
 			searchQuery: '',
 			showSearchResults: false,
+			showCloseButton: false,
+			activeTab: 'WZT',
+			wanLoaded: false,
+			showIcon: false,
+			scrollTimeout: null,
 			//showTuaPekKongQian: false, // Boolean state for showing TuaPekKong (Qian) component
 			allData: [],
 			filteredData: [],
 			filteredDataWZT: [],
 			filteredDataGZT: [],
 			filteredDataQZT: []
+
 		};
 	},
 	methods: {
 		async performSearch() {
 			this.showSearchResults = this.searchQuery.trim().length > 0;
+
 			if (this.showSearchResults) {
 				// Load data from JSON files
-				const wztData = await fetch('/src/assets/data/wzt.json').then(response => response.json());
-				const gztData = await fetch('/src/assets/data/gzt.json').then(response => response.json());
-				const qztData = await fetch('/src/assets/data/qzt.json').then(response => response.json());
+				const wztData = await fetch('./src/assets/data/wzt.json').then(response => response.json());
+				const gztData = await fetch('./src/assets/data/gzt.json').then(response => response.json());
+				const qztData = await fetch('./src/assets/data/qzt.json').then(response => response.json());
 
 				this.allData = [...wztData, ...gztData, ...qztData];
 
 				// Filter data based on search query
-				this.filteredData = this.allData.filter(item =>
-					item.number.includes(this.searchQuery) || item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
-				);
-
-				// Separate filtered data by source
 				this.filteredDataWZT = wztData.filter(item =>
-					item.number.includes(this.searchQuery) || item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
+					item.number.includes(this.searchQuery) ||
+					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
 				this.filteredDataGZT = gztData.filter(item =>
-					item.number.includes(this.searchQuery) || item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
+					item.number.includes(this.searchQuery) ||
+					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
 				this.filteredDataQZT = qztData.filter(item =>
-					item.number.includes(this.searchQuery) || item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
+					item.number.includes(this.searchQuery) ||
+					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
 			}
+		},
+		onWanLoaded() {
+			this.wanLoaded = true;
 		},
 		clearSearch() {
 			this.showSearchResults = false;
 			this.searchQuery = '';
+			this.showCloseButton = false;
+		},
+		changeTab(tab) {
+			this.activeTab = tab;
 		},
 		goToTuaPekKong() {
 			this.$router.push('/tuapekkongwan');
@@ -250,18 +294,70 @@ export default {
 		goToTuaPekKongQian() {
 			this.$router.push('/tuapekkongqian');
 		},
-	}
+		handleScroll() {
+			// 如果已经有计时器，清除它
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
+		},
+		scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		},
+	},
+	mounted() {
+		// 监听滚动事件
+		window.addEventListener('scroll', this.handleScroll);
+	},
+	beforeDestroy() {
+		// 移除滚动事件监听
+		window.removeEventListener('scroll', this.handleScroll);
+	},
 };
 
 </script>
 
 <style scoped>
+.scroll-icon {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-icon.show {
+	opacity: 1;
+	visibility: visible;
+	/* 设置为可见 */
+}
+
+.scroll-icon.hide {
+	opacity: 0;
+	visibility: hidden;
+	/* 设置为不可见 */
+}
+
+.scroll-icon.fade-out {
+	opacity: 0;
+}
+
 .title_col {
 	text-align: -webkit-center;
 	margin-top: 73px;
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:450px) {
 	.number_col {
 		width: 60%;
 	}
@@ -273,6 +369,8 @@ export default {
 		margin-top: 10px;
 	}
 }
+
+.tab-content {}
 
 .luckybook_col {
 	width: 100%;
@@ -332,7 +430,7 @@ export default {
 	padding-top: 30px;
 	background-color: white;
 	/* padding-bottom: 10px; */
-	height: 300px;
+	height: 290px;
 	text-align: -webkit-center;
 	width: 100%;
 	place-self: center;
@@ -354,20 +452,22 @@ export default {
 	border-color: rgb(198, 198, 198);
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:450px) {
 	.number_col {
-		width: 100%;
+		width: 70%;
+	}
+
+	.container {
+		padding: 0px;
 	}
 }
 
 .item-container {
 	padding-top: 30px;
 	background-color: white;
-	/* padding-bottom: 10px; */
 	height: 250px;
 	text-align: -webkit-center;
 	width: 100%;
-	place-self: center;
 	border-radius: 5px;
 	align-content: start;
 	box-shadow: 0px 2px 2px 2px #989696;
@@ -381,6 +481,21 @@ export default {
 	border-radius: 5px;
 	cursor: pointer;
 	font-weight: bold;
+}
+
+.close_btn {
+	color: #CF2E2E;
+	border: none;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+
+
 }
 
 .search_input {
@@ -454,7 +569,8 @@ export default {
 }
 
 .search-ul {
-	padding-left: 0rem;
+	padding: 0px;
+	gap: 1.0rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -467,6 +583,43 @@ export default {
 	font-size: 15px;
 	margin-top: 10px;
 	height: 70px;
+}
+
+
+.nav-tabs {
+	gap: 0.5rem;
+}
+
+.nav-tabs .nav-link.active {
+	background-color: #cf2e2e;
+	color: white;
+	font-weight: bolder;
+
+}
+
+.nav-tabs .nav-link {
+	color: grey;
+	font-weight: bolder;
+	background-color: gainsboro;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	border-bottom: 2px solid #cf2e2e;
+}
+
+@media screen and (min-width:1440px) {
+	.nav-tabs {
+		width: 80% !important;
+	}
+}
+
+.nav-item {
+	width: 80px;
+}
+
+.nav-pills {
+	gap: 2.0rem;
 }
 
 .text2 {
@@ -499,13 +652,27 @@ p {
 
 }
 
+@media screen and (min-width:1440px) {
+	.search-ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		width: 80%;
+	}
+}
+
 @media screen and (min-width:768px) {
 	.search_col {
 		width: 50%;
 	}
+
+	.search-ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
-@media screen and (max-width:426px) {
+
+@media screen and (max-width:450px) {
 	.container {
 		padding: 0px;
 	}
@@ -518,5 +685,61 @@ p {
 		width: 100%;
 	}
 
+
+
+	.big_col {
+		padding: 30px;
+	}
+
+}
+
+.big_col {
+	text-align: -webkit-center;
+}
+
+.input-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.input-container {
+	position: relative;
+	display: inline-block;
+}
+
+.search_input {
+	flex: 1;
+	padding-right: 30px;
+}
+
+.go_up_btn {
+	position: fixed;
+	right: 30px;
+	bottom: 15px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	opacity: 0.6;
+
+}
+
+.go_up_btn :hover {
+	color: #CF2E2E;
+}
+
+.go_up_btn a {
+	color: #CF2E2E;
+}
+
+@media screen and (min-width:1440px) {
+	.go_up_btn {
+		right: 253px;
+	}
+}
+
+@media screen and (min-width:2560px) {
+	.go_up_btn {
+		right: 800px;
+	}
 }
 </style>
