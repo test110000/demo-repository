@@ -17,11 +17,11 @@
 		</div>
 
 		<div class="dashboard" ref="partToScroll">
-			<div style="padding-bottom: 100px" class="draw-results">
+			<div class="draw-results">
 				<div v-for="(drawObj, index) in data" :key="index" :id="`Toto-type-${index}`"
 					class="draw-section white-bg">
-					<div class="top-card-container" :style="{ backgroundColor: getBgColor(index) }">
 
+					<div class="top-card-container" :style="{ backgroundColor: getBgColor(index) }">
 						<div class="mobile-menu-page-button-container"
 							style="color: white; position: absolute; left: 0;">
 							<div class="menu-icon">
@@ -37,7 +37,7 @@
 							style="color: white; position: absolute; right: 0;">
 							<div class="refresh-icon">
 								<div style="position: absolute; top: -3px; right: 5px; transform: rotateZ(75deg);">
-									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
+									<a class="refresh-arrow" @click="refreshPage(index)">
 										&#8635;
 									</a>
 								</div>
@@ -145,7 +145,7 @@ export default {
 			currentTimeText: "",
 			intervalId: null,
 			data: [],
-			scrollY: 0,
+			scrollPosition: 0,
 			styles: {
 				M: {
 					name: "Magnum 4D",
@@ -254,27 +254,19 @@ export default {
 			],
 		};
 	},
-	mounted() {
-		// this.fetchData();
-		this.fetchData2();
+	async mounted() {
+		this.fetchData();
 		this.updateTimeText();
+		this.$nextTick(() => {
+			this.restoreScrollPosition();
+		});
+		// this.restoreScrollPosition();
 	},
 	beforeDestroy() {
 		clearInterval(this.intervalId);
 	},
 	methods: {
-		fetchData() {
-			axios.get('/public/data-2.json')
-				// axios.get('https://result2.song6.club/result')
-				.then(response => {
-					this.data = response.data;
-					// console.log(this.data)
-				})
-				.catch(error => {
-					console.error('Error fetching data:', error);
-				});
-		},
-		fetchData2() {
+		async fetchData() {
 			axios.get('https://result2.song6.club/result')
 				.then(response => {
 					// Extract only desired keys from response.data
@@ -288,13 +280,7 @@ export default {
 					});
 
 					this.data = extractedData;
-
-					// Example of using the extracted data
-					// console.log('Extracted Data:', this.data);
 				})
-				.catch(error => {
-					console.error('There was an error fetching the data:', error);
-				});
 		},
 		shouldHideTimeInfo(key) {
 			const validKeys = ["H", "P"];
@@ -407,26 +393,41 @@ export default {
 			// Extract consolation numbers from the draw object
 			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
 		},
-		refreshPage() {
+		refreshPage(index) {
+			// Save the ID of the clicked refresh button to localStorage
+			const cardId = `Toto-type-${index}`;
+
+			localStorage.setItem('cardId', cardId);
+			// Reload the page
 			window.location.reload();
+		},
+		restoreScrollPosition() {
+			// Get the saved card ID from localStorage
+			const cardId = localStorage.getItem('cardId');
+
+			if (cardId) {
+				this.$nextTick(() => {
+					const checkElement = () => {
+						const element = document.getElementById(cardId);
+						if (element) {
+							element.scrollIntoView({ behavior: 'smooth' });
+							// Clear the card ID from localStorage
+							localStorage.removeItem('cardId');
+						} else {
+							setTimeout(checkElement, 100); // Retry after 100ms
+						}
+					};
+					setTimeout(checkElement, 100); // Initial delay to ensure full rendering
+				});
+			}
 		},
 		handleImageClick(index) {
 			this.activeIndex = index;
 			this.scrollToDrawSection(index);
 		},
 		handleLogoClick(id) {
-			// Check if the current page is not '/'
-			if (window.location.pathname !== '/') {
-				console.log('Hi')
-				// Redirect to the home page
-				window.location.href = '/';
-			} else {
-				console.log('Is here')
-				// Set activeIndex to the clicked logo index
-				this.activeIndex = id;
-				// Scroll to the corresponding section
-				this.scrollToDrawSection(id);
-			}
+			this.activeIndex = id;
+			this.scrollToDrawSection(id);
 		},
 		scrollToDrawSection(index) {
 			const element = document.getElementById(`Toto-type-${index}`);
@@ -626,6 +627,13 @@ export default {
 	gap: 0.5rem;
 	font-family: Arial, sans-serif;
 	text-align: center;
+
+}
+
+@media screen and (max-width: 431px) {
+	.draw-results {
+		padding-bottom: 100px
+	}
 }
 
 .top-card-container {
