@@ -71,12 +71,15 @@
 
 
 					<!--top-->
-					<div class="Logo_4D">
-						<a href="#" @click="goToDashboard"><img class="d_num_logo"
-								style="width: 80px; margin-right: -15px;" src="/image/4D-lottery-single.png"></a>
-						<a href="#" @click="goToDashboard"><img class="d_num_title" width="100"
-								src="/image/4D-lottery-wording.png"></a>
-					</div>
+
+					<a href="/">
+						<div class="Logo_4D">
+							<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
+								src="/image/4D-lottery-single.png">
+							<img class="d_num_title" width="100" src="/image/4D-lottery-wording.png">
+						</div>
+					</a>
+
 					<div class="logo_col">
 						<div class="logo" v-for="logo in filteredLogos" :key="logo.key">
 							<a :href="'#'" @click.prevent="handleLogoClick(logo.key)">
@@ -91,33 +94,16 @@
 							</a>
 						</div>
 					</div>
-					<div class="dropdown language-button">
-						<button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-							aria-expanded="false">
+					<div class="language-button">
+						<button>
 							<div class="icon">
 								&#x1F310; <!-- Earth Globe with Meridians -->
 							</div>
 						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<li><a class="dropdown-item" @click="changeLanguage('en')">English</a></li>
-							<li><a class="dropdown-item" @click="changeLanguage('zh')">中文</a></li>
-							<li><a class="dropdown-item" @click="changeLanguage('ms')">Malay</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<!--go to top button-->
-	<div class="go_up_btn">
-		<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }" href="#">
-			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-				class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-				<path
-					d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-			</svg>
-		</a>
 	</div>
 </template>
 
@@ -223,11 +209,15 @@ export default {
 			window.location.reload();
 		},
 		handleLogoClick(index) {
-			this.$emit('logo-clicked', `${index}`);
-		},
-		goToDashboard() {
-			this.$router.push('/');
-		},
+			if (window.location.pathname !== '/') {
+				console.log('Hi')
+				// Redirect to the home page
+				window.location.href = '/';
+			} else {
+				this.$emit('logo-clicked', `${index}`);
+			}
+
+		}
 	},
 	computed: {
 		formattedDate() {
