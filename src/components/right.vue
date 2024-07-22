@@ -7,12 +7,12 @@
 				<img class="ball_img" src="\image\realistic8ball.png">
 
 				<div class="right_col2">
-					<h6>Special Draw Date</h6>
-					<p style="padding-bottom: 10px;">Upcoming Special Draw Date</p>
+					<h6>{{ $t('Right.Special Draw Date') }}</h6>
+					<p style="padding-bottom: 10px;">{{ $t('Right.Upcoming Special Draw Date') }}</p>
 				</div>
 				<div class="special-draw-date" v-for="(dateObj, index) in specialDates" :key="index">
 					<p :class="{ 'expired': dateObj.expired }">
-						• {{ formatDate(dateObj.date) }} {{ getDayOfWeek(dateObj.date) }}
+						• {{ formatDate(dateObj.date) }} ({{ $t('Right.Tue') }})
 					</p>
 					<hr>
 				</div>

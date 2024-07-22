@@ -1,5 +1,4 @@
 <template>
-
 	<div ref="scrollContainer" class="scroll-container">
 		<!--Topbar 1-->
 		<div ref="topBar">
@@ -14,7 +13,11 @@
 				@click="handleImageClick(image.key)">
 				<img :src="image.src" class="round-image" />
 			</div>
+
 		</div>
+
+
+
 
 		<div class="dashboard" ref="partToScroll">
 			<div style="padding-bottom: 30px" class="draw-results">
@@ -43,6 +46,7 @@
 								</div>
 							</div>
 						</div>
+
 
 						<div class="draw-header">
 							<div class="logo-title-container">
@@ -261,6 +265,7 @@ export default {
 	},
 	beforeDestroy() {
 		clearInterval(this.intervalId);
+
 	},
 	methods: {
 		fetchData() {
@@ -869,5 +874,58 @@ export default {
 
 .time-info-fs-14px {
 	font-size: 14px;
+}
+
+.go_up_btn {
+	position: fixed;
+	right: 50px;
+	bottom: 15px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	opacity: 0.8;
+	z-index: 999px;
+}
+
+.go_up_btn :hover {
+	color: #CF2E2E;
+}
+
+.go_up_btn a {
+	color: #CF2E2E;
+}
+
+@media screen and (min-width:1440px) {
+	.go_up_btn {
+		right: 253px;
+	}
+}
+
+@media screen and (min-width:2560px) {
+	.go_up_btn {
+		right: 800px;
+	}
+}
+
+.scroll-icon {
+	position: fixed;
+	bottom: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-icon.show {
+	opacity: 1;
+	visibility: visible;
+	/* 设置为可见 */
+}
+
+.scroll-icon.hide {
+	opacity: 0;
+	visibility: hidden;
+	/* 设置为不可见 */
+}
+
+.scroll-icon.fade-out {
+	opacity: 0;
 }
 </style>

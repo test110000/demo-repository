@@ -1,12 +1,16 @@
 import { createI18n } from 'vue-i18n';
 import en from './locales/en.json';
-import my from './locales/my.json';
-import zw from './locales/zw.json';
+import ms from './locales/my.json';
+import zh from './locales/zw.json';
+
+
 
 const messages = {
 	en,
-	my,
-	zw
+	ms,
+	zh
+
+
 };
 
 const i18n = createI18n({

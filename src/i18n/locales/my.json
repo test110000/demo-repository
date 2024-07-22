@@ -1,5 +1,41 @@
 {
 	"Sidebar": {
-		"Result": "Keputusan"
+		"Result": "Keputusan",
+		"Dashboard": "Pemuka",
+		"ToolBox": "Alatan",
+		"Spin My Luck": "Putaran Bertuah",
+		"Lucky Book": "Buku Bertuah"
+	},
+	"Right": {
+		"Special Draw Date": "Tarikh Cabutan Khas",
+		"Upcoming Special Draw Date": "Tarikh Cabutan Istimewa Akan Datang",
+		"Tue": "Selasa"
+	},
+	"Dashboard": {
+		"Date": "Tarikh",
+		"Draw No": "Cabutan No",
+		"Wed": "Rabu",
+		"Tue": "Selasa",
+		"Sat": "Sabtu",
+		"Sun": "Ahad"
+	},
+	"SpinMyLuck": {
+		"Lucky Book": "Buku Bertuah",
+		"Lucky Spin": "Putaran Bertuah",
+		"NUMBER": "NOMBOR",
+		"Spin": "Putar",
+		"JACKPOT NUMBER": "JACKPOT NOMBOR"
+	},
+	"LuckyBook": {
+		"Tua Pek Kong (Wan) Dictionary": "Kamus Tua Pek Kong (Wan)",
+		"Tua Pek Kong (Qian) Dictionary": "Kamus Tua Pek Kong (Qian)",
+		"Guan Yin Ma Dictionary": "Kamus Guan Yin Ma",
+		"Search": "Cari",
+		"Search placeholder": "cth. 1001 atau sky",
+		"Enter": "Masuk",
+		"ALL": "Semua",
+		"Found": "Terdapat",
+		"result": "rekod",
+		"for": "untuk"
 	}
 }

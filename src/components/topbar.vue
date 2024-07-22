@@ -29,7 +29,8 @@
 									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 										<li class="nav-item">
 											<h5 class="nav-link" :class="{ 'active': activeTitle === 'Results' }"
-												@click="setActiveTitle('Results')">Results</h5>
+												@click="setActiveTitle('Results')">{{ $t('Sidebar.Result') }}</h5>
+
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="/"
@@ -37,19 +38,21 @@
 												@click="setActiveTitle('Dashboard')">
 												<img src="/image/dashboard.png"
 													style="width: 25px; margin-right: 13px;">
-												Dashboard
+												{{ $t('Sidebar.Dashboard') }}
 											</a>
 										</li>
 										<li style="margin-top: 20px;" class="nav-item">
 											<h5 class="nav-link" :class="{ 'active': activeTitle === 'ToolBox' }"
-												@click="setActiveTitle('ToolBox')">ToolBox</h5>
+												@click="setActiveTitle('ToolBox')">
+												{{ $t('Sidebar.ToolBox') }}
+											</h5>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="/spin-my-luck"
 												:class="{ 'active': activeTitle === 'Spin My Luck' }"
 												@click="setActiveTitle('Spin My Luck')">
 												<img src="/image/spin.png" style="width: 25px; margin-right: 13px;">
-												Spin My Luck
+												{{ $t('Sidebar.Spin My Luck') }}
 											</a>
 										</li>
 										<li class="nav-item">
@@ -57,7 +60,7 @@
 												:class="{ 'active': activeTitle === 'Lucky Book' }"
 												@click="setActiveTitle('Lucky Book')">
 												<img src="/image/book.png" style="width: 25px; margin-right: 13px;">
-												Lucky Book
+												{{ $t('Sidebar.Lucky Book') }}
 											</a>
 										</li>
 									</ul>
@@ -65,14 +68,14 @@
 							</div>
 						</div>
 					</nav>
+
+
 					<!--top-->
-
-
-
 					<div class="Logo_4D">
-						<img class="d_num_logo" style="width: 80px; margin-right: -15px;"
-							src="/image/4D-lottery-single.png">
-						<img class="d_num_title" width="100" src="/image/4D-lottery-wording.png">
+						<a href="#" @click="goToDashboard"><img class="d_num_logo"
+								style="width: 80px; margin-right: -15px;" src="/image/4D-lottery-single.png"></a>
+						<a href="#" @click="goToDashboard"><img class="d_num_title" width="100"
+								src="/image/4D-lottery-wording.png"></a>
 					</div>
 					<div class="logo_col">
 						<div class="logo" v-for="logo in filteredLogos" :key="logo.key">
@@ -88,16 +91,33 @@
 							</a>
 						</div>
 					</div>
-					<div class="language-button">
-						<button>
+					<div class="dropdown language-button">
+						<button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+							aria-expanded="false">
 							<div class="icon">
 								&#x1F310; <!-- Earth Globe with Meridians -->
 							</div>
 						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" @click="changeLanguage('en')">English</a></li>
+							<li><a class="dropdown-item" @click="changeLanguage('zh')">中文</a></li>
+							<li><a class="dropdown-item" @click="changeLanguage('ms')">Malay</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<!--go to top button-->
+	<div class="go_up_btn">
+		<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }" href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+				class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+				<path
+					d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+			</svg>
+		</a>
 	</div>
 </template>
 
@@ -106,6 +126,8 @@ export default {
 	name: 'TopBar',
 	data() {
 		return {
+			showIcon: false,
+			scrollTimeout: null,
 			intervalId: null,
 			activeTitle: 'Dashboard',
 			currentDate: new Date(),
@@ -131,12 +153,40 @@ export default {
 		};
 	},
 	mounted() {
+		// 监听滚动事件
+		window.addEventListener('scroll', this.handleScroll);
 		this.intervalId = setInterval(this.checkTime, 1000);
 	},
 	beforeDestroy() {
+		// 移除滚动事件监听
+		window.removeEventListener('scroll', this.handleScroll);
 		clearInterval(this.intervalId);
 	},
 	methods: {
+		changeLanguage(lang) {
+			console.log('Changing language to:', lang);
+			this.$i18n.locale = lang;
+		},
+		handleScroll() {
+			// 如果已经有计时器，清除它
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
+		},
+		scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		},
 		setActiveTitle(title) {
 			this.activeTitle = title;
 		},
@@ -174,7 +224,10 @@ export default {
 		},
 		handleLogoClick(index) {
 			this.$emit('logo-clicked', `${index}`);
-		}
+		},
+		goToDashboard() {
+			this.$router.push('/');
+		},
 	},
 	computed: {
 		formattedDate() {
@@ -468,5 +521,60 @@ export default {
 .active {
 	color: rgb(38, 76, 170);
 	/* Define your active text color */
+}
+
+.go_up_btn {
+	position: fixed;
+	right: 60px;
+	bottom: 15px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	z-index: 999;
+	opacity: 0.8;
+
+}
+
+.go_up_btn :hover {
+	color: #CF2E2E;
+	opacity: 1;
+}
+
+.go_up_btn a {
+	color: #CF2E2E;
+}
+
+@media screen and (min-width:1440px) {
+	.go_up_btn {
+		right: 253px;
+	}
+}
+
+@media screen and (min-width:2560px) {
+	.go_up_btn {
+		right: 800px;
+	}
+}
+
+.scroll-icon {
+	position: fixed;
+	bottom: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-icon.show {
+	opacity: 1;
+	visibility: visible;
+	/* 设置为可见 */
+}
+
+.scroll-icon.hide {
+	opacity: 0.3;
+	visibility: visible;
+	/* 设置为不可见 */
+}
+
+.scroll-icon.fade-out {
+	opacity: 0;
 }
 </style>

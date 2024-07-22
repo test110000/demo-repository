@@ -7,7 +7,7 @@
 		<div class="col-12 title_col">
 			<div class="luckbook_col">
 				<div class="title">
-					<p>Lucky Book</p>
+					<p>{{ $t('Sidebar.Lucky Book') }}</p>
 				</div>
 
 				<div class="column">
@@ -16,9 +16,7 @@
 						<div class="input-container">
 							<div class="input-wrapper">
 								<input v-model="searchQuery" class="form-control form-control-dark search_input"
-									placeholder="e.g. 1001 or sky">
-
-								<!--close_btn-->
+									:placeholder="$t('LuckyBook.Search placeholder')" />
 								<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg"
 									width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill close_btn"
 									viewBox="0 0 16 16">
@@ -28,7 +26,7 @@
 							</div>
 						</div>
 						<!--search_btn-->
-						<button @click="performSearch" class="search_btn">Search</button>
+						<button @click="performSearch" class="search_btn">{{ $t('LuckyBook.Search') }}</button>
 					</div>
 
 
@@ -51,23 +49,16 @@
 						<br>
 
 						<div class="tab-content">
-							<!--go to top button-->
-							<div class="go_up_btn">
-								<a @click.prevent="scrollToTop"
-									:class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }" href="#">
-									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-										class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-										<path
-											d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-									</svg>
-								</a>
-							</div>
 							<!--TuaPekKong (Wan)-->
 							<div id="TuaPekKongWan" class="container tab-pane active">
 								<div>
 									<div class="search-message">
-										<p>Found {{ filteredDataWZT.length }} result{{ filteredDataWZT.length !== 1 ?
-											's' : '' }} for WZT "{{ searchQuery }}"</p>
+										<p>{{ $t('LuckyBook.Found') }}
+											{{ filteredDataWZT.length }}
+											{{ $t('LuckyBook.result') }}
+											{{ filteredDataWZT.length !== 1 ? '' : '' }}
+											{{ $t('LuckyBook.for') }}
+											"{{ searchQuery }}"</p>
 									</div>
 
 									<ul class="search-ul">
@@ -76,10 +67,11 @@
 												<p>{{ item.number }}</p>
 											</div>
 											<div class="images">
-												<img :src="`/imgs/wzt_webp/${item.image} `" :alt="item.content.en" />
+												<img :src="`/imgs/wzt_webp/${item.image} `"
+													:alt="item.content[language]" />
 											</div>
 											<div class="item-content">
-												<p>{{ item.content.en }}</p>
+												<p>{{ item.content[language] }}</p>
 											</div>
 										</li>
 									</ul>
@@ -89,8 +81,13 @@
 							<!--GuanYinMa-->
 							<div id="GuanYin" class="container tab-pane fade">
 								<div class="search-message">
-									<p>Found {{ filteredDataGZT.length }} result{{ filteredDataGZT.length !== 1 ?
-										's' : '' }} for GZT"{{ searchQuery }}"</p>
+									<p>{{ $t('LuckyBook.Found') }}
+										{{ filteredDataGZT.length }}
+										{{ $t('LuckyBook.result') }}
+										{{ filteredDataGZT.length !== 1 ?
+											'' : '' }}
+										{{ $t('LuckyBook.for') }}
+										"{{ searchQuery }}"</p>
 								</div>
 								<ul class="search-ul">
 									<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
@@ -98,10 +95,10 @@
 											<p>{{ item.number }}</p>
 										</div>
 										<div class="images">
-											<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content.en" />
+											<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content[language]" />
 										</div>
 										<div class="content">
-											<p>{{ item.content.en }}</p>
+											<p>{{ item.content[language] }}</p>
 										</div>
 									</li>
 								</ul>
@@ -111,8 +108,13 @@
 							<!--TuaPekKong (Qian)-->
 							<div id="TuaPekKongQian" class="container tab-pane fade">
 								<div class="search-message">
-									<p>Found {{ filteredDataQZT.length }} result{{ filteredDataQZT.length !== 1 ?
-										's' : '' }} for QZT"{{ searchQuery }}"</p>
+									<p>{{ $t('LuckyBook.Found') }}
+										{{ filteredDataQZT.length }}
+										{{ $t('LuckyBook.result') }}
+										{{ filteredDataQZT.length !== 1 ?
+											'' : '' }}
+										{{ $t('LuckyBook.for') }}
+										"{{ searchQuery }}"</p>
 								</div>
 								<ul class="search-ul">
 									<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
@@ -120,10 +122,10 @@
 											<p>{{ item.number }}</p>
 										</div>
 										<div class="images">
-											<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content.en" />
+											<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content[language]" />
 										</div>
 										<div class="content">
-											<p>{{ item.content.en }}</p>
+											<p>{{ item.content[language] }}</p>
 										</div>
 									</li>
 								</ul>
@@ -145,8 +147,9 @@
 												<img width="65%" src="/image/TuaPekKongWan.svg" @load="onWanLoaded" />
 											</div>
 											<div class=" text">
-												<a href="#" class="text" @click="goToTuaPekKong">Tua Pek Kong (Wan)
-													Dictionary</a>
+												<a href="#" class="text" @click="goToTuaPekKong">
+													{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}
+												</a>
 
 											</div>
 											<div class="text2">
@@ -155,7 +158,8 @@
 										</div>
 										<br />
 										<div class="btn_col">
-											<button class="btn_bg" @click="goToTuaPekKong">Enter</button>
+											<button class="btn_bg" @click="goToTuaPekKong">{{ $t('LuckyBook.Enter')
+												}}</button>
 										</div>
 										<br />
 									</div>
@@ -170,8 +174,9 @@
 												<img width="65%" src="/image/GuanYinQian.svg" />
 											</div>
 											<div class="text">
-												<a href="#" class="text" @click="goToGuanYinMa">Guan Yin Ma</a>
-												<p class="text2" @click="goToGuanYinMa">Dictionary</p>
+												<a href="#" class="text" @click="goToGuanYinMa">
+													{{ $t('LuckyBook.Guan Yin Ma Dictionary') }}</a>
+												<p class="text2" @click="goToGuanYinMa"></p>
 											</div>
 											<div class="text2">
 												<a href="#" class="text2">(GZT)</a>
@@ -179,7 +184,8 @@
 										</div>
 										<br />
 										<div class="btn_col">
-											<button class="btn_bg" @click="goToGuanYinMa">Enter</button>
+											<button class="btn_bg" @click="goToGuanYinMa">{{ $t('LuckyBook.Enter')
+												}}</button>
 										</div>
 										<br />
 									</div>
@@ -194,9 +200,8 @@
 												<img width="65%" src="/image/TuaPekKongQian.svg" />
 											</div>
 											<div class="text">
-												<a href="#" class="text" @click="goToTuaPekKongQian">Tua Pek Kong
-													(Qian)
-													Dictionary</a>
+												<a href="#" class="text" @click="goToTuaPekKongQian">
+													{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</a>
 											</div>
 											<div class="text2">
 												<a href="#" class="text2">(QZT)</a>
@@ -204,7 +209,8 @@
 										</div>
 										<br />
 										<div class="btn_col">
-											<button class="btn_bg" @click="goToTuaPekKongQian">Enter</button>
+											<button class="btn_bg" @click="goToTuaPekKongQian">{{ $t('LuckyBook.Enter')
+												}}</button>
 										</div>
 										<br />
 									</div>
@@ -223,12 +229,21 @@
 <script>
 
 import TopBar from '/src/components/topbar.vue';
+import { useI18n } from 'vue-i18n';
 
 export default {
 	components: {
 		TopBar
 	},
 	name: 'LuckyBook',
+	setup() {
+		const { t, locale } = useI18n(); // Get the i18n instance
+
+		return {
+			t,
+			locale
+		};
+	},
 	data() {
 		return {
 			searchQuery: '',
@@ -243,10 +258,17 @@ export default {
 			filteredData: [],
 			filteredDataWZT: [],
 			filteredDataGZT: [],
-			filteredDataQZT: []
+			filteredDataQZT: [],
+
 
 		};
 	},
+	computed: {
+		language() {
+			return this.$i18n.locale;
+		},
+	},
+
 	methods: {
 		async performSearch() {
 			this.showSearchResults = this.searchQuery.trim().length > 0;
@@ -262,15 +284,21 @@ export default {
 				// Filter data based on search query
 				this.filteredDataWZT = wztData.filter(item =>
 					item.number.includes(this.searchQuery) ||
-					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
+					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+					item.content.zh.includes(this.searchQuery) ||
+					item.content.ms.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
 				this.filteredDataGZT = gztData.filter(item =>
 					item.number.includes(this.searchQuery) ||
-					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
+					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+					item.content.zh.includes(this.searchQuery) ||
+					item.content.ms.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
 				this.filteredDataQZT = qztData.filter(item =>
 					item.number.includes(this.searchQuery) ||
-					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase())
+					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+					item.content.zh.includes(this.searchQuery) ||
+					item.content.ms.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
 			}
 		},
@@ -294,64 +322,14 @@ export default {
 		goToTuaPekKongQian() {
 			this.$router.push('/tuapekkongqian');
 		},
-		handleScroll() {
-			// 如果已经有计时器，清除它
-			if (this.scrollTimeout) {
-				clearTimeout(this.scrollTimeout);
-			}
-
-			// 显示图标
-			this.showIcon = true;
-
-			// 在5秒后隐藏图标
-			this.scrollTimeout = setTimeout(() => {
-				this.showIcon = false;
-			}, 2000);
-		},
-		scrollToTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth',
-			});
-		},
-	},
-	mounted() {
-		// 监听滚动事件
-		window.addEventListener('scroll', this.handleScroll);
-	},
-	beforeDestroy() {
-		// 移除滚动事件监听
-		window.removeEventListener('scroll', this.handleScroll);
 	},
 };
+
+
 
 </script>
 
 <style scoped>
-.scroll-icon {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-
-.scroll-icon.show {
-	opacity: 1;
-	visibility: visible;
-	/* 设置为可见 */
-}
-
-.scroll-icon.hide {
-	opacity: 0;
-	visibility: hidden;
-	/* 设置为不可见 */
-}
-
-.scroll-icon.fade-out {
-	opacity: 0;
-}
-
 .title_col {
 	text-align: -webkit-center;
 	margin-top: 73px;
@@ -457,9 +435,6 @@ export default {
 		width: 70%;
 	}
 
-	.container {
-		padding: 0px;
-	}
 }
 
 .item-container {
@@ -673,9 +648,7 @@ p {
 
 
 @media screen and (max-width:450px) {
-	.container {
-		padding: 0px;
-	}
+
 
 	.column {
 		width: 100%;
@@ -715,16 +688,18 @@ p {
 
 .go_up_btn {
 	position: fixed;
-	right: 30px;
+	right: 50px;
 	bottom: 15px;
 	background-color: #ffffff;
 	border-radius: 50px;
-	opacity: 0.6;
+	opacity: 0.8;
+	color: #CF2E2E;
 
 }
 
 .go_up_btn :hover {
 	color: #CF2E2E;
+	opacity: 1;
 }
 
 .go_up_btn a {
@@ -741,5 +716,28 @@ p {
 	.go_up_btn {
 		right: 800px;
 	}
+}
+
+.scroll-icon {
+	position: fixed;
+	bottom: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-icon.show {
+	opacity: 1;
+	visibility: visible;
+	/* 设置为可见 */
+}
+
+.scroll-icon.hide {
+	opacity: 0;
+	visibility: hidden;
+	/* 设置为不可见 */
+}
+
+.scroll-icon.fade-out {
+	opacity: 0;
 }
 </style>

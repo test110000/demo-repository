@@ -1,5 +1,41 @@
 {
 	"Sidebar": {
-		"Result": "Result"
+		"Result": "Result",
+		"Dashboard": "Dashboard",
+		"ToolBox": "ToolBox",
+		"Spin My Luck": "Spin My Luck",
+		"Lucky Book": "Lucky Book"
+	},
+	"Right": {
+		"Special Draw Date": "Special Draw Date",
+		"Upcoming Special Draw Date": "Upcoming Special Draw Date",
+		"Tue": "Tue"
+	},
+	"Dashboard": {
+		"Date": "Date",
+		"Draw No": "Draw No",
+		"Wed": "Wed",
+		"Tue": "Tue",
+		"Sat": "Sat",
+		"Sun": "Sun"
+	},
+	"SpinMyLuck": {
+		"Lucky Book": "Lucky Book",
+		"Lucky Spin": "Lucky Spin",
+		"NUMBER": "NUMBER",
+		"Spin": "Spin",
+		"JACKPOT NUMBER": "JACKPOT NUMBER"
+	},
+	"LuckyBook": {
+		"Tua Pek Kong (Wan) Dictionary": "Tua Pek Kong (Wan) Dictionary",
+		"Tua Pek Kong (Qian) Dictionary": "Tua Pek Kong (Qian) Dictionary",
+		"Guan Yin Ma Dictionary": "Guan Yin Ma Dictionary",
+		"Search": "Search",
+		"Search placeholder": "e.g. 1001 or sky",
+		"Enter": "Enter",
+		"ALL": "All",
+		"Found": "Found",
+		"result": "result",
+		"for": "for"
 	}
 }

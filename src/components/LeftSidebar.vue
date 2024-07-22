@@ -8,26 +8,26 @@
 						<img class="d_num_logo" src="/image/4D-lottery-wording.png">
 					</div>
 					<div class="sidebar-main">
-						<p class="results_install_app_text">Results</p>
+						<p class="results_install_app_text">{{ $t('Sidebar.Result') }}</p>
 						<div class="menu">
 							<!--dashboard-->
 							<div class="text_col">
 								<router-link to="/" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.dashboard">
 									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(207, 46, 46)' : '' }"
-										class="text_menu">Dashboard</p>
+										class="text_menu">{{ $t('Sidebar.Dashboard') }}</p>
 								</router-link>
 							</div>
 						</div>
 						<br>
-						<p class="toolbox_text">Toolbox</p>
+						<p class="toolbox_text">{{ $t('Sidebar.ToolBox') }}</p>
 						<!--Spin My Luck-->
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/spin-my-luck" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.spin">
 									<p :style="{ color: activeTab === 'spin' ? 'rgb(207, 46, 46)' : '' }"
-										class="text_menu">Spin My Luck</p>
+										class="text_menu">{{ $t('Sidebar.Spin My Luck') }}</p>
 								</router-link>
 							</div>
 						</div>
@@ -37,7 +37,7 @@
 								<router-link to="/lucky-book" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.book">
 									<p :style="{ color: activeTab === 'book' ? 'rgb(207, 46, 46)' : '' }"
-										class="text_menu">Lucky Book</p>
+										class="text_menu">{{ $t('Sidebar.Lucky Book') }}</p>
 								</router-link>
 							</div>
 						</div>
@@ -90,7 +90,7 @@ export default {
 	top: 0;
 	left: 0;
 	overflow-y: auto;
-	border-bottom-right-radius: 50px;
+
 }
 
 .sidebar-main {

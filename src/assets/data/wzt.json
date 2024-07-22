@@ -5143,7 +5143,7 @@
 		"content": {
 			"en": "ARABIAN CAMEL",
 			"zh": "单峰驼",
-			"ms": "UNTA SATU BONGGOL /BURUNG"
+			"ms": "UNTA SATU BONGGOL /  BURUNG"
 		},
 		"image": "wzt_0571.webp"
 	},
@@ -7303,7 +7303,7 @@
 		"content": {
 			"en": "TREE SKINK",
 			"zh": "飞蛇",
-			"ms": "ULAR TERBANG/CACING"
+			"ms": "ULAR TERBANG/ CACING"
 		},
 		"image": "wzt_0811.webp"
 	},
@@ -12505,7 +12505,7 @@
 		"content": {
 			"en": "RAW GRANITE",
 			"zh": "臭电",
-			"ms": "PENGETIP BESI / PENCAS LEKTRIK"
+			"ms": "PENGETIP BESI /  PENCAS LEKTRIK"
 		},
 		"image": "wzt_1389.webp"
 	},
@@ -17293,7 +17293,7 @@
 		"content": {
 			"en": "HAUNTED HOUSE",
 			"zh": "鬼屋",
-			"ms": "RUMAH HANTU/KENDERAAN"
+			"ms": "RUMAH HANTU/ KENDERAAN"
 		},
 		"image": "wzt_1921.webp"
 	},
@@ -27011,7 +27011,7 @@
 	{
 		"number": "3001",
 		"content": {
-			"en": "ARMOURED VEHICLE / TANKER",
+			"en": "ARMOURED VEHICLE /  TANKER",
 			"zh": "坦克车",
 			"ms": "KERETA KEBAL"
 		},
@@ -27218,7 +27218,7 @@
 	{
 		"number": "3024",
 		"content": {
-			"en": "SEEDBED / SEEDLING BED",
+			"en": "SEEDBED /  SEEDLING BED",
 			"zh": "苗床",
 			"ms": "TAPAK SEMAIAN"
 		},
@@ -27371,7 +27371,7 @@
 	{
 		"number": "3041",
 		"content": {
-			"en": "CEMETERY / GRAVEYARD",
+			"en": "CEMETERY /  GRAVEYARD",
 			"zh": "墓",
 			"ms": "KUBUR"
 		},
@@ -27461,7 +27461,7 @@
 	{
 		"number": "3051",
 		"content": {
-			"en": "HAIR COLOUR / HAIR DYE",
+			"en": "HAIR COLOUR /  HAIR DYE",
 			"zh": "染发剂",
 			"ms": "UBAT MENGHITAM RAMBUT"
 		},
@@ -27479,7 +27479,7 @@
 	{
 		"number": "3053",
 		"content": {
-			"en": "CONICAL ASIAN HAT / RICE FARMER HAT",
+			"en": "CONICAL ASIAN HAT /  RICE FARMER HAT",
 			"zh": "马来妇笠",
 			"ms": "TOPI ANYAMAN"
 		},
@@ -27659,7 +27659,7 @@
 	{
 		"number": "3073",
 		"content": {
-			"en": "CHIPS / MONEY TOKEN",
+			"en": "CHIPS /  MONEY TOKEN",
 			"zh": "筹码",
 			"ms": "TAGAN"
 		},
@@ -28379,7 +28379,7 @@
 	{
 		"number": "3153",
 		"content": {
-			"en": "HARPOON / SPEAR",
+			"en": "HARPOON /  SPEAR",
 			"zh": "鱼叉",
 			"ms": "TOPI KELEDAR"
 		},
@@ -29369,7 +29369,7 @@
 	{
 		"number": "3263",
 		"content": {
-			"en": "POST VAN / MAIL VAN",
+			"en": "POST VAN /  MAIL VAN",
 			"zh": "邮政车",
 			"ms": "TRAK KREN"
 		},
@@ -29531,7 +29531,7 @@
 	{
 		"number": "3281",
 		"content": {
-			"en": "RATTAN CANE / ROTAN",
+			"en": "RATTAN CANE /  ROTAN",
 			"zh": "藤鞭",
 			"ms": "ROTAN"
 		},
@@ -30071,7 +30071,7 @@
 	{
 		"number": "3341",
 		"content": {
-			"en": "HARBOUR / PORT",
+			"en": "HARBOUR /  PORT",
 			"zh": "码头",
 			"ms": "PELABURAN"
 		},
@@ -30577,7 +30577,7 @@
 		"content": {
 			"en": "MONK",
 			"zh": "出家",
-			"ms": "JADI SAMI/RAHIB"
+			"ms": "JADI SAMI/ RAHIB"
 		},
 		"image": "wzt_3397.webp"
 	},
@@ -30611,7 +30611,7 @@
 	{
 		"number": "3401",
 		"content": {
-			"en": "DIAPER / NAPKIN",
+			"en": "DIAPER /  NAPKIN",
 			"zh": "尿布",
 			"ms": "KAIN LAMPIN"
 		},
@@ -30892,7 +30892,7 @@
 		"content": {
 			"en": "UFO",
 			"zh": "飞碟",
-			"ms": "UFO / PERALATAN ELEKTRONIK"
+			"ms": "UFO /  PERALATAN ELEKTRONIK"
 		},
 		"image": "wzt_3432.webp"
 	},
@@ -47882,7 +47882,7 @@
 	{
 		"number": "5320",
 		"content": {
-			"en": "CRACKED / LEAKING FISH POND",
+			"en": "CRACKED /  LEAKING FISH POND",
 			"zh": "鱼塘破裂",
 			"ms": "AIR KOLAM IKAN MELIMPAH"
 		},
@@ -48008,7 +48008,7 @@
 	{
 		"number": "5334",
 		"content": {
-			"en": "ELECTROCUTION / ELECTRIC SHOCK",
+			"en": "ELECTROCUTION /  ELECTRIC SHOCK",
 			"zh": "被电烧死",
 			"ms": "KEJUTAN ELEKRTIK"
 		},
@@ -48251,7 +48251,7 @@
 	{
 		"number": "5361",
 		"content": {
-			"en": "KILLING / DISSECTING LIZARD",
+			"en": "KILLING /  DISSECTING LIZARD",
 			"zh": "杀四脚蛇",
 			"ms": "SEMBELIH BIAWAK"
 		},
@@ -48260,7 +48260,7 @@
 	{
 		"number": "5362",
 		"content": {
-			"en": "GASTROENTERITIS / GASTRIC PAIN",
+			"en": "GASTROENTERITIS /  GASTRIC PAIN",
 			"zh": "肠热病,胃痛",
 			"ms": "GASTROENTERITIS"
 		},
@@ -48296,7 +48296,7 @@
 	{
 		"number": "5366",
 		"content": {
-			"en": "COLD / FLU / RUNNING NOSE",
+			"en": "COLD /  FLU /  RUNNING NOSE",
 			"zh": "感冒",
 			"ms": "DEMAM PANAS"
 		},
@@ -48305,7 +48305,7 @@
 	{
 		"number": "5367",
 		"content": {
-			"en": "NAUSEA / VOMITING / THROWING UP",
+			"en": "NAUSEA /  VOMITING /  THROWING UP",
 			"zh": "作呕",
 			"ms": "LOYA"
 		},
@@ -48485,7 +48485,7 @@
 	{
 		"number": "5387",
 		"content": {
-			"en": "BREATHLESS / BREATHING DIFFICULTY",
+			"en": "BREATHLESS /  BREATHING DIFFICULTY",
 			"zh": "气喘",
 			"ms": "ASMA"
 		},
@@ -48521,7 +48521,7 @@
 	{
 		"number": "5391",
 		"content": {
-			"en": "WEAVING / MAKING CLOTH",
+			"en": "WEAVING /  MAKING CLOTH",
 			"zh": "纺织",
 			"ms": "MENENUN"
 		},
@@ -48566,7 +48566,7 @@
 	{
 		"number": "5396",
 		"content": {
-			"en": "EPILEPSY / FITS",
+			"en": "EPILEPSY /  FITS",
 			"zh": "发羊吊",
 			"ms": "KEKEJANGAN"
 		},
@@ -49385,7 +49385,7 @@
 	{
 		"number": "5487",
 		"content": {
-			"en": "DEMONSTRATION / PROTEST",
+			"en": "DEMONSTRATION /  PROTEST",
 			"zh": "游行示威",
 			"ms": "DEMONSTRASI SECARA BERARAK"
 		},
@@ -49448,7 +49448,7 @@
 	{
 		"number": "5494",
 		"content": {
-			"en": "FIXING TAP / PIPE",
+			"en": "FIXING TAP /  PIPE",
 			"zh": "修理水喉",
 			"ms": "MEMBAIKI PAIP AIR"
 		},
@@ -49502,7 +49502,7 @@
 	{
 		"number": "5500",
 		"content": {
-			"en": "EXTRACTING / PULLING TOOTH",
+			"en": "EXTRACTING /  PULLING TOOTH",
 			"zh": "拔牙",
 			"ms": "CABUT GIGI"
 		},
@@ -49727,7 +49727,7 @@
 	{
 		"number": "5525",
 		"content": {
-			"en": "DRYING INCENSE / JOSS STICKS",
+			"en": "DRYING INCENSE /  JOSS STICKS",
 			"zh": "晒香",
 			"ms": "MENYIDAI COLOK"
 		},
@@ -49898,7 +49898,7 @@
 	{
 		"number": "5544",
 		"content": {
-			"en": "ELOPING / RUNNING AWAY",
+			"en": "ELOPING /  RUNNING AWAY",
 			"zh": "私奔",
 			"ms": "MELARIKAN DIRI BERSAMA KEKASIH"
 		},
@@ -50393,7 +50393,7 @@
 	{
 		"number": "5599",
 		"content": {
-			"en": "CORPSE / DEAD BODY",
+			"en": "CORPSE /  DEAD BODY",
 			"zh": "停尸",
 			"ms": "BILIK MAYAT"
 		},
@@ -51536,7 +51536,7 @@
 	{
 		"number": "5726",
 		"content": {
-			"en": "KILLED BY BEE / WASP",
+			"en": "KILLED BY BEE /  WASP",
 			"zh": "被蜂刺死",
 			"ms": "DISENGAT MARI"
 		},
@@ -51563,7 +51563,7 @@
 	{
 		"number": "5729",
 		"content": {
-			"en": "DRINKING COCONUT WINE / TODDY",
+			"en": "DRINKING COCONUT WINE /  TODDY",
 			"zh": "喝椰花酒",
 			"ms": "MINUM TODI"
 		},
@@ -51707,7 +51707,7 @@
 	{
 		"number": "5745",
 		"content": {
-			"en": "CAPON / CASTRATED ROOSTER",
+			"en": "CAPON /  CASTRATED ROOSTER",
 			"zh": "杀鸡",
 			"ms": "AYAM KEMBIRI"
 		},
@@ -51797,7 +51797,7 @@
 	{
 		"number": "5755",
 		"content": {
-			"en": "DRYING CHINESE SAUSAGE / LAP CHEONG",
+			"en": "DRYING CHINESE SAUSAGE /  LAP CHEONG",
 			"zh": "晒腊肠",
 			"ms": "JEMUR DAGING JERUK"
 		},
@@ -51932,7 +51932,7 @@
 	{
 		"number": "5770",
 		"content": {
-			"en": "HAND SAWED OFF / AMPUTATED",
+			"en": "HAND SAWED OFF /  AMPUTATED",
 			"zh": "锯手",
 			"ms": "MENGGERGAJI"
 		},
@@ -52049,7 +52049,7 @@
 	{
 		"number": "5783",
 		"content": {
-			"en": "LEG SAWED OFF / AMPUTATED",
+			"en": "LEG SAWED OFF /  AMPUTATED",
 			"zh": "锯脚",
 			"ms": "MENGERGAJI KAKI"
 		},
@@ -52085,7 +52085,7 @@
 	{
 		"number": "5787",
 		"content": {
-			"en": "BURNT / TORCHED BY FIRE",
+			"en": "BURNT /  TORCHED BY FIRE",
 			"zh": "火烧人",
 			"ms": "API HANGUSKAN ORANG"
 		},
@@ -52112,7 +52112,7 @@
 	{
 		"number": "5790",
 		"content": {
-			"en": "RUNNING / GETTING AWAY",
+			"en": "RUNNING /  GETTING AWAY",
 			"zh": "走路",
 			"ms": "MELARIKAN DIRI"
 		},
@@ -52220,7 +52220,7 @@
 	{
 		"number": "5802",
 		"content": {
-			"en": "DEEPAVALI / FESTIVAL OF LIGHT",
+			"en": "DEEPAVALI /  FESTIVAL OF LIGHT",
 			"zh": "印度新年",
 			"ms": "TAHUN BARU ORANG INDIA"
 		},
@@ -52256,7 +52256,7 @@
 	{
 		"number": "5806",
 		"content": {
-			"en": "THAIPUSAM / HINDU FESTIVAL",
+			"en": "THAIPUSAM /  HINDU FESTIVAL",
 			"zh": "大宝森节",
 			"ms": "THAIPUSAM"
 		},
@@ -52265,7 +52265,7 @@
 	{
 		"number": "5807",
 		"content": {
-			"en": "GUAN YIN / KUAN YIN BIRTHDAY",
+			"en": "GUAN YIN /  KUAN YIN BIRTHDAY",
 			"zh": "观音诞",
 			"ms": "HARI JADI GUAN YIN"
 		},
@@ -52274,7 +52274,7 @@
 	{
 		"number": "5808",
 		"content": {
-			"en": "QING MING / CHENG BENG FESTIVAL",
+			"en": "QING MING /  CHENG BENG FESTIVAL",
 			"zh": "清明节",
 			"ms": "HARI QING MING"
 		},
@@ -52292,7 +52292,7 @@
 	{
 		"number": "5810",
 		"content": {
-			"en": "MERDEKA / INDEPENDENCE DAY",
+			"en": "MERDEKA /  INDEPENDENCE DAY",
 			"zh": "国庆日",
 			"ms": "HARI KEMERDEKAAN"
 		},
@@ -53417,7 +53417,7 @@
 	{
 		"number": "5935",
 		"content": {
-			"en": "TRAVEL TO SAM POH TONG / CAVE",
+			"en": "TRAVEL TO SAM POH TONG /  CAVE",
 			"zh": "去三宝洞",
 			"ms": "SAM PO KONG"
 		},
@@ -76781,9 +76781,9 @@
 	{
 		"number": "8531",
 		"content": {
-			"en": "APPLY FOR COLLEGE/UNIVERSITY",
+			"en": "APPLY FOR COLLEGE/ UNIVERSITY",
 			"zh": "申请大学",
-			"ms": "MEMOHON KOLEJ/UNIVERSITI"
+			"ms": "MEMOHON KOLEJ/  UNIVERSITI"
 		},
 		"image": "wzt_8531.webp"
 	},

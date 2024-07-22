@@ -8,20 +8,8 @@
 		<div style="text-align: -webkit-center;" class="col-12 spincol">
 			<div class="lucky_col">
 				<div class="luckyspin_bg">
-
-					<!--hide in desktop-->
-					<div class="mobile-menu-page-button-container" style="color: white; position: absolute; left: 0;">
-						<div class="menu-icon">
-							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-								aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-						</div>
-					</div>
-
 					<!--this is title-->
-					<p>Lucky Spin</p>
+					<p>{{ $t('Sidebar.Spin My Luck') }}</p>
 				</div>
 
 				<div class="all_spincol">
@@ -29,7 +17,7 @@
 					<div class="num4d_col">
 						<div class="num4d_col_sm">
 							<div class="num4d">
-								<p>4D NUMBER</p>
+								<p>4D {{ $t('SpinMyLuck.NUMBER') }}</p>
 							</div>
 							<div class="spinner-column_bg">
 								<div v-for="(column, columnIndex) in columns" :key="columnIndex" class="spinner-column">
@@ -41,19 +29,19 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn_4d" @click="toggleSpinStop">{{ buttonLabel }}</button>
+					<button class="btn_4d" @click="toggleSpinStop">{{ $t('SpinMyLuck.Spin') }}</button>
 
-					<!-- 6D number (first) -->
+					<!-- 6D number -->
 					<div class="num4d_col2">
 						<div class="num4d_col">
 							<div class="num4d_col_sm">
 								<div class="num4d">
-									<p>6D NUMBER</p>
+									<p>6D {{ $t('SpinMyLuck.NUMBER') }}</p>
 								</div>
 								<div class="spinner-column_bg">
 									<div v-for="(column, columnIndex) in columns2" :key="columnIndex"
 										class="spinner-column">
-										<div v-for="number in column" :key="number" class="spinner-number"
+										<div v-for="number in column" :key="number" class="spinner-number "
 											:style="{ transform: 'translateY(' + spins2[columnIndex] + 'px)' }">
 											{{ number }}
 										</div>
@@ -61,7 +49,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="btn_4d" @click="toggleSpinStop2">{{ buttonLabel2 }}</button>
+						<button class="btn_4d" @click="toggleSpinStop2">{{ $t('SpinMyLuck.Spin') }}</button>
 					</div>
 
 
@@ -70,7 +58,7 @@
 						<div class="num4d_col">
 							<div class="num4d_col_sm">
 								<div class="num4d">
-									<p>JACKPOT NUMBER</p>
+									<p>{{ $t('SpinMyLuck.JACKPOT NUMBER') }}</p>
 								</div>
 								<div class="spinner-column_bg">
 									<div v-for="(column, columnIndex) in columns3" :key="columnIndex"
@@ -84,7 +72,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn_4d" @click="toggleSpinStop3">{{ buttonLabel3 }}</button>
+					<button class="btn_4d" @click="toggleSpinStop3">{{ $t('SpinMyLuck.Spin') }}</button>
 				</div>
 
 
@@ -421,7 +409,7 @@ export default {
 .luckyspin_bg {
 	background-color: #CF2E2E;
 	color: white;
-	height: 145px;
+	height: 130px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -478,13 +466,13 @@ export default {
 .num4d_col {
 	display: flex;
 	justify-content: center;
-	background-color: #ffffff;
 	width: 100%;
-
+	margin-top: -10px;
 }
 
 .num4d_col2 {
-	margin-top: -80px;
+	margin-top: -100px;
+	margin-bottom: 40px;
 }
 
 .num4d_col_sm {
@@ -492,7 +480,6 @@ export default {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffffff;
 	border-radius: 50px;
 	width: 90%;
 
@@ -589,6 +576,7 @@ export default {
 	border-radius: 10px;
 }
 
+
 .spinner-number {
 	width: 100%;
 	height: 100px;
@@ -600,6 +588,7 @@ export default {
 }
 
 .btn_4d {
+	margin-bottom: 15px;
 	margin-top: 20px;
 	padding: 10px 20px;
 	background-color: #CF2E2E;
@@ -664,6 +653,7 @@ p {
 		width: 80px;
 		height: 80px;
 	}
+
 }
 
 @media (max-width: 768px) {
@@ -685,6 +675,7 @@ p {
 		width: 60px;
 		height: 60px;
 	}
+
 }
 
 @media (max-width: 576px) {
@@ -702,8 +693,8 @@ p {
 	}
 
 	.spinner-column {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 	}
 }
 </style>

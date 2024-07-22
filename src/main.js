@@ -7,25 +7,33 @@ import moment from 'moment';
 import i18n from './i18n'; // Import the i18n instance
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-import VueLazyload from 'vue-lazyload'
+import VueLazyload from 'vue-lazyload';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 
 const app = createApp(App);
 
 // Register moment as a global property
 app.config.globalProperties.$moment = moment;
 
+// Register Swiper components globally
 app.component('Swiper', Swiper);
 app.component('SwiperSlide', SwiperSlide);
-app.use(router); // Use Vue Router
+
+// Use Vue Router
+app.use(router);
+
+// Use i18n for internationalization
 app.use(i18n);
-app.mount('#app');
+
+// Use VueLazyload for lazy loading images
 app.use(VueLazyload, {
-	preLoad: 1.3, // 预加载的高度比例
-	attempt: 1, // 尝试加载次数
-	lazyComponent: true, // 启用图片懒加载组件（当图片进入视窗时自动加载）
-})
+	preLoad: 1.3, // Pre-load height ratio
+	attempt: 1, // Number of attempts to load the image
+	lazyComponent: true, // Enable lazy loading for components (images load when in viewport)
+});
+
+// Mount the Vue app
+app.mount('#app');

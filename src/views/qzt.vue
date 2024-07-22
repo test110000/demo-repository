@@ -5,21 +5,21 @@
 			<div class="col-12 title_col">
 				<div class="title">
 					<div class="dictionary">
-						<p>Tua Pek Kong (Qian) Dictionary</p>
+						<p>{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</p>
 					</div>
 
 
 					<!--search-->
 					<div class="search_col">
 						<!-- Search Input and Dropdown -->
-						<input v-model="searchText" type="text" placeholder="Search..." class="search-input" />
-						<button @click="performSearch" class="search-button">Search</button>
+						<input v-model="searchText" type="text" placeholder="000 to 999" class="search-input" />
+						<button @click="performSearch" class="search-button">{{ $t('LuckyBook.Search') }}</button>
 
 						<div class="dropdown-container">
 							<div class="dropdown" @click="toggleDropdown">
-								<div class="dropdown-selected">{{ selectedRangeText }}</div>
+								<div class="dropdown-selected">{{ $t('LuckyBook.ALL') }}</div>
 								<ul v-show="isDropdownOpen" class="dropdown-list">
-									<li @click="selectRange('all')">All</li>
+									<li @click="selectRange('all')">{{ $t('LuckyBook.ALL') }}</li>
 									<li v-for="range in ranges" :key="range.value" @click="selectRange(range.value)">
 										{{ range.text }}
 									</li>
@@ -40,11 +40,11 @@
 							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 						</template>
 						<template v-else>
-							<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content.en" />
+							<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content[language]" />
 						</template>
 					</div>
 					<div class="">
-						<p style="width: 110px">{{ item.content.en }}</p>
+						<p style="width: 110px">{{ item.content[language] }}</p>
 					</div>
 
 				</div>
@@ -59,11 +59,20 @@
 
 <script>
 import TopBar from '/src/components/topbar.vue';
+import { useI18n } from 'vue-i18n';
 
 export default {
 	name: 'TuaPekKongWanQian',
 	components: {
 		TopBar,
+	},
+	setup() {
+		const { t, locale } = useI18n(); // Get the i18n instance
+
+		return {
+			t,
+			locale
+		};
 	},
 	data() {
 		return {
@@ -111,6 +120,9 @@ export default {
 		},
 		paginatedItems() {
 			return this.filteredItems.slice(0, this.loadedItemsCount);
+		},
+		language() {
+			return this.$i18n.locale;
 		},
 	},
 	mounted() {
@@ -249,10 +261,6 @@ export default {
 		width: 60%;
 	}
 
-	.container {
-		padding: 0px;
-	}
-
 	.search_col {
 		padding-left: 18px;
 		padding-right: 18px;
@@ -354,7 +362,7 @@ p {
 }
 
 .search-input {
-	width: 70%;
+	width: 100%;
 	padding: 10px;
 	margin-right: 10px;
 	border: 1px solid #ddd;
@@ -369,6 +377,7 @@ p {
 	border-radius: 5px;
 	cursor: pointer;
 	font-weight: bold;
+	width: 40%;
 }
 
 .search-button:hover {

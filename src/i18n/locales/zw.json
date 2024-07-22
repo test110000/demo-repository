@@ -1,5 +1,59 @@
 {
 	"Sidebar": {
-		"Result": "奖项"
+		"Result": "成绩",
+		"Dashboard": "目录",
+		"ToolBox": "工具箱",
+		"Spin My Luck": "好运转转转",
+		"Lucky Book": "好运簿"
+	},
+	"Right": {
+		"Special Draw Date": "特别开奖日期",
+		"Upcoming Special Draw Date": "来临的特别开奖日期",
+		"Tue": "二"
+	},
+	"DashBoard": {
+		"Magnum": "万能万字",
+		"DamaCai": "大马彩",
+		"Sports Toto": "多多万字",
+		"Singapore": "新加坡万字",
+		"Sabah 88 4D": "沙巴88万字",
+		"Sandakan": "山打根赛马会",
+		"Special CashSweep": "砂劳越大万",
+		"Lucky Hari Hari": "天天好运",
+		"Perdana Lottery": "勇士",
+		"Grand Dragon": "豪龙",
+		"Date": "日期",
+		"Draw No": "开奖期数",
+		"1ST Prize": "头奖",
+		"2ND Prize": "二奖",
+		"3RD Prize": "三奖",
+		"Special": "特别奖",
+		"Consolation": "安慰奖",
+		"4D Jackpot 1 Prize": "万字积宝头奖",
+		"4D Jackpot 2 Prize": "万字积宝二奖",
+		"Tue": "二",
+		"Wed": "三",
+		"Sat": "六",
+		"Sun": "日",
+		"Time": "时间"
+	},
+	"SpinMyLuck": {
+		"Lucky Book": "好运簿",
+		"Lucky Spin": "好运转转转",
+		"NUMBER": "幸运万字",
+		"Spin": "转",
+		"JACKPOT NUMBER": "幸运积宝"
+	},
+	"LuckyBook": {
+		"Tua Pek Kong (Wan) Dictionary": "大伯公万字图",
+		"Tua Pek Kong (Qian) Dictionary": "大伯公千字图",
+		"Guan Yin Ma Dictionary": "观音千字图",
+		"Search": "搜索",
+		"Search placeholder": "列如 1001 或 天上",
+		"Enter": "进入",
+		"ALL": "全部",
+		"Found": "找到",
+		"result": "个相关的",
+		"for": "结果"
 	}
 }
