@@ -94,12 +94,18 @@
 							</a>
 						</div>
 					</div>
-					<div class="language-button">
-						<button>
+					<div class="dropdown language-button">
+						<button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+							aria-expanded="false">
 							<div class="icon">
 								&#x1F310; <!-- Earth Globe with Meridians -->
 							</div>
 						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" @click="changeLanguage('en')">English</a></li>
+							<li><a class="dropdown-item" @click="changeLanguage('zh')">中文</a></li>
+							<li><a class="dropdown-item" @click="changeLanguage('ms')">Malay</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
