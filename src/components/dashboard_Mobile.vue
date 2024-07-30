@@ -9,8 +9,7 @@
 		<div class="dashboard">
 			<!--Topbar 2-->
 			<div class="navbar">
-				<div style="width: 30px; height: auto;" v-for="image in images" :key="image.key"
-					:id="`image-container-${image.key}`"
+				<div v-for="image in images" :key="image.key" :id="`image-container-${image.key}`"
 					:class="['image-container', `image-container-${image.key}`, { active: activeIndex === image.key }]"
 					@click="handleImageClick(image.key)">
 					<img :src="image.src" class="round-image" />
@@ -49,30 +48,33 @@
 
 								<div class="draw-info">
 									<div class="date-info">
-										<span>Date: </span>
+										<span>{{ $t('Dashboard.Date') }}</span>
 										<span>{{ drawObj.DD }}</span>
 									</div>
 									<hr aria-orientation="vertical" class="divider"
 										:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }">
 									<div class="time-info"
 										:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }">
-										<span>Time: </span>
+										<span>{{ $t('Dashboard.Time') }}</span>
 										<span>{{ currentTimeText }}</span>
 									</div>
 									<hr aria-orientation="vertical" class="divider">
 									<div class="number-info">
-										<span>Draw No. </span>
+										<span>{{ $t('Dashboard.Draw No') }}</span>
 										<span>{{ drawObj.DN ? drawObj.DN : "----" }}</span>
 									</div>
 								</div>
 							</div>
 							<div class="result-display-section">
 								<div class="prize-section">
-									<div class="prize" v-for="(prize, I) in ['1ST Prize', '2ND Prize', '3RD Prize']"
+									<div class="prize"
+										v-for="(prize, I) in [$t('Dashboard.1ST Prize'), $t('Dashboard.2ND Prize'), $t('Dashboard.3RD Prize')]"
 										:key="prize">
 										<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
 											:style="getPrizeStyle(index)">
-											{{ prize }}</h2>
+											<span style="font-weight: 700;">{{ prize }}</span> {{ $t('Dashboard.prize')
+											}}
+										</h2>
 										<div class="prize-number">{{
 											getDisplayResult(drawObj['P' + (I + 1)]) }}
 										</div>
@@ -83,7 +85,7 @@
 								<div class="special special-section-min-height">
 									<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
 										:style="getSmallSectionStyle(index)">
-										Special
+										{{ $t('Dashboard.Special') }}
 									</h2>
 									<div class="special-numbers">
 										<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">
@@ -93,7 +95,7 @@
 
 								<div class="consolation">
 									<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
-										:style="getSmallSectionStyle(index)">Consolation</h2>
+										:style="getSmallSectionStyle(index)">{{ $t('Dashboard.Consolation') }}</h2>
 									<div class="consolation-numbers">
 										<div v-for="(number, I) in getConsolationNumbers(drawObj)" :key="I"
 											class="number">
@@ -104,9 +106,11 @@
 								<div v-if="drawObj.JP1" class="jackpot">
 									<div class="jackpot-prize">
 										<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-1-br-10px"
-											:style="getSmallSectionStyle(index)">4D Jackpot 1 Prize</h2>
+											:style="getSmallSectionStyle(index)">{{ $t('Dashboard.4D Jackpot 1 Prize')
+											}}</h2>
 										<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-2-br-10px "
-											:style="getSmallSectionStyle(index)">4D Jackpot 2 Prize</h2>
+											:style="getSmallSectionStyle(index)">{{ $t('Dashboard.4D Jackpot 2 Prize')
+											}}</h2>
 									</div>
 									<div class="jackpot-prize">
 										<div class="amount">
@@ -519,19 +523,18 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 10%;
+	height: auto;
 }
 
 .image-container.active {
 	border: 2px solid rgb(207, 46, 46);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-	/* border: 2px solid #b48811; */
-	/* border: 2px solid transparent;
-	background-image: linear-gradient(to left, #ebd197, #b48811, #a2790d, #bb9b49, #ffffff); */
 }
 
 .round-image {
 	width: 100%;
-	height: 27px;
+	/* height: auto; */
 }
 
 .dashboard {

@@ -188,7 +188,6 @@ export default {
 					throw new Error('Network response was not ok');
 				}
 				const data = await response.json();
-				console.log('Fetched Data:', data); // Log fetched data for debugging
 				this.items = data;
 				await this.delayedLoading();
 			} catch (error) {

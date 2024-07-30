@@ -13,11 +13,20 @@
 	},
 	"Dashboard": {
 		"Date": "Date",
-		"Draw No": "Draw No",
-		"Wed": "Wed",
+		"Draw No": "Draw No.",
+		"1ST Prize": "1ST",
+		"2ND Prize": "2ND",
+		"3RD Prize": "3RD",
+		"prize": "prize",
+		"Special": "Special",
+		"Consolation": "Consolation",
+		"4D Jackpot 1 Prize": "4D Jackpot 1 Prize",
+		"4D Jackpot 2 Prize": "4D Jackpot 2 Prize",
 		"Tue": "Tue",
+		"Wed": "Wed",
 		"Sat": "Sat",
-		"Sun": "Sun"
+		"Sun": "Sun",
+		"Time": "Time"
 	},
 	"SpinMyLuck": {
 		"Lucky Book": "Lucky Book",

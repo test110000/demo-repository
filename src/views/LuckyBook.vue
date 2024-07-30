@@ -390,8 +390,6 @@ export default {
 	}
 }
 
-.tab-content {}
-
 .luckybook_col {
 	width: 100%;
 	text-align: -webkit-center;

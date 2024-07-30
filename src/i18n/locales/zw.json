@@ -11,7 +11,7 @@
 		"Upcoming Special Draw Date": "来临的特别开奖日期",
 		"Tue": "二"
 	},
-	"DashBoard": {
+	"Dashboard": {
 		"Magnum": "万能万字",
 		"DamaCai": "大马彩",
 		"Sports Toto": "多多万字",
@@ -24,9 +24,10 @@
 		"Grand Dragon": "豪龙",
 		"Date": "日期",
 		"Draw No": "开奖期数",
-		"1ST Prize": "头奖",
-		"2ND Prize": "二奖",
-		"3RD Prize": "三奖",
+		"1ST Prize": "头",
+		"2ND Prize": "二",
+		"3RD Prize": "三",
+		"prize": "奖",
 		"Special": "特别奖",
 		"Consolation": "安慰奖",
 		"4D Jackpot 1 Prize": "万字积宝头奖",

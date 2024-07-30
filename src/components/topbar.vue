@@ -28,40 +28,31 @@
 								<div class="offcanvas-body">
 									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 										<li class="nav-item">
-											<h5 class="nav-link" :class="{ 'active': activeTitle === 'Results' }"
-												@click="setActiveTitle('Results')">{{ $t('Sidebar.Result') }}</h5>
-
+											<h5 class="nav-link">{{ $t('Sidebar.Result') }}</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="/"
-												:class="{ 'active': activeTitle === 'Dashboard' }"
-												@click="setActiveTitle('Dashboard')">
+											<router-link class="nav-link" to="/" :class="{ active: isActive('/') }">
 												<img src="/image/dashboard.png"
-													style="width: 25px; margin-right: 13px;">
+													style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Dashboard') }}
-											</a>
+											</router-link>
 										</li>
 										<li style="margin-top: 20px;" class="nav-item">
-											<h5 class="nav-link" :class="{ 'active': activeTitle === 'ToolBox' }"
-												@click="setActiveTitle('ToolBox')">
-												{{ $t('Sidebar.ToolBox') }}
-											</h5>
+											<h5 class="nav-link">{{ $t('Sidebar.ToolBox') }}</h5>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="/spin-my-luck"
-												:class="{ 'active': activeTitle === 'Spin My Luck' }"
-												@click="setActiveTitle('Spin My Luck')">
-												<img src="/image/spin.png" style="width: 25px; margin-right: 13px;">
+											<router-link class="nav-link" to="/spin-my-luck"
+												:class="{ active: isActive('/spin-my-luck') }">
+												<img src="/image/spin.png" style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Spin My Luck') }}
-											</a>
+											</router-link>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="/lucky-book"
-												:class="{ 'active': activeTitle === 'Lucky Book' }"
-												@click="setActiveTitle('Lucky Book')">
-												<img src="/image/book.png" style="width: 25px; margin-right: 13px;">
+											<router-link class="nav-link" to="/lucky-book"
+												:class="{ active: isActive('/lucky-book') }">
+												<img src="/image/book.png" style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Lucky Book') }}
-											</a>
+											</router-link>
 										</li>
 									</ul>
 								</div>
@@ -87,13 +78,13 @@
 							</a>
 						</div>
 					</div>
-					<div class="refresh-icon" style="position: relative; ">
-						<div style="position: absolute; right: 12px; top: 4px;">
-							<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
+					<a class="refresh-icon" style="position: relative; " @click.prevent="refreshPage">
+						<div style="position: absolute; right: 12px; top: 4px; transform: rotateZ(50deg);">
+							<a class="refresh-arrow" href="#">
 								&#8635;
 							</a>
 						</div>
-					</div>
+					</a>
 					<div class="dropdown language-button">
 						<button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
 							aria-expanded="false">
@@ -122,7 +113,7 @@ export default {
 			showIcon: false,
 			scrollTimeout: null,
 			intervalId: null,
-			activeTitle: 'Dashboard',
+			// activeTitle: 'Dashboard',
 			currentDate: new Date(),
 			showDatePicker: false,
 			logos: [
@@ -157,31 +148,11 @@ export default {
 	},
 	methods: {
 		changeLanguage(lang) {
-			console.log('Changing language to:', lang);
 			this.$i18n.locale = lang;
 		},
-		// handleScroll() {
-		// 	// 如果已经有计时器，清除它
-		// 	if (this.scrollTimeout) {
-		// 		clearTimeout(this.scrollTimeout);
-		// 	}
-
-		// 	// 显示图标
-		// 	this.showIcon = true;
-
-		// 	// 在5秒后隐藏图标
-		// 	this.scrollTimeout = setTimeout(() => {
-		// 		this.showIcon = false;
-		// 	}, 2000);
-		// },
-		// scrollToTop() {
-		// 	window.scrollTo({
-		// 		top: 0,
-		// 		behavior: 'smooth',
-		// 	});
-		// },
-		setActiveTitle(title) {
-			this.activeTitle = title;
+		isActive(routePath) {
+			// Check if the current route's path matches the given routePath
+			return this.$route.path === routePath;
 		},
 		checkTime() {
 			const now = new Date();
@@ -189,17 +160,11 @@ export default {
 			const currentTime = now.toLocaleTimeString('en-GB', options);
 
 			const targetTime = "19:30:00";
-			if (currentTime < targetTime) {
-				this.performAction();
-			} else {
-				this.performAction2();
-			}
-		},
-		performAction() {
-
-		},
-		performAction2() {
-
+			// if (currentTime < targetTime) {
+			// 	this.performAction();
+			// } else {
+			// 	this.performAction2();
+			// }
 		},
 		openDatePicker() {
 			this.showDatePicker = true;
@@ -217,13 +182,11 @@ export default {
 		},
 		handleLogoClick(index) {
 			if (window.location.pathname !== '/') {
-				console.log('Hi')
 				// Redirect to the home page
 				window.location.href = '/';
 			} else {
 				this.$emit('logo-clicked', `${index}`);
 			}
-
 		}
 	},
 	computed: {
@@ -253,7 +216,7 @@ export default {
 			return this.$route.path;
 		},
 		getImageForRoute() {
-			return this.images[this.currentRoute] || '/public/image/dashboard-topbar.svg'; // Default image path
+			return this.images[this.currentRoute] || '/image/dashboard-topbar.svg'; // Default image path
 		},
 	}
 };
@@ -488,6 +451,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+	cursor: pointer;
 }
 
 .refresh-arrow {
@@ -516,54 +480,10 @@ export default {
 }
 
 .active {
-	color: rgb(38, 76, 170);
+	color: rgb(207, 46, 46) !important;
+	font-weight: 700;
 	/* Define your active text color */
 }
-
-/* .go_up_btn {
-	position: fixed;
-	right: 60px;
-	bottom: 15px;
-	background-color: #ffffff;
-	border-radius: 50px;
-	z-index: 999;
-	opacity: 0.8;
-
-}
-
-.go_up_btn :hover {
-	color: #CF2E2E;
-	opacity: 1;
-}
-
-.go_up_btn a {
-	color: #CF2E2E;
-}
-
-@media screen and (min-width:1440px) {
-	.go_up_btn {
-		right: 253px;
-	}
-}
-
-@media screen and (min-width:2560px) {
-	.go_up_btn {
-		right: 800px;
-	}
-}
-
-.scroll-icon {
-	position: fixed;
-	bottom: 20px;
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-
-.scroll-icon.show {
-	opacity: 1;
-	visibility: visible;
-	/* 设置为可见
-} */
 
 .scroll-icon.hide {
 	opacity: 0.3;

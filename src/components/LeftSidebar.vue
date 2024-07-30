@@ -90,7 +90,7 @@ export default {
 	top: 0;
 	left: 0;
 	overflow-y: auto;
-
+	z-index: 9999;
 }
 
 .sidebar-main {

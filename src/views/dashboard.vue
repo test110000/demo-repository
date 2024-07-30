@@ -26,7 +26,7 @@ export default {
 	},
 	methods: {
 		checkScreenSize() {
-			this.isMobile = window.innerWidth <= 767;
+			this.isMobile = window.innerWidth <= 680;
 		},
 	},
 };

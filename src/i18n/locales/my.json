@@ -13,11 +13,20 @@
 	},
 	"Dashboard": {
 		"Date": "Tarikh",
-		"Draw No": "Cabutan No",
+		"Draw No": "Cabutan No.",
+		"1ST Prize": "Pertama",
+		"2ND Prize": "Kedua",
+		"3RD Prize": "Ketiga",
+		"prize": " ",
+		"Special": "Hadiah Istimewa",
+		"Consolation": "Hadiah Saguhati",
+		"4D Jackpot 1 Prize": "4D Jackpot Hadiah 1",
+		"4D Jackpot 2 Prize": "4D Jackpot Hadiah 2",
 		"Wed": "Rabu",
 		"Tue": "Selasa",
 		"Sat": "Sabtu",
-		"Sun": "Ahad"
+		"Sun": "Ahad",
+		"Time": "Masa"
 	},
 	"SpinMyLuck": {
 		"Lucky Book": "Buku Bertuah",

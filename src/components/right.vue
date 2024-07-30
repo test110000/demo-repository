@@ -8,7 +8,8 @@
 
 				<div class="right_col2">
 					<h6>{{ $t('Right.Special Draw Date') }}</h6>
-					<p style="padding-bottom: 10px;">{{ $t('Right.Upcoming Special Draw Date') }}</p>
+					<p style="padding-bottom: 10px; text-align: center;">{{ $t('Right.Upcoming Special Draw Date')
+						}}</p>
 				</div>
 				<div class="special-draw-date" v-for="(dateObj, index) in specialDates" :key="index">
 					<p :class="{ 'expired': dateObj.expired }">

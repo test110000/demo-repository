@@ -15,7 +15,7 @@
 			</div>
 		</div>
 
-		<div class="dashboard">
+		<div class="dashboard" ref="dashboard">
 			<div class="go_up_btn">
 				<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
 					href="#">
@@ -66,19 +66,19 @@
 
 						<div class="draw-info">
 							<div class="date-info" :class="{ 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
-								<span>Date: </span>
+								<span>{{ $t('Dashboard.Date') }}</span>
 								<span>{{ drawObj.DD }}</span>
 							</div>
 							<hr aria-orientation="vertical" class="divider"
 								:class="{ 'time-info-display-none': shouldHideTimeInfo(index) }">
 							<div class="time-info"
 								:class="{ 'time-info-display-none': shouldHideTimeInfo(index), 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
-								<span>Time: </span>
+								<span>{{ $t('Dashboard.Time') }}</span>
 								<span>{{ currentTimeText }}</span>
 							</div>
 							<hr aria-orientation="vertical" class="divider">
 							<div class="number-info" :class="{ 'time-info-fs-14px': !shouldHideTimeInfo(index) }">
-								<span>Draw No.: </span>
+								<span>{{ $t('Dashboard.Draw No') }}</span>
 								<span>{{ drawObj.DN ? drawObj.DN : "----" }}</span>
 							</div>
 						</div>
@@ -87,11 +87,13 @@
 					<div class="prizes">
 						<div style="margin-inline: 1.25rem;">
 							<div class="prize-section">
-								<div class="prize" v-for="(prize, I) in ['1ST Prize', '2ND Prize', '3RD Prize']"
+								<div class="prize"
+									v-for="(prize, I) in [$t('Dashboard.1ST Prize'), $t('Dashboard.2ND Prize'), $t('Dashboard.3RD Prize')]"
 									:key="prize">
 									<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
 										:style="getPrizeStyle(index)">
-										{{ prize }}</h2>
+										<span style="font-weight: 700;">{{ prize }}</span> {{ $t('Dashboard.prize') }}
+									</h2>
 									<div class="prize-number">{{
 										getDisplayResult(drawObj['P' + (I + 1)])
 									}}
@@ -102,7 +104,7 @@
 							<div class="special special-section-min-height">
 								<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
 									:style="getSmallSectionStyle(index)">
-									Special
+									{{ $t('Dashboard.Special') }}
 								</h2>
 								<div class="special-numbers">
 									<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">
@@ -112,7 +114,7 @@
 
 							<div class="consolation">
 								<h2 class="consolation-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-									:style="getSmallSectionStyle(index)">Consolation</h2>
+									:style="getSmallSectionStyle(index)">{{ $t('Dashboard.Consolation') }}</h2>
 								<div class="consolation-numbers">
 									<div v-for="(number, I) in getConsolationNumbers(drawObj)" :key="I" class="number">
 										{{ getDisplayResult(number) }}</div>
@@ -122,9 +124,11 @@
 							<div v-if="drawObj.JP1" class="jackpot">
 								<div class="jackpot-prize">
 									<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-1-br-10px"
-										:style="getSmallSectionStyle(index)">4D Jackpot 1 Prize</h2>
+										:style="getSmallSectionStyle(index)">{{ $t('Dashboard.4D Jackpot 1 Prize') }}
+									</h2>
 									<h2 class="jackpot-section-title title-font-size small-title-top-bottom-padding jp-2-br-10px "
-										:style="getSmallSectionStyle(index)">4D Jackpot 2 Prize</h2>
+										:style="getSmallSectionStyle(index)">{{ $t('Dashboard.4D Jackpot 2 Prize') }}
+									</h2>
 								</div>
 								<div class="jackpot-prize">
 									<div class="amount">
@@ -274,13 +278,13 @@ export default {
 		this.updateTimeText();
 		this.restoreScrollPosition();
 		// 监听滚动事件
-		window.addEventListener('scroll', this.handleScroll);
+		this.$refs.dashboard.addEventListener('scroll', this.handleScroll);;
 		this.intervalId = setInterval(this.checkTime, 1000);
 	},
 	beforeDestroy() {
 		clearInterval(this.intervalId);
 		// 移除滚动事件监听
-		window.removeEventListener('scroll', this.handleScroll);
+		this.$refs.dashboard.removeEventListener('scroll', this.handleScroll);
 		clearInterval(this.intervalId);
 	},
 	methods: {
@@ -304,7 +308,7 @@ export default {
 			const allKeys = ["M", "D", "T", "S", "ST", "SB", "SW", "G", "H", "P"];
 			const now = new Date();
 			const cutoffTime = new Date();
-			cutoffTime.setHours(15, 30, 0, 0);
+			// cutoffTime.setHours(15, 30, 0, 0);
 			// now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return allKeys.includes(key);
@@ -442,11 +446,11 @@ export default {
 			}, 2000);
 		},
 		scrollToTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth',
-			});
-		},
+			const dashboard = this.$refs.dashboard;
+			if (dashboard) {
+				dashboard.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+		}
 	},
 	computed: {
 		filteredImages() {
@@ -581,19 +585,17 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 5% !important;
 }
 
 .image-container.active {
 	border: 2px solid rgb(207, 46, 46);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-	/* border: 2px solid #b48811; */
-	/* border: 2px solid transparent;
-	background-image: linear-gradient(to left, #ebd197, #b48811, #a2790d, #bb9b49, #ffffff); */
 }
 
 .round-image {
 	width: 100%;
-	height: 27px;
+
 }
 
 .refresh-arrow {
@@ -673,7 +675,7 @@ export default {
 .draw-section {
 	margin-bottom: 40px;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 }
 
 @media screen and (min-width: 320px) {
@@ -701,6 +703,10 @@ export default {
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: center;
+}
+
+.logo-name {
+	font-weight: 700;
 }
 
 .logo-title-container {
