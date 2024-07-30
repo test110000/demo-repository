@@ -123,6 +123,7 @@
 				</swiper>
 			</div>
 		</div>
+
 	</div>
 </template>
 <script>
@@ -243,6 +244,7 @@ export default {
 	},
 	beforeDestroy() {
 		clearInterval(this.intervalId);
+
 	},
 	methods: {
 		fetchData() {

@@ -98,12 +98,12 @@ import TopBar from '/src/components/topbar.vue';
 export default {
 	components: {
 		TopBar,
-		showIcon: false,
-		scrollTimeout: null,
 	},
 	name: 'SpinMyLuck',
 	data() {
 		return {
+			showIcon: false,
+			scrollTimeout: null,
 			columns: [
 				Array.from({ length: 10 }, (_, i) => i),
 				Array.from({ length: 10 }, (_, i) => i),
@@ -171,6 +171,26 @@ export default {
 		clearInterval(this.intervalId);
 	},
 	methods: {
+		handleScroll() {
+			// 如果已经有计时器，清除它
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
+		},
+		scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		},
 		toggleSpinStop() {
 			if (this.spinning) {
 				this.stopRandomly();
@@ -393,26 +413,6 @@ export default {
 		},
 		goToLuckyBook() {
 			this.$router.push('/lucky-book');
-		},
-		handleScroll() {
-			// 如果已经有计时器，清除它
-			if (this.scrollTimeout) {
-				clearTimeout(this.scrollTimeout);
-			}
-
-			// 显示图标
-			this.showIcon = true;
-
-			// 在5秒后隐藏图标
-			this.scrollTimeout = setTimeout(() => {
-				this.showIcon = false;
-			}, 2000);
-		},
-		scrollToTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth',
-			});
 		},
 	}
 }

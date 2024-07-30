@@ -5,20 +5,20 @@
 			<div class="col-12 title_col">
 				<div class="title">
 					<div class="dictionary">
-						<p>{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}</p>
+						<p>{{ $t('Tua Pek Kong (Wan) Dictionary') }}</p>
 					</div>
 
 
 					<!--search-->
 					<div class="search_col">
 						<!-- Search Input and Dropdown -->
-						<input v-model="searchText" type="text" placeholder="0000 to 9999" class="search-input" />
+						<input v-model="searchText" type="text" placeholder="000 to 999" class="search-input" />
 						<button @click="performSearch" class="search-button">{{ $t('LuckyBook.Search') }}</button>
 
 						<div class="dropdown-container">
 							<div class="dropdown" @click="toggleDropdown">
 								<div class="dropdown-selected">{{ $t('LuckyBook.ALL') }}</div>
-								<ul v-show="isDropdownOpen" class="dropdown-list ">
+								<ul v-show="isDropdownOpen" class="dropdown-list">
 									<li @click="selectRange('all')">{{ $t('LuckyBook.ALL') }}</li>
 									<li v-for="range in ranges" :key="range.value" @click="selectRange(range.value)">
 										{{ range.text }}
@@ -48,7 +48,7 @@
 					</div>
 
 				</div>
-				<div v-if="isLoadingItems && filteredItems.length === 0 && searchText.length > 0">Loading...</div>
+
 				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
 				</div>
 
@@ -56,6 +56,16 @@
 
 			</div>
 
+		</div>
+		<div class="go_up_btn">
+			<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
+				href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+					class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+					<path
+						d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+				</svg>
+			</a>
 		</div>
 	</div>
 </template>
@@ -65,7 +75,7 @@ import TopBar from '/src/components/topbar.vue';
 import { useI18n } from 'vue-i18n';
 
 export default {
-	name: 'TuaPekKongWan',
+	name: 'GuanYinMa',
 	components: {
 		TopBar,
 	},
@@ -83,13 +93,14 @@ export default {
 			searchText: '',
 			selectedRange: 'all',
 			isDropdownOpen: false,
-			ranges: this.generateRanges(500, 9999),
+			ranges: this.generateRanges(50, 999),
 			isLoadingItems: false,
 			isLoadingMore: false, // Track loading more items
 			loadedItemsCount: 10,
 			initialLoadCount: 27,
 			batchLoadCount: 5, // Adjust as needed
-			currentLanguage: 'en', // Set default language
+			showIcon: false,
+			scrollTimeout: null,
 		};
 	},
 	computed: {
@@ -131,8 +142,36 @@ export default {
 	},
 	mounted() {
 		this.fetchItems();
+		// 监听滚动事件
+		window.addEventListener('scroll', this.handleScroll);
+		this.intervalId = setInterval(this.checkTime, 1000);
+	},
+	beforeDestroy() {
+		// 移除滚动事件监听
+		window.removeEventListener('scroll', this.handleScroll);
+		clearInterval(this.intervalId);
 	},
 	methods: {
+		handleScroll() {
+			// 如果已经有计时器，清除它
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
+		},
+		scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		},
 		generateRanges(step, max) {
 			const ranges = [];
 			for (let i = 0; i <= max; i += step) {
@@ -181,10 +220,6 @@ export default {
 		},
 		clearSearch() {
 			this.searchText = '';
-		},
-		changeLanguage(language) {
-			this.currentLanguage = language;
-			this.$i18n.locale = language; // Change language in vue-i18n
 		},
 	},
 };
@@ -243,6 +278,7 @@ export default {
 .item-container {
 	padding-top: 30px;
 	background-color: white;
+	/* padding-bottom: 10px; */
 	height: 290px;
 	text-align: -webkit-center;
 	width: 100%;
@@ -267,6 +303,7 @@ export default {
 	.number_col {
 		width: 60%;
 	}
+
 
 	.search_col {
 		padding-left: 18px;
@@ -442,5 +479,60 @@ p {
 .placeholder {
 	width: 100px;
 	height: 100px;
+}
+
+.go_up_btn {
+	position: fixed;
+	right: 60px;
+	bottom: 15px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	z-index: 999;
+	opacity: 0.8;
+
+}
+
+.go_up_btn :hover {
+	color: #CF2E2E;
+	opacity: 1;
+}
+
+.go_up_btn a {
+	color: #CF2E2E;
+}
+
+@media screen and (min-width:1440px) {
+	.go_up_btn {
+		right: 253px;
+	}
+}
+
+@media screen and (min-width:2560px) {
+	.go_up_btn {
+		right: 800px;
+	}
+}
+
+.scroll-icon {
+	position: fixed;
+	bottom: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-icon.show {
+	opacity: 1;
+	visibility: visible;
+	/* 设置为可见 */
+}
+
+.scroll-icon.hide {
+	opacity: 0.5;
+	visibility: visible;
+	/* 设置为不可见 */
+}
+
+.scroll-icon.fade-out {
+	opacity: 1;
 }
 </style>

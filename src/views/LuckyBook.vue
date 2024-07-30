@@ -222,6 +222,16 @@
 				</div>
 			</div>
 		</div>
+		<div class="go_up_btn">
+			<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
+				href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+					class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+					<path
+						d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+				</svg>
+			</a>
+		</div>
 	</div>
 
 </template>
@@ -259,6 +269,8 @@ export default {
 			filteredDataWZT: [],
 			filteredDataGZT: [],
 			filteredDataQZT: [],
+			showIcon: false,
+			scrollTimeout: null,
 
 
 		};
@@ -270,6 +282,26 @@ export default {
 	},
 
 	methods: {
+		handleScroll() {
+			// 如果已经有计时器，清除它
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
+		},
+		scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		},
 		async performSearch() {
 			this.showSearchResults = this.searchQuery.trim().length > 0;
 
@@ -322,6 +354,16 @@ export default {
 		goToTuaPekKongQian() {
 			this.$router.push('/tuapekkongqian');
 		},
+	},
+	mounted() {
+		// 监听滚动事件
+		window.addEventListener('scroll', this.handleScroll);
+		this.intervalId = setInterval(this.checkTime, 1000);
+	},
+	beforeDestroy() {
+		// 移除滚动事件监听
+		window.removeEventListener('scroll', this.handleScroll);
+		clearInterval(this.intervalId);
 	},
 };
 
@@ -732,12 +774,12 @@ p {
 }
 
 .scroll-icon.hide {
-	opacity: 0;
-	visibility: hidden;
+	opacity: 0.5;
+	visibility: visible;
 	/* 设置为不可见 */
 }
 
 .scroll-icon.fade-out {
-	opacity: 0;
+	opacity: 0.5;
 }
 </style>
