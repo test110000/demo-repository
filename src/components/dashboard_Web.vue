@@ -1,30 +1,25 @@
 <template>
-	<div ref="scrollContainer" class="scroll-container">
+	<div class="scroll-container">
 		<!--Topbar 1-->
-		<div ref="topBar">
+		<div>
 			<TopBar @logo-clicked="handleLogoClick" />
 		</div>
 
 		<!--Topbar 2-->
 		<div style="display: none; position: sticky; z-index: 999;" class="navbar">
-			<div style="width: 30px; height: auto;" v-for="(image) in filteredImages" :key="image.key"
+			<div style="width: 30px; height: auto;" v-for="image in filteredImages" :key="image.key"
 				:id="`image-container-${image.key}`"
 				:class="['image-container', `image-container-${image.key}`, { active: activeIndex === image.key }]"
 				@click="handleImageClick(image.key)">
 				<img :src="image.src" class="round-image" />
 			</div>
-
 		</div>
 
-
-
-
-		<div class="dashboard" ref="partToScroll">
-			<div style="padding-bottom: 30px" class="draw-results">
-				<div v-for="(drawObj, index) in data" :key="index" :id="`Toto-type-${index}`"
-					class="draw-section white-bg">
+		<div class="dashboard">
+			<div class="draw-results">
+				<div v-for="(drawObj, index) in data" :key="index" :id="`totoType${index}`"
+					class="draw-section white-bg" style="min-height:500px">
 					<div class="top-card-container" :style="{ backgroundColor: getBgColor(index) }">
-
 						<div class="mobile-menu-page-button-container"
 							style="color: white; position: absolute; left: 0;">
 							<div class="menu-icon">
@@ -40,22 +35,22 @@
 							style="color: white; position: absolute; right: 0;">
 							<div class="refresh-icon">
 								<div style="position: absolute; top: -3px; right: 5px; transform: rotateZ(75deg);">
-									<a class="refresh-arrow" href="#" @click.prevent="refreshPage">
+									<a class="refresh-arrow" @click="refreshPage(index)">
 										&#8635;
 									</a>
 								</div>
 							</div>
 						</div>
 
-
 						<div class="draw-header">
 							<div class="logo-title-container">
 								<div class="logo-white-container">
-									<img :src="getLogo(index)" alt="Logo" class="draw-logo">
+									<img :src="cardTheme[index].logoPath" class="draw-logo">
 								</div>
 								<h1 class="logo-name title-font-size mt-10"
-									:style="{ color: getSectionTitleTextColor(index) }">{{
-										getName(index) }}</h1>
+									:style="{ color: cardTheme[index].sectionTitleTextColor }">
+									{{ cardTheme[index].name }}
+								</h1>
 							</div>
 						</div>
 
@@ -78,29 +73,30 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="prizes">
 						<div style="margin-inline: 1.25rem;">
 							<div class="prize-section">
 								<div class="prize" v-for="(prize, I) in ['1ST Prize', '2ND Prize', '3RD Prize']"
 									:key="prize">
-									<h2 class="prize-title-container title-font-size small-title-top-bottom-padding b-r-10px"
-										:style="getPrizeStyle(index)">{{ prize }}</h2>
-									<div class="prize-number-container">
-										<div class="prize-number">{{
-											getDisplayResult(drawObj['P' + (I + 1)])
-										}}
-										</div>
+									<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
+										:style="getPrizeStyle(index)">
+										{{ prize }}</h2>
+									<div class="prize-number">{{
+										getDisplayResult(drawObj['P' + (I + 1)])
+									}}
 									</div>
 								</div>
 							</div>
 
 							<div class="special special-section-min-height">
-								<h2 class="special-section-title title-font-size small-title-top-bottom-padding b-r-10px"
-									:style="getSmallSectionStyle(index)">Special</h2>
+								<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
+									:style="getSmallSectionStyle(index)">
+									Special
+								</h2>
 								<div class="special-numbers">
 									<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">
-										{{
-											getDisplayResult(number) }}</div>
+										{{ getDisplayResult(number) }}</div>
 								</div>
 							</div>
 
@@ -121,9 +117,11 @@
 										:style="getSmallSectionStyle(index)">4D Jackpot 2 Prize</h2>
 								</div>
 								<div class="jackpot-prize">
-									<div class="amount">{{ getDisplayResult(drawObj.JP1) }}
+									<div class="amount">
+										{{ getDisplayResult(drawObj.JP1) }}
 									</div>
-									<div class="amount">{{ getDisplayResult(drawObj.JP2) }}
+									<div class="amount">
+										{{ getDisplayResult(drawObj.JP2) }}
 									</div>
 								</div>
 							</div>
@@ -132,7 +130,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </template>
 <script>
@@ -149,137 +146,125 @@ export default {
 			currentTimeText: "",
 			intervalId: null,
 			data: [],
-			scrollY: 0,
-			styles: {
+			scrollPosition: 0,
+			cardTheme: {
 				M: {
 					name: "Magnum 4D",
-					bgColor: 'black',
-					logoPath: '/image/magnum.svg',
-					prizeSectionColor: '#F5C500',
-					prizeSectionTextColor: 'black',
-					smallSectionColor: 'black', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "black",
+					logoPath: "/image/Magnum@3x.png",
+					prizeSectionColor: "#F5C500",
+					prizeSectionTextColor: "black",
+					smallSectionColor: "black",
+					sectionTitleTextColor: "white"
 				},
 				D: {
 					name: "DamaCai 1+3D",
-					bgColor: '#1C377B',
-					logoPath: '/image/damacai2.svg',
-					prizeSectionColor: '#EC2024',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#1C377B', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#1C377B",
+					logoPath: "/image/damacai@3x.png",
+					prizeSectionColor: "#EC2024",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#1C377B",
+					sectionTitleTextColor: "white"
 				},
 				T: {
 					name: "SportsToto 4D",
-					bgColor: '#EC2024',
-					logoPath: '/image/toto.svg',
-					prizeSectionColor: 'black',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#EC2024', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#EC2024",
+					logoPath: "/image/toto@3x.png",
+					prizeSectionColor: "black",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#EC2024",
+					sectionTitleTextColor: "white"
 				},
 				S: {
 					name: "Singapore 4D",
-					bgColor: '#0093D8',
-					logoPath: '/image/sg.svg',
-					prizeSectionColor: '#1C377B',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#0093D8', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#0093D8",
+					logoPath: "/image/sgtoto@3x.png",
+					prizeSectionColor: "#1C377B",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#0093D8",
+					sectionTitleTextColor: "white"
 				},
 				ST: {
-					name: "Magnum 4D",
-					bgColor: '#F5C500',
-					logoPath: '/image/sandakan.svg',
-					prizeSectionColor: '#007A37',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#F5C500', // Combine colors here
-					sectionTitleTextColor: '#007A37'
+					name: "Sandakan 4D",
+					bgColor: "#F5C500",
+					logoPath: "/image/stc4d@3x.png",
+					prizeSectionColor: "#007A37",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#F5C500",
+					sectionTitleTextColor: "#007A37"
 				},
 				SB: {
 					name: "Sabah 88 4D",
-					bgColor: '#EC2024',
-					logoPath: '/image/sabahtoto.svg',
-					prizeSectionColor: '#1D68A2',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#EC2024', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#EC2024",
+					logoPath: "/image/sabah88@3x.png",
+					prizeSectionColor: "#1D68A2",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#EC2024",
+					sectionTitleTextColor: "white"
 				},
 				SW: {
 					name: "Special CashSweap",
-					bgColor: '#10A226',
-					logoPath: '/image/cashsweeptoto.svg',
-					prizeSectionColor: '#EC2024',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#10A226', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#10A226",
+					logoPath: "/image/special cashsweep@3x.png",
+					prizeSectionColor: "#EC2024",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#10A226",
+					sectionTitleTextColor: "white"
 				},
 				H: {
 					name: "Lucky Hari Hari",
-					bgColor: '#1A81BB',
-					logoPath: '/image/hariharitoto.svg',
-					prizeSectionColor: '#1C377B',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#1A81BB', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#1A81BB",
+					logoPath: "/image/LHH@3x.png",
+					prizeSectionColor: "#1C377B",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#1A81BB",
+					sectionTitleTextColor: "white"
 				},
 				P: {
 					name: "Perdana Lottery",
-					bgColor: '#1A81BB',
-					logoPath: '/image/pdntoto.svg',
-					prizeSectionColor: '#EC2024',
-					prizeSectionTextColor: 'white',
-					smallSectionColor: '#1A81BB', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#1A81BB",
+					logoPath: "/image/Perdana Lottery @3x.png",
+					prizeSectionColor: "#EC2024",
+					prizeSectionTextColor: "white",
+					smallSectionColor: "#1A81BB",
+					sectionTitleTextColor: "white"
 				},
 				G: {
 					name: "Grand Dragon 4D",
-					bgColor: '#EC2024',
-					logoPath: '/image/gdtoto.svg',
-					prizeSectionColor: '#F5C500',
-					prizeSectionTextColor: 'black',
-					smallSectionColor: '#EC2024', // Combine colors here
-					sectionTitleTextColor: 'white'
+					bgColor: "#EC2024",
+					logoPath: "/image/grand dragon 4d@3x.png",
+					prizeSectionColor: "#F5C500",
+					prizeSectionTextColor: "black",
+					smallSectionColor: "#EC2024",
+					sectionTitleTextColor: "white"
 				}
 			},
 			activeIndex: null,
 			images: [
 				{ key: 'M', src: '/image/Magnum@3x.png' },
-				{ key: 'D', src: '/image/damacai2.svg' },
-				{ key: 'T', src: '/image/toto.svg' },
-				{ key: 'S', src: '/image/sg.svg' },
-				{ key: 'ST', src: '/image/sandakan.svg' },
-				{ key: 'SB', src: '/image/diriwan.svg' },
-				{ key: 'SW', src: '/image/ssc.svg' },
-				{ key: 'G', src: '/image/gd.svg' },
+				{ key: 'D', src: '/image/damacai@3x.png' },
+				{ key: 'T', src: '/image/toto@3x.png' },
+				{ key: 'S', src: '/image/sgtoto@3x.png' },
+				{ key: 'ST', src: '/image/stc4d@3x.png' },
+				{ key: 'SB', src: '/image/sabah88@3x.png' },
+				{ key: 'SW', src: '/image/special cashsweep@3x.png' },
+				{ key: 'G', src: '/image/grand dragon 4d@3x.png' },
 				{ key: 'H', src: '/image/LHH@3x.png' },
-				{ key: 'P', src: '/image/pdn.svg' }
+				{ key: 'P', src: '/image/Perdana Lottery @3x.png' }
 
 			],
 		};
 	},
 	mounted() {
-		// this.fetchData();
-		this.fetchData2();
+		this.fetchData();
 		this.updateTimeText();
+		this.restoreScrollPosition();
 	},
 	beforeDestroy() {
 		clearInterval(this.intervalId);
-
 	},
 	methods: {
-		fetchData() {
-			axios.get('/public/data-2.json')
-				// axios.get('https://result2.song6.club/result')
-				.then(response => {
-					this.data = response.data;
-					// console.log(this.data)
-				})
-				.catch(error => {
-					console.error('Error fetching data:', error);
-				});
-		},
-		fetchData2() {
+		async fetchData() {
 			axios.get('https://result2.song6.club/result')
 				.then(response => {
 					// Extract only desired keys from response.data
@@ -291,15 +276,8 @@ export default {
 							extractedData[key] = response.data[key];
 						}
 					});
-
 					this.data = extractedData;
-
-					// Example of using the extracted data
-					// console.log('Extracted Data:', this.data);
 				})
-				.catch(error => {
-					console.error('There was an error fetching the data:', error);
-				});
 		},
 		shouldHideTimeInfo(key) {
 			const validKeys = ["H", "P"];
@@ -313,17 +291,10 @@ export default {
 			} else {
 				return !validKeys.includes(key);
 			}
-
-		},
-		getKey(drawObj) {
-			const key = Object.keys(drawObj)[0];
-			return key;
 		},
 		updateTimeText() {
 			const current = new Date();
 			const currentTime = current.toTimeString().split(' ')[0];
-
-			// const currentTime = "16:30:00";
 
 			const firstTargetTime = "15:30:00";
 			const secondTargetTime = "19:30:00";
@@ -337,54 +308,36 @@ export default {
 			}
 		},
 		formatDate(dateStr) {
-			// Format date if necessary
 			return dateStr;
 		},
-		getCurrentDate() {
-			const today = new Date();
-			const day = String(today.getDate()).padStart(2, '0');
-			const month = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
-			const year = today.getFullYear();
-			return `${year}-${month}-${day}`;
-		},
-		getName(type) {
-			return this.styles[type].name;
-		},
-		getLogo(type) {
-			return this.styles[type].logoPath;
-		},
 		getBgColor(type) {
-			return this.styles[type].bgColor;
+			return this.cardTheme[type].bgColor;
 		},
 		getPrizeStyle(type) {
 			return {
-				backgroundColor: this.styles[type].prizeSectionColor,
-				color: this.styles[type].prizeSectionTextColor
+				backgroundColor: this.cardTheme[type].prizeSectionColor,
+				color: this.cardTheme[type].prizeSectionTextColor
 			};
 		},
 		getSectionTitleTextColor(type) {
-			return this.styles[type].sectionTitleTextColor;
+			return this.cardTheme[type].sectionTitleTextColor;
 		},
 		getSmallSectionStyle(type) {
 			return {
-				backgroundColor: this.styles[type].smallSectionColor,
-				color: this.styles[type].sectionTitleTextColor
+				backgroundColor: this.cardTheme[type].smallSectionColor,
+				color: this.cardTheme[type].sectionTitleTextColor
 			};
 		},
 		getDisplayResult(number) {
 			const now = new Date();
 			const cutoffTime = new Date();
-			cutoffTime.setHours(15, 30, 0, 0); // 3:30 PM
-			now.setHours(16, 30, 0, 0);
+			cutoffTime.setHours(15, 30, 0, 0);
 			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return '----';
 			} else {
 				return number;
 			}
-		},
-		getKey(drawObj) {
-			return Object.keys(drawObj)[0];
 		},
 		getSpecialNumbers(draw) {
 			const specialNumbers = [
@@ -412,19 +365,44 @@ export default {
 			// Extract consolation numbers from the draw object
 			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
 		},
-		refreshPage() {
+		refreshPage(index) {
+			// Save the ID of the clicked refresh button to localStorage
+			const cardId = `totoType${index}`;
+
+			localStorage.setItem('cardId', cardId);
+			// Reload the page
 			window.location.reload();
+		},
+		restoreScrollPosition() {
+			// Get the saved card ID from localStorage
+			const cardId = localStorage.getItem('cardId');
+
+			if (cardId) {
+				this.$nextTick(() => {
+					const checkElement = () => {
+						const element = document.getElementById(cardId);
+						if (element) {
+							element.scrollIntoView({ behavior: 'smooth' });
+							// Clear the card ID from localStorage
+							localStorage.removeItem('cardId');
+						} else {
+							setTimeout(checkElement, 100); // Retry after 100ms
+						}
+					};
+					setTimeout(checkElement, 100); // Initial delay to ensure full rendering
+				});
+			}
 		},
 		handleImageClick(index) {
 			this.activeIndex = index;
 			this.scrollToDrawSection(index);
 		},
 		handleLogoClick(id) {
-			this.activeIndex = id; // Set activeIndex to the clicked logo index
-			this.scrollToDrawSection(id); // Scroll to corresponding section
+			this.activeIndex = id;
+			this.scrollToDrawSection(id);
 		},
 		scrollToDrawSection(index) {
-			const element = document.getElementById(`Toto-type-${index}`);
+			const element = document.getElementById(`totoType${index}`);
 			if (element) {
 				element.scrollIntoView({ behavior: 'smooth' });
 			}
@@ -454,6 +432,7 @@ export default {
 	.scroll-container {
 		height: 100vh;
 		overflow: auto;
+		position: relative;
 	}
 
 	.no-scroll {
@@ -463,9 +442,6 @@ export default {
 	.scrollable {
 		overflow-y: auto !important;
 		scroll-behavior: smooth;
-		/* Allow vertical scrolling */
-		/* max-height: calc(100vh - 65px); */
-		/* Adjust as necessary */
 	}
 }
 
@@ -481,7 +457,6 @@ export default {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 61px;
 	background-color: white;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -489,6 +464,7 @@ export default {
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
 	top: -1px;
+	height: 61px;
 }
 
 .mobile-sidebar-button-container {
@@ -522,7 +498,7 @@ export default {
 
 .navbar-toggler-icon {
 	float: inline-start;
-	background-image: url("/public/image/menu-sm.svg");
+	background-image: url("/image/menu-sm.svg");
 }
 
 @media screen and (min-width: 769px) {
@@ -623,6 +599,13 @@ export default {
 	gap: 0.5rem;
 	font-family: Arial, sans-serif;
 	text-align: center;
+
+}
+
+@media screen and (max-width: 431px) {
+	.draw-results {
+		padding-bottom: 100px
+	}
 }
 
 .top-card-container {
@@ -785,7 +768,7 @@ export default {
 	width: 90px;
 	margin: 5px;
 	background: white;
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
 }
 
@@ -874,58 +857,5 @@ export default {
 
 .time-info-fs-14px {
 	font-size: 14px;
-}
-
-.go_up_btn {
-	position: fixed;
-	right: 50px;
-	bottom: 15px;
-	background-color: #ffffff;
-	border-radius: 50px;
-	opacity: 0.8;
-	z-index: 999px;
-}
-
-.go_up_btn :hover {
-	color: #CF2E2E;
-}
-
-.go_up_btn a {
-	color: #CF2E2E;
-}
-
-@media screen and (min-width:1440px) {
-	.go_up_btn {
-		right: 253px;
-	}
-}
-
-@media screen and (min-width:2560px) {
-	.go_up_btn {
-		right: 800px;
-	}
-}
-
-.scroll-icon {
-	position: fixed;
-	bottom: 20px;
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
-
-.scroll-icon.show {
-	opacity: 1;
-	visibility: visible;
-	/* 设置为可见 */
-}
-
-.scroll-icon.hide {
-	opacity: 0;
-	visibility: hidden;
-	/* 设置为不可见 */
-}
-
-.scroll-icon.fade-out {
-	opacity: 0;
 }
 </style>

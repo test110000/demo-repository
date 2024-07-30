@@ -111,6 +111,15 @@
 			</div>
 		</div>
 	</div>
+	<div class="go_up_btn">
+		<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }" href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+				class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+				<path
+					d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+			</svg>
+		</a>
+	</div>
 </template>
 
 <script>
@@ -159,26 +168,26 @@ export default {
 			console.log('Changing language to:', lang);
 			this.$i18n.locale = lang;
 		},
-		handleScroll() {
-			// 如果已经有计时器，清除它
-			if (this.scrollTimeout) {
-				clearTimeout(this.scrollTimeout);
-			}
+		// handleScroll() {
+		// 	// 如果已经有计时器，清除它
+		// 	if (this.scrollTimeout) {
+		// 		clearTimeout(this.scrollTimeout);
+		// 	}
 
-			// 显示图标
-			this.showIcon = true;
+		// 	// 显示图标
+		// 	this.showIcon = true;
 
-			// 在5秒后隐藏图标
-			this.scrollTimeout = setTimeout(() => {
-				this.showIcon = false;
-			}, 2000);
-		},
-		scrollToTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth',
-			});
-		},
+		// 	// 在5秒后隐藏图标
+		// 	this.scrollTimeout = setTimeout(() => {
+		// 		this.showIcon = false;
+		// 	}, 2000);
+		// },
+		// scrollToTop() {
+		// 	window.scrollTo({
+		// 		top: 0,
+		// 		behavior: 'smooth',
+		// 	});
+		// },
 		setActiveTitle(title) {
 			this.activeTitle = title;
 		},
@@ -519,7 +528,7 @@ export default {
 	/* Define your active text color */
 }
 
-.go_up_btn {
+/* .go_up_btn {
 	position: fixed;
 	right: 60px;
 	bottom: 15px;
@@ -573,4 +582,6 @@ export default {
 .scroll-icon.fade-out {
 	opacity: 0;
 }
+
+*/
 </style>

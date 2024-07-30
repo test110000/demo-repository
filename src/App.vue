@@ -1,5 +1,5 @@
 <template>
-	<div style="padding: 0px 0px 0px 0px;" class="container-fluid">
+	<div style="padding: 0px 0px 0px 0px; background-color: rgb(245, 245, 245);" class="container-fluid">
 		<div class="screen-mobile">
 			<div class="screen1024">
 				<div class="Leftside-bar">
