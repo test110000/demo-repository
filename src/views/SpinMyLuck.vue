@@ -462,14 +462,10 @@ export default {
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
-	font-size: 42px;
+	font-size: 30px;
 }
 
 @media screen and (max-width: 321px) {
-	.luckyspin_bg {
-		font-size: 34px;
-	}
-
 	.spinner-number {
 		font-size: 22px !important;
 	}

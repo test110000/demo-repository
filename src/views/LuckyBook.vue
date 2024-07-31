@@ -422,6 +422,12 @@ export default {
 	padding: 0 20px;
 }
 
+@media screen and (max-width: 430px) {
+	.title {
+		font-size: 30px;
+	}
+}
+
 @media (min-width:1400px) {
 
 	.title {
@@ -602,6 +608,7 @@ export default {
 	font-size: 15px;
 	margin-top: 10px;
 	height: 70px;
+	padding: 0 10px;
 }
 
 
