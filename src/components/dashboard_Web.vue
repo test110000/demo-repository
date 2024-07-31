@@ -108,7 +108,10 @@
 								</h2>
 								<div class="special-numbers">
 									<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">
-										{{ getDisplayResult(number) }}</div>
+										<div class="number-inner">
+											{{ getDisplayResult(number) }}
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -117,7 +120,10 @@
 									:style="getSmallSectionStyle(index)">{{ $t('Dashboard.Consolation') }}</h2>
 								<div class="consolation-numbers">
 									<div v-for="(number, I) in getConsolationNumbers(drawObj)" :key="I" class="number">
-										{{ getDisplayResult(number) }}</div>
+										<div class="number-inner">
+											{{ getDisplayResult(number) }}
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -132,10 +138,15 @@
 								</div>
 								<div class="jackpot-prize">
 									<div class="amount">
-										{{ getDisplayResult(drawObj.JP1) }}
+										<div class="number-inner">
+											{{ getDisplayResult(drawObj.JP1) }}
+										</div>
 									</div>
 									<div class="amount">
-										{{ getDisplayResult(drawObj.JP2) }}
+										<div class="number-inner">
+											{{ getDisplayResult(drawObj.JP2) }}
+										</div>
+
 									</div>
 								</div>
 							</div>
@@ -821,11 +832,7 @@ export default {
 .amount {
 	font-size: 18px;
 	font-weight: 700;
-	margin: 5px;
-	background: white;
-	border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
-	width: 150px;
+	width: 50%;
 }
 
 .special-numbers,
@@ -838,11 +845,15 @@ export default {
 .number {
 	font-size: 18px;
 	font-weight: 700;
-	width: 60px;
-	margin: 5px;
+	width: 20%;
+}
+
+.number-inner {
 	background: white;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+	margin: 3px;
+
 }
 
 @media screen and (max-width: 580px) {

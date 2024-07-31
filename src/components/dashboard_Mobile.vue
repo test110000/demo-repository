@@ -89,7 +89,10 @@
 									</h2>
 									<div class="special-numbers">
 										<div v-for="(number, I) in getSpecialNumbers(drawObj)" :key="I" class="number">
-											{{ getDisplayResult(number) }}</div>
+											<div class="number-inner">
+												{{ getDisplayResult(number) }}
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -99,7 +102,10 @@
 									<div class="consolation-numbers">
 										<div v-for="(number, I) in getConsolationNumbers(drawObj)" :key="I"
 											class="number">
-											{{ getDisplayResult(number) }}</div>
+											<div class="number-inner">
+												{{ getDisplayResult(number) }}
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -114,10 +120,16 @@
 									</div>
 									<div class="jackpot-prize">
 										<div class="amount">
-											{{ getDisplayResult(drawObj.JP1) }}
+											<div class="number-inner">
+												{{ getDisplayResult(drawObj.JP1) }}
+											</div>
+
 										</div>
 										<div class="amount">
-											{{ getDisplayResult(drawObj.JP2) }}
+											<div class="number-inner">
+												{{ getDisplayResult(drawObj.JP2) }}
+											</div>
+
 										</div>
 									</div>
 								</div>
@@ -419,7 +431,6 @@ export default {
 	display: flex;
 	flex-direction: column;
 	border-radius: 0 0 50px 50px;
-	/* padding-top: 70px; */
 	position: relative;
 }
 
@@ -517,6 +528,7 @@ export default {
 	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
 	height: 61px;
+	margin-bottom: -60px;
 }
 
 .image-container {
@@ -656,6 +668,7 @@ export default {
 }
 
 .draw-info span {
+	white-space: nowrap;
 	font-size: 14px;
 	font-weight: 700;
 }
@@ -726,8 +739,6 @@ export default {
 }
 
 .prize {
-	display: inline-block;
-	margin: 10px 8px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -737,7 +748,7 @@ export default {
 .prize-number {
 	font-size: 18px;
 	font-weight: 700;
-	width: 90%;
+	width: 100%;
 	margin: 5px;
 	background: white;
 	border-radius: 10px;
@@ -767,12 +778,17 @@ export default {
 .amount {
 	font-size: 18px;
 	font-weight: 700;
-	margin: 5px;
 	background: white;
 	border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+	/* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px; */
 	width: 50%;
 	white-space: nowrap;
+}
+
+@media screen and (max-width: 321px) {
+	.amount {
+		font-size: 16px;
+	}
 }
 
 .title-font-size {
@@ -808,10 +824,16 @@ export default {
 .number {
 	font-size: 18px;
 	font-weight: 700;
-	width: 16%;
-	margin: 5px;
+	width: 20%;
+	/* margin: 5px; */
+
+}
+
+.number-inner {
 	background: white;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+	margin: 3px;
+
 }
 </style>
