@@ -355,6 +355,19 @@ p {
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
 	font-size: 40px;
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+	.dictionary {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.search-input {
+		font-size: 10px;
+	}
 }
 
 @media (min-width: 600px) {

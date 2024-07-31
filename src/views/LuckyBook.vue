@@ -419,6 +419,7 @@ export default {
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
 	font-size: 42px;
+	padding: 0 20px;
 }
 
 @media (min-width:1400px) {
@@ -456,8 +457,6 @@ export default {
 	align-content: start;
 	box-shadow: 0px 2px 2px 2px #989696;
 }
-
-
 
 .number_col {
 	color: rgb(0, 0, 0);
@@ -521,6 +520,11 @@ export default {
 	border-radius: 5px;
 }
 
+@media screen and (max-width: 321px) {
+	.search_input {
+		font-size: 13px;
+	}
+}
 
 .search-result img {
 	max-width: 100px;
@@ -576,7 +580,7 @@ export default {
 	padding-top: 10px;
 	width: 88%;
 	padding-bottom: 10px;
-
+	align-items: center;
 }
 
 .item-content {
@@ -724,6 +728,7 @@ p {
 .search_input {
 	flex: 1;
 	padding-right: 30px;
+	height: 100%;
 }
 
 .go_up_btn {

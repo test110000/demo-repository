@@ -272,7 +272,7 @@ export default {
 			const now = new Date();
 			const cutoffTime = new Date();
 			cutoffTime.setHours(15, 30, 0, 0);
-			// now.setHours(16, 30, 0, 0);
+			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return allKeys.includes(key);
 			} else {
@@ -499,6 +499,10 @@ export default {
 	}
 }
 
+.scroll-container::-webkit-scrollbar {
+	display: none;
+}
+
 .navbar {
 	display: none;
 	position: sticky;
@@ -516,20 +520,56 @@ export default {
 }
 
 .image-container {
-	border-radius: 50%;
+	/* border-radius: 50%; */
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
 	overflow: hidden;
 	transition: border 0.3s ease;
 	border: 2px solid transparent;
-	display: flex;
+	position: relative;
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	width: 10%;
+	max-width: 40px;
 	height: auto;
 }
 
+.image-container img {
+	border-radius: 50%;
+	/* This ensures the image itself remains round */
+	background-color: white;
+}
+
 .image-container.active {
-	border: 2px solid rgb(207, 46, 46);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	/* border: 2px solid rgb(207, 46, 46); */
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
+	background-color: #d2d2d2 !important;
+	/* Background color for the oval effect */
+	padding: 5px 0px;
+	/* Adjust padding to create space around the image */
+	/* border-radius: 50%; */
+	/* Initially round background */
+	transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.image-container.active::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	/* Same background color as .active */
+	/* border-radius: 50%; */
+	/* Start as circle */
+	transform: scale(1, 1.3);
+	/* Scale to create the oval effect */
+	z-index: -1;
+	/* Position behind the image */
 }
 
 .round-image {
@@ -631,7 +671,7 @@ export default {
 }
 
 .time-info-display-none {
-	display: none;
+	display: none !important;
 }
 
 .date-info {
@@ -641,7 +681,7 @@ export default {
 }
 
 .time-info {
-	/* display: flex; */
+	display: flex;
 	flex-direction: column;
 }
 
@@ -691,12 +731,13 @@ export default {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 30%;
 }
 
 .prize-number {
 	font-size: 18px;
 	font-weight: 700;
-	width: 90px;
+	width: 90%;
 	margin: 5px;
 	background: white;
 	border-radius: 10px;
@@ -730,7 +771,7 @@ export default {
 	background: white;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
-	width: 150px;
+	width: 50%;
 	white-space: nowrap;
 }
 
@@ -767,7 +808,7 @@ export default {
 .number {
 	font-size: 18px;
 	font-weight: 700;
-	width: 60px;
+	width: 16%;
 	margin: 5px;
 	background: white;
 	border-radius: 5px;

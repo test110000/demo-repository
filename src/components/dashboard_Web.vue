@@ -308,8 +308,8 @@ export default {
 			const allKeys = ["M", "D", "T", "S", "ST", "SB", "SW", "G", "H", "P"];
 			const now = new Date();
 			const cutoffTime = new Date();
-			// cutoffTime.setHours(15, 30, 0, 0);
-			// now.setHours(16, 30, 0, 0);
+			cutoffTime.setHours(15, 30, 0, 0);
+			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return allKeys.includes(key);
 			} else {

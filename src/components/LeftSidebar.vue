@@ -54,9 +54,9 @@ export default {
 	data() {
 		return {
 			imageSrc: {
-				dashboard: '/image/dashboard.png',
-				spin: '/image/spin.png',
-				book: '/image/book.png'
+				dashboard: '/image/dashboard.webp',
+				spin: '/image/spin.webp',
+				book: '/image/book.webp'
 			},
 			activeTab: '' // Initially empty
 		};
@@ -179,5 +179,6 @@ export default {
 
 .active-link .text_menu {
 	color: rgb(207, 46, 46);
+	font-weight: 700;
 }
 </style>

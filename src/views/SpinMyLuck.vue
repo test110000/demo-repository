@@ -465,6 +465,16 @@ export default {
 	font-size: 42px;
 }
 
+@media screen and (max-width: 321px) {
+	.luckyspin_bg {
+		font-size: 34px;
+	}
+
+	.spinner-number {
+		font-size: 22px !important;
+	}
+}
+
 .lucky_col {
 	width: 100%;
 	text-align: center;

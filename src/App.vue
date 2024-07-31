@@ -6,9 +6,6 @@
 					<LeftSidebar />
 				</div>
 			</div>
-			<!-- <div class="Topbar-laptop">
-					<TopBar />
-				</div> -->
 
 			<div class="main-content">
 				<router-view></router-view>
@@ -39,6 +36,14 @@ html,
 body {
 	height: 100%;
 	margin: 0;
+}
+
+body {
+	overflow: auto !important;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 .app-container {

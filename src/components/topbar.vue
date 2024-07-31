@@ -72,12 +72,14 @@
 					</a>
 
 					<div class="logo_col">
-						<div class="logo" v-for="logo in filteredLogos" :key="logo.key">
+						<div class="logo" v-for="logo in filteredLogos" :key="logo.key"
+							:class="{ active: selectedLogoKey === logo.key }">
 							<a :href="'#'" @click.prevent="handleLogoClick(logo.key)">
 								<img :id="`4D-${logo.key}`" width="40px" height="40px" :src="logo.src">
 							</a>
 						</div>
 					</div>
+
 					<a class="refresh-icon" style="position: relative; " @click.prevent="refreshPage">
 						<div style="position: absolute; right: 12px; top: 4px; transform: rotateZ(50deg);">
 							<a class="refresh-arrow" href="#">
@@ -89,7 +91,7 @@
 						<button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
 							aria-expanded="false">
 							<div class="icon">
-								&#x1F310; <!-- Earth Globe with Meridians -->
+								<img src="/image/Earth_icon.webp" alt="Language icon">
 							</div>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -113,6 +115,7 @@ export default {
 			showIcon: false,
 			scrollTimeout: null,
 			intervalId: null,
+			selectedLogoKey: null,
 			// activeTitle: 'Dashboard',
 			currentDate: new Date(),
 			showDatePicker: false,
@@ -151,8 +154,11 @@ export default {
 			this.$i18n.locale = lang;
 		},
 		isActive(routePath) {
-			// Check if the current route's path matches the given routePath
-			return this.$route.path === routePath;
+			// Define all routes that should activate the class
+			const activeRoutes = ['/lucky-book', '/tuapekkongwan', '/guanyin', '/tuapekkongqian'];
+
+			// Check if the current route's path matches any of the routes in activeRoutes
+			return activeRoutes.includes(this.$route.path);
 		},
 		checkTime() {
 			const now = new Date();
@@ -185,6 +191,7 @@ export default {
 				// Redirect to the home page
 				window.location.href = '/';
 			} else {
+				this.selectedLogoKey = index;
 				this.$emit('logo-clicked', `${index}`);
 			}
 		}
@@ -306,22 +313,24 @@ export default {
 }
 
 @media screen and (max-width: 1020px) {
-	.d_num_title {
-		display: none;
-	}
-
 	.refresh-icon {
 		display: none !important;
 	}
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
 	.logo_col {
 		display: none !important;
 	}
 
 	.d_num_title {
 		display: block !important;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.d_num_title {
+		display: none !important;
 	}
 }
 
@@ -381,9 +390,12 @@ export default {
 }
 
 .language-button button {
+	display: flex;
+	justify-content: center;
 	background: none;
 	border: none;
 	cursor: pointer;
+	width: 78px;
 }
 
 .navbar-brand img {
@@ -460,11 +472,9 @@ export default {
 	align-self: center;
 }
 
-.icon {
-	font-size: 24px;
-	mix-blend-mode: color-dodge;
-	width: 50px;
-	height: 50px;
+.icon img {
+	width: 30px;
+	height: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -493,5 +503,14 @@ export default {
 
 .scroll-icon.fade-out {
 	opacity: 0;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.logo_col .logo.active {
+	border: 2px solid rgb(207, 46, 46);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 </style>
