@@ -135,6 +135,9 @@ export default {
 				'/': '/image/dashboard-topbar.svg',
 				'/spin-my-luck': '/image/spin-topbar.svg',
 				'/lucky-book': '/image/book-topbar.svg',
+				'/tuapekkongwan': '/image/book-topbar.svg',
+				'/guanyin': '/image/book-topbar.svg',
+				'/tuapekkongqian': '/image/book-topbar.svg',
 				// Add more routes and corresponding images
 			},
 		};
@@ -154,11 +157,7 @@ export default {
 			this.$i18n.locale = lang;
 		},
 		isActive(routePath) {
-			// Define all routes that should activate the class
-			const activeRoutes = ['/lucky-book', '/tuapekkongwan', '/guanyin', '/tuapekkongqian'];
-
-			// Check if the current route's path matches any of the routes in activeRoutes
-			return activeRoutes.includes(this.$route.path);
+			return this.$route.path === routePath;
 		},
 		checkTime() {
 			const now = new Date();
