@@ -27,19 +27,19 @@ const routes = [
 		meta: { keepAlive: true }
 	},
 	{
-		path: '/tuapekkongwan',
+		path: '/lucky-book/tuapekkongwan',
 		name: 'TuaPekKongWan',
 		component: TuaPekKongWan,
 		meta: { keepAlive: true }
 	},
 	{
-		path: '/guanyin',
+		path: '/lucky-book/guanyin',
 		name: 'GuanYin',
 		component: GuanYin,
 		meta: { keepAlive: true }
 	},
 	{
-		path: '/tuapekkongqian',
+		path: '/lucky-book/tuapekkongqian',
 		name: 'TuaPekKongQian',
 		component: TuaPekKongQian,
 		meta: { keepAlive: true }

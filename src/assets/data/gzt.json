@@ -3,7 +3,7 @@
 		"number": "000",
 		"content": {
 			"en": "PAPER BOX",
-			"zh": "纸盒,纸皮箱",
+			"zh": "纸盒, 纸皮箱",
 			"ms": "KOTAK KERTAS"
 		},
 		"image": "gzt_000.webp"
@@ -12,7 +12,7 @@
 		"number": "001",
 		"content": {
 			"en": "DRAGON",
-			"zh": "飞龙,龙",
+			"zh": "飞龙, 龙",
 			"ms": "NAGA"
 		},
 		"image": "gzt_001.webp"
@@ -48,7 +48,7 @@
 		"number": "005",
 		"content": {
 			"en": "LION",
-			"zh": "雄狮,狮子",
+			"zh": "雄狮, 狮子",
 			"ms": "SINGA"
 		},
 		"image": "gzt_005.webp"
@@ -57,7 +57,7 @@
 		"number": "006",
 		"content": {
 			"en": "ROC",
-			"zh": "大鹏,大鹏金翅鸟",
+			"zh": "大鹏, 大鹏金翅鸟",
 			"ms": "ROC"
 		},
 		"image": "gzt_006.webp"
@@ -66,7 +66,7 @@
 		"number": "007",
 		"content": {
 			"en": "TIGER",
-			"zh": "猛虎,老虎",
+			"zh": "猛虎, 老虎",
 			"ms": "HARIMAU"
 		},
 		"image": "gzt_007.webp"
@@ -84,7 +84,7 @@
 		"number": "009",
 		"content": {
 			"en": "ZHAO ZI LONG",
-			"zh": "赵子龙,赵云",
+			"zh": "赵子龙, 赵云",
 			"ms": "ZHAO ZI LONG"
 		},
 		"image": "gzt_009.webp"
@@ -128,7 +128,7 @@
 	{
 		"number": "014",
 		"content": {
-			"en": "BLACK-NAPED ORIOLE, CUCKOO",
+			"en": "BLACK-NAPED ORIOLE,  CUCKOO",
 			"zh": "黄莺",
 			"ms": "WARBLER KUNING"
 		},
@@ -138,7 +138,7 @@
 		"number": "015",
 		"content": {
 			"en": "HORSE",
-			"zh": "良马,马",
+			"zh": "良马, 马",
 			"ms": "KUDA"
 		},
 		"image": "gzt_015.webp"
@@ -147,7 +147,7 @@
 		"number": "016",
 		"content": {
 			"en": "SWALLOW",
-			"zh": "春燕,燕子",
+			"zh": "春燕, 燕子",
 			"ms": "SWALLOW"
 		},
 		"image": "gzt_016.webp"
@@ -156,7 +156,7 @@
 		"number": "017",
 		"content": {
 			"en": "BULL",
-			"zh": "牛,青牛",
+			"zh": "牛, 青牛",
 			"ms": "LEMBU JANTAN"
 		},
 		"image": "gzt_017.webp"
@@ -209,17 +209,17 @@
 	{
 		"number": "023",
 		"content": {
-			"en": "WILD BOAR, PIG",
-			"zh": "野猪,猪",
-			"ms": "BABI HUTAN, BABI"
+			"en": "WILD BOAR,  PIG",
+			"zh": "野猪, 猪",
+			"ms": "BABI HUTAN,  BABI"
 		},
 		"image": "gzt_023.webp"
 	},
 	{
 		"number": "024",
 		"content": {
-			"en": "PIGEON, DOVE",
-			"zh": "鸽子,神鸽",
+			"en": "PIGEON,  DOVE",
+			"zh": "鸽子, 神鸽",
 			"ms": "MERPATI"
 		},
 		"image": "gzt_024.webp"
@@ -309,7 +309,7 @@
 		"number": "034",
 		"content": {
 			"en": "TOAD",
-			"zh": "蛤蟆,蟾蜍",
+			"zh": "蛤蟆, 蟾蜍",
 			"ms": "KATAK"
 		},
 		"image": "gzt_034.webp"
@@ -399,7 +399,7 @@
 		"number": "044",
 		"content": {
 			"en": "SEAL",
-			"zh": "海狗,海豹",
+			"zh": "海狗, 海豹",
 			"ms": "SEAL"
 		},
 		"image": "gzt_044.webp"
@@ -533,9 +533,9 @@
 	{
 		"number": "059",
 		"content": {
-			"en": "LEOPARD, CHEETAH",
-			"zh": "斑豹,花豹,豹",
-			"ms": "LEOPARD, CHEETAH"
+			"en": "LEOPARD,  CHEETAH",
+			"zh": "斑豹, 花豹, 豹",
+			"ms": "LEOPARD,  CHEETAH"
 		},
 		"image": "gzt_059.webp"
 	},
@@ -552,7 +552,7 @@
 		"number": "061",
 		"content": {
 			"en": "ELEPHANT",
-			"zh": "黒象,大象",
+			"zh": "黒象, 大象",
 			"ms": "GAJAH"
 		},
 		"image": "gzt_061.webp"
@@ -614,9 +614,9 @@
 	{
 		"number": "068",
 		"content": {
-			"en": "TEAL, MANDARIN DUCK",
+			"en": "TEAL,  MANDARIN DUCK",
 			"zh": "鸳鸯",
-			"ms": "TEAL, ITIK MANDARIN"
+			"ms": "TEAL,  ITIK MANDARIN"
 		},
 		"image": "gzt_068.webp"
 	},
@@ -642,7 +642,7 @@
 		"number": "071",
 		"content": {
 			"en": "MONKEY",
-			"zh": "猿猴,猴子",
+			"zh": "猿猴, 猴子",
 			"ms": "MONYET"
 		},
 		"image": "gzt_071.webp"
@@ -678,7 +678,7 @@
 		"number": "075",
 		"content": {
 			"en": "WHITE DOG",
-			"zh": "狗,白狗",
+			"zh": "狗, 白狗",
 			"ms": "ANJING PUTIH"
 		},
 		"image": "gzt_075.webp"
@@ -696,7 +696,7 @@
 		"number": "077",
 		"content": {
 			"en": "CAT",
-			"zh": "猫,花猫",
+			"zh": "猫, 花猫",
 			"ms": "KUCING"
 		},
 		"image": "gzt_077.webp"
@@ -722,8 +722,8 @@
 	{
 		"number": "080",
 		"content": {
-			"en": "COCK , ROOSTER",
-			"zh": "公鸡,鸣鸡,雄鸡",
+			"en": "COCK ,  ROOSTER",
+			"zh": "公鸡, 鸣鸡, 雄鸡",
 			"ms": "AYAM JANTAN"
 		},
 		"image": "gzt_080.webp"
@@ -732,7 +732,7 @@
 		"number": "081",
 		"content": {
 			"en": "WOLF",
-			"zh": "豺狼,狼",
+			"zh": "豺狼, 狼",
 			"ms": "SERIGALA"
 		},
 		"image": "gzt_081.webp"
@@ -750,7 +750,7 @@
 		"number": "083",
 		"content": {
 			"en": "RABBIT",
-			"zh": "兔子,玉兔",
+			"zh": "兔子, 玉兔",
 			"ms": "ARNAB"
 		},
 		"image": "gzt_083.webp"
@@ -767,7 +767,7 @@
 	{
 		"number": "085",
 		"content": {
-			"en": "RAT,MOUSE",
+			"en": "RAT, MOUSE",
 			"zh": "老鼠",
 			"ms": "TIKUS"
 		},
@@ -912,7 +912,7 @@
 		"number": "101",
 		"content": {
 			"en": "SKY",
-			"zh": "天,天上",
+			"zh": "天, 天上",
 			"ms": "LANGIT"
 		},
 		"image": "gzt_101.webp"
@@ -920,9 +920,9 @@
 	{
 		"number": "102",
 		"content": {
-			"en": "EARTH, GROUND",
-			"zh": "地,地上",
-			"ms": "BUMI, TANAH"
+			"en": "EARTH,  GROUND",
+			"zh": "地, 地上",
+			"ms": "BUMI,  TANAH"
 		},
 		"image": "gzt_102.webp"
 	},
@@ -930,7 +930,7 @@
 		"number": "103",
 		"content": {
 			"en": "SUN",
-			"zh": "太阳,日",
+			"zh": "太阳, 日",
 			"ms": "MATAHARI"
 		},
 		"image": "gzt_103.webp"
@@ -948,7 +948,7 @@
 		"number": "105",
 		"content": {
 			"en": "THUNDER",
-			"zh": "雷,打雷",
+			"zh": "雷, 打雷",
 			"ms": "PETIR"
 		},
 		"image": "gzt_105.webp"
@@ -957,7 +957,7 @@
 		"number": "106",
 		"content": {
 			"en": "RAIN",
-			"zh": "雨,下雨",
+			"zh": "雨, 下雨",
 			"ms": "HUJAN"
 		},
 		"image": "gzt_106.webp"
@@ -993,7 +993,7 @@
 		"number": "110",
 		"content": {
 			"en": "SNOW",
-			"zh": "雪,下雪",
+			"zh": "雪, 下雪",
 			"ms": "SALJI"
 		},
 		"image": "gzt_110.webp"
@@ -1019,9 +1019,9 @@
 	{
 		"number": "113",
 		"content": {
-			"en": "CANAL, RIVER",
-			"zh": "江,河,运河",
-			"ms": "TERUSAN, SUNGAI"
+			"en": "CANAL,  RIVER",
+			"zh": "江, 河, 运河",
+			"ms": "TERUSAN,  SUNGAI"
 		},
 		"image": "gzt_113.webp"
 	},
@@ -1046,8 +1046,8 @@
 	{
 		"number": "116",
 		"content": {
-			"en": "ROCK, STONE",
-			"zh": "石,石头,岩石",
+			"en": "ROCK,  STONE",
+			"zh": "石, 石头, 岩石",
 			"ms": "BATU"
 		},
 		"image": "gzt_116.webp"
@@ -1056,7 +1056,7 @@
 		"number": "117",
 		"content": {
 			"en": "ROAD",
-			"zh": "路,大道,马路",
+			"zh": "路, 大道, 马路",
 			"ms": "JALAN"
 		},
 		"image": "gzt_117.webp"
@@ -1074,7 +1074,7 @@
 		"number": "119",
 		"content": {
 			"en": "CITY",
-			"zh": "城,城市",
+			"zh": "城, 城市",
 			"ms": "BANDAR"
 		},
 		"image": "gzt_119.webp"
@@ -1083,7 +1083,7 @@
 		"number": "120",
 		"content": {
 			"en": "WALL",
-			"zh": "墙,围墙,城墙,墙壁",
+			"zh": "墙, 围墙, 城墙, 墙壁",
 			"ms": "DINDING"
 		},
 		"image": "gzt_120.webp"
@@ -1092,7 +1092,7 @@
 		"number": "121",
 		"content": {
 			"en": "CAVE",
-			"zh": "洞,山洞",
+			"zh": "洞, 山洞",
 			"ms": "GUA"
 		},
 		"image": "gzt_121.webp"
@@ -1100,7 +1100,7 @@
 	{
 		"number": "122",
 		"content": {
-			"en": "PORT, BARBOR",
+			"en": "PORT,  BARBOR",
 			"zh": "港口",
 			"ms": "PELABUHAN"
 		},
@@ -1118,8 +1118,8 @@
 	{
 		"number": "124",
 		"content": {
-			"en": "TOMB, GRAVE",
-			"zh": "墓,坟墓",
+			"en": "TOMB,  GRAVE",
+			"zh": "墓, 坟墓",
 			"ms": "TANAH PERKUBURAN"
 		},
 		"image": "gzt_124.webp"
@@ -1128,7 +1128,7 @@
 		"number": "125",
 		"content": {
 			"en": "GARDEN",
-			"zh": "园,花园,果园",
+			"zh": "园, 花园, 果园",
 			"ms": "TAMAN"
 		},
 		"image": "gzt_125.webp"
@@ -1136,8 +1136,8 @@
 	{
 		"number": "126",
 		"content": {
-			"en": "JUNGLE, FOREST",
-			"zh": "林,森林,树林",
+			"en": "JUNGLE,  FOREST",
+			"zh": "林, 森林, 树林",
 			"ms": "HUTAN"
 		},
 		"image": "gzt_126.webp"
@@ -1146,7 +1146,7 @@
 		"number": "127",
 		"content": {
 			"en": "VILLA",
-			"zh": "楼,楼房,别墅,豪宅",
+			"zh": "楼, 楼房, 别墅, 豪宅",
 			"ms": "VILA"
 		},
 		"image": "gzt_127.webp"
@@ -1155,7 +1155,7 @@
 		"number": "128",
 		"content": {
 			"en": "TOWER",
-			"zh": "台,露台,天台",
+			"zh": "台, 露台, 天台",
 			"ms": "MENARA"
 		},
 		"image": "gzt_128.webp"
@@ -1164,7 +1164,7 @@
 		"number": "129",
 		"content": {
 			"en": "HOUSE",
-			"zh": "屋,房屋",
+			"zh": "屋, 房屋",
 			"ms": "RUMAH"
 		},
 		"image": "gzt_129.webp"
@@ -1173,7 +1173,7 @@
 		"number": "130",
 		"content": {
 			"en": "TEMPLE",
-			"zh": "寺庙,庙,神庙",
+			"zh": "寺庙, 庙, 神庙",
 			"ms": "KUIL"
 		},
 		"image": "gzt_130.webp"
@@ -1182,7 +1182,7 @@
 		"number": "131",
 		"content": {
 			"en": "VIEW",
-			"zh": "道观,观",
+			"zh": "道观, 观",
 			"ms": "LIHAT"
 		},
 		"image": "gzt_131.webp"
@@ -1191,7 +1191,7 @@
 		"number": "132",
 		"content": {
 			"en": "MONASTERY",
-			"zh": "寺院,寺,修道院",
+			"zh": "寺院, 寺, 修道院",
 			"ms": "BIARA"
 		},
 		"image": "gzt_132.webp"
@@ -1208,8 +1208,8 @@
 	{
 		"number": "134",
 		"content": {
-			"en": "SHED, CANOPY",
-			"zh": "亭子,棚",
+			"en": "SHED,  CANOPY",
+			"zh": "亭子, 棚",
 			"ms": "PANCA PERSADA"
 		},
 		"image": "gzt_134.webp"
@@ -1218,7 +1218,7 @@
 		"number": "135",
 		"content": {
 			"en": "PAGODA",
-			"zh": "塔,宝塔",
+			"zh": "塔, 宝塔",
 			"ms": "PAGODA"
 		},
 		"image": "gzt_135.webp"
@@ -1263,7 +1263,7 @@
 		"number": "140",
 		"content": {
 			"en": "DUSTER",
-			"zh": "拂尘,云扫",
+			"zh": "拂尘, 云扫",
 			"ms": "PENYAPU DEBU"
 		},
 		"image": "gzt_140.webp"
@@ -1281,7 +1281,7 @@
 		"number": "142",
 		"content": {
 			"en": "CANE STICK",
-			"zh": "藤条,藤棍",
+			"zh": "藤条, 藤棍",
 			"ms": "ROTAN"
 		},
 		"image": "gzt_142.webp"
@@ -1290,7 +1290,7 @@
 		"number": "143",
 		"content": {
 			"en": "PAPER",
-			"zh": "纸,纸张",
+			"zh": "纸, 纸张",
 			"ms": "KERTAS"
 		},
 		"image": "gzt_143.webp"
@@ -1299,7 +1299,7 @@
 		"number": "144",
 		"content": {
 			"en": "INK",
-			"zh": "濹,黑濹",
+			"zh": "濹, 黑濹",
 			"ms": "DAKWAT"
 		},
 		"image": "gzt_144.webp"
@@ -1316,7 +1316,7 @@
 	{
 		"number": "146",
 		"content": {
-			"en": "INK PLATE, INKSTONE",
+			"en": "INK PLATE,  INKSTONE",
 			"zh": "砚",
 			"ms": "BATU TINTA"
 		},
@@ -1325,8 +1325,8 @@
 	{
 		"number": "147",
 		"content": {
-			"en": "BOOK, NOTE",
-			"zh": "书,书本,簿子",
+			"en": "BOOK,  NOTE",
+			"zh": "书, 书本, 簿子",
 			"ms": "BUKU"
 		},
 		"image": "gzt_147.webp"
@@ -1335,7 +1335,7 @@
 		"number": "148",
 		"content": {
 			"en": "DRAWING",
-			"zh": "画,水墨画,山水画",
+			"zh": "画, 水墨画, 山水画",
 			"ms": "LUKISAN"
 		},
 		"image": "gzt_148.webp"
@@ -1344,7 +1344,7 @@
 		"number": "149",
 		"content": {
 			"en": "GUQIN",
-			"zh": "琴,古琴",
+			"zh": "琴, 古琴",
 			"ms": "GUQIN"
 		},
 		"image": "gzt_149.webp"
@@ -1371,7 +1371,7 @@
 		"number": "152",
 		"content": {
 			"en": "SPEAR",
-			"zh": "枪,长枪",
+			"zh": "枪, 长枪",
 			"ms": "LEMBING"
 		},
 		"image": "gzt_152.webp"
@@ -1380,7 +1380,7 @@
 		"number": "153",
 		"content": {
 			"en": "KNIFE",
-			"zh": "刀,大刀",
+			"zh": "刀, 大刀",
 			"ms": "PISAU"
 		},
 		"image": "gzt_153.webp"
@@ -1398,7 +1398,7 @@
 		"number": "155",
 		"content": {
 			"en": "HANDKERCHIEF",
-			"zh": "手帕,手巾",
+			"zh": "手帕, 手巾",
 			"ms": "SAPU TANGAN"
 		},
 		"image": "gzt_155.webp"
@@ -1425,7 +1425,7 @@
 		"number": "158",
 		"content": {
 			"en": "CANNON",
-			"zh": "炮,大炮, 火炮",
+			"zh": "炮, 大炮,  火炮",
 			"ms": "MERIAM"
 		},
 		"image": "gzt_158.webp"
@@ -1434,7 +1434,7 @@
 		"number": "159",
 		"content": {
 			"en": "HAMMER",
-			"zh": "锤,流星锤,铜锤",
+			"zh": "锤, 流星锤, 铜锤",
 			"ms": "TUKUL"
 		},
 		"image": "gzt_159.webp"
@@ -1452,7 +1452,7 @@
 		"number": "161",
 		"content": {
 			"en": "FLUTE",
-			"zh": "箫,玉箫",
+			"zh": "箫, 玉箫",
 			"ms": "SERULING"
 		},
 		"image": "gzt_161.webp"
@@ -1533,7 +1533,7 @@
 		"number": "170",
 		"content": {
 			"en": "AXE",
-			"zh": "斧,斧头",
+			"zh": "斧, 斧头",
 			"ms": "KAPAK"
 		},
 		"image": "gzt_170.webp"
@@ -1550,8 +1550,8 @@
 	{
 		"number": "172",
 		"content": {
-			"en": "BANGLE, BRACELET",
-			"zh": "手镯,手环",
+			"en": "BANGLE,  BRACELET",
+			"zh": "手镯, 手环",
 			"ms": "GELANG"
 		},
 		"image": "gzt_172.webp"
@@ -1560,7 +1560,7 @@
 		"number": "173",
 		"content": {
 			"en": "RING",
-			"zh": "戒子,戒指",
+			"zh": "戒子, 戒指",
 			"ms": "CINCIN"
 		},
 		"image": "gzt_173.webp"
@@ -1605,7 +1605,7 @@
 		"number": "178",
 		"content": {
 			"en": "MAT",
-			"zh": "席,草席",
+			"zh": "席, 草席",
 			"ms": "TIKAR"
 		},
 		"image": "gzt_178.webp"
@@ -1649,7 +1649,7 @@
 	{
 		"number": "183",
 		"content": {
-			"en": "VASE, JUG",
+			"en": "VASE,  JUG",
 			"zh": "瓶子",
 			"ms": "PASU"
 		},
@@ -1659,7 +1659,7 @@
 		"number": "184",
 		"content": {
 			"en": "TUB",
-			"zh": "桶,水桶,木桶",
+			"zh": "桶, 水桶, 木桶",
 			"ms": "BALDI"
 		},
 		"image": "gzt_184.webp"
@@ -1704,7 +1704,7 @@
 		"number": "189",
 		"content": {
 			"en": "PULLED RICKSHAW",
-			"zh": "人力车,黄包车",
+			"zh": "人力车, 黄包车",
 			"ms": "BECA"
 		},
 		"image": "gzt_189.webp"
@@ -1722,7 +1722,7 @@
 		"number": "191",
 		"content": {
 			"en": "PIGSTY",
-			"zh": "猪栏,猪圈",
+			"zh": "猪栏, 猪圈",
 			"ms": "KANDANG KHINZIR"
 		},
 		"image": "gzt_191.webp"
@@ -1731,7 +1731,7 @@
 		"number": "192",
 		"content": {
 			"en": "KEY",
-			"zh": "锁匙,钥匙",
+			"zh": "锁匙, 钥匙",
 			"ms": "KUNCI"
 		},
 		"image": "gzt_192.webp"
@@ -1767,7 +1767,7 @@
 		"number": "196",
 		"content": {
 			"en": "BROOM",
-			"zh": "扫帚,扫把",
+			"zh": "扫帚, 扫把",
 			"ms": "PENYAPU"
 		},
 		"image": "gzt_196.webp"
@@ -1776,7 +1776,7 @@
 		"number": "197",
 		"content": {
 			"en": "NET",
-			"zh": "网,渔网",
+			"zh": "网, 渔网",
 			"ms": "JALA"
 		},
 		"image": "gzt_197.webp"
@@ -1821,7 +1821,7 @@
 		"number": "202",
 		"content": {
 			"en": "CONCERT STAGE",
-			"zh": "戏台,舞台",
+			"zh": "戏台, 舞台",
 			"ms": "PENTAS KONSERT"
 		},
 		"image": "gzt_202.webp"
@@ -1847,7 +1847,7 @@
 	{
 		"number": "205",
 		"content": {
-			"en": "MUSSEL, SHELL",
+			"en": "MUSSEL,  SHELL",
 			"zh": "蚌",
 			"ms": "KUPANG"
 		},
@@ -1866,7 +1866,7 @@
 		"number": "207",
 		"content": {
 			"en": "PICTURE",
-			"zh": "图画,图片",
+			"zh": "图画, 图片",
 			"ms": "GAMBAR"
 		},
 		"image": "gzt_207.webp"
@@ -1920,7 +1920,7 @@
 		"number": "213",
 		"content": {
 			"en": "NEST",
-			"zh": "鸟巢,鸟窝",
+			"zh": "鸟巢, 鸟窝",
 			"ms": "SARANG"
 		},
 		"image": "gzt_213.webp"
@@ -1947,7 +1947,7 @@
 		"number": "216",
 		"content": {
 			"en": "RICE",
-			"zh": "稻米,稻草",
+			"zh": "稻米, 稻草",
 			"ms": "BERAS"
 		},
 		"image": "gzt_216.webp"
@@ -1965,7 +1965,7 @@
 		"number": "218",
 		"content": {
 			"en": "PINEAPPLE",
-			"zh": "黄梨,菠萝,凤梨",
+			"zh": "黄梨, 菠萝, 凤梨",
 			"ms": "NANAS"
 		},
 		"image": "gzt_218.webp"
@@ -1992,7 +1992,7 @@
 		"number": "221",
 		"content": {
 			"en": "HAT",
-			"zh": "冠,帽",
+			"zh": "冠, 帽",
 			"ms": "TOPI"
 		},
 		"image": "gzt_221.webp"
@@ -2000,7 +2000,7 @@
 	{
 		"number": "222",
 		"content": {
-			"en": "MISUA, NOODLES",
+			"en": "MISUA,  NOODLES",
 			"zh": "面线",
 			"ms": "MI"
 		},
@@ -2010,7 +2010,7 @@
 		"number": "223",
 		"content": {
 			"en": "BRUSH",
-			"zh": "棕刷,刷子",
+			"zh": "棕刷, 刷子",
 			"ms": "BERUS"
 		},
 		"image": "gzt_223.webp"
@@ -2028,7 +2028,7 @@
 		"number": "225",
 		"content": {
 			"en": "ROLLING PAPER",
-			"zh": "烟纸,卷烟纸",
+			"zh": "烟纸, 卷烟纸",
 			"ms": "KERTAS GULUNG"
 		},
 		"image": "gzt_225.webp"
@@ -2055,7 +2055,7 @@
 		"number": "228",
 		"content": {
 			"en": "HEART",
-			"zh": "心,心形,心脏",
+			"zh": "心, 心形, 心脏",
 			"ms": "HATI"
 		},
 		"image": "gzt_228.webp"
@@ -2072,9 +2072,9 @@
 	{
 		"number": "230",
 		"content": {
-			"en": "CLAD IN A THREADBARE JACKET, HE TOLERATED HIS STEPMOTHER: MIN SUN",
-			"zh": "闵损御车, 芦衣顺母",
-			"ms": "BERPAKAIAN JAKET BERULIR, DIA BERTOLAK ANSUR DENGAN IBU TIRINYA: MIN SUN"
+			"en": "CLAD IN A THREADBARE JACKET,  HE TOLERATED HIS STEPMOTHER: MIN SUN",
+			"zh": "闵损御车,  芦衣顺母",
+			"ms": "BERPAKAIAN JAKET BERULIR,  DIA BERTOLAK ANSUR DENGAN IBU TIRINYA: MIN SUN"
 		},
 		"image": "gzt_230.webp"
 	},
@@ -2109,7 +2109,7 @@
 		"number": "234",
 		"content": {
 			"en": "FELT HAT",
-			"zh": "毡帽,帽子",
+			"zh": "毡帽, 帽子",
 			"ms": "TOPI TERASA"
 		},
 		"image": "gzt_234.webp"
@@ -2127,7 +2127,7 @@
 		"number": "236",
 		"content": {
 			"en": "HELMET",
-			"zh": "盔,头盔",
+			"zh": "盔, 头盔",
 			"ms": "TOPI KELEDAR"
 		},
 		"image": "gzt_236.webp"
@@ -2145,7 +2145,7 @@
 		"number": "238",
 		"content": {
 			"en": "COMB",
-			"zh": "木梳, 梳子",
+			"zh": "木梳,  梳子",
 			"ms": "SIKAT"
 		},
 		"image": "gzt_238.webp"
@@ -2154,7 +2154,7 @@
 		"number": "239",
 		"content": {
 			"en": "BATTLESHIP",
-			"zh": "战舰,航空母艦",
+			"zh": "战舰, 航空母艦",
 			"ms": "KAPAL PERANG"
 		},
 		"image": "gzt_239.webp"
@@ -2181,7 +2181,7 @@
 		"number": "242",
 		"content": {
 			"en": "BRUSH",
-			"zh": "刷子,衣刷",
+			"zh": "刷子, 衣刷",
 			"ms": "BERUS"
 		},
 		"image": "gzt_242.webp"
@@ -2190,7 +2190,7 @@
 		"number": "243",
 		"content": {
 			"en": "SUIT",
-			"zh": "西装,洋服",
+			"zh": "西装, 洋服",
 			"ms": "SUIT"
 		},
 		"image": "gzt_243.webp"
@@ -2253,7 +2253,7 @@
 		"number": "250",
 		"content": {
 			"en": "BOOT",
-			"zh": "靴子,长靴",
+			"zh": "靴子, 长靴",
 			"ms": "KASUT BUT"
 		},
 		"image": "gzt_250.webp"
@@ -2307,7 +2307,7 @@
 		"number": "256",
 		"content": {
 			"en": "BELT",
-			"zh": "皮带,腰带,裤带",
+			"zh": "皮带, 腰带, 裤带",
 			"ms": "TALI PINGGANG"
 		},
 		"image": "gzt_256.webp"
@@ -2334,7 +2334,7 @@
 		"number": "259",
 		"content": {
 			"en": "BRICK",
-			"zh": "砖头,砖块",
+			"zh": "砖头, 砖块",
 			"ms": "BATU BATA"
 		},
 		"image": "gzt_259.webp"
@@ -2343,7 +2343,7 @@
 		"number": "260",
 		"content": {
 			"en": "POMFRET",
-			"zh": "鲳鱼,白鲳",
+			"zh": "鲳鱼, 白鲳",
 			"ms": "BAWAL"
 		},
 		"image": "gzt_260.webp"
@@ -2370,7 +2370,7 @@
 		"number": "263",
 		"content": {
 			"en": "RIFLE",
-			"zh": "步枪,来福枪",
+			"zh": "步枪, 来福枪",
 			"ms": "SENAPANG"
 		},
 		"image": "gzt_263.webp"
@@ -2414,8 +2414,8 @@
 	{
 		"number": "268",
 		"content": {
-			"en": "TOILET, LATRINE",
-			"zh": "厕所,洗手间",
+			"en": "TOILET,  LATRINE",
+			"zh": "厕所, 洗手间",
 			"ms": "TANDAS"
 		},
 		"image": "gzt_268.webp"
@@ -2450,7 +2450,7 @@
 	{
 		"number": "272",
 		"content": {
-			"en": "WINE, LIQUOR, ALCOHOLIC DRINK",
+			"en": "WINE,  LIQUOR,  ALCOHOLIC DRINK",
 			"zh": "酒",
 			"ms": "MINUMAN ARAK"
 		},
@@ -2477,8 +2477,8 @@
 	{
 		"number": "275",
 		"content": {
-			"en": "TROUSER, PANTS, LONG PANT",
-			"zh": "裤子,长裤",
+			"en": "TROUSER,  PANTS,  LONG PANT",
+			"zh": "裤子, 长裤",
 			"ms": "SELUAR"
 		},
 		"image": "gzt_275.webp"
@@ -2495,9 +2495,9 @@
 	{
 		"number": "277",
 		"content": {
-			"en": "JIANG ZIYA, JIANG TAIGONG",
-			"zh": "姜子牙,姜太公",
-			"ms": "JIANG ZIYA, JIANG TAIGONG"
+			"en": "JIANG ZIYA,  JIANG TAIGONG",
+			"zh": "姜子牙, 姜太公",
+			"ms": "JIANG ZIYA,  JIANG TAIGONG"
 		},
 		"image": "gzt_277.webp"
 	},
@@ -2541,7 +2541,7 @@
 		"number": "282",
 		"content": {
 			"en": "FRY PAN",
-			"zh": "锅,镬",
+			"zh": "锅, 镬",
 			"ms": "KUALI GORENG"
 		},
 		"image": "gzt_282.webp"
@@ -2586,7 +2586,7 @@
 		"number": "287",
 		"content": {
 			"en": "WHEAT FLOUR",
-			"zh": "面粉,小麦粉",
+			"zh": "面粉, 小麦粉",
 			"ms": "TEPUNG"
 		},
 		"image": "gzt_287.webp"
@@ -2657,7 +2657,7 @@
 	{
 		"number": "295",
 		"content": {
-			"en": "CLAMS, SHELL, CORBICULIDAE",
+			"en": "CLAMS,  SHELL,  CORBICULIDAE",
 			"zh": "蚬子",
 			"ms": "CORBICULIDAE"
 		},
@@ -2694,7 +2694,7 @@
 		"number": "299",
 		"content": {
 			"en": "PEN KNIFE",
-			"zh": "小刀,多功能刀",
+			"zh": "小刀, 多功能刀",
 			"ms": "PISAU PEN"
 		},
 		"image": "gzt_299.webp"
@@ -2721,7 +2721,7 @@
 		"number": "302",
 		"content": {
 			"en": "WIRE",
-			"zh": "吕线,电线",
+			"zh": "吕线, 电线",
 			"ms": "WAYAR"
 		},
 		"image": "gzt_302.webp"
@@ -2730,7 +2730,7 @@
 		"number": "303",
 		"content": {
 			"en": "TAMARIND",
-			"zh": "亜三糕,罗望子",
+			"zh": "亜三糕, 罗望子",
 			"ms": "ASAM JAWA"
 		},
 		"image": "gzt_303.webp"
@@ -2748,7 +2748,7 @@
 		"number": "305",
 		"content": {
 			"en": "SERVANT",
-			"zh": "女佣,佣人",
+			"zh": "女佣, 佣人",
 			"ms": "PEMBANTU RUMAH"
 		},
 		"image": "gzt_305.webp"
@@ -2784,7 +2784,7 @@
 		"number": "309",
 		"content": {
 			"en": "PAPER FAN",
-			"zh": "扇子,纸扇",
+			"zh": "扇子, 纸扇",
 			"ms": "KIPAS KERTAS"
 		},
 		"image": "gzt_309.webp"
@@ -2793,7 +2793,7 @@
 		"number": "310",
 		"content": {
 			"en": "GOLD ROD",
-			"zh": "金棒,金箍棒",
+			"zh": "金棒, 金箍棒",
 			"ms": "BATANG EMAS"
 		},
 		"image": "gzt_310.webp"
@@ -2810,16 +2810,16 @@
 	{
 		"number": "312",
 		"content": {
-			"en": "DEEPLY CONCERNED, HE TASTED HIS FATHER'S STOOL: QIANLOU",
-			"zh": "黔娄尝粪, 尝粪忧心",
-			"ms": "SANGAT PRIHATIN, DIA MERASA NAJIS AYAHNYA: QIANLOU"
+			"en": "DEEPLY CONCERNED,  HE TASTED HIS FATHER'S STOOL: QIANLOU",
+			"zh": "黔娄尝粪,  尝粪忧心",
+			"ms": "SANGAT PRIHATIN,  DIA MERASA NAJIS AYAHNYA: QIANLOU"
 		},
 		"image": "gzt_312.webp"
 	},
 	{
 		"number": "313",
 		"content": {
-			"en": "RIDGE, CLIFF",
+			"en": "RIDGE,  CLIFF",
 			"zh": "悬崖",
 			"ms": "CENURAM"
 		},
@@ -2837,7 +2837,7 @@
 	{
 		"number": "315",
 		"content": {
-			"en": "LIZARD, GECKO",
+			"en": "LIZARD,  GECKO",
 			"zh": "壁虎",
 			"ms": "CICAK"
 		},
@@ -2874,7 +2874,7 @@
 		"number": "319",
 		"content": {
 			"en": "WINE SHOP",
-			"zh": "酒肆,酒馆",
+			"zh": "酒肆, 酒馆",
 			"ms": "KEDAI ARAK"
 		},
 		"image": "gzt_319.webp"
@@ -2901,7 +2901,7 @@
 		"number": "322",
 		"content": {
 			"en": "OLD MAN OF THE SOUTH POLE",
-			"zh": "寿星公, 南极仙翁",
+			"zh": "寿星公,  南极仙翁",
 			"ms": "ORANG TUA KUTUB SELATAN"
 		},
 		"image": "gzt_322.webp"
@@ -2919,7 +2919,7 @@
 		"number": "324",
 		"content": {
 			"en": "BATH ROOM",
-			"zh": "浴室,冲凉房",
+			"zh": "浴室, 冲凉房",
 			"ms": "BILIK MANDI"
 		},
 		"image": "gzt_324.webp"
@@ -2937,7 +2937,7 @@
 		"number": "326",
 		"content": {
 			"en": "LOQUAT",
-			"zh": "枇杷,批把,琵琶果",
+			"zh": "枇杷, 批把, 琵琶果",
 			"ms": "LOQUAT"
 		},
 		"image": "gzt_326.webp"
@@ -2945,7 +2945,7 @@
 	{
 		"number": "327",
 		"content": {
-			"en": "SITTING ROOM, LIVING ROOM",
+			"en": "SITTING ROOM,  LIVING ROOM",
 			"zh": "客厅",
 			"ms": "RUANG TAMU"
 		},
@@ -2954,8 +2954,8 @@
 	{
 		"number": "328",
 		"content": {
-			"en": "THREAD, STRING",
-			"zh": "线,丝",
+			"en": "THREAD,  STRING",
+			"zh": "线, 丝",
 			"ms": "BENANG"
 		},
 		"image": "gzt_328.webp"
@@ -2963,9 +2963,9 @@
 	{
 		"number": "329",
 		"content": {
-			"en": "SILVER COIN, MONEY",
-			"zh": "钱币,大银,银币",
-			"ms": "SYILING PERAK, WANG"
+			"en": "SILVER COIN,  MONEY",
+			"zh": "钱币, 大银, 银币",
+			"ms": "SYILING PERAK,  WANG"
 		},
 		"image": "gzt_329.webp"
 	},
@@ -2990,7 +2990,7 @@
 	{
 		"number": "332",
 		"content": {
-			"en": "HONEYCOMB, BEEHIVE",
+			"en": "HONEYCOMB,  BEEHIVE",
 			"zh": "蜜蜂巢",
 			"ms": "SARANG LEBAH"
 		},
@@ -3026,8 +3026,8 @@
 	{
 		"number": "336",
 		"content": {
-			"en": "LORRY, TRUCK",
-			"zh": "罗里,货车,卡车",
+			"en": "LORRY,  TRUCK",
+			"zh": "罗里, 货车, 卡车",
 			"ms": "LORI"
 		},
 		"image": "gzt_336.webp"
@@ -3171,7 +3171,7 @@
 		"number": "352",
 		"content": {
 			"en": "CIGARETTE",
-			"zh": "香烟,烟枝",
+			"zh": "香烟, 烟枝",
 			"ms": "ROKOK"
 		},
 		"image": "gzt_352.webp"
@@ -3216,7 +3216,7 @@
 		"number": "357",
 		"content": {
 			"en": "CHAYOTE",
-			"zh": "佛手瓜,九爪木",
+			"zh": "佛手瓜, 九爪木",
 			"ms": "CHAYOTE"
 		},
 		"image": "gzt_357.webp"
@@ -3225,7 +3225,7 @@
 		"number": "358",
 		"content": {
 			"en": "SHRINE",
-			"zh": "佛龛,神社",
+			"zh": "佛龛, 神社",
 			"ms": "MEZBAH"
 		},
 		"image": "gzt_358.webp"
@@ -3242,9 +3242,9 @@
 	{
 		"number": "360",
 		"content": {
-			"en": "GHOST, IMP",
-			"zh": "小鬼,鬼差",
-			"ms": "HANTU, IMP"
+			"en": "GHOST,  IMP",
+			"zh": "小鬼, 鬼差",
+			"ms": "HANTU,  IMP"
 		},
 		"image": "gzt_360.webp"
 	},
@@ -3260,9 +3260,9 @@
 	{
 		"number": "362",
 		"content": {
-			"en": "GUANYIN, GODDESS OF MERCY",
+			"en": "GUANYIN,  GODDESS OF MERCY",
 			"zh": "观音菩萨",
-			"ms": "GUANYIN, DEWI KERAHIMAN"
+			"ms": "GUANYIN,  DEWI KERAHIMAN"
 		},
 		"image": "gzt_362.webp"
 	},
@@ -3279,7 +3279,7 @@
 		"number": "364",
 		"content": {
 			"en": "ATTRACTING MOSQUITOES TO DRINK HIS BLOOD: WU MENG",
-			"zh": "吴猛恣蚊，姿蚊饱血",
+			"zh": "吴猛恣蚊， 姿蚊饱血",
 			"ms": "MENARIK NYAMUK UNTUK MINUM DARAHNYA: WU MENG"
 		},
 		"image": "gzt_364.webp"
@@ -3287,17 +3287,17 @@
 	{
 		"number": "365",
 		"content": {
-			"en": "DAFFODIL, NARCISSUS",
+			"en": "DAFFODIL,  NARCISSUS",
 			"zh": "水仙花",
-			"ms": "DAFFODIL, NARCISSUS"
+			"ms": "DAFFODIL,  NARCISSUS"
 		},
 		"image": "gzt_365.webp"
 	},
 	{
 		"number": "366",
 		"content": {
-			"en": "AQUARIUM, FISH TANK",
-			"zh": "鱼池,鱼缸",
+			"en": "AQUARIUM,  FISH TANK",
+			"zh": "鱼池, 鱼缸",
 			"ms": "AKUARIUM"
 		},
 		"image": "gzt_366.webp"
@@ -3306,7 +3306,7 @@
 		"number": "367",
 		"content": {
 			"en": "SHIRT",
-			"zh": "恤衣,衬衫",
+			"zh": "恤衣, 衬衫",
 			"ms": "BAJU"
 		},
 		"image": "gzt_367.webp"
@@ -3315,7 +3315,7 @@
 		"number": "368",
 		"content": {
 			"en": "SWEET POTATO",
-			"zh": "番薯,地瓜",
+			"zh": "番薯, 地瓜",
 			"ms": "KELEDEK"
 		},
 		"image": "gzt_368.webp"
@@ -3323,8 +3323,8 @@
 	{
 		"number": "369",
 		"content": {
-			"en": "MOTORCYCLE, MOTORBIKE",
-			"zh": "电单车,摩托",
+			"en": "MOTORCYCLE,  MOTORBIKE",
+			"zh": "电单车, 摩托",
 			"ms": "MOTOSIKAL"
 		},
 		"image": "gzt_369.webp"
@@ -3360,7 +3360,7 @@
 		"number": "373",
 		"content": {
 			"en": "FEATHER BRUSH",
-			"zh": "毛扫,鸡毛扫",
+			"zh": "毛扫, 鸡毛扫",
 			"ms": "BERUS BULU"
 		},
 		"image": "gzt_373.webp"
@@ -3368,8 +3368,8 @@
 	{
 		"number": "374",
 		"content": {
-			"en": "PURSE, WALLET",
-			"zh": "皮包,钱包,钱袋",
+			"en": "PURSE,  WALLET",
+			"zh": "皮包, 钱包, 钱袋",
 			"ms": "DOMPET"
 		},
 		"image": "gzt_374.webp"
@@ -3405,7 +3405,7 @@
 		"number": "378",
 		"content": {
 			"en": "TEA",
-			"zh": "茶,茶叶,茶树",
+			"zh": "茶, 茶叶, 茶树",
 			"ms": "TEH"
 		},
 		"image": "gzt_378.webp"
@@ -3414,7 +3414,7 @@
 		"number": "379",
 		"content": {
 			"en": "FAIRY WAND",
-			"zh": "仙杖,魔法杖",
+			"zh": "仙杖, 魔法杖",
 			"ms": "TONGKAT PERI"
 		},
 		"image": "gzt_379.webp"
@@ -3422,8 +3422,8 @@
 	{
 		"number": "380",
 		"content": {
-			"en": "ABDOMEN, BELLY",
-			"zh": "腹部,肚子",
+			"en": "ABDOMEN,  BELLY",
+			"zh": "腹部, 肚子",
 			"ms": "PERUT"
 		},
 		"image": "gzt_380.webp"
@@ -3458,16 +3458,16 @@
 	{
 		"number": "384",
 		"content": {
-			"en": "EARTHWORM, WORM",
+			"en": "EARTHWORM,  WORM",
 			"zh": "蚯蚓",
-			"ms": "CACING TANAH, CACING"
+			"ms": "CACING TANAH,  CACING"
 		},
 		"image": "gzt_384.webp"
 	},
 	{
 		"number": "385",
 		"content": {
-			"en": "WHISK, TOAIST FAN",
+			"en": "WHISK,  TOAIST FAN",
 			"zh": "拂尘",
 			"ms": "PUKUL"
 		},
@@ -3476,8 +3476,8 @@
 	{
 		"number": "386",
 		"content": {
-			"en": "LETTER BOX, MAILBOX",
-			"zh": "信筒,信箱",
+			"en": "LETTER BOX,  MAILBOX",
+			"zh": "信筒, 信箱",
 			"ms": "PETI SURAT"
 		},
 		"image": "gzt_386.webp"
@@ -3531,7 +3531,7 @@
 		"number": "392",
 		"content": {
 			"en": "CLOTH",
-			"zh": "布匹,布疋",
+			"zh": "布匹, 布疋",
 			"ms": "KAIN"
 		},
 		"image": "gzt_392.webp"
@@ -3549,7 +3549,7 @@
 		"number": "394",
 		"content": {
 			"en": "PRIEST",
-			"zh": "神父,牧师",
+			"zh": "神父, 牧师",
 			"ms": "IMAM"
 		},
 		"image": "gzt_394.webp"
@@ -3567,7 +3567,7 @@
 		"number": "396",
 		"content": {
 			"en": "BARLEY",
-			"zh": "薏米,苡米",
+			"zh": "薏米, 苡米",
 			"ms": "BARLI"
 		},
 		"image": "gzt_396.webp"
@@ -3575,7 +3575,7 @@
 	{
 		"number": "397",
 		"content": {
-			"en": "STARFRUIT, CARAMBOLA",
+			"en": "STARFRUIT,  CARAMBOLA",
 			"zh": "杨桃",
 			"ms": "CARAMBOLA"
 		},
@@ -3585,7 +3585,7 @@
 		"number": "398",
 		"content": {
 			"en": "JACKFRUIT",
-			"zh": "尖必打,菠萝蜜,尖不辣",
+			"zh": "尖必打, 菠萝蜜, 尖不辣",
 			"ms": "BUAH NANGKA"
 		},
 		"image": "gzt_398.webp"
@@ -3593,8 +3593,8 @@
 	{
 		"number": "399",
 		"content": {
-			"en": "DANCER, DANCE GIRL",
-			"zh": "舞女,伴舞女郎",
+			"en": "DANCER,  DANCE GIRL",
+			"zh": "舞女, 伴舞女郎",
 			"ms": "PENARI"
 		},
 		"image": "gzt_399.webp"
@@ -3620,7 +3620,7 @@
 	{
 		"number": "402",
 		"content": {
-			"en": "MIHUN, RICE NOODLES, RICE VERMICELLI",
+			"en": "MIHUN,  RICE NOODLES,  RICE VERMICELLI",
 			"zh": "米粉",
 			"ms": "BIHUN BERAS"
 		},
@@ -3629,7 +3629,7 @@
 	{
 		"number": "403",
 		"content": {
-			"en": "LETTER, MAIL",
+			"en": "LETTER,  MAIL",
 			"zh": "信件",
 			"ms": "SURAT"
 		},
@@ -3648,7 +3648,7 @@
 		"number": "405",
 		"content": {
 			"en": "BAMBOO",
-			"zh": "竹子,竹竿",
+			"zh": "竹子, 竹竿",
 			"ms": "BULUH"
 		},
 		"image": "gzt_405.webp"
@@ -3666,7 +3666,7 @@
 		"number": "407",
 		"content": {
 			"en": "CORPES",
-			"zh": "尸体,死尸",
+			"zh": "尸体, 死尸",
 			"ms": "MAYAT"
 		},
 		"image": "gzt_407.webp"
@@ -3683,7 +3683,7 @@
 	{
 		"number": "409",
 		"content": {
-			"en": "PINANG, BETEL NUT",
+			"en": "PINANG,  BETEL NUT",
 			"zh": "槟榔",
 			"ms": "PINANG"
 		},
@@ -3747,7 +3747,7 @@
 		"number": "416",
 		"content": {
 			"en": "BANANA",
-			"zh": "香蕉,芭蕉",
+			"zh": "香蕉, 芭蕉",
 			"ms": "PISANG"
 		},
 		"image": "gzt_416.webp"
@@ -3783,7 +3783,7 @@
 		"number": "420",
 		"content": {
 			"en": "CRYING BY THE GRAVE WHEN THUNDER ROLLED: WANG POU",
-			"zh": "王哀哭墓，闻雷泣墓",
+			"zh": "王哀哭墓， 闻雷泣墓",
 			"ms": "MENANGIS DI TEPI KUBUR KETIKA GURUH BERGULUNG: WANG POU"
 		},
 		"image": "gzt_420.webp"
@@ -3792,7 +3792,7 @@
 		"number": "421",
 		"content": {
 			"en": "TAPIOCA",
-			"zh": "茨粉,淀粉,太白粉,生粉,木薯粉",
+			"zh": "茨粉, 淀粉, 太白粉, 生粉, 木薯粉",
 			"ms": "TEPUNG UBI KAYU"
 		},
 		"image": "gzt_421.webp"
@@ -3891,7 +3891,7 @@
 		"number": "432",
 		"content": {
 			"en": "CHICKEN COOP",
-			"zh": "鸡栖,鸡寮",
+			"zh": "鸡栖, 鸡寮",
 			"ms": "REBAN AYAM"
 		},
 		"image": "gzt_432.webp"
@@ -3909,7 +3909,7 @@
 		"number": "434",
 		"content": {
 			"en": "LYING DOWN ON THE ICE TO GET CARP FOR HIS STEPMOTHER: WANG XIANG",
-			"zh": "王祥卧冰，卧冰求鲤",
+			"zh": "王祥卧冰， 卧冰求鲤",
 			"ms": "BERBARING DI ATAS AIS UNTUK MENDAPATKAN IKAN MAS UNTUK IBU TIRINYA: WANG XIANG"
 		},
 		"image": "gzt_434.webp"
@@ -3918,7 +3918,7 @@
 		"number": "435",
 		"content": {
 			"en": "MEASURE",
-			"zh": "升,量水器",
+			"zh": "升, 量水器",
 			"ms": "UKUR"
 		},
 		"image": "gzt_435.webp"
@@ -3927,7 +3927,7 @@
 		"number": "436",
 		"content": {
 			"en": "MANDARIN ORANGE",
-			"zh": "橘子,橙",
+			"zh": "橘子, 橙",
 			"ms": "LIMAU MANDARIN"
 		},
 		"image": "gzt_436.webp"
@@ -3945,7 +3945,7 @@
 		"number": "438",
 		"content": {
 			"en": "BASIN",
-			"zh": "盆,水盆",
+			"zh": "盆, 水盆",
 			"ms": "BESEN"
 		},
 		"image": "gzt_438.webp"
@@ -3972,7 +3972,7 @@
 		"number": "441",
 		"content": {
 			"en": "SPITTOON",
-			"zh": "盂,痰盂",
+			"zh": "盂, 痰盂",
 			"ms": "LUDAH"
 		},
 		"image": "gzt_441.webp"
@@ -4008,7 +4008,7 @@
 		"number": "445",
 		"content": {
 			"en": "GARLIC",
-			"zh": "蒜, 蒜头,大蒜",
+			"zh": "蒜,  蒜头, 大蒜",
 			"ms": "BAWANG PUTIH"
 		},
 		"image": "gzt_445.webp"
@@ -4017,7 +4017,7 @@
 		"number": "446",
 		"content": {
 			"en": "SUITCASE",
-			"zh": "皮箱,行李箱",
+			"zh": "皮箱, 行李箱",
 			"ms": "BEG PAKAIAN"
 		},
 		"image": "gzt_446.webp"
@@ -4026,7 +4026,7 @@
 		"number": "447",
 		"content": {
 			"en": "BABY",
-			"zh": "婴孩,宝宝,婴儿",
+			"zh": "婴孩, 宝宝, 婴儿",
 			"ms": "BAYI"
 		},
 		"image": "gzt_447.webp"
@@ -4053,7 +4053,7 @@
 		"number": "450",
 		"content": {
 			"en": "ROPE",
-			"zh": "棕索,绳子,绳索",
+			"zh": "棕索, 绳子, 绳索",
 			"ms": "TALI"
 		},
 		"image": "gzt_450.webp"
@@ -4098,7 +4098,7 @@
 		"number": "455",
 		"content": {
 			"en": "SERVING WOODEN STATUES OF HIS PARENTS: DING LAN",
-			"zh": "丁兰刻木，刻木事亲",
+			"zh": "丁兰刻木， 刻木事亲",
 			"ms": "MELAYAN PATUNG KAYU IBU BAPANYA: DING LAN"
 		},
 		"image": "gzt_455.webp"
@@ -4143,7 +4143,7 @@
 		"number": "460",
 		"content": {
 			"en": "RICH PERSON",
-			"zh": "富翁,富豪",
+			"zh": "富翁, 富豪",
 			"ms": "JUTAWAN"
 		},
 		"image": "gzt_460.webp"
@@ -4206,7 +4206,7 @@
 		"number": "467",
 		"content": {
 			"en": "HAIR CREAM",
-			"zh": "发膏,发胶",
+			"zh": "发膏, 发胶",
 			"ms": "KRIM RAMBUT"
 		},
 		"image": "gzt_467.webp"
@@ -4233,7 +4233,7 @@
 		"number": "470",
 		"content": {
 			"en": "CHOPSTICK TUBE",
-			"zh": "筷筒,筷子",
+			"zh": "筷筒, 筷子",
 			"ms": "TIUB PENYEPIT"
 		},
 		"image": "gzt_470.webp"
@@ -4241,8 +4241,8 @@
 	{
 		"number": "471",
 		"content": {
-			"en": "JOSS PAPER, PAPER MONEY",
-			"zh": "金纸, 冥紙, 纸钱",
+			"en": "JOSS PAPER,  PAPER MONEY",
+			"zh": "金纸,  冥紙,  纸钱",
 			"ms": "KERTAS JOSS"
 		},
 		"image": "gzt_471.webp"
@@ -4259,7 +4259,7 @@
 	{
 		"number": "473",
 		"content": {
-			"en": "HYACINTH BEAN, INDIAN BEAN",
+			"en": "HYACINTH BEAN,  INDIAN BEAN",
 			"zh": "扁豆",
 			"ms": "KACANG HYACINTH"
 		},
@@ -4277,8 +4277,8 @@
 	{
 		"number": "475",
 		"content": {
-			"en": "GRAMOPHONE, PHONOGRAPH",
-			"zh": "留声机, 电唱机",
+			"en": "GRAMOPHONE,  PHONOGRAPH",
+			"zh": "留声机,  电唱机",
 			"ms": "FONOGRAF"
 		},
 		"image": "gzt_475.webp"
@@ -4304,8 +4304,8 @@
 	{
 		"number": "478",
 		"content": {
-			"en": "MANDARIN, MANDARINE",
-			"zh": "柑, 年柑, 柑桔",
+			"en": "MANDARIN,  MANDARINE",
+			"zh": "柑,  年柑,  柑桔",
 			"ms": "MANDARIN"
 		},
 		"image": "gzt_478.webp"
@@ -4359,7 +4359,7 @@
 		"number": "484",
 		"content": {
 			"en": "SCALLION",
-			"zh": "葱,香葱,青葱",
+			"zh": "葱, 香葱, 青葱",
 			"ms": "DAUN BAWANG"
 		},
 		"image": "gzt_484.webp"
@@ -4386,7 +4386,7 @@
 		"number": "487",
 		"content": {
 			"en": "PHONOGRAPH RECORD",
-			"zh": "唱片,唱碟",
+			"zh": "唱片, 唱碟",
 			"ms": "REKOD FONOGRAF"
 		},
 		"image": "gzt_487.webp"
@@ -4413,7 +4413,7 @@
 		"number": "490",
 		"content": {
 			"en": "FORTUNE TELLER",
-			"zh": "相士,相师,算命先生",
+			"zh": "相士, 相师, 算命先生",
 			"ms": "PENILIK NASIB"
 		},
 		"image": "gzt_490.webp"
@@ -4457,9 +4457,9 @@
 	{
 		"number": "495",
 		"content": {
-			"en": "WANDERER , GANGSTER , ROGUE",
-			"zh": "流氓,恶棍",
-			"ms": "SAMSENG, PENYANGAK"
+			"en": "WANDERER ,  GANGSTER ,  ROGUE",
+			"zh": "流氓, 恶棍",
+			"ms": "SAMSENG,  PENYANGAK"
 		},
 		"image": "gzt_495.webp"
 	},
@@ -4512,7 +4512,7 @@
 		"number": "501",
 		"content": {
 			"en": "EMPEROR",
-			"zh": "天子,皇帝",
+			"zh": "天子, 皇帝",
 			"ms": "MAHARAJA"
 		},
 		"image": "gzt_501.webp"
@@ -4565,9 +4565,9 @@
 	{
 		"number": "507",
 		"content": {
-			"en": "DRAWING BOOK , MAGAZINE",
-			"zh": "图书,画集,杂志",
-			"ms": "BUKU LUKISAN , MAJALAH"
+			"en": "DRAWING BOOK ,  MAGAZINE",
+			"zh": "图书, 画集, 杂志",
+			"ms": "BUKU LUKISAN ,  MAJALAH"
 		},
 		"image": "gzt_507.webp"
 	},
@@ -4575,7 +4575,7 @@
 		"number": "508",
 		"content": {
 			"en": "GOAT FENCE",
-			"zh": "羊牢,羊栏",
+			"zh": "羊牢, 羊栏",
 			"ms": "KANDANG BIRI-BIRI"
 		},
 		"image": "gzt_508.webp"
@@ -4637,7 +4637,7 @@
 	{
 		"number": "515",
 		"content": {
-			"en": "RED BAY , STRAWBERRY",
+			"en": "RED BAY ,  STRAWBERRY",
 			"zh": "杨梅",
 			"ms": "BAYBERRY"
 		},
@@ -4674,7 +4674,7 @@
 		"number": "519",
 		"content": {
 			"en": "HUNCHBACK",
-			"zh": "驼子,驼背",
+			"zh": "驼子, 驼背",
 			"ms": "BONGKOK"
 		},
 		"image": "gzt_519.webp"
@@ -4700,9 +4700,9 @@
 	{
 		"number": "522",
 		"content": {
-			"en": "RIVER SNAILS , BELITUNG , BALITONG",
+			"en": "RIVER SNAILS ,  BELITUNG ,  BALITONG",
 			"zh": "螺蛳",
-			"ms": "SIPUT SUNGAI , BELITUNG , BALITONG"
+			"ms": "SIPUT SUNGAI ,  BELITUNG ,  BALITONG"
 		},
 		"image": "gzt_522.webp"
 	},
@@ -4710,7 +4710,7 @@
 		"number": "523",
 		"content": {
 			"en": "INK BOX",
-			"zh": "墨斗,线墨",
+			"zh": "墨斗, 线墨",
 			"ms": "KOTAK DAKWAT"
 		},
 		"image": "gzt_523.webp"
@@ -4737,7 +4737,7 @@
 		"number": "526",
 		"content": {
 			"en": "HEDGEHOG",
-			"zh": "河猪,箭猪,刺猬",
+			"zh": "河猪, 箭猪, 刺猬",
 			"ms": "BABI SUNGAI"
 		},
 		"image": "gzt_526.webp"
@@ -4763,8 +4763,8 @@
 	{
 		"number": "529",
 		"content": {
-			"en": "APE,GORILLA",
-			"zh": "猩猩,猿",
+			"en": "APE, GORILLA",
+			"zh": "猩猩, 猿",
 			"ms": "CIMPANZI"
 		},
 		"image": "gzt_529.webp"
@@ -4862,8 +4862,8 @@
 	{
 		"number": "540",
 		"content": {
-			"en": "BUTTON , BRASS BUTTON",
-			"zh": "纽扣,铜钮",
+			"en": "BUTTON ,  BRASS BUTTON",
+			"zh": "纽扣, 铜钮",
 			"ms": "BUTANG TEMBAGA"
 		},
 		"image": "gzt_540.webp"
@@ -4880,7 +4880,7 @@
 	{
 		"number": "542",
 		"content": {
-			"en": "GIEK , CLOG SHOES",
+			"en": "GIEK ,  CLOG SHOES",
 			"zh": "木屐",
 			"ms": "TEROMPAH"
 		},
@@ -4908,7 +4908,7 @@
 		"number": "545",
 		"content": {
 			"en": "SAMPAN",
-			"zh": "舢舨,舟,小船",
+			"zh": "舢舨, 舟, 小船",
 			"ms": "SAMPAN"
 		},
 		"image": "gzt_545.webp"
@@ -4944,7 +4944,7 @@
 		"number": "549",
 		"content": {
 			"en": "CLOVE",
-			"zh": "丁香,丁子香",
+			"zh": "丁香, 丁子香",
 			"ms": "BUNGA CENGKIH"
 		},
 		"image": "gzt_549.webp"
@@ -4998,7 +4998,7 @@
 		"number": "555",
 		"content": {
 			"en": "OLIVE",
-			"zh": "橄榄,青果",
+			"zh": "橄榄, 青果",
 			"ms": "BUAH ZAITUN"
 		},
 		"image": "gzt_555.webp"
@@ -5016,7 +5016,7 @@
 		"number": "557",
 		"content": {
 			"en": "ANGLE RULER",
-			"zh": "曲尺,工尺",
+			"zh": "曲尺, 工尺",
 			"ms": "PEMBARIS SUDUT"
 		},
 		"image": "gzt_557.webp"
@@ -5070,7 +5070,7 @@
 		"number": "563",
 		"content": {
 			"en": "WATER CHESTNUT",
-			"zh": "菱角,水栗",
+			"zh": "菱角, 水栗",
 			"ms": "BUAH BERANGAN"
 		},
 		"image": "gzt_563.webp"
@@ -5142,7 +5142,7 @@
 		"number": "571",
 		"content": {
 			"en": "TANG SAN ZANG",
-			"zh": "唐三藏,唐憎",
+			"zh": "唐三藏, 唐憎",
 			"ms": "TANG SAN ZANG"
 		},
 		"image": "gzt_571.webp"
@@ -5195,9 +5195,9 @@
 	{
 		"number": "577",
 		"content": {
-			"en": "HORSEBEAN , BROADBEAN",
-			"zh": "蚕豆,胡豆,佛豆,川豆,倭豆,罗汉豆",
-			"ms": "KACANG KUDA ,  KACANG LUAS"
+			"en": "HORSEBEAN ,  BROADBEAN",
+			"zh": "蚕豆, 胡豆, 佛豆, 川豆, 倭豆, 罗汉豆",
+			"ms": "KACANG KUDA ,   KACANG LUAS"
 		},
 		"image": "gzt_577.webp"
 	},
@@ -5213,8 +5213,8 @@
 	{
 		"number": "579",
 		"content": {
-			"en": "HAIR MOUSSE , SHAVING CREAM",
-			"zh": "剃须膏,雪花膏",
+			"en": "HAIR MOUSSE ,  SHAVING CREAM",
+			"zh": "剃须膏, 雪花膏",
 			"ms": "KRIM YANG HILANG"
 		},
 		"image": "gzt_579.webp"
@@ -5277,7 +5277,7 @@
 		"number": "586",
 		"content": {
 			"en": "WATER CHESTNUT",
-			"zh": "马蹄,荸荠",
+			"zh": "马蹄, 荸荠",
 			"ms": "BUAH BERANGAN"
 		},
 		"image": "gzt_586.webp"
@@ -5295,7 +5295,7 @@
 		"number": "588",
 		"content": {
 			"en": "ICE CREAM",
-			"zh": "冰淇淋,雪糕",
+			"zh": "冰淇淋, 雪糕",
 			"ms": "AIS KRIM"
 		},
 		"image": "gzt_588.webp"
@@ -5313,7 +5313,7 @@
 		"number": "590",
 		"content": {
 			"en": "SIGN BOARD",
-			"zh": "牌匾,招牌,标志牌",
+			"zh": "牌匾, 招牌, 标志牌",
 			"ms": "PAPAN TANDA"
 		},
 		"image": "gzt_590.webp"
@@ -5322,7 +5322,7 @@
 		"number": "591",
 		"content": {
 			"en": "DRAWER",
-			"zh": "抽屉,桌屉",
+			"zh": "抽屉, 桌屉",
 			"ms": "LACI"
 		},
 		"image": "gzt_591.webp"
@@ -5340,7 +5340,7 @@
 		"number": "593",
 		"content": {
 			"en": "MONKEY GOD",
-			"zh": "孙悟空,齐天大圣",
+			"zh": "孙悟空, 齐天大圣",
 			"ms": "SUN WU KONG"
 		},
 		"image": "gzt_593.webp"
@@ -5412,7 +5412,7 @@
 		"number": "601",
 		"content": {
 			"en": "TANG HAT",
-			"zh": "唐巾,唐帽",
+			"zh": "唐巾, 唐帽",
 			"ms": "TANG HAT"
 		},
 		"image": "gzt_601.webp"
@@ -5511,7 +5511,7 @@
 		"number": "612",
 		"content": {
 			"en": "POTATO",
-			"zh": "干冬薯,馬鈴薯",
+			"zh": "干冬薯, 馬鈴薯",
 			"ms": "KENTANG"
 		},
 		"image": "gzt_612.webp"
@@ -5555,9 +5555,9 @@
 	{
 		"number": "617",
 		"content": {
-			"en": "CAKE,MOONCAKE",
-			"zh": "饼,烧饼,月饼",
-			"ms": "KEK, KUIH BULAN"
+			"en": "CAKE, MOONCAKE",
+			"zh": "饼, 烧饼, 月饼",
+			"ms": "KEK,  KUIH BULAN"
 		},
 		"image": "gzt_617.webp"
 	},
@@ -5574,7 +5574,7 @@
 		"number": "619",
 		"content": {
 			"en": "ONION",
-			"zh": "大葱,洋葱",
+			"zh": "大葱, 洋葱",
 			"ms": "BAWANG BESAR"
 		},
 		"image": "gzt_619.webp"
@@ -5583,7 +5583,7 @@
 		"number": "620",
 		"content": {
 			"en": "BELACAN",
-			"zh": "巴拉煎,峇拉煎",
+			"zh": "巴拉煎, 峇拉煎",
 			"ms": "BELACAN"
 		},
 		"image": "gzt_620.webp"
@@ -5592,7 +5592,7 @@
 		"number": "621",
 		"content": {
 			"en": "STRAW COAT",
-			"zh": "貂套,草衣,蓑衣",
+			"zh": "貂套, 草衣, 蓑衣",
 			"ms": "STRAW COAT"
 		},
 		"image": "gzt_621.webp"
@@ -5636,9 +5636,9 @@
 	{
 		"number": "626",
 		"content": {
-			"en": "POINT,FINGER",
-			"zh": "指,手指",
-			"ms": "TITIK, JARI"
+			"en": "POINT, FINGER",
+			"zh": "指, 手指",
+			"ms": "TITIK,  JARI"
 		},
 		"image": "gzt_626.webp"
 	},
@@ -5709,7 +5709,7 @@
 		"number": "634",
 		"content": {
 			"en": "HAND",
-			"zh": "手,手掌",
+			"zh": "手, 手掌",
 			"ms": "TANGAN"
 		},
 		"image": "gzt_634.webp"
@@ -5807,7 +5807,7 @@
 	{
 		"number": "645",
 		"content": {
-			"en": "SPECTACLE,EYEGLASS",
+			"en": "SPECTACLE, EYEGLASS",
 			"zh": "眼镜",
 			"ms": "CERMIN MATA"
 		},
@@ -5834,8 +5834,8 @@
 	{
 		"number": "648",
 		"content": {
-			"en": "LEG,FOOT",
-			"zh": "足,脚",
+			"en": "LEG, FOOT",
+			"zh": "足, 脚",
 			"ms": "KAKI"
 		},
 		"image": "gzt_648.webp"
@@ -5925,7 +5925,7 @@
 		"number": "658",
 		"content": {
 			"en": "DRIED LILY",
-			"zh": "金针干,黄花菜",
+			"zh": "金针干, 黄花菜",
 			"ms": "BUNGA LILI KERING"
 		},
 		"image": "gzt_658.webp"
@@ -5934,7 +5934,7 @@
 		"number": "659",
 		"content": {
 			"en": "BED BUG",
-			"zh": "臭虫,床蝨",
+			"zh": "臭虫, 床蝨",
 			"ms": "PEPIJAT"
 		},
 		"image": "gzt_659.webp"
@@ -5961,7 +5961,7 @@
 		"number": "662",
 		"content": {
 			"en": "BREAST",
-			"zh": "乳房,胸部",
+			"zh": "乳房, 胸部",
 			"ms": "PAYUDARA"
 		},
 		"image": "gzt_662.webp"
@@ -5970,7 +5970,7 @@
 		"number": "663",
 		"content": {
 			"en": "CHISEL",
-			"zh": "錾刀,凿子",
+			"zh": "錾刀, 凿子",
 			"ms": "PAHAT"
 		},
 		"image": "gzt_663.webp"
@@ -6159,7 +6159,7 @@
 		"number": "684",
 		"content": {
 			"en": "MAGPIE ROBIN",
-			"zh": "四喜鸟,鹊鸲",
+			"zh": "四喜鸟, 鹊鸲",
 			"ms": "MURAI ROBIN"
 		},
 		"image": "gzt_684.webp"
@@ -6168,7 +6168,7 @@
 		"number": "685",
 		"content": {
 			"en": "HIBISCUS",
-			"zh": "芙蓉花,木莲",
+			"zh": "芙蓉花, 木莲",
 			"ms": "BUNGA RAYA"
 		},
 		"image": "gzt_685.webp"
@@ -6204,7 +6204,7 @@
 		"number": "689",
 		"content": {
 			"en": "KENNEL",
-			"zh": "狗窝,狗屋",
+			"zh": "狗窝, 狗屋",
 			"ms": "KENNEL"
 		},
 		"image": "gzt_689.webp"
@@ -6266,9 +6266,9 @@
 	{
 		"number": "696",
 		"content": {
-			"en": "OVERLORD OF CHU, XIANG YU",
-			"zh": "楚霸王,项羽",
-			"ms": "OVERLORD OF CHU, XIANG YU"
+			"en": "OVERLORD OF CHU,  XIANG YU",
+			"zh": "楚霸王, 项羽",
+			"ms": "OVERLORD OF CHU,  XIANG YU"
 		},
 		"image": "gzt_696.webp"
 	},
@@ -6321,7 +6321,7 @@
 		"number": "702",
 		"content": {
 			"en": "EEL",
-			"zh": "鳝鱼,黄鳝",
+			"zh": "鳝鱼, 黄鳝",
 			"ms": "BELUT"
 		},
 		"image": "gzt_702.webp"
@@ -6330,7 +6330,7 @@
 		"number": "703",
 		"content": {
 			"en": "PREGNANT",
-			"zh": "孕妇,大肚婆",
+			"zh": "孕妇, 大肚婆",
 			"ms": "PEREMPUAN MENGANDUNG"
 		},
 		"image": "gzt_703.webp"
@@ -6384,7 +6384,7 @@
 		"number": "709",
 		"content": {
 			"en": "CRY",
-			"zh": "哭,哭泣",
+			"zh": "哭, 哭泣",
 			"ms": "MENANGIS"
 		},
 		"image": "gzt_709.webp"
@@ -6420,7 +6420,7 @@
 		"number": "713",
 		"content": {
 			"en": "FACE",
-			"zh": "脸,面",
+			"zh": "脸, 面",
 			"ms": "MUKA"
 		},
 		"image": "gzt_713.webp"
@@ -6429,7 +6429,7 @@
 		"number": "714",
 		"content": {
 			"en": "RICE",
-			"zh": "米,饭",
+			"zh": "米, 饭",
 			"ms": "NASI"
 		},
 		"image": "gzt_714.webp"
@@ -6438,7 +6438,7 @@
 		"number": "715",
 		"content": {
 			"en": "LADLE",
-			"zh": "饭瓢,杓",
+			"zh": "饭瓢, 杓",
 			"ms": "SENDUK"
 		},
 		"image": "gzt_715.webp"
@@ -6456,7 +6456,7 @@
 		"number": "717",
 		"content": {
 			"en": "PHOTO",
-			"zh": "相片,照片",
+			"zh": "相片, 照片",
 			"ms": "FOTO"
 		},
 		"image": "gzt_717.webp"
@@ -6474,7 +6474,7 @@
 		"number": "719",
 		"content": {
 			"en": "CHESTNUT",
-			"zh": "栗子,粟子",
+			"zh": "栗子, 粟子",
 			"ms": "BERANGAN"
 		},
 		"image": "gzt_719.webp"
@@ -6500,8 +6500,8 @@
 	{
 		"number": "722",
 		"content": {
-			"en": "PRISONER, CONVICT,CRIMINAL",
-			"zh": "犯人,囚犯",
+			"en": "PRISONER,  CONVICT, CRIMINAL",
+			"zh": "犯人, 囚犯",
 			"ms": "BANDUAN"
 		},
 		"image": "gzt_722.webp"
@@ -6527,8 +6527,8 @@
 	{
 		"number": "725",
 		"content": {
-			"en": "OIL, COOKING OIL",
-			"zh": "油,食油",
+			"en": "OIL,  COOKING OIL",
+			"zh": "油, 食油",
 			"ms": "MINYAK"
 		},
 		"image": "gzt_725.webp"
@@ -6536,7 +6536,7 @@
 	{
 		"number": "726",
 		"content": {
-			"en": "COIN,MONEY",
+			"en": "COIN, MONEY",
 			"zh": "钱币",
 			"ms": "SYILING"
 		},
@@ -6546,7 +6546,7 @@
 		"number": "727",
 		"content": {
 			"en": "MOUTH",
-			"zh": "口,嘴巴",
+			"zh": "口, 嘴巴",
 			"ms": "MULUT"
 		},
 		"image": "gzt_727.webp"
@@ -6600,7 +6600,7 @@
 		"number": "733",
 		"content": {
 			"en": "PIPE",
-			"zh": "烟管,烟斗",
+			"zh": "烟管, 烟斗",
 			"ms": "PAIP"
 		},
 		"image": "gzt_733.webp"
@@ -6609,7 +6609,7 @@
 		"number": "734",
 		"content": {
 			"en": "SEDAN CHAIR",
-			"zh": "轿子,轿车,花轿",
+			"zh": "轿子, 轿车, 花轿",
 			"ms": "KERUSI SEDAN"
 		},
 		"image": "gzt_734.webp"
@@ -6617,9 +6617,9 @@
 	{
 		"number": "735",
 		"content": {
-			"en": "FLASK,THERMOS",
-			"zh": "热水壶,保温瓶,熱水瓶",
-			"ms": "KELALANG, TERMOS"
+			"en": "FLASK, THERMOS",
+			"zh": "热水壶, 保温瓶, 熱水瓶",
+			"ms": "KELALANG,  TERMOS"
 		},
 		"image": "gzt_735.webp"
 	},
@@ -6635,9 +6635,9 @@
 	{
 		"number": "737",
 		"content": {
-			"en": "BAO GONG , BAO QING TIAN",
-			"zh": "包公,包青天",
-			"ms": "BAO GONG , BAO QING TIAN"
+			"en": "BAO GONG ,  BAO QING TIAN",
+			"zh": "包公, 包青天",
+			"ms": "BAO GONG ,  BAO QING TIAN"
 		},
 		"image": "gzt_737.webp"
 	},
@@ -6645,7 +6645,7 @@
 		"number": "738",
 		"content": {
 			"en": "COAT",
-			"zh": "夹袍,长袍,方袍",
+			"zh": "夹袍, 长袍, 方袍",
 			"ms": "GAUN"
 		},
 		"image": "gzt_738.webp"
@@ -6671,9 +6671,9 @@
 	{
 		"number": "741",
 		"content": {
-			"en": "HAND CART,TROLLEY",
+			"en": "HAND CART, TROLLEY",
 			"zh": "手推车",
-			"ms": "KERETA TANGAN, TROLI"
+			"ms": "KERETA TANGAN,  TROLI"
 		},
 		"image": "gzt_741.webp"
 	},
@@ -6698,7 +6698,7 @@
 	{
 		"number": "744",
 		"content": {
-			"en": "TROUGH,MANGER",
+			"en": "TROUGH, MANGER",
 			"zh": "马槽",
 			"ms": "PALUNGAN"
 		},
@@ -6716,9 +6716,9 @@
 	{
 		"number": "746",
 		"content": {
-			"en": "COVER , CHICKEN HOOD",
-			"zh": "罩, 鸡罩",
-			"ms": "PENUTUP, TUDUNG AYAM"
+			"en": "COVER ,  CHICKEN HOOD",
+			"zh": "罩,  鸡罩",
+			"ms": "PENUTUP,  TUDUNG AYAM"
 		},
 		"image": "gzt_746.webp"
 	},
@@ -6734,9 +6734,9 @@
 	{
 		"number": "748",
 		"content": {
-			"en": "SKIRT , DRESS",
-			"zh": "裙,短裙",
-			"ms": "SKIRT, PAKAIAN"
+			"en": "SKIRT ,  DRESS",
+			"zh": "裙, 短裙",
+			"ms": "SKIRT,  PAKAIAN"
 		},
 		"image": "gzt_748.webp"
 	},
@@ -6762,7 +6762,7 @@
 		"number": "751",
 		"content": {
 			"en": "RAILWAY",
-			"zh": "铁路,火车路",
+			"zh": "铁路, 火车路",
 			"ms": "JALAN KERETA API"
 		},
 		"image": "gzt_751.webp"
@@ -6816,7 +6816,7 @@
 		"number": "757",
 		"content": {
 			"en": "EYES",
-			"zh": "眼睛,眼",
+			"zh": "眼睛, 眼",
 			"ms": "MATA"
 		},
 		"image": "gzt_757.webp"
@@ -6933,7 +6933,7 @@
 		"number": "770",
 		"content": {
 			"en": "SWIMWEAR",
-			"zh": "泳衣,泳装",
+			"zh": "泳衣, 泳装",
 			"ms": "BAJU RENANG"
 		},
 		"image": "gzt_770.webp"
@@ -6942,7 +6942,7 @@
 		"number": "771",
 		"content": {
 			"en": "MAYFLY",
-			"zh": "蜉蝣,一夜老",
+			"zh": "蜉蝣, 一夜老",
 			"ms": "MAYFLY"
 		},
 		"image": "gzt_771.webp"
@@ -6968,7 +6968,7 @@
 	{
 		"number": "774",
 		"content": {
-			"en": "PEDICAB,TRISHAW",
+			"en": "PEDICAB, TRISHAW",
 			"zh": "三轮车",
 			"ms": "BECA"
 		},
@@ -7005,7 +7005,7 @@
 		"number": "778",
 		"content": {
 			"en": "BASKET",
-			"zh": "菜篮,篮子",
+			"zh": "菜篮, 篮子",
 			"ms": "BAKUL"
 		},
 		"image": "gzt_778.webp"
@@ -7031,7 +7031,7 @@
 	{
 		"number": "781",
 		"content": {
-			"en": "EMBROIDERY,KNITTING",
+			"en": "EMBROIDERY, KNITTING",
 			"zh": "刺绣",
 			"ms": "SULAMAN"
 		},
@@ -7049,7 +7049,7 @@
 	{
 		"number": "783",
 		"content": {
-			"en": "CARRYING POLE , SHOULDER POLE",
+			"en": "CARRYING POLE ,  SHOULDER POLE",
 			"zh": "扁担",
 			"ms": "TIANG BAHU"
 		},
@@ -7113,7 +7113,7 @@
 		"number": "790",
 		"content": {
 			"en": "CANARY",
-			"zh": "金丝雀,芙蓉鸟,白玉鸟",
+			"zh": "金丝雀, 芙蓉鸟, 白玉鸟",
 			"ms": "KENARI"
 		},
 		"image": "gzt_790.webp"
@@ -7139,7 +7139,7 @@
 	{
 		"number": "793",
 		"content": {
-			"en": "SHIELD , BADGE",
+			"en": "SHIELD ,  BADGE",
 			"zh": "银盾",
 			"ms": "PERISAI PERAK"
 		},
@@ -7203,7 +7203,7 @@
 		"number": "800",
 		"content": {
 			"en": "BROADCASTING STATION",
-			"zh": "电台,电塔",
+			"zh": "电台, 电塔",
 			"ms": "STESEN PENYIARAN"
 		},
 		"image": "gzt_800.webp"
@@ -7238,8 +7238,8 @@
 	{
 		"number": "804",
 		"content": {
-			"en": "BALL , FOOTBALL",
-			"zh": "球,足球",
+			"en": "BALL ,  FOOTBALL",
+			"zh": "球, 足球",
 			"ms": "BOLA SEPAK"
 		},
 		"image": "gzt_804.webp"
@@ -7265,8 +7265,8 @@
 	{
 		"number": "807",
 		"content": {
-			"en": "PADDLE , OAR , RUDDLE",
-			"zh": "橹,船桨",
+			"en": "PADDLE ,  OAR ,  RUDDLE",
+			"zh": "橹, 船桨",
 			"ms": "DAYUNG"
 		},
 		"image": "gzt_807.webp"
@@ -7293,7 +7293,7 @@
 		"number": "810",
 		"content": {
 			"en": "DISH COVER",
-			"zh": "碗斗,菜盖",
+			"zh": "碗斗, 菜盖",
 			"ms": "PENUTUP SAYUR"
 		},
 		"image": "gzt_810.webp"
@@ -7302,7 +7302,7 @@
 		"number": "811",
 		"content": {
 			"en": "PATIENT",
-			"zh": "病人,伤者",
+			"zh": "病人, 伤者",
 			"ms": "SABAR"
 		},
 		"image": "gzt_811.webp"
@@ -7310,7 +7310,7 @@
 	{
 		"number": "812",
 		"content": {
-			"en": "PLOUGH , PLOW",
+			"en": "PLOUGH ,  PLOW",
 			"zh": "犁",
 			"ms": "MEMBAJAK"
 		},
@@ -7337,7 +7337,7 @@
 	{
 		"number": "815",
 		"content": {
-			"en": "SHOVEL , SPADE",
+			"en": "SHOVEL ,  SPADE",
 			"zh": "铁锹",
 			"ms": "PENYODOK"
 		},
@@ -7347,7 +7347,7 @@
 		"number": "816",
 		"content": {
 			"en": "FACE TOWEL",
-			"zh": "面巾, 毛巾",
+			"zh": "面巾,  毛巾",
 			"ms": "TUALA MUKA"
 		},
 		"image": "gzt_816.webp"
@@ -7364,8 +7364,8 @@
 	{
 		"number": "818",
 		"content": {
-			"en": "CLAW , PAW",
-			"zh": "爪,趾",
+			"en": "CLAW ,  PAW",
+			"zh": "爪, 趾",
 			"ms": "JARI KAKI"
 		},
 		"image": "gzt_818.webp"
@@ -7374,7 +7374,7 @@
 		"number": "819",
 		"content": {
 			"en": "MONK",
-			"zh": "和尚, 僧侣",
+			"zh": "和尚,  僧侣",
 			"ms": "SAMI"
 		},
 		"image": "gzt_819.webp"
@@ -7410,7 +7410,7 @@
 		"number": "823",
 		"content": {
 			"en": "REFUSE VESSEL",
-			"zh": "垃圾铲,簸箕",
+			"zh": "垃圾铲, 簸箕",
 			"ms": "PENYODOK SAMPAH"
 		},
 		"image": "gzt_823.webp"
@@ -7437,7 +7437,7 @@
 		"number": "826",
 		"content": {
 			"en": "VEGETABLE",
-			"zh": "青菜,蔬菜",
+			"zh": "青菜, 蔬菜",
 			"ms": "SAYUR"
 		},
 		"image": "gzt_826.webp"
@@ -7473,7 +7473,7 @@
 		"number": "830",
 		"content": {
 			"en": "BREAD",
-			"zh": "发,胡须",
+			"zh": "发, 胡须",
 			"ms": "JANGGUT"
 		},
 		"image": "gzt_830.webp"
@@ -7490,8 +7490,8 @@
 	{
 		"number": "832",
 		"content": {
-			"en": "PIGEON , DOVE",
-			"zh": "鸠,鸽子",
+			"en": "PIGEON ,  DOVE",
+			"zh": "鸠, 鸽子",
 			"ms": "BURUNG MERPATI"
 		},
 		"image": "gzt_832.webp"
@@ -7517,9 +7517,9 @@
 	{
 		"number": "835",
 		"content": {
-			"en": "CUTTER , PLIERS",
+			"en": "CUTTER ,  PLIERS",
 			"zh": "钳",
-			"ms": "PEMOTONG, TANG"
+			"ms": "PEMOTONG,  TANG"
 		},
 		"image": "gzt_835.webp"
 	},
@@ -7536,7 +7536,7 @@
 		"number": "837",
 		"content": {
 			"en": "BRA",
-			"zh": "胸罩,奶罩",
+			"zh": "胸罩, 奶罩",
 			"ms": "COLI"
 		},
 		"image": "gzt_837.webp"
@@ -7563,7 +7563,7 @@
 		"number": "840",
 		"content": {
 			"en": "BATH",
-			"zh": "冲凉,洗澡",
+			"zh": "冲凉, 洗澡",
 			"ms": "MANDI"
 		},
 		"image": "gzt_840.webp"
@@ -7671,7 +7671,7 @@
 		"number": "852",
 		"content": {
 			"en": "NUN",
-			"zh": "尼姑,道姑",
+			"zh": "尼姑, 道姑",
 			"ms": "NUN"
 		},
 		"image": "gzt_852.webp"
@@ -7679,9 +7679,9 @@
 	{
 		"number": "853",
 		"content": {
-			"en": "ROE DEER , WATER DEER",
+			"en": "ROE DEER ,  WATER DEER",
 			"zh": "獐",
-			"ms": "RUSA ROE , RUSA AIR"
+			"ms": "RUSA ROE ,  RUSA AIR"
 		},
 		"image": "gzt_853.webp"
 	},
@@ -7724,9 +7724,9 @@
 	{
 		"number": "858",
 		"content": {
-			"en": "STEAMSHIP , CRUISES",
-			"zh": "轮船,邮轮",
-			"ms": "KAPAL WAP , PELAYARAN"
+			"en": "STEAMSHIP ,  CRUISES",
+			"zh": "轮船, 邮轮",
+			"ms": "KAPAL WAP ,  PELAYARAN"
 		},
 		"image": "gzt_858.webp"
 	},
@@ -7734,7 +7734,7 @@
 		"number": "859",
 		"content": {
 			"en": "POCKET WATCH",
-			"zh": "怀表,陀表",
+			"zh": "怀表, 陀表",
 			"ms": "JAM POKET"
 		},
 		"image": "gzt_859.webp"
@@ -7779,7 +7779,7 @@
 		"number": "864",
 		"content": {
 			"en": "BEAN SPROUTS",
-			"zh": "豆芽,芽菜",
+			"zh": "豆芽, 芽菜",
 			"ms": "TAUGEH"
 		},
 		"image": "gzt_864.webp"
@@ -7787,9 +7787,9 @@
 	{
 		"number": "865",
 		"content": {
-			"en": "ZHU GE LIANG , KONG MING",
-			"zh": "诸葛亮,孔明",
-			"ms": "ZHU GE LIANG , KONG MING"
+			"en": "ZHU GE LIANG ,  KONG MING",
+			"zh": "诸葛亮, 孔明",
+			"ms": "ZHU GE LIANG ,  KONG MING"
 		},
 		"image": "gzt_865.webp"
 	},
@@ -7850,8 +7850,8 @@
 	{
 		"number": "872",
 		"content": {
-			"en": "RAKE , HARROW",
-			"zh": "耙,耙子",
+			"en": "RAKE ,  HARROW",
+			"zh": "耙, 耙子",
 			"ms": "MENYAPU"
 		},
 		"image": "gzt_872.webp"
@@ -7869,7 +7869,7 @@
 		"number": "874",
 		"content": {
 			"en": "OYSTER",
-			"zh": "蚝,蚵仔",
+			"zh": "蚝, 蚵仔",
 			"ms": "TIRAM"
 		},
 		"image": "gzt_874.webp"
@@ -7877,8 +7877,8 @@
 	{
 		"number": "875",
 		"content": {
-			"en": "PISTOL , GUN",
-			"zh": "短枪,手枪",
+			"en": "PISTOL ,  GUN",
+			"zh": "短枪, 手枪",
 			"ms": "PISTOL"
 		},
 		"image": "gzt_875.webp"
@@ -7922,8 +7922,8 @@
 	{
 		"number": "880",
 		"content": {
-			"en": "BUTT,BUTTOCK",
-			"zh": "臀部,屁股",
+			"en": "BUTT, BUTTOCK",
+			"zh": "臀部, 屁股",
 			"ms": "PUNGGUNG"
 		},
 		"image": "gzt_880.webp"
@@ -7959,7 +7959,7 @@
 		"number": "884",
 		"content": {
 			"en": "LOCK",
-			"zh": "铜锁,锁头",
+			"zh": "铜锁, 锁头",
 			"ms": "KUNCI"
 		},
 		"image": "gzt_884.webp"
@@ -7968,7 +7968,7 @@
 		"number": "885",
 		"content": {
 			"en": "WEIGHT SCALE",
-			"zh": "磅,弹簧磅,体重秤,量重器",
+			"zh": "磅, 弹簧磅, 体重秤, 量重器",
 			"ms": "PENIMBANG BERAT"
 		},
 		"image": "gzt_885.webp"
@@ -8085,7 +8085,7 @@
 		"number": "898",
 		"content": {
 			"en": "SEABIRD",
-			"zh": "水鸟,海鸟",
+			"zh": "水鸟, 海鸟",
 			"ms": "BURUNG LAUT"
 		},
 		"image": "gzt_898.webp"
@@ -8093,7 +8093,7 @@
 	{
 		"number": "899",
 		"content": {
-			"en": "WEAVE,KNIT",
+			"en": "WEAVE, KNIT",
 			"zh": "纺织",
 			"ms": "MENGANYAM"
 		},
@@ -8103,7 +8103,7 @@
 		"number": "900",
 		"content": {
 			"en": "BLIND",
-			"zh": "瞎子,盲人",
+			"zh": "瞎子, 盲人",
 			"ms": "BUTA"
 		},
 		"image": "gzt_900.webp"
@@ -8148,7 +8148,7 @@
 		"number": "905",
 		"content": {
 			"en": "RIBBON",
-			"zh": "结彩,彩带",
+			"zh": "结彩, 彩带",
 			"ms": "RIBEN"
 		},
 		"image": "gzt_905.webp"
@@ -8220,7 +8220,7 @@
 		"number": "913",
 		"content": {
 			"en": "BEGGAR",
-			"zh": "乞丐,叫化子",
+			"zh": "乞丐, 叫化子",
 			"ms": "PENGEMIS"
 		},
 		"image": "gzt_913.webp"
@@ -8301,7 +8301,7 @@
 		"number": "922",
 		"content": {
 			"en": "LINOLEUM",
-			"zh": "油毯,油布",
+			"zh": "油毯, 油布",
 			"ms": "LINOLEUM"
 		},
 		"image": "gzt_922.webp"
@@ -8310,7 +8310,7 @@
 		"number": "923",
 		"content": {
 			"en": "PRESERVED VEGETABLE",
-			"zh": "冬菜,腌菜",
+			"zh": "冬菜, 腌菜",
 			"ms": "SAYUR YANG DIAWET"
 		},
 		"image": "gzt_923.webp"
@@ -8319,7 +8319,7 @@
 		"number": "924",
 		"content": {
 			"en": "CARROT",
-			"zh": "萝卜,菜头",
+			"zh": "萝卜, 菜头",
 			"ms": "LOBAK MERAH"
 		},
 		"image": "gzt_924.webp"
@@ -8382,7 +8382,7 @@
 		"number": "931",
 		"content": {
 			"en": "LOTUS",
-			"zh": "荷花,莲花",
+			"zh": "荷花, 莲花",
 			"ms": "TERATAI"
 		},
 		"image": "gzt_931.webp"
@@ -8390,8 +8390,8 @@
 	{
 		"number": "932",
 		"content": {
-			"en": "BANK NOTE,PAPER MONEY",
-			"zh": "钞票,纸币",
+			"en": "BANK NOTE, PAPER MONEY",
+			"zh": "钞票, 纸币",
 			"ms": "WANG"
 		},
 		"image": "gzt_932.webp"
@@ -8409,7 +8409,7 @@
 		"number": "934",
 		"content": {
 			"en": "SAIL",
-			"zh": "帆,风帆,船帆,帆布",
+			"zh": "帆, 风帆, 船帆, 帆布",
 			"ms": "BELAYAR"
 		},
 		"image": "gzt_934.webp"
@@ -8481,7 +8481,7 @@
 		"number": "942",
 		"content": {
 			"en": "BASKET",
-			"zh": "篮子,笆斗",
+			"zh": "篮子, 笆斗",
 			"ms": "BAKUL"
 		},
 		"image": "gzt_942.webp"
@@ -8499,7 +8499,7 @@
 		"number": "944",
 		"content": {
 			"en": "SWEEP",
-			"zh": "竹扫,扫把,扫帚",
+			"zh": "竹扫, 扫把, 扫帚",
 			"ms": "MENYAPU"
 		},
 		"image": "gzt_944.webp"
@@ -8517,7 +8517,7 @@
 		"number": "946",
 		"content": {
 			"en": "PRAYER FLAG",
-			"zh": "令箭,令旗",
+			"zh": "令箭, 令旗",
 			"ms": "BENDERA SOLAT"
 		},
 		"image": "gzt_946.webp"
@@ -8543,8 +8543,8 @@
 	{
 		"number": "949",
 		"content": {
-			"en": "RAZOR,SHAVER",
-			"zh": "胡须刀,剃须刀",
+			"en": "RAZOR, SHAVER",
+			"zh": "胡须刀, 剃须刀",
 			"ms": "PENCUKUR"
 		},
 		"image": "gzt_949.webp"
@@ -8579,7 +8579,7 @@
 	{
 		"number": "953",
 		"content": {
-			"en": "CRAFTSMAN,SMITH",
+			"en": "CRAFTSMAN, SMITH",
 			"zh": "工匠",
 			"ms": "TUKANG"
 		},
@@ -8598,7 +8598,7 @@
 		"number": "955",
 		"content": {
 			"en": "CHEST",
-			"zh": "胸部,胸膛",
+			"zh": "胸部, 胸膛",
 			"ms": "DADA"
 		},
 		"image": "gzt_955.webp"
@@ -8607,7 +8607,7 @@
 		"number": "956",
 		"content": {
 			"en": "RUDDER",
-			"zh": "舵,掌舵",
+			"zh": "舵, 掌舵",
 			"ms": "KEMUDI"
 		},
 		"image": "gzt_956.webp"
@@ -8616,7 +8616,7 @@
 		"number": "957",
 		"content": {
 			"en": "TRAIN",
-			"zh": "火车,列车",
+			"zh": "火车, 列车",
 			"ms": "KERETA API"
 		},
 		"image": "gzt_957.webp"
@@ -8634,7 +8634,7 @@
 		"number": "959",
 		"content": {
 			"en": "EGG",
-			"zh": "蛋,鸡蛋,鸟蛋",
+			"zh": "蛋, 鸡蛋, 鸟蛋",
 			"ms": "TELUR"
 		},
 		"image": "gzt_959.webp"
@@ -8661,7 +8661,7 @@
 		"number": "962",
 		"content": {
 			"en": "DRIED CARROT",
-			"zh": "菜脯,萝卜干",
+			"zh": "菜脯, 萝卜干",
 			"ms": "LOBAK MERAH KERING"
 		},
 		"image": "gzt_962.webp"
@@ -8679,7 +8679,7 @@
 		"number": "964",
 		"content": {
 			"en": "FLATFISH",
-			"zh": "比目鱼,鲽鱼",
+			"zh": "比目鱼, 鲽鱼",
 			"ms": "IKAN KEMBUNG"
 		},
 		"image": "gzt_964.webp"
@@ -8750,8 +8750,8 @@
 	{
 		"number": "972",
 		"content": {
-			"en": "FIGHT,SCUFFLE,BRAWL",
-			"zh": "打架,斗殴",
+			"en": "FIGHT, SCUFFLE, BRAWL",
+			"zh": "打架, 斗殴",
 			"ms": "BERGADUH"
 		},
 		"image": "gzt_972.webp"
@@ -8769,7 +8769,7 @@
 		"number": "974",
 		"content": {
 			"en": "CAMERA",
-			"zh": "摄影机,相机,照相机",
+			"zh": "摄影机, 相机, 照相机",
 			"ms": "KAMERA"
 		},
 		"image": "gzt_974.webp"
@@ -8778,7 +8778,7 @@
 		"number": "975",
 		"content": {
 			"en": "TURTLE",
-			"zh": "鳖,甲鱼,龟鳖",
+			"zh": "鳖, 甲鱼, 龟鳖",
 			"ms": "PENYU"
 		},
 		"image": "gzt_975.webp"
@@ -8795,7 +8795,7 @@
 	{
 		"number": "977",
 		"content": {
-			"en": "STELE,STONE TABLET",
+			"en": "STELE, STONE TABLET",
 			"zh": "石碑",
 			"ms": "STELE"
 		},
@@ -8858,8 +8858,8 @@
 	{
 		"number": "984",
 		"content": {
-			"en": "CUTTLEFISH,SQUID",
-			"zh": "乌贼,鱿鱼",
+			"en": "CUTTLEFISH, SQUID",
+			"zh": "乌贼, 鱿鱼",
 			"ms": "SOTONG"
 		},
 		"image": "gzt_984.webp"
@@ -8867,7 +8867,7 @@
 	{
 		"number": "985",
 		"content": {
-			"en": "CANE,VINE",
+			"en": "CANE, VINE",
 			"zh": "藤",
 			"ms": "ROTAN"
 		},
@@ -8877,7 +8877,7 @@
 		"number": "986",
 		"content": {
 			"en": "GRASSHOPPER",
-			"zh": "蚱蜢,蝗虫,草蜢",
+			"zh": "蚱蜢, 蝗虫, 草蜢",
 			"ms": "BELALANG"
 		},
 		"image": "gzt_986.webp"
@@ -8903,8 +8903,8 @@
 	{
 		"number": "989",
 		"content": {
-			"en": "ERHU,CHINESE CELLO",
-			"zh": "胡琴,二胡",
+			"en": "ERHU, CHINESE CELLO",
+			"zh": "胡琴, 二胡",
 			"ms": "CELLO CINA"
 		},
 		"image": "gzt_989.webp"
@@ -8958,7 +8958,7 @@
 		"number": "995",
 		"content": {
 			"en": "BOUQUET",
-			"zh": "绣球,花球",
+			"zh": "绣球, 花球",
 			"ms": "SEJAMBAK"
 		},
 		"image": "gzt_995.webp"
@@ -8967,7 +8967,7 @@
 		"number": "996",
 		"content": {
 			"en": "FISHERMAN",
-			"zh": "渔翁,渔夫",
+			"zh": "渔翁, 渔夫",
 			"ms": "NELAYAN"
 		},
 		"image": "gzt_996.webp"

@@ -1,5 +1,3 @@
-// main.js
-
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router'; // Assuming you have a router setup
@@ -8,9 +6,9 @@ import i18n from './i18n'; // Import the i18n instance
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
 import VueLazyload from 'vue-lazyload';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// Bootstrap JavaScript
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const app = createApp(App);

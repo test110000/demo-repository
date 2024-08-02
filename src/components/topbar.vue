@@ -52,6 +52,7 @@
 												:class="{ active: isActive('/lucky-book') }">
 												<img src="/image/book.png" style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Lucky Book') }}
+
 											</router-link>
 										</li>
 									</ul>

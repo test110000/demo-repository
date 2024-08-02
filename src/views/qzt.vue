@@ -8,7 +8,6 @@
 						<p>{{ $t('Tua Pek Kong (Qian) Dictionary') }}</p>
 					</div>
 
-
 					<!--search-->
 					<div class="search_col">
 						<!-- Search Input and Dropdown -->
@@ -27,45 +26,48 @@
 							</div>
 						</div>
 					</div>
+
+
+					<div class="tuapekkong_col pekkong">
+						<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
+							<div class="number_col">
+								<p>{{ item.number }}</p>
+							</div>
+							<div>
+								<template v-if="item.loading">
+									<span class="spinner-border spinner-border-sm" role="status"
+										aria-hidden="true"></span>
+								</template>
+								<template v-else>
+									<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content[language]"
+										loading="lazy" />
+								</template>
+							</div>
+							<div class="item_content">
+								<p>
+									{{ item.content[language] }}
+								</p>
+
+							</div>
+
+							<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No
+								results
+								found.
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<div class="tuapekkong_col pekkong">
-				<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
-					<div class="number_col">
-						<p>{{ item.number }}</p>
-					</div>
-					<div>
-						<template v-if="item.loading">
-							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-						</template>
-						<template v-else>
-							<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content[language]" />
-						</template>
-					</div>
-					<div class="">
-						<p style="width: 110px">{{ item.content[language] }}</p>
-					</div>
-
-				</div>
-
-				<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No results found.
-				</div>
-
-				<!-- Bootstrap Spinner -->
-
+			<div class="go_up_btn">
+				<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
+					href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+						class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+						<path
+							d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+					</svg>
+				</a>
 			</div>
-
-		</div>
-		<div class="go_up_btn">
-			<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
-				href="#">
-				<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-					class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-					<path
-						d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-				</svg>
-			</a>
 		</div>
 	</div>
 </template>
@@ -74,8 +76,14 @@
 import TopBar from '/src/components/topbar.vue';
 import { useI18n } from 'vue-i18n';
 
+
+
+
+
+
+
 export default {
-	name: 'GuanYinMa',
+	name: 'TuaPekKongQian',
 	components: {
 		TopBar,
 	},
@@ -84,7 +92,9 @@ export default {
 
 		return {
 			t,
-			locale
+			locale,
+
+
 		};
 	},
 	data() {
@@ -142,26 +152,24 @@ export default {
 	},
 	mounted() {
 		this.fetchItems();
-		// 监听滚动事件
+
 		window.addEventListener('scroll', this.handleScroll);
 		this.intervalId = setInterval(this.checkTime, 1000);
+
+
 	},
 	beforeDestroy() {
-		// 移除滚动事件监听
 		window.removeEventListener('scroll', this.handleScroll);
 		clearInterval(this.intervalId);
 	},
 	methods: {
 		handleScroll() {
-			// 如果已经有计时器，清除它
 			if (this.scrollTimeout) {
 				clearTimeout(this.scrollTimeout);
 			}
 
-			// 显示图标
 			this.showIcon = true;
 
-			// 在5秒后隐藏图标
 			this.scrollTimeout = setTimeout(() => {
 				this.showIcon = false;
 			}, 2000);
@@ -180,6 +188,7 @@ export default {
 			}
 			return ranges;
 		},
+
 		async fetchItems() {
 			try {
 				this.isLoadingItems = true;
@@ -190,6 +199,9 @@ export default {
 				const data = await response.json();
 				this.items = data;
 				await this.delayedLoading();
+				this.$nextTick(() => {
+					this.tooltip();
+				});
 			} catch (error) {
 				console.error('Error fetching items:', error);
 			} finally {
@@ -207,6 +219,7 @@ export default {
 				this.isLoadingMore = false; // Hide spinner after loading
 			}
 		},
+
 		performSearch() {
 			// Implement search logic as needed
 		},
@@ -224,6 +237,8 @@ export default {
 };
 </script>
 
+
+
 <style scoped>
 /* Add loading animation styles */
 .loading {
@@ -235,11 +250,17 @@ export default {
 .title_col {
 	text-align: -webkit-center;
 	margin-top: 73px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 @media screen and (max-width:768px) {
 	.title_col {
 		margin-top: 10px;
+	}
+
+	.dictionary {
+		margin-top: 10px !important;
 	}
 }
 
@@ -263,28 +284,29 @@ export default {
 	width: 100%;
 	text-align: center;
 	background: rgb(255, 255, 255);
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
+	border-radius: 10px;
 	text-align: -webkit-center;
+
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 	.title {
 		width: 70%;
 	}
 }
 
 .item-container {
-	padding-top: 30px;
+
 	background-color: white;
 	/* padding-bottom: 10px; */
-	height: 290px;
+	height: 100%;
 	text-align: -webkit-center;
 	width: 100%;
 	place-self: center;
 	border-radius: 5px;
 	align-content: start;
 	box-shadow: 0px 2px 2px 2px #989696;
+	padding: 10px;
 }
 
 .number_col {
@@ -300,14 +322,9 @@ export default {
 
 @media screen and (max-width:426px) {
 	.number_col {
-		width: 60%;
+		width: 80%;
 	}
 
-
-	.search_col {
-		padding-left: 18px;
-		padding-right: 18px;
-	}
 }
 
 img {
@@ -338,14 +355,17 @@ p {
 	text-align: -webkit-center;
 	place-content: center;
 	gap: 1.0rem;
-	border-radius: 5px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	width: 95%;
+	padding-bottom: 10px;
 }
 
 
 .dictionary {
 	background-color: #CF2E2E;
 	color: white;
-	height: 150px;
+	height: 130px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -354,15 +374,10 @@ p {
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
-	font-size: 40px;
-	padding: 0 20px;
+	font-size: 30px;
+	margin-top: 73px;
 }
 
-@media screen and (max-width: 500px) {
-	.dictionary {
-		font-size: 24px;
-	}
-}
 
 @media screen and (max-width: 321px) {
 	.search-input {
@@ -387,9 +402,9 @@ p {
 
 @media (min-width: 1023px) {
 	.tuapekkong_col {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 0.8rem;
-		width: 60% !important;
+		width: 95% !important;
 	}
 }
 
@@ -398,29 +413,20 @@ p {
 		width: 50%;
 		justify-content: center;
 		display: flex;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-}
 
-@media screen and (max-width:768px) {
-	.tuapekkong_col {
-		width: 90% !important;
 	}
 }
 
 .search_col {
 	justify-content: center;
 	display: flex;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px;
 	gap: 0.5rem;
 }
 
 .search-input {
 	width: 100%;
 	padding: 10px;
-	margin-right: 10px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 }
@@ -470,12 +476,13 @@ p {
 	background-color: white;
 	border: solid #cf2e2e;
 	border-radius: 5px;
-	max-height: 140px;
+	max-height: 150px;
 	/* Show 7 options */
 	overflow-y: auto;
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	white-space: nowrap;
 }
 
 .dropdown-list li {
@@ -546,5 +553,17 @@ p {
 
 .scroll-icon.fade-out {
 	opacity: 1;
+}
+
+.item_content {
+	width: 85%;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+@media screen and (max-width:500px) {
+	.item_content {
+		font-size: 12px;
+	}
 }
 </style>

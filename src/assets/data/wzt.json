@@ -12,7 +12,7 @@
 		"number": "0001",
 		"content": {
 			"en": "FATHER PASSED AWAY",
-			"zh": "父亲去世,爸爸过世",
+			"zh": "父亲去世, 爸爸过世",
 			"ms": "BAPA MATI"
 		},
 		"image": "wzt_0001.webp"
@@ -57,7 +57,7 @@
 		"number": "0006",
 		"content": {
 			"en": "CAKE MIXER",
-			"zh": "蛋糕机,蛋糕搅拌机,打蛋器",
+			"zh": "蛋糕机, 蛋糕搅拌机, 打蛋器",
 			"ms": "MESIN PEMBUAT KEK"
 		},
 		"image": "wzt_0006.webp"
@@ -75,7 +75,7 @@
 		"number": "0008",
 		"content": {
 			"en": "STRONG HEAD",
-			"zh": "铁头,铁头功",
+			"zh": "铁头, 铁头功",
 			"ms": "KEPALA BESI"
 		},
 		"image": "wzt_0008.webp"
@@ -83,7 +83,7 @@
 	{
 		"number": "0009",
 		"content": {
-			"en": "LOTUS FLOWER,LOTUS PICKING",
+			"en": "LOTUS FLOWER, LOTUS PICKING",
 			"zh": "採莲",
 			"ms": "PETIK TERATAI"
 		},
@@ -120,7 +120,7 @@
 		"number": "0013",
 		"content": {
 			"en": "HUSBAND REACHES HOME LATE",
-			"zh": "丈夫夜归,老公夜回家",
+			"zh": "丈夫夜归, 老公夜回家",
 			"ms": "SUAMI BALIK LEWAT"
 		},
 		"image": "wzt_0013.webp"
@@ -138,7 +138,7 @@
 		"number": "0015",
 		"content": {
 			"en": "SEXUAL PERVERT",
-			"zh": "遇色狼,被非礼,调戏",
+			"zh": "遇色狼, 被非礼, 调戏",
 			"ms": "BERTEMU MATA KERANJANG"
 		},
 		"image": "wzt_0015.webp"
@@ -201,7 +201,7 @@
 		"number": "0022",
 		"content": {
 			"en": "DROWNED CHILD",
-			"zh": "小孩没顶,儿童溺水身亡",
+			"zh": "小孩没顶, 儿童溺水身亡",
 			"ms": "BUDAK TENGGELAM MATI"
 		},
 		"image": "wzt_0022.webp"
@@ -210,7 +210,7 @@
 		"number": "0023",
 		"content": {
 			"en": "BEAUTY AND UGLY MAN",
-			"zh": "美女嫁丑男,美女与野兽",
+			"zh": "美女嫁丑男, 美女与野兽",
 			"ms": "PEREMPUAN JELITA&LELAKI HODOH"
 		},
 		"image": "wzt_0023.webp"
@@ -228,7 +228,7 @@
 		"number": "0025",
 		"content": {
 			"en": "HEADLESS BODY",
-			"zh": "破头,断头,无头尸",
+			"zh": "破头, 断头, 无头尸",
 			"ms": "PANCUNG KEPALA"
 		},
 		"image": "wzt_0025.webp"
@@ -398,8 +398,8 @@
 	{
 		"number": "0044",
 		"content": {
-			"en": "KING KONG,GORILLA",
-			"zh": "金刚,大猩猩",
+			"en": "KING KONG, GORILLA",
+			"zh": "金刚, 大猩猩",
 			"ms": "GORILA"
 		},
 		"image": "wzt_0044.webp"
@@ -453,7 +453,7 @@
 		"number": "0050",
 		"content": {
 			"en": "SHORT HUSBAND",
-			"zh": "矮丈夫,老公矮",
+			"zh": "矮丈夫, 老公矮",
 			"ms": "SUAMI PENDEK"
 		},
 		"image": "wzt_0050.webp"
@@ -462,7 +462,7 @@
 		"number": "0051",
 		"content": {
 			"en": "INVISIBLE PERSON",
-			"zh": "无影人,隐形人",
+			"zh": "无影人, 隐形人",
 			"ms": "ORANG BUNIAN"
 		},
 		"image": "wzt_0051.webp"
@@ -471,7 +471,7 @@
 		"number": "0052",
 		"content": {
 			"en": "SYPHILIS INFECTION",
-			"zh": "染上梅毒,花柳,性病",
+			"zh": "染上梅毒, 花柳, 性病",
 			"ms": "PENYAKIT RAJA SINGA"
 		},
 		"image": "wzt_0052.webp"
@@ -479,7 +479,7 @@
 	{
 		"number": "0053",
 		"content": {
-			"en": "BROKEN CABLE,BROKEN WIRE",
+			"en": "BROKEN CABLE, BROKEN WIRE",
 			"zh": "电线断了",
 			"ms": "WAYAR ELEKTRIK PUTUS"
 		},
@@ -560,8 +560,8 @@
 	{
 		"number": "0062",
 		"content": {
-			"en": "CHINESE GHOSTS,EMISSARY FROM HELL",
-			"zh": "一见发财,黑白无常,七爷八爷",
+			"en": "CHINESE GHOSTS, EMISSARY FROM HELL",
+			"zh": "一见发财, 黑白无常, 七爷八爷",
 			"ms": "PATUNG BAWA KAYA"
 		},
 		"image": "wzt_0062.webp"
@@ -570,7 +570,7 @@
 		"number": "0063",
 		"content": {
 			"en": "STONE FACTORY",
-			"zh": "石厂,石材厂",
+			"zh": "石厂, 石材厂",
 			"ms": "KILANG BATU"
 		},
 		"image": "wzt_0063.webp"
@@ -642,7 +642,7 @@
 		"number": "0071",
 		"content": {
 			"en": "POLICE INTERROGATION",
-			"zh": "审问,拷问",
+			"zh": "审问, 拷问",
 			"ms": "SOAL SIASAT"
 		},
 		"image": "wzt_0071.webp"
@@ -660,7 +660,7 @@
 		"number": "0073",
 		"content": {
 			"en": "GANGSTER LEADER",
-			"zh": "黑社会领袖,黑社会老大",
+			"zh": "黑社会领袖, 黑社会老大",
 			"ms": "KETUA KONGSI GELAP"
 		},
 		"image": "wzt_0073.webp"
@@ -704,8 +704,8 @@
 	{
 		"number": "0078",
 		"content": {
-			"en": "BLACK GANGSTER,NEGRO GANG",
-			"zh": "黑人帮,黑人党",
+			"en": "BLACK GANGSTER, NEGRO GANG",
+			"zh": "黑人帮, 黑人党",
 			"ms": "GENG ORANG HITAM"
 		},
 		"image": "wzt_0078.webp"
@@ -732,7 +732,7 @@
 		"number": "0081",
 		"content": {
 			"en": "HELICOPTER CRASHED",
-			"zh": "直升机撞山,直升机失事",
+			"zh": "直升机撞山, 直升机失事",
 			"ms": "HELIKOPTER TERHUMBAN KE BUKIT"
 		},
 		"image": "wzt_0081.webp"
@@ -750,7 +750,7 @@
 		"number": "0083",
 		"content": {
 			"en": "MALAY DICTIONARY",
-			"zh": "巫文字典,马来词典",
+			"zh": "巫文字典, 马来词典",
 			"ms": "KAMUS MELAYU"
 		},
 		"image": "wzt_0083.webp"
@@ -804,7 +804,7 @@
 		"number": "0089",
 		"content": {
 			"en": "KILLED BY BULLDOZER",
-			"zh": "被泥机铲死,死于推土機",
+			"zh": "被泥机铲死, 死于推土機",
 			"ms": "MATI DIGELEK JENTOLAK"
 		},
 		"image": "wzt_0089.webp"
@@ -813,7 +813,7 @@
 		"number": "0090",
 		"content": {
 			"en": "TORTURED BY JAPANESE SOLDIER",
-			"zh": "被日军灌水,被日本兵折磨",
+			"zh": "被日军灌水, 被日本兵折磨",
 			"ms": "DIPERCIK AIR OLEH ASKAR JEPUN"
 		},
 		"image": "wzt_0090.webp"
@@ -822,7 +822,7 @@
 		"number": "0091",
 		"content": {
 			"en": "ADULATION",
-			"zh": "棒大脚,拍马屁,应声虫",
+			"zh": "棒大脚, 拍马屁, 应声虫",
 			"ms": "ANGKAT BODEK"
 		},
 		"image": "wzt_0091.webp"
@@ -831,7 +831,7 @@
 		"number": "0092",
 		"content": {
 			"en": "BLOOD VESSEL BURST",
-			"zh": "断血根,断血脉",
+			"zh": "断血根, 断血脉",
 			"ms": "PEMBULUH DARAH PUTUS"
 		},
 		"image": "wzt_0092.webp"
@@ -840,7 +840,7 @@
 		"number": "0093",
 		"content": {
 			"en": "ARRESTED FOR SMUGGLING",
-			"zh": "走私被捉,走私被捕",
+			"zh": "走私被捉, 走私被捕",
 			"ms": "MILITER DIBERKAS AKIBAT MENYELUDUP"
 		},
 		"image": "wzt_0093.webp"
@@ -849,7 +849,7 @@
 		"number": "0094",
 		"content": {
 			"en": "FLIRTING WITH GIRLS",
-			"zh": "玩吧女,鬼混酒吧女郎",
+			"zh": "玩吧女, 鬼混酒吧女郎",
 			"ms": "BERFOYA-FOYA DENGAN PELAYAN BAR"
 		},
 		"image": "wzt_0094.webp"
@@ -884,8 +884,8 @@
 	{
 		"number": "0098",
 		"content": {
-			"en": "GUARD INSPECTION,EXAMINATION",
-			"zh": "检阅,守卫检查",
+			"en": "GUARD INSPECTION, EXAMINATION",
+			"zh": "检阅, 守卫检查",
 			"ms": "PEMERIKSAAN"
 		},
 		"image": "wzt_0098.webp"
@@ -894,7 +894,7 @@
 		"number": "0099",
 		"content": {
 			"en": "BOYFRIEND DIES",
-			"zh": "男朋友死了,男友去世",
+			"zh": "男朋友死了, 男友去世",
 			"ms": "TEMAN LELAKI MATI"
 		},
 		"image": "wzt_0099.webp"
@@ -5143,7 +5143,7 @@
 		"content": {
 			"en": "ARABIAN CAMEL",
 			"zh": "单峰驼",
-			"ms": "UNTA SATU BONGGOL /  BURUNG"
+			"ms": "UNTA SATU BONGGOL /BURUNG"
 		},
 		"image": "wzt_0571.webp"
 	},
@@ -7303,7 +7303,7 @@
 		"content": {
 			"en": "TREE SKINK",
 			"zh": "飞蛇",
-			"ms": "ULAR TERBANG/ CACING"
+			"ms": "ULAR TERBANG/CACING"
 		},
 		"image": "wzt_0811.webp"
 	},
@@ -9057,7 +9057,7 @@
 		"number": "1006",
 		"content": {
 			"en": "WHITE PAPER",
-			"zh": "纸,纸张,白纸",
+			"zh": "纸, 纸张, 白纸",
 			"ms": "KERTAS"
 		},
 		"image": "wzt_1006.webp"
@@ -9084,7 +9084,7 @@
 		"number": "1009",
 		"content": {
 			"en": "DRAIN",
-			"zh": "渠,水沟",
+			"zh": "渠, 水沟",
 			"ms": "LONGKANG"
 		},
 		"image": "wzt_1009.webp"
@@ -9102,7 +9102,7 @@
 		"number": "1011",
 		"content": {
 			"en": "WINDOW",
-			"zh": "窗,窗口",
+			"zh": "窗, 窗口",
 			"ms": "TINGKAP"
 		},
 		"image": "wzt_1011.webp"
@@ -9111,7 +9111,7 @@
 		"number": "1012",
 		"content": {
 			"en": "PADLOCK",
-			"zh": "锁,锁头",
+			"zh": "锁, 锁头",
 			"ms": "KUNCI MANGGA"
 		},
 		"image": "wzt_1012.webp"
@@ -9120,7 +9120,7 @@
 		"number": "1013",
 		"content": {
 			"en": "SCISSORS",
-			"zh": "剪,剪刀",
+			"zh": "剪, 剪刀",
 			"ms": "GUNTING"
 		},
 		"image": "wzt_1013.webp"
@@ -9147,7 +9147,7 @@
 		"number": "1016",
 		"content": {
 			"en": "UMBRELLA",
-			"zh": "伞,雨伞",
+			"zh": "伞, 雨伞",
 			"ms": "PAYUNG"
 		},
 		"image": "wzt_1016.webp"
@@ -9156,7 +9156,7 @@
 		"number": "1017",
 		"content": {
 			"en": "NEWSPAPERS",
-			"zh": "报纸,报章",
+			"zh": "报纸, 报章",
 			"ms": "AKHBAR"
 		},
 		"image": "wzt_1017.webp"
@@ -9282,7 +9282,7 @@
 		"number": "1031",
 		"content": {
 			"en": "STAMP",
-			"zh": "印胶,印章",
+			"zh": "印胶, 印章",
 			"ms": "PED CAP"
 		},
 		"image": "wzt_1031.webp"
@@ -9300,7 +9300,7 @@
 		"number": "1033",
 		"content": {
 			"en": "MARBLE",
-			"zh": "石球,玻璃球",
+			"zh": "石球, 玻璃球",
 			"ms": "GULI"
 		},
 		"image": "wzt_1033.webp"
@@ -9471,7 +9471,7 @@
 		"number": "1052",
 		"content": {
 			"en": "BUTTON",
-			"zh": "钮,纽扣",
+			"zh": "钮, 纽扣",
 			"ms": "BUTANG"
 		},
 		"image": "wzt_1052.webp"
@@ -9489,7 +9489,7 @@
 		"number": "1054",
 		"content": {
 			"en": "ALARM CLOCK",
-			"zh": "闹钟,台钟",
+			"zh": "闹钟, 台钟",
 			"ms": "JAM LOCENG"
 		},
 		"image": "wzt_1054.webp"
@@ -9497,7 +9497,7 @@
 	{
 		"number": "1055",
 		"content": {
-			"en": "COMPACT DISCS,CD",
+			"en": "COMPACT DISCS, CD",
 			"zh": "唱片",
 			"ms": "CD"
 		},
@@ -9570,7 +9570,7 @@
 		"number": "1063",
 		"content": {
 			"en": "BELT",
-			"zh": "裤带,腰带",
+			"zh": "裤带, 腰带",
 			"ms": "TAIL PINGGANG"
 		},
 		"image": "wzt_1063.webp"
@@ -9579,7 +9579,7 @@
 		"number": "1064",
 		"content": {
 			"en": "HAIR DRYER",
-			"zh": "吹风机,吹风筒",
+			"zh": "吹风机, 吹风筒",
 			"ms": "PENGERING RAMBUT"
 		},
 		"image": "wzt_1064.webp"
@@ -9624,7 +9624,7 @@
 		"number": "1069",
 		"content": {
 			"en": "COIN",
-			"zh": "银角,钱币",
+			"zh": "银角, 钱币",
 			"ms": "SYILING"
 		},
 		"image": "wzt_1069.webp"
@@ -9687,7 +9687,7 @@
 		"number": "1076",
 		"content": {
 			"en": "PLAYING CARDS",
-			"zh": "纸牌,扑克牌",
+			"zh": "纸牌, 扑克牌",
 			"ms": "TERUP"
 		},
 		"image": "wzt_1076.webp"
@@ -9831,7 +9831,7 @@
 		"number": "1092",
 		"content": {
 			"en": "SHARP CALLIPERS",
-			"zh": "内圆量器,圆规",
+			"zh": "内圆量器, 圆规",
 			"ms": "ALAT KOMPAS"
 		},
 		"image": "wzt_1092.webp"
@@ -9966,7 +9966,7 @@
 		"number": "1107",
 		"content": {
 			"en": "SPOTLIGHT",
-			"zh": "射灯,照明灯",
+			"zh": "射灯, 照明灯",
 			"ms": "LAMPU SOROT"
 		},
 		"image": "wzt_1107.webp"
@@ -9993,7 +9993,7 @@
 		"number": "1110",
 		"content": {
 			"en": "BUS STATION",
-			"zh": "车站,巴士站",
+			"zh": "车站, 巴士站",
 			"ms": "STESEN BAS"
 		},
 		"image": "wzt_1110.webp"
@@ -10119,7 +10119,7 @@
 		"number": "1124",
 		"content": {
 			"en": "ANCIENT COIN",
-			"zh": "古钱,古币",
+			"zh": "古钱, 古币",
 			"ms": "SYILING KUNO"
 		},
 		"image": "wzt_1124.webp"
@@ -10146,7 +10146,7 @@
 		"number": "1127",
 		"content": {
 			"en": "RED BRONZE PLATE",
-			"zh": "红铜,铜片",
+			"zh": "红铜, 铜片",
 			"ms": "GANGSA MERAH"
 		},
 		"image": "wzt_1127.webp"
@@ -10272,7 +10272,7 @@
 		"number": "1141",
 		"content": {
 			"en": "SHELLAC FLAKES",
-			"zh": "士力片,虫胶片",
+			"zh": "士力片, 虫胶片",
 			"ms": "KEPINGAN SYELEK"
 		},
 		"image": "wzt_1141.webp"
@@ -10326,7 +10326,7 @@
 		"number": "1147",
 		"content": {
 			"en": "SPIKE KNIFE",
-			"zh": "狼牙刀,军刀",
+			"zh": "狼牙刀, 军刀",
 			"ms": "PISAU GIGI SERIGALA"
 		},
 		"image": "wzt_1147.webp"
@@ -10344,7 +10344,7 @@
 		"number": "1149",
 		"content": {
 			"en": "SCREWDRIVER",
-			"zh": "螺丝刀,螺丝起子",
+			"zh": "螺丝刀, 螺丝起子",
 			"ms": "PEMUTAR SKRU"
 		},
 		"image": "wzt_1149.webp"
@@ -10506,7 +10506,7 @@
 		"number": "1167",
 		"content": {
 			"en": "STRAW",
-			"zh": "吸管,吸水草",
+			"zh": "吸管, 吸水草",
 			"ms": "PENYEDUT MINUMAN"
 		},
 		"image": "wzt_1167.webp"
@@ -10614,7 +10614,7 @@
 		"number": "1179",
 		"content": {
 			"en": "FINE STRAINER",
-			"zh": "咖啡隔,过滤网",
+			"zh": "咖啡隔, 过滤网",
 			"ms": "PENAPIS KOPI"
 		},
 		"image": "wzt_1179.webp"
@@ -10731,7 +10731,7 @@
 		"number": "1192",
 		"content": {
 			"en": "CHILDREN TRICYCLE",
-			"zh": "三轮车仔,儿童脚踏车",
+			"zh": "三轮车仔, 儿童脚踏车",
 			"ms": "BASIKAL RODA TIGA"
 		},
 		"image": "wzt_1192.webp"
@@ -10929,7 +10929,7 @@
 		"number": "1214",
 		"content": {
 			"en": "GRENADE",
-			"zh": "手榴弹,手雷",
+			"zh": "手榴弹, 手雷",
 			"ms": "BOM TANGAN"
 		},
 		"image": "wzt_1214.webp"
@@ -11199,7 +11199,7 @@
 		"number": "1244",
 		"content": {
 			"en": "RUBBER BAND",
-			"zh": "胶圈,橡皮筋",
+			"zh": "胶圈, 橡皮筋",
 			"ms": "GAELANG GETAH"
 		},
 		"image": "wzt_1244.webp"
@@ -11217,7 +11217,7 @@
 		"number": "1246",
 		"content": {
 			"en": "PAINT REMOVAL",
-			"zh": "天那水,香蕉水",
+			"zh": "天那水, 香蕉水",
 			"ms": "AIR TINA"
 		},
 		"image": "wzt_1246.webp"
@@ -11262,7 +11262,7 @@
 		"number": "1251",
 		"content": {
 			"en": "INDIAN INCENSE",
-			"zh": "印度香,吉灵香",
+			"zh": "印度香, 吉灵香",
 			"ms": "COLOK INDIA"
 		},
 		"image": "wzt_1251.webp"
@@ -11325,7 +11325,7 @@
 		"number": "1258",
 		"content": {
 			"en": "SUNGLASSES",
-			"zh": "太阳眼镜,墨镜",
+			"zh": "太阳眼镜, 墨镜",
 			"ms": "CERMIN MATA HITAM"
 		},
 		"image": "wzt_1258.webp"
@@ -11370,7 +11370,7 @@
 		"number": "1263",
 		"content": {
 			"en": "THERMOSTATE",
-			"zh": "温度表,温度计",
+			"zh": "温度表, 温度计",
 			"ms": "TERMOMETER"
 		},
 		"image": "wzt_1263.webp"
@@ -11405,7 +11405,7 @@
 	{
 		"number": "1267",
 		"content": {
-			"en": "BUSINESS PERMIT,LICENSE",
+			"en": "BUSINESS PERMIT, LICENSE",
 			"zh": "执照",
 			"ms": "LESEN PEMANDU"
 		},
@@ -11532,7 +11532,7 @@
 		"number": "1281",
 		"content": {
 			"en": "BRASSIERE",
-			"zh": "胸罩,乳罩",
+			"zh": "胸罩, 乳罩",
 			"ms": "BAJU DALAM"
 		},
 		"image": "wzt_1281.webp"
@@ -11559,7 +11559,7 @@
 		"number": "1284",
 		"content": {
 			"en": "QUIVER OF ARROWS",
-			"zh": "箭盒,箭袋",
+			"zh": "箭盒, 箭袋",
 			"ms": "BEKAS PANAH"
 		},
 		"image": "wzt_1284.webp"
@@ -11568,7 +11568,7 @@
 		"number": "1285",
 		"content": {
 			"en": "BABY PACIFIER",
-			"zh": "奶嘴,吸嘴",
+			"zh": "奶嘴, 吸嘴",
 			"ms": "DOT BAYI"
 		},
 		"image": "wzt_1285.webp"
@@ -11667,7 +11667,7 @@
 		"number": "1296",
 		"content": {
 			"en": "MAGNET",
-			"zh": "磁体,吸铁",
+			"zh": "磁体, 吸铁",
 			"ms": "BESI TIMAH"
 		},
 		"image": "wzt_1296.webp"
@@ -11721,7 +11721,7 @@
 		"number": "1302",
 		"content": {
 			"en": "CANNON",
-			"zh": "高射炮,防空炮",
+			"zh": "高射炮, 防空炮",
 			"ms": "KERETA BOM"
 		},
 		"image": "wzt_1302.webp"
@@ -11793,7 +11793,7 @@
 		"number": "1310",
 		"content": {
 			"en": "CLOTH HANGER",
-			"zh": "衣挂,衣架",
+			"zh": "衣挂, 衣架",
 			"ms": "PENYANGKUT BAJU"
 		},
 		"image": "wzt_1310.webp"
@@ -11802,7 +11802,7 @@
 		"number": "1311",
 		"content": {
 			"en": "SULFURIC ACID",
-			"zh": "镪水,硫酸",
+			"zh": "镪水, 硫酸",
 			"ms": "CECAIR MELEBUR"
 		},
 		"image": "wzt_1311.webp"
@@ -11829,7 +11829,7 @@
 		"number": "1314",
 		"content": {
 			"en": "WALL CRACK",
-			"zh": "裂痕,裂缝",
+			"zh": "裂痕, 裂缝",
 			"ms": "REKAH"
 		},
 		"image": "wzt_1314.webp"
@@ -11883,7 +11883,7 @@
 		"number": "1320",
 		"content": {
 			"en": "DRAGON JADE STAMP",
-			"zh": "印,玉玺",
+			"zh": "印, 玉玺",
 			"ms": "COP"
 		},
 		"image": "wzt_1320.webp"
@@ -11892,7 +11892,7 @@
 		"number": "1321",
 		"content": {
 			"en": "FENCE BARRIER",
-			"zh": "障碍物,木栏",
+			"zh": "障碍物, 木栏",
 			"ms": "BENDA PENGHALANG"
 		},
 		"image": "wzt_1321.webp"
@@ -11937,7 +11937,7 @@
 		"number": "1326",
 		"content": {
 			"en": "EXHAUST PIPE",
-			"zh": "排氣管,出气管",
+			"zh": "排氣管, 出气管",
 			"ms": "EKZOS"
 		},
 		"image": "wzt_1326.webp"
@@ -12162,7 +12162,7 @@
 		"number": "1351",
 		"content": {
 			"en": "FIRST AID KIT",
-			"zh": "急救箱,药盒",
+			"zh": "急救箱, 药盒",
 			"ms": "BEKAS BIJIAN"
 		},
 		"image": "wzt_1351.webp"
@@ -12234,7 +12234,7 @@
 		"number": "1359",
 		"content": {
 			"en": "STAIN ON SHIRT",
-			"zh": "污垢,污迹",
+			"zh": "污垢, 污迹",
 			"ms": "KOTORAN"
 		},
 		"image": "wzt_1359.webp"
@@ -12297,7 +12297,7 @@
 		"number": "1366",
 		"content": {
 			"en": "MILK DRINK",
-			"zh": "冲牛奶,泡牛奶",
+			"zh": "冲牛奶, 泡牛奶",
 			"ms": "JAG AIR"
 		},
 		"image": "wzt_1366.webp"
@@ -12414,7 +12414,7 @@
 		"number": "1379",
 		"content": {
 			"en": "STAPLER BULLET",
-			"zh": "钉书钉,夹簿钉",
+			"zh": "钉书钉, 夹簿钉",
 			"ms": "KOKOT JANTAN"
 		},
 		"image": "wzt_1379.webp"
@@ -12486,7 +12486,7 @@
 		"number": "1387",
 		"content": {
 			"en": "ADJUSTABLE TABLE LAMP",
-			"zh": "摇动按灯,桌灯",
+			"zh": "摇动按灯, 桌灯",
 			"ms": "LAMPU BERGERAK"
 		},
 		"image": "wzt_1387.webp"
@@ -12505,7 +12505,7 @@
 		"content": {
 			"en": "RAW GRANITE",
 			"zh": "臭电",
-			"ms": "PENGETIP BESI /  PENCAS LEKTRIK"
+			"ms": "PENGETIP BESI / PENCAS LEKTRIK"
 		},
 		"image": "wzt_1389.webp"
 	},
@@ -12585,7 +12585,7 @@
 		"number": "1398",
 		"content": {
 			"en": "PAPER STAPLER",
-			"zh": "订书机,打针夹",
+			"zh": "订书机, 打针夹",
 			"ms": "STAPLER"
 		},
 		"image": "wzt_1398.webp"
@@ -12621,7 +12621,7 @@
 		"number": "1402",
 		"content": {
 			"en": "WHEEL EAR",
-			"zh": "牙轮,齿轮",
+			"zh": "牙轮, 齿轮",
 			"ms": "GEAR TAYAR"
 		},
 		"image": "wzt_1402.webp"
@@ -12720,7 +12720,7 @@
 		"number": "1413",
 		"content": {
 			"en": "ROTTEN SHOES",
-			"zh": "烂鞋,破鞋",
+			"zh": "烂鞋, 破鞋",
 			"ms": "KASUT KOYAK"
 		},
 		"image": "wzt_1413.webp"
@@ -12900,7 +12900,7 @@
 		"number": "1433",
 		"content": {
 			"en": "STETHOSCOPE",
-			"zh": "听诊器,医生听筒",
+			"zh": "听诊器, 医生听筒",
 			"ms": "ALAT PENDENGAR"
 		},
 		"image": "wzt_1433.webp"
@@ -12963,7 +12963,7 @@
 		"number": "1440",
 		"content": {
 			"en": "METEORITE",
-			"zh": "陨星,流星",
+			"zh": "陨星, 流星",
 			"ms": "BATU MATEORIK"
 		},
 		"image": "wzt_1440.webp"
@@ -13044,7 +13044,7 @@
 		"number": "1449",
 		"content": {
 			"en": "BIG TRUCK",
-			"zh": "大罗里,大卡车",
+			"zh": "大罗里, 大卡车",
 			"ms": "LORI BESAR"
 		},
 		"image": "wzt_1449.webp"
@@ -13188,7 +13188,7 @@
 		"number": "1465",
 		"content": {
 			"en": "WINTER JACKET",
-			"zh": "寒衣,毛衣",
+			"zh": "寒衣, 毛衣",
 			"ms": "BAJU SEJUK"
 		},
 		"image": "wzt_1465.webp"
@@ -13314,7 +13314,7 @@
 		"number": "1479",
 		"content": {
 			"en": "ELECTRIC SHAVER",
-			"zh": "电动刮胡刀,电须刨",
+			"zh": "电动刮胡刀, 电须刨",
 			"ms": "PENCUKUR ELEKTRIK"
 		},
 		"image": "wzt_1479.webp"
@@ -13989,7 +13989,7 @@
 		"number": "1554",
 		"content": {
 			"en": "HEARING AID DEVICE",
-			"zh": "助听器,耳聋机",
+			"zh": "助听器, 耳聋机",
 			"ms": "MESIN METER"
 		},
 		"image": "wzt_1554.webp"
@@ -14322,7 +14322,7 @@
 		"number": "1591",
 		"content": {
 			"en": "HOURGLASS",
-			"zh": "沙漏,沙计时表",
+			"zh": "沙漏, 沙计时表",
 			"ms": "PENENTU MASA PASIR"
 		},
 		"image": "wzt_1591.webp"
@@ -14547,7 +14547,7 @@
 		"number": "1616",
 		"content": {
 			"en": "HADES MONEY",
-			"zh": "冥府用币,冥纸",
+			"zh": "冥府用币, 冥纸",
 			"ms": "WANG NERAKA"
 		},
 		"image": "wzt_1616.webp"
@@ -14583,7 +14583,7 @@
 		"number": "1620",
 		"content": {
 			"en": "SOAP BUBBLE",
-			"zh": "皂泡,泡沫",
+			"zh": "皂泡, 泡沫",
 			"ms": "BUIH SABUN"
 		},
 		"image": "wzt_1620.webp"
@@ -14727,7 +14727,7 @@
 		"number": "1636",
 		"content": {
 			"en": "MANURE",
-			"zh": "屎,粪",
+			"zh": "屎, 粪",
 			"ms": "TAHI"
 		},
 		"image": "wzt_1636.webp"
@@ -14790,7 +14790,7 @@
 		"number": "1643",
 		"content": {
 			"en": "URINAL POT",
-			"zh": "夜壶,屎壶",
+			"zh": "夜壶, 屎壶",
 			"ms": "CEREK KENCING"
 		},
 		"image": "wzt_1643.webp"
@@ -14817,7 +14817,7 @@
 		"number": "1646",
 		"content": {
 			"en": "GREEN GRASS",
-			"zh": "青草,罗谷草",
+			"zh": "青草, 罗谷草",
 			"ms": "RUMPUT LUO DA"
 		},
 		"image": "wzt_1646.webp"
@@ -15231,7 +15231,7 @@
 		"number": "1692",
 		"content": {
 			"en": "PURSE",
-			"zh": "皮包,钱包",
+			"zh": "皮包, 钱包",
 			"ms": "DOMPET"
 		},
 		"image": "wzt_1692.webp"
@@ -15492,7 +15492,7 @@
 		"number": "1721",
 		"content": {
 			"en": "INCINERATOR",
-			"zh": "焚化炉,垃圾炉",
+			"zh": "焚化炉, 垃圾炉",
 			"ms": "TONGGAN SAMPAH"
 		},
 		"image": "wzt_1721.webp"
@@ -15528,7 +15528,7 @@
 		"number": "1725",
 		"content": {
 			"en": "CHICKEN FARM",
-			"zh": "养鸡场,鸡罩",
+			"zh": "养鸡场, 鸡罩",
 			"ms": "BAKUL PENUTUP AYAM"
 		},
 		"image": "wzt_1725.webp"
@@ -15645,7 +15645,7 @@
 		"number": "1738",
 		"content": {
 			"en": "LETTER FROM CHINA",
-			"zh": "来自中国的信,唐山信",
+			"zh": "来自中国的信, 唐山信",
 			"ms": "SURAT TULISAN DAKWAT"
 		},
 		"image": "wzt_1738.webp"
@@ -15861,7 +15861,7 @@
 		"number": "1762",
 		"content": {
 			"en": "IRON WRENCH",
-			"zh": "扳手,士把那",
+			"zh": "扳手, 士把那",
 			"ms": "SPANA"
 		},
 		"image": "wzt_1762.webp"
@@ -16149,7 +16149,7 @@
 		"number": "1794",
 		"content": {
 			"en": "ARCH",
-			"zh": "拱门,凯旋门",
+			"zh": "拱门, 凯旋门",
 			"ms": "PINTU GERBANG"
 		},
 		"image": "wzt_1794.webp"
@@ -16230,7 +16230,7 @@
 		"number": "1803",
 		"content": {
 			"en": "SCOOTER",
-			"zh": "士哥打,小轮摩托车",
+			"zh": "士哥打, 小轮摩托车",
 			"ms": "SKUTER"
 		},
 		"image": "wzt_1803.webp"
@@ -16392,7 +16392,7 @@
 		"number": "1821",
 		"content": {
 			"en": "WEIGHT SCALE",
-			"zh": "人磅,体重磅",
+			"zh": "人磅, 体重磅",
 			"ms": "PENIMBANG ORANG"
 		},
 		"image": "wzt_1821.webp"
@@ -16518,7 +16518,7 @@
 		"number": "1835",
 		"content": {
 			"en": "MISSILE",
-			"zh": "飞弹,导弹",
+			"zh": "飞弹, 导弹",
 			"ms": "BOM UDARA"
 		},
 		"image": "wzt_1835.webp"
@@ -16986,7 +16986,7 @@
 		"number": "1887",
 		"content": {
 			"en": "TAI CHI",
-			"zh": "太极,阴阳",
+			"zh": "太极, 阴阳",
 			"ms": "TAI JI"
 		},
 		"image": "wzt_1887.webp"
@@ -17076,7 +17076,7 @@
 		"number": "1897",
 		"content": {
 			"en": "BRACELET",
-			"zh": "手镯,手环",
+			"zh": "手镯, 手环",
 			"ms": "CINCIN PERKAHWINAN"
 		},
 		"image": "wzt_1897.webp"
@@ -17238,7 +17238,7 @@
 		"number": "1915",
 		"content": {
 			"en": "GANGSTER MASTER",
-			"zh": "大哥成,黑帮老大",
+			"zh": "大哥成, 黑帮老大",
 			"ms": "KETUA SAMSENG"
 		},
 		"image": "wzt_1915.webp"
@@ -17265,7 +17265,7 @@
 		"number": "1918",
 		"content": {
 			"en": "MARKER PEN",
-			"zh": "麥克筆,记号笔",
+			"zh": "麥克筆, 记号笔",
 			"ms": "PEN MARKER"
 		},
 		"image": "wzt_1918.webp"
@@ -17293,7 +17293,7 @@
 		"content": {
 			"en": "HAUNTED HOUSE",
 			"zh": "鬼屋",
-			"ms": "RUMAH HANTU/ KENDERAAN"
+			"ms": "RUMAH HANTU/KENDERAAN"
 		},
 		"image": "wzt_1921.webp"
 	},
@@ -17499,7 +17499,7 @@
 		"number": "1944",
 		"content": {
 			"en": "SIGNPOST",
-			"zh": "路牌,指示牌",
+			"zh": "路牌, 指示牌",
 			"ms": "BATU TANDA"
 		},
 		"image": "wzt_1944.webp"
@@ -17814,7 +17814,7 @@
 		"number": "1979",
 		"content": {
 			"en": "AIR GUN",
-			"zh": "风枪,气枪",
+			"zh": "风枪, 气枪",
 			"ms": "SENAPANG ANGIN"
 		},
 		"image": "wzt_1979.webp"
@@ -17985,7 +17985,7 @@
 		"number": "1998",
 		"content": {
 			"en": "CAR BATTERY",
-			"zh": "电箱,车用蓄电池",
+			"zh": "电箱, 车用蓄电池",
 			"ms": "KOTAK ELEKTRIK"
 		},
 		"image": "wzt_1998.webp"
@@ -18183,7 +18183,7 @@
 		"number": "2020",
 		"content": {
 			"en": "BICYCLE LANE",
-			"zh": "脚车道,自行车道",
+			"zh": "脚车道, 自行车道",
 			"ms": "LALUAN BASIKAL"
 		},
 		"image": "wzt_2020.webp"
@@ -18291,7 +18291,7 @@
 		"number": "2032",
 		"content": {
 			"en": "NATIONAL HERITAGE",
-			"zh": "国家遗产,遗址",
+			"zh": "国家遗产, 遗址",
 			"ms": "TAPAK WARISAN NEGARA"
 		},
 		"image": "wzt_2032.webp"
@@ -18443,7 +18443,7 @@
 	{
 		"number": "2049",
 		"content": {
-			"en": "INTERNET CAFE,CYBER CAFE",
+			"en": "INTERNET CAFE, CYBER CAFE",
 			"zh": "网咖",
 			"ms": "KAFE INTERNET"
 		},
@@ -18723,7 +18723,7 @@
 		"number": "2080",
 		"content": {
 			"en": "CHINA TOWN",
-			"zh": "华人街,唐人街",
+			"zh": "华人街, 唐人街",
 			"ms": "CHINATOWN"
 		},
 		"image": "wzt_2080.webp"
@@ -18740,7 +18740,7 @@
 	{
 		"number": "2082",
 		"content": {
-			"en": "FITNESS CENTRE,GYM",
+			"en": "FITNESS CENTRE, GYM",
 			"zh": "健身中心",
 			"ms": "GIM"
 		},
@@ -19379,7 +19379,7 @@
 	{
 		"number": "2153",
 		"content": {
-			"en": "LIGHT RAIL TRANSIT,LRT",
+			"en": "LIGHT RAIL TRANSIT, LRT",
 			"zh": "轻快铁站",
 			"ms": "STESEN LRT"
 		},
@@ -19425,7 +19425,7 @@
 		"number": "2158",
 		"content": {
 			"en": "FLOOD RELIEF CENTRE",
-			"zh": "抗洪救灾中心,赈灾中心",
+			"zh": "抗洪救灾中心, 赈灾中心",
 			"ms": "PUSAT PEMINDAHAN BANJIR"
 		},
 		"image": "wzt_2158.webp"
@@ -19866,7 +19866,7 @@
 		"number": "2207",
 		"content": {
 			"en": "PAYING SUMMONS ",
-			"zh": "还三万,还罚单",
+			"zh": "还三万, 还罚单",
 			"ms": "BAYAR SAMAN"
 		},
 		"image": "wzt_2207.webp"
@@ -20658,8 +20658,8 @@
 		"number": "2295",
 		"content": {
 			"en": "FLUSH TOILET",
-			"zh": "抽水马桶,坐式马桶",
-			"ms": "TANDAS SIRAM, TANDAS DUDUK"
+			"zh": "抽水马桶, 坐式马桶",
+			"ms": "TANDAS SIRAM,  TANDAS DUDUK"
 		},
 		"image": "wzt_2295.webp"
 	},
@@ -20667,7 +20667,7 @@
 		"number": "2296",
 		"content": {
 			"en": "SQUAT TOILET",
-			"zh": "蹲坑,蹲式马桶",
+			"zh": "蹲坑, 蹲式马桶",
 			"ms": "TANDAS MENCANGKUNG"
 		},
 		"image": "wzt_2296.webp"
@@ -21072,8 +21072,8 @@
 		"number": "2341",
 		"content": {
 			"en": "ARSENAL",
-			"zh": "兵工厂,枪手",
-			"ms": "SENJATA, LELAKI BERSENJATA"
+			"zh": "兵工厂, 枪手",
+			"ms": "SENJATA,  LELAKI BERSENJATA"
 		},
 		"image": "wzt_2341.webp"
 	},
@@ -21090,7 +21090,7 @@
 		"number": "2343",
 		"content": {
 			"en": "TOP SPOT",
-			"zh": "头把交椅,第一把交椅",
+			"zh": "头把交椅, 第一把交椅",
 			"ms": "TEMPAT TERATAS"
 		},
 		"image": "wzt_2343.webp"
@@ -21738,8 +21738,8 @@
 		"number": "2415",
 		"content": {
 			"en": "NEXT WORLD",
-			"zh": "来世,下辈子",
-			"ms": "AKHIRAT, AKHIRAT"
+			"zh": "来世, 下辈子",
+			"ms": "AKHIRAT,  AKHIRAT"
 		},
 		"image": "wzt_2415.webp"
 	},
@@ -22026,7 +22026,7 @@
 		"number": "2447",
 		"content": {
 			"en": "SOLO TRAVEL",
-			"zh": "独游,一个人旅行",
+			"zh": "独游, 一个人旅行",
 			"ms": "MENGEMBARA SENDIRIAN"
 		},
 		"image": "wzt_2447.webp"
@@ -22125,8 +22125,8 @@
 		"number": "2458",
 		"content": {
 			"en": "KANGKUNG",
-			"zh": "蓊菜,空心菜,蕹菜",
-			"ms": "KOBIS CINA, BAYAM, BAYAM AIR"
+			"zh": "蓊菜, 空心菜, 蕹菜",
+			"ms": "KOBIS CINA,  BAYAM,  BAYAM AIR"
 		},
 		"image": "wzt_2458.webp"
 	},
@@ -22269,7 +22269,7 @@
 		"number": "2474",
 		"content": {
 			"en": "SURGING",
-			"zh": "滂沛,滂沱",
+			"zh": "滂沛, 滂沱",
 			"ms": "DERAS"
 		},
 		"image": "wzt_2474.webp"
@@ -22944,7 +22944,7 @@
 		"number": "2549",
 		"content": {
 			"en": "BORED",
-			"zh": "无聊,闷",
+			"zh": "无聊, 闷",
 			"ms": "MEMBOSANKAN"
 		},
 		"image": "wzt_2549.webp"
@@ -23349,7 +23349,7 @@
 		"number": "2594",
 		"content": {
 			"en": "OUT OF TUNE",
-			"zh": "走调,走音",
+			"zh": "走调, 走音",
 			"ms": "TIDAK SELARAS"
 		},
 		"image": "wzt_2594.webp"
@@ -23430,7 +23430,7 @@
 		"number": "2603",
 		"content": {
 			"en": "DOWNGRADE",
-			"zh": "降格,降级",
+			"zh": "降格, 降级",
 			"ms": "TURUN TARAF"
 		},
 		"image": "wzt_2603.webp"
@@ -23493,7 +23493,7 @@
 		"number": "2610",
 		"content": {
 			"en": "AMORTIZE",
-			"zh": "分期清偿,分期付款",
+			"zh": "分期清偿, 分期付款",
 			"ms": "BAYARAN ANSURAN"
 		},
 		"image": "wzt_2610.webp"
@@ -23592,7 +23592,7 @@
 		"number": "2621",
 		"content": {
 			"en": "SOMETHING SLIP OUT",
-			"zh": "漏风,走漏风声",
+			"zh": "漏风, 走漏风声",
 			"ms": "KEBOCORAN ANGIN"
 		},
 		"image": "wzt_2621.webp"
@@ -23637,7 +23637,7 @@
 		"number": "2626",
 		"content": {
 			"en": "ARTIFICIAL BLOOD",
-			"zh": "人造血,血包",
+			"zh": "人造血, 血包",
 			"ms": "DARAH TIRUAN"
 		},
 		"image": "wzt_2626.webp"
@@ -23853,8 +23853,8 @@
 		"number": "2650",
 		"content": {
 			"en": "REFERRAL",
-			"zh": "转诊,换医院",
-			"ms": "RUJUKAN, TUKAR HOSPITAL"
+			"zh": "转诊, 换医院",
+			"ms": "RUJUKAN,  TUKAR HOSPITAL"
 		},
 		"image": "wzt_2650.webp"
 	},
@@ -24312,7 +24312,7 @@
 		"number": "2701",
 		"content": {
 			"en": "FORKLIFT",
-			"zh": "铲车,叉车",
+			"zh": "铲车, 叉车",
 			"ms": "FORKLIFT"
 		},
 		"image": "wzt_2701.webp"
@@ -25050,7 +25050,7 @@
 		"number": "2783",
 		"content": {
 			"en": "SHOWHAND",
-			"zh": "梭哈,沙蟹,晒冷",
+			"zh": "梭哈, 沙蟹, 晒冷",
 			"ms": "TUNJUKKAN"
 		},
 		"image": "wzt_2783.webp"
@@ -25329,7 +25329,7 @@
 		"number": "2814",
 		"content": {
 			"en": "SUNGLASS",
-			"zh": "墨镜,太阳眼镜",
+			"zh": "墨镜, 太阳眼镜",
 			"ms": "CERMIN MATA HITAM"
 		},
 		"image": "wzt_2814.webp"
@@ -25815,7 +25815,7 @@
 		"number": "2868",
 		"content": {
 			"en": "SMOKESTACK",
-			"zh": "烟囱,烟窗",
+			"zh": "烟囱, 烟窗",
 			"ms": "CEROBONG ASAP"
 		},
 		"image": "wzt_2868.webp"
@@ -25932,7 +25932,7 @@
 		"number": "2881",
 		"content": {
 			"en": "SALARY INCREASE",
-			"zh": "加人工,起薪水",
+			"zh": "加人工, 起薪水",
 			"ms": "KENAIKAN GAJI"
 		},
 		"image": "wzt_2881.webp"
@@ -27011,7 +27011,7 @@
 	{
 		"number": "3001",
 		"content": {
-			"en": "ARMOURED VEHICLE /  TANKER",
+			"en": "ARMOURED VEHICLE / TANKER",
 			"zh": "坦克车",
 			"ms": "KERETA KEBAL"
 		},
@@ -27218,7 +27218,7 @@
 	{
 		"number": "3024",
 		"content": {
-			"en": "SEEDBED /  SEEDLING BED",
+			"en": "SEEDBED / SEEDLING BED",
 			"zh": "苗床",
 			"ms": "TAPAK SEMAIAN"
 		},
@@ -27371,7 +27371,7 @@
 	{
 		"number": "3041",
 		"content": {
-			"en": "CEMETERY /  GRAVEYARD",
+			"en": "CEMETERY / GRAVEYARD",
 			"zh": "墓",
 			"ms": "KUBUR"
 		},
@@ -27461,7 +27461,7 @@
 	{
 		"number": "3051",
 		"content": {
-			"en": "HAIR COLOUR /  HAIR DYE",
+			"en": "HAIR COLOUR / HAIR DYE",
 			"zh": "染发剂",
 			"ms": "UBAT MENGHITAM RAMBUT"
 		},
@@ -27479,7 +27479,7 @@
 	{
 		"number": "3053",
 		"content": {
-			"en": "CONICAL ASIAN HAT /  RICE FARMER HAT",
+			"en": "CONICAL ASIAN HAT / RICE FARMER HAT",
 			"zh": "马来妇笠",
 			"ms": "TOPI ANYAMAN"
 		},
@@ -27659,7 +27659,7 @@
 	{
 		"number": "3073",
 		"content": {
-			"en": "CHIPS /  MONEY TOKEN",
+			"en": "CHIPS / MONEY TOKEN",
 			"zh": "筹码",
 			"ms": "TAGAN"
 		},
@@ -27912,7 +27912,7 @@
 		"number": "3101",
 		"content": {
 			"en": "DUMBBELLS",
-			"zh": "运动手铃,哑铃",
+			"zh": "运动手铃, 哑铃",
 			"ms": "DUMBEL"
 		},
 		"image": "wzt_3101.webp"
@@ -27975,7 +27975,7 @@
 		"number": "3108",
 		"content": {
 			"en": "SAFE ",
-			"zh": "保险箱,夹万",
+			"zh": "保险箱, 夹万",
 			"ms": "PETI KEBAL"
 		},
 		"image": "wzt_3108.webp"
@@ -28002,7 +28002,7 @@
 		"number": "3111",
 		"content": {
 			"en": "REDIFFUSION",
-			"zh": "丽的呼声,广播电台",
+			"zh": "丽的呼声, 广播电台",
 			"ms": "MIKROFON SUARA"
 		},
 		"image": "wzt_3111.webp"
@@ -28281,7 +28281,7 @@
 		"number": "3142",
 		"content": {
 			"en": "CORK REMOVER",
-			"zh": "开瓶器,开木塞具",
+			"zh": "开瓶器, 开木塞具",
 			"ms": "ALAT PEMBUKA WAIN"
 		},
 		"image": "wzt_3142.webp"
@@ -28379,7 +28379,7 @@
 	{
 		"number": "3153",
 		"content": {
-			"en": "HARPOON /  SPEAR",
+			"en": "HARPOON / SPEAR",
 			"zh": "鱼叉",
 			"ms": "TOPI KELEDAR"
 		},
@@ -29217,7 +29217,7 @@
 		"number": "3246",
 		"content": {
 			"en": "COFFIN",
-			"zh": "棺木,棺材",
+			"zh": "棺木, 棺材",
 			"ms": "KERANDA"
 		},
 		"image": "wzt_3246.webp"
@@ -29369,7 +29369,7 @@
 	{
 		"number": "3263",
 		"content": {
-			"en": "POST VAN /  MAIL VAN",
+			"en": "POST VAN / MAIL VAN",
 			"zh": "邮政车",
 			"ms": "TRAK KREN"
 		},
@@ -29415,7 +29415,7 @@
 		"number": "3268",
 		"content": {
 			"en": "DRUG ADDICT",
-			"zh": "吸毒者,瘾君子",
+			"zh": "吸毒者, 瘾君子",
 			"ms": "PENAGIH"
 		},
 		"image": "wzt_3268.webp"
@@ -29451,7 +29451,7 @@
 		"number": "3272",
 		"content": {
 			"en": "BELT",
-			"zh": "皮带,腰带",
+			"zh": "皮带, 腰带",
 			"ms": "TALI PINGGANG KULIT"
 		},
 		"image": "wzt_3272.webp"
@@ -29531,7 +29531,7 @@
 	{
 		"number": "3281",
 		"content": {
-			"en": "RATTAN CANE /  ROTAN",
+			"en": "RATTAN CANE / ROTAN",
 			"zh": "藤鞭",
 			"ms": "ROTAN"
 		},
@@ -29721,7 +29721,7 @@
 		"number": "3302",
 		"content": {
 			"en": "CHINA",
-			"zh": "大陆,中国",
+			"zh": "大陆, 中国",
 			"ms": "TANAHAIR CHINA"
 		},
 		"image": "wzt_3302.webp"
@@ -30071,7 +30071,7 @@
 	{
 		"number": "3341",
 		"content": {
-			"en": "HARBOUR /  PORT",
+			"en": "HARBOUR / PORT",
 			"zh": "码头",
 			"ms": "PELABURAN"
 		},
@@ -30549,7 +30549,7 @@
 		"number": "3394",
 		"content": {
 			"en": "MAD MAN",
-			"zh": "狂人,疯人",
+			"zh": "狂人, 疯人",
 			"ms": "PENGGANAS GILA"
 		},
 		"image": "wzt_3394.webp"
@@ -30577,7 +30577,7 @@
 		"content": {
 			"en": "MONK",
 			"zh": "出家",
-			"ms": "JADI SAMI/ RAHIB"
+			"ms": "JADI SAMI/RAHIB"
 		},
 		"image": "wzt_3397.webp"
 	},
@@ -30611,7 +30611,7 @@
 	{
 		"number": "3401",
 		"content": {
-			"en": "DIAPER /  NAPKIN",
+			"en": "DIAPER / NAPKIN",
 			"zh": "尿布",
 			"ms": "KAIN LAMPIN"
 		},
@@ -30892,7 +30892,7 @@
 		"content": {
 			"en": "UFO",
 			"zh": "飞碟",
-			"ms": "UFO /  PERALATAN ELEKTRONIK"
+			"ms": "UFO / PERALATAN ELEKTRONIK"
 		},
 		"image": "wzt_3432.webp"
 	},
@@ -31062,7 +31062,7 @@
 		"number": "3451",
 		"content": {
 			"en": "PAWN SHOP",
-			"zh": "当店,当铺",
+			"zh": "当店, 当铺",
 			"ms": "KEDAI PAJAKAN"
 		},
 		"image": "wzt_3451.webp"
@@ -31197,7 +31197,7 @@
 		"number": "3466",
 		"content": {
 			"en": "WARSHIP",
-			"zh": "小型战舰,小航空母舰",
+			"zh": "小型战舰, 小航空母舰",
 			"ms": "KAPAL INDUK"
 		},
 		"image": "wzt_3466.webp"
@@ -31224,7 +31224,7 @@
 		"number": "3469",
 		"content": {
 			"en": "MORTUARY",
-			"zh": "尸房,太平院",
+			"zh": "尸房, 太平院",
 			"ms": "TEMPAT ABU ROKOK"
 		},
 		"image": "wzt_3469.webp"
@@ -31566,7 +31566,7 @@
 		"number": "3507",
 		"content": {
 			"en": "RUBBER TREE SEEDS",
-			"zh": "胶树子,橡胶种子",
+			"zh": "胶树子, 橡胶种子",
 			"ms": "BIJI GETAH"
 		},
 		"image": "wzt_3507.webp"
@@ -32232,7 +32232,7 @@
 		"number": "3581",
 		"content": {
 			"en": "SOUR PLUM",
-			"zh": "活梅,酸梅",
+			"zh": "活梅, 酸梅",
 			"ms": "ASAM"
 		},
 		"image": "wzt_3581.webp"
@@ -32268,7 +32268,7 @@
 		"number": "3585",
 		"content": {
 			"en": "JACK FRUIT",
-			"zh": "孟吉,木菠萝",
+			"zh": "孟吉, 木菠萝",
 			"ms": "NANGKA"
 		},
 		"image": "wzt_3585.webp"
@@ -32358,7 +32358,7 @@
 		"number": "3595",
 		"content": {
 			"en": "ROASTED MEAT",
-			"zh": "烧肉,烧猪",
+			"zh": "烧肉, 烧猪",
 			"ms": "ARAK BAKAR"
 		},
 		"image": "wzt_3595.webp"
@@ -32871,7 +32871,7 @@
 		"number": "3652",
 		"content": {
 			"en": "ICE CREAM",
-			"zh": "雪糕,冰淇淋",
+			"zh": "雪糕, 冰淇淋",
 			"ms": "BATANG AISKRIM"
 		},
 		"image": "wzt_3652.webp"
@@ -33087,7 +33087,7 @@
 		"number": "3676",
 		"content": {
 			"en": "KAYA",
-			"zh": "加也,咖央",
+			"zh": "加也, 咖央",
 			"ms": "KAYA"
 		},
 		"image": "wzt_3676.webp"
@@ -33195,7 +33195,7 @@
 		"number": "3688",
 		"content": {
 			"en": "BBQ CHICKEN WING",
-			"zh": "烧鸡翼,烧鸡翅",
+			"zh": "烧鸡翼, 烧鸡翅",
 			"ms": "AYAM BEKU"
 		},
 		"image": "wzt_3688.webp"
@@ -33204,7 +33204,7 @@
 		"number": "3689",
 		"content": {
 			"en": "SOY SAUCE",
-			"zh": "鼓油,酱油",
+			"zh": "鼓油, 酱油",
 			"ms": "KICAP"
 		},
 		"image": "wzt_3689.webp"
@@ -33465,7 +33465,7 @@
 		"number": "3718",
 		"content": {
 			"en": "CHINESE LIME",
-			"zh": "麻疯柑,泰國柑",
+			"zh": "麻疯柑, 泰國柑",
 			"ms": "LIMAU KESTURI BUKIT"
 		},
 		"image": "wzt_3718.webp"
@@ -33762,7 +33762,7 @@
 		"number": "3751",
 		"content": {
 			"en": "BEEF STEAK",
-			"zh": "牛扒,牛排",
+			"zh": "牛扒, 牛排",
 			"ms": "STIK DAGING"
 		},
 		"image": "wzt_3751.webp"
@@ -34113,7 +34113,7 @@
 		"number": "3790",
 		"content": {
 			"en": "CHICKEN CHOP",
-			"zh": "鸡扒,鸡排",
+			"zh": "鸡扒, 鸡排",
 			"ms": "STIK AYAM"
 		},
 		"image": "wzt_3790.webp"
@@ -34212,7 +34212,7 @@
 		"number": "3801",
 		"content": {
 			"en": "CHINESE CRULLER",
-			"zh": "油条,油炸鬼",
+			"zh": "油条, 油炸鬼",
 			"ms": "YOU ZHA KUAI"
 		},
 		"image": "wzt_3801.webp"
@@ -35103,7 +35103,7 @@
 		"number": "3900",
 		"content": {
 			"en": "CORN",
-			"zh": "玉米,玉蜀黍",
+			"zh": "玉米, 玉蜀黍",
 			"ms": "BIJIAN JAGUNG"
 		},
 		"image": "wzt_3900.webp"
@@ -35373,7 +35373,7 @@
 		"number": "3930",
 		"content": {
 			"en": "STEWED ANGELICA",
-			"zh": "熬当归,炖当归",
+			"zh": "熬当归, 炖当归",
 			"ms": "MENGUKUS DONG GUI"
 		},
 		"image": "wzt_3930.webp"
@@ -35778,7 +35778,7 @@
 		"number": "3975",
 		"content": {
 			"en": "CHINESE ANGELICA ROOT",
-			"zh": "归身,当归",
+			"zh": "归身, 当归",
 			"ms": "GUI SHEN"
 		},
 		"image": "wzt_3975.webp"
@@ -36074,18 +36074,18 @@
 	{
 		"number": "4008",
 		"content": {
-			"en": "PAKATAN RAKYAT,PKR",
+			"en": "PAKATAN RAKYAT, PKR",
 			"zh": "民联",
-			"ms": "PAKATAN RAKYAT, PKR"
+			"ms": "PAKATAN RAKYAT,  PKR"
 		},
 		"image": "wzt_4008.webp"
 	},
 	{
 		"number": "4009",
 		"content": {
-			"en": "BARISAN NATIONAL,BN",
+			"en": "BARISAN NATIONAL, BN",
 			"zh": "国阵",
-			"ms": "BARISAN NATIONAL,BN"
+			"ms": "BARISAN NATIONAL, BN"
 		},
 		"image": "wzt_4009.webp"
 	},
@@ -37011,7 +37011,7 @@
 		"number": "4112",
 		"content": {
 			"en": "FAT BOY",
-			"zh": "胖子,肥仔",
+			"zh": "胖子, 肥仔",
 			"ms": "LELAKI GEMUK"
 		},
 		"image": "wzt_4112.webp"
@@ -39711,7 +39711,7 @@
 		"number": "4412",
 		"content": {
 			"en": "RAFFLESIA",
-			"zh": "大王花,莱佛士花",
+			"zh": "大王花, 莱佛士花",
 			"ms": "RAFFLESIA"
 		},
 		"image": "wzt_4412.webp"
@@ -40935,7 +40935,7 @@
 		"number": "4548",
 		"content": {
 			"en": "SMILING FACE",
-			"zh": "笑颜,笑脸",
+			"zh": "笑颜, 笑脸",
 			"ms": "WAJAH SENYUM"
 		},
 		"image": "wzt_4548.webp"
@@ -41268,8 +41268,8 @@
 		"number": "4585",
 		"content": {
 			"en": "DWARF",
-			"zh": "侏儒,矮子",
-			"ms": "KERDIL, KERDIL"
+			"zh": "侏儒, 矮子",
+			"ms": "KERDIL,  KERDIL"
 		},
 		"image": "wzt_4585.webp"
 	},
@@ -41528,9 +41528,9 @@
 	{
 		"number": "4614",
 		"content": {
-			"en": "AIR SWIMMER,SKYDIVING",
-			"zh": "空中游泳者,高空跳伞",
-			"ms": "PERENANG UDARA, TERJUN UDARA"
+			"en": "AIR SWIMMER, SKYDIVING",
+			"zh": "空中游泳者, 高空跳伞",
+			"ms": "PERENANG UDARA,  TERJUN UDARA"
 		},
 		"image": "wzt_4614.webp"
 	},
@@ -41655,7 +41655,7 @@
 		"number": "4628",
 		"content": {
 			"en": "CONSTANT LIAR",
-			"zh": "大话精,騙子",
+			"zh": "大话精, 騙子",
 			"ms": "PEMBOHONG BERTERUSAN"
 		},
 		"image": "wzt_4628.webp"
@@ -41978,7 +41978,7 @@
 	{
 		"number": "4664",
 		"content": {
-			"en": "HOUSEMAN,INTERN",
+			"en": "HOUSEMAN, INTERN",
 			"zh": "实习医生",
 			"ms": "DOCTORINTERN"
 		},
@@ -42258,8 +42258,8 @@
 		"number": "4695",
 		"content": {
 			"en": "MARRIED COUPLE",
-			"zh": "伉俪,夫妻,夫妇",
-			"ms": "SUAMI ISTERI, SUAMI ISTERI, PASANGAN"
+			"zh": "伉俪, 夫妻, 夫妇",
+			"ms": "SUAMI ISTERI,  SUAMI ISTERI,  PASANGAN"
 		},
 		"image": "wzt_4695.webp"
 	},
@@ -43482,8 +43482,8 @@
 		"number": "4831",
 		"content": {
 			"en": "GLOSS",
-			"zh": "唇彩,口红",
-			"ms": "PENGILAT BIBIR, GINCU"
+			"zh": "唇彩, 口红",
+			"ms": "PENGILAT BIBIR,  GINCU"
 		},
 		"image": "wzt_4831.webp"
 	},
@@ -44705,7 +44705,7 @@
 	{
 		"number": "4967",
 		"content": {
-			"en": "FOE,ENEMY",
+			"en": "FOE, ENEMY",
 			"zh": "敌人",
 			"ms": "MUSUH"
 		},
@@ -44761,7 +44761,7 @@
 		"content": {
 			"en": "RICH HANDSOME",
 			"zh": "高富帅",
-			"ms": "TINGGI, KAYA DAN KACAK"
+			"ms": "TINGGI,  KAYA DAN KACAK"
 		},
 		"image": "wzt_4973.webp"
 	},
@@ -44868,7 +44868,7 @@
 		"number": "4985",
 		"content": {
 			"en": "ANTLER",
-			"zh": "鹿茸,鹿角",
+			"zh": "鹿茸, 鹿角",
 			"ms": "TANDUK"
 		},
 		"image": "wzt_4985.webp"
@@ -45687,7 +45687,7 @@
 		"number": "5076",
 		"content": {
 			"en": "CHEWING GUM",
-			"zh": "香口糖,口香糖",
+			"zh": "香口糖, 口香糖",
 			"ms": "GULA-GULA GETAH"
 		},
 		"image": "wzt_5076.webp"
@@ -46137,7 +46137,7 @@
 		"number": "5126",
 		"content": {
 			"en": "HEAD ON COLLISION",
-			"zh": "汽车相撞,车祸",
+			"zh": "汽车相撞, 车祸",
 			"ms": "PERLANGGARAN KERETA"
 		},
 		"image": "wzt_5126.webp"
@@ -46650,7 +46650,7 @@
 		"number": "5183",
 		"content": {
 			"en": "MUSLIM PRAYING",
-			"zh": "巫人拜神,马来人祈祷",
+			"zh": "巫人拜神, 马来人祈祷",
 			"ms": "MUSLIM SEMBAHYANG"
 		},
 		"image": "wzt_5183.webp"
@@ -47316,7 +47316,7 @@
 		"number": "5257",
 		"content": {
 			"en": "LIGHTER LOST",
-			"zh": "失去火机,打火机不见",
+			"zh": "失去火机, 打火机不见",
 			"ms": "PEMETIK API HILANG"
 		},
 		"image": "wzt_5257.webp"
@@ -47343,7 +47343,7 @@
 		"number": "5260",
 		"content": {
 			"en": "BRACELET LOST",
-			"zh": "丢失手链,手链不见",
+			"zh": "丢失手链, 手链不见",
 			"ms": "RANTAI TANGAN HILANG"
 		},
 		"image": "wzt_5260.webp"
@@ -47361,7 +47361,7 @@
 		"number": "5262",
 		"content": {
 			"en": "TRAFFIC JAM",
-			"zh": "交通受阻,交通阻塞",
+			"zh": "交通受阻, 交通阻塞",
 			"ms": "KESESAKAN LALU LINTAS"
 		},
 		"image": "wzt_5262.webp"
@@ -47487,7 +47487,7 @@
 		"number": "5276",
 		"content": {
 			"en": "LOST MONEY",
-			"zh": "失了钱,遗失钱",
+			"zh": "失了钱, 遗失钱",
 			"ms": "HILANG WANG"
 		},
 		"image": "wzt_5276.webp"
@@ -47586,7 +47586,7 @@
 		"number": "5287",
 		"content": {
 			"en": "LICENSE LOST",
-			"zh": "失了礼申,驾驶护照不见",
+			"zh": "失了礼申, 驾驶护照不见",
 			"ms": "LESEN HILANG"
 		},
 		"image": "wzt_5287.webp"
@@ -47748,7 +47748,7 @@
 		"number": "5305",
 		"content": {
 			"en": "REFUGEE",
-			"zh": "走难,逃难",
+			"zh": "走难, 逃难",
 			"ms": "MELARIKAN DIRI"
 		},
 		"image": "wzt_5305.webp"
@@ -47882,7 +47882,7 @@
 	{
 		"number": "5320",
 		"content": {
-			"en": "CRACKED /  LEAKING FISH POND",
+			"en": "CRACKED / LEAKING FISH POND",
 			"zh": "鱼塘破裂",
 			"ms": "AIR KOLAM IKAN MELIMPAH"
 		},
@@ -48008,7 +48008,7 @@
 	{
 		"number": "5334",
 		"content": {
-			"en": "ELECTROCUTION /  ELECTRIC SHOCK",
+			"en": "ELECTROCUTION / ELECTRIC SHOCK",
 			"zh": "被电烧死",
 			"ms": "KEJUTAN ELEKRTIK"
 		},
@@ -48198,7 +48198,7 @@
 		"number": "5355",
 		"content": {
 			"en": "FEVER",
-			"zh": "太热症,发烧",
+			"zh": "太热症, 发烧",
 			"ms": "DEMAM KEPIALU"
 		},
 		"image": "wzt_5355.webp"
@@ -48216,7 +48216,7 @@
 		"number": "5357",
 		"content": {
 			"en": "COUGHING BLOOD",
-			"zh": "呕血,咳血",
+			"zh": "呕血, 咳血",
 			"ms": "MUNTAH DARAH"
 		},
 		"image": "wzt_5357.webp"
@@ -48251,7 +48251,7 @@
 	{
 		"number": "5361",
 		"content": {
-			"en": "KILLING /  DISSECTING LIZARD",
+			"en": "KILLING / DISSECTING LIZARD",
 			"zh": "杀四脚蛇",
 			"ms": "SEMBELIH BIAWAK"
 		},
@@ -48260,8 +48260,8 @@
 	{
 		"number": "5362",
 		"content": {
-			"en": "GASTROENTERITIS /  GASTRIC PAIN",
-			"zh": "肠热病,胃痛",
+			"en": "GASTROENTERITIS / GASTRIC PAIN",
+			"zh": "肠热病, 胃痛",
 			"ms": "GASTROENTERITIS"
 		},
 		"image": "wzt_5362.webp"
@@ -48296,7 +48296,7 @@
 	{
 		"number": "5366",
 		"content": {
-			"en": "COLD /  FLU /  RUNNING NOSE",
+			"en": "COLD / FLU / RUNNING NOSE",
 			"zh": "感冒",
 			"ms": "DEMAM PANAS"
 		},
@@ -48305,7 +48305,7 @@
 	{
 		"number": "5367",
 		"content": {
-			"en": "NAUSEA /  VOMITING /  THROWING UP",
+			"en": "NAUSEA / VOMITING / THROWING UP",
 			"zh": "作呕",
 			"ms": "LOYA"
 		},
@@ -48450,7 +48450,7 @@
 		"number": "5383",
 		"content": {
 			"en": "DIARRHOEA",
-			"zh": "腹泻,泻肚",
+			"zh": "腹泻, 泻肚",
 			"ms": "CIRIT-BIRIT"
 		},
 		"image": "wzt_5383.webp"
@@ -48485,7 +48485,7 @@
 	{
 		"number": "5387",
 		"content": {
-			"en": "BREATHLESS /  BREATHING DIFFICULTY",
+			"en": "BREATHLESS / BREATHING DIFFICULTY",
 			"zh": "气喘",
 			"ms": "ASMA"
 		},
@@ -48521,7 +48521,7 @@
 	{
 		"number": "5391",
 		"content": {
-			"en": "WEAVING /  MAKING CLOTH",
+			"en": "WEAVING / MAKING CLOTH",
 			"zh": "纺织",
 			"ms": "MENENUN"
 		},
@@ -48566,7 +48566,7 @@
 	{
 		"number": "5396",
 		"content": {
-			"en": "EPILEPSY /  FITS",
+			"en": "EPILEPSY / FITS",
 			"zh": "发羊吊",
 			"ms": "KEKEJANGAN"
 		},
@@ -48630,7 +48630,7 @@
 		"number": "5403",
 		"content": {
 			"en": "PRAYING TO NA TUK KONG",
-			"zh": "拜拿督公,拜土地公",
+			"zh": "拜拿督公, 拜土地公",
 			"ms": "MEMUJA BERHALA \"DATO\""
 		},
 		"image": "wzt_5403.webp"
@@ -48693,7 +48693,7 @@
 		"number": "5410",
 		"content": {
 			"en": "WALLET LOST",
-			"zh": "失了皮包,钱包不见",
+			"zh": "失了皮包, 钱包不见",
 			"ms": "DOMPET HILANG"
 		},
 		"image": "wzt_5410.webp"
@@ -48738,7 +48738,7 @@
 		"number": "5415",
 		"content": {
 			"en": "DRYING MATTRESS",
-			"zh": "晒枕肉,晒床褥",
+			"zh": "晒枕肉, 晒床褥",
 			"ms": "MENYIDAI DAGING"
 		},
 		"image": "wzt_5415.webp"
@@ -49170,7 +49170,7 @@
 		"number": "5463",
 		"content": {
 			"en": "REPAIRING TABLE",
-			"zh": "修台,修桌子",
+			"zh": "修台, 修桌子",
 			"ms": "MEMPERBAIKI MEJA"
 		},
 		"image": "wzt_5463.webp"
@@ -49385,7 +49385,7 @@
 	{
 		"number": "5487",
 		"content": {
-			"en": "DEMONSTRATION /  PROTEST",
+			"en": "DEMONSTRATION / PROTEST",
 			"zh": "游行示威",
 			"ms": "DEMONSTRASI SECARA BERARAK"
 		},
@@ -49448,7 +49448,7 @@
 	{
 		"number": "5494",
 		"content": {
-			"en": "FIXING TAP /  PIPE",
+			"en": "FIXING TAP / PIPE",
 			"zh": "修理水喉",
 			"ms": "MEMBAIKI PAIP AIR"
 		},
@@ -49502,7 +49502,7 @@
 	{
 		"number": "5500",
 		"content": {
-			"en": "EXTRACTING /  PULLING TOOTH",
+			"en": "EXTRACTING / PULLING TOOTH",
 			"zh": "拔牙",
 			"ms": "CABUT GIGI"
 		},
@@ -49727,7 +49727,7 @@
 	{
 		"number": "5525",
 		"content": {
-			"en": "DRYING INCENSE /  JOSS STICKS",
+			"en": "DRYING INCENSE / JOSS STICKS",
 			"zh": "晒香",
 			"ms": "MENYIDAI COLOK"
 		},
@@ -49782,7 +49782,7 @@
 		"number": "5531",
 		"content": {
 			"en": "BAIL OUT",
-			"zh": "担保,保释",
+			"zh": "担保, 保释",
 			"ms": "MENJAMIN"
 		},
 		"image": "wzt_5531.webp"
@@ -49898,7 +49898,7 @@
 	{
 		"number": "5544",
 		"content": {
-			"en": "ELOPING /  RUNNING AWAY",
+			"en": "ELOPING / RUNNING AWAY",
 			"zh": "私奔",
 			"ms": "MELARIKAN DIRI BERSAMA KEKASIH"
 		},
@@ -49917,7 +49917,7 @@
 		"number": "5546",
 		"content": {
 			"en": "GRASS CUTTING MACHINE",
-			"zh": "割草,剪草",
+			"zh": "割草, 剪草",
 			"ms": "MEMOTONG RUMPUT"
 		},
 		"image": "wzt_5546.webp"
@@ -50393,7 +50393,7 @@
 	{
 		"number": "5599",
 		"content": {
-			"en": "CORPSE /  DEAD BODY",
+			"en": "CORPSE / DEAD BODY",
 			"zh": "停尸",
 			"ms": "BILIK MAYAT"
 		},
@@ -50439,7 +50439,7 @@
 		"number": "5604",
 		"content": {
 			"en": "ATTENDING INTERVIEW",
-			"zh": "见工,面试工作",
+			"zh": "见工, 面试工作",
 			"ms": "TEMU DUGA"
 		},
 		"image": "wzt_5604.webp"
@@ -50844,7 +50844,7 @@
 		"number": "5649",
 		"content": {
 			"en": "CALLING POLICE",
-			"zh": "打999,报警",
+			"zh": "打999, 报警",
 			"ms": "DAIL 999"
 		},
 		"image": "wzt_5649.webp"
@@ -50961,7 +50961,7 @@
 		"number": "5662",
 		"content": {
 			"en": "VACCINATION",
-			"zh": "种豆,接种疫苗",
+			"zh": "种豆, 接种疫苗",
 			"ms": "MENCACAH"
 		},
 		"image": "wzt_5662.webp"
@@ -51357,7 +51357,7 @@
 		"number": "5706",
 		"content": {
 			"en": "DONATING BLOOD",
-			"zh": "输血,捐血",
+			"zh": "输血, 捐血",
 			"ms": "DERMA DARAH"
 		},
 		"image": "wzt_5706.webp"
@@ -51536,7 +51536,7 @@
 	{
 		"number": "5726",
 		"content": {
-			"en": "KILLED BY BEE /  WASP",
+			"en": "KILLED BY BEE / WASP",
 			"zh": "被蜂刺死",
 			"ms": "DISENGAT MARI"
 		},
@@ -51563,7 +51563,7 @@
 	{
 		"number": "5729",
 		"content": {
-			"en": "DRINKING COCONUT WINE /  TODDY",
+			"en": "DRINKING COCONUT WINE / TODDY",
 			"zh": "喝椰花酒",
 			"ms": "MINUM TODI"
 		},
@@ -51707,7 +51707,7 @@
 	{
 		"number": "5745",
 		"content": {
-			"en": "CAPON /  CASTRATED ROOSTER",
+			"en": "CAPON / CASTRATED ROOSTER",
 			"zh": "杀鸡",
 			"ms": "AYAM KEMBIRI"
 		},
@@ -51797,7 +51797,7 @@
 	{
 		"number": "5755",
 		"content": {
-			"en": "DRYING CHINESE SAUSAGE /  LAP CHEONG",
+			"en": "DRYING CHINESE SAUSAGE / LAP CHEONG",
 			"zh": "晒腊肠",
 			"ms": "JEMUR DAGING JERUK"
 		},
@@ -51932,7 +51932,7 @@
 	{
 		"number": "5770",
 		"content": {
-			"en": "HAND SAWED OFF /  AMPUTATED",
+			"en": "HAND SAWED OFF / AMPUTATED",
 			"zh": "锯手",
 			"ms": "MENGGERGAJI"
 		},
@@ -52049,7 +52049,7 @@
 	{
 		"number": "5783",
 		"content": {
-			"en": "LEG SAWED OFF /  AMPUTATED",
+			"en": "LEG SAWED OFF / AMPUTATED",
 			"zh": "锯脚",
 			"ms": "MENGERGAJI KAKI"
 		},
@@ -52085,7 +52085,7 @@
 	{
 		"number": "5787",
 		"content": {
-			"en": "BURNT /  TORCHED BY FIRE",
+			"en": "BURNT / TORCHED BY FIRE",
 			"zh": "火烧人",
 			"ms": "API HANGUSKAN ORANG"
 		},
@@ -52112,7 +52112,7 @@
 	{
 		"number": "5790",
 		"content": {
-			"en": "RUNNING /  GETTING AWAY",
+			"en": "RUNNING / GETTING AWAY",
 			"zh": "走路",
 			"ms": "MELARIKAN DIRI"
 		},
@@ -52220,7 +52220,7 @@
 	{
 		"number": "5802",
 		"content": {
-			"en": "DEEPAVALI /  FESTIVAL OF LIGHT",
+			"en": "DEEPAVALI / FESTIVAL OF LIGHT",
 			"zh": "印度新年",
 			"ms": "TAHUN BARU ORANG INDIA"
 		},
@@ -52256,7 +52256,7 @@
 	{
 		"number": "5806",
 		"content": {
-			"en": "THAIPUSAM /  HINDU FESTIVAL",
+			"en": "THAIPUSAM / HINDU FESTIVAL",
 			"zh": "大宝森节",
 			"ms": "THAIPUSAM"
 		},
@@ -52265,7 +52265,7 @@
 	{
 		"number": "5807",
 		"content": {
-			"en": "GUAN YIN /  KUAN YIN BIRTHDAY",
+			"en": "GUAN YIN / KUAN YIN BIRTHDAY",
 			"zh": "观音诞",
 			"ms": "HARI JADI GUAN YIN"
 		},
@@ -52274,7 +52274,7 @@
 	{
 		"number": "5808",
 		"content": {
-			"en": "QING MING /  CHENG BENG FESTIVAL",
+			"en": "QING MING / CHENG BENG FESTIVAL",
 			"zh": "清明节",
 			"ms": "HARI QING MING"
 		},
@@ -52292,7 +52292,7 @@
 	{
 		"number": "5810",
 		"content": {
-			"en": "MERDEKA /  INDEPENDENCE DAY",
+			"en": "MERDEKA / INDEPENDENCE DAY",
 			"zh": "国庆日",
 			"ms": "HARI KEMERDEKAAN"
 		},
@@ -52338,7 +52338,7 @@
 		"number": "5815",
 		"content": {
 			"en": "CHINESE NEW YEAR",
-			"zh": "华人新年,农历新年",
+			"zh": "华人新年, 农历新年",
 			"ms": "HARI PERTAMA TAHUN BARU CINA"
 		},
 		"image": "wzt_5815.webp"
@@ -52563,7 +52563,7 @@
 		"number": "5840",
 		"content": {
 			"en": "CHINESE NEW YEAR REUNION",
-			"zh": "年卅晚,除夕夜",
+			"zh": "年卅晚, 除夕夜",
 			"ms": "HARI SEBELUM TAHUN BARU CINA"
 		},
 		"image": "wzt_5840.webp"
@@ -52725,7 +52725,7 @@
 		"number": "5858",
 		"content": {
 			"en": "HOKKIEN NEW YEAR",
-			"zh": "福建人新年,年初九",
+			"zh": "福建人新年, 年初九",
 			"ms": "TAHUN BARU CINA DIALET HOKKAIN"
 		},
 		"image": "wzt_5858.webp"
@@ -53417,7 +53417,7 @@
 	{
 		"number": "5935",
 		"content": {
-			"en": "TRAVEL TO SAM POH TONG /  CAVE",
+			"en": "TRAVEL TO SAM POH TONG / CAVE",
 			"zh": "去三宝洞",
 			"ms": "SAM PO KONG"
 		},
@@ -53787,7 +53787,7 @@
 		"number": "5976",
 		"content": {
 			"en": "TRAVEL TO GERMANY",
-			"zh": "去东德,德国",
+			"zh": "去东德, 德国",
 			"ms": "JERMAN"
 		},
 		"image": "wzt_5976.webp"
@@ -57216,7 +57216,7 @@
 		"number": "6357",
 		"content": {
 			"en": "BRAKE PAD",
-			"zh": "比力皮,刹车皮",
+			"zh": "比力皮, 刹车皮",
 			"ms": "ALAS BREK"
 		},
 		"image": "wzt_6357.webp"
@@ -58701,7 +58701,7 @@
 		"number": "6522",
 		"content": {
 			"en": "BAR CODE",
-			"zh": "条石,条形码",
+			"zh": "条石, 条形码",
 			"ms": "KOD BAR"
 		},
 		"image": "wzt_6522.webp"
@@ -58836,7 +58836,7 @@
 		"number": "6537",
 		"content": {
 			"en": "HAIR SALOON",
-			"zh": "发廊,理发店",
+			"zh": "发廊, 理发店",
 			"ms": "SALOON RAMBUT"
 		},
 		"image": "wzt_6537.webp"
@@ -64001,9 +64001,9 @@
 	{
 		"number": "7111",
 		"content": {
-			"en": "DOMESTIC CAR,PROTON",
+			"en": "DOMESTIC CAR, PROTON",
 			"zh": "国产车",
-			"ms": "KERETA DOMESTIK,PROTON"
+			"ms": "KERETA DOMESTIK, PROTON"
 		},
 		"image": "wzt_7111.webp"
 	},
@@ -64596,7 +64596,7 @@
 		"number": "7177",
 		"content": {
 			"en": "TAX FRAUD",
-			"zh": "走税,逃税",
+			"zh": "走税, 逃税",
 			"ms": "PENGELAKAN CUKAI"
 		},
 		"image": "wzt_7177.webp"
@@ -65964,7 +65964,7 @@
 		"number": "7329",
 		"content": {
 			"en": "INCOME TAX SUBMISSION",
-			"zh": "交税,缴税",
+			"zh": "交税, 缴税",
 			"ms": "BAYAR CUKAI"
 		},
 		"image": "wzt_7329.webp"
@@ -68250,7 +68250,7 @@
 		"number": "7583",
 		"content": {
 			"en": "CHANGED NAME",
-			"zh": "易名,改名",
+			"zh": "易名, 改名",
 			"ms": "TUKAR NAMA"
 		},
 		"image": "wzt_7583.webp"
@@ -69411,7 +69411,7 @@
 		"number": "7712",
 		"content": {
 			"en": "EMERGENCY CALL",
-			"zh": "急电,紧急电话",
+			"zh": "急电, 紧急电话",
 			"ms": "PANGGILAN KECEMASAN"
 		},
 		"image": "wzt_7712.webp"
@@ -69996,7 +69996,7 @@
 		"number": "7777",
 		"content": {
 			"en": "COFFEE MONEY",
-			"zh": "咖啡钱,贿赂金",
+			"zh": "咖啡钱, 贿赂金",
 			"ms": "DUIT KOPI"
 		},
 		"image": "wzt_7777.webp"
@@ -70913,7 +70913,7 @@
 	{
 		"number": "7879",
 		"content": {
-			"en": "NEW SIGNING,NEW CONTRACT",
+			"en": "NEW SIGNING, NEW CONTRACT",
 			"zh": "新合约",
 			"ms": "KONTRAK BARU"
 		},
@@ -73192,7 +73192,7 @@
 		"content": {
 			"en": "FOOT AND MOUTH DISEASE",
 			"zh": "手足口症",
-			"ms": "PENYAKIT TANGAN, KAKI DAN MULUT"
+			"ms": "PENYAKIT TANGAN,  KAKI DAN MULUT"
 		},
 		"image": "wzt_8132.webp"
 	},
@@ -73542,8 +73542,8 @@
 		"number": "8171",
 		"content": {
 			"en": "HAZE WEATHER",
-			"zh": "烟霾,烟雾",
-			"ms": "JEREBU, ASAP"
+			"zh": "烟霾, 烟雾",
+			"ms": "JEREBU,  ASAP"
 		},
 		"image": "wzt_8171.webp"
 	},
@@ -73811,9 +73811,9 @@
 	{
 		"number": "8201",
 		"content": {
-			"en": "HIV INFECTION,AIDS",
+			"en": "HIV INFECTION, AIDS",
 			"zh": "艾滋病",
-			"ms": "JANGKITAN HIV, AIDS"
+			"ms": "JANGKITAN HIV,  AIDS"
 		},
 		"image": "wzt_8201.webp"
 	},
@@ -74253,7 +74253,7 @@
 		"number": "8250",
 		"content": {
 			"en": "BAKING SODA",
-			"zh": "小苏打,苏打粉",
+			"zh": "小苏打, 苏打粉",
 			"ms": "BAKING SODA"
 		},
 		"image": "wzt_8250.webp"
@@ -74326,7 +74326,7 @@
 		"content": {
 			"en": "BASIC NECESSITIES",
 			"zh": "衣食住行",
-			"ms": "MAKANAN, PAKAIAN, TEMPAT TINGGAL DAN PENGANGKUTAN"
+			"ms": "MAKANAN,  PAKAIAN,  TEMPAT TINGGAL DAN PENGANGKUTAN"
 		},
 		"image": "wzt_8258.webp"
 	},
@@ -74784,7 +74784,7 @@
 		"number": "8309",
 		"content": {
 			"en": "KING'S ABDICATION",
-			"zh": "国王逊位,王退位",
+			"zh": "国王逊位, 王退位",
 			"ms": "RAJA TURUN TAKHTA"
 		},
 		"image": "wzt_8309.webp"
@@ -75080,7 +75080,7 @@
 	{
 		"number": "8342",
 		"content": {
-			"en": "ACCEPTING DEFEAT,ACCEPT FAILURE",
+			"en": "ACCEPTING DEFEAT, ACCEPT FAILURE",
 			"zh": "接受失败",
 			"ms": "TERIMA KEGAGALAN"
 		},
@@ -75153,8 +75153,8 @@
 		"number": "8350",
 		"content": {
 			"en": "PREGNANCY TEST",
-			"zh": "妊娠检查,怀孕检查",
-			"ms": "UJIAN KEHAMILAN, UJIAN KEHAMILAN"
+			"zh": "妊娠检查, 怀孕检查",
+			"ms": "UJIAN KEHAMILAN,  UJIAN KEHAMILAN"
 		},
 		"image": "wzt_8350.webp"
 	},
@@ -75171,7 +75171,7 @@
 		"number": "8352",
 		"content": {
 			"en": "MATCH FIXING",
-			"zh": "打假波,打假球",
+			"zh": "打假波, 打假球",
 			"ms": "BOLA PEMALSUAN"
 		},
 		"image": "wzt_8352.webp"
@@ -76781,9 +76781,9 @@
 	{
 		"number": "8531",
 		"content": {
-			"en": "APPLY FOR COLLEGE/ UNIVERSITY",
+			"en": "APPLY FOR COLLEGE/UNIVERSITY",
 			"zh": "申请大学",
-			"ms": "MEMOHON KOLEJ/  UNIVERSITI"
+			"ms": "MEMOHON KOLEJ/ UNIVERSITI"
 		},
 		"image": "wzt_8531.webp"
 	},
@@ -77511,7 +77511,7 @@
 		"number": "8612",
 		"content": {
 			"en": "NICKNAME",
-			"zh": "绰号,外号,花名",
+			"zh": "绰号, 外号, 花名",
 			"ms": "NAMA PANGGILAN"
 		},
 		"image": "wzt_8612.webp"
@@ -77952,7 +77952,7 @@
 		"number": "8661",
 		"content": {
 			"en": "ACROPHOBIA",
-			"zh": "惧高症,畏高症",
+			"zh": "惧高症, 畏高症",
 			"ms": "AKROFOBIA"
 		},
 		"image": "wzt_8661.webp"
@@ -78123,7 +78123,7 @@
 		"number": "8680",
 		"content": {
 			"en": "ACT CUTE",
-			"zh": "卖萌,装可爱",
+			"zh": "卖萌, 装可爱",
 			"ms": "BERLAGAK COMEL"
 		},
 		"image": "wzt_8680.webp"
@@ -79788,7 +79788,7 @@
 		"number": "8865",
 		"content": {
 			"en": "ANTIQUES",
-			"zh": "收集古玩,古董",
+			"zh": "收集古玩, 古董",
 			"ms": "BARANGAN ANTIK"
 		},
 		"image": "wzt_8865.webp"
@@ -81066,7 +81066,7 @@
 		"number": "9007",
 		"content": {
 			"en": "SONGKHLA FESTIVAL",
-			"zh": "泰国宋卡节,泼水节",
+			"zh": "泰国宋卡节, 泼水节",
 			"ms": "PERAYAAN SONGKHLA"
 		},
 		"image": "wzt_9007.webp"
@@ -81120,7 +81120,7 @@
 		"number": "9013",
 		"content": {
 			"en": "DENGUE INFECTION",
-			"zh": "感染蚊症,骨痛热症",
+			"zh": "感染蚊症, 骨痛热症",
 			"ms": "JANGKITAN DENGGI"
 		},
 		"image": "wzt_9013.webp"
@@ -82289,9 +82289,9 @@
 	{
 		"number": "9143",
 		"content": {
-			"en": "JOVIAL MOMENTS,HAPPY HOUR",
+			"en": "JOVIAL MOMENTS, HAPPY HOUR",
 			"zh": "快乐时光",
-			"ms": "SAAT-SAAT RIANG, WAKTU GEMBIRA"
+			"ms": "SAAT-SAAT RIANG,  WAKTU GEMBIRA"
 		},
 		"image": "wzt_9143.webp"
 	},
@@ -82983,7 +82983,7 @@
 		"number": "9220",
 		"content": {
 			"en": "FLOG",
-			"zh": "鞭笞,鞭刑",
+			"zh": "鞭笞, 鞭刑",
 			"ms": "SEBAT"
 		},
 		"image": "wzt_9220.webp"
@@ -84765,7 +84765,7 @@
 		"number": "9418",
 		"content": {
 			"en": "DRINK DRIVING",
-			"zh": "醉后驾驶,酒后开车",
+			"zh": "醉后驾驶, 酒后开车",
 			"ms": "MEMANDU SEMASA MABUK"
 		},
 		"image": "wzt_9418.webp"
@@ -86565,7 +86565,7 @@
 		"number": "9618",
 		"content": {
 			"en": "PLAY HOUSE",
-			"zh": "过家家,家家酒",
+			"zh": "过家家, 家家酒",
 			"ms": "MAIN RUMAH RUMAH"
 		},
 		"image": "wzt_9618.webp"
@@ -87564,7 +87564,7 @@
 		"number": "9729",
 		"content": {
 			"en": "OLYMPIC BID",
-			"zh": "申奥,申办奥运会",
+			"zh": "申奥, 申办奥运会",
 			"ms": "TAWARAN UNTUK OLIMPIK"
 		},
 		"image": "wzt_9729.webp"
@@ -87735,7 +87735,7 @@
 		"number": "9748",
 		"content": {
 			"en": "TICKLING",
-			"zh": "瘙痒,搔痒",
+			"zh": "瘙痒, 搔痒",
 			"ms": "GATAL"
 		},
 		"image": "wzt_9748.webp"

@@ -5,7 +5,9 @@
 	</div>
 
 	<div class="container">
-		<div style="text-align: -webkit-center;" class="col-12 spincol">
+		<div style="text-align: -webkit-center;padding-left: 0px;
+    text-align: -webkit-center;
+    padding-right: 0px;" class="col-12 spincol">
 			<div class="lucky_col">
 				<div class="luckyspin_bg">
 					<!--this is title-->
@@ -463,12 +465,6 @@ export default {
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
 	font-size: 30px;
-}
-
-@media screen and (max-width: 321px) {
-	.spinner-number {
-		font-size: 22px !important;
-	}
 }
 
 .lucky_col {

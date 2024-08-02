@@ -3,225 +3,243 @@
 		<TopBar />
 	</div>
 
-	<div class="container">
-		<div class="col-12 title_col">
-			<div class="luckbook_col">
-				<div class="title">
-					<p>{{ $t('Sidebar.Lucky Book') }}</p>
+	<div style="text-align: -webkit-center;" class="container">
+
+
+		<div class="title">
+			<p>{{ $t('Sidebar.Lucky Book') }}</p>
+		</div>
+		<!--search bar-->
+		<div class="search_col">
+			<div class="input-container">
+				<div class="input-wrapper">
+					<input v-model="searchQuery" @keyup.enter="performSearch"
+						class="form-control form-control-dark search_input"
+						:placeholder="$t('LuckyBook.Search placeholder')" />
+					<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg" width="25"
+						height="25" fill="currentColor" class="bi bi-x-circle-fill close_btn" viewBox="0 0 16 16">
+						<path
+							d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+					</svg>
 				</div>
+			</div>
+			<!--search_btn-->
+			<button @click="performSearch" class="search_btn">{{ $t('LuckyBook.Search') }}</button>
+		</div>
 
-				<div class="column">
-					<!--search bar-->
-					<div class="search_col">
-						<div class="input-container">
-							<div class="input-wrapper">
-								<input v-model="searchQuery" class="form-control form-control-dark search_input"
-									:placeholder="$t('LuckyBook.Search placeholder')" />
-								<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg"
-									width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill close_btn"
-									viewBox="0 0 16 16">
-									<path
-										d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
-								</svg>
-							</div>
+
+		<div class="big_col" v-if="showSearchResults">
+			<!-- Display search results -->
+			<ul style="justify-content: center;" class="nav nav-tabs justify-content-center " role="tablist">
+				<li style="width: 31.5%;" class="nav-item">
+					<a class="nav-link active" data-bs-toggle="tab" href="#TuaPekKongWan">WZT</a>
+				</li>
+
+				<li style="width: 31.5%;" class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#GuanYin">GZT</a>
+				</li>
+
+				<li style="width: 31.5%;" class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#TuaPekKongQian">QZT</a>
+				</li>
+			</ul>
+			<br>
+
+			<div class="tab-content">
+				<!--TuaPekKong (Wan)-->
+				<div id="TuaPekKongWan" class="container tab-pane active">
+					<div>
+						<div class="search-message">
+							<p>{{ $t('LuckyBook.Found') }}
+								{{ filteredDataWZT.length }}
+								{{ $t('LuckyBook.result') }}
+								{{ filteredDataWZT.length !== 1 ? '' : '' }}
+								{{ $t('LuckyBook.for') }}
+								"{{ searchQuery }}"</p>
 						</div>
-						<!--search_btn-->
-						<button @click="performSearch" class="search_btn">{{ $t('LuckyBook.Search') }}</button>
-					</div>
 
-
-					<div class="big_col" v-if="showSearchResults">
-						<!-- Display search results -->
-						<ul style="justify-content: center;" class="nav nav-tabs justify-content-center "
-							role="tablist">
-							<li style="width: 31.5%;" class="nav-item">
-								<a class="nav-link active" data-bs-toggle="tab" href="#TuaPekKongWan">WZT</a>
-							</li>
-
-							<li style="width: 31.5%;" class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#GuanYin">GZT</a>
-							</li>
-
-							<li style="width: 31.5%;" class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#TuaPekKongQian">QZT</a>
+						<ul class="search-ul">
+							<li v-for="item in filteredDataWZT" :key="item.number" class="search-result">
+								<div class="number_col">
+									<p>{{ item.number }}</p>
+								</div>
+								<div class="images">
+									<img :src="`/imgs/wzt_webp/${item.image} `" :alt="item.content[language]" />
+								</div>
+								<div class="content">
+									<p>
+										{{ item.content[language] }}
+									</p>
+								</div>
 							</li>
 						</ul>
-						<br>
-
-						<div class="tab-content">
-							<!--TuaPekKong (Wan)-->
-							<div id="TuaPekKongWan" class="container tab-pane active">
-								<div>
-									<div class="search-message">
-										<p>{{ $t('LuckyBook.Found') }}
-											{{ filteredDataWZT.length }}
-											{{ $t('LuckyBook.result') }}
-											{{ filteredDataWZT.length !== 1 ? '' : '' }}
-											{{ $t('LuckyBook.for') }}
-											"{{ searchQuery }}"</p>
-									</div>
-
-									<ul class="search-ul">
-										<li v-for="item in filteredDataWZT" :key="item.number" class="search-result">
-											<div class="number_col">
-												<p>{{ item.number }}</p>
-											</div>
-											<div class="images">
-												<img :src="`/imgs/wzt_webp/${item.image} `"
-													:alt="item.content[language]" />
-											</div>
-											<div class="item-content">
-												<p>{{ item.content[language] }}</p>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!--GuanYinMa-->
-							<div id="GuanYin" class="container tab-pane fade">
-								<div class="search-message">
-									<p>{{ $t('LuckyBook.Found') }}
-										{{ filteredDataGZT.length }}
-										{{ $t('LuckyBook.result') }}
-										{{ filteredDataGZT.length !== 1 ?
-											'' : '' }}
-										{{ $t('LuckyBook.for') }}
-										"{{ searchQuery }}"</p>
-								</div>
-								<ul class="search-ul">
-									<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
-										<div class="number_col">
-											<p>{{ item.number }}</p>
-										</div>
-										<div class="images">
-											<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content[language]" />
-										</div>
-										<div class="content">
-											<p>{{ item.content[language] }}</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-
-
-							<!--TuaPekKong (Qian)-->
-							<div id="TuaPekKongQian" class="container tab-pane fade">
-								<div class="search-message">
-									<p>{{ $t('LuckyBook.Found') }}
-										{{ filteredDataQZT.length }}
-										{{ $t('LuckyBook.result') }}
-										{{ filteredDataQZT.length !== 1 ?
-											'' : '' }}
-										{{ $t('LuckyBook.for') }}
-										"{{ searchQuery }}"</p>
-								</div>
-								<ul class="search-ul">
-									<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
-										<div class="number_col">
-											<p>{{ item.number }}</p>
-										</div>
-										<div class="images">
-											<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content[language]" />
-										</div>
-										<div class="content">
-											<p>{{ item.content[language] }}</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
 					</div>
+				</div>
 
-					<!--entry TuaPekKongWan & GuanYinMa & TuaPkeKong Qian-->
-					<div style="text-align: -webkit-center;" v-else>
-						<div class="col-12 book_col">
-							<div style="text-align: -webkit-center; place-content: center;" class="row">
-
-								<!-- Tua Pek Kong (Wan) -->
-								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
-									<div class="lucky">
-										<div @click="goToTuaPekKong" class="lucky_col">
-											<div class="wanzititle_col">
-												<img class="wanzititle" src="/image/TuaPekKongWanZi.webp" />
-												<img width="65%" src="/image/TuaPekKongWan.svg" @load="onWanLoaded" />
-											</div>
-											<div class=" text">
-												<a href="#" class="text" @click="goToTuaPekKong">
-													{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}
-												</a>
-
-											</div>
-											<div class="text2">
-												<a href="#" class="text2">(WZT)</a>
-											</div>
-										</div>
-										<br />
-										<div class="btn_col">
-											<button class="btn_bg" @click="goToTuaPekKong">{{ $t('LuckyBook.Enter')
-												}}</button>
-										</div>
-										<br />
-									</div>
-								</div>
-
-								<!-- Guan Yin Ma -->
-								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
-									<div class="lucky">
-										<div @click="goToGuanYinMa" class="lucky_col">
-											<div class="wanzititle_col">
-												<img class="wanzititle" src="/image/GuanYinQianZi.webp" />
-												<img width="65%" src="/image/GuanYinQian.svg" />
-											</div>
-											<div class="text">
-												<a href="#" class="text" @click="goToGuanYinMa">
-													{{ $t('LuckyBook.Guan Yin Ma Dictionary') }}</a>
-												<p class="text2" @click="goToGuanYinMa"></p>
-											</div>
-											<div class="text2">
-												<a href="#" class="text2">(GZT)</a>
-											</div>
-										</div>
-										<br />
-										<div class="btn_col">
-											<button class="btn_bg" @click="goToGuanYinMa">{{ $t('LuckyBook.Enter')
-												}}</button>
-										</div>
-										<br />
-									</div>
-								</div>
-
-								<!-- Tua Pek Kong (Qian) -->
-								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
-									<div class="lucky">
-										<div @click="goToTuaPekKongQian" class="lucky_col">
-											<div class="wanzititle_col">
-												<img class="wanzititle" src="/image/TuaPekKongQianZi.webp" />
-												<img width="65%" src="/image/TuaPekKongQian.svg" />
-											</div>
-											<div class="text">
-												<a href="#" class="text" @click="goToTuaPekKongQian">
-													{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</a>
-											</div>
-											<div class="text2">
-												<a href="#" class="text2">(QZT)</a>
-											</div>
-										</div>
-										<br />
-										<div class="btn_col">
-											<button class="btn_bg" @click="goToTuaPekKongQian">{{ $t('LuckyBook.Enter')
-												}}</button>
-										</div>
-										<br />
-									</div>
-								</div>
-							</div>
-						</div>
-
+				<!--GuanYinMa-->
+				<div style="text-decoration: none;" id="GuanYin" class="container tab-pane fade">
+					<div class="search-message">
+						<p>{{ $t('LuckyBook.Found') }}
+							{{ filteredDataGZT.length }}
+							{{ $t('LuckyBook.result') }}
+							{{ filteredDataGZT.length !== 1 ?
+								'' : '' }}
+							{{ $t('LuckyBook.for') }}
+							"{{ searchQuery }}"</p>
 					</div>
+					<ul class="search-ul">
+						<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
+							<div class="number_col">
+								<p>{{ item.number }}</p>
+							</div>
+							<div class="images">
+								<img :src="`/imgs/gzt_webp/${item.image} `" :alt="item.content[language]" />
+							</div>
+							<div class="content">
+								<p>{{ item.content[language] }}</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+				<!--TuaPekKong (Qian)-->
+				<div id="TuaPekKongQian" class="container tab-pane fade">
+					<div class="search-message">
+						<p>{{ $t('LuckyBook.Found') }}
+							{{ filteredDataQZT.length }}
+							{{ $t('LuckyBook.result') }}
+							{{ filteredDataQZT.length !== 1 ?
+								'' : '' }}
+							{{ $t('LuckyBook.for') }}
+							"{{ searchQuery }}"</p>
+					</div>
+					<ul class="search-ul">
+						<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
+							<div class="number_col">
+								<p>{{ item.number }}</p>
+							</div>
+							<div class="images">
+								<img :src="`/imgs/qzt_webp/${item.image} `" :alt="item.content[language]" />
+							</div>
+							<div class="content">
+								<p>{{ item.content[language] }}</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+
+		<!--entry TuaPekKongWan & GuanYinMa & TuaPkeKong Qian-->
+		<div v-else>
+
+			<div class="row img">
+
+				<!-- Tua Pek Kong (Wan) -->
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+					<div class="lucky_col">
+						<div class="wanzititle_col">
+							<a href="/lucky-book/tuapekkongwan">
+								<img class="wanzititle" src="/image/TuaPekKongWanZi.webp" />
+								<img width="65%" src="/image/TuaPekKongWan.svg" @load="onWanLoaded" />
+							</a>
+						</div>
+						<div class=" text">
+							<a href="/lucky-book/tuapekkongwan" class="text">
+								{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}
+							</a>
+
+						</div>
+						<div class="text2">
+							<a href="/lucky-book/tuapekkongwan" class="text2">(WZT)</a>
+						</div>
+					</div>
+					<br />
+					<div class="btn_col">
+						<button class="btn_bg">
+							<a href="/lucky-book/tuapekkongwan">
+								{{ $t('LuckyBook.Enter') }}
+							</a>
+						</button>
+					</div>
+					<br />
+
+				</div>
+
+				<!-- Guan Yin Ma -->
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+					<div class="lucky_col">
+						<div class="wanzititle_col">
+							<a href="/lucky-book/guanyin">
+								<img class="wanzititle" src="/image/GuanYinQianZi.webp" />
+								<img width="65%" src="/image/GuanYinQian.svg" />
+							</a>
+						</div>
+						<div class="text">
+							<a href="/lucky-book/guanyin" class="text">
+								{{ $t('LuckyBook.Guan Yin Ma Dictionary') }}
+							</a>
+
+						</div>
+						<div class="text2">
+							<a href="/lucky-book/guanyin" class="text2">(GZT)</a>
+						</div>
+					</div>
+					<br />
+					<div class="btn_col">
+						<button class="btn_bg">
+							<a href="/lucky-book/guanyin">
+								{{ $t('LuckyBook.Enter') }}
+							</a>
+						</button>
+					</div>
+					<br />
+
+				</div>
+
+				<!-- Tua Pek Kong (Qian) -->
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+
+					<div class="lucky_col">
+						<div class="wanzititle_col">
+							<a href="/lucky-book/tuapekkongqian">
+								<img class="wanzititle" src="/image/TuaPekKongQianZi.webp" />
+								<img width="65%" src="/image/TuaPekKongQian.svg" />
+							</a>
+						</div>
+						<div class="text">
+							<a href="/lucky-book/tuapekkongqian" class="text">
+								{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</a>
+						</div>
+						<div class="text2">
+							<a href="/lucky-book/tuapekkongqian" class="text2">(QZT)</a>
+						</div>
+
+					</div>
+					<br />
+					<div class="btn_col">
+						<button class="btn_bg">
+							<a href="/lucky-book/tuapekkongqian">
+								{{ $t('LuckyBook.Enter') }}
+							</a>
+						</button>
+					</div>
+					<br />
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+
+		<!--go up botton-->
 		<div class="go_up_btn">
 			<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
 				href="#">
@@ -345,15 +363,7 @@ export default {
 		changeTab(tab) {
 			this.activeTab = tab;
 		},
-		goToTuaPekKong() {
-			this.$router.push('/tuapekkongwan');
-		},
-		goToGuanYinMa() {
-			this.$router.push('/guanyin');
-		},
-		goToTuaPekKongQian() {
-			this.$router.push('/tuapekkongqian');
-		},
+
 	},
 	mounted() {
 		// 监听滚动事件
@@ -388,6 +398,10 @@ export default {
 	.title_col {
 		margin-top: 10px;
 	}
+
+	.title {
+		margin-top: 10px !important;
+	}
 }
 
 .luckybook_col {
@@ -409,7 +423,7 @@ export default {
 .title {
 	background-color: #CF2E2E;
 	color: white;
-	height: 150px;
+	height: 130px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -418,26 +432,18 @@ export default {
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
-	font-size: 42px;
-	padding: 0 20px;
+	font-size: 30px;
+	margin-top: 73px;
 }
 
-@media screen and (max-width: 430px) {
-	.title {
-		font-size: 30px;
-	}
-}
-
-@media (min-width:1400px) {
+@media (min-width:1200px) {
 
 	.title {
 		width: 70%;
 	}
 }
 
-.column {
-	width: 80%;
-}
+
 
 .search-message {
 	display: flex;
@@ -451,11 +457,11 @@ export default {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.5rem;
-	padding-top: 30px;
+
+	padding: 10px;
 	background-color: white;
 	/* padding-bottom: 10px; */
-	height: 290px;
+	height: 100%;
 	text-align: -webkit-center;
 	width: 100%;
 	place-self: center;
@@ -475,9 +481,16 @@ export default {
 	border-color: rgb(198, 198, 198);
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:426px) {
 	.number_col {
-		width: 70%;
+		width: 80%;
+	}
+
+}
+
+@media (min-width:600px) {
+	.number_col {
+		width: 60%;
 	}
 
 }
@@ -546,7 +559,7 @@ export default {
 	background-color: #cf2e2e;
 	text-align: center;
 	padding-top: 10px;
-	width: 84%;
+	width: 95%;
 	border-radius: 10px;
 
 }
@@ -561,7 +574,6 @@ export default {
 }
 
 .lucky {
-	text-align: center;
 	text-align: -webkit-center;
 }
 
@@ -570,10 +582,16 @@ export default {
 	background-color: #ffb802;
 	color: #822700;
 	font-weight: bold;
-	width: 110px;
+	width: 50%;
 	border-radius: 60px;
-	padding: 5px;
+	padding: 10px;
 	border: none;
+	font-size: 20px;
+}
+
+.btn_bg a {
+	text-decoration: none;
+	color: #822700;
 }
 
 .btn_col {
@@ -593,6 +611,18 @@ export default {
 	width: 100px;
 }
 
+.img {
+	text-align: -webkit-center;
+	place-content: center;
+	margin-inline: 0px;
+}
+
+@media screen and (min-width:1200px) {
+	.img {
+		margin-inline: 200px !important;
+	}
+}
+
 .search-ul {
 	padding: 0px;
 	gap: 1.0rem;
@@ -605,7 +635,7 @@ export default {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 20px;
 	margin-top: 10px;
 	height: 70px;
 	padding: 0 10px;
@@ -613,7 +643,7 @@ export default {
 
 
 .nav-tabs {
-	gap: 0.5rem;
+	gap: 0.3rem;
 }
 
 .nav-tabs .nav-link.active {
@@ -634,9 +664,13 @@ export default {
 	border-bottom: 2px solid #cf2e2e;
 }
 
-@media screen and (min-width:1440px) {
+.nav-tabs {
+	width: 95% !important;
+}
+
+@media screen and (min-width:1200px) {
 	.nav-tabs {
-		width: 80% !important;
+		width: 70% !important;
 	}
 }
 
@@ -653,7 +687,7 @@ export default {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 20px;
 	padding-bottom: 10px;
 }
 
@@ -678,11 +712,11 @@ p {
 
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1200px) {
 	.search-ul {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		width: 80%;
+		grid-template-columns: repeat(4, 1fr) !important;
+		width: 68%;
 	}
 }
 
@@ -700,11 +734,6 @@ p {
 
 @media screen and (max-width:450px) {
 
-
-	.column {
-		width: 100%;
-	}
-
 	.search_title {
 		width: 100%;
 	}
@@ -712,7 +741,7 @@ p {
 
 
 	.big_col {
-		padding: 30px;
+		padding: 10px;
 	}
 
 }
@@ -791,5 +820,21 @@ p {
 
 .scroll-icon.fade-out {
 	opacity: 0.5;
+}
+
+.images {
+	padding-top: 10px;
+}
+
+.content {
+	width: 100%;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+@media screen and (max-width:500px) {
+	.content {
+		font-size: 12px !important;
+	}
 }
 </style>

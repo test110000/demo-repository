@@ -2,7 +2,7 @@
 	{
 		"number": "000",
 		"content": {
-			"en": "PRAWN/  CRAB",
+			"en": "PRAWN/ CRAB",
 			"zh": "虾蟹/ 螃蟹/ 虾",
 			"ms": "UDANG KETAM"
 		},
@@ -254,7 +254,7 @@
 	{
 		"number": "028",
 		"content": {
-			"en": "FILM PRINTING,PHOTO PRINTING",
+			"en": "FILM PRINTING,  PHOTO PRINTING",
 			"zh": "洗菲林/ 照片冲印",
 			"ms": "CUCI GAMBAR"
 		},
@@ -1235,7 +1235,7 @@
 	{
 		"number": "137",
 		"content": {
-			"en": "PEEPING,OGLE",
+			"en": "PEEPING,  OGLE",
 			"zh": "砍菜头/ 偷瞄/ 好色",
 			"ms": "PENIUPUAN SEKS"
 		},
@@ -1712,7 +1712,7 @@
 	{
 		"number": "190",
 		"content": {
-			"en": "SIC BO,BET BIG AND SMALL",
+			"en": "SIC BO,  BET BIG AND SMALL",
 			"zh": "赌大小/ 骰宝",
 			"ms": "MAIN JUDI"
 		},
@@ -3891,7 +3891,7 @@
 		"number": "432",
 		"content": {
 			"en": "BLOW WHISTLE",
-			"zh": "吹警笛,吹哨子",
+			"zh": "吹警笛,  吹哨子",
 			"ms": "WISEL POLIS"
 		},
 		"image": "qzt_432.webp"
@@ -5411,7 +5411,7 @@
 	{
 		"number": "601",
 		"content": {
-			"en": "DOGS,HOUSE DOG",
+			"en": "DOGS,  HOUSE DOG",
 			"zh": "狗/ 家犬/ 看家狗",
 			"ms": "ANJING"
 		},
