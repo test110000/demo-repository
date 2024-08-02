@@ -87,7 +87,7 @@
 					<div class="prizes">
 						<div style="margin-inline: 1.25rem;">
 							<div class="prize-section">
-								<div class="prize"
+								<div class="prize" style="width: 30%;"
 									v-for="(prize, I) in [$t('Dashboard.1ST Prize'), $t('Dashboard.2ND Prize'), $t('Dashboard.3RD Prize')]"
 									:key="prize">
 									<h2 class="title-font-size small-title-top-bottom-padding b-r-10px"
@@ -680,7 +680,7 @@ export default {
 
 .prize-section {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .draw-section {
@@ -816,14 +816,13 @@ export default {
 
 .prize {
 	display: inline-block;
-	margin: 10px;
+	margin: 10px 0;
 }
 
 .prize-number {
 	font-size: 24px;
 	font-weight: 700;
-	width: 90px;
-	margin: 5px;
+	margin: 5px 0;
 	background: white;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
