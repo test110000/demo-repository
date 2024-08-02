@@ -264,19 +264,25 @@ export default {
 	},
 	methods: {
 		fetchData() {
-			axios.get('https://result2.song6.club/result')
-				.then(response => {
-					// Extract only desired keys from response.data
-					const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
-					const extractedData = {};
+			// Define the keys to extract
+			const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
 
-					keysToExtract.forEach(key => {
+			axios.get('https://result2.song6.club/result', {
+				// Optional: Add a timeout (in milliseconds)
+				timeout: 5000
+			})
+				.then(response => {
+					// Extract only the desired keys from response.data
+					this.data = keysToExtract.reduce((acc, key) => {
 						if (response.data.hasOwnProperty(key)) {
-							extractedData[key] = response.data[key];
+							acc[key] = response.data[key];
 						}
-					});
-					this.data = extractedData;
+						return acc;
+					}, {});
 				})
+				.catch(error => {
+					console.error("Error fetching data:", error);
+				});
 		},
 		shouldHideTimeInfo(key) {
 			const validKeys = ["H", "P"];
