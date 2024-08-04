@@ -155,8 +155,6 @@
 				</div>
 			</div>
 		</div>
-
-
 	</div>
 </template>
 <script>
@@ -311,8 +309,15 @@ export default {
 							extractedData[key] = response.data[key];
 						}
 					});
-					this.data = extractedData;
+
+					// Delay returning the data by 0.5 seconds
+					setTimeout(() => {
+						this.data = extractedData;
+					}, 100);
 				})
+				.catch(error => {
+					console.error("Error fetching data:", error);
+				});
 		},
 		shouldHideTimeInfo(key) {
 			const validKeys = ["H", "P"];
@@ -386,8 +391,6 @@ export default {
 					return "----"; // Display "----" for blank or undefined values
 				} else if (!isNaN(num)) {
 					let numAsString = num.toString();
-					// Remove any underscores (or underlines) from the string
-					// numAsString = numAsString.replace(/_/g, '').replace(/[\u0332\u2017]/g, ''); // Remove both underscores and underline characters
 					return numAsString;
 				} else {
 					return "----"; // Display "----" for non-number values or NaN
@@ -397,8 +400,24 @@ export default {
 			return filteredNumbers;
 		},
 		getConsolationNumbers(draw) {
-			// Extract consolation numbers from the draw object
-			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
+			const specialNumbers = [
+				draw.C1, draw.C2, draw.C3, draw.C4, draw.C5,
+				draw.C6, draw.C7, draw.C8, draw.C9, draw.C10
+			];
+
+			// Process each number or string in the array
+			const filteredNumbers = specialNumbers.map(num => {
+				if (num === null || num === undefined || num === '') {
+					return "----"; // Display "----" for blank or undefined values
+				} else if (!isNaN(num)) {
+					let numAsString = num.toString();
+					return numAsString;
+				} else {
+					return "----"; // Display "----" for non-number values or NaN
+				}
+			});
+
+			return filteredNumbers;
 		},
 		refreshPage(index) {
 			// Save the ID of the clicked refresh button to localStorage

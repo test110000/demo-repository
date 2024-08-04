@@ -263,22 +263,23 @@ export default {
 
 	},
 	methods: {
-		fetchData() {
-			// Define the keys to extract
-			const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
-
-			axios.get('https://result2.song6.club/result', {
-				// Optional: Add a timeout (in milliseconds)
-				timeout: 5000
-			})
+		async fetchData() {
+			axios.get('https://result2.song6.club/result')
 				.then(response => {
-					// Extract only the desired keys from response.data
-					this.data = keysToExtract.reduce((acc, key) => {
+					// Extract only desired keys from response.data
+					const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
+					const extractedData = {};
+
+					keysToExtract.forEach(key => {
 						if (response.data.hasOwnProperty(key)) {
-							acc[key] = response.data[key];
+							extractedData[key] = response.data[key];
 						}
-						return acc;
-					}, {});
+					});
+
+					// Delay returning the data by 0.5 seconds
+					setTimeout(() => {
+						this.data = extractedData;
+					}, 100);
 				})
 				.catch(error => {
 					console.error("Error fetching data:", error);
@@ -290,7 +291,7 @@ export default {
 			const now = new Date();
 			const cutoffTime = new Date();
 			cutoffTime.setHours(15, 30, 0, 0);
-			// now.setHours(16, 30, 0, 0);
+			now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return allKeys.includes(key);
 			} else {
@@ -376,12 +377,13 @@ export default {
 			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
 		},
 		refreshPage(index) {
+			this.fetchData()
 			// Save the ID of the clicked refresh button to localStorage
-			const cardId = `totoType${index}`;
+			// const cardId = `totoType${index}`;
 
-			localStorage.setItem('cardId', cardId);
+			// localStorage.setItem('cardId', cardId);
 			// Reload the page
-			window.location.reload();
+			// window.location.reload();
 		},
 		restoreScrollPosition() {
 			// Get the saved card ID from localStorage

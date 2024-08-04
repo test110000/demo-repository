@@ -184,6 +184,7 @@ export default {
 			this.currentDate = selectedDate;
 		},
 		refreshPage() {
+			// this.fetchData()
 			window.location.reload();
 		},
 		handleLogoClick(index) {
