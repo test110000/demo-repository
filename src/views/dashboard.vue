@@ -5,13 +5,15 @@
 			<div class="Mobile-topbar">
 				<TopBar />
 			</div>
-			<img :class="{ 'fade-out': !showLoadingScreen }" src="/image/4D_favicon.webp" alt="Loading" />
+			<div class="popUp">
+				<img :class="{ 'popUp': !showLoadingScreen }" src="/image/4D_favicon.webp" alt="Loading" />
+			</div>
 		</div>
 
 		<!-- Main Content -->
 		<div v-show="!showLoadingScreen">
-			<MobileView v-if="isMobile" />
-			<DesktopView v-else />
+			<MobileView v-if="isMobile" @data-fetched="handleDataFetched" />
+			<DesktopView v-else @data-fetched="handleDataFetched" />
 		</div>
 	</div>
 </template>
@@ -26,6 +28,7 @@ export default {
 		return {
 			isMobile: window.innerWidth <= 769, // Initial state based on window width
 			showLoadingScreen: true, // Track loading screen visibility
+			fetchDuration: 0 // Store the duration for hiding the loading screen
 		};
 	},
 	components: {
@@ -36,11 +39,6 @@ export default {
 	mounted() {
 		this.checkScreenSize();
 		window.addEventListener('resize', this.checkScreenSize);
-
-		// Hide the loading screen after initial load
-		setTimeout(() => {
-			this.showLoadingScreen = false;
-		}, 1000);
 	},
 	beforeDestroy() {
 		window.removeEventListener('resize', this.checkScreenSize);
@@ -55,12 +53,21 @@ export default {
 			if (isCrossingThreshold) {
 				this.showLoadingScreen = true;
 
-				// Hide loading screen after 0.5 seconds
+				// Hide loading screen after the maximum of 0.5 seconds or fetchDuration
 				setTimeout(() => {
 					this.showLoadingScreen = false;
-				}, 500);
+				}, Math.max(500, this.fetchDuration * 1000)); // Convert seconds to milliseconds
 			}
 		},
+		handleDataFetched(duration) {
+			// Store the duration to be used in checkScreenSize
+			this.fetchDuration = duration;
+
+			// Hide loading screen after the data fetching duration
+			setTimeout(() => {
+				this.showLoadingScreen = false;
+			}, duration * 1000); // Convert seconds to milliseconds
+		}
 	},
 };
 </script>
@@ -93,8 +100,22 @@ export default {
 	transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.loading-screen img.fade-out {
-	opacity: 0;
-	transform: scale(0.9);
+.popUp img {
+	animation: bounceUpDown 1s ease-out infinite;
+	/* Increased duration to 1s */
+}
+
+@keyframes bounceUpDown {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 </style>

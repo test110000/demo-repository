@@ -10,33 +10,33 @@
 					<div class="sidebar-main">
 						<p class="results_install_app_text">{{ $t('Sidebar.Result') }}</p>
 						<div class="menu">
-							<!--dashboard-->
+							<!-- Dashboard -->
 							<div class="text_col">
 								<router-link to="/" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.dashboard">
-									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(207, 46, 46)' : '' }"
+									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(207, 46, 46)' : '', fontWeight: activeTab === 'dashboard' ? '700' : 'normal' }"
 										class="text_menu">{{ $t('Sidebar.Dashboard') }}</p>
 								</router-link>
 							</div>
 						</div>
 						<br>
 						<p class="toolbox_text">{{ $t('Sidebar.ToolBox') }}</p>
-						<!--Spin My Luck-->
+						<!-- Spin My Luck -->
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/spin-my-luck" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.spin">
-									<p :style="{ color: activeTab === 'spin' ? 'rgb(207, 46, 46)' : '' }"
+									<p :style="{ color: activeTab === 'spin' ? 'rgb(207, 46, 46)' : '', fontWeight: activeTab === 'spin' ? '700' : 'normal' }"
 										class="text_menu">{{ $t('Sidebar.Spin My Luck') }}</p>
 								</router-link>
 							</div>
 						</div>
-						<!--Lucky Book-->
+						<!-- Lucky Book -->
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/lucky-book" exact active-class="active-link">
 									<img class="pic" :src="imageSrc.book">
-									<p :style="{ color: activeTab === 'book' ? 'rgb(207, 46, 46)' : '' }"
+									<p :style="{ color: activeTab === 'book' ? 'rgb(207, 46, 46)' : '', fontWeight: activeTab === 'book' ? '700' : 'normal' }"
 										class="text_menu">{{ $t('Sidebar.Lucky Book') }}</p>
 								</router-link>
 							</div>
@@ -61,8 +61,19 @@ export default {
 			activeTab: '' // Initially empty
 		};
 	},
-	methods: {
-
+	watch: {
+		// Watch for changes in the route to update the activeTab
+		'$route'(to) {
+			if (to.path.startsWith('/lucky-book')) {
+				this.activeTab = 'book';
+			} else if (to.path === '/') {
+				this.activeTab = 'dashboard';
+			} else if (to.path === '/spin-my-luck') {
+				this.activeTab = 'spin';
+			} else {
+				this.activeTab = '';
+			}
+		}
 	}
 }
 </script>
@@ -179,6 +190,6 @@ export default {
 
 .active-link .text_menu {
 	color: rgb(207, 46, 46);
-	font-weight: 700;
+	font-weight: 700 !important;
 }
 </style>

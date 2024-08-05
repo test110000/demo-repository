@@ -2,7 +2,7 @@
 	<div class="scroll-container">
 		<!--Topbar 1-->
 		<div>
-			<TopBar @logo-clicked="handleLogoClick" />
+			<TopBar @logo-clicked="handleLogoClick" @refreshData="refreshcurrentdata" />
 		</div>
 
 		<!--Topbar 2-->
@@ -146,7 +146,6 @@
 										<div class="number-inner">
 											{{ getDisplayResult(drawObj.JP2) }}
 										</div>
-
 									</div>
 								</div>
 							</div>
@@ -298,26 +297,36 @@ export default {
 	},
 	methods: {
 		async fetchData() {
-			axios.get('https://result2.song6.club/result')
-				.then(response => {
-					// Extract only desired keys from response.data
-					const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
-					const extractedData = {};
+			// Capture the start time
+			const startTime = Date.now();
 
-					keysToExtract.forEach(key => {
-						if (response.data.hasOwnProperty(key)) {
-							extractedData[key] = response.data[key];
-						}
-					});
+			try {
+				const response = await axios.get('https://result2.song6.club/result');
+				// Extract only desired keys from response.data
+				const keysToExtract = ['M', 'D', 'T', 'S', 'ST', 'SB', 'SW', 'G', 'H', 'P'];
+				const extractedData = {};
 
-					// Delay returning the data by 0.5 seconds
-					setTimeout(() => {
-						this.data = extractedData;
-					}, 100);
-				})
-				.catch(error => {
-					console.error("Error fetching data:", error);
+				keysToExtract.forEach(key => {
+					if (response.data.hasOwnProperty(key)) {
+						extractedData[key] = response.data[key];
+					}
 				});
+
+				// Delay returning the data by 0.5 seconds
+				setTimeout(() => {
+					this.data = extractedData;
+
+					// Calculate the duration and emit it
+					const endTime = Date.now();
+					const durationInSeconds = (endTime - startTime) / 1000;
+					this.$emit('data-fetched', durationInSeconds);
+				}, 500); // Adjusted to 500ms to match the delay
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
+		},
+		refreshcurrentdata() {
+			this.fetchData();
 		},
 		shouldHideTimeInfo(key) {
 			const validKeys = ["H", "P"];
@@ -371,7 +380,7 @@ export default {
 		getDisplayResult(number) {
 			const now = new Date();
 			const cutoffTime = new Date();
-			cutoffTime.setHours(15, 30, 0, 0);
+			cutoffTime.setHours(16, 39, 0, 0);
 			// now.setHours(16, 30, 0, 0);
 			if (now < cutoffTime) {
 				return '----';

@@ -52,7 +52,6 @@
 												:class="{ active: isActive('/lucky-book') }">
 												<img src="/image/book.png" style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Lucky Book') }}
-
 											</router-link>
 										</li>
 									</ul>
@@ -60,7 +59,6 @@
 							</div>
 						</div>
 					</nav>
-
 
 					<!--top-->
 
@@ -81,7 +79,7 @@
 						</div>
 					</div>
 
-					<a class="refresh-icon" style="position: relative; " @click.prevent="refreshPage">
+					<a class="refresh-icon" style="position: relative; " @click="refresh">
 						<div style="position: absolute; right: 12px; top: 4px; transform: rotateZ(50deg);">
 							<a class="refresh-arrow" href="#">
 								&#8635;
@@ -109,6 +107,7 @@
 </template>
 
 <script>
+
 export default {
 	name: 'TopBar',
 	data() {
@@ -154,11 +153,17 @@ export default {
 		clearInterval(this.intervalId);
 	},
 	methods: {
+		refresh() {
+			this.$emit('refreshData');
+		},
 		changeLanguage(lang) {
 			this.$i18n.locale = lang;
 		},
-		isActive(routePath) {
-			return this.$route.path === routePath;
+		isActive(route) {
+			if (route === '/') {
+				return this.$route.path === route;
+			}
+			return this.$route.path.startsWith(route);
 		},
 		checkTime() {
 			const now = new Date();
@@ -182,10 +187,6 @@ export default {
 		selectNewDate(event) {
 			const selectedDate = new Date(event.target.value);
 			this.currentDate = selectedDate;
-		},
-		refreshPage() {
-			// this.fetchData()
-			window.location.reload();
 		},
 		handleLogoClick(index) {
 			if (window.location.pathname !== '/') {
@@ -493,7 +494,6 @@ export default {
 .active {
 	color: rgb(207, 46, 46) !important;
 	font-weight: 700;
-	/* Define your active text color */
 }
 
 .scroll-icon.hide {

@@ -16,6 +16,7 @@
 		"bootstrap-vue": "^2.23.1",
 		"express": "^4.19.2",
 		"lazyload": "^2.0.0-rc.2",
+		"mitt": "^3.0.1",
 		"moment": "^2.30.1",
 		"swiper": "^8.4.7",
 		"vue": "^3.4.31",
