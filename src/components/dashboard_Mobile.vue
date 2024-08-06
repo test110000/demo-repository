@@ -238,7 +238,7 @@ export default {
 					sectionTitleTextColor: "white"
 				}
 			},
-			activeIndex: 0,
+			activeIndex: 'M',
 			images: [
 				{ key: 'M', src: '/image/Magnum@3x.png' },
 				{ key: 'D', src: '/image/damacai@3x.png' },
@@ -348,15 +348,9 @@ export default {
 			};
 		},
 		getDisplayResult(number) {
-			const now = new Date();
 			const cutoffTime = new Date();
 			cutoffTime.setHours(15, 30, 0, 0);
-			// now.setHours(16, 30, 0, 0);
-			if (now < cutoffTime) {
-				return '----';
-			} else {
-				return number;
-			}
+			return number;
 		},
 		getSpecialNumbers(draw) {
 			const specialNumbers = [

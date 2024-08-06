@@ -54,6 +54,23 @@
 												{{ $t('Sidebar.Lucky Book') }}
 											</router-link>
 										</li>
+										<li style="margin-top: 20px;" class="nav-item">
+											<h5 class="nav-link">{{ $t('Sidebar.Setting') }}</h5>
+										</li>
+										<li>
+											<img src="/image/Earth_icon.svg" style="width: 25px; margin-right: 13px;" />
+											<button style="padding: 0;" class="btn dropdown-toggle" type="button"
+												id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+												{{ $t('Sidebar.Language') }}
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<li><a class="dropdown-item" @click="changeLanguage('en')">English</a>
+												</li>
+												<li><a class="dropdown-item" @click="changeLanguage('zh')">中文</a></li>
+												<li><a class="dropdown-item" @click="changeLanguage('ms')">Malay</a>
+												</li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -115,7 +132,7 @@ export default {
 			showIcon: false,
 			scrollTimeout: null,
 			intervalId: null,
-			selectedLogoKey: null,
+			selectedLogoKey: "M",
 			// activeTitle: 'Dashboard',
 			currentDate: new Date(),
 			showDatePicker: false,
@@ -146,6 +163,11 @@ export default {
 		// 监听滚动事件
 		window.addEventListener('scroll', this.handleScroll);
 		this.intervalId = setInterval(this.checkTime, 1000);
+		// const savedLogoKey = localStorage.getItem('selectedLogoKey');
+		// if (savedLogoKey) {
+		// 	this.selectedLogoKey = savedLogoKey;
+		// 	this.$emit('logo-clicked', `${savedLogoKey}`);
+		// }
 	},
 	beforeDestroy() {
 		// 移除滚动事件监听
@@ -188,13 +210,15 @@ export default {
 			const selectedDate = new Date(event.target.value);
 			this.currentDate = selectedDate;
 		},
-		handleLogoClick(index) {
+		handleLogoClick(logoKey) {
 			if (window.location.pathname !== '/') {
 				// Redirect to the home page
 				window.location.href = '/';
 			} else {
-				this.selectedLogoKey = index;
-				this.$emit('logo-clicked', `${index}`);
+				this.selectedLogoKey = logoKey;
+				this.$emit('logo-clicked', `${logoKey}`);
+				// Save the selected logo key to localStorage
+				localStorage.setItem('selectedLogoKey', logoKey);
 			}
 		}
 	},
@@ -419,6 +443,11 @@ export default {
 	padding-top: 6px;
 	color: rgb(0, 0, 0) !important;
 	font-weight: 700;
+}
+
+.navbar-nav li {
+	display: flex;
+	align-items: flex-start;
 }
 
 .nav-link {

@@ -378,15 +378,7 @@ export default {
 			};
 		},
 		getDisplayResult(number) {
-			const now = new Date();
-			const cutoffTime = new Date();
-			cutoffTime.setHours(16, 39, 0, 0);
-			// now.setHours(16, 30, 0, 0);
-			if (now < cutoffTime) {
-				return '----';
-			} else {
-				return number;
-			}
+			return number;
 		},
 		getSpecialNumbers(draw) {
 			const specialNumbers = [
@@ -465,10 +457,15 @@ export default {
 			this.scrollToDrawSection(id);
 		},
 		scrollToDrawSection(index) {
-			const element = document.getElementById(`totoType${index}`);
-			if (element) {
-				element.scrollIntoView({ behavior: 'smooth' });
-			}
+			this.$nextTick(() => {
+				const expectedId = `totoType${index}`;
+				const element = document.getElementById(expectedId);
+				if (element) {
+					element.scrollIntoView({ behavior: 'smooth' });
+				} else {
+
+				}
+			});
 		},
 		handleScroll() {
 			// 如果已经有计时器，清除它

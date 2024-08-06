@@ -56,7 +56,7 @@ export default {
 				// Hide loading screen after the maximum of 0.5 seconds or fetchDuration
 				setTimeout(() => {
 					this.showLoadingScreen = false;
-				}, Math.max(500, this.fetchDuration * 1000)); // Convert seconds to milliseconds
+				}, Math.max(this.fetchDuration * 1000)); // Convert seconds to milliseconds
 			}
 		},
 		handleDataFetched(duration) {
