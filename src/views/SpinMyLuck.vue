@@ -1,16 +1,19 @@
 <template>
-
-	<div>
+	<div class="Topbar-mobile-view">
 		<TopBar />
 	</div>
 
 	<div class="container">
-		<div style="text-align: -webkit-center;padding-left: 0px;
-    text-align: -webkit-center;
-    padding-right: 0px;" class="col-12 spincol">
+		<div style="position: relative;">
+			<div class="Content-mobile-view">
+				<ContentMenu />
+			</div>
+		</div>
+		<div style="text-align: -webkit-center; padding-left: 0px; padding-right: 0px;" class="col-12 spincol">
 			<div class="lucky_col">
 				<div class="luckyspin_bg">
 					<!--this is title-->
+
 					<p>{{ $t('Sidebar.Spin My Luck') }}</p>
 				</div>
 
@@ -96,10 +99,12 @@
 <script>
 
 import TopBar from '/src/components/topbar.vue';
+import ContentMenu from '@/components/content-menu.vue'
 
 export default {
 	components: {
-		TopBar,
+		ContentMenu,
+		TopBar
 	},
 	name: 'SpinMyLuck',
 	data() {
@@ -797,5 +802,22 @@ p {
 
 .scroll-icon.fade-out {
 	opacity: 0;
+}
+
+@media screen and (max-width: 769px) {
+	.Topbar-mobile-view {
+		display: none;
+	}
+}
+
+.Content-mobile-view {
+	position: absolute;
+	top: -50px;
+}
+
+@media screen and (min-width: 769px) {
+	.Content-mobile-view {
+		display: none;
+	}
 }
 </style>

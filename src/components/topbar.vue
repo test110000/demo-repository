@@ -12,14 +12,14 @@
 						<div class="container-fluid">
 
 							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-								data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+								data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar"
 								aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
 
 
 							<div class="offcanvas offcanvas-start border-top-bottom-right-80px width-sidebar"
-								tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								tabindex="-1" id="offcanvasNavbar1" aria-labelledby="offcanvasNavbarLabel">
 								<div class="offcanvas-header">
 									<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
 										aria-label="Close"></button>
@@ -32,7 +32,7 @@
 										</li>
 										<li class="nav-item">
 											<router-link class="nav-link" to="/" :class="{ active: isActive('/') }">
-												<img src="/image/dashboard.png"
+												<img :src="getImageSrc('/', '/image/dashboard.webp', '/image/dashboard_Active.svg')"
 													style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Dashboard') }}
 											</router-link>
@@ -43,14 +43,16 @@
 										<li class="nav-item">
 											<router-link class="nav-link" to="/spin-my-luck"
 												:class="{ active: isActive('/spin-my-luck') }">
-												<img src="/image/spin.png" style="width: 25px; margin-right: 13px;" />
+												<img :src="getImageSrc('/spin-my-luck', '/image/spin.webp', '/image/spin_Active.svg')"
+													style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Spin My Luck') }}
 											</router-link>
 										</li>
 										<li class="nav-item">
 											<router-link class="nav-link" to="/lucky-book"
 												:class="{ active: isActive('/lucky-book') }">
-												<img src="/image/book.png" style="width: 25px; margin-right: 13px;" />
+												<img :src="getImageSrc('/lucky-book', '/image/book.svg', '/image/book_Active.svg')"
+													style="width: 25px; margin-right: 13px;" />
 												{{ $t('Sidebar.Lucky Book') }}
 											</router-link>
 										</li>
@@ -182,10 +184,14 @@ export default {
 			this.$i18n.locale = lang;
 		},
 		isActive(route) {
-			if (route === '/') {
-				return this.$route.path === route;
-			}
-			return this.$route.path.startsWith(route);
+			return this.$route.path === route;
+			// if (route === '/') {
+
+			// }
+			// return this.$route.path.startsWith(route);
+		},
+		getImageSrc(route, defaultImage, activeImage) {
+			return this.isActive(route) ? activeImage : defaultImage;
 		},
 		checkTime() {
 			const now = new Date();
@@ -193,11 +199,6 @@ export default {
 			const currentTime = now.toLocaleTimeString('en-GB', options);
 
 			const targetTime = "19:30:00";
-			// if (currentTime < targetTime) {
-			// 	this.performAction();
-			// } else {
-			// 	this.performAction2();
-			// }
 		},
 		openDatePicker() {
 			this.showDatePicker = true;

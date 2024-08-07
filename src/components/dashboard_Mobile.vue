@@ -1,11 +1,6 @@
 <template>
 
 	<div class="scroll-container">
-		<!--Topbar 1-->
-		<div>
-			<TopBar @logo-clicked="handleLogoClick" />
-		</div>
-
 		<div class="dashboard">
 			<!--Topbar 2-->
 			<div class="navbar">
@@ -14,6 +9,10 @@
 					@click="handleImageClick(image.key)">
 					<img :src="image.src" class="round-image" />
 				</div>
+			</div>
+
+			<div>
+				<ContentMenu />
 			</div>
 
 			<div class="draw-results">
@@ -150,11 +149,13 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import axios from 'axios';
 import TopBar from '/src/components/topbar.vue';
+import ContentMenu from '@/components/content-menu.vue'
 // import { BCarousel, BCarouselSlide } from 'bootstrap-vue';
 
 export default {
 	components: {
 		TopBar,
+		ContentMenu,
 		Swiper,
 		SwiperSlide
 	},
@@ -320,6 +321,15 @@ export default {
 				this.currentTimeText = "7:30pm";
 			}
 		},
+		isActive(route) {
+			if (route === '/') {
+				return this.$route.path === route;
+			}
+			return this.$route.path.startsWith(route);
+		},
+		changeLanguage(lang) {
+			this.$i18n.locale = lang;
+		},
 		formatDate(dateStr) {
 			return dateStr;
 		},
@@ -409,7 +419,6 @@ export default {
 		handleImageClick(index) {
 			this.activeIndex = index;
 			this.scrollToDrawSection(index);
-			// this.$refs.mySwiper.swiper.slideTo(index);
 		},
 		onSlideChange() {
 			// Get the active index from the swiper instance
@@ -526,7 +535,7 @@ export default {
 .navbar {
 	display: none;
 	position: sticky;
-	z-index: 999;
+	z-index: 2;
 	top: -1px;
 	justify-content: space-around;
 	align-items: center;
@@ -584,18 +593,13 @@ export default {
 	width: 100%;
 	height: 100%;
 	background-color: gray;
-	/* Same background color as .active */
-	/* border-radius: 50%; */
-	/* Start as circle */
 	transform: scale(1, 1.3);
-	/* Scale to create the oval effect */
 	z-index: -1;
-	/* Position behind the image */
 }
 
 .round-image {
 	width: 100%;
-	/* height: auto; */
+
 }
 
 .dashboard {
@@ -610,12 +614,6 @@ export default {
 		overflow: auto;
 	}
 }
-
-/* @media screen and (max-width: 769px) {
-	.dashboard {
-		height: 91vh;
-	}
-} */
 
 .dashboard::-webkit-scrollbar {
 	display: none;
@@ -843,6 +841,55 @@ export default {
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
 	margin: 3px;
+}
 
+*,
+::after,
+::before {
+	z-index: unset;
+}
+
+.content_btn {
+	position: absolute;
+	top: 71px;
+	left: 20px;
+	z-index: 2;
+	background-color: white !important;
+	border: 0 !important;
+	color: #000 !important;
+	opacity: 0.8;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.btn-close {
+	margin: 50px 32px 0px 24px;
+	position: absolute;
+	right: 0;
+}
+
+.offcanvas-custom-width {
+	--bs-offcanvas-width: 320px;
+	/* Set your desired width here */
+}
+
+.offcanvas.offcanvas-start.border-top-bottom-right-80px.width-sidebar {
+	z-index: 9999;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.nav-item h5 {
+	font-weight: 700;
+}
+
+.active {
+	color: rgb(207, 46, 46) !important;
+	font-weight: 700;
 }
 </style>

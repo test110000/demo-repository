@@ -13,7 +13,7 @@
 							<!-- Dashboard -->
 							<div class="text_col">
 								<router-link to="/" exact active-class="active-link">
-									<img class="pic" :src="imageSrc.dashboard">
+									<img class="pic" :src="imageSrcForTab('dashboard')">
 									<p :style="{ color: activeTab === 'dashboard' ? 'rgb(207, 46, 46)' : '', fontWeight: activeTab === 'dashboard' ? '700' : 'normal' }"
 										class="text_menu">{{ $t('Sidebar.Dashboard') }}</p>
 								</router-link>
@@ -25,7 +25,7 @@
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/spin-my-luck" exact active-class="active-link">
-									<img class="pic" :src="imageSrc.spin">
+									<img class="pic" :src="imageSrcForTab('spin')">
 									<p :style="{ color: activeTab === 'spin' ? 'rgb(207, 46, 46)' : '', fontWeight: activeTab === 'spin' ? '700' : 'normal' }"
 										class="text_menu">{{ $t('Sidebar.Spin My Luck') }}</p>
 								</router-link>
@@ -35,7 +35,7 @@
 						<div class="menu">
 							<div class="text_col">
 								<router-link to="/lucky-book" exact active-class="active-link">
-									<img class="pic" :src="imageSrc.book">
+									<img class="pic" :src="imageSrcForTab('book')">
 									<p :style="{ color: activeTab === 'book' ? 'rgb(207, 46, 46)' : '', fontWeight: activeTab === 'book' ? '700' : 'normal' }"
 										class="text_menu">{{ $t('Sidebar.Lucky Book') }}</p>
 								</router-link>
@@ -53,12 +53,17 @@ export default {
 	name: 'LeftBar',
 	data() {
 		return {
+			activeTab: '', // This should be set based on the current active tab
 			imageSrc: {
 				dashboard: '/image/dashboard.webp',
-				spin: '/image/spin.webp',
-				book: '/image/book.webp'
+				spin: '/image/spin.svg',
+				book: '/image/book.svg'
 			},
-			activeTab: '' // Initially empty
+			activeImageSrc: {
+				dashboard: '/image/dashboard_Active.svg',
+				spin: '/image/spin_Active.svg',
+				book: '/image/book_Active.svg'
+			}
 		};
 	},
 	watch: {
@@ -72,6 +77,13 @@ export default {
 				this.activeTab = 'spin';
 			} else {
 				this.activeTab = '';
+			}
+		}
+	},
+	computed: {
+		imageSrcForTab() {
+			return (tab) => {
+				return this.activeTab === tab ? this.activeImageSrc[tab] : this.imageSrc[tab];
 			}
 		}
 	}

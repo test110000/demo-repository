@@ -1,31 +1,41 @@
 <template>
-	<div>
+	<div class="Topbar-mobile-view">
 		<TopBar />
 	</div>
 
-	<div style="text-align: -webkit-center;" class="container">
-
-
-		<div class="title">
-			<p>{{ $t('Sidebar.Lucky Book') }}</p>
-		</div>
-		<!--search bar-->
-		<div class="search_col">
-			<div class="input-container">
-				<div class="input-wrapper">
-					<input v-model="searchQuery" @keyup.enter="performSearch"
-						class="form-control form-control-dark search_input"
-						:placeholder="$t('LuckyBook.Search placeholder')" />
-					<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg" width="25"
-						height="25" fill="currentColor" class="bi bi-x-circle-fill close_btn" viewBox="0 0 16 16">
-						<path
-							d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
-					</svg>
+	<div class="container">
+		<div style="position: relative;">
+			<div class="Content-mobile-view">
+				<ContentMenu />
+			</div>
+			<div style="text-align: -webkit-center;">
+				<div class="title">
+					<p>{{ $t('Sidebar.Lucky Book') }}</p>
 				</div>
 			</div>
-			<!--search_btn-->
-			<button @click="performSearch" class="search_btn">{{ $t('LuckyBook.Search') }}</button>
 		</div>
+
+		<!--search bar-->
+		<div style="text-align: -webkit-center;">
+			<div class="search_col">
+				<div class="input-container">
+					<div class="input-wrapper">
+						<input v-model="searchQuery" @keyup.enter="performSearch"
+							class="form-control form-control-dark search_input"
+							:placeholder="$t('LuckyBook.Search placeholder')" />
+						<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg"
+							width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill close_btn"
+							viewBox="0 0 16 16">
+							<path
+								d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+						</svg>
+					</div>
+				</div>
+				<!--search_btn-->
+				<button @click="performSearch" class="search_btn">{{ $t('LuckyBook.Search') }}</button>
+			</div>
+		</div>
+
 
 
 		<div class="big_col" v-if="showSearchResults">
@@ -257,10 +267,12 @@
 <script>
 
 import TopBar from '/src/components/topbar.vue';
+import ContentMenu from '@/components/content-menu.vue'
 import { useI18n } from 'vue-i18n';
 
 export default {
 	components: {
+		ContentMenu,
 		TopBar
 	},
 	name: 'LuckyBook',
@@ -514,6 +526,7 @@ export default {
 	border-radius: 5px;
 	cursor: pointer;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .close_btn {
@@ -635,12 +648,10 @@ export default {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 14px;
 	margin-top: 10px;
-	height: 70px;
 	padding: 0 10px;
 }
-
 
 .nav-tabs {
 	gap: 0.3rem;
@@ -687,7 +698,7 @@ export default {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 14px;
 	padding-bottom: 10px;
 }
 
@@ -835,6 +846,23 @@ p {
 @media screen and (max-width:500px) {
 	.content {
 		font-size: 12px !important;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.Topbar-mobile-view {
+		display: none;
+	}
+}
+
+.Content-mobile-view {
+	position: absolute;
+	top: -50px;
+}
+
+@media screen and (min-width: 769px) {
+	.Content-mobile-view {
+		display: none;
 	}
 }
 </style>

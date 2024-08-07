@@ -1,63 +1,73 @@
 <template>
 	<div>
-		<TopBar />
-		<div style="text-align: -webkit-center;" class="container">
-			<div class="col-12 title_col">
-				<div class="title">
-					<div class="dictionary">
-						<p>{{ $t('Tua Pek Kong (Qian) Dictionary') }}</p>
-					</div>
+		<div class="Topbar-mobile-view">
+			<TopBar />
+		</div>
 
-					<!--search-->
-					<div class="search_col">
-						<!-- Search Input and Dropdown -->
-						<input v-model="searchText" type="text" placeholder="000 to 999" class="search-input" />
-						<button @click="performSearch" class="search-button">{{ $t('LuckyBook.Search') }}</button>
+		<div class="container">
+			<div style="position: relative;">
+				<div class="Content-mobile-view">
+					<ContentMenu />
+				</div>
+			</div>
+			<div style="text-align: -webkit-center;">
+				<div class="col-12 title_col">
+					<div class="title">
+						<div class="dictionary">
+							<p>{{ $t('Tua Pek Kong (Qian) Dictionary') }}</p>
+						</div>
 
-						<div class="dropdown-container">
-							<div class="dropdown" @click="toggleDropdown">
-								<div class="dropdown-selected">{{ $t('LuckyBook.ALL') }}</div>
-								<ul v-show="isDropdownOpen" class="dropdown-list">
-									<li @click="selectRange('all')">{{ $t('LuckyBook.ALL') }}</li>
-									<li v-for="range in ranges" :key="range.value" @click="selectRange(range.value)">
-										{{ range.text }}
-									</li>
-								</ul>
+						<!--search-->
+						<div class="search_col">
+							<!-- Search Input and Dropdown -->
+							<input v-model="searchText" type="text" placeholder="000 to 999" class="search-input" />
+							<button @click="performSearch" class="search-button">{{ $t('LuckyBook.Search') }}</button>
+
+							<div class="dropdown-container">
+								<div class="dropdown" @click="toggleDropdown">
+									<div class="dropdown-selected">{{ $t('LuckyBook.ALL') }}</div>
+									<ul v-show="isDropdownOpen" class="dropdown-list">
+										<li @click="selectRange('all')">{{ $t('LuckyBook.ALL') }}</li>
+										<li v-for="range in ranges" :key="range.value"
+											@click="selectRange(range.value)">
+											{{ range.text }}
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
 
 
-					<div class="tuapekkong_col pekkong">
-						<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
-							<div class="number_col">
-								<p>{{ item.number }}</p>
-							</div>
-							<div>
-								<template v-if="item.loading">
-									<span class="spinner-border spinner-border-sm" role="status"
-										aria-hidden="true"></span>
-								</template>
-								<template v-else>
-									<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content[language]"
-										loading="lazy" />
-								</template>
-							</div>
-							<div class="item_content">
-								<p>
-									{{ item.content[language] }}
-								</p>
-
-							</div>
-
-							<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No
-								results
-								found.
+						<div class="tuapekkong_col pekkong">
+							<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
+								<div class="number_col">
+									<p>{{ item.number }}</p>
+								</div>
+								<div>
+									<template v-if="item.loading">
+										<span class="spinner-border spinner-border-sm" role="status"
+											aria-hidden="true"></span>
+									</template>
+									<template v-else>
+										<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content[language]"
+											loading="lazy" />
+									</template>
+								</div>
+								<div class="item_content">
+									<p>
+										{{ item.content[language] }}
+									</p>
+								</div>
+								<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No
+									results
+									found.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="go_up_btn">
 				<a @click.prevent="scrollToTop" :class="{ 'scroll-icon': true, 'show': showIcon, 'hide': !showIcon }"
 					href="#">
@@ -73,19 +83,15 @@
 </template>
 
 <script>
+import ContentMenu from '@/components/content-menu.vue'
 import TopBar from '/src/components/topbar.vue';
 import { useI18n } from 'vue-i18n';
-
-
-
-
-
-
 
 export default {
 	name: 'TuaPekKongQian',
 	components: {
-		TopBar,
+		ContentMenu,
+		TopBar
 	},
 	setup() {
 		const { t, locale } = useI18n(); // Get the i18n instance
@@ -374,7 +380,7 @@ p {
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 18px;
 	margin-top: 73px;
 }
 
@@ -564,6 +570,23 @@ p {
 @media screen and (max-width:500px) {
 	.item_content {
 		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.Topbar-mobile-view {
+		display: none;
+	}
+}
+
+.Content-mobile-view {
+	position: absolute;
+	top: -50px;
+}
+
+@media screen and (min-width: 769px) {
+	.Content-mobile-view {
+		display: none;
 	}
 }
 </style>

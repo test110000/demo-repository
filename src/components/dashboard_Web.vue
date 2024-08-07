@@ -784,7 +784,6 @@ export default {
 	display: flex;
 	justify-content: center;
 	background-color: white;
-	z-index: 997;
 	margin-top: 2px;
 	margin-inline: 20px;
 	border-radius: 17px;
