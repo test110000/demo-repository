@@ -17,7 +17,7 @@
 				<li class="nav-item">
 					<h5 class="nav-link">{{ $t('Sidebar.Result') }}</h5>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item" :class="{ active: isActive('/') }">
 					<router-link class="nav-link" to="/" :class="{ active: isActive('/') }">
 						<img :src="getImageSrc('/', '/image/dashboard.webp', '/image/dashboard_Active.svg')"
 							style="width: 25px; margin-right: 13px;" />
@@ -82,7 +82,25 @@ export default {
 		getImageSrc(route, defaultImage, activeImage) {
 			return this.isActive(route) ? activeImage : defaultImage;
 		},
-	}
+	},
+	mounted() {
+		const offcanvas = document.getElementById('offcanvasNavbar2');
+
+		offcanvas.addEventListener('show.bs.offcanvas', () => {
+			('HIHI')
+			document.body.style.overflow = 'hidden'; // Disable body scroll when sidebar opens
+		});
+
+		offcanvas.addEventListener('hidden.bs.offcanvas', () => {
+			('Bye')
+			document.body.style.overflow = 'auto'; // Enable body scroll when sidebar closes
+		});
+
+		this.$router.beforeEach((to, from, next) => {
+			document.body.style.overflow = 'auto'; // Reset overflow to auto on route change
+			next();
+		});
+	},
 }
 </script>
 
@@ -119,6 +137,7 @@ export default {
 	right: 0;
 }
 
+
 .offcanvas-custom-width {
 	--bs-offcanvas-width: 320px;
 	/* Set your desired width here */
@@ -128,6 +147,8 @@ export default {
 	z-index: 9999;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
+	height: 100vh;
+	text-align: left;
 }
 
 .nav-item h5 {
@@ -136,6 +157,7 @@ export default {
 
 .active {
 	color: rgb(207, 46, 46) !important;
+	background-color: rgb(207, 46, 46, 0.2) !important;
 	font-weight: 700;
 }
 </style>

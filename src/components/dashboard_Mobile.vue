@@ -1,27 +1,26 @@
 <template>
-
 	<div class="scroll-container">
 		<div class="dashboard">
-			<!--Topbar 2-->
-			<div class="navbar">
-				<div v-for="image in images" :key="image.key" :id="`image-container-${image.key}`"
-					:class="['image-container', `image-container-${image.key}`, { active: activeIndex === image.key }]"
-					@click="handleImageClick(image.key)">
-					<img :src="image.src" class="round-image" />
-				</div>
-			</div>
-
-			<div>
-				<ContentMenu />
-			</div>
-
 			<div class="draw-results">
-				<swiper ref="mySwiper" :slides-per-view="1" :space-between="10" :allowTouchMove="false"
+				<div class="navbar">
+					<div v-for="(image, imageIndex) in images" :key="image.key" :id="`image-container-${image.key}`"
+						:class="['image-container', `image-container-${image.key}`, { active: activeIndex === imageIndex }]"
+						@click="handleImageClick(imageIndex)">
+						<img :src="image.src" class="round-image" />
+					</div>
+				</div>
+				<swiper class="swiper-container" @init="onSwiperInit" ref="mySwiper" :slides-per-view="1"
+					:space-between="0" :allowTouchMove="true" :pagination="paginationConfig"
 					@slideChange="onSlideChange">
 					<swiper-slide v-for="(drawObj, index) in data" :key="index" :id="`totoType${index}`">
+
+						<button class="content_btn" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar">
+							<span class="navbar-toggler-icon">&#9776</span>
+						</button>
+
 						<div class="card">
 							<div class="top-card-container" :style="{ background: cardTheme[index].bgColor }">
-
 								<div class="mobile-refresh-page-button-container">
 									<div class="refresh-icon">
 										<div
@@ -64,6 +63,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="result-display-section">
 								<div class="prize-section">
 									<div class="prize"
@@ -122,13 +122,11 @@
 											<div class="number-inner">
 												{{ getDisplayResult(drawObj.JP1) }}
 											</div>
-
 										</div>
 										<div class="amount">
 											<div class="number-inner">
 												{{ getDisplayResult(drawObj.JP2) }}
 											</div>
-
 										</div>
 									</div>
 								</div>
@@ -137,8 +135,61 @@
 					</swiper-slide>
 				</swiper>
 			</div>
+			<!-- Offcanvas Sidebar -->
+			<div class="offcanvas offcanvas-start offcanvas-custom-width border-top-bottom-right-80px width-sidebar"
+				tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<h5 class="nav-link">{{ $t('Sidebar.Result') }}</h5>
+						</li>
+						<li class="nav-item">
+							<router-link class="nav-link" to="/" :class="{ Active: isActive('/') }">
+								<img :src="getImageSrc('/', '/image/dashboard.webp', '/image/dashboard_Active.svg')"
+									style="width: 25px; margin-right: 13px;" />
+								{{ $t('Sidebar.Dashboard') }}
+							</router-link>
+						</li>
+						<li style="margin-top: 20px;" class="nav-item">
+							<h5 class="nav-link">{{ $t('Sidebar.ToolBox') }}</h5>
+						</li>
+						<li class="nav-item">
+							<router-link class="nav-link" to="/spin-my-luck"
+								:class="{ Active: isActive('/spin-my-luck') }">
+								<img :src="getImageSrc('/spin-my-luck', '/image/spin.webp', '/image/spin_Active.svg')"
+									style="width: 25px; margin-right: 13px;" />
+								{{ $t('Sidebar.Spin My Luck') }}
+							</router-link>
+						</li>
+						<li class="nav-item">
+							<router-link class="nav-link" to="/lucky-book" :class="{ Active: isActive('/lucky-book') }">
+								<img :src="getImageSrc('/lucky-book', '/image/book.svg', '/image/book_Active.svg')"
+									style="width: 25px; margin-right: 13px;" />
+								{{ $t('Sidebar.Lucky Book') }}
+							</router-link>
+						</li>
+						<li style="margin-top: 20px;" class="nav-item">
+							<h5 class="nav-link">{{ $t('Sidebar.Setting') }}</h5>
+						</li>
+						<li class="nav-item">
+							<img src="/image/Earth_icon.svg" style="width: 25px; margin-right: 13px;" />
+							<button style="padding: 0;" class="btn dropdown-toggle" type="button"
+								id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+								{{ $t('Sidebar.Language') }}
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<li><a class="dropdown-item" @click="changeLanguage('en')">English</a></li>
+								<li><a class="dropdown-item" @click="changeLanguage('zh')">中文</a></li>
+								<li><a class="dropdown-item" @click="changeLanguage('ms')">Malay</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-
 	</div>
 </template>
 <script>
@@ -149,13 +200,15 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import axios from 'axios';
 import TopBar from '/src/components/topbar.vue';
-import ContentMenu from '@/components/content-menu.vue'
+// import ContentMenuD from '@/components/content-menu-D.vue'
+// import ContentMenu from '@/components/content-menu.vue'
 // import { BCarousel, BCarouselSlide } from 'bootstrap-vue';
 
 export default {
 	components: {
 		TopBar,
-		ContentMenu,
+		// ContentMenu,
+		// ContentMenuD,
 		Swiper,
 		SwiperSlide
 	},
@@ -177,6 +230,9 @@ export default {
 				{ title: 'Card 10', content: 'Content for card 10' }
 			],
 			scrollPosition: 0,
+			paginationConfig: {
+				clickable: true
+			},
 			cardTheme: {
 				M: {
 					name: "Magnum 4D", bgColor: "black",
@@ -239,7 +295,7 @@ export default {
 					sectionTitleTextColor: "white"
 				}
 			},
-			activeIndex: 'M',
+			activeIndex: 0,
 			images: [
 				{ key: 'M', src: '/image/Magnum@3x.png' },
 				{ key: 'D', src: '/image/damacai@3x.png' },
@@ -257,17 +313,30 @@ export default {
 	mounted() {
 		this.fetchData();
 		this.updateTimeText();
-		this.restoreScrollPosition();
+		const offcanvas = document.getElementById('offcanvasNavbar2');
+
+		offcanvas.addEventListener('show.bs.offcanvas', () => {
+			('HIHI')
+			document.body.style.overflow = 'hidden'; // Disable body scroll when sidebar opens
+		});
+
+		offcanvas.addEventListener('hidden.bs.offcanvas', () => {
+			('Bye')
+			document.body.style.overflow = 'auto'; // Enable body scroll when sidebar closes
+		});
+
+		this.$router.beforeEach((to, from, next) => {
+			document.body.style.overflow = 'auto'; // Reset overflow to auto on route change
+			next();
+		});
 	},
 	beforeDestroy() {
 		clearInterval(this.intervalId);
-
 	},
 	methods: {
 		async fetchData() {
 			// Capture the start time
 			const startTime = Date.now();
-
 			try {
 				const response = await axios.get('https://result2.song6.club/result');
 				// Extract only desired keys from response.data
@@ -279,7 +348,6 @@ export default {
 						extractedData[key] = response.data[key];
 					}
 				});
-
 				// Delay returning the data by 0.5 seconds
 				setTimeout(() => {
 					this.data = extractedData;
@@ -321,35 +389,14 @@ export default {
 				this.currentTimeText = "7:30pm";
 			}
 		},
-		isActive(route) {
-			if (route === '/') {
-				return this.$route.path === route;
-			}
-			return this.$route.path.startsWith(route);
-		},
 		changeLanguage(lang) {
 			this.$i18n.locale = lang;
-		},
-		formatDate(dateStr) {
-			return dateStr;
-		},
-		getName(type) {
-			return this.cardTheme[type].name;
-		},
-		getLogo(type) {
-			return this.cardTheme[type].logoPath;
-		},
-		getBgColor(type) {
-			return this.cardTheme[type].bgColor;
 		},
 		getPrizeStyle(type) {
 			return {
 				backgroundColor: this.cardTheme[type].prizeSectionColor,
 				color: this.cardTheme[type].prizeSectionTextColor
 			};
-		},
-		getSectionTitleTextColor(type) {
-			return this.cardTheme[type].sectionTitleTextColor;
 		},
 		getSmallSectionStyle(type) {
 			return {
@@ -358,8 +405,6 @@ export default {
 			};
 		},
 		getDisplayResult(number) {
-			const cutoffTime = new Date();
-			cutoffTime.setHours(15, 30, 0, 0);
 			return number;
 		},
 		getSpecialNumbers(draw) {
@@ -387,54 +432,37 @@ export default {
 			// Extract consolation numbers from the draw object
 			return [draw.C1, draw.C2, draw.C3, draw.C4, draw.C5, draw.C6, draw.C7, draw.C8, draw.C9, draw.C10];
 		},
-		refreshPage(index) {
+		refreshPage() {
 			this.fetchData()
-			// Save the ID of the clicked refresh button to localStorage
-			// const cardId = `totoType${index}`;
-
-			// localStorage.setItem('cardId', cardId);
-			// Reload the page
-			// window.location.reload();
 		},
-		restoreScrollPosition() {
-			// Get the saved card ID from localStorage
-			const cardId = localStorage.getItem('cardId');
-
-			if (cardId) {
-				this.$nextTick(() => {
-					const checkElement = () => {
-						const element = document.getElementById(cardId);
-						if (element) {
-							element.scrollIntoView();
-							// Clear the card ID from localStorage
-							localStorage.removeItem('cardId');
-						} else {
-							setTimeout(checkElement, 100); // Retry after 100ms
-						}
-					};
-					setTimeout(checkElement, 100); // Initial delay to ensure full rendering
-				});
-			}
+		onSwiperInit(swiper) {
+			this.swiper = swiper;
+		},
+		onSlideChange(swiper) {
+			this.activeIndex = swiper.activeIndex;
 		},
 		handleImageClick(index) {
 			this.activeIndex = index;
+			// Scroll to the section
 			this.scrollToDrawSection(index);
 		},
-		onSlideChange() {
-			// Get the active index from the swiper instance
-			this.activeIndex = this.$refs.mySwiper.swiper.realIndex;
-		},
-		handleLogoClick(id) {
-			this.activeIndex = id;
-			this.scrollToDrawSection(id);
-		},
 		scrollToDrawSection(index) {
-			const element = document.getElementById(`totoType${index}`);
-			if (element) {
-				element.scrollIntoView();
+			if (this.swiper) {
+				this.swiper.slideTo(index);
 			}
 		},
-
+		isActive(route) {
+			if (route === '/') {
+				return this.$route.path === route || this.$route.path === '/';
+			}
+			return this.$route.path.startsWith(route);
+		},
+		changeLanguage(lang) {
+			this.$i18n.locale = lang;
+		},
+		getImageSrc(route, defaultImage, activeImage) {
+			return this.isActive(route) ? activeImage : defaultImage;
+		},
 	},
 };
 </script>
@@ -516,7 +544,7 @@ export default {
 
 @media screen and (max-width: 769px) {
 	.scroll-container {
-		/* height: 100vh; */
+		height: 100vh;
 		overflow: auto;
 		position: relative;
 	}
@@ -534,19 +562,18 @@ export default {
 
 .navbar {
 	display: none;
-	position: sticky;
-	z-index: 2;
+	position: fixed;
 	top: -1px;
+	left: 0;
+	z-index: 2;
 	justify-content: space-around;
 	align-items: center;
 	background-color: white;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	width: 100%;
-	left: 0;
 	box-shadow: 0 3px 5px #0000001a;
+	width: 100%;
 	height: 61px;
-	margin-bottom: -60px;
 }
 
 .image-container {
@@ -667,7 +694,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	background-color: white;
-	z-index: 997;
+	/* z-index: 997; */
 	margin-top: 2px;
 	margin-inline: 20px;
 	border-radius: 17px;
@@ -843,17 +870,11 @@ export default {
 	margin: 3px;
 }
 
-*,
-::after,
-::before {
-	z-index: unset;
-}
-
 .content_btn {
 	position: absolute;
 	top: 71px;
 	left: 20px;
-	z-index: 2;
+	/* z-index: 2; */
 	background-color: white !important;
 	border: 0 !important;
 	color: #000 !important;
@@ -879,7 +900,7 @@ export default {
 }
 
 .offcanvas.offcanvas-start.border-top-bottom-right-80px.width-sidebar {
-	z-index: 9999;
+	/* z-index: 9999; */
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
@@ -889,7 +910,63 @@ export default {
 }
 
 .active {
+	color: #6EC1E4 !important;
+	font-weight: 700;
+}
+
+*,
+::after,
+::before {
+	z-index: unset;
+}
+
+.content_btn {
+	position: absolute;
+	top: 71px;
+	left: 20px;
+	z-index: 2;
+	background-color: white !important;
+	border: 0 !important;
+	color: #000 !important;
+	opacity: 0.8;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.btn-close {
+	margin: 50px 32px 0px 24px;
+	position: absolute;
+	right: 0;
+}
+
+
+.offcanvas-custom-width {
+	--bs-offcanvas-width: 320px;
+	/* Set your desired width here */
+}
+
+.offcanvas.offcanvas-start.border-top-bottom-right-80px.width-sidebar {
+	z-index: 9999;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	height: 100vh;
+	text-align: left;
+}
+
+.nav-item h5 {
+	font-weight: 700;
+}
+
+.Active {
 	color: rgb(207, 46, 46) !important;
+	background-color: rgb(207, 46, 46, 0.2) !important;
 	font-weight: 700;
 }
 </style>
