@@ -3,7 +3,6 @@
 		<div class="Topbar-mobile-view">
 			<TopBar />
 		</div>
-
 		<div class="container">
 			<div style="position: relative;">
 				<div class="Content-mobile-view">
@@ -14,13 +13,13 @@
 				<div class="col-12 title_col">
 					<div class="title">
 						<div class="dictionary">
-							<p>{{ $t('Tua Pek Kong (Qian) Dictionary') }}</p>
+							<p>{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</p>
 						</div>
 
 						<!--search-->
 						<div class="search_col">
 							<!-- Search Input and Dropdown -->
-							<input v-model="searchText" type="text" placeholder="000 to 999" class="search-input" />
+							<input v-model="searchText" type="text" placeholder="0000 to 9999" class="search-input" />
 							<button @click="performSearch" class="search-button">{{ $t('LuckyBook.Search') }}</button>
 
 							<div class="dropdown-container">
@@ -57,7 +56,9 @@
 									<p>
 										{{ item.content[language] }}
 									</p>
+
 								</div>
+
 								<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No
 									results
 									found.
@@ -88,7 +89,7 @@ import TopBar from '/src/components/topbar.vue';
 import { useI18n } from 'vue-i18n';
 
 export default {
-	name: 'TuaPekKongQian',
+	name: 'TuaPekKongWan',
 	components: {
 		ContentMenu,
 		TopBar
@@ -205,9 +206,9 @@ export default {
 				const data = await response.json();
 				this.items = data;
 				await this.delayedLoading();
-				this.$nextTick(() => {
-					this.tooltip();
-				});
+				// this.$nextTick(() => {
+				// 	this.tooltip();
+				// });
 			} catch (error) {
 				console.error('Error fetching items:', error);
 			} finally {

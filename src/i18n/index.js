@@ -9,8 +9,6 @@ const messages = {
 	en,
 	ms,
 	zh
-
-
 };
 
 const i18n = createI18n({

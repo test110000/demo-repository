@@ -15,7 +15,7 @@
 					<div class="title">
 						<div class="dictionary">
 
-							<p>{{ $t('Guan Yin Ma Dictionary') }}</p>
+							<p>{{ $t('LuckyBook.Guan Yin Ma Dictionary') }}</p>
 						</div>
 
 						<!--search-->
@@ -208,9 +208,9 @@ export default {
 				const data = await response.json();
 				this.items = data;
 				await this.delayedLoading();
-				this.$nextTick(() => {
-					this.tooltip();
-				});
+				// this.$nextTick(() => {
+				// 	this.tooltip();
+				// });
 			} catch (error) {
 				console.error('Error fetching items:', error);
 			} finally {
