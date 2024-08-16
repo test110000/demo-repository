@@ -2,7 +2,8 @@
 	<!-- Hamburger Button -->
 	<button class="content_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
 		aria-controls="offcanvasNavbar">
-		<span class="navbar-toggler-icon">&#9776</span>
+		<!-- <span class="navbar-toggler-icon">&#9776</span> -->
+		<img class="dashboard_icon" src="/image/dashboard-topbar.svg" alt="dashboard icon">
 	</button>
 
 	<!-- Offcanvas Sidebar -->
@@ -159,5 +160,11 @@ export default {
 	color: rgb(207, 46, 46) !important;
 	background-color: rgb(207, 46, 46, 0.2) !important;
 	font-weight: 700;
+}
+
+.dashboard_icon {
+	background-color: rgb(207, 46, 46);
+	width: 30px;
+	height: auto;
 }
 </style>

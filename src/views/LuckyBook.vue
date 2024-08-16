@@ -20,6 +20,12 @@
 			<div class="search_col">
 				<div class="input-container">
 					<div class="input-wrapper">
+						<svg v-if="searchQuery !== ''" @click="clearSearch" xmlns="http://www.w3.org/2000/svg"
+							width="30" style="transform: rotate(-90deg); cursor: pointer;" height="30"
+							fill="rgb(207, 46, 46)" class="bi bi-arrow-up-circle-fill back-button" viewBox="0 0 16 16">
+							<path
+								d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+						</svg>
 						<input v-model="searchQuery" @keyup.enter="performSearch"
 							class="form-control form-control-dark search_input"
 							:placeholder="$t('LuckyBook.Search placeholder')" />
@@ -151,35 +157,34 @@
 						<div class="book_container">
 							<div class="book_card_S" />
 							<div class="book_img_container">
-								<a href="/lucky-book/tuapekkongwan"><img class="lucky_book_title"
-										src="/image/TuaPekKongWanZi.webp" alt="Tua Pek Kong Wan Zi">
-								</a>
-								<a href="/lucky-book/tuapekkongwan"><img class="luck_book_img"
-										src="/image/TuaPekKongWan.svg" alt="Tua Pek Kong">
-								</a>
+								<router-link to="/lucky-book/tuapekkongwan">
+									<img class="lucky_book_title" src="/image/TuaPekKongWanZi.webp"
+										alt="Tua Pek Kong Wan Zi">
+								</router-link>
+								<router-link to="/lucky-book/tuapekkongwan">
+									<img class="luck_book_img" src="/image/TuaPekKongWan.svg" alt="Tua Pek Kong">
+								</router-link>
 							</div>
 							<div class="book_text_container">
 								<div class="top_text_container">
-									<a href="/lucky-book/tuapekkongwan">
+									<router-link to="/lucky-book/tuapekkongwan">
 										{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}
-									</a>
+									</router-link>
 								</div>
 								<div class="btm_text_container">
-									<a href="/lucky-book/tuapekkongwan">
+									<router-link to="/lucky-book/tuapekkongwan">
 										(WZT)
-									</a>
+									</router-link>
 								</div>
 							</div>
 						</div>
-						<a href="/lucky-book/tuapekkongwan">
+						<router-link to="/lucky-book/tuapekkongwan">
 							<div class="btn_col">
 								<button class="btn_bg">
-
 									{{ $t('LuckyBook.Enter') }}
-
 								</button>
 							</div>
-						</a>
+						</router-link>
 					</div>
 
 					<!-- Guan Yin Ma -->
@@ -187,35 +192,34 @@
 						<div class="book_container">
 							<div class="book_card_S" />
 							<div class="book_img_container">
-								<a href="/lucky-book/guanyin"><img class="lucky_book_title"
-										src="/image/GuanYinQianZi.webp" alt="Tua Pek Kong Wan Zi">
-								</a>
-								<a href="/lucky-book/guanyin"><img class="luck_book_img" src="/image/GuanYinQian.svg"
-										alt="Tua Pek Kong">
-								</a>
+								<router-link to="/lucky-book/guanyin">
+									<img class="lucky_book_title" src="/image/GuanYinQianZi.webp"
+										alt="Guan Yin Qian Zi">
+								</router-link>
+								<router-link to="/lucky-book/guanyin">
+									<img class="luck_book_img" src="/image/GuanYinQian.svg" alt="Guan Yin Qian">
+								</router-link>
 							</div>
 							<div class="book_text_container">
 								<div class="top_text_container">
-									<a href="/lucky-book/guanyin">
+									<router-link to="/lucky-book/guanyin">
 										{{ $t('LuckyBook.Guan Yin Ma Dictionary') }}
-									</a>
+									</router-link>
 								</div>
 								<div class="btm_text_container">
-									<a href="/lucky-book/guanyin">
+									<router-link to="/lucky-book/guanyin">
 										(GZT)
-									</a>
+									</router-link>
 								</div>
 							</div>
 						</div>
-						<a href="/lucky-book/guanyin">
+						<router-link to="/lucky-book/guanyin">
 							<div class="btn_col">
 								<button class="btn_bg">
-
 									{{ $t('LuckyBook.Enter') }}
-
 								</button>
 							</div>
-						</a>
+						</router-link>
 					</div>
 
 					<!-- Tua Pek Kong (Qian) -->
@@ -223,33 +227,34 @@
 						<div class="book_container">
 							<div class="book_card_S" />
 							<div class="book_img_container">
-								<a href="/lucky-book/tuapekkongqian"><img class="lucky_book_title"
-										src="/image/TuaPekKongQianZi.webp" alt="Tua Pek Kong Wan Zi">
-								</a>
-								<a href="/lucky-book/tuapekkongqian"><img class="luck_book_img"
-										src="/image/TuaPekKongQian.svg" alt="Tua Pek Kong">
-								</a>
+								<router-link to="/lucky-book/tuapekkongqian">
+									<img class="lucky_book_title" src="/image/TuaPekKongQianZi.webp"
+										alt="Tua Pek Kong Wan Zi">
+								</router-link>
+								<router-link to="/lucky-book/tuapekkongqian">
+									<img class="luck_book_img" src="/image/TuaPekKongQian.svg" alt="Tua Pek Kong">
+								</router-link>
 							</div>
 							<div class="book_text_container">
 								<div class="top_text_container">
-									<a href="/lucky-book/tuapekkongqian">
+									<router-link to="/lucky-book/tuapekkongqian">
 										{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}
-									</a>
+									</router-link>
 								</div>
 								<div class="btm_text_container">
-									<a href="/lucky-book/tuapekkongqian">
+									<router-link to="/lucky-book/tuapekkongqian">
 										(QZT)
-									</a>
+									</router-link>
 								</div>
 							</div>
 						</div>
-						<a href="/lucky-book/tuapekkongqian">
+						<router-link to="/lucky-book/tuapekkongqian">
 							<div class="btn_col">
 								<button class="btn_bg">
 									{{ $t('LuckyBook.Enter') }}
 								</button>
 							</div>
-						</a>
+						</router-link>
 					</div>
 				</div>
 			</div>
@@ -386,6 +391,7 @@ export default {
 		return {
 			searchQuery: '',
 			showSearchResults: false,
+			showBackButton: false,
 			showCloseButton: false,
 			activeTab: 'WZT',
 			wanLoaded: false,
@@ -473,7 +479,6 @@ export default {
 		changeTab(tab) {
 			this.activeTab = tab;
 		},
-
 	},
 	mounted() {
 		// 监听滚动事件
@@ -638,8 +643,6 @@ export default {
 	background: none;
 	border: none;
 	cursor: pointer;
-
-
 }
 
 .search_input {
@@ -816,6 +819,20 @@ p {
 	display: flex;
 	align-items: center;
 }
+
+.back-button {
+	position: absolute;
+	left: -40px;
+}
+
+@media screen and (max-width: 1000px) {
+	.back-button {
+		position: relative;
+		margin-right: 10px;
+		left: 0;
+	}
+}
+
 
 .input-container {
 	position: relative;

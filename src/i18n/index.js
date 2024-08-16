@@ -3,7 +3,11 @@ import en from './locales/en.json';
 import ms from './locales/my.json';
 import zh from './locales/zw.json';
 
-
+function getPreferredLocale() {
+	const navigatorLanguage = navigator.language || navigator.userLanguage;
+	console.log('Detected browser language:', navigatorLanguage);
+	return ['zh', 'ms', 'en'].includes(navigatorLanguage) ? navigatorLanguage : 'en';
+}
 
 const messages = {
 	en,
@@ -12,9 +16,9 @@ const messages = {
 };
 
 const i18n = createI18n({
-	locale: 'en', // set locale
-	fallbackLocale: 'en', // set fallback locale
-	messages, // set locale messages
+	locale: getPreferredLocale(), // Dynamically determine locale
+	fallbackLocale: 'en', // Fallback locales
+	messages, // Locale messages
 	legacy: false,
 });
 

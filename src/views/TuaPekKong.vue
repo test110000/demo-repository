@@ -26,9 +26,9 @@
 								<div class="dropdown" @click="toggleDropdown">
 									<div class="dropdown-selected">{{ $t('LuckyBook.ALL') }}</div>
 									<ul v-show="isDropdownOpen" class="dropdown-list">
-										<li @click="selectRange('all')">{{ $t('LuckyBook.ALL') }}</li>
+										<li @click.stop="selectRange('all')">{{ $t('LuckyBook.ALL') }}</li>
 										<li v-for="range in ranges" :key="range.value"
-											@click="selectRange(range.value)">
+											@click.stop="selectRange(range.value)">
 											{{ range.text }}
 										</li>
 									</ul>
@@ -36,6 +36,9 @@
 							</div>
 						</div>
 
+						<div class="no-result-container" v-if="paginatedItems.length === 0">
+							{{ $t('LuckyBook.No_Result') }}
+						</div>
 
 						<div class="tuapekkong_col pekkong">
 							<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
@@ -56,7 +59,6 @@
 									<p>
 										{{ item.content[language] }}
 									</p>
-
 								</div>
 
 								<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No
@@ -100,8 +102,6 @@ export default {
 		return {
 			t,
 			locale,
-
-
 		};
 	},
 	data() {
@@ -110,7 +110,7 @@ export default {
 			searchText: '',
 			selectedRange: 'all',
 			isDropdownOpen: false,
-			ranges: this.generateRanges(50, 999),
+			ranges: this.generateRanges(500, 9999),
 			isLoadingItems: false,
 			isLoadingMore: false, // Track loading more items
 			loadedItemsCount: 10,
@@ -143,13 +143,6 @@ export default {
 
 			return items;
 		},
-		selectedRangeText() {
-			if (this.selectedRange === 'all') {
-				return 'All';
-			}
-			const range = this.ranges.find((range) => range.value === this.selectedRange);
-			return range ? range.text : 'Select Range';
-		},
 		paginatedItems() {
 			return this.filteredItems.slice(0, this.loadedItemsCount);
 		},
@@ -162,8 +155,6 @@ export default {
 
 		window.addEventListener('scroll', this.handleScroll);
 		this.intervalId = setInterval(this.checkTime, 1000);
-
-
 	},
 	beforeDestroy() {
 		window.removeEventListener('scroll', this.handleScroll);
@@ -195,7 +186,6 @@ export default {
 			}
 			return ranges;
 		},
-
 		async fetchItems() {
 			try {
 				this.isLoadingItems = true;
@@ -206,9 +196,6 @@ export default {
 				const data = await response.json();
 				this.items = data;
 				await this.delayedLoading();
-				// this.$nextTick(() => {
-				// 	this.tooltip();
-				// });
 			} catch (error) {
 				console.error('Error fetching items:', error);
 			} finally {
@@ -226,13 +213,12 @@ export default {
 				this.isLoadingMore = false; // Hide spinner after loading
 			}
 		},
-
 		performSearch() {
 			// Implement search logic as needed
 		},
 		selectRange(range) {
 			this.selectedRange = range;
-			this.isDropdownOpen = false;
+			this.isDropdownOpen = !this.isDropdownOpen;
 		},
 		toggleDropdown() {
 			this.isDropdownOpen = !this.isDropdownOpen;
@@ -243,8 +229,6 @@ export default {
 	},
 };
 </script>
-
-
 
 <style scoped>
 /* Add loading animation styles */
@@ -456,7 +440,7 @@ p {
 /* Custom Dropdown Styles */
 .dropdown-container {
 	position: relative;
-	width: 200px;
+	width: 220px;
 }
 
 .dropdown {
@@ -484,7 +468,6 @@ p {
 	border: solid #cf2e2e;
 	border-radius: 5px;
 	max-height: 150px;
-	/* Show 7 options */
 	overflow-y: auto;
 	padding: 0;
 	margin: 0;
@@ -492,8 +475,20 @@ p {
 	white-space: nowrap;
 }
 
+.dropdown-list::-webkit-scrollbar {
+	display: none;
+	/* For WebKit browsers (Chrome, Safari) */
+}
+
+.dropdown-list {
+	-ms-overflow-style: none;
+	/* For Internet Explorer and Edge */
+	scrollbar-width: none;
+	/* For Firefox */
+}
+
 .dropdown-list li {
-	padding: 10px;
+	padding: 10px 0;
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
 }
@@ -588,6 +583,23 @@ p {
 @media screen and (min-width: 769px) {
 	.Content-mobile-view {
 		display: none;
+	}
+}
+
+.no-result-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 400;
+	color: black;
+	padding: 20px;
+	height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+	.no-result-container {
+		font-size: 18px;
 	}
 }
 </style>

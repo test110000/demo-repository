@@ -47,6 +47,7 @@
 		"ALL": "Semua",
 		"Found": "Terdapat",
 		"result": "rekod",
-		"for": "untuk"
+		"for": "untuk",
+		"No_Result": "Tiada Keputusan Ditemui Untuk Julat Ini"
 	}
 }

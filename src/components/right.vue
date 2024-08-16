@@ -1,8 +1,6 @@
 <template>
 	<div class="right-column">
 		<div class="right">
-
-
 			<div class="right_col">
 				<img class="ball_img" src="\image\realistic8ball.png">
 
@@ -96,7 +94,7 @@ export default {
 	background-color: white;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
-	padding-top: 10px;
+	padding: 10px 0;
 }
 
 .right_col2 {
