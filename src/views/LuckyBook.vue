@@ -266,26 +266,26 @@
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
 						<div class="lucky_col">
 							<div class="wanzititle_col">
-								<a href="/lucky-book/tuapekkongwan">
+								<router-link to="/lucky-book/tuapekkongwan">
 									<img class="wanzititle" src="/image/TuaPekKongWanZi.webp" />
 									<img width="65%" src="/image/TuaPekKongWan.svg" @load="onWanLoaded" />
-								</a>
+								</router-link>
 							</div>
 							<div class=" text">
-								<a href="/lucky-book/tuapekkongwan" class="text">
+								<router-link to="/lucky-book/tuapekkongwan" class="text">
 									{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}
-								</a>
+								</router-link>
 							</div>
 							<div class="text2">
-								<a href="/lucky-book/tuapekkongwan" class="text2">(WZT)</a>
+								<router-link to="/lucky-book/tuapekkongwan" class="text2">(WZT)</router-link>
 							</div>
 						</div>
 						<br />
 						<div class="btn_col">
 							<button class="btn_bg">
-								<a href="/lucky-book/tuapekkongwan">
+								<router-link to="/lucky-book/tuapekkongwan">
 									{{ $t('LuckyBook.Enter') }}
-								</a>
+								</router-link>
 							</button>
 						</div>
 						<br />
@@ -293,29 +293,28 @@
 
 					<!-- Guan Yin Ma -->
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
-
 						<div class="lucky_col">
 							<div class="wanzititle_col">
-								<a href="/lucky-book/guanyin">
+								<router-link to="/lucky-book/guanyin">
 									<img class="wanzititle" src="/image/GuanYinQianZi.webp" />
 									<img width="65%" src="/image/GuanYinQian.svg" />
-								</a>
+								</router-link>
 							</div>
 							<div class="text">
-								<a href="/lucky-book/guanyin" class="text">
+								<router-link to="/lucky-book/guanyin" class="text">
 									{{ $t('LuckyBook.Guan Yin Ma Dictionary') }}
-								</a>
+								</router-link>
 							</div>
 							<div class="text2">
-								<a href="/lucky-book/guanyin" class="text2">(GZT)</a>
+								<router-link to="/lucky-book/guanyin" class="text2">(GZT)</router-link>
 							</div>
 						</div>
 						<br />
 						<div class="btn_col">
 							<button class="btn_bg">
-								<a href="/lucky-book/guanyin">
+								<router-link to="/lucky-book/guanyin">
 									{{ $t('LuckyBook.Enter') }}
-								</a>
+								</router-link>
 							</button>
 						</div>
 						<br />
@@ -325,25 +324,26 @@
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
 						<div class="lucky_col">
 							<div class="wanzititle_col">
-								<a href="/lucky-book/tuapekkongqian">
+								<router-link to="/lucky-book/tuapekkongqian">
 									<img class="wanzititle" src="/image/TuaPekKongQianZi.webp" />
 									<img width="65%" src="/image/TuaPekKongQian.svg" />
-								</a>
+								</router-link>
 							</div>
 							<div class="text">
-								<a href="/lucky-book/tuapekkongqian" class="text">
-									{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</a>
+								<router-link to="/lucky-book/tuapekkongqian" class="text">
+									{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}
+								</router-link>
 							</div>
 							<div class="text2">
-								<a href="/lucky-book/tuapekkongqian" class="text2">(QZT)</a>
+								<router-link to="/lucky-book/tuapekkongqian" class="text2">(QZT)</router-link>
 							</div>
 						</div>
 						<br />
 						<div class="btn_col">
 							<button class="btn_bg">
-								<a href="/lucky-book/tuapekkongqian">
+								<router-link to="/lucky-book/tuapekkongqian">
 									{{ $t('LuckyBook.Enter') }}
-								</a>
+								</router-link>
 							</button>
 						</div>
 						<br />
@@ -1050,7 +1050,7 @@ p {
 	transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1400px) {
 	.Laptop-LB-view {
 		display: none;
 	}
@@ -1086,9 +1086,10 @@ p {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 12px;
 	margin-top: 10px;
 	padding: 0 10px;
+	white-space: nowrap;
 }
 
 .text2 {

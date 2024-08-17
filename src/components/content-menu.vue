@@ -2,7 +2,6 @@
 	<!-- Hamburger Button -->
 	<button class="content_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
 		aria-controls="offcanvasNavbar">
-		<!-- <span class="navbar-toggler-icon">&#9776</span> -->
 		<img class="dashboard_icon" src="/image/dashboard-topbar.svg" alt="dashboard icon">
 	</button>
 
