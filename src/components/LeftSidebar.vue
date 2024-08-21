@@ -4,9 +4,12 @@
 			<!--leftside-->
 			<div class="sidebar" style="background-color: rgb(207, 46, 46)">
 				<div style="background: white; height: 100%; border-top-right-radius: 50px;">
-					<div class="logo_col">
-						<img class="d_num_logo" src="/image/4D-lottery-wording.png">
-					</div>
+					<router-link to="/">
+						<div class="logo_col">
+							<img class="d_num_logo" style="" src="/image/4D-lottery-single.png">
+							<!-- <img class="d_num_title" width="100" src="/image/4D-lottery-wording.png"> -->
+						</div>
+					</router-link>
 					<div class="sidebar-main">
 						<p class="results_install_app_text">{{ $t('Sidebar.Result') }}</p>
 						<!-- Dashboard -->
@@ -99,6 +102,7 @@ export default {
 .logo_col {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .d_num_logo {
