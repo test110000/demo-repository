@@ -102,7 +102,6 @@ export default {
 .logo_col {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
 }
 
 .d_num_logo {
