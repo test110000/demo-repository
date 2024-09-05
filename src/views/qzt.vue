@@ -19,7 +19,7 @@
 						<!--search-->
 						<div class="search_col">
 							<!-- Search Input and Dropdown -->
-							<input v-model="searchText" type="text" placeholder="0000 to 9999" class="search-input" />
+							<input v-model="searchText" type="text" placeholder="000 to 999" class="search-input" />
 							<button @click="performSearch" class="search-button">{{ $t('LuckyBook.Search') }}</button>
 
 							<div class="dropdown-container">
@@ -36,24 +36,21 @@
 							</div>
 						</div>
 
-						<div class="no-result-container" v-if="paginatedItems.length === 0">
+						<div class="no-result-container" v-if="qzt.length === 0">
 							{{ $t('LuckyBook.No_Result') }}
 						</div>
 
 						<div class="tuapekkong_col pekkong">
-							<div v-for="(item) in paginatedItems" :key="item.number" class="item-container">
-								<div class="number_col">
-									<p>{{ item.number }}</p>
+							<div v-for="item in filteredItems" :key="item.number" class="item-container">
+								<div class=" number_col">
+									<p>
+										{{ item.number }}
+									</p>
 								</div>
 								<div>
-									<template v-if="item.loading">
-										<span class="spinner-border spinner-border-sm" role="status"
-											aria-hidden="true"></span>
-									</template>
-									<template v-else>
-										<img :src="`/imgs/qzt_webp/${item.image}`" :alt="item.content[language]"
-											loading="lazy" />
-									</template>
+
+									<img :src="`/imgs/qzt_webp/${item.image}`" :alt="`Photo of ${item.content}`" />
+
 								</div>
 								<div class="item_content">
 									<p>
@@ -61,12 +58,12 @@
 									</p>
 
 								</div>
-
-								<div v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">No
-									results
-									found.
-								</div>
 							</div>
+							<div class="no-result-container"
+								v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
+								{{ $t('LuckyBook.No_results_found') }}
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -87,7 +84,8 @@
 </template>
 
 <script>
-import ContentMenu from '@/components/content-menu.vue'
+import qzt from '../assets/data/qzt.json';
+import ContentMenu from '@/components/content-menu.vue';
 import TopBar from '/src/components/topbar.vue';
 import { useI18n } from 'vue-i18n';
 
@@ -109,24 +107,23 @@ export default {
 	},
 	data() {
 		return {
-			items: [],
+			qzt: [],
 			searchText: '',
 			selectedRange: 'all',
 			isDropdownOpen: false,
 			ranges: this.generateRanges(50, 999),
 			isLoadingItems: false,
-			isLoadingMore: false, // Track loading more items
-			loadedItemsCount: 10,
-			initialLoadCount: 27,
-			batchLoadCount: 5, // Adjust as needed
+			isLoadingMore: true, // Track loading more items
+			loadedItemsCount: 5,
+			batchLoadCount: 5,
 			showIcon: false,
 			scrollTimeout: null,
+			qzt: qzt
 		};
 	},
 	computed: {
 		filteredItems() {
-			let items = this.items;
-
+			let items = this.qzt;
 			if (this.selectedRange !== 'all') {
 				const [min, max] = this.selectedRange.split('-').map(Number);
 				items = items.filter((item) => {
@@ -134,7 +131,6 @@ export default {
 					return number >= min && number <= max;
 				});
 			}
-
 			if (this.searchText) {
 				const query = this.searchText.toLowerCase();
 				items = items.filter(
@@ -143,15 +139,7 @@ export default {
 						item.content.en.toLowerCase().includes(query)
 				);
 			}
-
 			return items;
-		},
-		selectedRangeText() {
-			if (this.selectedRange === 'all') {
-				return 'All';
-			}
-			const range = this.ranges.find((range) => range.value === this.selectedRange);
-			return range ? range.text : 'Select Range';
 		},
 		paginatedItems() {
 			return this.filteredItems.slice(0, this.loadedItemsCount);
@@ -161,81 +149,61 @@ export default {
 		},
 	},
 	mounted() {
-		this.fetchItems();
-
+		this.loadData();
 		window.addEventListener('scroll', this.handleScroll);
-		this.intervalId = setInterval(this.checkTime, 1000);
-
-
 	},
 	beforeDestroy() {
 		window.removeEventListener('scroll', this.handleScroll);
-		clearInterval(this.intervalId);
 	},
 	methods: {
-		handleScroll() {
-			if (this.scrollTimeout) {
-				clearTimeout(this.scrollTimeout);
+		async loadData() {
+			try {
+				this.qzt = qzt;
+			} catch (error) {
+				console.error('Error fetching items:', error);
 			}
+		},
 
-			this.showIcon = true;
+		loadMoreItems() {
 
-			this.scrollTimeout = setTimeout(() => {
-				this.showIcon = false;
-			}, 2000);
+			if (!this.isLoadingMore && this.loadedItemsCount < this.filteredItems.length) {
+				this.isLoadingMore = true;
+				setTimeout(() => {
+					this.loadedItemsCount += this.batchLoadCount;
+					this.isLoadingMore = false;
+				}, 1000);
+			}
+		},
+
+		handleScroll() {
+			const bottomOfWindow = window.innerHeight + window.scrollY >= document.documentElement.offsetHeight - 1;
+
+			if (bottomOfWindow && !this.isLoadingMore) {
+				this.loadMoreItems();
+			}
 		},
 		scrollToTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth',
-			});
+			window.scrollTo({ top: 0, behavior: 'smooth' });
 		},
 		generateRanges(step, max) {
 			const ranges = [];
 			for (let i = 0; i <= max; i += step) {
 				const end = i + step - 1;
-				ranges.push({ text: `${i.toString().padStart(3, '0')}-${end.toString().padStart(3, '0')}`, value: `${i}-${end}` });
+				ranges.push({
+					text: `${i.toString().padStart(3, '0')}-${end.toString().padStart(3, '0')}`,
+					value: `${i}-${end}`,
+				});
 			}
 			return ranges;
 		},
-
-		async fetchItems() {
-			try {
-				this.isLoadingItems = true;
-				const response = await fetch('/src/assets/data/qzt.json'); // Adjust the path as needed
-				if (!response.ok) {
-					throw new Error('Network response was not ok');
-				}
-				const data = await response.json();
-				this.items = data;
-				await this.delayedLoading();
-				// this.$nextTick(() => {
-				// 	this.tooltip();
-				// });
-			} catch (error) {
-				console.error('Error fetching items:', error);
-			} finally {
-				this.isLoadingItems = false;
-			}
-		},
-		async delayedLoading() {
-			const totalItems = this.filteredItems.length;
-			const startIndex = this.initialLoadCount;
-
-			for (let i = startIndex; i < totalItems; i += this.batchLoadCount) {
-				this.isLoadingMore = true; // Show spinner while loading more
-				await new Promise((resolve) => setTimeout(resolve, 500)); // Simulate delay
-				this.loadedItemsCount += this.batchLoadCount;
-				this.isLoadingMore = false; // Hide spinner after loading
-			}
-		},
-
 		performSearch() {
-			// Implement search logic as needed
+			this.loadedItemsCount = 10;
+			this.loadMoreItems();
 		},
 		selectRange(range) {
 			this.selectedRange = range;
 			this.isDropdownOpen = !this.isDropdownOpen;
+			this.performSearch();
 		},
 		toggleDropdown() {
 			this.isDropdownOpen = !this.isDropdownOpen;

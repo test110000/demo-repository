@@ -48,6 +48,7 @@
 		"Found": "Found",
 		"result": "result",
 		"for": "for",
-		"No_Result": "No Result Found For This Range"
+		"No_Result": "No Result Found For This Range",
+		"No_results_found": "No results found."
 	}
 }

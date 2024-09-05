@@ -48,6 +48,7 @@
 		"Found": "Terdapat",
 		"result": "rekod",
 		"for": "untuk",
-		"No_Result": "Tiada Keputusan Ditemui Untuk Julat Ini"
+		"No_Result": "Tiada Keputusan Ditemui Untuk Julat Ini",
+		"No_results_found": "Tiada hasil ditemui."
 	}
 }

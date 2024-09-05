@@ -67,15 +67,15 @@
 					<div>
 						<div class="search-message">
 							<p>{{ $t('LuckyBook.Found') }}
-								{{ filteredDataWZT.length }}
+								{{ wzt.length }}
 								{{ $t('LuckyBook.result') }}
-								{{ filteredDataWZT.length !== 1 ? '' : '' }}
+								{{ wzt.length !== 1 ? '' : '' }}
 								{{ $t('LuckyBook.for') }}
 								"{{ searchQuery }}"</p>
 						</div>
 
 						<ul class="search-ul">
-							<li v-for="item in filteredDataWZT" :key="item.number" class="search-result">
+							<li v-for="item in wzt" :key="item.number" class="search-result">
 								<div class="number_col">
 									<p>{{ item.number }}</p>
 								</div>
@@ -96,15 +96,15 @@
 				<div style="text-decoration: none;" id="GuanYin" class="container tab-pane fade">
 					<div class="search-message">
 						<p>{{ $t('LuckyBook.Found') }}
-							{{ filteredDataGZT.length }}
+							{{ gzt.length }}
 							{{ $t('LuckyBook.result') }}
-							{{ filteredDataGZT.length !== 1 ?
+							{{ gzt.length !== 1 ?
 								'' : '' }}
 							{{ $t('LuckyBook.for') }}
 							"{{ searchQuery }}"</p>
 					</div>
 					<ul class="search-ul">
-						<li v-for="item in filteredDataGZT" :key="item.number" class="search-result">
+						<li v-for="item in gzt" :key="item.number" class="search-result">
 							<div class="number_col">
 								<p>{{ item.number }}</p>
 							</div>
@@ -123,15 +123,15 @@
 				<div id="TuaPekKongQian" class="container tab-pane fade">
 					<div class="search-message">
 						<p>{{ $t('LuckyBook.Found') }}
-							{{ filteredDataQZT.length }}
+							{{ qzt.length }}
 							{{ $t('LuckyBook.result') }}
-							{{ filteredDataQZT.length !== 1 ?
+							{{ qzt.length !== 1 ?
 								'' : '' }}
 							{{ $t('LuckyBook.for') }}
 							"{{ searchQuery }}"</p>
 					</div>
 					<ul class="search-ul">
-						<li v-for="item in filteredDataQZT" :key="item.number" class="search-result">
+						<li v-for="item in qzt" :key="item.number" class="search-result">
 							<div class="number_col">
 								<p>{{ item.number }}</p>
 							</div>
@@ -368,7 +368,9 @@
 </template>
 
 <script>
-
+import qztData from '../assets/data/qzt.json';
+import wztData from '../assets/data/wzt.json';
+import gztdata from '../assets/data/gzt.json';
 import TopBar from '/src/components/topbar.vue';
 import ContentMenu from '@/components/content-menu.vue'
 import { useI18n } from 'vue-i18n';
@@ -405,7 +407,9 @@ export default {
 			filteredDataQZT: [],
 			showIcon: false,
 			scrollTimeout: null,
-
+			wzt: wztData,
+			qzt: qztData,
+			gzt: gztdata
 
 		};
 	},
@@ -440,27 +444,27 @@ export default {
 			this.showSearchResults = this.searchQuery.trim().length > 0;
 
 			if (this.showSearchResults) {
-				// Load data from JSON files
-				const wztData = await fetch('./src/assets/data/wzt.json').then(response => response.json());
-				const gztData = await fetch('./src/assets/data/gzt.json').then(response => response.json());
-				const qztData = await fetch('./src/assets/data/qzt.json').then(response => response.json());
+				// // Load data from JSON files
+				// const wztData = await fetch('/data/wzt.json').then(response => response.json());
+				// const gztData = await fetch('/data/gzt.json').then(response => response.json());
+				// const qztData = await fetch('/data/qzt.json').then(response => response.json());
 
-				this.allData = [...wztData, ...gztData, ...qztData];
+
 
 				// Filter data based on search query
-				this.filteredDataWZT = wztData.filter(item =>
+				this.wzt = wztData.filter(item =>
 					item.number.includes(this.searchQuery) ||
 					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
 					item.content.zh.includes(this.searchQuery) ||
 					item.content.ms.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
-				this.filteredDataGZT = gztData.filter(item =>
+				this.gzt = gztdata.filter(item =>
 					item.number.includes(this.searchQuery) ||
 					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
 					item.content.zh.includes(this.searchQuery) ||
 					item.content.ms.toLowerCase().includes(this.searchQuery.toLowerCase())
 				);
-				this.filteredDataQZT = qztData.filter(item =>
+				this.qzt = qztData.filter(item =>
 					item.number.includes(this.searchQuery) ||
 					item.content.en.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
 					item.content.zh.includes(this.searchQuery) ||
@@ -469,6 +473,7 @@ export default {
 			}
 		},
 		onWanLoaded() {
+
 			this.wanLoaded = true;
 		},
 		clearSearch() {
