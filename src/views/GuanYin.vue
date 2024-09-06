@@ -44,7 +44,7 @@
 
 
 						<div class="tuapekkong_col pekkong">
-							<div v-for="item in filteredItems" :key="item.number" class="item-container">
+							<div v-for="item in paginatedItems" :key="item.number" class="item-container">
 								<div class=" number_col">
 									<p>
 										{{ item.number }}
@@ -62,11 +62,12 @@
 
 								</div>
 							</div>
-							<div class="no-result-container"
-								v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
-								{{ $t('LuckyBook.No_results_found') }}
-							</div>
 
+
+						</div>
+						<div class="no-result-container"
+							v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
+							{{ $t('LuckyBook.No_results_found') }}
 						</div>
 
 					</div>
@@ -115,8 +116,8 @@ export default {
 			ranges: this.generateRanges(50, 999),
 			isLoadingItems: false,
 			isLoadingMore: false, // Track loading more items
-			loadedItemsCount: 5,
-			batchLoadCount: 5, // Adjust as needed
+			loadedItemsCount: 20,
+			batchLoadCount: 20, // Adjust as needed
 			showIcon: false,
 			scrollTimeout: null,
 			gzt: gzt
@@ -144,7 +145,9 @@ export default {
 			return items;
 		},
 		paginatedItems() {
+			// 按照加载的数量进行分页显示
 			return this.filteredItems.slice(0, this.loadedItemsCount);
+
 		},
 		language() {
 			return this.$i18n.locale;
@@ -152,12 +155,13 @@ export default {
 	},
 	mounted() {
 		this.loadData();
-		window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener('scroll', this.handleScroll); // 添加滚动事件监听
 	},
 	beforeDestroy() {
-		window.removeEventListener('scroll', this.handleScroll);
+		window.removeEventListener('scroll', this.handleScroll); // 移除滚动事件监听
 	},
 	methods: {
+		// 模拟数据加载
 		async loadData() {
 			try {
 				this.gzt = gzt;
@@ -165,24 +169,31 @@ export default {
 				console.error('Error fetching items:', error);
 			}
 		},
-
 		loadMoreItems() {
-
 			if (!this.isLoadingMore && this.loadedItemsCount < this.filteredItems.length) {
 				this.isLoadingMore = true;
 				setTimeout(() => {
 					this.loadedItemsCount += this.batchLoadCount;
 					this.isLoadingMore = false;
-				}, 1000);
+				}, 500);
 			}
 		},
-
 		handleScroll() {
 			const bottomOfWindow = window.innerHeight + window.scrollY >= document.documentElement.offsetHeight - 1;
-
 			if (bottomOfWindow && !this.isLoadingMore) {
 				this.loadMoreItems();
 			}
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
 		},
 		scrollToTop() {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -198,9 +209,9 @@ export default {
 			}
 			return ranges;
 		},
+
 		performSearch() {
-			this.loadedItemsCount = 10;
-			this.loadMoreItems();
+
 		},
 		selectRange(range) {
 			this.selectedRange = range;
@@ -213,9 +224,14 @@ export default {
 		clearSearch() {
 			this.searchText = '';
 		},
+		buttonLoadMore() {
+			this.loadedItemsCount += this.batchLoadCount;
+		}
+
 	},
 };
 </script>
+
 
 
 

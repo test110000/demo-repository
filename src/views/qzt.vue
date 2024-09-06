@@ -13,7 +13,7 @@
 				<div class="col-12 title_col">
 					<div class="title">
 						<div class="dictionary">
-							<p>{{ $t('LuckyBook.Tua Pek Kong (Qian) Dictionary') }}</p>
+							<p>{{ $t('LuckyBook.Tua Pek Kong (Wan) Dictionary') }}</p>
 						</div>
 
 						<!--search-->
@@ -41,7 +41,7 @@
 						</div>
 
 						<div class="tuapekkong_col pekkong">
-							<div v-for="item in filteredItems" :key="item.number" class="item-container">
+							<div v-for="item in paginatedItems" :key="item.number" class="item-container">
 								<div class=" number_col">
 									<p>
 										{{ item.number }}
@@ -59,11 +59,12 @@
 
 								</div>
 							</div>
-							<div class="no-result-container"
-								v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
-								{{ $t('LuckyBook.No_results_found') }}
-							</div>
 
+
+						</div>
+						<div class="no-result-container"
+							v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
+							{{ $t('LuckyBook.No_results_found') }}
 						</div>
 					</div>
 				</div>
@@ -85,12 +86,12 @@
 
 <script>
 import qzt from '../assets/data/qzt.json';
-import ContentMenu from '@/components/content-menu.vue';
+import ContentMenu from '@/components/content-menu.vue'
 import TopBar from '/src/components/topbar.vue';
 import { useI18n } from 'vue-i18n';
 
 export default {
-	name: 'TuaPekKongWan',
+	name: 'TuaPekKongQian',
 	components: {
 		ContentMenu,
 		TopBar
@@ -101,8 +102,6 @@ export default {
 		return {
 			t,
 			locale,
-
-
 		};
 	},
 	data() {
@@ -113,12 +112,12 @@ export default {
 			isDropdownOpen: false,
 			ranges: this.generateRanges(50, 999),
 			isLoadingItems: false,
-			isLoadingMore: true, // Track loading more items
-			loadedItemsCount: 5,
-			batchLoadCount: 5,
+			isLoadingMore: false, // Track loading more items
+			loadedItemsCount: 20,
+			batchLoadCount: 20,
 			showIcon: false,
 			scrollTimeout: null,
-			qzt: qzt
+			qzt: qzt,
 		};
 	},
 	computed: {
@@ -142,7 +141,9 @@ export default {
 			return items;
 		},
 		paginatedItems() {
+			// 按照加载的数量进行分页显示
 			return this.filteredItems.slice(0, this.loadedItemsCount);
+
 		},
 		language() {
 			return this.$i18n.locale;
@@ -150,12 +151,13 @@ export default {
 	},
 	mounted() {
 		this.loadData();
-		window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener('scroll', this.handleScroll); // 添加滚动事件监听
 	},
 	beforeDestroy() {
-		window.removeEventListener('scroll', this.handleScroll);
+		window.removeEventListener('scroll', this.handleScroll); // 移除滚动事件监听
 	},
 	methods: {
+		// 模拟数据加载
 		async loadData() {
 			try {
 				this.qzt = qzt;
@@ -163,24 +165,31 @@ export default {
 				console.error('Error fetching items:', error);
 			}
 		},
-
 		loadMoreItems() {
-
 			if (!this.isLoadingMore && this.loadedItemsCount < this.filteredItems.length) {
 				this.isLoadingMore = true;
 				setTimeout(() => {
 					this.loadedItemsCount += this.batchLoadCount;
 					this.isLoadingMore = false;
-				}, 1000);
+				}, 500);
 			}
 		},
-
 		handleScroll() {
 			const bottomOfWindow = window.innerHeight + window.scrollY >= document.documentElement.offsetHeight - 1;
-
 			if (bottomOfWindow && !this.isLoadingMore) {
 				this.loadMoreItems();
 			}
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
 		},
 		scrollToTop() {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -196,9 +205,9 @@ export default {
 			}
 			return ranges;
 		},
+
 		performSearch() {
-			this.loadedItemsCount = 10;
-			this.loadMoreItems();
+
 		},
 		selectRange(range) {
 			this.selectedRange = range;
@@ -211,11 +220,13 @@ export default {
 		clearSearch() {
 			this.searchText = '';
 		},
+		buttonLoadMore() {
+			this.loadedItemsCount += this.batchLoadCount;
+		}
+
 	},
 };
 </script>
-
-
 
 <style scoped>
 /* Add loading animation styles */
@@ -455,7 +466,6 @@ p {
 	border: solid #cf2e2e;
 	border-radius: 5px;
 	max-height: 150px;
-	/* Show 7 options */
 	overflow-y: auto;
 	padding: 0;
 	margin: 0;
@@ -476,7 +486,7 @@ p {
 }
 
 .dropdown-list li {
-	padding: 10px;
+	padding: 10px 0;
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
 }

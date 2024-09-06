@@ -41,7 +41,7 @@
 						</div>
 
 						<div class="tuapekkong_col pekkong">
-							<div v-for="item in filteredItems" :key="item.number" class="item-container">
+							<div v-for="item in paginatedItems" :key="item.number" class="item-container">
 								<div class=" number_col">
 									<p>
 										{{ item.number }}
@@ -59,11 +59,12 @@
 
 								</div>
 							</div>
-							<div class="no-result-container"
-								v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
-								{{ $t('LuckyBook.No_results_found') }}
-							</div>
 
+
+						</div>
+						<div class="no-result-container"
+							v-if="filteredItems.length === 0 && !isLoadingItems && searchText.length > 0">
+							{{ $t('LuckyBook.No_results_found') }}
 						</div>
 					</div>
 				</div>
@@ -112,8 +113,8 @@ export default {
 			ranges: this.generateRanges(500, 9999),
 			isLoadingItems: false,
 			isLoadingMore: false, // Track loading more items
-			loadedItemsCount: 5,
-			batchLoadCount: 5,
+			loadedItemsCount: 20,
+			batchLoadCount: 20,
 			showIcon: false,
 			scrollTimeout: null,
 			wzt: wzt,
@@ -142,6 +143,7 @@ export default {
 		paginatedItems() {
 			// 按照加载的数量进行分页显示
 			return this.filteredItems.slice(0, this.loadedItemsCount);
+
 		},
 		language() {
 			return this.$i18n.locale;
@@ -169,7 +171,7 @@ export default {
 				setTimeout(() => {
 					this.loadedItemsCount += this.batchLoadCount;
 					this.isLoadingMore = false;
-				}, 1000);
+				}, 500);
 			}
 		},
 		handleScroll() {
@@ -177,6 +179,17 @@ export default {
 			if (bottomOfWindow && !this.isLoadingMore) {
 				this.loadMoreItems();
 			}
+			if (this.scrollTimeout) {
+				clearTimeout(this.scrollTimeout);
+			}
+
+			// 显示图标
+			this.showIcon = true;
+
+			// 在5秒后隐藏图标
+			this.scrollTimeout = setTimeout(() => {
+				this.showIcon = false;
+			}, 2000);
 		},
 		scrollToTop() {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -192,14 +205,14 @@ export default {
 			}
 			return ranges;
 		},
+
 		performSearch() {
-			this.loadedItemsCount = 10; // 搜索时重置为初始加载数量
-			this.loadMoreItems(); // 重新加载
+
 		},
 		selectRange(range) {
 			this.selectedRange = range;
 			this.isDropdownOpen = !this.isDropdownOpen;
-			this.performSearch(); // 重新搜索
+			this.performSearch();
 		},
 		toggleDropdown() {
 			this.isDropdownOpen = !this.isDropdownOpen;
@@ -207,6 +220,10 @@ export default {
 		clearSearch() {
 			this.searchText = '';
 		},
+		buttonLoadMore() {
+			this.loadedItemsCount += this.batchLoadCount;
+		}
+
 	},
 };
 </script>
